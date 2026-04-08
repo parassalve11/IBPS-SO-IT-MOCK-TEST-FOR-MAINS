@@ -1,0 +1,602 @@
+{
+  "computer_organization_exam_questions": [
+    {
+      "id": 1,
+      "question": "Decimal number 10 is equal to which binary number?",
+      "options": [
+        "A. 1010",
+        "B. 1001",
+        "C. 1110",
+        "D. 1100"
+      ],
+      "correct_answer": "A. 1010",
+      "explanation": "Binary equivalent of decimal 10 is 1010.",
+      "topic": "Number System"
+    },
+    {
+      "id": 2,
+      "question": "Binary 1101 is equal to decimal:",
+      "options": [
+        "A. 11",
+        "B. 12",
+        "C. 13",
+        "D. 14"
+      ],
+      "correct_answer": "C. 13",
+      "explanation": "1101 in binary equals 8 + 4 + 0 + 1 = 13.",
+      "topic": "Number System"
+    },
+    {
+      "id": 3,
+      "question": "Which number system uses base 16?",
+      "options": [
+        "A. Binary",
+        "B. Octal",
+        "C. Decimal",
+        "D. Hexadecimal"
+      ],
+      "correct_answer": "D. Hexadecimal",
+      "explanation": "Hexadecimal uses digits 0-9 and A-F, so its base is 16.",
+      "topic": "Number System"
+    },
+    {
+      "id": 4,
+      "question": "1's complement of binary 1010 is:",
+      "options": [
+        "A. 0101",
+        "B. 1011",
+        "C. 0110",
+        "D. 1001"
+      ],
+      "correct_answer": "A. 0101",
+      "explanation": "1's complement is obtained by flipping all bits.",
+      "topic": "Number System"
+    },
+    {
+      "id": 5,
+      "question": "Which representation is commonly used for signed integers in computers?",
+      "options": [
+        "A. BCD",
+        "B. 1's complement",
+        "C. 2's complement",
+        "D. Gray code"
+      ],
+      "correct_answer": "C. 2's complement",
+      "explanation": "2's complement is widely used because arithmetic operations are simpler.",
+      "topic": "Number System"
+    },
+    {
+      "id": 6,
+      "question": "Which code changes only one bit between successive values?",
+      "options": [
+        "A. ASCII",
+        "B. Gray code",
+        "C. EBCDIC",
+        "D. BCD"
+      ],
+      "correct_answer": "B. Gray code",
+      "explanation": "Gray code is designed so adjacent values differ by only one bit.",
+      "topic": "Number System"
+    },
+    {
+      "id": 7,
+      "question": "Octal number 17 is equal to decimal:",
+      "options": [
+        "A. 13",
+        "B. 14",
+        "C. 15",
+        "D. 16"
+      ],
+      "correct_answer": "C. 15",
+      "explanation": "Octal 17 = 1×8 + 7 = 15.",
+      "topic": "Number System"
+    },
+    {
+      "id": 8,
+      "question": "Hexadecimal A is equal to decimal:",
+      "options": [
+        "A. 8",
+        "B. 9",
+        "C. 10",
+        "D. 11"
+      ],
+      "correct_answer": "C. 10",
+      "explanation": "Hexadecimal A represents decimal 10.",
+      "topic": "Number System"
+    },
+    {
+      "id": 9,
+      "question": "Which logic gate gives output 1 only when both inputs are 1?",
+      "options": [
+        "A. OR",
+        "B. XOR",
+        "C. NAND",
+        "D. AND"
+      ],
+      "correct_answer": "D. AND",
+      "explanation": "AND gate outputs 1 only if all inputs are 1.",
+      "topic": "Boolean Logic & Gates"
+    },
+    {
+      "id": 10,
+      "question": "Which gate outputs 1 when at least one input is 1?",
+      "options": [
+        "A. AND",
+        "B. NOR",
+        "C. OR",
+        "D. XOR"
+      ],
+      "correct_answer": "C. OR",
+      "explanation": "OR gate produces 1 when any input is 1.",
+      "topic": "Boolean Logic & Gates"
+    },
+    {
+      "id": 11,
+      "question": "Which gate produces the complement of AND?",
+      "options": [
+        "A. NOR",
+        "B. NAND",
+        "C. XOR",
+        "D. XNOR"
+      ],
+      "correct_answer": "B. NAND",
+      "explanation": "NAND is NOT-AND.",
+      "topic": "Boolean Logic & Gates"
+    },
+    {
+      "id": 12,
+      "question": "Which gate is called an inverter?",
+      "options": [
+        "A. NOT",
+        "B. OR",
+        "C. XOR",
+        "D. AND"
+      ],
+      "correct_answer": "A. NOT",
+      "explanation": "NOT gate inverts the input bit.",
+      "topic": "Boolean Logic & Gates"
+    },
+    {
+      "id": 13,
+      "question": "Which gate gives output 1 when inputs are different?",
+      "options": [
+        "A. XNOR",
+        "B. XOR",
+        "C. NAND",
+        "D. AND"
+      ],
+      "correct_answer": "B. XOR",
+      "explanation": "XOR outputs 1 when inputs differ.",
+      "topic": "Boolean Logic & Gates"
+    },
+    {
+      "id": 14,
+      "question": "Which gate is universal?",
+      "options": [
+        "A. NAND",
+        "B. XOR",
+        "C. XNOR",
+        "D. OR"
+      ],
+      "correct_answer": "A. NAND",
+      "explanation": "NAND alone can be used to implement any Boolean function.",
+      "topic": "Boolean Logic & Gates"
+    },
+    {
+      "id": 15,
+      "question": "Boolean expression A + A̅ equals:",
+      "options": [
+        "A. 0",
+        "B. 1",
+        "C. A",
+        "D. A̅"
+      ],
+      "correct_answer": "B. 1",
+      "explanation": "A OR NOT A is always true.",
+      "topic": "Boolean Logic & Gates"
+    },
+    {
+      "id": 16,
+      "question": "Boolean expression A · 1 equals:",
+      "options": [
+        "A. 0",
+        "B. 1",
+        "C. A",
+        "D. A̅"
+      ],
+      "correct_answer": "C. A",
+      "explanation": "ANDing with 1 leaves the value unchanged.",
+      "topic": "Boolean Logic & Gates"
+    },
+    {
+      "id": 17,
+      "question": "The ALU in a CPU is responsible for:",
+      "options": [
+        "A. Secondary storage",
+        "B. Arithmetic and logical operations",
+        "C. Printing output",
+        "D. Internet access"
+      ],
+      "correct_answer": "B. Arithmetic and logical operations",
+      "explanation": "The Arithmetic Logic Unit performs arithmetic and logical computations.",
+      "topic": "CPU Organization"
+    },
+    {
+      "id": 18,
+      "question": "The Control Unit mainly:",
+      "options": [
+        "A. Stores user files",
+        "B. Directs and coordinates operations of the computer",
+        "C. Prints documents",
+        "D. Connects to routers"
+      ],
+      "correct_answer": "B. Directs and coordinates operations of the computer",
+      "explanation": "The Control Unit manages instruction execution and control signals.",
+      "topic": "CPU Organization"
+    },
+    {
+      "id": 19,
+      "question": "A register is:",
+      "options": [
+        "A. A permanent storage disk",
+        "B. A small high-speed storage location inside CPU",
+        "C. A programming language",
+        "D. A network switch"
+      ],
+      "correct_answer": "B. A small high-speed storage location inside CPU",
+      "explanation": "Registers store data and instructions temporarily for fast CPU access.",
+      "topic": "CPU Organization"
+    },
+    {
+      "id": 20,
+      "question": "Program Counter stores:",
+      "options": [
+        "A. Address of next instruction",
+        "B. Address of previous instruction only",
+        "C. Sum of two operands",
+        "D. Cache block number"
+      ],
+      "correct_answer": "A. Address of next instruction",
+      "explanation": "The Program Counter holds the address of the next instruction to be fetched.",
+      "topic": "CPU Organization"
+    },
+    {
+      "id": 21,
+      "question": "Instruction Register stores:",
+      "options": [
+        "A. The currently executing instruction",
+        "B. The address of a variable",
+        "C. User password",
+        "D. The clock pulse"
+      ],
+      "correct_answer": "A. The currently executing instruction",
+      "explanation": "IR contains the instruction currently being decoded or executed.",
+      "topic": "CPU Organization"
+    },
+    {
+      "id": 22,
+      "question": "Which cycle fetches the instruction from memory?",
+      "options": [
+        "A. Execute cycle",
+        "B. Fetch cycle",
+        "C. Interrupt cycle",
+        "D. DMA cycle"
+      ],
+      "correct_answer": "B. Fetch cycle",
+      "explanation": "The fetch cycle retrieves the next instruction from memory.",
+      "topic": "CPU Organization"
+    },
+    {
+      "id": 23,
+      "question": "Microprocessor is best described as:",
+      "options": [
+        "A. An input device",
+        "B. CPU on a single chip",
+        "C. A type of RAM",
+        "D. A printer component"
+      ],
+      "correct_answer": "B. CPU on a single chip",
+      "explanation": "A microprocessor integrates CPU functions into one integrated circuit.",
+      "topic": "CPU Organization"
+    },
+    {
+      "id": 24,
+      "question": "The clock of a computer is used to:",
+      "options": [
+        "A. Store programs",
+        "B. Synchronize operations",
+        "C. Encrypt files",
+        "D. Measure internet speed"
+      ],
+      "correct_answer": "B. Synchronize operations",
+      "explanation": "The system clock generates timing pulses that coordinate operations.",
+      "topic": "CPU Organization"
+    },
+    {
+      "id": 25,
+      "question": "Which memory is fastest?",
+      "options": [
+        "A. Cache",
+        "B. RAM",
+        "C. Hard disk",
+        "D. Optical disk"
+      ],
+      "correct_answer": "A. Cache",
+      "explanation": "Cache is the fastest among these and is closest to the CPU.",
+      "topic": "Memory Hierarchy"
+    },
+    {
+      "id": 26,
+      "question": "Which memory is volatile?",
+      "options": [
+        "A. ROM",
+        "B. Hard disk",
+        "C. RAM",
+        "D. SSD"
+      ],
+      "correct_answer": "C. RAM",
+      "explanation": "RAM loses its contents when power is turned off.",
+      "topic": "Memory Hierarchy"
+    },
+    {
+      "id": 27,
+      "question": "ROM stands for:",
+      "options": [
+        "A. Random Output Memory",
+        "B. Read Only Memory",
+        "C. Read Open Memory",
+        "D. Run Only Memory"
+      ],
+      "correct_answer": "B. Read Only Memory",
+      "explanation": "ROM is non-volatile memory primarily used to store firmware.",
+      "topic": "Memory Hierarchy"
+    },
+    {
+      "id": 28,
+      "question": "Cache memory is used to:",
+      "options": [
+        "A. Increase secondary storage capacity",
+        "B. Reduce average memory access time",
+        "C. Replace CPU registers",
+        "D. Store permanent backups"
+      ],
+      "correct_answer": "B. Reduce average memory access time",
+      "explanation": "Cache stores frequently used data close to CPU to speed access.",
+      "topic": "Memory Hierarchy"
+    },
+    {
+      "id": 29,
+      "question": "Which memory is non-volatile?",
+      "options": [
+        "A. RAM",
+        "B. Cache",
+        "C. ROM",
+        "D. Register"
+      ],
+      "correct_answer": "C. ROM",
+      "explanation": "ROM retains data without power.",
+      "topic": "Memory Hierarchy"
+    },
+    {
+      "id": 30,
+      "question": "Which is the correct order from fastest to slowest?",
+      "options": [
+        "A. Hard Disk, RAM, Cache",
+        "B. Cache, RAM, Hard Disk",
+        "C. RAM, Cache, Hard Disk",
+        "D. Cache, Hard Disk, RAM"
+      ],
+      "correct_answer": "B. Cache, RAM, Hard Disk",
+      "explanation": "Cache is faster than RAM, and RAM is faster than hard disk.",
+      "topic": "Memory Hierarchy"
+    },
+    {
+      "id": 31,
+      "question": "Main memory is also called:",
+      "options": [
+        "A. Secondary memory",
+        "B. Primary memory",
+        "C. Virtual memory",
+        "D. Auxiliary bus"
+      ],
+      "correct_answer": "B. Primary memory",
+      "explanation": "Primary memory refers to main memory directly accessed by CPU.",
+      "topic": "Memory Hierarchy"
+    },
+    {
+      "id": 32,
+      "question": "Which cache mapping technique allows a block to be placed in any cache line?",
+      "options": [
+        "A. Direct mapping",
+        "B. Associative mapping",
+        "C. Set-associative only one-way",
+        "D. Fixed mapping"
+      ],
+      "correct_answer": "B. Associative mapping",
+      "explanation": "In associative mapping, a memory block can go to any cache line.",
+      "topic": "Cache Memory"
+    },
+    {
+      "id": 33,
+      "question": "DMA stands for:",
+      "options": [
+        "A. Direct Memory Access",
+        "B. Dynamic Memory Allocation",
+        "C. Digital Memory Array",
+        "D. Data Mode Access"
+      ],
+      "correct_answer": "A. Direct Memory Access",
+      "explanation": "DMA allows I/O devices to transfer data directly to or from memory.",
+      "topic": "I/O Organization"
+    },
+    {
+      "id": 34,
+      "question": "An interrupt is a signal that:",
+      "options": [
+        "A. Deletes memory contents",
+        "B. Requests CPU attention",
+        "C. Stops power supply",
+        "D. Encrypts data"
+      ],
+      "correct_answer": "B. Requests CPU attention",
+      "explanation": "Interrupts alert CPU to handle an event or service request.",
+      "topic": "I/O Organization"
+    },
+    {
+      "id": 35,
+      "question": "Which device is an input device?",
+      "options": [
+        "A. Monitor",
+        "B. Printer",
+        "C. Keyboard",
+        "D. Plotter"
+      ],
+      "correct_answer": "C. Keyboard",
+      "explanation": "Keyboard is used to input data into the computer.",
+      "topic": "I/O Organization"
+    },
+    {
+      "id": 36,
+      "question": "Which device is an output device?",
+      "options": [
+        "A. Mouse",
+        "B. Scanner",
+        "C. Monitor",
+        "D. Joystick"
+      ],
+      "correct_answer": "C. Monitor",
+      "explanation": "Monitor displays output from the computer.",
+      "topic": "I/O Organization"
+    },
+    {
+      "id": 37,
+      "question": "Which addressing mode uses the operand value directly in the instruction?",
+      "options": [
+        "A. Direct addressing",
+        "B. Immediate addressing",
+        "C. Indirect addressing",
+        "D. Indexed addressing"
+      ],
+      "correct_answer": "B. Immediate addressing",
+      "explanation": "Immediate addressing places the actual operand in the instruction itself.",
+      "topic": "Addressing Modes"
+    },
+    {
+      "id": 38,
+      "question": "In direct addressing, the instruction contains:",
+      "options": [
+        "A. The actual data",
+        "B. The address of the operand",
+        "C. The next instruction",
+        "D. The CPU clock value"
+      ],
+      "correct_answer": "B. The address of the operand",
+      "explanation": "Direct addressing specifies the memory address of operand directly.",
+      "topic": "Addressing Modes"
+    },
+    {
+      "id": 39,
+      "question": "Indexed addressing is useful for:",
+      "options": [
+        "A. Accessing array elements",
+        "B. Power supply control",
+        "C. Printing documents",
+        "D. Cache replacement"
+      ],
+      "correct_answer": "A. Accessing array elements",
+      "explanation": "Indexed addressing adds index value to a base address, useful for arrays.",
+      "topic": "Addressing Modes"
+    },
+    {
+      "id": 40,
+      "question": "Indirect addressing means the instruction points to:",
+      "options": [
+        "A. The operand itself",
+        "B. An address that contains the effective address",
+        "C. A constant only",
+        "D. Cache line"
+      ],
+      "correct_answer": "B. An address that contains the effective address",
+      "explanation": "Indirect addressing uses a memory location or register that holds the effective address.",
+      "topic": "Addressing Modes"
+    },
+    {
+      "id": 41,
+      "question": "Which of the following is a 3-bit binary addition result of 101 + 011?",
+      "options": [
+        "A. 1000",
+        "B. 111",
+        "C. 110",
+        "D. 1010"
+      ],
+      "correct_answer": "A. 1000",
+      "explanation": "5 + 3 = 8, which is 1000 in binary.",
+      "topic": "Arithmetic Basics"
+    },
+    {
+      "id": 42,
+      "question": "A half adder adds:",
+      "options": [
+        "A. Three bits",
+        "B. Two bits",
+        "C. Four bits",
+        "D. One byte"
+      ],
+      "correct_answer": "B. Two bits",
+      "explanation": "A half adder adds two single binary digits.",
+      "topic": "Arithmetic Basics"
+    },
+    {
+      "id": 43,
+      "question": "A full adder adds:",
+      "options": [
+        "A. Two input bits only",
+        "B. Three input bits including carry-in",
+        "C. Four input bits",
+        "D. Only decimal digits"
+      ],
+      "correct_answer": "B. Three input bits including carry-in",
+      "explanation": "A full adder adds two bits plus a carry input.",
+      "topic": "Arithmetic Basics"
+    },
+    {
+      "id": 44,
+      "question": "The binary result of 1111 + 0001 is:",
+      "options": [
+        "A. 10000",
+        "B. 1110",
+        "C. 0000",
+        "D. 0111"
+      ],
+      "correct_answer": "A. 10000",
+      "explanation": "15 + 1 = 16, which is 10000 in binary.",
+      "topic": "Arithmetic Basics"
+    },
+    {
+      "id": 45,
+      "question": "Which component is used to hold data temporarily during processing?",
+      "options": [
+        "A. Register",
+        "B. Plotter",
+        "C. ROM chip only",
+        "D. Optical drive"
+      ],
+      "correct_answer": "A. Register",
+      "explanation": "Registers temporarily hold data during processing.",
+      "topic": "CPU Organization"
+    },
+    {
+      "id": 46,
+      "question": "Which memory is typically used for firmware storage?",
+      "options": [
+        "A. RAM",
+        "B. Cache",
+        "C. ROM",
+        "D. Register"
+      ],
+      "correct_answer": "C. ROM",
+      "explanation": "Firmware is generally stored in ROM or flash-like non-volatile memory.",
+      "topic": "Memory Hierarchy"
+    }
+  ]
+}

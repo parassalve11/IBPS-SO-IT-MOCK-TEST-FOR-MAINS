@@ -1,0 +1,667 @@
+{
+  "oop_exam_questions": [
+    {
+      "id": 1,
+      "question": "Object-Oriented Programming is primarily based on:",
+      "options": [
+        "A. Functions only",
+        "B. Objects and classes",
+        "C. Tables and records",
+        "D. Packets and frames"
+      ],
+      "correct_answer": "B. Objects and classes",
+      "explanation": "OOP organizes programs around objects created from classes.",
+      "topic": "Class & Object"
+    },
+    {
+      "id": 2,
+      "question": "A class is:",
+      "options": [
+        "A. An instance of an object",
+        "B. A blueprint for creating objects",
+        "C. A compiler directive",
+        "D. A memory address"
+      ],
+      "correct_answer": "B. A blueprint for creating objects",
+      "explanation": "A class defines properties and behaviors for objects.",
+      "topic": "Class & Object"
+    },
+    {
+      "id": 3,
+      "question": "An object is:",
+      "options": [
+        "A. A template",
+        "B. An instance of a class",
+        "C. A keyword only",
+        "D. A data type modifier"
+      ],
+      "correct_answer": "B. An instance of a class",
+      "explanation": "Objects are created from classes and have actual state and behavior.",
+      "topic": "Class & Object"
+    },
+    {
+      "id": 4,
+      "question": "Which of the following best represents the state of an object?",
+      "options": [
+        "A. Methods",
+        "B. Attributes/data members",
+        "C. Classes only",
+        "D. Compilers"
+      ],
+      "correct_answer": "B. Attributes/data members",
+      "explanation": "The state of an object is represented by its data values.",
+      "topic": "Class & Object"
+    },
+    {
+      "id": 5,
+      "question": "Which of the following best represents the behavior of an object?",
+      "options": [
+        "A. Data members",
+        "B. Methods",
+        "C. Memory blocks",
+        "D. Headers"
+      ],
+      "correct_answer": "B. Methods",
+      "explanation": "Methods define what an object can do.",
+      "topic": "Class & Object"
+    },
+    {
+      "id": 6,
+      "question": "Encapsulation means:",
+      "options": [
+        "A. Hiding data and bundling it with methods",
+        "B. Reusing a parent class only",
+        "C. Executing multiple forms",
+        "D. Converting code to assembly"
+      ],
+      "correct_answer": "A. Hiding data and bundling it with methods",
+      "explanation": "Encapsulation binds data and methods together and restricts direct access.",
+      "topic": "Encapsulation"
+    },
+    {
+      "id": 7,
+      "question": "Data hiding is achieved in OOP mainly through:",
+      "options": [
+        "A. Public access",
+        "B. Access specifiers",
+        "C. Preprocessor directives",
+        "D. goto statement"
+      ],
+      "correct_answer": "B. Access specifiers",
+      "explanation": "Private and protected members help hide internal implementation.",
+      "topic": "Encapsulation"
+    },
+    {
+      "id": 8,
+      "question": "Which access specifier makes members accessible only within the same class?",
+      "options": [
+        "A. Public",
+        "B. Protected",
+        "C. Private",
+        "D. Global"
+      ],
+      "correct_answer": "C. Private",
+      "explanation": "Private members are accessible only within the class.",
+      "topic": "Encapsulation"
+    },
+    {
+      "id": 9,
+      "question": "Abstraction means:",
+      "options": [
+        "A. Showing only essential features and hiding details",
+        "B. Making all data public",
+        "C. Deleting derived classes",
+        "D. Increasing coupling"
+      ],
+      "correct_answer": "A. Showing only essential features and hiding details",
+      "explanation": "Abstraction focuses on relevant behavior while hiding implementation details.",
+      "topic": "Abstraction"
+    },
+    {
+      "id": 10,
+      "question": "Which of the following is the best example of abstraction?",
+      "options": [
+        "A. Using a car without knowing engine internals",
+        "B. Writing all code in one function",
+        "C. Making all variables global",
+        "D. Avoiding classes"
+      ],
+      "correct_answer": "A. Using a car without knowing engine internals",
+      "explanation": "Abstraction lets users work with simplified interfaces.",
+      "topic": "Abstraction"
+    },
+    {
+      "id": 11,
+      "question": "Inheritance allows:",
+      "options": [
+        "A. One class to acquire properties and behavior of another",
+        "B. Only objects to inherit from functions",
+        "C. Data to be deleted automatically",
+        "D. Programs to avoid methods"
+      ],
+      "correct_answer": "A. One class to acquire properties and behavior of another",
+      "explanation": "Inheritance promotes reuse by deriving new classes from existing ones.",
+      "topic": "Inheritance"
+    },
+    {
+      "id": 12,
+      "question": "The existing class from which another class derives is called:",
+      "options": [
+        "A. Derived class",
+        "B. Child class",
+        "C. Base class",
+        "D. Friend class"
+      ],
+      "correct_answer": "C. Base class",
+      "explanation": "The base class provides inherited members to derived classes.",
+      "topic": "Inheritance"
+    },
+    {
+      "id": 13,
+      "question": "A class that inherits from another class is called:",
+      "options": [
+        "A. Parent class",
+        "B. Base class",
+        "C. Derived class",
+        "D. Static class"
+      ],
+      "correct_answer": "C. Derived class",
+      "explanation": "The derived class extends or specializes the base class.",
+      "topic": "Inheritance"
+    },
+    {
+      "id": 14,
+      "question": "Which type of inheritance involves one base class and one derived class?",
+      "options": [
+        "A. Multiple inheritance",
+        "B. Single inheritance",
+        "C. Hierarchical inheritance",
+        "D. Hybrid inheritance"
+      ],
+      "correct_answer": "B. Single inheritance",
+      "explanation": "Single inheritance uses one parent and one child relationship.",
+      "topic": "Inheritance"
+    },
+    {
+      "id": 15,
+      "question": "Which type of inheritance allows a class to inherit from more than one base class?",
+      "options": [
+        "A. Single inheritance",
+        "B. Multilevel inheritance",
+        "C. Multiple inheritance",
+        "D. Hierarchical inheritance"
+      ],
+      "correct_answer": "C. Multiple inheritance",
+      "explanation": "Multiple inheritance means one class derives from multiple base classes.",
+      "topic": "Inheritance"
+    },
+    {
+      "id": 16,
+      "question": "Polymorphism means:",
+      "options": [
+        "A. Many forms of the same interface or function",
+        "B. One class cannot have methods",
+        "C. Variables are immutable",
+        "D. Data cannot be hidden"
+      ],
+      "correct_answer": "A. Many forms of the same interface or function",
+      "explanation": "Polymorphism allows the same operation to behave differently in different contexts.",
+      "topic": "Polymorphism"
+    },
+    {
+      "id": 17,
+      "question": "Method overloading is an example of:",
+      "options": [
+        "A. Runtime polymorphism",
+        "B. Compile-time polymorphism",
+        "C. Data hiding",
+        "D. Inheritance"
+      ],
+      "correct_answer": "B. Compile-time polymorphism",
+      "explanation": "Overloading is resolved by the compiler based on method signature.",
+      "topic": "Polymorphism"
+    },
+    {
+      "id": 18,
+      "question": "Method overriding is an example of:",
+      "options": [
+        "A. Compile-time polymorphism",
+        "B. Runtime polymorphism",
+        "C. Encapsulation",
+        "D. Aggregation only"
+      ],
+      "correct_answer": "B. Runtime polymorphism",
+      "explanation": "Overriding is typically resolved at runtime through dynamic dispatch.",
+      "topic": "Polymorphism"
+    },
+    {
+      "id": 19,
+      "question": "Which of the following distinguishes overloading from overriding?",
+      "options": [
+        "A. Overloading uses same method name with different parameters",
+        "B. Overloading requires inheritance always",
+        "C. Overriding happens without inheritance",
+        "D. Overriding changes only variable names"
+      ],
+      "correct_answer": "A. Overloading uses same method name with different parameters",
+      "explanation": "Overloading differs by parameter list, while overriding redefines inherited methods.",
+      "topic": "Overloading vs Overriding"
+    },
+    {
+      "id": 20,
+      "question": "Overriding generally requires:",
+      "options": [
+        "A. Only loops",
+        "B. Inheritance",
+        "C. Arrays",
+        "D. File handling"
+      ],
+      "correct_answer": "B. Inheritance",
+      "explanation": "A derived class overrides a method inherited from a base class.",
+      "topic": "Overloading vs Overriding"
+    },
+    {
+      "id": 21,
+      "question": "A constructor is:",
+      "options": [
+        "A. A method used to destroy objects",
+        "B. A special method used to initialize objects",
+        "C. A loop statement",
+        "D. An access specifier"
+      ],
+      "correct_answer": "B. A special method used to initialize objects",
+      "explanation": "Constructors are called when an object is created.",
+      "topic": "Constructor"
+    },
+    {
+      "id": 22,
+      "question": "A default constructor is one that:",
+      "options": [
+        "A. Takes no arguments",
+        "B. Must take one argument",
+        "C. Returns an integer",
+        "D. Is always private"
+      ],
+      "correct_answer": "A. Takes no arguments",
+      "explanation": "A default constructor can be called without passing parameters.",
+      "topic": "Constructor"
+    },
+    {
+      "id": 23,
+      "question": "A destructor is used to:",
+      "options": [
+        "A. Create objects",
+        "B. Initialize arrays",
+        "C. Release resources when an object is destroyed",
+        "D. Inherit classes"
+      ],
+      "correct_answer": "C. Release resources when an object is destroyed",
+      "explanation": "Destructors help clean up resources at object destruction.",
+      "topic": "Constructor"
+    },
+    {
+      "id": 24,
+      "question": "Which binding occurs at runtime?",
+      "options": [
+        "A. Static binding",
+        "B. Early binding",
+        "C. Dynamic binding",
+        "D. Lexical binding"
+      ],
+      "correct_answer": "C. Dynamic binding",
+      "explanation": "Dynamic binding resolves method calls at runtime.",
+      "topic": "Dynamic Binding"
+    },
+    {
+      "id": 25,
+      "question": "Message passing in OOP means:",
+      "options": [
+        "A. Objects communicate by invoking methods on one another",
+        "B. Messages are sent only over networks",
+        "C. Source code is encrypted",
+        "D. Memory is allocated statically"
+      ],
+      "correct_answer": "A. Objects communicate by invoking methods on one another",
+      "explanation": "Objects interact through method calls, often described as message passing.",
+      "topic": "Dynamic Binding"
+    },
+    {
+      "id": 26,
+      "question": "Which access specifier usually gives the widest access?",
+      "options": [
+        "A. Private",
+        "B. Protected",
+        "C. Public",
+        "D. Hidden"
+      ],
+      "correct_answer": "C. Public",
+      "explanation": "Public members can generally be accessed from outside the class.",
+      "topic": "Encapsulation"
+    },
+    {
+      "id": 27,
+      "question": "Protected members are generally accessible in:",
+      "options": [
+        "A. The class and its derived classes",
+        "B. Any external function always",
+        "C. Only global scope",
+        "D. Main function only"
+      ],
+      "correct_answer": "A. The class and its derived classes",
+      "explanation": "Protected members are visible within the class and subclasses.",
+      "topic": "Encapsulation"
+    },
+    {
+      "id": 28,
+      "question": "Which of the following best supports code reusability?",
+      "options": [
+        "A. Inheritance",
+        "B. goto",
+        "C. Global variables",
+        "D. Macros only"
+      ],
+      "correct_answer": "A. Inheritance",
+      "explanation": "Inheritance enables reuse and extension of existing class behavior.",
+      "topic": "Inheritance"
+    },
+    {
+      "id": 29,
+      "question": "If a method has the same name in parent and child class, and child provides a new definition, it is:",
+      "options": [
+        "A. Overloading",
+        "B. Overriding",
+        "C. Encapsulation",
+        "D. Aggregation"
+      ],
+      "correct_answer": "B. Overriding",
+      "explanation": "The child method replaces the inherited behavior through overriding.",
+      "topic": "Overloading vs Overriding"
+    },
+    {
+      "id": 30,
+      "question": "Which feature allows the same function name to work differently with different parameter lists?",
+      "options": [
+        "A. Inheritance",
+        "B. Overloading",
+        "C. Overriding",
+        "D. Abstraction"
+      ],
+      "correct_answer": "B. Overloading",
+      "explanation": "Overloading provides same method name with different signatures.",
+      "topic": "Overloading vs Overriding"
+    },
+    {
+      "id": 31,
+      "question": "A real-world example of inheritance is:",
+      "options": [
+        "A. Vehicle -> Car",
+        "B. Number -> Memory",
+        "C. Monitor -> Keyboard",
+        "D. Queue -> Packet"
+      ],
+      "correct_answer": "A. Vehicle -> Car",
+      "explanation": "Car can inherit common properties from Vehicle.",
+      "topic": "Inheritance"
+    },
+    {
+      "id": 32,
+      "question": "Which feature improves security by restricting direct data access?",
+      "options": [
+        "A. Encapsulation",
+        "B. Inheritance",
+        "C. Overloading",
+        "D. Recursion"
+      ],
+      "correct_answer": "A. Encapsulation",
+      "explanation": "Encapsulation helps protect data from improper access.",
+      "topic": "Encapsulation"
+    },
+    {
+      "id": 33,
+      "question": "An abstract class is mainly used to:",
+      "options": [
+        "A. Instantiate many objects directly only",
+        "B. Provide a common base with partial implementation",
+        "C. Replace arrays",
+        "D. Avoid inheritance"
+      ],
+      "correct_answer": "B. Provide a common base with partial implementation",
+      "explanation": "Abstract classes define common structure and behavior for derived classes.",
+      "topic": "Abstraction"
+    },
+    {
+      "id": 34,
+      "question": "Which principle says one interface, many implementations?",
+      "options": [
+        "A. Encapsulation",
+        "B. Polymorphism",
+        "C. Composition",
+        "D. Tokenization"
+      ],
+      "correct_answer": "B. Polymorphism",
+      "explanation": "Polymorphism allows a common interface to represent multiple behaviors.",
+      "topic": "Polymorphism"
+    },
+    {
+      "id": 35,
+      "question": "If all members of a class are public, then data hiding is:",
+      "options": [
+        "A. Fully achieved",
+        "B. Not achieved effectively",
+        "C. Replaced by inheritance",
+        "D. Increased"
+      ],
+      "correct_answer": "B. Not achieved effectively",
+      "explanation": "Public access exposes internal data and weakens encapsulation.",
+      "topic": "Encapsulation"
+    },
+    {
+      "id": 36,
+      "question": "Which of the following is not an OOP feature?",
+      "options": [
+        "A. Encapsulation",
+        "B. Polymorphism",
+        "C. Inheritance",
+        "D. Packet switching"
+      ],
+      "correct_answer": "D. Packet switching",
+      "explanation": "Packet switching is a networking concept, not an OOP concept.",
+      "topic": "OOP Basics"
+    },
+    {
+      "id": 37,
+      "question": "An object occupies:",
+      "options": [
+        "A. Compile-time only",
+        "B. Memory at runtime",
+        "C. ROM only",
+        "D. No memory"
+      ],
+      "correct_answer": "B. Memory at runtime",
+      "explanation": "Objects are runtime entities and consume memory.",
+      "topic": "Class & Object"
+    },
+    {
+      "id": 38,
+      "question": "Creating an object from a class is called:",
+      "options": [
+        "A. Abstraction",
+        "B. Instantiation",
+        "C. Compilation",
+        "D. Deletion"
+      ],
+      "correct_answer": "B. Instantiation",
+      "explanation": "Instantiation is the process of creating an object from a class.",
+      "topic": "Class & Object"
+    },
+    {
+      "id": 39,
+      "question": "Which relationship is stronger in OOP?",
+      "options": [
+        "A. 'is-a' relationship for inheritance",
+        "B. 'has-a' only always",
+        "C. 'near-a' relationship",
+        "D. 'same-as' relationship"
+      ],
+      "correct_answer": "A. 'is-a' relationship for inheritance",
+      "explanation": "Inheritance is commonly described as an 'is-a' relationship.",
+      "topic": "Inheritance"
+    },
+    {
+      "id": 40,
+      "question": "Which relationship best describes composition?",
+      "options": [
+        "A. is-a",
+        "B. has-a",
+        "C. equals-a",
+        "D. not-a"
+      ],
+      "correct_answer": "B. has-a",
+      "explanation": "Composition indicates one object contains or uses another.",
+      "topic": "OOP Basics"
+    },
+    {
+      "id": 41,
+      "question": "The main benefit of abstraction is:",
+      "options": [
+        "A. More code duplication",
+        "B. Reduced complexity for the user",
+        "C. Elimination of methods",
+        "D. No documentation"
+      ],
+      "correct_answer": "B. Reduced complexity for the user",
+      "explanation": "Abstraction helps users interact with simpler views of complex systems.",
+      "topic": "Abstraction"
+    },
+    {
+      "id": 42,
+      "question": "Dynamic binding is closely associated with:",
+      "options": [
+        "A. Overriding",
+        "B. Overloading",
+        "C. Preprocessor",
+        "D. Struct only"
+      ],
+      "correct_answer": "A. Overriding",
+      "explanation": "Runtime method selection is typically used with overriding.",
+      "topic": "Dynamic Binding"
+    },
+    {
+      "id": 43,
+      "question": "Which of the following is a benefit of OOP?",
+      "options": [
+        "A. Better modularity and reusability",
+        "B. No need for testing",
+        "C. No memory usage",
+        "D. No need for design"
+      ],
+      "correct_answer": "A. Better modularity and reusability",
+      "explanation": "OOP supports modular design, reuse, and maintainability.",
+      "topic": "OOP Basics"
+    },
+    {
+      "id": 44,
+      "question": "A constructor usually has:",
+      "options": [
+        "A. A return type",
+        "B. No return type",
+        "C. Only int return type",
+        "D. Only void return type"
+      ],
+      "correct_answer": "B. No return type",
+      "explanation": "Constructors do not specify a return type.",
+      "topic": "Constructor"
+    },
+    {
+      "id": 45,
+      "question": "Which of these best represents compile-time polymorphism?",
+      "options": [
+        "A. Method overriding",
+        "B. Virtual function dispatch",
+        "C. Method overloading",
+        "D. Dynamic binding"
+      ],
+      "correct_answer": "C. Method overloading",
+      "explanation": "Compile-time polymorphism is resolved by the compiler.",
+      "topic": "Polymorphism"
+    },
+    {
+      "id": 46,
+      "question": "Which of the following is true for objects of the same class?",
+      "options": [
+        "A. They always have identical data values",
+        "B. They share common structure and behavior definition",
+        "C. They are stored in ROM only",
+        "D. They cannot call methods"
+      ],
+      "correct_answer": "B. They share common structure and behavior definition",
+      "explanation": "Objects of the same class follow the same class blueprint.",
+      "topic": "Class & Object"
+    },
+    {
+      "id": 47,
+      "question": "When one class uses another class as a member, it is often called:",
+      "options": [
+        "A. Encapsulation only",
+        "B. Composition",
+        "C. Inversion",
+        "D. Parsing"
+      ],
+      "correct_answer": "B. Composition",
+      "explanation": "Composition is a has-a relationship between classes.",
+      "topic": "OOP Basics"
+    },
+    {
+      "id": 48,
+      "question": "Which keyword idea is most associated with hiding implementation and exposing interface?",
+      "options": [
+        "A. Abstraction",
+        "B. Sorting",
+        "C. Networking",
+        "D. Buffering"
+      ],
+      "correct_answer": "A. Abstraction",
+      "explanation": "Abstraction presents the essential interface while hiding details.",
+      "topic": "Abstraction"
+    },
+    {
+      "id": 49,
+      "question": "Which of the following usually improves maintainability in OOP?",
+      "options": [
+        "A. High coupling",
+        "B. Encapsulation and modular classes",
+        "C. Global variables everywhere",
+        "D. No interfaces"
+      ],
+      "correct_answer": "B. Encapsulation and modular classes",
+      "explanation": "Well-encapsulated modules are easier to maintain.",
+      "topic": "OOP Basics"
+    },
+    {
+      "id": 50,
+      "question": "Polymorphism with parent reference referring to child object is commonly used to achieve:",
+      "options": [
+        "A. Runtime flexibility",
+        "B. Only data hiding",
+        "C. Memory leaks",
+        "D. Infinite loops"
+      ],
+      "correct_answer": "A. Runtime flexibility",
+      "explanation": "This enables runtime selection of the appropriate overridden method.",
+      "topic": "Polymorphism"
+    },
+    {
+      "id": 51,
+      "question": "Which feature prevents unauthorized direct access to internal object data?",
+      "options": [
+        "A. Encapsulation",
+        "B. Inheritance",
+        "C. Overriding",
+        "D. Queue"
+      ],
+      "correct_answer": "A. Encapsulation",
+      "explanation": "Encapsulation controls access to object internals.",
+      "topic": "Encapsulation"
+    }
+  ]
+}

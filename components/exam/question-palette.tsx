@@ -30,7 +30,7 @@ export function QuestionPalette({
         <h2 className="mt-2 text-xl font-semibold text-slate-950">Navigate the paper</h2>
       </div>
 
-      <div className="mt-5 grid grid-cols-5 gap-2">
+      <div className="mt-5 grid max-h-[40vh] grid-cols-4 gap-2 overflow-y-auto pr-1 sm:max-h-[46vh] sm:grid-cols-5 lg:max-h-[58vh]">
         {questions.map((question, index) => {
           const status = getQuestionStatus(question.id, session);
           const statusMeta = QUESTION_STATUS_META[status];

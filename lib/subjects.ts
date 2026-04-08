@@ -1,38 +1,153 @@
-import { SUBJECT_REGISTRY } from "@/constants/subjects";
+import fs from "node:fs";
+import path from "node:path";
+import {
+  DEFAULT_SUBJECT_SETTINGS,
+  SUBJECT_METADATA_OVERRIDES
+} from "@/constants/subjects";
+import { formatDuration } from "@/lib/format";
 import { normalizeQuestions } from "@/lib/normalize-questions";
-import { SubjectConfig, SubjectSummary } from "@/types/exam";
+import { RawQuestionFile, SubjectConfig, SubjectSummary } from "@/types/exam";
 
-const normalizedQuestionCache = new Map<string, ReturnType<typeof normalizeQuestions>>();
+const SUBJECTS_DIR = path.join(process.cwd(), "data", "subjects");
+const ACRONYM_TOKENS: Record<string, string> = {
+  ai: "AI",
+  api: "API",
+  cn: "CN",
+  cpu: "CPU",
+  css: "CSS",
+  dbms: "DBMS",
+  dsa: "DSA",
+  html: "HTML",
+  ibps: "IBPS",
+  ip: "IP",
+  it: "IT",
+  json: "JSON",
+  ml: "ML",
+  oop: "OOP",
+  os: "OS",
+  sql: "SQL",
+  ui: "UI",
+  ux: "UX"
+};
+
+function getRawQuestionItems(rawData: RawQuestionFile) {
+  return Object.values(rawData).find((value) => Array.isArray(value)) ?? [];
+}
+
+function normalizeSlug(fileName: string) {
+  return fileName
+    .replace(/\.json$/i, "")
+    .trim()
+    .toLowerCase()
+    .replace(/[_\s]+/g, "-")
+    .replace(/-+/g, "-");
+}
+
+function titleCaseToken(token: string) {
+  const normalizedToken = token.toLowerCase();
+  return (
+    ACRONYM_TOKENS[normalizedToken] ??
+    `${normalizedToken.charAt(0).toUpperCase()}${normalizedToken.slice(1)}`
+  );
+}
+
+function humanizeSlug(slug: string) {
+  return slug
+    .split("-")
+    .filter(Boolean)
+    .map((token) => titleCaseToken(token))
+    .join(" ");
+}
+
+function deriveShortName(slug: string, name: string) {
+  if (ACRONYM_TOKENS[slug]) {
+    return ACRONYM_TOKENS[slug];
+  }
+
+  const initials = name
+    .split(" ")
+    .filter(Boolean)
+    .map((part) => part[0]?.toUpperCase() ?? "")
+    .join("");
+
+  return initials.slice(0, 4) || slug.slice(0, 4).toUpperCase();
+}
+
+function getDefaultDurationMinutes(questionCount: number) {
+  return Math.max(30, Math.ceil(questionCount * 0.5));
+}
+
+function readSubjectConfigs(): SubjectConfig[] {
+  if (!fs.existsSync(SUBJECTS_DIR)) {
+    return [];
+  }
+
+  return fs
+    .readdirSync(SUBJECTS_DIR)
+    .filter((fileName) => fileName.endsWith(".json"))
+    .sort((left, right) => left.localeCompare(right))
+    .map((fileName) => {
+      const slug = normalizeSlug(fileName);
+      const sourceFile = `data/subjects/${fileName}`;
+      const rawData = JSON.parse(
+        fs.readFileSync(path.join(SUBJECTS_DIR, fileName), "utf8")
+      ) as RawQuestionFile;
+      const questionCount = getRawQuestionItems(rawData).length;
+      const metadataOverride = SUBJECT_METADATA_OVERRIDES[slug] ?? {};
+      const name = metadataOverride.name ?? humanizeSlug(slug);
+      const shortName = metadataOverride.shortName ?? deriveShortName(slug, name);
+      const durationMinutes =
+        metadataOverride.durationMinutes ?? getDefaultDurationMinutes(questionCount);
+
+      return {
+        slug,
+        name,
+        shortName,
+        description:
+          metadataOverride.description ??
+          `Objective mock practice for ${name} loaded from local JSON question files.`,
+        durationMinutes,
+        estimatedDurationLabel:
+          metadataOverride.estimatedDurationLabel ?? formatDuration(durationMinutes),
+        typeLabel:
+          metadataOverride.typeLabel ?? DEFAULT_SUBJECT_SETTINGS.typeLabel,
+        difficultyLabel:
+          metadataOverride.difficultyLabel ?? DEFAULT_SUBJECT_SETTINGS.difficultyLabel,
+        accent: metadataOverride.accent ?? DEFAULT_SUBJECT_SETTINGS.accent,
+        sourceFile,
+        mode: metadataOverride.mode ?? DEFAULT_SUBJECT_SETTINGS.mode,
+        rawData
+      };
+    });
+}
 
 export function getSubjectBySlug(slug: string) {
-  return SUBJECT_REGISTRY[slug];
+  return readSubjectConfigs().find((subject) => subject.slug === slug);
 }
 
 export function getAllSubjectConfigs(): SubjectConfig[] {
-  return Object.values(SUBJECT_REGISTRY);
+  return readSubjectConfigs();
 }
 
 export function getNormalizedQuestionsForSubject(slug: string) {
-  if (normalizedQuestionCache.has(slug)) {
-    return normalizedQuestionCache.get(slug) ?? [];
-  }
-
   const subject = getSubjectBySlug(slug);
 
   if (!subject) {
     return [];
   }
 
-  const normalizedQuestions = normalizeQuestions(subject.rawData, subject);
-  normalizedQuestionCache.set(slug, normalizedQuestions);
-  return normalizedQuestions;
+  return normalizeQuestions(subject.rawData, subject);
 }
 
 export function getAllSubjectSummaries(): SubjectSummary[] {
-  return getAllSubjectConfigs().map((subject) => ({
-    ...subject,
-    questionCount: getNormalizedQuestionsForSubject(subject.slug).length
-  }));
+  return getAllSubjectConfigs().map((subject) => {
+    const questionCount = normalizeQuestions(subject.rawData, subject).length;
+
+    return {
+      ...subject,
+      questionCount
+    };
+  });
 }
 
 export function getSubjectSummary(slug: string) {
@@ -44,7 +159,7 @@ export function getSubjectSummary(slug: string) {
 
   return {
     ...subject,
-    questionCount: getNormalizedQuestionsForSubject(subject.slug).length
+    questionCount: normalizeQuestions(subject.rawData, subject).length
   };
 }
 
@@ -56,5 +171,5 @@ export function getTotalQuestionCount() {
 }
 
 export function getStaticSubjectParams() {
-  return Object.keys(SUBJECT_REGISTRY).map((subject) => ({ subject }));
+  return getAllSubjectConfigs().map((subject) => ({ subject: subject.slug }));
 }

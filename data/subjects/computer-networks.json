@@ -2,59 +2,150 @@
   "computer_networks_exam_questions": [
     {
       "id": 1,
-      "question": "Which protocol is primarily used to assign IP addresses dynamically to hosts in a network?",
+      "question": "Which layer of the OSI model is responsible for logical addressing and routing?",
       "options": [
-        "A. DNS",
-        "B. DHCP",
-        "C. ARP",
-        "D. SMTP"
+        "A. Data Link Layer",
+        "B. Network Layer",
+        "C. Transport Layer",
+        "D. Session Layer"
       ],
-      "correct_answer": "B. DHCP",
-      "explanation": "DHCP dynamically leases IP configuration details such as IP address, subnet mask, gateway, and DNS server to clients.",
-      "topic": "Network Services"
+      "correct_answer": "B. Network Layer",
+      "explanation": "The Network Layer handles logical addressing such as IP addresses and determines the best path for routing packets between networks.",
+      "topic": "OSI Model & TCP/IP Model"
     },
     {
       "id": 2,
-      "question": "Which device operates at the Data Link layer and forwards frames using MAC addresses?",
+      "question": "Which device primarily operates at the Data Link layer and forwards frames based on MAC addresses?",
       "options": [
         "A. Router",
         "B. Hub",
         "C. Switch",
-        "D. Repeater"
+        "D. Gateway"
       ],
       "correct_answer": "C. Switch",
-      "explanation": "A switch makes forwarding decisions using MAC addresses and works primarily at Layer 2 of the OSI model.",
-      "topic": "OSI Model"
+      "explanation": "A switch works mainly at the Data Link layer and uses MAC addresses to forward frames to the correct destination port.",
+      "topic": "OSI Model & TCP/IP Model"
     },
     {
       "id": 3,
-      "question": "What is the default port number used by HTTPS?",
+      "question": "In the TCP/IP model, the OSI Transport layer corresponds to which TCP/IP layer?",
       "options": [
-        "A. 21",
-        "B. 25",
-        "C. 80",
-        "D. 443"
+        "A. Internet Layer",
+        "B. Network Access Layer",
+        "C. Application Layer",
+        "D. Transport Layer"
       ],
-      "correct_answer": "D. 443",
-      "explanation": "HTTPS uses TCP port 443 by default to provide encrypted web communication using TLS/SSL.",
-      "topic": "Application Layer Protocols"
+      "correct_answer": "D. Transport Layer",
+      "explanation": "The TCP/IP model includes a Transport layer that performs functions similar to the OSI Transport layer, including segmentation and end-to-end delivery.",
+      "topic": "OSI Model & TCP/IP Model"
     },
     {
       "id": 4,
-      "question": "Which routing protocol uses Dijkstra's shortest path first algorithm?",
+      "question": "Which OSI layer is responsible for encryption, decryption, and data format translation?",
       "options": [
-        "A. RIP",
-        "B. OSPF",
-        "C. BGP",
-        "D. FTP"
+        "A. Presentation Layer",
+        "B. Session Layer",
+        "C. Physical Layer",
+        "D. Network Layer"
       ],
-      "correct_answer": "B. OSPF",
-      "explanation": "OSPF is a link-state routing protocol that computes routes using Dijkstra's SPF algorithm.",
-      "topic": "Routing Protocols"
+      "correct_answer": "A. Presentation Layer",
+      "explanation": "The Presentation layer handles syntax, encryption/decryption, and translation of data formats between systems.",
+      "topic": "OSI Model & TCP/IP Model"
     },
     {
       "id": 5,
-      "question": "In IPv4, which address class provides the default subnet mask 255.255.255.0?",
+      "question": "Which layer of the OSI model is responsible for reliable end-to-end communication and flow control?",
+      "options": [
+        "A. Transport Layer",
+        "B. Network Layer",
+        "C. Physical Layer",
+        "D. Application Layer"
+      ],
+      "correct_answer": "A. Transport Layer",
+      "explanation": "The Transport layer provides end-to-end communication, segmentation, flow control, and error recovery, especially through TCP.",
+      "topic": "OSI Model & TCP/IP Model"
+    },
+    {
+      "id": 6,
+      "question": "Which of the following correctly matches an OSI layer with its protocol example?",
+      "options": [
+        "A. Network Layer - HTTP",
+        "B. Application Layer - FTP",
+        "C. Data Link Layer - TCP",
+        "D. Transport Layer - IP"
+      ],
+      "correct_answer": "B. Application Layer - FTP",
+      "explanation": "FTP is an Application layer protocol. IP belongs to the Network layer and TCP belongs to the Transport layer.",
+      "topic": "OSI Model & TCP/IP Model"
+    },
+    {
+      "id": 7,
+      "question": "Which network device broadcasts incoming data to all connected ports without filtering?",
+      "options": [
+        "A. Switch",
+        "B. Router",
+        "C. Hub",
+        "D. Bridge"
+      ],
+      "correct_answer": "C. Hub",
+      "explanation": "A hub operates at the Physical layer and sends incoming signals to all ports, regardless of the intended destination.",
+      "topic": "Network Devices"
+    },
+    {
+      "id": 8,
+      "question": "Which device connects two different networks and makes forwarding decisions based on IP addresses?",
+      "options": [
+        "A. Bridge",
+        "B. Router",
+        "C. Repeater",
+        "D. Switch"
+      ],
+      "correct_answer": "B. Router",
+      "explanation": "A router operates at the Network layer and forwards packets between networks using logical addressing such as IP addresses.",
+      "topic": "Network Devices"
+    },
+    {
+      "id": 9,
+      "question": "What is the primary function of a repeater in a network?",
+      "options": [
+        "A. To filter traffic using MAC address",
+        "B. To regenerate and amplify signals",
+        "C. To assign IP addresses",
+        "D. To translate protocols"
+      ],
+      "correct_answer": "B. To regenerate and amplify signals",
+      "explanation": "A repeater extends transmission distance by regenerating weakened signals at the Physical layer.",
+      "topic": "Network Devices"
+    },
+    {
+      "id": 10,
+      "question": "Which device can connect networks using different protocols and perform protocol conversion?",
+      "options": [
+        "A. Gateway",
+        "B. Bridge",
+        "C. Hub",
+        "D. Repeater"
+      ],
+      "correct_answer": "A. Gateway",
+      "explanation": "A gateway connects dissimilar networks and can perform protocol conversion, making communication between unlike systems possible.",
+      "topic": "Network Devices"
+    },
+    {
+      "id": 11,
+      "question": "A bridge differs from a hub because a bridge:",
+      "options": [
+        "A. Operates only at Application layer",
+        "B. Filters traffic based on MAC addresses",
+        "C. Assigns IP addresses automatically",
+        "D. Always connects wireless devices"
+      ],
+      "correct_answer": "B. Filters traffic based on MAC addresses",
+      "explanation": "A bridge works at the Data Link layer and forwards frames selectively based on MAC addresses, unlike a hub that broadcasts to all ports.",
+      "topic": "Network Devices"
+    },
+    {
+      "id": 12,
+      "question": "Which IP address class has the default subnet mask 255.255.255.0?",
       "options": [
         "A. Class A",
         "B. Class B",
@@ -62,21 +153,1802 @@
         "D. Class D"
       ],
       "correct_answer": "C. Class C",
-      "explanation": "Class C IPv4 addresses have the default mask 255.255.255.0, corresponding to a /24 prefix.",
-      "topic": "IP Addressing"
+      "explanation": "Class C addresses use the default subnet mask 255.255.255.0, meaning the first 24 bits identify the network.",
+      "topic": "IP Addressing & Subnetting"
     },
     {
-      "id": 6,
-      "question": "Which TCP flag is used to gracefully terminate a connection?",
+      "id": 13,
+      "question": "Which of the following is a private IPv4 address?",
+      "options": [
+        "A. 8.8.8.8",
+        "B. 172.16.5.4",
+        "C. 11.0.0.1",
+        "D. 193.168.1.1"
+      ],
+      "correct_answer": "B. 172.16.5.4",
+      "explanation": "Private IPv4 ranges are 10.0.0.0/8, 172.16.0.0 to 172.31.255.255, and 192.168.0.0/16. The address 172.16.5.4 falls within a private range.",
+      "topic": "IP Addressing & Subnetting"
+    },
+    {
+      "id": 14,
+      "question": "How many usable host addresses are available in a /24 subnet?",
+      "options": [
+        "A. 254",
+        "B. 256",
+        "C. 255",
+        "D. 252"
+      ],
+      "correct_answer": "A. 254",
+      "explanation": "A /24 subnet has 8 host bits, giving 2^8 = 256 total addresses. Subtracting network and broadcast addresses leaves 254 usable hosts.",
+      "topic": "IP Addressing & Subnetting"
+    },
+    {
+      "id": 15,
+      "question": "CIDR notation /26 means the subnet mask has:",
+      "options": [
+        "A. 26 host bits",
+        "B. 26 network bits",
+        "C. 6 network bits",
+        "D. 32 host bits"
+      ],
+      "correct_answer": "B. 26 network bits",
+      "explanation": "In CIDR notation, /26 means the first 26 bits are used for the network portion, leaving 6 bits for host addresses.",
+      "topic": "IP Addressing & Subnetting"
+    },
+    {
+      "id": 16,
+      "question": "What is the subnet mask for a /27 network?",
+      "options": [
+        "A. 255.255.255.192",
+        "B. 255.255.255.224",
+        "C. 255.255.255.240",
+        "D. 255.255.255.248"
+      ],
+      "correct_answer": "B. 255.255.255.224",
+      "explanation": "A /27 network uses 27 bits for the network. The last octet becomes 11100000 in binary, which equals 224.",
+      "topic": "IP Addressing & Subnetting"
+    },
+    {
+      "id": 17,
+      "question": "Which IP address is the loopback address commonly used for testing the local TCP/IP stack?",
+      "options": [
+        "A. 0.0.0.0",
+        "B. 255.255.255.255",
+        "C. 127.0.0.1",
+        "D. 169.254.1.1"
+      ],
+      "correct_answer": "C. 127.0.0.1",
+      "explanation": "The address 127.0.0.1 is the standard loopback address used to test networking software on the local machine.",
+      "topic": "IP Addressing & Subnetting"
+    },
+    {
+      "id": 18,
+      "question": "APIPA addresses in IPv4 belong to which range?",
+      "options": [
+        "A. 10.0.0.0/8",
+        "B. 127.0.0.0/8",
+        "C. 169.254.0.0/16",
+        "D. 192.168.0.0/16"
+      ],
+      "correct_answer": "C. 169.254.0.0/16",
+      "explanation": "Automatic Private IP Addressing uses the range 169.254.0.0/16 when a host cannot obtain an address from DHCP.",
+      "topic": "IP Addressing & Subnetting"
+    },
+    {
+      "id": 19,
+      "question": "How many usable hosts are available in a /30 subnet?",
+      "options": [
+        "A. 4",
+        "B. 2",
+        "C. 6",
+        "D. 14"
+      ],
+      "correct_answer": "B. 2",
+      "explanation": "A /30 subnet has 2 host bits, giving 4 total addresses. After excluding network and broadcast addresses, 2 usable hosts remain.",
+      "topic": "IP Addressing & Subnetting"
+    },
+    {
+      "id": 20,
+      "question": "Which routing method requires routes to be entered manually by the administrator?",
+      "options": [
+        "A. Default routing",
+        "B. Dynamic routing",
+        "C. Static routing",
+        "D. Adaptive routing"
+      ],
+      "correct_answer": "C. Static routing",
+      "explanation": "In static routing, routes are manually configured and do not change automatically in response to network changes.",
+      "topic": "Routing & Switching Basics"
+    },
+    {
+      "id": 21,
+      "question": "What is the purpose of the default gateway in a LAN?",
+      "options": [
+        "A. To assign MAC addresses",
+        "B. To forward packets to destinations outside the local network",
+        "C. To resolve domain names",
+        "D. To encrypt all outgoing traffic"
+      ],
+      "correct_answer": "B. To forward packets to destinations outside the local network",
+      "explanation": "The default gateway is the router interface that forwards traffic from the local network to remote networks.",
+      "topic": "Routing & Switching Basics"
+    },
+    {
+      "id": 22,
+      "question": "A switch learns MAC addresses by examining the:",
+      "options": [
+        "A. Destination MAC address of incoming frames only",
+        "B. Source MAC address of incoming frames",
+        "C. Source IP address of incoming packets",
+        "D. Port number in TCP header"
+      ],
+      "correct_answer": "B. Source MAC address of incoming frames",
+      "explanation": "A switch builds its MAC address table by recording the source MAC address and the port on which a frame arrives.",
+      "topic": "Routing & Switching Basics"
+    },
+    {
+      "id": 23,
+      "question": "Which routing protocol is a distance-vector protocol?",
+      "options": [
+        "A. OSPF",
+        "B. RIP",
+        "C. BGP",
+        "D. IS-IS"
+      ],
+      "correct_answer": "B. RIP",
+      "explanation": "RIP is a classic distance-vector routing protocol that uses hop count as its routing metric.",
+      "topic": "Routing & Switching Basics"
+    },
+    {
+      "id": 24,
+      "question": "Which of the following best describes packet switching?",
+      "options": [
+        "A. A dedicated path is reserved for the entire communication",
+        "B. Data is sent as fixed-size electrical signals only",
+        "C. Data is broken into packets that may take different paths to the destination",
+        "D. Only voice communication is supported"
+      ],
+      "correct_answer": "C. Data is broken into packets that may take different paths to the destination",
+      "explanation": "Packet switching divides data into packets, each of which may travel independently across the network before being reassembled at the destination.",
+      "topic": "Routing & Switching Basics"
+    },
+    {
+      "id": 25,
+      "question": "Which protocol provides reliable, connection-oriented service?",
+      "options": [
+        "A. UDP",
+        "B. IP",
+        "C. TCP",
+        "D. ARP"
+      ],
+      "correct_answer": "C. TCP",
+      "explanation": "TCP is connection-oriented and provides reliability through acknowledgments, sequencing, retransmission, and flow control.",
+      "topic": "Transport Layer"
+    },
+    {
+      "id": 26,
+      "question": "Which protocol is preferred for real-time applications like live video streaming because of low overhead?",
+      "options": [
+        "A. TCP",
+        "B. UDP",
+        "C. FTP",
+        "D. SMTP"
+      ],
+      "correct_answer": "B. UDP",
+      "explanation": "UDP is connectionless and has low overhead, making it suitable for real-time applications where speed is preferred over guaranteed delivery.",
+      "topic": "Transport Layer"
+    },
+    {
+      "id": 27,
+      "question": "How many steps are there in the TCP three-way handshake?",
+      "options": [
+        "A. 2",
+        "B. 3",
+        "C. 4",
+        "D. 5"
+      ],
+      "correct_answer": "B. 3",
+      "explanation": "TCP connection establishment uses three steps: SYN, SYN-ACK, and ACK.",
+      "topic": "Transport Layer"
+    },
+    {
+      "id": 28,
+      "question": "Which field is used by TCP for flow control?",
+      "options": [
+        "A. Sequence Number only",
+        "B. Window Size",
+        "C. Checksum only",
+        "D. Port Address only"
+      ],
+      "correct_answer": "B. Window Size",
+      "explanation": "TCP uses the window size field to implement flow control, indicating how much data the receiver can accept.",
+      "topic": "Transport Layer"
+    },
+    {
+      "id": 29,
+      "question": "Port numbers are used to identify:",
+      "options": [
+        "A. Physical devices in a LAN",
+        "B. Specific applications or processes on a host",
+        "C. MAC addresses of routers",
+        "D. Only encrypted sessions"
+      ],
+      "correct_answer": "B. Specific applications or processes on a host",
+      "explanation": "Port numbers help the Transport layer deliver data to the correct application or process running on a host.",
+      "topic": "Transport Layer"
+    },
+    {
+      "id": 30,
+      "question": "Which TCP flag is used to terminate a connection gracefully?",
       "options": [
         "A. SYN",
         "B. ACK",
         "C. FIN",
-        "D. RST"
+        "D. PSH"
       ],
       "correct_answer": "C. FIN",
-      "explanation": "The FIN flag indicates that a sender has finished sending data and wants to close the connection gracefully.",
+      "explanation": "The FIN flag is used to request graceful termination of a TCP connection after data transfer is complete.",
       "topic": "Transport Layer"
+    },
+    {
+      "id": 31,
+      "question": "Which protocol is primarily used to translate domain names into IP addresses?",
+      "options": [
+        "A. DHCP",
+        "B. DNS",
+        "C. FTP",
+        "D. ARP"
+      ],
+      "correct_answer": "B. DNS",
+      "explanation": "DNS resolves human-readable domain names such as example.com into IP addresses used by network devices.",
+      "topic": "Application Layer Protocols"
+    },
+    {
+      "id": 32,
+      "question": "Which protocol dynamically assigns IP addresses to hosts in a network?",
+      "options": [
+        "A. SMTP",
+        "B. DNS",
+        "C. DHCP",
+        "D. HTTP"
+      ],
+      "correct_answer": "C. DHCP",
+      "explanation": "DHCP automatically provides IP addresses and other network configuration details to hosts on a network.",
+      "topic": "Application Layer Protocols"
+    },
+    {
+      "id": 33,
+      "question": "Which protocol is used to transfer web pages securely over the Internet?",
+      "options": [
+        "A. HTTP",
+        "B. HTTPS",
+        "C. FTP",
+        "D. Telnet"
+      ],
+      "correct_answer": "B. HTTPS",
+      "explanation": "HTTPS is HTTP over SSL/TLS, providing encrypted and secure communication for web traffic.",
+      "topic": "Application Layer Protocols"
+    },
+    {
+      "id": 34,
+      "question": "Which protocol is used to send email from a client to a mail server?",
+      "options": [
+        "A. POP3",
+        "B. IMAP",
+        "C. SMTP",
+        "D. SNMP"
+      ],
+      "correct_answer": "C. SMTP",
+      "explanation": "SMTP is used for sending emails from clients to mail servers and between mail servers.",
+      "topic": "Application Layer Protocols"
+    },
+    {
+      "id": 35,
+      "question": "Which protocol allows users to download emails and usually removes them from the server by default?",
+      "options": [
+        "A. IMAP",
+        "B. POP3",
+        "C. SMTP",
+        "D. DNS"
+      ],
+      "correct_answer": "B. POP3",
+      "explanation": "POP3 is used for retrieving emails and traditionally downloads them to the local machine, often deleting them from the server.",
+      "topic": "Application Layer Protocols"
+    },
+    {
+      "id": 36,
+      "question": "Which protocol is better suited than POP3 when the same mailbox is accessed from multiple devices?",
+      "options": [
+        "A. ARP",
+        "B. IMAP",
+        "C. FTP",
+        "D. Telnet"
+      ],
+      "correct_answer": "B. IMAP",
+      "explanation": "IMAP keeps emails on the server and synchronizes mailbox state across multiple devices, making it better for multi-device access.",
+      "topic": "Application Layer Protocols"
+    },
+    {
+      "id": 37,
+      "question": "Which protocol is commonly used for remote login in a secure manner?",
+      "options": [
+        "A. Telnet",
+        "B. SSH",
+        "C. FTP",
+        "D. TFTP"
+      ],
+      "correct_answer": "B. SSH",
+      "explanation": "SSH provides secure remote login by encrypting communication, unlike Telnet which sends data in plain text.",
+      "topic": "Application Layer Protocols"
+    },
+    {
+      "id": 38,
+      "question": "Which protocol is used for file transfer between systems over a TCP/IP network?",
+      "options": [
+        "A. FTP",
+        "B. ARP",
+        "C. RIP",
+        "D. ICMP"
+      ],
+      "correct_answer": "A. FTP",
+      "explanation": "FTP is an application layer protocol designed for transferring files between systems over a network.",
+      "topic": "Application Layer Protocols"
+    },
+    {
+      "id": 39,
+      "question": "Which error detection technique uses polynomial division?",
+      "options": [
+        "A. Parity Check",
+        "B. CRC",
+        "C. Hamming Code",
+        "D. Check Digit"
+      ],
+      "correct_answer": "B. CRC",
+      "explanation": "Cyclic Redundancy Check uses polynomial division to generate a remainder that helps detect transmission errors.",
+      "topic": "Error/Flow Control & Data Link Basics"
+    },
+    {
+      "id": 40,
+      "question": "In Stop-and-Wait ARQ, the sender:",
+      "options": [
+        "A. Sends all frames continuously without waiting",
+        "B. Sends one frame and waits for acknowledgment before sending the next",
+        "C. Sends two frames at a time",
+        "D. Uses only negative acknowledgments"
+      ],
+      "correct_answer": "B. Sends one frame and waits for acknowledgment before sending the next",
+      "explanation": "Stop-and-Wait ARQ sends a single frame and waits for its acknowledgment before proceeding, ensuring reliability but reducing efficiency.",
+      "topic": "Error/Flow Control & Data Link Basics"
+    },
+    {
+      "id": 41,
+      "question": "Which method can detect single-bit errors using an extra bit?",
+      "options": [
+        "A. Parity bit",
+        "B. Subnetting",
+        "C. Piggybacking",
+        "D. Multiplexing"
+      ],
+      "correct_answer": "A. Parity bit",
+      "explanation": "A parity bit is added to make the number of 1s either even or odd, helping detect single-bit errors during transmission.",
+      "topic": "Error/Flow Control & Data Link Basics"
+    },
+    {
+      "id": 42,
+      "question": "Sliding window protocol improves efficiency compared to Stop-and-Wait by:",
+      "options": [
+        "A. Eliminating acknowledgments entirely",
+        "B. Allowing multiple frames to be sent before requiring acknowledgment",
+        "C. Using only one-bit sequence numbers",
+        "D. Working only with UDP"
+      ],
+      "correct_answer": "B. Allowing multiple frames to be sent before requiring acknowledgment",
+      "explanation": "The sliding window protocol allows several frames to be in transit simultaneously, improving link utilization and throughput.",
+      "topic": "Error/Flow Control & Data Link Basics"
+    },
+    {
+      "id": 43,
+      "question": "Which device or system is used to filter incoming and outgoing network traffic based on security rules?",
+      "options": [
+        "A. Repeater",
+        "B. Firewall",
+        "C. Modem",
+        "D. Bridge"
+      ],
+      "correct_answer": "B. Firewall",
+      "explanation": "A firewall enforces security policies by allowing or blocking traffic based on predefined rules.",
+      "topic": "Network Security Basics"
+    },
+    {
+      "id": 44,
+      "question": "A VPN is primarily used to:",
+      "options": [
+        "A. Increase CPU speed",
+        "B. Create a secure tunnel over a public network",
+        "C. Replace DNS servers",
+        "D. Convert IPv4 into IPv6"
+      ],
+      "correct_answer": "B. Create a secure tunnel over a public network",
+      "explanation": "A Virtual Private Network establishes an encrypted tunnel over an untrusted network such as the Internet for secure communication.",
+      "topic": "Network Security Basics"
+    },
+    {
+      "id": 45,
+      "question": "Which protocol suite is responsible for secure communication on the web and is used by HTTPS?",
+      "options": [
+        "A. SSL/TLS",
+        "B. FTP/TFTP",
+        "C. RIP/OSPF",
+        "D. ARP/RARP"
+      ],
+      "correct_answer": "A. SSL/TLS",
+      "explanation": "HTTPS uses SSL/TLS to encrypt communication between clients and web servers and ensure secure data exchange.",
+      "topic": "Network Security Basics"
+    },
+    {
+      "id": 46,
+      "question": "IP spoofing refers to:",
+      "options": [
+        "A. Hiding the MAC address inside DNS",
+        "B. Changing the source IP address in packets to impersonate another system",
+        "C. Encrypting IP headers using TLS",
+        "D. Compressing packets before routing"
+      ],
+      "correct_answer": "B. Changing the source IP address in packets to impersonate another system",
+      "explanation": "IP spoofing involves forging the source IP address in a packet to disguise the sender's identity or impersonate another host.",
+      "topic": "Network Security Basics"
+    },
+    {
+      "id": 47,
+      "question": "Which wireless standard is commonly associated with Wi-Fi networks?",
+      "options": [
+        "A. IEEE 802.3",
+        "B. IEEE 802.11",
+        "C. IEEE 802.15",
+        "D. IEEE 802.16"
+      ],
+      "correct_answer": "B. IEEE 802.11",
+      "explanation": "IEEE 802.11 defines wireless LAN standards commonly known as Wi-Fi.",
+      "topic": "Wireless & Modern Networking Basics"
+    },
+    {
+      "id": 48,
+      "question": "Bluetooth is mainly used for:",
+      "options": [
+        "A. Long-distance satellite communication",
+        "B. Short-range wireless communication between devices",
+        "C. Routing packets on the Internet",
+        "D. Domain name resolution"
+      ],
+      "correct_answer": "B. Short-range wireless communication between devices",
+      "explanation": "Bluetooth is designed for low-power, short-range wireless communication between devices such as headsets, keyboards, and phones.",
+      "topic": "Wireless & Modern Networking Basics"
+    },
+    {
+      "id": 49,
+      "question": "An access point in a wireless network primarily:",
+      "options": [
+        "A. Converts analog signals to digital only",
+        "B. Connects wireless clients to a wired network",
+        "C. Assigns MAC addresses",
+        "D. Replaces the need for IP addressing"
+      ],
+      "correct_answer": "B. Connects wireless clients to a wired network",
+      "explanation": "A wireless access point allows Wi-Fi devices to connect to a wired LAN and communicate with other network resources.",
+      "topic": "Wireless & Modern Networking Basics"
+    },
+    {
+      "id": 50,
+      "question": "Which network type typically covers a small geographic area such as a room, building, or campus floor?",
+      "options": [
+        "A. WAN",
+        "B. MAN",
+        "C. LAN",
+        "D. PAN"
+      ],
+      "correct_answer": "C. LAN",
+      "explanation": "A Local Area Network covers a limited geographic area such as a home, office, or small campus section.",
+      "topic": "Wireless & Modern Networking Basics"
+    },
+    {
+      "id": 51,
+      "question": "Which OSI layer is responsible for framing and physical addressing?",
+      "options": [
+        "A. Physical Layer",
+        "B. Data Link Layer",
+        "C. Network Layer",
+        "D. Transport Layer"
+      ],
+      "correct_answer": "B. Data Link Layer",
+      "explanation": "The Data Link layer handles framing, MAC addressing, and node-to-node delivery over a single link.",
+      "topic": "OSI Model & TCP/IP Model"
+    },
+    {
+      "id": 52,
+      "question": "In the OSI model, a router primarily processes which protocol data unit?",
+      "options": [
+        "A. Bits",
+        "B. Frames",
+        "C. Packets",
+        "D. Segments"
+      ],
+      "correct_answer": "C. Packets",
+      "explanation": "Routers operate mainly at the Network layer, where the protocol data unit is a packet.",
+      "topic": "OSI Model & TCP/IP Model"
+    },
+    {
+      "id": 53,
+      "question": "Which TCP/IP layer combines the functions of the OSI Session, Presentation, and Application layers?",
+      "options": [
+        "A. Internet Layer",
+        "B. Transport Layer",
+        "C. Application Layer",
+        "D. Network Access Layer"
+      ],
+      "correct_answer": "C. Application Layer",
+      "explanation": "In the TCP/IP model, the Application layer broadly covers the upper three OSI layers.",
+      "topic": "OSI Model & TCP/IP Model"
+    },
+    {
+      "id": 54,
+      "question": "Which layer is responsible for converting bits into electrical, optical, or radio signals?",
+      "options": [
+        "A. Physical Layer",
+        "B. Data Link Layer",
+        "C. Session Layer",
+        "D. Network Layer"
+      ],
+      "correct_answer": "A. Physical Layer",
+      "explanation": "The Physical layer handles the transmission of raw bits through the communication medium.",
+      "topic": "OSI Model & TCP/IP Model"
+    },
+    {
+      "id": 55,
+      "question": "Which addressing is used at the Data Link layer?",
+      "options": [
+        "A. Port address",
+        "B. Logical address",
+        "C. MAC address",
+        "D. URL address"
+      ],
+      "correct_answer": "C. MAC address",
+      "explanation": "MAC addresses are physical addresses used by the Data Link layer for local delivery.",
+      "topic": "OSI Model & TCP/IP Model"
+    },
+    {
+      "id": 56,
+      "question": "Which topology connects every node directly to every other node?",
+      "options": [
+        "A. Bus",
+        "B. Ring",
+        "C. Mesh",
+        "D. Star"
+      ],
+      "correct_answer": "C. Mesh",
+      "explanation": "In a mesh topology, each node has a direct link to every other node, providing high redundancy.",
+      "topic": "Network Devices"
+    },
+    {
+      "id": 57,
+      "question": "Which device is used to modulate and demodulate signals for communication over analog lines?",
+      "options": [
+        "A. Router",
+        "B. Modem",
+        "C. Switch",
+        "D. Access Point"
+      ],
+      "correct_answer": "B. Modem",
+      "explanation": "A modem converts digital data to analog signals and back again for transmission over analog media.",
+      "topic": "Network Devices"
+    },
+    {
+      "id": 58,
+      "question": "Which device divides a network into multiple collision domains but typically keeps one broadcast domain per VLAN?",
+      "options": [
+        "A. Hub",
+        "B. Repeater",
+        "C. Switch",
+        "D. Modem"
+      ],
+      "correct_answer": "C. Switch",
+      "explanation": "A switch creates separate collision domains for each port, improving LAN efficiency.",
+      "topic": "Network Devices"
+    },
+    {
+      "id": 59,
+      "question": "Which transmission medium is least affected by electromagnetic interference?",
+      "options": [
+        "A. Unshielded twisted pair",
+        "B. Coaxial cable",
+        "C. Optical fiber",
+        "D. Telephone cable"
+      ],
+      "correct_answer": "C. Optical fiber",
+      "explanation": "Optical fiber carries data as light and is highly resistant to electromagnetic interference.",
+      "topic": "Network Devices"
+    },
+    {
+      "id": 60,
+      "question": "Which network device works like an intelligent repeater and filters traffic using MAC addresses?",
+      "options": [
+        "A. Bridge",
+        "B. Hub",
+        "C. Gateway",
+        "D. Repeater"
+      ],
+      "correct_answer": "A. Bridge",
+      "explanation": "A bridge forwards or filters frames based on MAC addresses, unlike a hub which broadcasts all traffic.",
+      "topic": "Network Devices"
+    },
+    {
+      "id": 61,
+      "question": "Which IPv4 class provides the largest number of host addresses per network in the classful scheme?",
+      "options": [
+        "A. Class A",
+        "B. Class B",
+        "C. Class C",
+        "D. Class D"
+      ],
+      "correct_answer": "A. Class A",
+      "explanation": "Class A uses 8 bits for the network and 24 bits for hosts in the default classful scheme.",
+      "topic": "IP Addressing & Subnetting"
+    },
+    {
+      "id": 62,
+      "question": "What is the default subnet mask for a Class B address?",
+      "options": [
+        "A. 255.0.0.0",
+        "B. 255.255.0.0",
+        "C. 255.255.255.0",
+        "D. 255.255.255.255"
+      ],
+      "correct_answer": "B. 255.255.0.0",
+      "explanation": "Class B addresses use the default mask 255.255.0.0, or /16.",
+      "topic": "IP Addressing & Subnetting"
+    },
+    {
+      "id": 63,
+      "question": "Which of the following is a valid subnet mask?",
+      "options": [
+        "A. 255.0.255.0",
+        "B. 255.224.255.0",
+        "C. 255.255.240.0",
+        "D. 255.255.255.5"
+      ],
+      "correct_answer": "C. 255.255.240.0",
+      "explanation": "A valid subnet mask has contiguous 1s followed by contiguous 0s in binary form.",
+      "topic": "IP Addressing & Subnetting"
+    },
+    {
+      "id": 64,
+      "question": "How many subnets are created by borrowing 3 bits from the host portion of a classful network?",
+      "options": [
+        "A. 4",
+        "B. 6",
+        "C. 8",
+        "D. 16"
+      ],
+      "correct_answer": "C. 8",
+      "explanation": "Borrowing 3 bits creates 2^3 = 8 subnets.",
+      "topic": "IP Addressing & Subnetting"
+    },
+    {
+      "id": 65,
+      "question": "How many usable hosts are available in a /29 subnet?",
+      "options": [
+        "A. 6",
+        "B. 8",
+        "C. 14",
+        "D. 30"
+      ],
+      "correct_answer": "A. 6",
+      "explanation": "A /29 subnet has 3 host bits, giving 8 total addresses; 6 are usable after excluding network and broadcast.",
+      "topic": "IP Addressing & Subnetting"
+    },
+    {
+      "id": 66,
+      "question": "Which address in a subnet is reserved for all hosts on that subnet?",
+      "options": [
+        "A. Loopback address",
+        "B. Broadcast address",
+        "C. Default gateway address",
+        "D. APIPA address"
+      ],
+      "correct_answer": "B. Broadcast address",
+      "explanation": "The broadcast address has all host bits set to 1 and is used to reach all hosts in the subnet.",
+      "topic": "IP Addressing & Subnetting"
+    },
+    {
+      "id": 67,
+      "question": "What is the network address of 192.168.10.34/27?",
+      "options": [
+        "A. 192.168.10.0",
+        "B. 192.168.10.32",
+        "C. 192.168.10.34",
+        "D. 192.168.10.64"
+      ],
+      "correct_answer": "B. 192.168.10.32",
+      "explanation": "A /27 subnet increments by 32 in the last octet; 34 falls in the 32-63 block, so the network address is 192.168.10.32.",
+      "topic": "IP Addressing & Subnetting"
+    },
+    {
+      "id": 68,
+      "question": "Which IPv6 address type is equivalent to broadcast in IPv4?",
+      "options": [
+        "A. Anycast",
+        "B. Multicast",
+        "C. Loopback",
+        "D. Unicast"
+      ],
+      "correct_answer": "B. Multicast",
+      "explanation": "IPv6 does not use broadcast; multicast is used to send packets to multiple interested hosts.",
+      "topic": "IP Addressing & Subnetting"
+    },
+    {
+      "id": 69,
+      "question": "Which prefix length corresponds to the IPv6 subnet mask commonly used for standard LANs?",
+      "options": [
+        "A. /32",
+        "B. /48",
+        "C. /64",
+        "D. /128"
+      ],
+      "correct_answer": "C. /64",
+      "explanation": "A /64 prefix is the standard subnet size used in most IPv6 LAN deployments.",
+      "topic": "IP Addressing & Subnetting"
+    },
+    {
+      "id": 70,
+      "question": "Which of the following represents the unspecified IPv4 address?",
+      "options": [
+        "A. 0.0.0.0",
+        "B. 127.0.0.1",
+        "C. 255.255.255.255",
+        "D. 169.254.0.1"
+      ],
+      "correct_answer": "A. 0.0.0.0",
+      "explanation": "0.0.0.0 is used to indicate an unknown or unspecified address, such as before a host obtains an IP.",
+      "topic": "IP Addressing & Subnetting"
+    },
+    {
+      "id": 71,
+      "question": "Which routing protocol is a link-state protocol?",
+      "options": [
+        "A. RIP",
+        "B. OSPF",
+        "C. BGP",
+        "D. RARP"
+      ],
+      "correct_answer": "B. OSPF",
+      "explanation": "OSPF is a link-state routing protocol that builds a complete topology map and calculates shortest paths.",
+      "topic": "Routing & Switching Basics"
+    },
+    {
+      "id": 72,
+      "question": "Which metric is primarily used by RIP?",
+      "options": [
+        "A. Bandwidth",
+        "B. Delay",
+        "C. Hop count",
+        "D. Reliability"
+      ],
+      "correct_answer": "C. Hop count",
+      "explanation": "RIP uses hop count as its metric and traditionally limits routes to 15 hops.",
+      "topic": "Routing & Switching Basics"
+    },
+    {
+      "id": 73,
+      "question": "Which protocol is used to map an IPv4 address to a MAC address on a local network?",
+      "options": [
+        "A. RARP",
+        "B. ARP",
+        "C. ICMP",
+        "D. DHCP"
+      ],
+      "correct_answer": "B. ARP",
+      "explanation": "ARP resolves an IPv4 address into the corresponding MAC address on the same local network.",
+      "topic": "Routing & Switching Basics"
+    },
+    {
+      "id": 74,
+      "question": "Which protocol is commonly used by hosts to report network errors and diagnostic information?",
+      "options": [
+        "A. ICMP",
+        "B. FTP",
+        "C. HTTP",
+        "D. SMTP"
+      ],
+      "correct_answer": "A. ICMP",
+      "explanation": "ICMP is used for network diagnostics and error reporting, such as with ping and traceroute.",
+      "topic": "Routing & Switching Basics"
+    },
+    {
+      "id": 75,
+      "question": "Which command is commonly associated with testing reachability using ICMP Echo messages?",
+      "options": [
+        "A. arp",
+        "B. route",
+        "C. ping",
+        "D. ftp"
+      ],
+      "correct_answer": "C. ping",
+      "explanation": "The ping utility sends ICMP Echo Request messages and waits for Echo Replies to test connectivity.",
+      "topic": "Routing & Switching Basics"
+    },
+    {
+      "id": 76,
+      "question": "What is the main purpose of NAT in IPv4 networks?",
+      "options": [
+        "A. To increase frame size",
+        "B. To translate private addresses into public addresses",
+        "C. To detect transmission errors",
+        "D. To assign MAC addresses dynamically"
+      ],
+      "correct_answer": "B. To translate private addresses into public addresses",
+      "explanation": "NAT allows hosts using private IP addresses to communicate with external networks through one or more public addresses.",
+      "topic": "Routing & Switching Basics"
+    },
+    {
+      "id": 77,
+      "question": "Which switching technique stores the entire frame before forwarding it?",
+      "options": [
+        "A. Cut-through switching",
+        "B. Store-and-forward switching",
+        "C. Circuit switching",
+        "D. Packet fragmentation"
+      ],
+      "correct_answer": "B. Store-and-forward switching",
+      "explanation": "Store-and-forward switching receives the complete frame and checks it before sending it onward.",
+      "topic": "Routing & Switching Basics"
+    },
+    {
+      "id": 78,
+      "question": "Which VLAN type carries traffic from multiple VLANs between switches?",
+      "options": [
+        "A. Access VLAN",
+        "B. Native VLAN only",
+        "C. Trunk link",
+        "D. Loopback VLAN"
+      ],
+      "correct_answer": "C. Trunk link",
+      "explanation": "A trunk link carries traffic for multiple VLANs between network devices using VLAN tagging.",
+      "topic": "Routing & Switching Basics"
+    },
+    {
+      "id": 79,
+      "question": "What does a switch use VLANs for?",
+      "options": [
+        "A. To increase signal strength",
+        "B. To logically segment a LAN into separate broadcast domains",
+        "C. To replace routing completely",
+        "D. To encrypt Ethernet frames"
+      ],
+      "correct_answer": "B. To logically segment a LAN into separate broadcast domains",
+      "explanation": "VLANs logically divide a switched network into separate broadcast domains without requiring separate physical switches.",
+      "topic": "Routing & Switching Basics"
+    },
+    {
+      "id": 80,
+      "question": "Which protocol helps prevent loops in a switched Ethernet network?",
+      "options": [
+        "A. ARP",
+        "B. RIP",
+        "C. STP",
+        "D. FTP"
+      ],
+      "correct_answer": "C. STP",
+      "explanation": "Spanning Tree Protocol prevents Layer 2 loops by selectively blocking redundant paths.",
+      "topic": "Routing & Switching Basics"
+    },
+    {
+      "id": 81,
+      "question": "Which field in the TCP header helps reorder segments at the receiver?",
+      "options": [
+        "A. Window Size",
+        "B. Sequence Number",
+        "C. Urgent Pointer",
+        "D. Header Checksum"
+      ],
+      "correct_answer": "B. Sequence Number",
+      "explanation": "Sequence numbers allow the receiver to place TCP segments in the correct order.",
+      "topic": "Transport Layer"
+    },
+    {
+      "id": 82,
+      "question": "Which transport-layer protocol provides unreliable, connectionless communication?",
+      "options": [
+        "A. TCP",
+        "B. UDP",
+        "C. FTP",
+        "D. IP"
+      ],
+      "correct_answer": "B. UDP",
+      "explanation": "UDP is connectionless and does not provide guaranteed delivery, sequencing, or retransmission.",
+      "topic": "Transport Layer"
+    },
+    {
+      "id": 83,
+      "question": "Which of the following is a well-known port number used by HTTP?",
+      "options": [
+        "A. 20",
+        "B. 25",
+        "C. 53",
+        "D. 80"
+      ],
+      "correct_answer": "D. 80",
+      "explanation": "HTTP typically uses TCP port 80 for web communication.",
+      "topic": "Transport Layer"
+    },
+    {
+      "id": 84,
+      "question": "Which of the following is a well-known port number used by HTTPS?",
+      "options": [
+        "A. 21",
+        "B. 23",
+        "C. 110",
+        "D. 443"
+      ],
+      "correct_answer": "D. 443",
+      "explanation": "HTTPS commonly uses TCP port 443 for encrypted web traffic.",
+      "topic": "Transport Layer"
+    },
+    {
+      "id": 85,
+      "question": "Which mechanism does TCP use to ensure reliability?",
+      "options": [
+        "A. TTL only",
+        "B. Acknowledgments and retransmissions",
+        "C. Broadcasting",
+        "D. Fragmentation only"
+      ],
+      "correct_answer": "B. Acknowledgments and retransmissions",
+      "explanation": "TCP ensures reliable delivery through acknowledgments, retransmissions, and sequence tracking.",
+      "topic": "Transport Layer"
+    },
+    {
+      "id": 86,
+      "question": "Which TCP flag is commonly used to reset a connection immediately?",
+      "options": [
+        "A. FIN",
+        "B. SYN",
+        "C. RST",
+        "D. URG"
+      ],
+      "correct_answer": "C. RST",
+      "explanation": "The RST flag is used to abruptly terminate or refuse a TCP connection.",
+      "topic": "Transport Layer"
+    },
+    {
+      "id": 87,
+      "question": "What is multiplexing at the Transport layer mainly achieved through?",
+      "options": [
+        "A. MAC addresses",
+        "B. Port numbers",
+        "C. CRC bits",
+        "D. VLAN IDs"
+      ],
+      "correct_answer": "B. Port numbers",
+      "explanation": "Transport-layer multiplexing and demultiplexing use port numbers to direct data to the correct application.",
+      "topic": "Transport Layer"
+    },
+    {
+      "id": 88,
+      "question": "Which of the following best describes congestion control?",
+      "options": [
+        "A. Preventing one receiver from being overloaded",
+        "B. Preventing the network from becoming overloaded with too much traffic",
+        "C. Assigning IP addresses dynamically",
+        "D. Encrypting transport segments"
+      ],
+      "correct_answer": "B. Preventing the network from becoming overloaded with too much traffic",
+      "explanation": "Congestion control manages the overall load on the network to avoid excessive packet loss and delay.",
+      "topic": "Transport Layer"
+    },
+    {
+      "id": 89,
+      "question": "Which protocol uses port 53 and is essential for name resolution?",
+      "options": [
+        "A. DNS",
+        "B. DHCP",
+        "C. HTTP",
+        "D. POP3"
+      ],
+      "correct_answer": "A. DNS",
+      "explanation": "DNS commonly uses port 53 and resolves domain names into IP addresses.",
+      "topic": "Application Layer Protocols"
+    },
+    {
+      "id": 90,
+      "question": "Which protocol is used to automatically obtain an IP address, subnet mask, gateway, and DNS information?",
+      "options": [
+        "A. ARP",
+        "B. DHCP",
+        "C. ICMP",
+        "D. IMAP"
+      ],
+      "correct_answer": "B. DHCP",
+      "explanation": "DHCP dynamically provides IP configuration parameters to hosts.",
+      "topic": "Application Layer Protocols"
+    },
+    {
+      "id": 91,
+      "question": "Which protocol is a secure replacement for Telnet?",
+      "options": [
+        "A. TFTP",
+        "B. SMTP",
+        "C. SSH",
+        "D. SNMP"
+      ],
+      "correct_answer": "C. SSH",
+      "explanation": "SSH encrypts remote terminal sessions, unlike Telnet which sends data in plain text.",
+      "topic": "Application Layer Protocols"
+    },
+    {
+      "id": 92,
+      "question": "Which protocol is connectionless and often uses UDP for simple file transfer?",
+      "options": [
+        "A. FTP",
+        "B. TFTP",
+        "C. SFTP",
+        "D. HTTP"
+      ],
+      "correct_answer": "B. TFTP",
+      "explanation": "TFTP uses UDP and provides a simpler, less feature-rich file transfer service than FTP.",
+      "topic": "Application Layer Protocols"
+    },
+    {
+      "id": 93,
+      "question": "Which protocol is commonly used for network management and monitoring?",
+      "options": [
+        "A. SNMP",
+        "B. SMTP",
+        "C. PPP",
+        "D. ARP"
+      ],
+      "correct_answer": "A. SNMP",
+      "explanation": "SNMP is used to monitor and manage network devices such as routers, switches, and servers.",
+      "topic": "Application Layer Protocols"
+    },
+    {
+      "id": 94,
+      "question": "Which protocol allows a mail client to manage messages while keeping them on the server?",
+      "options": [
+        "A. POP3",
+        "B. IMAP",
+        "C. SMTP",
+        "D. FTP"
+      ],
+      "correct_answer": "B. IMAP",
+      "explanation": "IMAP stores messages on the mail server and synchronizes mailbox state across devices.",
+      "topic": "Application Layer Protocols"
+    },
+    {
+      "id": 95,
+      "question": "What is the primary role of HTTP cookies?",
+      "options": [
+        "A. Encrypt web traffic",
+        "B. Store small pieces of state information between requests",
+        "C. Resolve DNS names",
+        "D. Provide IP addressing"
+      ],
+      "correct_answer": "B. Store small pieces of state information between requests",
+      "explanation": "Cookies help websites maintain session and preference information across multiple HTTP requests.",
+      "topic": "Application Layer Protocols"
+    },
+    {
+      "id": 96,
+      "question": "Which protocol is used to send email between mail servers?",
+      "options": [
+        "A. IMAP",
+        "B. POP3",
+        "C. SMTP",
+        "D. SNTP"
+      ],
+      "correct_answer": "C. SMTP",
+      "explanation": "SMTP is used for sending email from clients to servers and between mail servers.",
+      "topic": "Application Layer Protocols"
+    },
+    {
+      "id": 97,
+      "question": "Which service translates a URL's domain portion to an IP address before a connection is made?",
+      "options": [
+        "A. DHCP",
+        "B. DNS",
+        "C. NAT",
+        "D. FTP"
+      ],
+      "correct_answer": "B. DNS",
+      "explanation": "DNS resolution typically occurs before the client can connect to the remote server.",
+      "topic": "Application Layer Protocols"
+    },
+    {
+      "id": 98,
+      "question": "Which application protocol is commonly associated with port 23 and is considered insecure?",
+      "options": [
+        "A. Telnet",
+        "B. SSH",
+        "C. HTTPS",
+        "D. SMTP"
+      ],
+      "correct_answer": "A. Telnet",
+      "explanation": "Telnet uses port 23 and transmits data in plaintext, making it insecure for remote access.",
+      "topic": "Application Layer Protocols"
+    },
+    {
+      "id": 99,
+      "question": "Which error control code can both detect and correct certain bit errors?",
+      "options": [
+        "A. Parity bit",
+        "B. CRC",
+        "C. Hamming code",
+        "D. Subnet mask"
+      ],
+      "correct_answer": "C. Hamming code",
+      "explanation": "Hamming code is an error-correcting code capable of correcting single-bit errors and detecting some multiple-bit errors.",
+      "topic": "Error/Flow Control & Data Link Basics"
+    },
+    {
+      "id": 100,
+      "question": "What is framing in the Data Link layer?",
+      "options": [
+        "A. Dividing a message into packets for routing",
+        "B. Encapsulating network-layer packets into frames",
+        "C. Assigning IP addresses to interfaces",
+        "D. Encrypting data before transmission"
+      ],
+      "correct_answer": "B. Encapsulating network-layer packets into frames",
+      "explanation": "The Data Link layer encapsulates packets into frames for transmission over the local medium.",
+      "topic": "Error/Flow Control & Data Link Basics"
+    },
+    {
+      "id": 101,
+      "question": "Which protocol supports reliable transmission by sending a negative acknowledgment when an error is detected?",
+      "options": [
+        "A. ARQ",
+        "B. VLAN",
+        "C. NAT",
+        "D. DNS"
+      ],
+      "correct_answer": "A. ARQ",
+      "explanation": "Automatic Repeat reQuest protocols use acknowledgments and retransmissions for reliable delivery.",
+      "topic": "Error/Flow Control & Data Link Basics"
+    },
+    {
+      "id": 102,
+      "question": "Piggybacking in data communication refers to:",
+      "options": [
+        "A. Combining acknowledgment with outgoing data in the reverse direction",
+        "B. Sending duplicate frames intentionally",
+        "C. Encrypting a frame twice",
+        "D. Splitting one packet into many"
+      ],
+      "correct_answer": "A. Combining acknowledgment with outgoing data in the reverse direction",
+      "explanation": "Piggybacking improves efficiency by attaching an acknowledgment to a data frame being sent in the reverse direction.",
+      "topic": "Error/Flow Control & Data Link Basics"
+    },
+    {
+      "id": 103,
+      "question": "Which flow-control method is simpler but less efficient on long-delay links?",
+      "options": [
+        "A. Sliding window",
+        "B. Stop-and-Wait",
+        "C. Selective repeat",
+        "D. Piggybacking"
+      ],
+      "correct_answer": "B. Stop-and-Wait",
+      "explanation": "Stop-and-Wait is simple but inefficient when propagation delays are high because only one frame can be outstanding.",
+      "topic": "Error/Flow Control & Data Link Basics"
+    },
+    {
+      "id": 104,
+      "question": "Which one is a connection-oriented data link protocol used on point-to-point links?",
+      "options": [
+        "A. PPP",
+        "B. ARP",
+        "C. ICMP",
+        "D. UDP"
+      ],
+      "correct_answer": "A. PPP",
+      "explanation": "Point-to-Point Protocol is used on direct links and supports framing, authentication, and network-layer protocol encapsulation.",
+      "topic": "Error/Flow Control & Data Link Basics"
+    },
+    {
+      "id": 105,
+      "question": "Which security device detects suspicious traffic patterns and generates alerts?",
+      "options": [
+        "A. IDS",
+        "B. Hub",
+        "C. Repeater",
+        "D. Modem"
+      ],
+      "correct_answer": "A. IDS",
+      "explanation": "An Intrusion Detection System monitors network or host activity and raises alerts on suspicious behavior.",
+      "topic": "Network Security Basics"
+    },
+    {
+      "id": 106,
+      "question": "Which security device can both detect and actively block malicious traffic?",
+      "options": [
+        "A. IDS",
+        "B. IPS",
+        "C. Bridge",
+        "D. Switch"
+      ],
+      "correct_answer": "B. IPS",
+      "explanation": "An Intrusion Prevention System can detect threats and take preventive action such as dropping packets.",
+      "topic": "Network Security Basics"
+    },
+    {
+      "id": 107,
+      "question": "Which attack floods a target with excessive traffic to make its services unavailable?",
+      "options": [
+        "A. Spoofing",
+        "B. DoS attack",
+        "C. Phishing",
+        "D. Sniffing"
+      ],
+      "correct_answer": "B. DoS attack",
+      "explanation": "A Denial-of-Service attack overwhelms a target with traffic or requests, reducing availability.",
+      "topic": "Network Security Basics"
+    },
+    {
+      "id": 108,
+      "question": "What is the primary purpose of a proxy server?",
+      "options": [
+        "A. To replace all routers",
+        "B. To act as an intermediary between clients and external servers",
+        "C. To assign subnet masks",
+        "D. To convert analog to digital signals"
+      ],
+      "correct_answer": "B. To act as an intermediary between clients and external servers",
+      "explanation": "A proxy receives client requests and forwards them, often improving security, filtering, or caching.",
+      "topic": "Network Security Basics"
+    },
+    {
+      "id": 109,
+      "question": "Packet filtering firewall rules are mainly based on:",
+      "options": [
+        "A. Username only",
+        "B. Source/destination addresses, ports, and protocol",
+        "C. Hard disk partitions",
+        "D. File extensions only"
+      ],
+      "correct_answer": "B. Source/destination addresses, ports, and protocol",
+      "explanation": "Basic packet filtering firewalls examine packet header information to allow or block traffic.",
+      "topic": "Network Security Basics"
+    },
+    {
+      "id": 110,
+      "question": "Which protocol provides secure remote shell access and also supports secure file copy?",
+      "options": [
+        "A. Telnet",
+        "B. SSH",
+        "C. FTP",
+        "D. POP3"
+      ],
+      "correct_answer": "B. SSH",
+      "explanation": "SSH supports secure terminal access and related tools such as SCP and SFTP.",
+      "topic": "Network Security Basics"
+    },
+    {
+      "id": 111,
+      "question": "Which term refers to capturing packets as they travel on the network?",
+      "options": [
+        "A. Sniffing",
+        "B. Subnetting",
+        "C. Multiplexing",
+        "D. Routing"
+      ],
+      "correct_answer": "A. Sniffing",
+      "explanation": "Sniffing refers to intercepting and analyzing network traffic, often using packet capture tools.",
+      "topic": "Network Security Basics"
+    },
+    {
+      "id": 112,
+      "question": "Which of the following best protects data confidentiality during web browsing?",
+      "options": [
+        "A. FTP",
+        "B. HTTP",
+        "C. HTTPS",
+        "D. ARP"
+      ],
+      "correct_answer": "C. HTTPS",
+      "explanation": "HTTPS encrypts communication between a browser and server using TLS.",
+      "topic": "Network Security Basics"
+    },
+    {
+      "id": 113,
+      "question": "IEEE 802.3 is associated with which technology?",
+      "options": [
+        "A. Ethernet",
+        "B. Wi-Fi",
+        "C. Bluetooth",
+        "D. ZigBee"
+      ],
+      "correct_answer": "A. Ethernet",
+      "explanation": "IEEE 802.3 defines Ethernet standards for wired local area networks.",
+      "topic": "Wireless & Modern Networking Basics"
+    },
+    {
+      "id": 114,
+      "question": "Which wireless standard family is commonly used for short-range personal area networking such as Bluetooth?",
+      "options": [
+        "A. IEEE 802.3",
+        "B. IEEE 802.11",
+        "C. IEEE 802.15",
+        "D. IEEE 802.16"
+      ],
+      "correct_answer": "C. IEEE 802.15",
+      "explanation": "IEEE 802.15 covers wireless personal area network technologies including Bluetooth.",
+      "topic": "Wireless & Modern Networking Basics"
+    },
+    {
+      "id": 115,
+      "question": "Which network type usually spans a city-sized area?",
+      "options": [
+        "A. PAN",
+        "B. LAN",
+        "C. MAN",
+        "D. SAN"
+      ],
+      "correct_answer": "C. MAN",
+      "explanation": "A Metropolitan Area Network covers a city or large campus-sized region.",
+      "topic": "Wireless & Modern Networking Basics"
+    },
+    {
+      "id": 116,
+      "question": "Which network type typically connects geographically distant networks across countries or continents?",
+      "options": [
+        "A. LAN",
+        "B. WAN",
+        "C. PAN",
+        "D. CAN"
+      ],
+      "correct_answer": "B. WAN",
+      "explanation": "A Wide Area Network connects networks over large geographic distances.",
+      "topic": "Wireless & Modern Networking Basics"
+    },
+    {
+      "id": 117,
+      "question": "What is the primary role of an SSID in Wi-Fi?",
+      "options": [
+        "A. It encrypts the wireless signal",
+        "B. It identifies the wireless network name",
+        "C. It assigns IP addresses",
+        "D. It detects frame errors"
+      ],
+      "correct_answer": "B. It identifies the wireless network name",
+      "explanation": "SSID is the service set identifier, or the name used to identify a wireless network.",
+      "topic": "Wireless & Modern Networking Basics"
+    },
+    {
+      "id": 118,
+      "question": "Which of the following provides stronger Wi-Fi security than WEP?",
+      "options": [
+        "A. WPA2",
+        "B. Hub mode",
+        "C. ARP",
+        "D. NAT"
+      ],
+      "correct_answer": "A. WPA2",
+      "explanation": "WPA2 provides far stronger wireless security than the older and insecure WEP standard.",
+      "topic": "Wireless & Modern Networking Basics"
+    },
+    {
+      "id": 119,
+      "question": "Which architecture allows network functions such as firewalls or load balancers to run as software instead of dedicated hardware?",
+      "options": [
+        "A. Circuit switching",
+        "B. Network Function Virtualization",
+        "C. Token ring",
+        "D. Packet retransmission"
+      ],
+      "correct_answer": "B. Network Function Virtualization",
+      "explanation": "NFV virtualizes network services, allowing them to run on general-purpose hardware.",
+      "topic": "Wireless & Modern Networking Basics"
+    },
+    {
+      "id": 120,
+      "question": "Which technology separates the control plane from the data plane to allow centralized management?",
+      "options": [
+        "A. SDN",
+        "B. ARQ",
+        "C. POP3",
+        "D. TFTP"
+      ],
+      "correct_answer": "A. SDN",
+      "explanation": "Software-Defined Networking separates control logic from forwarding devices for centralized control.",
+      "topic": "Wireless & Modern Networking Basics"
+    },
+    {
+      "id": 121,
+      "question": "Which layer performs segmentation and reassembly of user data?",
+      "options": [
+        "A. Transport Layer",
+        "B. Network Layer",
+        "C. Physical Layer",
+        "D. Data Link Layer"
+      ],
+      "correct_answer": "A. Transport Layer",
+      "explanation": "The Transport layer divides application data into smaller segments and reassembles them at the receiver.",
+      "topic": "OSI Model & TCP/IP Model"
+    },
+    {
+      "id": 122,
+      "question": "Which of the following is the best example of a unicast transmission?",
+      "options": [
+        "A. One sender to all hosts in a subnet",
+        "B. One sender to one specific host",
+        "C. One sender to a selected group of hosts",
+        "D. Many senders to one receiver"
+      ],
+      "correct_answer": "B. One sender to one specific host",
+      "explanation": "Unicast communication is one-to-one communication between a sender and a specific receiver.",
+      "topic": "OSI Model & TCP/IP Model"
+    },
+    {
+      "id": 123,
+      "question": "Which field in an Ethernet frame helps detect corruption during transmission?",
+      "options": [
+        "A. Preamble",
+        "B. Source MAC",
+        "C. FCS",
+        "D. VLAN tag"
+      ],
+      "correct_answer": "C. FCS",
+      "explanation": "The Frame Check Sequence is used for error detection in Ethernet frames.",
+      "topic": "Error/Flow Control & Data Link Basics"
+    },
+    {
+      "id": 124,
+      "question": "Which access method was associated with legacy Ethernet using hubs?",
+      "options": [
+        "A. CSMA/CD",
+        "B. Token passing",
+        "C. CSMA/CA",
+        "D. Polling only"
+      ],
+      "correct_answer": "A. CSMA/CD",
+      "explanation": "Carrier Sense Multiple Access with Collision Detection was used in shared Ethernet environments with hubs.",
+      "topic": "Error/Flow Control & Data Link Basics"
+    },
+    {
+      "id": 125,
+      "question": "Which access method is commonly associated with Wi-Fi networks?",
+      "options": [
+        "A. CSMA/CD",
+        "B. CSMA/CA",
+        "C. Token passing",
+        "D. Circuit switching"
+      ],
+      "correct_answer": "B. CSMA/CA",
+      "explanation": "Wireless LANs commonly use Carrier Sense Multiple Access with Collision Avoidance.",
+      "topic": "Wireless & Modern Networking Basics"
+    },
+    {
+      "id": 126,
+      "question": "Which protocol advertises the path to destination networks between autonomous systems on the Internet?",
+      "options": [
+        "A. RIP",
+        "B. OSPF",
+        "C. BGP",
+        "D. ARP"
+      ],
+      "correct_answer": "C. BGP",
+      "explanation": "Border Gateway Protocol exchanges routing information between autonomous systems on the Internet.",
+      "topic": "Routing & Switching Basics"
+    },
+    {
+      "id": 127,
+      "question": "Which routing entry is used when no more specific route matches a destination?",
+      "options": [
+        "A. Local route",
+        "B. Static host route",
+        "C. Default route",
+        "D. Loopback route"
+      ],
+      "correct_answer": "C. Default route",
+      "explanation": "A default route is chosen when no more specific route exists for a destination network.",
+      "topic": "Routing & Switching Basics"
+    },
+    {
+      "id": 128,
+      "question": "Which TCP/IP protocol can translate a MAC address to an IP address in older networks?",
+      "options": [
+        "A. ARP",
+        "B. RARP",
+        "C. ICMP",
+        "D. IGMP"
+      ],
+      "correct_answer": "B. RARP",
+      "explanation": "Reverse ARP was historically used to obtain an IP address from a known MAC address.",
+      "topic": "Routing & Switching Basics"
+    },
+    {
+      "id": 129,
+      "question": "Which field in the IPv4 header prevents packets from circulating indefinitely?",
+      "options": [
+        "A. Version",
+        "B. Header Length",
+        "C. TTL",
+        "D. Protocol"
+      ],
+      "correct_answer": "C. TTL",
+      "explanation": "Time To Live is decremented at each router hop, and the packet is discarded when it reaches zero.",
+      "topic": "Routing & Switching Basics"
+    },
+    {
+      "id": 130,
+      "question": "Which IP address is used to send a packet to all hosts on the local network segment?",
+      "options": [
+        "A. 127.0.0.1",
+        "B. 255.255.255.255",
+        "C. 0.0.0.0",
+        "D. 192.168.0.1"
+      ],
+      "correct_answer": "B. 255.255.255.255",
+      "explanation": "255.255.255.255 is the limited broadcast address in IPv4.",
+      "topic": "IP Addressing & Subnetting"
+    },
+    {
+      "id": 131,
+      "question": "Which of the following best describes a socket?",
+      "options": [
+        "A. A physical router port",
+        "B. A combination of IP address and port number",
+        "C. A MAC address table entry",
+        "D. A wireless encryption key"
+      ],
+      "correct_answer": "B. A combination of IP address and port number",
+      "explanation": "A socket identifies an endpoint for communication using an IP address and port number.",
+      "topic": "Transport Layer"
+    },
+    {
+      "id": 132,
+      "question": "Which DNS record type maps a host name to an IPv4 address?",
+      "options": [
+        "A. MX",
+        "B. NS",
+        "C. A",
+        "D. CNAME"
+      ],
+      "correct_answer": "C. A",
+      "explanation": "An A record maps a domain or host name to an IPv4 address.",
+      "topic": "Application Layer Protocols"
+    },
+    {
+      "id": 133,
+      "question": "Which DNS record type is used to specify the mail server for a domain?",
+      "options": [
+        "A. PTR",
+        "B. MX",
+        "C. AAAA",
+        "D. TXT"
+      ],
+      "correct_answer": "B. MX",
+      "explanation": "MX records indicate the mail exchange servers responsible for receiving email for a domain.",
+      "topic": "Application Layer Protocols"
+    },
+    {
+      "id": 134,
+      "question": "Which protocol is used to securely transfer files over an SSH connection?",
+      "options": [
+        "A. TFTP",
+        "B. FTP",
+        "C. SFTP",
+        "D. ARP"
+      ],
+      "correct_answer": "C. SFTP",
+      "explanation": "SFTP transfers files securely using the SSH protocol.",
+      "topic": "Application Layer Protocols"
+    },
+    {
+      "id": 135,
+      "question": "Which of the following is a valid reason to use subnetting?",
+      "options": [
+        "A. To increase the length of MAC addresses",
+        "B. To reduce broadcast traffic and improve address utilization",
+        "C. To replace transport-layer protocols",
+        "D. To eliminate the need for routing"
+      ],
+      "correct_answer": "B. To reduce broadcast traffic and improve address utilization",
+      "explanation": "Subnetting divides networks into smaller parts, reducing broadcasts and using addresses more efficiently.",
+      "topic": "IP Addressing & Subnetting"
+    },
+    {
+      "id": 136,
+      "question": "If a host has IP 10.1.5.9 with mask 255.255.248.0, what is the prefix length?",
+      "options": [
+        "A. /19",
+        "B. /20",
+        "C. /21",
+        "D. /22"
+      ],
+      "correct_answer": "C. /21",
+      "explanation": "255.255.248.0 corresponds to 8+8+5 = 21 network bits, so the prefix is /21.",
+      "topic": "IP Addressing & Subnetting"
+    },
+    {
+      "id": 137,
+      "question": "Which switching feature allows a network administrator to prioritize certain traffic like voice over data?",
+      "options": [
+        "A. QoS",
+        "B. NAT",
+        "C. ARP",
+        "D. CIDR"
+      ],
+      "correct_answer": "A. QoS",
+      "explanation": "Quality of Service mechanisms prioritize selected traffic to improve latency and performance for important applications.",
+      "topic": "Routing & Switching Basics"
+    },
+    {
+      "id": 138,
+      "question": "Which queue management issue occurs when many frames wait in a switch or router due to congestion?",
+      "options": [
+        "A. Starvation",
+        "B. Buffering",
+        "C. Multiplexing",
+        "D. Encapsulation"
+      ],
+      "correct_answer": "B. Buffering",
+      "explanation": "During congestion, devices temporarily store packets or frames in buffers before forwarding them.",
+      "topic": "Routing & Switching Basics"
+    },
+    {
+      "id": 139,
+      "question": "Which one is a multicast management protocol used in IPv4 networks?",
+      "options": [
+        "A. ICMP",
+        "B. IGMP",
+        "C. ARP",
+        "D. SNMP"
+      ],
+      "correct_answer": "B. IGMP",
+      "explanation": "Internet Group Management Protocol manages IPv4 multicast group memberships.",
+      "topic": "Routing & Switching Basics"
+    },
+    {
+      "id": 140,
+      "question": "Which topology has a single central connecting device with all nodes attached to it?",
+      "options": [
+        "A. Star",
+        "B. Bus",
+        "C. Ring",
+        "D. Mesh"
+      ],
+      "correct_answer": "A. Star",
+      "explanation": "In a star topology, every node connects to a central device such as a switch or hub.",
+      "topic": "Network Devices"
+    },
+    {
+      "id": 141,
+      "question": "Which topology uses a single shared backbone cable?",
+      "options": [
+        "A. Mesh",
+        "B. Bus",
+        "C. Star",
+        "D. Tree"
+      ],
+      "correct_answer": "B. Bus",
+      "explanation": "A bus topology connects all devices to one shared communication line.",
+      "topic": "Network Devices"
+    },
+    {
+      "id": 142,
+      "question": "Which topology passes data around a closed loop from one node to the next?",
+      "options": [
+        "A. Ring",
+        "B. Star",
+        "C. Mesh",
+        "D. Bus"
+      ],
+      "correct_answer": "A. Ring",
+      "explanation": "A ring topology connects each device to two neighbors, forming a loop.",
+      "topic": "Network Devices"
+    },
+    {
+      "id": 143,
+      "question": "Which command traces the path packets take to a destination by using increasing TTL values?",
+      "options": [
+        "A. ping",
+        "B. tracert/traceroute",
+        "C. netstat",
+        "D. ftp"
+      ],
+      "correct_answer": "B. tracert/traceroute",
+      "explanation": "Traceroute utilities discover the path to a destination by sending packets with increasing TTL values.",
+      "topic": "Routing & Switching Basics"
+    },
+    {
+      "id": 144,
+      "question": "Which protocol is often used to assign an IP address automatically to a newly booted device on a LAN?",
+      "options": [
+        "A. DNS",
+        "B. DHCP",
+        "C. SNMP",
+        "D. SSH"
+      ],
+      "correct_answer": "B. DHCP",
+      "explanation": "DHCP automatically leases IP addresses and related configuration to devices on a LAN.",
+      "topic": "Application Layer Protocols"
+    },
+    {
+      "id": 145,
+      "question": "What is encapsulation in networking?",
+      "options": [
+        "A. Removing headers at every layer before sending",
+        "B. Wrapping data with protocol headers as it moves down the stack",
+        "C. Encrypting packets at the application layer only",
+        "D. Dividing a network into VLANs"
+      ],
+      "correct_answer": "B. Wrapping data with protocol headers as it moves down the stack",
+      "explanation": "Encapsulation adds protocol control information at each layer as data moves down the protocol stack.",
+      "topic": "OSI Model & TCP/IP Model"
+    },
+    {
+      "id": 146,
+      "question": "What is decapsulation in networking?",
+      "options": [
+        "A. Adding more headers at the receiver",
+        "B. Removing protocol headers as data moves up the stack",
+        "C. Assigning routes dynamically",
+        "D. Mapping MAC to IP"
+      ],
+      "correct_answer": "B. Removing protocol headers as data moves up the stack",
+      "explanation": "At the receiver, each layer removes its corresponding header to recover the original data.",
+      "topic": "OSI Model & TCP/IP Model"
+    },
+    {
+      "id": 147,
+      "question": "Which of the following is most suitable for backbone links due to high bandwidth and low attenuation?",
+      "options": [
+        "A. Coaxial cable",
+        "B. Optical fiber",
+        "C. UTP cable",
+        "D. Telephone pair"
+      ],
+      "correct_answer": "B. Optical fiber",
+      "explanation": "Optical fiber offers very high bandwidth and low signal loss, making it suitable for backbone connections.",
+      "topic": "Network Devices"
+    },
+    {
+      "id": 148,
+      "question": "Which OSI layer is responsible for establishing, managing, and terminating dialogs between applications?",
+      "options": [
+        "A. Session Layer",
+        "B. Physical Layer",
+        "C. Network Layer",
+        "D. Data Link Layer"
+      ],
+      "correct_answer": "A. Session Layer",
+      "explanation": "The Session layer manages sessions or dialogs between communicating applications.",
+      "topic": "OSI Model & TCP/IP Model"
+    },
+    {
+      "id": 149,
+      "question": "Which transport protocol is usually preferred for DNS queries because it has lower overhead?",
+      "options": [
+        "A. TCP",
+        "B. UDP",
+        "C. ICMP",
+        "D. ARP"
+      ],
+      "correct_answer": "B. UDP",
+      "explanation": "Most routine DNS queries use UDP for speed and low overhead, though TCP may be used in some cases.",
+      "topic": "Transport Layer"
+    },
+    {
+      "id": 150,
+      "question": "Which protocol secures IP communications by authenticating and encrypting each IP packet in a session?",
+      "options": [
+        "A. ARP",
+        "B. IPsec",
+        "C. FTP",
+        "D. RIP"
+      ],
+      "correct_answer": "B. IPsec",
+      "explanation": "IPsec provides authentication, integrity, and encryption for IP-layer communications.",
+      "topic": "Network Security Basics"
     }
   ]
 }

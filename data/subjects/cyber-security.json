@@ -1,0 +1,1954 @@
+{
+  "cyber_security_exam_questions": [
+    {
+      "id": 1,
+      "question": "Which security principle ensures that information is not disclosed to unauthorized users?",
+      "options": [
+        "A. Integrity",
+        "B. Availability",
+        "C. Confidentiality",
+        "D. Accountability"
+      ],
+      "correct_answer": "C. Confidentiality",
+      "explanation": "Confidentiality protects data from unauthorized disclosure.",
+      "topic": "Security Fundamentals"
+    },
+    {
+      "id": 2,
+      "question": "Which element of the CIA triad ensures that data remains accurate and unaltered?",
+      "options": [
+        "A. Integrity",
+        "B. Confidentiality",
+        "C. Non-repudiation",
+        "D. Authentication"
+      ],
+      "correct_answer": "A. Integrity",
+      "explanation": "Integrity ensures information is complete, accurate, and not improperly modified.",
+      "topic": "Security Fundamentals"
+    },
+    {
+      "id": 3,
+      "question": "Which CIA component is most directly affected when a server becomes unreachable due to a power failure?",
+      "options": [
+        "A. Confidentiality",
+        "B. Integrity",
+        "C. Availability",
+        "D. Authorization"
+      ],
+      "correct_answer": "C. Availability",
+      "explanation": "Availability means systems and data are accessible when needed.",
+      "topic": "Security Fundamentals"
+    },
+    {
+      "id": 4,
+      "question": "Authentication is the process of:",
+      "options": [
+        "A. Granting permissions to a user",
+        "B. Verifying the identity of a user",
+        "C. Recording user actions",
+        "D. Encrypting user data"
+      ],
+      "correct_answer": "B. Verifying the identity of a user",
+      "explanation": "Authentication checks who the user is before access is granted.",
+      "topic": "Security Fundamentals"
+    },
+    {
+      "id": 5,
+      "question": "Authorization determines:",
+      "options": [
+        "A. Whether a message was altered",
+        "B. Who the user is",
+        "C. What an authenticated user is allowed to do",
+        "D. Whether the network is online"
+      ],
+      "correct_answer": "C. What an authenticated user is allowed to do",
+      "explanation": "Authorization defines access rights after authentication.",
+      "topic": "Security Fundamentals"
+    },
+    {
+      "id": 6,
+      "question": "A vulnerability is best defined as:",
+      "options": [
+        "A. A person trying to break into a system",
+        "B. A weakness that can be exploited",
+        "C. A safeguard applied to a system",
+        "D. A record of an incident"
+      ],
+      "correct_answer": "B. A weakness that can be exploited",
+      "explanation": "A vulnerability is a flaw or weakness that may be used by an attacker.",
+      "topic": "Security Fundamentals"
+    },
+    {
+      "id": 7,
+      "question": "Risk in information security is commonly viewed as:",
+      "options": [
+        "A. Threat + Password length",
+        "B. Vulnerability + Backup",
+        "C. Threat exploiting a vulnerability and causing impact",
+        "D. Encryption minus authentication"
+      ],
+      "correct_answer": "C. Threat exploiting a vulnerability and causing impact",
+      "explanation": "Risk arises when a threat can exploit a vulnerability and cause harm.",
+      "topic": "Security Fundamentals"
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is an example of a threat?",
+      "options": [
+        "A. Unpatched web server",
+        "B. Weak password policy",
+        "C. Malware author attempting exploitation",
+        "D. Missing firewall rule only"
+      ],
+      "correct_answer": "C. Malware author attempting exploitation",
+      "explanation": "A threat is something capable of exploiting a weakness and causing damage.",
+      "topic": "Security Fundamentals"
+    },
+    {
+      "id": 9,
+      "question": "Non-repudiation ensures that:",
+      "options": [
+        "A. Data is always encrypted",
+        "B. A sender cannot deny performing an action",
+        "C. Files cannot be deleted",
+        "D. Systems cannot fail"
+      ],
+      "correct_answer": "B. A sender cannot deny performing an action",
+      "explanation": "Non-repudiation provides proof of origin or action, often using digital signatures.",
+      "topic": "Security Fundamentals"
+    },
+    {
+      "id": 10,
+      "question": "The principle of least privilege means:",
+      "options": [
+        "A. Users should have no access by default",
+        "B. Users should have only the minimum access needed",
+        "C. All administrators should share one account",
+        "D. Access should never be revoked"
+      ],
+      "correct_answer": "B. Users should have only the minimum access needed",
+      "explanation": "Least privilege reduces the attack surface by limiting permissions.",
+      "topic": "Security Fundamentals"
+    },
+    {
+      "id": 11,
+      "question": "Which control is primarily preventive?",
+      "options": [
+        "A. Firewall blocking unauthorized traffic",
+        "B. Log review after an attack",
+        "C. Forensic analysis",
+        "D. Incident report"
+      ],
+      "correct_answer": "A. Firewall blocking unauthorized traffic",
+      "explanation": "Preventive controls aim to stop incidents before they happen.",
+      "topic": "Security Fundamentals"
+    },
+    {
+      "id": 12,
+      "question": "Which control is primarily detective?",
+      "options": [
+        "A. Disk encryption",
+        "B. IDS alerting on suspicious traffic",
+        "C. Account lockout",
+        "D. Multifactor authentication"
+      ],
+      "correct_answer": "B. IDS alerting on suspicious traffic",
+      "explanation": "Detective controls identify events or attacks after or during occurrence.",
+      "topic": "Security Fundamentals"
+    },
+    {
+      "id": 13,
+      "question": "A compensating control is used when:",
+      "options": [
+        "A. A primary control cannot be implemented fully",
+        "B. Data must be compressed",
+        "C. Only physical security is needed",
+        "D. Encryption fails"
+      ],
+      "correct_answer": "A. A primary control cannot be implemented fully",
+      "explanation": "A compensating control reduces risk when the preferred control is impractical.",
+      "topic": "Security Fundamentals"
+    },
+    {
+      "id": 14,
+      "question": "Which best describes attack surface?",
+      "options": [
+        "A. Total number of servers in a rack",
+        "B. Total exposed points through which an attacker can try to enter",
+        "C. Size of a data center floor",
+        "D. Number of users in a system"
+      ],
+      "correct_answer": "B. Total exposed points through which an attacker can try to enter",
+      "explanation": "Attack surface refers to all entry points or exposure points available to attackers.",
+      "topic": "Security Fundamentals"
+    },
+    {
+      "id": 15,
+      "question": "Which is an example of a physical security control?",
+      "options": [
+        "A. Antivirus",
+        "B. Biometric door access",
+        "C. Firewall",
+        "D. TLS certificate"
+      ],
+      "correct_answer": "B. Biometric door access",
+      "explanation": "Physical controls protect facilities and hardware from unauthorized physical access.",
+      "topic": "Security Fundamentals"
+    },
+    {
+      "id": 16,
+      "question": "Which statement about security policy is correct?",
+      "options": [
+        "A. It is optional for large organizations",
+        "B. It defines rules and expectations for security",
+        "C. It only covers password length",
+        "D. It replaces technical controls"
+      ],
+      "correct_answer": "B. It defines rules and expectations for security",
+      "explanation": "Security policy provides formal direction for protecting information assets.",
+      "topic": "Security Fundamentals"
+    },
+    {
+      "id": 17,
+      "question": "A user logs in with a password and OTP. This is an example of:",
+      "options": [
+        "A. Single sign-on",
+        "B. Multifactor authentication",
+        "C. Role-based access",
+        "D. Non-repudiation"
+      ],
+      "correct_answer": "B. Multifactor authentication",
+      "explanation": "Password plus OTP combines two factors, strengthening authentication.",
+      "topic": "Security Fundamentals"
+    },
+    {
+      "id": 18,
+      "question": "Which one is a corrective control?",
+      "options": [
+        "A. Backup restoration after ransomware",
+        "B. Firewall rule",
+        "C. CCTV camera",
+        "D. Security awareness poster"
+      ],
+      "correct_answer": "A. Backup restoration after ransomware",
+      "explanation": "Corrective controls help recover systems or data after an incident.",
+      "topic": "Security Fundamentals"
+    },
+    {
+      "id": 19,
+      "question": "Which encryption uses the same key for encryption and decryption?",
+      "options": [
+        "A. Asymmetric encryption",
+        "B. Symmetric encryption",
+        "C. Hashing",
+        "D. Digital signature"
+      ],
+      "correct_answer": "B. Symmetric encryption",
+      "explanation": "Symmetric encryption uses a shared secret key for both encryption and decryption.",
+      "topic": "Cryptography"
+    },
+    {
+      "id": 20,
+      "question": "Which algorithm category typically includes RSA?",
+      "options": [
+        "A. Hashing",
+        "B. Stream cipher",
+        "C. Asymmetric encryption",
+        "D. Compression"
+      ],
+      "correct_answer": "C. Asymmetric encryption",
+      "explanation": "RSA is a public-key cryptosystem, so it is asymmetric.",
+      "topic": "Cryptography"
+    },
+    {
+      "id": 21,
+      "question": "Which of the following is primarily used to verify data integrity?",
+      "options": [
+        "A. Hash function",
+        "B. Router",
+        "C. VPN tunnel",
+        "D. SMTP relay"
+      ],
+      "correct_answer": "A. Hash function",
+      "explanation": "Hash functions produce a digest used to check whether data changed.",
+      "topic": "Cryptography"
+    },
+    {
+      "id": 22,
+      "question": "A digital signature provides:",
+      "options": [
+        "A. Confidentiality only",
+        "B. Integrity, authentication, and non-repudiation",
+        "C. Compression and encryption",
+        "D. Availability only"
+      ],
+      "correct_answer": "B. Integrity, authentication, and non-repudiation",
+      "explanation": "Digital signatures verify sender identity and detect tampering.",
+      "topic": "Cryptography"
+    },
+    {
+      "id": 23,
+      "question": "In public-key cryptography, a message encrypted with the recipient's public key can be decrypted using the recipient's:",
+      "options": [
+        "A. Public key",
+        "B. Session key",
+        "C. Private key",
+        "D. Hash value"
+      ],
+      "correct_answer": "C. Private key",
+      "explanation": "The corresponding private key is used to decrypt data encrypted with the public key.",
+      "topic": "Cryptography"
+    },
+    {
+      "id": 24,
+      "question": "Which of the following is a hashing algorithm?",
+      "options": [
+        "A. AES",
+        "B. SHA-256",
+        "C. RSA",
+        "D. DES"
+      ],
+      "correct_answer": "B. SHA-256",
+      "explanation": "SHA-256 is a cryptographic hash function.",
+      "topic": "Cryptography"
+    },
+    {
+      "id": 25,
+      "question": "Salting is commonly used with passwords to:",
+      "options": [
+        "A. Increase transmission speed",
+        "B. Prevent rainbow table attacks",
+        "C. Replace hashing",
+        "D. Eliminate authentication"
+      ],
+      "correct_answer": "B. Prevent rainbow table attacks",
+      "explanation": "A salt makes identical passwords produce different hashes and thwarts precomputed tables.",
+      "topic": "Cryptography"
+    },
+    {
+      "id": 26,
+      "question": "Which cryptographic concept is used in HTTPS to establish a secure session?",
+      "options": [
+        "A. ARP cache",
+        "B. TLS",
+        "C. DHCP relay",
+        "D. ICMP redirect"
+      ],
+      "correct_answer": "B. TLS",
+      "explanation": "HTTPS uses TLS to provide confidentiality and integrity for web traffic.",
+      "topic": "Cryptography"
+    },
+    {
+      "id": 27,
+      "question": "The main advantage of symmetric encryption over asymmetric encryption is:",
+      "options": [
+        "A. Better for key distribution",
+        "B. Faster performance",
+        "C. No need for secrecy",
+        "D. Built-in non-repudiation"
+      ],
+      "correct_answer": "B. Faster performance",
+      "explanation": "Symmetric algorithms are generally much faster and efficient for bulk data encryption.",
+      "topic": "Cryptography"
+    },
+    {
+      "id": 28,
+      "question": "Which statement about a one-way hash is correct?",
+      "options": [
+        "A. It can be reversed using the public key",
+        "B. It cannot feasibly be reversed to obtain the original input",
+        "C. It uses the same key for both operations",
+        "D. It guarantees confidentiality"
+      ],
+      "correct_answer": "B. It cannot feasibly be reversed to obtain the original input",
+      "explanation": "Good cryptographic hashes are designed to be one-way.",
+      "topic": "Cryptography"
+    },
+    {
+      "id": 29,
+      "question": "Which of the following is an example of symmetric encryption?",
+      "options": [
+        "A. ECC",
+        "B. AES",
+        "C. RSA",
+        "D. DSA"
+      ],
+      "correct_answer": "B. AES",
+      "explanation": "AES is a widely used symmetric block cipher.",
+      "topic": "Cryptography"
+    },
+    {
+      "id": 30,
+      "question": "A certificate authority (CA) primarily:",
+      "options": [
+        "A. Assigns IP addresses",
+        "B. Issues and signs digital certificates",
+        "C. Filters malicious emails",
+        "D. Stores backup tapes"
+      ],
+      "correct_answer": "B. Issues and signs digital certificates",
+      "explanation": "CAs bind public keys to identities through signed digital certificates.",
+      "topic": "Cryptography"
+    },
+    {
+      "id": 31,
+      "question": "PKI stands for:",
+      "options": [
+        "A. Private Key Integration",
+        "B. Public Key Infrastructure",
+        "C. Protected Kernel Interface",
+        "D. Public Kernel Internet"
+      ],
+      "correct_answer": "B. Public Key Infrastructure",
+      "explanation": "PKI is the framework for managing digital certificates and public-key encryption.",
+      "topic": "Cryptography"
+    },
+    {
+      "id": 32,
+      "question": "Which attack attempts to find two different inputs producing the same hash value?",
+      "options": [
+        "A. Brute-force routing",
+        "B. Collision attack",
+        "C. Spoofing attack",
+        "D. Replay attack"
+      ],
+      "correct_answer": "B. Collision attack",
+      "explanation": "A collision occurs when two different inputs generate the same hash output.",
+      "topic": "Cryptography"
+    },
+    {
+      "id": 33,
+      "question": "Which is more suitable for encrypting a large file efficiently?",
+      "options": [
+        "A. Symmetric encryption",
+        "B. Asymmetric encryption only",
+        "C. Hashing",
+        "D. Digital signature"
+      ],
+      "correct_answer": "A. Symmetric encryption",
+      "explanation": "Bulk data is usually encrypted symmetrically because it is faster.",
+      "topic": "Cryptography"
+    },
+    {
+      "id": 34,
+      "question": "In asymmetric cryptography, the public key is generally used to:",
+      "options": [
+        "A. Be kept secret from everyone",
+        "B. Encrypt data or verify signatures",
+        "C. Replace passwords",
+        "D. Create VLANs"
+      ],
+      "correct_answer": "B. Encrypt data or verify signatures",
+      "explanation": "Public keys are shared openly and used for encryption or signature verification.",
+      "topic": "Cryptography"
+    },
+    {
+      "id": 35,
+      "question": "What is the main purpose of a nonce in cryptographic protocols?",
+      "options": [
+        "A. To reduce CPU speed",
+        "B. To ensure freshness and prevent replay",
+        "C. To route packets",
+        "D. To replace the private key"
+      ],
+      "correct_answer": "B. To ensure freshness and prevent replay",
+      "explanation": "A nonce is a unique value used once to prevent replay attacks.",
+      "topic": "Cryptography"
+    },
+    {
+      "id": 36,
+      "question": "Which of the following best describes encryption at rest?",
+      "options": [
+        "A. Encrypting data while stored on disk",
+        "B. Encrypting packets during transit only",
+        "C. Compressing archived files",
+        "D. Masking passwords on screen"
+      ],
+      "correct_answer": "A. Encrypting data while stored on disk",
+      "explanation": "Encryption at rest protects stored data such as files, databases, and backups.",
+      "topic": "Cryptography"
+    },
+    {
+      "id": 37,
+      "question": "Which of the following best describes encryption in transit?",
+      "options": [
+        "A. Encryption of stored backups",
+        "B. Encryption while data moves across a network",
+        "C. Encryption only on mobile devices",
+        "D. Encryption of processor cache"
+      ],
+      "correct_answer": "B. Encryption while data moves across a network",
+      "explanation": "Encryption in transit protects data as it travels over networks.",
+      "topic": "Cryptography"
+    },
+    {
+      "id": 38,
+      "question": "Which of the following is a stream cipher historically used in wireless security and now considered weak?",
+      "options": [
+        "A. RC4",
+        "B. SHA-1",
+        "C. RSA",
+        "D. MD5"
+      ],
+      "correct_answer": "A. RC4",
+      "explanation": "RC4 is a stream cipher that was once used widely but is now considered weak in many contexts.",
+      "topic": "Cryptography"
+    },
+    {
+      "id": 39,
+      "question": "Which statement about digital certificates is correct?",
+      "options": [
+        "A. They store user passwords in plaintext",
+        "B. They bind an identity to a public key",
+        "C. They replace all firewall rules",
+        "D. They are used only in LAN switching"
+      ],
+      "correct_answer": "B. They bind an identity to a public key",
+      "explanation": "Certificates associate public keys with entities such as websites or organizations.",
+      "topic": "Cryptography"
+    },
+    {
+      "id": 40,
+      "question": "Which property is mainly provided by hashing alone?",
+      "options": [
+        "A. Confidentiality",
+        "B. Integrity checking",
+        "C. Key exchange",
+        "D. Access control"
+      ],
+      "correct_answer": "B. Integrity checking",
+      "explanation": "Hashing alone is mainly used to detect modification of data.",
+      "topic": "Cryptography"
+    },
+    {
+      "id": 41,
+      "question": "When two communicating parties agree on a temporary key for one session, that key is called a:",
+      "options": [
+        "A. Root key",
+        "B. Session key",
+        "C. Public certificate",
+        "D. Hash chain"
+      ],
+      "correct_answer": "B. Session key",
+      "explanation": "A session key is a temporary key used for one communication session.",
+      "topic": "Cryptography"
+    },
+    {
+      "id": 42,
+      "question": "Which of the following is the best use of asymmetric cryptography in practice?",
+      "options": [
+        "A. Encrypting all database records one by one for speed",
+        "B. Secure key exchange and digital signatures",
+        "C. Replacing backups",
+        "D. Detecting parity errors"
+      ],
+      "correct_answer": "B. Secure key exchange and digital signatures",
+      "explanation": "Asymmetric cryptography is commonly used for key exchange and signatures, while symmetric encryption handles bulk data.",
+      "topic": "Cryptography"
+    },
+    {
+      "id": 43,
+      "question": "A firewall is primarily used to:",
+      "options": [
+        "A. Convert analog signals to digital",
+        "B. Enforce traffic filtering rules between networks",
+        "C. Resolve domain names",
+        "D. Allocate memory pages"
+      ],
+      "correct_answer": "B. Enforce traffic filtering rules between networks",
+      "explanation": "Firewalls allow or block traffic based on configured security policies.",
+      "topic": "Network Security"
+    },
+    {
+      "id": 44,
+      "question": "Which security device detects suspicious network activity and can also block it automatically?",
+      "options": [
+        "A. Hub",
+        "B. IDS only",
+        "C. IPS",
+        "D. Modem"
+      ],
+      "correct_answer": "C. IPS",
+      "explanation": "An Intrusion Prevention System can detect and actively block malicious traffic.",
+      "topic": "Network Security"
+    },
+    {
+      "id": 45,
+      "question": "What is the main difference between IDS and IPS?",
+      "options": [
+        "A. IDS blocks traffic, IPS only monitors",
+        "B. IDS only detects, IPS can detect and prevent",
+        "C. IDS works at physical layer only",
+        "D. IPS cannot generate alerts"
+      ],
+      "correct_answer": "B. IDS only detects, IPS can detect and prevent",
+      "explanation": "IDS is primarily detective, while IPS can also stop malicious traffic.",
+      "topic": "Network Security"
+    },
+    {
+      "id": 46,
+      "question": "A DMZ in network security is used to:",
+      "options": [
+        "A. Store encryption keys offline",
+        "B. Place public-facing servers in an isolated segment",
+        "C. Hide MAC addresses",
+        "D. Increase CPU clock rate"
+      ],
+      "correct_answer": "B. Place public-facing servers in an isolated segment",
+      "explanation": "A DMZ separates Internet-facing services from the internal trusted network.",
+      "topic": "Network Security"
+    },
+    {
+      "id": 47,
+      "question": "NAT primarily helps by:",
+      "options": [
+        "A. Converting HTTP to HTTPS",
+        "B. Translating private IP addresses to public addresses",
+        "C. Detecting malware signatures",
+        "D. Signing certificates"
+      ],
+      "correct_answer": "B. Translating private IP addresses to public addresses",
+      "explanation": "NAT allows internal private addresses to communicate externally using public addresses.",
+      "topic": "Network Security"
+    },
+    {
+      "id": 48,
+      "question": "Which secure protocol is commonly used for remote administration instead of Telnet?",
+      "options": [
+        "A. FTP",
+        "B. SSH",
+        "C. ARP",
+        "D. POP3"
+      ],
+      "correct_answer": "B. SSH",
+      "explanation": "SSH encrypts remote login sessions, unlike Telnet.",
+      "topic": "Network Security"
+    },
+    {
+      "id": 49,
+      "question": "Packet filtering firewall decisions are commonly based on:",
+      "options": [
+        "A. CPU temperature",
+        "B. Source/destination IP, ports, and protocol",
+        "C. File size",
+        "D. Hash collisions"
+      ],
+      "correct_answer": "B. Source/destination IP, ports, and protocol",
+      "explanation": "Basic packet filters use network-layer and transport-layer header fields.",
+      "topic": "Network Security"
+    },
+    {
+      "id": 50,
+      "question": "A proxy server can improve security by:",
+      "options": [
+        "A. Acting as an intermediary between clients and external services",
+        "B. Replacing all routers",
+        "C. Disabling encryption",
+        "D. Providing only physical protection"
+      ],
+      "correct_answer": "A. Acting as an intermediary between clients and external services",
+      "explanation": "Proxies can filter, log, and control access to external resources.",
+      "topic": "Network Security"
+    },
+    {
+      "id": 51,
+      "question": "Which protocol suite is used in VPN implementations for secure IP communication?",
+      "options": [
+        "A. ICMP",
+        "B. IPsec",
+        "C. ARP",
+        "D. RIP"
+      ],
+      "correct_answer": "B. IPsec",
+      "explanation": "IPsec secures IP packets using authentication and encryption.",
+      "topic": "Network Security"
+    },
+    {
+      "id": 52,
+      "question": "Stateful firewalls differ from stateless firewalls because stateful firewalls:",
+      "options": [
+        "A. Track connection state information",
+        "B. Only inspect physical layer frames",
+        "C. Cannot filter ports",
+        "D. Work only with IPv6"
+      ],
+      "correct_answer": "A. Track connection state information",
+      "explanation": "Stateful firewalls remember active connections and make better filtering decisions.",
+      "topic": "Network Security"
+    },
+    {
+      "id": 53,
+      "question": "Which port is used by HTTPS by default?",
+      "options": [
+        "A. 21",
+        "B. 23",
+        "C. 80",
+        "D. 443"
+      ],
+      "correct_answer": "D. 443",
+      "explanation": "HTTPS commonly uses TCP port 443.",
+      "topic": "Network Security"
+    },
+    {
+      "id": 54,
+      "question": "Which protocol is insecure because it sends credentials in plaintext during remote login?",
+      "options": [
+        "A. SSH",
+        "B. Telnet",
+        "C. HTTPS",
+        "D. SFTP"
+      ],
+      "correct_answer": "B. Telnet",
+      "explanation": "Telnet does not encrypt traffic, making credentials easy to capture.",
+      "topic": "Network Security"
+    },
+    {
+      "id": 55,
+      "question": "Which attack involves monitoring network traffic secretly to capture information?",
+      "options": [
+        "A. Sniffing",
+        "B. Fragmentation",
+        "C. Spooling",
+        "D. Multiplexing"
+      ],
+      "correct_answer": "A. Sniffing",
+      "explanation": "Sniffing captures packets traversing a network, potentially exposing sensitive data.",
+      "topic": "Network Security"
+    },
+    {
+      "id": 56,
+      "question": "A VPN mainly provides:",
+      "options": [
+        "A. An encrypted tunnel over an untrusted network",
+        "B. Only domain name resolution",
+        "C. Hardware redundancy only",
+        "D. Compression without security"
+      ],
+      "correct_answer": "A. An encrypted tunnel over an untrusted network",
+      "explanation": "VPNs secure communications over public networks like the Internet.",
+      "topic": "Network Security"
+    },
+    {
+      "id": 57,
+      "question": "Which technology can mirror switch traffic to a monitoring device for IDS analysis?",
+      "options": [
+        "A. SPAN/port mirroring",
+        "B. RAID",
+        "C. DNS forwarding",
+        "D. DHCP reservation"
+      ],
+      "correct_answer": "A. SPAN/port mirroring",
+      "explanation": "Port mirroring copies traffic to another port so monitoring tools can inspect it.",
+      "topic": "Network Security"
+    },
+    {
+      "id": 58,
+      "question": "Which statement about WPA2 is correct?",
+      "options": [
+        "A. It is a wired Ethernet standard",
+        "B. It is a Wi-Fi security standard using stronger protection than WEP",
+        "C. It replaces IP addressing",
+        "D. It is a routing protocol"
+      ],
+      "correct_answer": "B. It is a Wi-Fi security standard using stronger protection than WEP",
+      "explanation": "WPA2 provides significantly stronger wireless security than old WEP.",
+      "topic": "Network Security"
+    },
+    {
+      "id": 59,
+      "question": "MAC filtering on a wireless network is considered weak security because:",
+      "options": [
+        "A. MAC addresses can be spoofed",
+        "B. It encrypts too strongly",
+        "C. It blocks DNS",
+        "D. It prevents DHCP"
+      ],
+      "correct_answer": "A. MAC addresses can be spoofed",
+      "explanation": "An attacker can often observe and clone an allowed MAC address.",
+      "topic": "Network Security"
+    },
+    {
+      "id": 60,
+      "question": "Which protocol is designed to securely transfer files over SSH?",
+      "options": [
+        "A. TFTP",
+        "B. SFTP",
+        "C. FTP",
+        "D. SNMP"
+      ],
+      "correct_answer": "B. SFTP",
+      "explanation": "SFTP uses SSH to provide encrypted file transfer.",
+      "topic": "Network Security"
+    },
+    {
+      "id": 61,
+      "question": "Which device commonly separates networks and reduces broadcast propagation between them?",
+      "options": [
+        "A. Hub",
+        "B. Router",
+        "C. Repeater",
+        "D. Coaxial cable"
+      ],
+      "correct_answer": "B. Router",
+      "explanation": "Routers separate broadcast domains and forward packets between networks.",
+      "topic": "Network Security"
+    },
+    {
+      "id": 62,
+      "question": "Which of the following is a network segmentation benefit?",
+      "options": [
+        "A. Increased attack spread",
+        "B. Reduced lateral movement by attackers",
+        "C. Elimination of all malware",
+        "D. Removal of all passwords"
+      ],
+      "correct_answer": "B. Reduced lateral movement by attackers",
+      "explanation": "Segmentation limits the ability of attackers to move freely across the network.",
+      "topic": "Network Security"
+    },
+    {
+      "id": 63,
+      "question": "A phishing attack usually aims to:",
+      "options": [
+        "A. Improve bandwidth",
+        "B. Trick users into revealing sensitive information",
+        "C. Upgrade operating systems",
+        "D. Reduce network latency"
+      ],
+      "correct_answer": "B. Trick users into revealing sensitive information",
+      "explanation": "Phishing deceives users into sharing credentials or financial information.",
+      "topic": "Common Attacks & Malware"
+    },
+    {
+      "id": 64,
+      "question": "Which malware can self-replicate and spread without attaching to another file?",
+      "options": [
+        "A. Trojan",
+        "B. Worm",
+        "C. Spyware",
+        "D. Rootkit"
+      ],
+      "correct_answer": "B. Worm",
+      "explanation": "A worm is self-contained malware that spreads automatically across systems.",
+      "topic": "Common Attacks & Malware"
+    },
+    {
+      "id": 65,
+      "question": "A Trojan horse is malware that:",
+      "options": [
+        "A. Pretends to be legitimate software",
+        "B. Only infects boot sectors",
+        "C. Replicates by itself over networks",
+        "D. Always encrypts files immediately"
+      ],
+      "correct_answer": "A. Pretends to be legitimate software",
+      "explanation": "A Trojan hides malicious intent behind seemingly useful or harmless software.",
+      "topic": "Common Attacks & Malware"
+    },
+    {
+      "id": 66,
+      "question": "Ransomware typically:",
+      "options": [
+        "A. Compresses backups",
+        "B. Encrypts data and demands payment",
+        "C. Improves file permissions",
+        "D. Increases CPU fan speed"
+      ],
+      "correct_answer": "B. Encrypts data and demands payment",
+      "explanation": "Ransomware blocks access to data or systems until a ransom is paid.",
+      "topic": "Common Attacks & Malware"
+    },
+    {
+      "id": 67,
+      "question": "Which attack floods a target with traffic to make a service unavailable?",
+      "options": [
+        "A. SQL injection",
+        "B. DoS attack",
+        "C. Spoofing",
+        "D. Salting"
+      ],
+      "correct_answer": "B. DoS attack",
+      "explanation": "A Denial-of-Service attack exhausts resources and disrupts service availability.",
+      "topic": "Common Attacks & Malware"
+    },
+    {
+      "id": 68,
+      "question": "DDoS differs from DoS because DDoS:",
+      "options": [
+        "A. Uses a single attacking host only",
+        "B. Is always harmless",
+        "C. Uses many distributed systems to attack one target",
+        "D. Requires physical access"
+      ],
+      "correct_answer": "C. Uses many distributed systems to attack one target",
+      "explanation": "Distributed DoS leverages many compromised hosts simultaneously.",
+      "topic": "Common Attacks & Malware"
+    },
+    {
+      "id": 69,
+      "question": "Which attack involves inserting malicious SQL statements into user input?",
+      "options": [
+        "A. SQL injection",
+        "B. ARP request",
+        "C. VLAN hopping",
+        "D. Buffering"
+      ],
+      "correct_answer": "A. SQL injection",
+      "explanation": "SQL injection exploits unsanitized input to manipulate database queries.",
+      "topic": "Common Attacks & Malware"
+    },
+    {
+      "id": 70,
+      "question": "Cross-site scripting (XSS) primarily targets:",
+      "options": [
+        "A. Database page replacement",
+        "B. Browser-side script execution in a victim's session",
+        "C. Disk scheduling",
+        "D. Routing tables"
+      ],
+      "correct_answer": "B. Browser-side script execution in a victim's session",
+      "explanation": "XSS injects malicious scripts that run in the user's browser.",
+      "topic": "Common Attacks & Malware"
+    },
+    {
+      "id": 71,
+      "question": "Man-in-the-middle attack means:",
+      "options": [
+        "A. An attacker secretly intercepts and possibly alters communication between two parties",
+        "B. A user shares a password",
+        "C. A server crash during backup",
+        "D. A switch dropping frames"
+      ],
+      "correct_answer": "A. An attacker secretly intercepts and possibly alters communication between two parties",
+      "explanation": "MITM attacks position the attacker between communicating parties.",
+      "topic": "Common Attacks & Malware"
+    },
+    {
+      "id": 72,
+      "question": "Spoofing refers to:",
+      "options": [
+        "A. Disguising as a trusted source",
+        "B. Compressing packets",
+        "C. Replacing a switch with a hub",
+        "D. Clearing logs"
+      ],
+      "correct_answer": "A. Disguising as a trusted source",
+      "explanation": "Spoofing forges identity information such as IP, email, or MAC addresses.",
+      "topic": "Common Attacks & Malware"
+    },
+    {
+      "id": 73,
+      "question": "Brute-force attack is best described as:",
+      "options": [
+        "A. Random packet dropping",
+        "B. Repeatedly trying many possible passwords or keys",
+        "C. Hiding malware in macros only",
+        "D. Encrypting every file"
+      ],
+      "correct_answer": "B. Repeatedly trying many possible passwords or keys",
+      "explanation": "Brute-force attacks systematically guess credentials or cryptographic keys.",
+      "topic": "Common Attacks & Malware"
+    },
+    {
+      "id": 74,
+      "question": "Which malware secretly records user activity such as keystrokes?",
+      "options": [
+        "A. Firewall",
+        "B. Keylogger",
+        "C. Router",
+        "D. Hypervisor"
+      ],
+      "correct_answer": "B. Keylogger",
+      "explanation": "A keylogger captures keystrokes, often to steal credentials.",
+      "topic": "Common Attacks & Malware"
+    },
+    {
+      "id": 75,
+      "question": "Which attack reuses valid captured data transmissions to gain unauthorized access?",
+      "options": [
+        "A. Replay attack",
+        "B. Smurf attack",
+        "C. Fragmentation attack",
+        "D. Port forwarding"
+      ],
+      "correct_answer": "A. Replay attack",
+      "explanation": "Replay attacks resend previously captured valid messages.",
+      "topic": "Common Attacks & Malware"
+    },
+    {
+      "id": 76,
+      "question": "Social engineering relies primarily on exploiting:",
+      "options": [
+        "A. Human psychology",
+        "B. Only weak encryption",
+        "C. Fiber-optic faults",
+        "D. IP fragmentation"
+      ],
+      "correct_answer": "A. Human psychology",
+      "explanation": "Social engineering manipulates people rather than systems directly.",
+      "topic": "Common Attacks & Malware"
+    },
+    {
+      "id": 77,
+      "question": "A rootkit is dangerous because it:",
+      "options": [
+        "A. Makes backups faster",
+        "B. Hides malicious processes or files from detection",
+        "C. Improves integrity checking",
+        "D. Replaces certificates with passwords"
+      ],
+      "correct_answer": "B. Hides malicious processes or files from detection",
+      "explanation": "Rootkits conceal malware and attacker activity on compromised systems.",
+      "topic": "Common Attacks & Malware"
+    },
+    {
+      "id": 78,
+      "question": "Which malware type is mainly designed to display unwanted advertisements?",
+      "options": [
+        "A. Adware",
+        "B. Worm",
+        "C. Ransomware",
+        "D. IDS"
+      ],
+      "correct_answer": "A. Adware",
+      "explanation": "Adware mainly serves intrusive advertisements, though it may also track behavior.",
+      "topic": "Common Attacks & Malware"
+    },
+    {
+      "id": 79,
+      "question": "Shoulder surfing is an example of:",
+      "options": [
+        "A. Physical/social observation attack",
+        "B. Hash collision",
+        "C. Packet encapsulation",
+        "D. DNS recursion"
+      ],
+      "correct_answer": "A. Physical/social observation attack",
+      "explanation": "Shoulder surfing involves observing someone enter sensitive data.",
+      "topic": "Common Attacks & Malware"
+    },
+    {
+      "id": 80,
+      "question": "An email asks a bank customer to click a fake link and log in. This is most likely:",
+      "options": [
+        "A. VLAN tagging",
+        "B. Phishing",
+        "C. DHCP starvation",
+        "D. Data warehousing"
+      ],
+      "correct_answer": "B. Phishing",
+      "explanation": "Fake login pages are a classic phishing technique.",
+      "topic": "Common Attacks & Malware"
+    },
+    {
+      "id": 81,
+      "question": "Which attack uses specially crafted input to make a program execute beyond its memory bounds?",
+      "options": [
+        "A. Buffer overflow",
+        "B. Sniffing",
+        "C. NAT traversal",
+        "D. CRC"
+      ],
+      "correct_answer": "A. Buffer overflow",
+      "explanation": "Buffer overflows overwrite memory and may lead to code execution.",
+      "topic": "Common Attacks & Malware"
+    },
+    {
+      "id": 82,
+      "question": "A botnet is:",
+      "options": [
+        "A. A secure backup network",
+        "B. A collection of compromised devices controlled remotely",
+        "C. A firewall cluster",
+        "D. A DNS cache"
+      ],
+      "correct_answer": "B. A collection of compromised devices controlled remotely",
+      "explanation": "Botnets are often used for DDoS, spam, and malware distribution.",
+      "topic": "Common Attacks & Malware"
+    },
+    {
+      "id": 83,
+      "question": "Whaling is a form of phishing aimed at:",
+      "options": [
+        "A. Network switches",
+        "B. High-profile executives or senior officials",
+        "C. Only students",
+        "D. Public DNS servers"
+      ],
+      "correct_answer": "B. High-profile executives or senior officials",
+      "explanation": "Whaling targets senior decision-makers with tailored deception.",
+      "topic": "Common Attacks & Malware"
+    },
+    {
+      "id": 84,
+      "question": "Which practice best reduces the success of phishing attacks?",
+      "options": [
+        "A. Disable all backups",
+        "B. Security awareness training and verification of links",
+        "C. Remove firewalls",
+        "D. Use a hub instead of a switch"
+      ],
+      "correct_answer": "B. Security awareness training and verification of links",
+      "explanation": "User awareness and cautious verification are key phishing defenses.",
+      "topic": "Common Attacks & Malware"
+    },
+    {
+      "id": 85,
+      "question": "Which factor category does a password belong to?",
+      "options": [
+        "A. Something you have",
+        "B. Something you know",
+        "C. Something you are",
+        "D. Somewhere you are"
+      ],
+      "correct_answer": "B. Something you know",
+      "explanation": "Passwords are knowledge-based authentication factors.",
+      "topic": "Authentication & Access Control"
+    },
+    {
+      "id": 86,
+      "question": "A fingerprint scanner is an example of:",
+      "options": [
+        "A. Token-based authentication",
+        "B. Biometric authentication",
+        "C. Knowledge factor",
+        "D. Password vaulting"
+      ],
+      "correct_answer": "B. Biometric authentication",
+      "explanation": "Biometrics use unique physical or behavioral traits.",
+      "topic": "Authentication & Access Control"
+    },
+    {
+      "id": 87,
+      "question": "Which access control model assigns permissions based on job roles?",
+      "options": [
+        "A. DAC",
+        "B. RBAC",
+        "C. MAC",
+        "D. PAC"
+      ],
+      "correct_answer": "B. RBAC",
+      "explanation": "Role-Based Access Control grants permissions according to organizational roles.",
+      "topic": "Authentication & Access Control"
+    },
+    {
+      "id": 88,
+      "question": "In Discretionary Access Control (DAC), access is mainly controlled by:",
+      "options": [
+        "A. The system owner or data owner",
+        "B. Mandatory labels only",
+        "C. Public key certificates only",
+        "D. BIOS settings"
+      ],
+      "correct_answer": "A. The system owner or data owner",
+      "explanation": "DAC lets owners decide who can access their resources.",
+      "topic": "Authentication & Access Control"
+    },
+    {
+      "id": 89,
+      "question": "Mandatory Access Control (MAC) commonly uses:",
+      "options": [
+        "A. User choice only",
+        "B. Security labels and classifications",
+        "C. Random passwords",
+        "D. Open access by default"
+      ],
+      "correct_answer": "B. Security labels and classifications",
+      "explanation": "MAC is centrally enforced using labels such as confidential or secret.",
+      "topic": "Authentication & Access Control"
+    },
+    {
+      "id": 90,
+      "question": "Multifactor authentication becomes stronger because it:",
+      "options": [
+        "A. Uses two or more independent factor types",
+        "B. Uses a longer username",
+        "C. Avoids encryption",
+        "D. Eliminates the need for authorization"
+      ],
+      "correct_answer": "A. Uses two or more independent factor types",
+      "explanation": "Combining independent factors makes compromise harder.",
+      "topic": "Authentication & Access Control"
+    },
+    {
+      "id": 91,
+      "question": "Single Sign-On (SSO) allows a user to:",
+      "options": [
+        "A. Use one authentication event for multiple applications",
+        "B. Bypass all access controls",
+        "C. Avoid password changes forever",
+        "D. Replace digital certificates"
+      ],
+      "correct_answer": "A. Use one authentication event for multiple applications",
+      "explanation": "SSO reduces repeated logins across integrated systems.",
+      "topic": "Authentication & Access Control"
+    },
+    {
+      "id": 92,
+      "question": "What is account lockout mainly intended to prevent?",
+      "options": [
+        "A. Packet collisions",
+        "B. Brute-force password guessing",
+        "C. Disk fragmentation",
+        "D. Data redundancy"
+      ],
+      "correct_answer": "B. Brute-force password guessing",
+      "explanation": "Lockout limits repeated failed logins and slows guessing attempts.",
+      "topic": "Authentication & Access Control"
+    },
+    {
+      "id": 93,
+      "question": "Which statement about passwords is most secure?",
+      "options": [
+        "A. Reuse the same password everywhere",
+        "B. Use long unique passwords for each account",
+        "C. Share passwords with team members",
+        "D. Write passwords on the monitor"
+      ],
+      "correct_answer": "B. Use long unique passwords for each account",
+      "explanation": "Long unique passwords reduce credential stuffing and compromise impact.",
+      "topic": "Authentication & Access Control"
+    },
+    {
+      "id": 94,
+      "question": "What is the main purpose of authorization after authentication?",
+      "options": [
+        "A. To hash the password again",
+        "B. To determine allowed actions",
+        "C. To restart the system",
+        "D. To assign an IP address"
+      ],
+      "correct_answer": "B. To determine allowed actions",
+      "explanation": "After identity is verified, authorization defines what the user may access.",
+      "topic": "Authentication & Access Control"
+    },
+    {
+      "id": 95,
+      "question": "A smart card used with a PIN is an example of:",
+      "options": [
+        "A. Single factor authentication",
+        "B. Two-factor authentication",
+        "C. No authentication",
+        "D. Only biometric authentication"
+      ],
+      "correct_answer": "B. Two-factor authentication",
+      "explanation": "The smart card is something you have and the PIN is something you know.",
+      "topic": "Authentication & Access Control"
+    },
+    {
+      "id": 96,
+      "question": "Which access principle reduces damage if an account is compromised?",
+      "options": [
+        "A. Least privilege",
+        "B. Open permissions",
+        "C. Shared administrator account",
+        "D. Disabled logging"
+      ],
+      "correct_answer": "A. Least privilege",
+      "explanation": "Limiting privileges restricts what an attacker can do with a stolen account.",
+      "topic": "Authentication & Access Control"
+    },
+    {
+      "id": 97,
+      "question": "Which of the following is an example of 'something you have'?",
+      "options": [
+        "A. Password",
+        "B. PIN",
+        "C. Security token",
+        "D. Fingerprint"
+      ],
+      "correct_answer": "C. Security token",
+      "explanation": "A hardware token or phone authenticator is a possession factor.",
+      "topic": "Authentication & Access Control"
+    },
+    {
+      "id": 98,
+      "question": "Session timeout is mainly used to:",
+      "options": [
+        "A. Increase monitor brightness",
+        "B. Reduce risk from unattended logged-in sessions",
+        "C. Speed up routing protocols",
+        "D. Disable encryption"
+      ],
+      "correct_answer": "B. Reduce risk from unattended logged-in sessions",
+      "explanation": "Automatically ending idle sessions reduces unauthorized reuse.",
+      "topic": "Authentication & Access Control"
+    },
+    {
+      "id": 99,
+      "question": "Privileged access management focuses on:",
+      "options": [
+        "A. Managing only public websites",
+        "B. Controlling and monitoring powerful administrative accounts",
+        "C. Replacing antivirus",
+        "D. Converting protocols"
+      ],
+      "correct_answer": "B. Controlling and monitoring powerful administrative accounts",
+      "explanation": "Administrative accounts need stronger controls because they can make major changes.",
+      "topic": "Authentication & Access Control"
+    },
+    {
+      "id": 100,
+      "question": "Which control best supports separation of duties?",
+      "options": [
+        "A. One person performs and approves the same payment",
+        "B. Critical tasks are divided among different people",
+        "C. All users share one admin account",
+        "D. Logs are deleted weekly"
+      ],
+      "correct_answer": "B. Critical tasks are divided among different people",
+      "explanation": "Separation of duties reduces fraud and error by splitting critical responsibilities.",
+      "topic": "Authentication & Access Control"
+    },
+    {
+      "id": 101,
+      "question": "HTTPS differs from HTTP because HTTPS:",
+      "options": [
+        "A. Uses TLS/SSL to encrypt communication",
+        "B. Uses UDP only",
+        "C. Cannot transfer web pages",
+        "D. Removes certificates"
+      ],
+      "correct_answer": "A. Uses TLS/SSL to encrypt communication",
+      "explanation": "HTTPS adds TLS protection to HTTP traffic.",
+      "topic": "Security Protocols & Secure Communication"
+    },
+    {
+      "id": 102,
+      "question": "Which protocol secures remote command-line login sessions?",
+      "options": [
+        "A. SSH",
+        "B. Telnet",
+        "C. FTP",
+        "D. SNMP"
+      ],
+      "correct_answer": "A. SSH",
+      "explanation": "SSH provides encrypted remote administration.",
+      "topic": "Security Protocols & Secure Communication"
+    },
+    {
+      "id": 103,
+      "question": "Which protocol is commonly used to collect network management information and should be secured carefully?",
+      "options": [
+        "A. SNMP",
+        "B. ARP",
+        "C. RIP",
+        "D. ICMP"
+      ],
+      "correct_answer": "A. SNMP",
+      "explanation": "SNMP manages network devices but older versions may expose sensitive data if unsecured.",
+      "topic": "Security Protocols & Secure Communication"
+    },
+    {
+      "id": 104,
+      "question": "Which protocol is safer for file transfer than FTP because it provides encryption?",
+      "options": [
+        "A. TFTP",
+        "B. SFTP",
+        "C. ICMP",
+        "D. POP3"
+      ],
+      "correct_answer": "B. SFTP",
+      "explanation": "SFTP encrypts both commands and data over SSH.",
+      "topic": "Security Protocols & Secure Communication"
+    },
+    {
+      "id": 105,
+      "question": "TLS is primarily used to provide:",
+      "options": [
+        "A. Compression only",
+        "B. Confidentiality and integrity for network sessions",
+        "C. Disk scheduling",
+        "D. IP addressing"
+      ],
+      "correct_answer": "B. Confidentiality and integrity for network sessions",
+      "explanation": "TLS protects application-layer communications such as web traffic.",
+      "topic": "Security Protocols & Secure Communication"
+    },
+    {
+      "id": 106,
+      "question": "Which protocol pair is correctly matched as insecure vs secure counterpart for remote login?",
+      "options": [
+        "A. Telnet / SSH",
+        "B. HTTPS / HTTP",
+        "C. SFTP / FTP",
+        "D. IPsec / DNS"
+      ],
+      "correct_answer": "A. Telnet / SSH",
+      "explanation": "Telnet is insecure, while SSH is its secure replacement for remote login.",
+      "topic": "Security Protocols & Secure Communication"
+    },
+    {
+      "id": 107,
+      "question": "Email retrieval over an encrypted channel is commonly provided by:",
+      "options": [
+        "A. IMAPS or POP3S",
+        "B. ARP",
+        "C. RIP",
+        "D. BOOTP only"
+      ],
+      "correct_answer": "A. IMAPS or POP3S",
+      "explanation": "Secure versions of IMAP and POP3 use TLS/SSL.",
+      "topic": "Security Protocols & Secure Communication"
+    },
+    {
+      "id": 108,
+      "question": "Which protocol secures IP packets at the network layer?",
+      "options": [
+        "A. TLS",
+        "B. IPsec",
+        "C. SSH",
+        "D. S/MIME only"
+      ],
+      "correct_answer": "B. IPsec",
+      "explanation": "IPsec operates at the IP layer to secure packet communications.",
+      "topic": "Security Protocols & Secure Communication"
+    },
+    {
+      "id": 109,
+      "question": "Digital certificates in TLS are mainly used to:",
+      "options": [
+        "A. Assign port numbers",
+        "B. Prove server identity and support key exchange",
+        "C. Replace DNS records",
+        "D. Increase bandwidth"
+      ],
+      "correct_answer": "B. Prove server identity and support key exchange",
+      "explanation": "Certificates help clients verify they are talking to the intended server.",
+      "topic": "Security Protocols & Secure Communication"
+    },
+    {
+      "id": 110,
+      "question": "Which protocol is used to send email securely with end-to-end content protection at the message level?",
+      "options": [
+        "A. SMTP alone",
+        "B. S/MIME",
+        "C. ARP",
+        "D. RIP"
+      ],
+      "correct_answer": "B. S/MIME",
+      "explanation": "S/MIME secures email content using encryption and digital signatures.",
+      "topic": "Security Protocols & Secure Communication"
+    },
+    {
+      "id": 111,
+      "question": "What is the main danger of using plain HTTP on public Wi-Fi?",
+      "options": [
+        "A. Higher battery usage",
+        "B. Traffic can be intercepted and read easily",
+        "C. It prevents DNS lookups",
+        "D. It blocks all cookies"
+      ],
+      "correct_answer": "B. Traffic can be intercepted and read easily",
+      "explanation": "Without encryption, attackers on the same network may read or alter traffic.",
+      "topic": "Security Protocols & Secure Communication"
+    },
+    {
+      "id": 112,
+      "question": "Which protocol is commonly used to access a website securely in a browser?",
+      "options": [
+        "A. HTTPS",
+        "B. FTP",
+        "C. Telnet",
+        "D. TFTP"
+      ],
+      "correct_answer": "A. HTTPS",
+      "explanation": "HTTPS is the standard secure protocol for websites.",
+      "topic": "Security Protocols & Secure Communication"
+    },
+    {
+      "id": 113,
+      "question": "Which statement about SSL and TLS is most accurate for exam purposes?",
+      "options": [
+        "A. TLS is the newer and more secure successor to SSL",
+        "B. SSL is newer than TLS",
+        "C. They are unrelated technologies",
+        "D. TLS works only on routers"
+      ],
+      "correct_answer": "A. TLS is the newer and more secure successor to SSL",
+      "explanation": "TLS replaced SSL and is the protocol used in modern secure communications.",
+      "topic": "Security Protocols & Secure Communication"
+    },
+    {
+      "id": 114,
+      "question": "Which protocol would be the safest default choice for remotely copying files to a server?",
+      "options": [
+        "A. FTP",
+        "B. TFTP",
+        "C. SFTP",
+        "D. Telnet"
+      ],
+      "correct_answer": "C. SFTP",
+      "explanation": "SFTP protects credentials and transferred files through encryption.",
+      "topic": "Security Protocols & Secure Communication"
+    },
+    {
+      "id": 115,
+      "question": "Which is the first major step in incident response before eradication and recovery?",
+      "options": [
+        "A. Detection and analysis",
+        "B. Payroll processing",
+        "C. Database normalization",
+        "D. VLAN tagging"
+      ],
+      "correct_answer": "A. Detection and analysis",
+      "explanation": "Incidents must first be identified and understood before response actions are taken.",
+      "topic": "Security Operations & Incident Response"
+    },
+    {
+      "id": 116,
+      "question": "Why are logs important in security operations?",
+      "options": [
+        "A. They reduce RAM usage",
+        "B. They provide evidence and visibility into events",
+        "C. They replace authentication",
+        "D. They eliminate malware"
+      ],
+      "correct_answer": "B. They provide evidence and visibility into events",
+      "explanation": "Logs help detect incidents, investigate them, and support compliance.",
+      "topic": "Security Operations & Incident Response"
+    },
+    {
+      "id": 117,
+      "question": "A SIEM system mainly helps by:",
+      "options": [
+        "A. Replacing all firewalls",
+        "B. Centralizing and correlating security logs and alerts",
+        "C. Increasing hard disk RPM",
+        "D. Disabling suspicious traffic physically"
+      ],
+      "correct_answer": "B. Centralizing and correlating security logs and alerts",
+      "explanation": "SIEM tools aggregate and correlate events from many sources.",
+      "topic": "Security Operations & Incident Response"
+    },
+    {
+      "id": 118,
+      "question": "Which backup strategy most helps recovery from ransomware when backups are intact?",
+      "options": [
+        "A. No backups",
+        "B. Offline or immutable backups",
+        "C. Shared network drive only",
+        "D. Deleting restore points"
+      ],
+      "correct_answer": "B. Offline or immutable backups",
+      "explanation": "Offline or immutable backups resist attacker tampering and support restoration.",
+      "topic": "Security Operations & Incident Response"
+    },
+    {
+      "id": 119,
+      "question": "Patch management is important because it:",
+      "options": [
+        "A. Adds more passwords",
+        "B. Fixes known vulnerabilities in software",
+        "C. Replaces risk assessment",
+        "D. Prevents all social engineering"
+      ],
+      "correct_answer": "B. Fixes known vulnerabilities in software",
+      "explanation": "Applying patches closes known security flaws that attackers may exploit.",
+      "topic": "Security Operations & Incident Response"
+    },
+    {
+      "id": 120,
+      "question": "Which term refers to returning systems to normal operation after an incident?",
+      "options": [
+        "A. Eradication",
+        "B. Recovery",
+        "C. Hashing",
+        "D. Enumeration"
+      ],
+      "correct_answer": "B. Recovery",
+      "explanation": "Recovery restores services and verifies systems are functioning safely again.",
+      "topic": "Security Operations & Incident Response"
+    },
+    {
+      "id": 121,
+      "question": "Containment in incident response means:",
+      "options": [
+        "A. Expanding the incident to more systems",
+        "B. Limiting the spread and impact of the incident",
+        "C. Deleting all logs",
+        "D. Disabling all accounts permanently"
+      ],
+      "correct_answer": "B. Limiting the spread and impact of the incident",
+      "explanation": "Containment isolates affected systems to stop further damage.",
+      "topic": "Security Operations & Incident Response"
+    },
+    {
+      "id": 122,
+      "question": "Eradication in incident response usually involves:",
+      "options": [
+        "A. Confirming the system clock",
+        "B. Removing malware and closing the root cause",
+        "C. Printing the security policy",
+        "D. Formatting every device unnecessarily"
+      ],
+      "correct_answer": "B. Removing malware and closing the root cause",
+      "explanation": "Eradication eliminates the attacker presence and underlying vulnerabilities.",
+      "topic": "Security Operations & Incident Response"
+    },
+    {
+      "id": 123,
+      "question": "Which metric indicates how quickly a security team detects an incident?",
+      "options": [
+        "A. MTTR",
+        "B. MTTD",
+        "C. RAID",
+        "D. TTL"
+      ],
+      "correct_answer": "B. MTTD",
+      "explanation": "Mean Time To Detect measures average detection speed.",
+      "topic": "Security Operations & Incident Response"
+    },
+    {
+      "id": 124,
+      "question": "Which practice helps preserve evidence during investigation?",
+      "options": [
+        "A. Randomly rebooting devices",
+        "B. Proper chain of custody",
+        "C. Deleting suspicious files immediately without record",
+        "D. Sharing evidence widely"
+      ],
+      "correct_answer": "B. Proper chain of custody",
+      "explanation": "Chain of custody documents who handled evidence and when.",
+      "topic": "Security Operations & Incident Response"
+    },
+    {
+      "id": 125,
+      "question": "Security monitoring is most effective when it is:",
+      "options": [
+        "A. Performed once a year only",
+        "B. Continuous and based on baselines and alerts",
+        "C. Limited to printers",
+        "D. Disabled after office hours"
+      ],
+      "correct_answer": "B. Continuous and based on baselines and alerts",
+      "explanation": "Continuous monitoring improves early detection of abnormal activity.",
+      "topic": "Security Operations & Incident Response"
+    },
+    {
+      "id": 126,
+      "question": "A tabletop exercise is primarily used to:",
+      "options": [
+        "A. Increase storage capacity",
+        "B. Practice incident response roles and decisions",
+        "C. Generate encryption keys",
+        "D. Assign IP addresses"
+      ],
+      "correct_answer": "B. Practice incident response roles and decisions",
+      "explanation": "Tabletop exercises improve preparedness by simulating scenarios.",
+      "topic": "Security Operations & Incident Response"
+    },
+    {
+      "id": 127,
+      "question": "Input validation is important mainly because it:",
+      "options": [
+        "A. Increases monitor size",
+        "B. Helps prevent malicious data from being processed",
+        "C. Replaces all encryption",
+        "D. Assigns MAC addresses"
+      ],
+      "correct_answer": "B. Helps prevent malicious data from being processed",
+      "explanation": "Proper validation reduces injection and other application attacks.",
+      "topic": "Application & Database Security"
+    },
+    {
+      "id": 128,
+      "question": "Parameterized queries are a strong defense against:",
+      "options": [
+        "A. SQL injection",
+        "B. ARP spoofing",
+        "C. Shoulder surfing",
+        "D. DHCP starvation"
+      ],
+      "correct_answer": "A. SQL injection",
+      "explanation": "Parameterized queries separate code from data and reduce injection risk.",
+      "topic": "Application & Database Security"
+    },
+    {
+      "id": 129,
+      "question": "Which web security issue occurs when untrusted input is executed in a user's browser?",
+      "options": [
+        "A. XSS",
+        "B. RAID failure",
+        "C. Deadlock",
+        "D. Segmentation"
+      ],
+      "correct_answer": "A. XSS",
+      "explanation": "Cross-site scripting causes malicious scripts to run in the browser.",
+      "topic": "Application & Database Security"
+    },
+    {
+      "id": 130,
+      "question": "A secure cookie should ideally use which flags for better protection?",
+      "options": [
+        "A. Public and Open",
+        "B. Secure and HttpOnly",
+        "C. Broadcast and Multicast",
+        "D. Dynamic and Static"
+      ],
+      "correct_answer": "B. Secure and HttpOnly",
+      "explanation": "Secure restricts cookies to HTTPS, and HttpOnly helps prevent script access.",
+      "topic": "Application & Database Security"
+    },
+    {
+      "id": 131,
+      "question": "Session hijacking refers to:",
+      "options": [
+        "A. Taking over a valid user session",
+        "B. Breaking a hard disk",
+        "C. Losing a route in a router",
+        "D. Splitting a subnet"
+      ],
+      "correct_answer": "A. Taking over a valid user session",
+      "explanation": "If attackers steal or predict session tokens, they may impersonate users.",
+      "topic": "Application & Database Security"
+    },
+    {
+      "id": 132,
+      "question": "Which principle best protects a database account used by an application?",
+      "options": [
+        "A. Give it full DBA rights",
+        "B. Use least privilege",
+        "C. Share one account for every app",
+        "D. Disable logging"
+      ],
+      "correct_answer": "B. Use least privilege",
+      "explanation": "Applications should get only the permissions they truly need.",
+      "topic": "Application & Database Security"
+    },
+    {
+      "id": 133,
+      "question": "Stored procedures can improve security when they:",
+      "options": [
+        "A. Are used with proper permission design",
+        "B. Are always faster than every query",
+        "C. Remove the need for authentication",
+        "D. Disable parameter binding"
+      ],
+      "correct_answer": "A. Are used with proper permission design",
+      "explanation": "Well-designed stored procedures can restrict direct table access.",
+      "topic": "Application & Database Security"
+    },
+    {
+      "id": 134,
+      "question": "Which attack manipulates a trusted user's browser into sending unwanted requests to a site where the user is authenticated?",
+      "options": [
+        "A. CSRF",
+        "B. CRC",
+        "C. MAC flooding",
+        "D. Smurf attack"
+      ],
+      "correct_answer": "A. CSRF",
+      "explanation": "Cross-Site Request Forgery abuses an authenticated browser session.",
+      "topic": "Application & Database Security"
+    },
+    {
+      "id": 135,
+      "question": "Output encoding is mainly used to prevent:",
+      "options": [
+        "A. SQL backups",
+        "B. Cross-site scripting in rendered pages",
+        "C. Routing loops",
+        "D. DHCP leasing"
+      ],
+      "correct_answer": "B. Cross-site scripting in rendered pages",
+      "explanation": "Encoding output helps stop user-supplied data from being interpreted as active script.",
+      "topic": "Application & Database Security"
+    },
+    {
+      "id": 136,
+      "question": "Why should error messages in production be limited?",
+      "options": [
+        "A. To reduce fan speed",
+        "B. To avoid revealing internal details to attackers",
+        "C. To disable debugging permanently",
+        "D. To remove all logs"
+      ],
+      "correct_answer": "B. To avoid revealing internal details to attackers",
+      "explanation": "Detailed errors can leak system, database, or code information.",
+      "topic": "Application & Database Security"
+    },
+    {
+      "id": 137,
+      "question": "Which practice is safest for password storage in an application database?",
+      "options": [
+        "A. Plaintext storage",
+        "B. Reversible encryption only",
+        "C. Salted password hashing",
+        "D. Storing passwords in logs"
+      ],
+      "correct_answer": "C. Salted password hashing",
+      "explanation": "Passwords should be stored as salted hashes, not plaintext.",
+      "topic": "Application & Database Security"
+    },
+    {
+      "id": 138,
+      "question": "Which control most directly reduces the chance of unauthorized changes to application code in production?",
+      "options": [
+        "A. Version control and change management",
+        "B. Public Wi-Fi",
+        "C. MAC filtering only",
+        "D. Shorter URLs"
+      ],
+      "correct_answer": "A. Version control and change management",
+      "explanation": "Formal change control reduces unauthorized or accidental code modification.",
+      "topic": "Application & Database Security"
+    },
+    {
+      "id": 139,
+      "question": "An acceptable use policy mainly defines:",
+      "options": [
+        "A. How routers forward packets",
+        "B. How users may use organizational IT resources",
+        "C. CPU scheduling rules",
+        "D. Database joins"
+      ],
+      "correct_answer": "B. How users may use organizational IT resources",
+      "explanation": "Acceptable use policies define permitted and prohibited behavior.",
+      "topic": "Policies, Governance & Awareness"
+    },
+    {
+      "id": 140,
+      "question": "A password policy commonly specifies:",
+      "options": [
+        "A. Only office timings",
+        "B. Requirements such as length, complexity, and reuse limits",
+        "C. Routing protocol metrics",
+        "D. Disk cylinder size"
+      ],
+      "correct_answer": "B. Requirements such as length, complexity, and reuse limits",
+      "explanation": "Password policies set minimum requirements for secure passwords.",
+      "topic": "Policies, Governance & Awareness"
+    },
+    {
+      "id": 141,
+      "question": "Business continuity planning focuses on:",
+      "options": [
+        "A. Stopping every cyberattack permanently",
+        "B. Maintaining critical operations during disruption",
+        "C. Designing social media posts",
+        "D. Removing all backups"
+      ],
+      "correct_answer": "B. Maintaining critical operations during disruption",
+      "explanation": "Business continuity aims to keep essential services running.",
+      "topic": "Policies, Governance & Awareness"
+    },
+    {
+      "id": 142,
+      "question": "Disaster recovery is mainly concerned with:",
+      "options": [
+        "A. Recovering IT systems and data after major disruption",
+        "B. Creating user accounts",
+        "C. Email formatting",
+        "D. Building office furniture"
+      ],
+      "correct_answer": "A. Recovering IT systems and data after major disruption",
+      "explanation": "Disaster recovery focuses on restoring technology services after outages or disasters.",
+      "topic": "Policies, Governance & Awareness"
+    },
+    {
+      "id": 143,
+      "question": "Security awareness training is valuable because it:",
+      "options": [
+        "A. Eliminates all vulnerabilities automatically",
+        "B. Helps users recognize threats like phishing and unsafe behavior",
+        "C. Replaces encryption",
+        "D. Makes firewalls unnecessary"
+      ],
+      "correct_answer": "B. Helps users recognize threats like phishing and unsafe behavior",
+      "explanation": "Users are a major target, so awareness reduces human-error risk.",
+      "topic": "Policies, Governance & Awareness"
+    },
+    {
+      "id": 144,
+      "question": "Data classification helps organizations by:",
+      "options": [
+        "A. Identifying the sensitivity and handling needs of information",
+        "B. Increasing CPU cache",
+        "C. Changing MAC addresses",
+        "D. Replacing backups"
+      ],
+      "correct_answer": "A. Identifying the sensitivity and handling needs of information",
+      "explanation": "Classifying data guides access control, encryption, and retention decisions.",
+      "topic": "Policies, Governance & Awareness"
+    },
+    {
+      "id": 145,
+      "question": "Which document should describe how frequently backups are taken and retained?",
+      "options": [
+        "A. Backup policy",
+        "B. ARP table",
+        "C. Switch CAM table",
+        "D. Routing policy database only"
+      ],
+      "correct_answer": "A. Backup policy",
+      "explanation": "A backup policy defines schedule, retention, storage, and restoration expectations.",
+      "topic": "Policies, Governance & Awareness"
+    },
+    {
+      "id": 146,
+      "question": "Which governance concept ensures that security efforts support business objectives?",
+      "options": [
+        "A. Alignment",
+        "B. Fragmentation",
+        "C. Loop prevention",
+        "D. Broadcasting"
+      ],
+      "correct_answer": "A. Alignment",
+      "explanation": "Security governance should align controls with organizational goals and risk tolerance.",
+      "topic": "Policies, Governance & Awareness"
+    },
+    {
+      "id": 147,
+      "question": "An NDA is primarily used to:",
+      "options": [
+        "A. Assign IP addresses",
+        "B. Protect confidential information from unauthorized disclosure",
+        "C. Route mail securely",
+        "D. Replace MFA"
+      ],
+      "correct_answer": "B. Protect confidential information from unauthorized disclosure",
+      "explanation": "Non-disclosure agreements set legal obligations for confidentiality.",
+      "topic": "Policies, Governance & Awareness"
+    },
+    {
+      "id": 148,
+      "question": "Which policy is most relevant to employees using personal devices for work?",
+      "options": [
+        "A. BYOD policy",
+        "B. CPU policy",
+        "C. Subnet policy",
+        "D. RAID policy"
+      ],
+      "correct_answer": "A. BYOD policy",
+      "explanation": "Bring Your Own Device policies define security requirements for personal devices.",
+      "topic": "Policies, Governance & Awareness"
+    },
+    {
+      "id": 149,
+      "question": "A clean desk policy helps reduce:",
+      "options": [
+        "A. Exposure of sensitive information to unauthorized people",
+        "B. TCP congestion",
+        "C. Disk fragmentation",
+        "D. DNS recursion"
+      ],
+      "correct_answer": "A. Exposure of sensitive information to unauthorized people",
+      "explanation": "Visible documents and unlocked devices can leak confidential information.",
+      "topic": "Policies, Governance & Awareness"
+    },
+    {
+      "id": 150,
+      "question": "Periodic access reviews are important because they:",
+      "options": [
+        "A. Ensure privileges remain appropriate over time",
+        "B. Increase packet size",
+        "C. Replace encryption keys",
+        "D. Create routing loops"
+      ],
+      "correct_answer": "A. Ensure privileges remain appropriate over time",
+      "explanation": "Regular reviews help remove outdated or excessive access.",
+      "topic": "Policies, Governance & Awareness"
+    }
+  ]
+}

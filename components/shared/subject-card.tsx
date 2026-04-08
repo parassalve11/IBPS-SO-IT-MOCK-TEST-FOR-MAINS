@@ -51,7 +51,7 @@ export function SubjectCard({ subject }: SubjectCardProps) {
 
         <p className="mt-4 text-sm leading-6 text-slate-600">{subject.description}</p>
 
-        <div className="mt-6 grid grid-cols-3 gap-3">
+        <div className="mt-6 grid gap-3 sm:grid-cols-3">
           <div className="soft-panel p-4">
             <div className="text-xs uppercase tracking-[0.16em] text-slate-500">Questions</div>
             <div className="mt-2 text-xl font-semibold text-slate-900">{subject.questionCount}</div>
@@ -71,11 +71,11 @@ export function SubjectCard({ subject }: SubjectCardProps) {
           </div>
         </div>
 
-        <div className="mt-6 flex items-center justify-between">
+        <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-sm text-slate-500">
             Source: <span className="font-medium text-slate-700">{subject.sourceFile}</span>
           </p>
-          <Link href={instructionsHref} className="action-button-primary gap-2">
+          <Link href={instructionsHref} className="action-button-primary gap-2 sm:w-auto">
             Start Mock
             <ArrowRight className="h-4 w-4" />
           </Link>
