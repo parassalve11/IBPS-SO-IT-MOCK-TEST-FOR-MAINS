@@ -1,0 +1,82 @@
+{
+  "computer_networks_exam_questions": [
+    {
+      "id": 1,
+      "question": "Which protocol is primarily used to assign IP addresses dynamically to hosts in a network?",
+      "options": [
+        "A. DNS",
+        "B. DHCP",
+        "C. ARP",
+        "D. SMTP"
+      ],
+      "correct_answer": "B. DHCP",
+      "explanation": "DHCP dynamically leases IP configuration details such as IP address, subnet mask, gateway, and DNS server to clients.",
+      "topic": "Network Services"
+    },
+    {
+      "id": 2,
+      "question": "Which device operates at the Data Link layer and forwards frames using MAC addresses?",
+      "options": [
+        "A. Router",
+        "B. Hub",
+        "C. Switch",
+        "D. Repeater"
+      ],
+      "correct_answer": "C. Switch",
+      "explanation": "A switch makes forwarding decisions using MAC addresses and works primarily at Layer 2 of the OSI model.",
+      "topic": "OSI Model"
+    },
+    {
+      "id": 3,
+      "question": "What is the default port number used by HTTPS?",
+      "options": [
+        "A. 21",
+        "B. 25",
+        "C. 80",
+        "D. 443"
+      ],
+      "correct_answer": "D. 443",
+      "explanation": "HTTPS uses TCP port 443 by default to provide encrypted web communication using TLS/SSL.",
+      "topic": "Application Layer Protocols"
+    },
+    {
+      "id": 4,
+      "question": "Which routing protocol uses Dijkstra's shortest path first algorithm?",
+      "options": [
+        "A. RIP",
+        "B. OSPF",
+        "C. BGP",
+        "D. FTP"
+      ],
+      "correct_answer": "B. OSPF",
+      "explanation": "OSPF is a link-state routing protocol that computes routes using Dijkstra's SPF algorithm.",
+      "topic": "Routing Protocols"
+    },
+    {
+      "id": 5,
+      "question": "In IPv4, which address class provides the default subnet mask 255.255.255.0?",
+      "options": [
+        "A. Class A",
+        "B. Class B",
+        "C. Class C",
+        "D. Class D"
+      ],
+      "correct_answer": "C. Class C",
+      "explanation": "Class C IPv4 addresses have the default mask 255.255.255.0, corresponding to a /24 prefix.",
+      "topic": "IP Addressing"
+    },
+    {
+      "id": 6,
+      "question": "Which TCP flag is used to gracefully terminate a connection?",
+      "options": [
+        "A. SYN",
+        "B. ACK",
+        "C. FIN",
+        "D. RST"
+      ],
+      "correct_answer": "C. FIN",
+      "explanation": "The FIN flag indicates that a sender has finished sending data and wants to close the connection gracefully.",
+      "topic": "Transport Layer"
+    }
+  ]
+}

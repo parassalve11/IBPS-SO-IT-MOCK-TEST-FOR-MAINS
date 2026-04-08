@@ -1,0 +1,82 @@
+{
+  "operating_system_exam_questions": [
+    {
+      "id": 1,
+      "question": "Which scheduling algorithm may cause starvation for long waiting processes if shorter jobs keep arriving?",
+      "options": [
+        "A. Round Robin",
+        "B. First Come First Serve",
+        "C. Shortest Job First",
+        "D. Priority Scheduling with aging"
+      ],
+      "correct_answer": "C. Shortest Job First",
+      "explanation": "Shortest Job First can starve long jobs when short jobs continue to enter the ready queue.",
+      "topic": "CPU Scheduling"
+    },
+    {
+      "id": 2,
+      "question": "What is the main purpose of a semaphore in an operating system?",
+      "options": [
+        "A. To manage files",
+        "B. To control process synchronization",
+        "C. To allocate memory pages",
+        "D. To schedule interrupts"
+      ],
+      "correct_answer": "B. To control process synchronization",
+      "explanation": "Semaphores are synchronization primitives used to manage access to shared resources among concurrent processes or threads.",
+      "topic": "Process Synchronization"
+    },
+    {
+      "id": 3,
+      "question": "Which memory management technique allows a process to execute even if it is not completely loaded into main memory?",
+      "options": [
+        "A. Segmentation",
+        "B. Paging",
+        "C. Virtual memory",
+        "D. Swapping"
+      ],
+      "correct_answer": "C. Virtual memory",
+      "explanation": "Virtual memory extends main memory by using secondary storage, allowing execution of partially loaded processes.",
+      "topic": "Memory Management"
+    },
+    {
+      "id": 4,
+      "question": "A deadlock can occur only if which of the following is present?",
+      "options": [
+        "A. Preemption",
+        "B. Mutual exclusion",
+        "C. Time sharing",
+        "D. Multiprogramming"
+      ],
+      "correct_answer": "B. Mutual exclusion",
+      "explanation": "Mutual exclusion is one of Coffman's necessary conditions for deadlock.",
+      "topic": "Deadlocks"
+    },
+    {
+      "id": 5,
+      "question": "Which page replacement algorithm replaces the page that will not be used for the longest time in the future?",
+      "options": [
+        "A. FIFO",
+        "B. LRU",
+        "C. Optimal",
+        "D. Clock"
+      ],
+      "correct_answer": "C. Optimal",
+      "explanation": "The Optimal page replacement algorithm chooses the page whose next use is farthest in the future.",
+      "topic": "Paging"
+    },
+    {
+      "id": 6,
+      "question": "Which system call creates a new process in Unix-like operating systems?",
+      "options": [
+        "A. exec()",
+        "B. wait()",
+        "C. fork()",
+        "D. exit()"
+      ],
+      "correct_answer": "C. fork()",
+      "explanation": "fork() creates a child process by duplicating the calling process.",
+      "topic": "Process Management"
+    }
+  ]
+}
