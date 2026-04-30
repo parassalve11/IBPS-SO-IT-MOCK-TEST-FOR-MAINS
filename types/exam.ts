@@ -37,6 +37,9 @@ export interface SubjectConfig {
   name: string;
   shortName: string;
   description: string;
+  syllabusOrder: number;
+  ibpsWeightageMarks: number;
+  ibpsWeightageLabel: string;
   durationMinutes: number;
   estimatedDurationLabel?: string;
   typeLabel: string;

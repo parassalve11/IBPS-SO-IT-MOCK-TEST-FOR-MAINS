@@ -50,6 +50,14 @@ export default async function InstructionsPage({
               <div className="mt-2 text-sm font-medium text-slate-900">{subject.sourceFile}</div>
             </div>
             <div className="soft-panel p-4">
+              <div className="text-xs uppercase tracking-[0.16em] text-slate-500">
+                Approx. IBPS Weightage
+              </div>
+              <div className="mt-2 text-sm font-medium text-slate-900">
+                {subject.ibpsWeightageLabel}
+              </div>
+            </div>
+            <div className="soft-panel p-4">
               <div className="text-xs uppercase tracking-[0.16em] text-slate-500">Difficulty</div>
               <div className="mt-2 text-sm font-medium text-slate-900">{subject.difficultyLabel}</div>
             </div>

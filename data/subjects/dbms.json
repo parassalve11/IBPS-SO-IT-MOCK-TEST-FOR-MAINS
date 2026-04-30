@@ -1,1954 +1,1348 @@
 {
   "dbms_exam_questions": [
     {
-      "id": 1,
-      "question": "Which SQL clause is used to filter grouped records after GROUP BY has been applied?",
-      "options": [
-        "A. WHERE",
-        "B. HAVING",
-        "C. ORDER BY",
-        "D. DISTINCT"
-      ],
-      "correct_answer": "B. HAVING",
-      "explanation": "HAVING filters groups after aggregation, while WHERE filters rows before grouping.",
-      "topic": "SQL"
-    },
-    {
-      "id": 2,
-      "question": "Which JOIN returns only the rows that have matching values in both tables?",
-      "options": [
-        "A. LEFT JOIN",
-        "B. RIGHT JOIN",
-        "C. FULL OUTER JOIN",
-        "D. INNER JOIN"
-      ],
-      "correct_answer": "D. INNER JOIN",
-      "explanation": "INNER JOIN returns only matching rows from both participating tables.",
-      "topic": "SQL"
-    },
-    {
-      "id": 3,
-      "question": "What does the query SELECT COUNT(*) FROM Employee WHERE Dept = 'IT'; return?",
-      "options": [
-        "A. Number of IT employees",
-        "B. Total salary of IT employees",
-        "C. Names of IT employees",
-        "D. Number of departments"
-      ],
-      "correct_answer": "A. Number of IT employees",
-      "explanation": "COUNT(*) counts the number of rows satisfying the WHERE condition.",
-      "topic": "SQL"
-    },
-    {
-      "id": 4,
-      "question": "Which command removes all rows from a table but keeps the table structure intact?",
-      "options": [
-        "A. DROP",
-        "B. DELETE TABLE",
-        "C. TRUNCATE",
-        "D. REMOVE"
-      ],
-      "correct_answer": "C. TRUNCATE",
-      "explanation": "TRUNCATE removes all rows quickly while preserving the table definition.",
-      "topic": "SQL"
-    },
-    {
-      "id": 5,
-      "question": "A correlated subquery is one that:",
-      "options": [
-        "A. Executes only once and never uses the outer query",
-        "B. References columns from the outer query",
-        "C. Cannot use aggregate functions",
-        "D. Returns exactly one row"
-      ],
-      "correct_answer": "B. References columns from the outer query",
-      "explanation": "A correlated subquery depends on values from the outer query and may execute once per outer row.",
-      "topic": "SQL"
-    },
-    {
-      "id": 6,
-      "question": "Which of the following is a DCL command?",
-      "options": [
-        "A. INSERT",
-        "B. COMMIT",
-        "C. GRANT",
-        "D. ALTER"
-      ],
-      "correct_answer": "C. GRANT",
-      "explanation": "GRANT is a Data Control Language command used to assign privileges.",
-      "topic": "SQL"
-    },
-    {
-      "id": 7,
-      "question": "A SELF JOIN is mainly used when:",
-      "options": [
-        "A. A table must be joined with itself",
-        "B. Two different databases are joined",
-        "C. Duplicate rows are removed",
-        "D. A query has no WHERE clause"
-      ],
-      "correct_answer": "A. A table must be joined with itself",
-      "explanation": "SELF JOIN uses aliases to compare rows within the same table, such as employee-manager relationships.",
-      "topic": "SQL"
-    },
-    {
-      "id": 8,
-      "question": "Which SQL function returns the total of numeric values in a column?",
-      "options": [
-        "A. COUNT()",
-        "B. SUM()",
-        "C. AVG()",
-        "D. TOTAL()"
-      ],
-      "correct_answer": "B. SUM()",
-      "explanation": "SUM() computes the total of numeric values in a column.",
-      "topic": "SQL"
-    },
-    {
-      "id": 9,
-      "question": "Which statement correctly adds a new column Email VARCHAR(100) to table Customer?",
-      "options": [
-        "A. UPDATE Customer ADD Email VARCHAR(100);",
-        "B. ALTER TABLE Customer ADD Email VARCHAR(100);",
-        "C. MODIFY Customer ADD Email VARCHAR(100);",
-        "D. INSERT COLUMN Email INTO Customer;"
-      ],
-      "correct_answer": "B. ALTER TABLE Customer ADD Email VARCHAR(100);",
-      "explanation": "ALTER TABLE ... ADD is used to add a column to an existing table.",
-      "topic": "SQL"
-    },
-    {
-      "id": 10,
-      "question": "What is the key difference between UNION and UNION ALL?",
-      "options": [
-        "A. UNION sorts while UNION ALL does not",
-        "B. UNION removes duplicates while UNION ALL retains them",
-        "C. UNION works only on numeric columns",
-        "D. UNION ALL removes NULL values"
-      ],
-      "correct_answer": "B. UNION removes duplicates while UNION ALL retains them",
-      "explanation": "UNION eliminates duplicate rows, whereas UNION ALL includes all rows.",
-      "topic": "SQL"
-    },
-    {
-      "id": 11,
-      "question": "The EXISTS operator returns TRUE when:",
-      "options": [
-        "A. A table exists in the database",
-        "B. A column contains NULL",
-        "C. The subquery returns at least one row",
-        "D. The query returns exactly one column"
-      ],
-      "correct_answer": "C. The subquery returns at least one row",
-      "explanation": "EXISTS checks whether a subquery produces any row.",
-      "topic": "SQL"
-    },
-    {
-      "id": 12,
-      "question": "Which TCL command undoes changes made since the last COMMIT or SAVEPOINT?",
-      "options": [
-        "A. ROLLBACK",
-        "B. REVOKE",
-        "C. UNDO",
-        "D. RESET"
-      ],
-      "correct_answer": "A. ROLLBACK",
-      "explanation": "ROLLBACK reverses uncommitted changes in a transaction.",
-      "topic": "SQL"
-    },
-    {
-      "id": 13,
-      "question": "Which clause sorts query results in descending order of Salary?",
-      "options": [
-        "A. SORT BY Salary DESC",
-        "B. GROUP BY Salary DESC",
-        "C. ORDER BY Salary DESC",
-        "D. HAVING Salary DESC"
-      ],
-      "correct_answer": "C. ORDER BY Salary DESC",
-      "explanation": "ORDER BY with DESC sorts data from highest to lowest.",
-      "topic": "SQL"
-    },
-    {
-      "id": 14,
-      "question": "What is the purpose of SAVEPOINT in SQL?",
-      "options": [
-        "A. To permanently store a table",
-        "B. To mark a point within a transaction for partial rollback",
-        "C. To back up the database",
-        "D. To lock a table"
-      ],
-      "correct_answer": "B. To mark a point within a transaction for partial rollback",
-      "explanation": "SAVEPOINT creates a marker so a transaction can roll back to that point instead of fully aborting.",
-      "topic": "SQL"
-    },
-    {
-      "id": 15,
-      "question": "Which query is a common way to find the second highest salary?",
-      "options": [
-        "A. SELECT MAX(Salary) FROM Employee WHERE Salary < (SELECT MAX(Salary) FROM Employee);",
-        "B. SELECT MIN(Salary) FROM Employee;",
-        "C. SELECT TOP 2 Salary FROM Employee;",
-        "D. SELECT COUNT(Salary) FROM Employee;"
-      ],
-      "correct_answer": "A. SELECT MAX(Salary) FROM Employee WHERE Salary < (SELECT MAX(Salary) FROM Employee);",
-      "explanation": "The inner query finds the highest salary and the outer query finds the maximum below it.",
-      "topic": "SQL"
-    },
-    {
-      "id": 16,
-      "question": "Which constraint prevents duplicate values and NULLs in a column used to identify rows uniquely?",
-      "options": [
-        "A. FOREIGN KEY",
-        "B. UNIQUE",
-        "C. PRIMARY KEY",
-        "D. CHECK"
-      ],
-      "correct_answer": "C. PRIMARY KEY",
-      "explanation": "A primary key uniquely identifies each row and cannot contain NULL values.",
-      "topic": "SQL"
-    },
-    {
-      "id": 17,
-      "question": "Which command is used to remove privileges from a user?",
-      "options": [
-        "A. REVOKE",
-        "B. ROLLBACK",
-        "C. DENY TABLE",
-        "D. CANCEL"
-      ],
-      "correct_answer": "A. REVOKE",
-      "explanation": "REVOKE withdraws previously granted privileges.",
-      "topic": "SQL"
-    },
-    {
-      "id": 18,
-      "question": "Which SQL object stores a query as a virtual table?",
-      "options": [
-        "A. Trigger",
-        "B. Index",
-        "C. Procedure",
-        "D. View"
-      ],
-      "correct_answer": "D. View",
-      "explanation": "A view is a stored query that behaves like a virtual table.",
-      "topic": "SQL"
-    },
-    {
-      "id": 19,
-      "question": "Which clause eliminates duplicate rows from a query result?",
-      "options": [
-        "A. UNIQUE",
-        "B. DISTINCT",
-        "C. DIFFERENT",
-        "D. REMOVE DUPLICATE"
-      ],
-      "correct_answer": "B. DISTINCT",
-      "explanation": "DISTINCT removes duplicate rows from the output.",
-      "topic": "SQL"
-    },
-    {
-      "id": 20,
-      "question": "Which statement is true about the WHERE and HAVING clauses?",
-      "options": [
-        "A. WHERE can use aggregate functions directly without subqueries",
-        "B. HAVING filters rows before grouping",
-        "C. WHERE filters rows; HAVING filters groups",
-        "D. Both are used only with ORDER BY"
-      ],
-      "correct_answer": "C. WHERE filters rows; HAVING filters groups",
-      "explanation": "WHERE applies before grouping, while HAVING applies after GROUP BY.",
-      "topic": "SQL"
-    },
-    {
-      "id": 21,
-      "question": "What is the result of a CROSS JOIN between two tables having m and n rows respectively?",
-      "options": [
-        "A. m + n rows",
-        "B. m - n rows",
-        "C. m × n rows",
-        "D. max(m, n) rows"
-      ],
-      "correct_answer": "C. m × n rows",
-      "explanation": "A CROSS JOIN produces the Cartesian product of the two tables.",
-      "topic": "SQL"
-    },
-    {
-      "id": 22,
-      "question": "Which command permanently removes a table definition and its data?",
-      "options": [
-        "A. DELETE",
-        "B. TRUNCATE",
-        "C. DROP",
-        "D. REMOVE"
-      ],
-      "correct_answer": "C. DROP",
-      "explanation": "DROP deletes the entire table structure along with its data.",
-      "topic": "SQL"
-    },
-    {
-      "id": 23,
-      "question": "Which command is used to change existing data in a table?",
-      "options": [
-        "A. ALTER",
-        "B. UPDATE",
-        "C. MODIFY",
-        "D. CHANGE"
-      ],
-      "correct_answer": "B. UPDATE",
-      "explanation": "UPDATE modifies existing row values based on a condition.",
-      "topic": "SQL"
-    },
-    {
-      "id": 24,
-      "question": "Which function returns the average of numeric values?",
-      "options": [
-        "A. COUNT()",
-        "B. SUM()",
-        "C. AVG()",
-        "D. MEAN()"
-      ],
-      "correct_answer": "C. AVG()",
-      "explanation": "AVG() computes the arithmetic mean of numeric values.",
-      "topic": "SQL"
-    },
-    {
-      "id": 25,
-      "question": "Which of the following is used to enforce domain restrictions on a column?",
-      "options": [
-        "A. CHECK constraint",
-        "B. VIEW",
-        "C. INDEX",
-        "D. SAVEPOINT"
-      ],
-      "correct_answer": "A. CHECK constraint",
-      "explanation": "A CHECK constraint restricts values that can be stored in a column.",
-      "topic": "SQL"
-    },
-    {
-      "id": 26,
-      "question": "Which query returns unique department names from Employee?",
-      "options": [
-        "A. SELECT Department FROM Employee UNIQUE;",
-        "B. SELECT DISTINCT Department FROM Employee;",
-        "C. SELECT ONLY Department FROM Employee;",
-        "D. SELECT Department UNIQUE FROM Employee;"
-      ],
-      "correct_answer": "B. SELECT DISTINCT Department FROM Employee;",
-      "explanation": "DISTINCT returns only different department values.",
-      "topic": "SQL"
-    },
-    {
-      "id": 27,
-      "question": "What does the LIKE operator do in SQL?",
-      "options": [
-        "A. Performs arithmetic comparison",
-        "B. Searches for a pattern in a string",
-        "C. Joins two tables",
-        "D. Locks records"
-      ],
-      "correct_answer": "B. Searches for a pattern in a string",
-      "explanation": "LIKE is used with wildcards such as % and _ for pattern matching.",
-      "topic": "SQL"
-    },
-    {
-      "id": 28,
-      "question": "Which wildcard in SQL LIKE represents exactly one character?",
-      "options": [
-        "A. %",
-        "B. *",
-        "C. _",
-        "D. ?"
-      ],
-      "correct_answer": "C. _",
-      "explanation": "The underscore wildcard matches exactly one character in most SQL dialects.",
-      "topic": "SQL"
-    },
-    {
-      "id": 29,
-      "question": "Which SQL statement inserts a new row into a table?",
-      "options": [
-        "A. ADD INTO",
-        "B. APPEND",
-        "C. INSERT INTO",
-        "D. INCLUDE"
-      ],
-      "correct_answer": "C. INSERT INTO",
-      "explanation": "INSERT INTO adds new rows to a table.",
-      "topic": "SQL"
-    },
-    {
-      "id": 30,
-      "question": "What is the purpose of GROUP BY in SQL?",
-      "options": [
-        "A. To sort rows",
-        "B. To combine rows into groups for aggregate calculations",
-        "C. To delete duplicate rows",
-        "D. To rename columns"
-      ],
-      "correct_answer": "B. To combine rows into groups for aggregate calculations",
-      "explanation": "GROUP BY forms groups of rows sharing the same values so aggregate functions can be applied.",
-      "topic": "SQL"
-    },
-    {
-      "id": 31,
-      "question": "A relation is in First Normal Form (1NF) when:",
-      "options": [
-        "A. It has no transitive dependency",
-        "B. It has no partial dependency",
-        "C. All attribute values are atomic",
-        "D. Every determinant is a superkey"
-      ],
-      "correct_answer": "C. All attribute values are atomic",
-      "explanation": "1NF requires each attribute value to be indivisible and each field to contain a single value.",
-      "topic": "Normalization"
-    },
-    {
-      "id": 32,
-      "question": "Which normal form removes partial dependency?",
-      "options": [
-        "A. 1NF",
-        "B. 2NF",
-        "C. 3NF",
-        "D. BCNF"
-      ],
-      "correct_answer": "B. 2NF",
-      "explanation": "2NF removes partial dependency of non-key attributes on part of a composite key.",
-      "topic": "Normalization"
-    },
-    {
-      "id": 33,
-      "question": "Which normal form removes transitive dependency?",
-      "options": [
-        "A. 1NF",
-        "B. 2NF",
-        "C. 3NF",
-        "D. 4NF"
-      ],
-      "correct_answer": "C. 3NF",
-      "explanation": "3NF ensures non-key attributes do not depend transitively on the primary key.",
-      "topic": "Normalization"
-    },
-    {
-      "id": 34,
-      "question": "BCNF is stricter than 3NF because:",
-      "options": [
-        "A. It removes multivalued dependencies",
-        "B. Every determinant must be a superkey",
-        "C. It disallows composite keys",
-        "D. It eliminates all foreign keys"
-      ],
-      "correct_answer": "B. Every determinant must be a superkey",
-      "explanation": "In BCNF, for every non-trivial functional dependency X → Y, X must be a superkey.",
-      "topic": "Normalization"
-    },
-    {
-      "id": 35,
-      "question": "If A → B and B → C, then A → C is called:",
-      "options": [
-        "A. Partial dependency",
-        "B. Transitive dependency",
-        "C. Multivalued dependency",
-        "D. Join dependency"
-      ],
-      "correct_answer": "B. Transitive dependency",
-      "explanation": "A determines C through B, which is the definition of transitive dependency.",
-      "topic": "Normalization"
-    },
-    {
-      "id": 36,
-      "question": "A prime attribute is an attribute that:",
-      "options": [
-        "A. Is always a primary key",
-        "B. Belongs to at least one candidate key",
-        "C. Cannot be NULL",
-        "D. Has unique values only"
-      ],
-      "correct_answer": "B. Belongs to at least one candidate key",
-      "explanation": "Prime attributes are part of some candidate key; all others are non-prime attributes.",
-      "topic": "Normalization"
-    },
-    {
-      "id": 37,
-      "question": "Which anomaly occurs when deleting a row unintentionally removes useful facts about another entity?",
-      "options": [
-        "A. Update anomaly",
-        "B. Insertion anomaly",
-        "C. Deletion anomaly",
-        "D. Retrieval anomaly"
-      ],
-      "correct_answer": "C. Deletion anomaly",
-      "explanation": "Deletion anomaly occurs when deleting one fact causes loss of another needed fact due to poor design.",
-      "topic": "Normalization"
-    },
-    {
-      "id": 38,
-      "question": "Which anomaly occurs when the same fact must be changed in multiple rows?",
-      "options": [
-        "A. Insertion anomaly",
-        "B. Update anomaly",
-        "C. Selection anomaly",
-        "D. Projection anomaly"
-      ],
-      "correct_answer": "B. Update anomaly",
-      "explanation": "Update anomaly results from redundant storage of the same information across rows.",
-      "topic": "Normalization"
-    },
-    {
-      "id": 39,
-      "question": "In a table with composite key (A, B), if attribute C depends only on A, then the table violates:",
-      "options": [
-        "A. 1NF",
-        "B. 2NF",
-        "C. 3NF",
-        "D. BCNF"
-      ],
-      "correct_answer": "B. 2NF",
-      "explanation": "Dependency on only part of a composite key is a partial dependency, violating 2NF.",
-      "topic": "Normalization"
-    },
-    {
-      "id": 40,
-      "question": "A decomposition is lossless if:",
-      "options": [
-        "A. No functional dependency is lost",
-        "B. Original relation can be reconstructed exactly by joining decomposed relations",
-        "C. All decomposed relations are in BCNF",
-        "D. No attribute is repeated"
-      ],
-      "correct_answer": "B. Original relation can be reconstructed exactly by joining decomposed relations",
-      "explanation": "Lossless decomposition ensures no spurious tuples and exact reconstruction of the original relation.",
-      "topic": "Normalization"
-    },
-    {
-      "id": 41,
-      "question": "Dependency preservation means:",
-      "options": [
-        "A. All dependencies can be enforced without joining decomposed tables",
-        "B. No foreign keys are required",
-        "C. Each decomposed relation has a primary key",
-        "D. Decomposition is always into two tables"
-      ],
-      "correct_answer": "A. All dependencies can be enforced without joining decomposed tables",
-      "explanation": "A decomposition preserves dependencies if the original dependencies can be checked on individual decomposed relations.",
-      "topic": "Normalization"
-    },
-    {
-      "id": 42,
-      "question": "A relation R(A, B, C) has FDs A → B and B → C. If A is the key, which normal form is violated?",
-      "options": [
-        "A. 1NF",
-        "B. 2NF",
-        "C. 3NF",
-        "D. BCNF is satisfied and no violation exists"
-      ],
-      "correct_answer": "C. 3NF",
-      "explanation": "Because B → C creates a transitive dependency from A to C, 3NF is violated.",
-      "topic": "Normalization"
-    },
-    {
-      "id": 43,
-      "question": "Which of the following best defines a candidate key?",
-      "options": [
-        "A. Any attribute with unique values",
-        "B. A minimal superkey",
-        "C. The first attribute in a relation",
-        "D. A foreign key referencing another table"
-      ],
-      "correct_answer": "B. A minimal superkey",
-      "explanation": "A candidate key uniquely identifies tuples and is minimal, meaning no proper subset does so.",
-      "topic": "Normalization"
-    },
-    {
-      "id": 44,
-      "question": "If a relation has only single-attribute primary key and no repeating groups, it is automatically in:",
-      "options": [
-        "A. 2NF",
-        "B. 3NF",
-        "C. 1NF and 2NF",
-        "D. BCNF"
-      ],
-      "correct_answer": "C. 1NF and 2NF",
-      "explanation": "With a single-attribute key, partial dependency cannot exist, so 2NF follows once 1NF holds.",
-      "topic": "Normalization"
-    },
-    {
-      "id": 45,
-      "question": "Which normal form specifically deals with multivalued dependencies?",
-      "options": [
-        "A. 2NF",
-        "B. 3NF",
-        "C. BCNF",
-        "D. 4NF"
-      ],
-      "correct_answer": "D. 4NF",
-      "explanation": "4NF removes non-trivial multivalued dependencies.",
-      "topic": "Normalization"
-    },
-    {
-      "id": 46,
-      "question": "A relation is in 3NF if for every non-trivial FD X → A:",
-      "options": [
-        "A. X is a superkey only",
-        "B. A is non-prime only",
-        "C. X is a superkey or A is prime",
-        "D. X and A are both foreign keys"
-      ],
-      "correct_answer": "C. X is a superkey or A is prime",
-      "explanation": "This is the formal 3NF condition.",
-      "topic": "Normalization"
-    },
-    {
-      "id": 47,
-      "question": "What is a superkey?",
-      "options": [
-        "A. Any set of attributes that uniquely identifies a tuple",
-        "B. Only the chosen primary key",
-        "C. A foreign key with NOT NULL",
-        "D. A key used in distributed databases"
-      ],
-      "correct_answer": "A. Any set of attributes that uniquely identifies a tuple",
-      "explanation": "A superkey uniquely identifies tuples, though it may include extra attributes.",
-      "topic": "Normalization"
-    },
-    {
-      "id": 48,
-      "question": "The decomposition of a relation into BCNF may sometimes fail to preserve:",
-      "options": [
-        "A. Candidate keys",
-        "B. Atomic values",
-        "C. Functional dependencies",
-        "D. Rows"
-      ],
-      "correct_answer": "C. Functional dependencies",
-      "explanation": "BCNF decomposition guarantees lossless join, but dependency preservation is not always guaranteed.",
-      "topic": "Normalization"
-    },
-    {
-      "id": 49,
-      "question": "If every non-key attribute depends on the whole key and nothing but the key, the relation is commonly described as being in:",
-      "options": [
-        "A. 1NF",
-        "B. 2NF",
-        "C. 3NF",
-        "D. 4NF"
-      ],
-      "correct_answer": "C. 3NF",
-      "explanation": "The phrase summarizes good 3NF-style design: full dependency and no transitive dependency.",
-      "topic": "Normalization"
-    },
-    {
-      "id": 50,
-      "question": "A relation with no non-trivial functional dependencies other than those with superkey determinants is in:",
-      "options": [
-        "A. 2NF",
-        "B. 3NF",
-        "C. BCNF",
-        "D. 4NF"
-      ],
-      "correct_answer": "C. BCNF",
-      "explanation": "That is the defining property of BCNF.",
-      "topic": "Normalization"
-    },
-    {
-      "id": 51,
-      "question": "Which ACID property ensures a transaction is all-or-nothing?",
-      "options": [
-        "A. Consistency",
-        "B. Atomicity",
-        "C. Isolation",
-        "D. Durability"
-      ],
-      "correct_answer": "B. Atomicity",
-      "explanation": "Atomicity ensures either all operations of a transaction occur or none occur.",
-      "topic": "Transactions & Concurrency"
-    },
-    {
-      "id": 52,
-      "question": "Which ACID property ensures committed data survives system failure?",
-      "options": [
-        "A. Durability",
-        "B. Isolation",
-        "C. Atomicity",
-        "D. Consistency"
-      ],
-      "correct_answer": "A. Durability",
-      "explanation": "Durability guarantees committed changes are not lost after a crash.",
-      "topic": "Transactions & Concurrency"
-    },
-    {
-      "id": 53,
-      "question": "Which isolation level allows dirty reads?",
-      "options": [
-        "A. READ UNCOMMITTED",
-        "B. READ COMMITTED",
-        "C. REPEATABLE READ",
-        "D. SERIALIZABLE"
-      ],
-      "correct_answer": "A. READ UNCOMMITTED",
-      "explanation": "READ UNCOMMITTED is the weakest isolation level and can read uncommitted data.",
-      "topic": "Transactions & Concurrency"
-    },
-    {
-      "id": 54,
-      "question": "Which isolation level prevents dirty reads but may allow non-repeatable reads?",
-      "options": [
-        "A. READ UNCOMMITTED",
-        "B. READ COMMITTED",
-        "C. REPEATABLE READ",
-        "D. SERIALIZABLE"
-      ],
-      "correct_answer": "B. READ COMMITTED",
-      "explanation": "READ COMMITTED blocks dirty reads but another transaction may still change data between reads.",
-      "topic": "Transactions & Concurrency"
-    },
-    {
-      "id": 55,
-      "question": "A dirty read occurs when:",
-      "options": [
-        "A. A transaction reads uncommitted data written by another transaction",
-        "B. A transaction rereads the same row and gets a different value",
-        "C. A range query returns new rows on repeat",
-        "D. Two transactions update the same row"
-      ],
-      "correct_answer": "A. A transaction reads uncommitted data written by another transaction",
-      "explanation": "Dirty read means reading data that may later be rolled back.",
-      "topic": "Transactions & Concurrency"
-    },
-    {
-      "id": 56,
-      "question": "A non-repeatable read occurs when:",
-      "options": [
-        "A. The same row is read twice and gives different values",
-        "B. Uncommitted data is read",
-        "C. Two rows are inserted together",
-        "D. A query fails due to deadlock"
-      ],
-      "correct_answer": "A. The same row is read twice and gives different values",
-      "explanation": "This happens when another transaction modifies and commits the row between two reads.",
-      "topic": "Transactions & Concurrency"
-    },
-    {
-      "id": 57,
-      "question": "A phantom read occurs when:",
-      "options": [
-        "A. A transaction reads invisible rows",
-        "B. Repeating a query returns a changed set of rows due to insert/delete by another transaction",
-        "C. The same row value changes",
-        "D. The database crashes during commit"
-      ],
-      "correct_answer": "B. Repeating a query returns a changed set of rows due to insert/delete by another transaction",
-      "explanation": "Phantoms arise when rows satisfying a search condition appear or disappear.",
-      "topic": "Transactions & Concurrency"
-    },
-    {
-      "id": 58,
-      "question": "A schedule is conflict serializable if its precedence graph is:",
-      "options": [
-        "A. Complete",
-        "B. Disconnected",
-        "C. Cyclic",
-        "D. Acyclic"
-      ],
-      "correct_answer": "D. Acyclic",
-      "explanation": "An acyclic precedence graph means the schedule can be transformed into some serial order.",
-      "topic": "Transactions & Concurrency"
-    },
-    {
-      "id": 59,
-      "question": "Two-phase locking (2PL) has which two phases?",
-      "options": [
-        "A. Read and write",
-        "B. Growing and shrinking",
-        "C. Commit and rollback",
-        "D. Shared and exclusive"
-      ],
-      "correct_answer": "B. Growing and shrinking",
-      "explanation": "In the growing phase locks are acquired; in the shrinking phase locks are released.",
-      "topic": "Transactions & Concurrency"
-    },
-    {
-      "id": 60,
-      "question": "Which lock allows concurrent readers but no writers?",
-      "options": [
-        "A. Exclusive lock",
-        "B. Shared lock",
-        "C. Update lock",
-        "D. Binary lock"
-      ],
-      "correct_answer": "B. Shared lock",
-      "explanation": "Shared locks permit multiple transactions to read the same data simultaneously.",
-      "topic": "Transactions & Concurrency"
-    },
-    {
-      "id": 61,
-      "question": "Which lock is required before modifying a data item?",
-      "options": [
-        "A. Shared lock",
-        "B. Exclusive lock",
-        "C. Intent lock only",
-        "D. Read lock"
-      ],
-      "correct_answer": "B. Exclusive lock",
-      "explanation": "Exclusive lock is needed for write operations because it prevents other reads and writes.",
-      "topic": "Transactions & Concurrency"
-    },
-    {
-      "id": 62,
-      "question": "Deadlock occurs when:",
-      "options": [
-        "A. A transaction reads too much data",
-        "B. Two or more transactions wait indefinitely for each other",
-        "C. A database is in read-only mode",
-        "D. A table has no index"
-      ],
-      "correct_answer": "B. Two or more transactions wait indefinitely for each other",
-      "explanation": "Deadlock is circular waiting among transactions.",
-      "topic": "Transactions & Concurrency"
-    },
-    {
-      "id": 63,
-      "question": "Which is NOT one of the four necessary conditions for deadlock?",
-      "options": [
-        "A. Mutual exclusion",
-        "B. Hold and wait",
-        "C. Circular wait",
-        "D. Preemption"
-      ],
-      "correct_answer": "D. Preemption",
-      "explanation": "The conditions are mutual exclusion, hold and wait, no preemption, and circular wait.",
-      "topic": "Transactions & Concurrency"
-    },
-    {
-      "id": 64,
-      "question": "In strict 2PL, all exclusive locks are released:",
-      "options": [
-        "A. Immediately after each write",
-        "B. At the start of shrinking phase",
-        "C. Only after commit or rollback",
-        "D. Before reading starts"
-      ],
-      "correct_answer": "C. Only after commit or rollback",
-      "explanation": "Strict 2PL holds write locks until transaction end, improving recoverability.",
-      "topic": "Transactions & Concurrency"
-    },
-    {
-      "id": 65,
-      "question": "Cascading rollback is caused by:",
-      "options": [
-        "A. Reading committed data",
-        "B. Reading uncommitted data from another transaction",
-        "C. Using strict 2PL",
-        "D. Deadlock detection"
-      ],
-      "correct_answer": "B. Reading uncommitted data from another transaction",
-      "explanation": "If a transaction reads dirty data and the writer aborts, dependent transactions may also need rollback.",
-      "topic": "Transactions & Concurrency"
-    },
-    {
-      "id": 66,
-      "question": "Which recovery concept means a transaction is allowed to commit only after all transactions whose changes it read have committed?",
-      "options": [
-        "A. Serializability",
-        "B. Recoverability",
-        "C. Durability",
-        "D. Checkpointing"
-      ],
-      "correct_answer": "B. Recoverability",
-      "explanation": "A recoverable schedule avoids committing transactions that depend on uncommitted data.",
-      "topic": "Transactions & Concurrency"
-    },
-    {
-      "id": 67,
-      "question": "A checkpoint in database recovery is used to:",
-      "options": [
-        "A. Lock the entire database",
-        "B. Reduce recovery time after a crash",
-        "C. Eliminate deadlocks",
-        "D. Remove old tuples immediately"
-      ],
-      "correct_answer": "B. Reduce recovery time after a crash",
-      "explanation": "Checkpoints limit how far back the system must examine the log during recovery.",
-      "topic": "Transactions & Concurrency"
-    },
-    {
-      "id": 68,
-      "question": "Write-Ahead Logging (WAL) requires that:",
-      "options": [
-        "A. Data pages are written before log records",
-        "B. Log records are written before corresponding database changes",
-        "C. Checkpoints occur before every update",
-        "D. Only committed transactions are logged"
-      ],
-      "correct_answer": "B. Log records are written before corresponding database changes",
-      "explanation": "WAL ensures recovery information is safely recorded before data pages are updated on disk.",
-      "topic": "Transactions & Concurrency"
-    },
-    {
-      "id": 69,
-      "question": "Which isolation level gives the strongest protection against dirty, non-repeatable, and phantom reads?",
-      "options": [
-        "A. READ UNCOMMITTED",
-        "B. READ COMMITTED",
-        "C. REPEATABLE READ",
-        "D. SERIALIZABLE"
-      ],
-      "correct_answer": "D. SERIALIZABLE",
-      "explanation": "SERIALIZABLE provides the highest isolation by emulating serial execution.",
-      "topic": "Transactions & Concurrency"
-    },
-    {
-      "id": 70,
-      "question": "Which statement about serial schedules is correct?",
-      "options": [
-        "A. They always cause deadlocks",
-        "B. Transactions execute one after another without interleaving",
-        "C. They allow dirty reads",
-        "D. They are impossible in practice"
-      ],
-      "correct_answer": "B. Transactions execute one after another without interleaving",
-      "explanation": "A serial schedule runs each transaction completely before the next begins.",
-      "topic": "Transactions & Concurrency"
-    },
-    {
-      "id": 71,
-      "question": "A weak entity depends on a strong entity because it:",
-      "options": [
-        "A. Has too many attributes",
-        "B. Cannot be uniquely identified by its own attributes alone",
-        "C. Has no relationships",
-        "D. Must always have a composite key"
-      ],
-      "correct_answer": "B. Cannot be uniquely identified by its own attributes alone",
-      "explanation": "A weak entity uses a partial key together with the key of its owner entity.",
-      "topic": "ER Modeling & Keys"
-    },
-    {
-      "id": 72,
-      "question": "Which key is artificially created and usually has no business meaning?",
-      "options": [
-        "A. Natural key",
-        "B. Composite key",
-        "C. Surrogate key",
-        "D. Candidate key"
-      ],
-      "correct_answer": "C. Surrogate key",
-      "explanation": "A surrogate key is system-generated only for identification.",
-      "topic": "ER Modeling & Keys"
-    },
-    {
-      "id": 73,
-      "question": "A relationship involving exactly three entity sets is called:",
-      "options": [
-        "A. Unary relationship",
-        "B. Binary relationship",
-        "C. Ternary relationship",
-        "D. Recursive relationship"
-      ],
-      "correct_answer": "C. Ternary relationship",
-      "explanation": "A ternary relationship connects three entity sets simultaneously.",
-      "topic": "ER Modeling & Keys"
-    },
-    {
-      "id": 74,
-      "question": "A foreign key is used to enforce:",
-      "options": [
-        "A. Domain integrity",
-        "B. Referential integrity",
-        "C. Entity integrity",
-        "D. Physical integrity"
-      ],
-      "correct_answer": "B. Referential integrity",
-      "explanation": "Foreign keys ensure referenced parent values exist.",
-      "topic": "ER Modeling & Keys"
-    },
-    {
-      "id": 75,
-      "question": "Which of the following is always true about candidate keys?",
-      "options": [
-        "A. There may be none",
-        "B. Each candidate key is a minimal superkey",
-        "C. They must be single attributes",
-        "D. They are always surrogate keys"
-      ],
-      "correct_answer": "B. Each candidate key is a minimal superkey",
-      "explanation": "Candidate keys uniquely identify tuples and are minimal.",
-      "topic": "ER Modeling & Keys"
-    },
-    {
-      "id": 76,
-      "question": "In ER modeling, cardinality refers to:",
-      "options": [
-        "A. Number of attributes in an entity",
-        "B. Number of values in a column",
-        "C. Number of entity instances that can participate in a relationship",
-        "D. Number of candidate keys"
-      ],
-      "correct_answer": "C. Number of entity instances that can participate in a relationship",
-      "explanation": "Cardinality expresses 1:1, 1:M, or M:N relationship constraints.",
-      "topic": "ER Modeling & Keys"
-    },
-    {
-      "id": 77,
-      "question": "Which participation constraint means every entity in the set must participate in the relationship?",
-      "options": [
-        "A. Partial participation",
-        "B. Total participation",
-        "C. Weak participation",
-        "D. Optional participation"
-      ],
-      "correct_answer": "B. Total participation",
-      "explanation": "Total participation means participation is mandatory for all entity instances.",
-      "topic": "ER Modeling & Keys"
-    },
-    {
-      "id": 78,
-      "question": "A composite key is:",
-      "options": [
-        "A. A key formed by combining two or more attributes",
-        "B. A key referencing another table",
-        "C. A system-generated key",
-        "D. A key used only in distributed DBMS"
-      ],
-      "correct_answer": "A. A key formed by combining two or more attributes",
-      "explanation": "A composite key uses multiple attributes together to identify a row uniquely.",
-      "topic": "ER Modeling & Keys"
-    },
-    {
-      "id": 79,
-      "question": "Which key is chosen from the candidate keys to uniquely identify tuples in practice?",
-      "options": [
-        "A. Foreign key",
-        "B. Alternate key",
-        "C. Primary key",
-        "D. Superkey"
-      ],
-      "correct_answer": "C. Primary key",
-      "explanation": "One candidate key is selected as the primary key.",
-      "topic": "ER Modeling & Keys"
-    },
-    {
-      "id": 80,
-      "question": "An alternate key is:",
-      "options": [
-        "A. Any foreign key",
-        "B. Any candidate key not selected as the primary key",
-        "C. A duplicate key",
-        "D. A key used for backup only"
-      ],
-      "correct_answer": "B. Any candidate key not selected as the primary key",
-      "explanation": "Candidate keys other than the chosen primary key are alternate keys.",
-      "topic": "ER Modeling & Keys"
-    },
-    {
-      "id": 81,
-      "question": "A recursive relationship is one in which:",
-      "options": [
-        "A. An entity is related to itself",
-        "B. A relation has no key",
-        "C. Two weak entities are linked",
-        "D. A table has repeated attributes"
-      ],
-      "correct_answer": "A. An entity is related to itself",
-      "explanation": "Recursive relationships connect instances of the same entity set.",
-      "topic": "ER Modeling & Keys"
-    },
-    {
-      "id": 82,
-      "question": "Which key attribute can contain NULL values in standard relational design?",
-      "options": [
-        "A. Primary key",
-        "B. Candidate key",
-        "C. Foreign key",
-        "D. Superkey only"
-      ],
-      "correct_answer": "C. Foreign key",
-      "explanation": "Unless separately restricted, foreign key columns may be NULL.",
-      "topic": "ER Modeling & Keys"
-    },
-    {
-      "id": 83,
-      "question": "What does entity integrity require?",
-      "options": [
-        "A. Every foreign key must be valid",
-        "B. Primary key values must be unique and not NULL",
-        "C. All keys must be composite",
-        "D. Every relation must have two candidate keys"
-      ],
-      "correct_answer": "B. Primary key values must be unique and not NULL",
-      "explanation": "Entity integrity ensures every row can be uniquely identified.",
-      "topic": "ER Modeling & Keys"
-    },
-    {
-      "id": 84,
-      "question": "In ER diagrams, a double rectangle usually denotes:",
-      "options": [
-        "A. Multivalued attribute",
-        "B. Weak entity",
-        "C. Composite attribute",
-        "D. Derived attribute"
-      ],
-      "correct_answer": "B. Weak entity",
-      "explanation": "Weak entities are commonly shown using double rectangles.",
-      "topic": "ER Modeling & Keys"
-    },
-    {
-      "id": 85,
-      "question": "In ER diagrams, a double oval usually denotes:",
-      "options": [
-        "A. Key attribute",
-        "B. Derived attribute",
-        "C. Multivalued attribute",
-        "D. Composite attribute"
-      ],
-      "correct_answer": "C. Multivalued attribute",
-      "explanation": "Multivalued attributes are often represented with double ovals.",
-      "topic": "ER Modeling & Keys"
-    },
-    {
-      "id": 86,
-      "question": "In a B+ tree, actual data records are typically stored in:",
-      "options": [
-        "A. Root node only",
-        "B. Internal nodes only",
-        "C. Leaf nodes",
-        "D. All nodes equally"
-      ],
-      "correct_answer": "C. Leaf nodes",
-      "explanation": "B+ trees store data pointers or records in leaf nodes, while internal nodes guide search.",
-      "topic": "Indexing & Storage"
-    },
-    {
-      "id": 87,
-      "question": "A clustered index determines:",
-      "options": [
-        "A. The hash function used",
-        "B. The physical storage order of rows",
-        "C. The number of foreign keys",
-        "D. The transaction order"
-      ],
-      "correct_answer": "B. The physical storage order of rows",
-      "explanation": "A clustered index defines how table data is physically arranged.",
-      "topic": "Indexing & Storage"
-    },
-    {
-      "id": 88,
-      "question": "A dense index has one index entry for:",
-      "options": [
-        "A. Each block",
-        "B. Each relation",
-        "C. Each record",
-        "D. Each candidate key only"
-      ],
-      "correct_answer": "C. Each record",
-      "explanation": "Dense indexing creates an index entry for every search-key value or record.",
-      "topic": "Indexing & Storage"
-    },
-    {
-      "id": 89,
-      "question": "A sparse index is usually possible when:",
-      "options": [
-        "A. The data file is ordered on the indexed field",
-        "B. The table has no primary key",
-        "C. The attribute contains NULLs",
-        "D. Hashing is used"
-      ],
-      "correct_answer": "A. The data file is ordered on the indexed field",
-      "explanation": "Sparse indexes work on ordered files, often with one entry per block.",
-      "topic": "Indexing & Storage"
-    },
-    {
-      "id": 90,
-      "question": "Which index is built on a non-ordering field and often points to matching records?",
-      "options": [
-        "A. Primary index",
-        "B. Secondary index",
-        "C. Cluster index",
-        "D. Dense hash index"
-      ],
-      "correct_answer": "B. Secondary index",
-      "explanation": "A secondary index is on a field other than the one defining physical order.",
-      "topic": "Indexing & Storage"
-    },
-    {
-      "id": 91,
-      "question": "The main problem with static hashing when the file grows significantly is:",
-      "options": [
-        "A. Too many primary keys",
-        "B. Bucket overflow and long overflow chains",
-        "C. Loss of referential integrity",
-        "D. Lossless decomposition failure"
-      ],
-      "correct_answer": "B. Bucket overflow and long overflow chains",
-      "explanation": "Static hashing has fixed bucket count, so growth can cause overflow and degrade performance.",
-      "topic": "Indexing & Storage"
-    },
-    {
-      "id": 92,
-      "question": "Which file organization is best suited for quick retrieval of records in sorted order?",
-      "options": [
-        "A. Heap file",
-        "B. Sequential file",
-        "C. Hashed file",
-        "D. Random file"
-      ],
-      "correct_answer": "B. Sequential file",
-      "explanation": "Sequential organization stores records in order, which helps range access and ordered scans.",
-      "topic": "Indexing & Storage"
-    },
-    {
-      "id": 93,
-      "question": "A heap file organization stores records:",
-      "options": [
-        "A. In sorted order",
-        "B. According to hash values",
-        "C. In the order they are inserted",
-        "D. By primary key only"
-      ],
-      "correct_answer": "C. In the order they are inserted",
-      "explanation": "Heap files are unordered and simple for insertion.",
-      "topic": "Indexing & Storage"
-    },
-    {
-      "id": 94,
-      "question": "Which structure is especially efficient for range queries?",
-      "options": [
-        "A. Hash index",
-        "B. B+ tree index",
-        "C. Bitmap only",
-        "D. Heap file only"
-      ],
-      "correct_answer": "B. B+ tree index",
-      "explanation": "Because leaf nodes are sorted and linked, B+ trees are ideal for range searches.",
-      "topic": "Indexing & Storage"
-    },
-    {
-      "id": 95,
-      "question": "Compared with B-trees, B+ trees are preferred in DBMS mainly because:",
-      "options": [
-        "A. They do not need balancing",
-        "B. They support efficient sequential traversal",
-        "C. They store no keys",
-        "D. They never split"
-      ],
-      "correct_answer": "B. They support efficient sequential traversal",
-      "explanation": "Linked leaf nodes make B+ trees highly efficient for sequential and range access.",
-      "topic": "Indexing & Storage"
-    },
-    {
-      "id": 96,
-      "question": "Which of the following is true of hash indexes?",
-      "options": [
-        "A. They are generally best for range queries",
-        "B. They are typically efficient for exact-match queries",
-        "C. They always preserve sorted order",
-        "D. They eliminate collisions fully"
-      ],
-      "correct_answer": "B. They are typically efficient for exact-match queries",
-      "explanation": "Hash indexes are very good for equality search but poor for ordered range retrieval.",
-      "topic": "Indexing & Storage"
-    },
-    {
-      "id": 97,
-      "question": "A bitmap index is particularly suitable when:",
-      "options": [
-        "A. The indexed attribute has low cardinality",
-        "B. The indexed attribute is a primary key",
-        "C. Range queries dominate on high-cardinality keys",
-        "D. The table is very small only"
-      ],
-      "correct_answer": "A. The indexed attribute has low cardinality",
-      "explanation": "Bitmap indexes work well for columns with few distinct values.",
-      "topic": "Indexing & Storage"
-    },
-    {
-      "id": 98,
-      "question": "Which statement about primary index is correct?",
-      "options": [
-        "A. It is built on the ordering key of the file",
-        "B. It must be dense",
-        "C. It is always secondary",
-        "D. It is used only in NoSQL systems"
-      ],
-      "correct_answer": "A. It is built on the ordering key of the file",
-      "explanation": "A primary index is associated with the field that determines file order.",
-      "topic": "Indexing & Storage"
-    },
-    {
-      "id": 99,
-      "question": "The process of storing related records close together on disk to reduce I/O is called:",
-      "options": [
-        "A. Clustering",
-        "B. Projection",
-        "C. Normalization",
-        "D. Serialization"
-      ],
-      "correct_answer": "A. Clustering",
-      "explanation": "Clustering improves access performance by placing related data physically near each other.",
-      "topic": "Indexing & Storage"
-    },
-    {
-      "id": 100,
-      "question": "Which of the following best describes a non-clustered index?",
-      "options": [
-        "A. It changes the physical order of rows",
-        "B. It stores a separate structure with pointers to data rows",
-        "C. It can exist only on primary key",
-        "D. It does not support lookups"
-      ],
-      "correct_answer": "B. It stores a separate structure with pointers to data rows",
-      "explanation": "A non-clustered index is separate from table storage and points to actual data rows.",
-      "topic": "Indexing & Storage"
-    },
-    {
-      "id": 101,
-      "question": "Which relational algebra operation selects rows that satisfy a condition?",
-      "options": [
-        "A. Projection",
-        "B. Selection",
-        "C. Join",
-        "D. Division"
-      ],
-      "correct_answer": "B. Selection",
-      "explanation": "Selection filters tuples based on a predicate.",
-      "topic": "Relational Algebra & Calculus"
-    },
-    {
-      "id": 102,
-      "question": "Which relational algebra operation chooses specific columns from a relation?",
-      "options": [
-        "A. Projection",
-        "B. Selection",
-        "C. Union",
-        "D. Product"
-      ],
-      "correct_answer": "A. Projection",
-      "explanation": "Projection returns specified attributes from a relation.",
-      "topic": "Relational Algebra & Calculus"
-    },
-    {
-      "id": 103,
-      "question": "Which operation combines tuples from two relations based on a matching condition?",
-      "options": [
-        "A. Cartesian product",
-        "B. Natural join",
-        "C. Difference",
-        "D. Rename"
-      ],
-      "correct_answer": "B. Natural join",
-      "explanation": "A natural join combines tuples with equal values on common attributes.",
-      "topic": "Relational Algebra & Calculus"
-    },
-    {
-      "id": 104,
-      "question": "The Cartesian product of R and S produces:",
-      "options": [
-        "A. Only matching tuples",
-        "B. All possible concatenations of tuples from R and S",
-        "C. Tuples common to both",
-        "D. Tuples in R but not in S"
-      ],
-      "correct_answer": "B. All possible concatenations of tuples from R and S",
-      "explanation": "Cartesian product pairs each tuple of R with each tuple of S.",
-      "topic": "Relational Algebra & Calculus"
-    },
-    {
-      "id": 105,
-      "question": "For UNION to be valid in relational algebra, the two relations must be:",
-      "options": [
-        "A. In BCNF",
-        "B. Sorted",
-        "C. Union compatible",
-        "D. Key compatible"
-      ],
-      "correct_answer": "C. Union compatible",
-      "explanation": "Union-compatible relations have the same number of attributes with compatible domains.",
-      "topic": "Relational Algebra & Calculus"
-    },
-    {
-      "id": 106,
-      "question": "Which relational algebra operator returns tuples that are in R but not in S?",
-      "options": [
-        "A. Difference",
-        "B. Division",
-        "C. Projection",
-        "D. Join"
-      ],
-      "correct_answer": "A. Difference",
-      "explanation": "Set difference returns tuples present in one relation and absent in the other.",
-      "topic": "Relational Algebra & Calculus"
-    },
-    {
-      "id": 107,
-      "question": "The rename operator in relational algebra is used to:",
-      "options": [
-        "A. Change table data",
-        "B. Assign a new name to a relation or attributes",
-        "C. Delete duplicate tuples",
-        "D. Create indexes"
-      ],
-      "correct_answer": "B. Assign a new name to a relation or attributes",
-      "explanation": "Rename helps in expressing queries, especially self-joins.",
-      "topic": "Relational Algebra & Calculus"
-    },
-    {
-      "id": 108,
-      "question": "Which operation is most useful to answer queries of the type 'find students who enrolled in all compulsory subjects'?",
-      "options": [
-        "A. Union",
-        "B. Division",
-        "C. Selection",
-        "D. Difference"
-      ],
-      "correct_answer": "B. Division",
-      "explanation": "Division is used for 'for all' type queries.",
-      "topic": "Relational Algebra & Calculus"
-    },
-    {
-      "id": 109,
-      "question": "A theta join is:",
-      "options": [
-        "A. A join with a general comparison condition",
-        "B. A join only on equality of common attributes",
-        "C. A join without conditions",
-        "D. Another name for union"
-      ],
-      "correct_answer": "A. A join with a general comparison condition",
-      "explanation": "Theta join allows conditions such as <, >, =, <=, etc.",
-      "topic": "Relational Algebra & Calculus"
-    },
-    {
-      "id": 110,
-      "question": "Natural join is a special case of:",
-      "options": [
-        "A. Projection",
-        "B. Theta join",
-        "C. Difference",
-        "D. Division"
-      ],
-      "correct_answer": "B. Theta join",
-      "explanation": "Natural join is a special join based on equality of common attributes, followed by removal of duplicate join columns.",
-      "topic": "Relational Algebra & Calculus"
-    },
-    {
-      "id": 111,
-      "question": "Tuple relational calculus is:",
-      "options": [
-        "A. Procedural",
-        "B. Non-procedural",
-        "C. Based on file pointers",
-        "D. Used only for NoSQL"
-      ],
-      "correct_answer": "B. Non-procedural",
-      "explanation": "Relational calculus specifies what data is required, not how to retrieve it.",
-      "topic": "Relational Algebra & Calculus"
-    },
-    {
-      "id": 112,
-      "question": "Domain relational calculus differs from tuple relational calculus because it uses:",
-      "options": [
-        "A. Relations instead of tuples",
-        "B. Domain variables representing attribute values",
-        "C. Only keys",
-        "D. SQL commands directly"
-      ],
-      "correct_answer": "B. Domain variables representing attribute values",
-      "explanation": "Domain calculus expresses queries using variables over attribute domains.",
-      "topic": "Relational Algebra & Calculus"
-    },
-    {
-      "id": 113,
-      "question": "Which of the following is a unary relational algebra operator?",
-      "options": [
-        "A. Union",
-        "B. Join",
-        "C. Selection",
-        "D. Cartesian product"
-      ],
-      "correct_answer": "C. Selection",
-      "explanation": "Selection operates on a single relation, so it is unary.",
-      "topic": "Relational Algebra & Calculus"
-    },
-    {
-      "id": 114,
-      "question": "Which expression removes duplicate rows after projection in the pure relational model?",
-      "options": [
-        "A. Projection inherently removes duplicates",
-        "B. Selection removes duplicates",
-        "C. Join removes duplicates",
-        "D. Rename removes duplicates"
-      ],
-      "correct_answer": "A. Projection inherently removes duplicates",
-      "explanation": "Relational algebra is based on sets, so projection returns unique tuples.",
-      "topic": "Relational Algebra & Calculus"
-    },
-    {
-      "id": 115,
-      "question": "A safe relational calculus expression is one that:",
-      "options": [
-        "A. Always returns finite results from the database domain",
-        "B. Uses only joins",
-        "C. Avoids keys",
-        "D. Must contain aggregation"
-      ],
-      "correct_answer": "A. Always returns finite results from the database domain",
-      "explanation": "Safety ensures the result is finite and depends only on values in the database.",
-      "topic": "Relational Algebra & Calculus"
-    },
-    {
-      "id": 116,
-      "question": "DBMS differs from a traditional file system mainly because DBMS provides:",
-      "options": [
-        "A. Only faster hardware access",
-        "B. Controlled redundancy and centralized data management",
-        "C. No storage overhead",
-        "D. No need for security"
-      ],
-      "correct_answer": "B. Controlled redundancy and centralized data management",
-      "explanation": "DBMS manages shared data with reduced redundancy, security, and integrity mechanisms.",
-      "topic": "Database Architecture & Models"
-    },
-    {
-      "id": 117,
-      "question": "RDBMS stands for:",
-      "options": [
-        "A. Remote Database Management System",
-        "B. Relational Database Management System",
-        "C. Random Database Management System",
-        "D. Record Based Management System"
-      ],
-      "correct_answer": "B. Relational Database Management System",
-      "explanation": "RDBMS stores data in relations (tables) following the relational model.",
-      "topic": "Database Architecture & Models"
-    },
-    {
-      "id": 118,
-      "question": "In the three-schema architecture, the conceptual schema describes:",
-      "options": [
-        "A. Physical storage details",
-        "B. User-specific views",
-        "C. The logical structure of the whole database",
-        "D. Backup strategy"
-      ],
-      "correct_answer": "C. The logical structure of the whole database",
-      "explanation": "The conceptual level captures the community view of the entire database.",
-      "topic": "Database Architecture & Models"
-    },
-    {
-      "id": 119,
-      "question": "Physical data independence means:",
-      "options": [
-        "A. Changes in physical storage do not affect the conceptual schema",
-        "B. Changes in tables do not affect users",
-        "C. Keys can be changed freely",
-        "D. Data is stored independently of hardware"
-      ],
-      "correct_answer": "A. Changes in physical storage do not affect the conceptual schema",
-      "explanation": "Physical data independence isolates logical design from storage-level changes.",
-      "topic": "Database Architecture & Models"
-    },
-    {
-      "id": 120,
-      "question": "Logical data independence means:",
-      "options": [
-        "A. Physical storage can be altered",
-        "B. External views remain unaffected by changes in conceptual schema",
-        "C. Recovery logs can be changed",
-        "D. Tables need no constraints"
-      ],
-      "correct_answer": "B. External views remain unaffected by changes in conceptual schema",
-      "explanation": "Logical data independence shields user views from certain logical schema changes.",
-      "topic": "Database Architecture & Models"
-    },
-    {
-      "id": 121,
-      "question": "A schema is best defined as:",
-      "options": [
-        "A. The actual content of the database at a given time",
-        "B. The overall logical design of the database",
-        "C. A backup copy",
-        "D. A transaction log"
-      ],
-      "correct_answer": "B. The overall logical design of the database",
-      "explanation": "Schema is the blueprint or structure; instance is the data at a particular moment.",
-      "topic": "Database Architecture & Models"
-    },
-    {
-      "id": 122,
-      "question": "An instance of a database refers to:",
-      "options": [
-        "A. The permanent design of relations",
-        "B. The current data stored in the database",
-        "C. Only one row in a table",
-        "D. A copy of the DBMS software"
-      ],
-      "correct_answer": "B. The current data stored in the database",
-      "explanation": "Database instance means the collection of information stored at a specific time.",
-      "topic": "Database Architecture & Models"
-    },
-    {
-      "id": 123,
-      "question": "Which database model organizes data in rows and columns and uses relations?",
-      "options": [
-        "A. Hierarchical model",
-        "B. Network model",
-        "C. Relational model",
-        "D. Object model"
-      ],
-      "correct_answer": "C. Relational model",
-      "explanation": "The relational model represents data as tables.",
-      "topic": "Database Architecture & Models"
-    },
-    {
-      "id": 124,
-      "question": "A distributed database is one in which:",
-      "options": [
-        "A. Data is stored at a single site only",
-        "B. Data is spread across multiple locations connected by a network",
-        "C. Only NoSQL is used",
-        "D. There is no DBMS software"
-      ],
-      "correct_answer": "B. Data is spread across multiple locations connected by a network",
-      "explanation": "Distributed databases keep data at multiple sites while appearing logically integrated.",
-      "topic": "Database Architecture & Models"
-    },
-    {
-      "id": 125,
-      "question": "In client-server database architecture, the client generally handles:",
-      "options": [
-        "A. Query interface and application logic",
-        "B. Only disk management",
-        "C. Recovery logging only",
-        "D. Physical storage organization only"
-      ],
-      "correct_answer": "A. Query interface and application logic",
-      "explanation": "The client usually provides UI and application logic, while the server manages data services.",
-      "topic": "Database Architecture & Models"
-    },
-    {
-      "id": 126,
-      "question": "Immediate database modification means:",
-      "options": [
-        "A. Changes are written to the database before transaction commit",
-        "B. Changes are written only after shutdown",
-        "C. Logs are not needed",
-        "D. Only read transactions are allowed"
-      ],
-      "correct_answer": "A. Changes are written to the database before transaction commit",
-      "explanation": "With immediate update, modified pages may reach disk before commit, so undo/redo information is needed.",
-      "topic": "Recovery & Backup"
-    },
-    {
-      "id": 127,
-      "question": "Deferred database modification means:",
-      "options": [
-        "A. Database pages are updated only after transaction commits",
-        "B. No log is maintained",
-        "C. Dirty reads are allowed",
-        "D. Transactions commit automatically"
-      ],
-      "correct_answer": "A. Database pages are updated only after transaction commits",
-      "explanation": "Deferred update delays actual database writes until commit, typically reducing undo needs.",
-      "topic": "Recovery & Backup"
-    },
-    {
-      "id": 128,
-      "question": "UNDO is used during recovery to:",
-      "options": [
-        "A. Reapply committed changes",
-        "B. Reverse effects of uncommitted transactions",
-        "C. Remove indexes",
-        "D. Merge logs"
-      ],
-      "correct_answer": "B. Reverse effects of uncommitted transactions",
-      "explanation": "UNDO rolls back operations of transactions that did not commit.",
-      "topic": "Recovery & Backup"
-    },
-    {
-      "id": 129,
-      "question": "REDO is used during recovery to:",
-      "options": [
-        "A. Erase old backups",
-        "B. Reapply committed changes that may not yet be reflected on disk",
-        "C. Detect deadlocks",
-        "D. Remove duplicate rows"
-      ],
-      "correct_answer": "B. Reapply committed changes that may not yet be reflected on disk",
-      "explanation": "REDO ensures durability by repeating committed actions if needed after crash.",
-      "topic": "Recovery & Backup"
-    },
-    {
-      "id": 130,
-      "question": "Shadow paging is a recovery technique that:",
-      "options": [
-        "A. Uses multiple users to verify data",
-        "B. Keeps old and new page tables so original pages remain intact until commit",
-        "C. Eliminates backups completely",
-        "D. Works only for distributed DBMS"
-      ],
-      "correct_answer": "B. Keeps old and new page tables so original pages remain intact until commit",
-      "explanation": "Shadow paging avoids in-place overwrite by maintaining shadow and current page tables.",
-      "topic": "Recovery & Backup"
-    },
-    {
-      "id": 131,
-      "question": "Which backup captures only the changes made since the last full backup?",
-      "options": [
-        "A. Full backup",
-        "B. Mirror backup",
-        "C. Differential backup",
-        "D. Cold backup"
-      ],
-      "correct_answer": "C. Differential backup",
-      "explanation": "A differential backup stores changes since the most recent full backup.",
-      "topic": "Recovery & Backup"
-    },
-    {
-      "id": 132,
-      "question": "Which backup captures changes since the last backup of any type?",
-      "options": [
-        "A. Incremental backup",
-        "B. Differential backup",
-        "C. Snapshot backup",
-        "D. Full backup"
-      ],
-      "correct_answer": "A. Incremental backup",
-      "explanation": "Incremental backups save changes since the most recent backup, making them smaller.",
-      "topic": "Recovery & Backup"
-    },
-    {
-      "id": 133,
-      "question": "A hot backup is taken:",
-      "options": [
-        "A. Only when the database is shut down",
-        "B. While the database remains operational",
-        "C. Only after a crash",
-        "D. Without any logs"
-      ],
-      "correct_answer": "B. While the database remains operational",
-      "explanation": "Hot backups are online backups taken without stopping normal database service.",
-      "topic": "Recovery & Backup"
-    },
-    {
-      "id": 134,
-      "question": "Archiving transaction logs is important because it helps in:",
-      "options": [
-        "A. Eliminating normalization",
-        "B. Point-in-time recovery",
-        "C. Preventing foreign keys",
-        "D. Avoiding indexes"
-      ],
-      "correct_answer": "B. Point-in-time recovery",
-      "explanation": "Archived logs help restore the database to a specific moment after restoring a backup.",
-      "topic": "Recovery & Backup"
-    },
-    {
-      "id": 135,
-      "question": "The main objective of database recovery mechanisms is to:",
-      "options": [
-        "A. Increase redundancy intentionally",
-        "B. Restore the database to a consistent state after failure",
-        "C. Remove all logs periodically",
-        "D. Avoid using transactions"
-      ],
-      "correct_answer": "B. Restore the database to a consistent state after failure",
-      "explanation": "Recovery ensures atomicity and durability after crashes or failures.",
-      "topic": "Recovery & Backup"
-    },
-    {
-      "id": 136,
-      "question": "According to the CAP theorem, a distributed system can guarantee at most:",
-      "options": [
-        "A. One of consistency, availability, and partition tolerance",
-        "B. Two of consistency, availability, and partition tolerance",
-        "C. All three always",
-        "D. None of the three"
-      ],
-      "correct_answer": "B. Two of consistency, availability, and partition tolerance",
-      "explanation": "During network partitions, a distributed system typically must trade off between consistency and availability.",
-      "topic": "Modern DBMS Concepts"
-    },
-    {
-      "id": 137,
-      "question": "Which NoSQL database type is best suited for highly connected data such as social networks?",
-      "options": [
-        "A. Key-value store",
-        "B. Document store",
-        "C. Graph database",
-        "D. Column-family store"
-      ],
-      "correct_answer": "C. Graph database",
-      "explanation": "Graph databases model nodes and relationships efficiently for connected data.",
-      "topic": "Modern DBMS Concepts"
-    },
-    {
-      "id": 138,
-      "question": "OLTP systems are mainly optimized for:",
-      "options": [
-        "A. Long-running analytical queries",
-        "B. Fast, short transaction processing",
-        "C. Historical trend analysis only",
-        "D. Columnar storage only"
-      ],
-      "correct_answer": "B. Fast, short transaction processing",
-      "explanation": "OLTP focuses on day-to-day transactional workloads with high concurrency.",
-      "topic": "Modern DBMS Concepts"
-    },
-    {
-      "id": 139,
-      "question": "OLAP systems are mainly optimized for:",
-      "options": [
-        "A. Frequent single-row updates",
-        "B. Complex analytical queries on historical data",
-        "C. Exact-match key lookups only",
-        "D. Trigger execution only"
-      ],
-      "correct_answer": "B. Complex analytical queries on historical data",
-      "explanation": "OLAP supports multidimensional analysis and business intelligence.",
-      "topic": "Modern DBMS Concepts"
-    },
-    {
-      "id": 140,
-      "question": "The original 3 Vs of Big Data are:",
-      "options": [
-        "A. Volume, Value, Visibility",
-        "B. Volume, Velocity, Variety",
-        "C. Velocity, Veracity, Value",
-        "D. Variety, Validation, Volume"
-      ],
-      "correct_answer": "B. Volume, Velocity, Variety",
-      "explanation": "The classic Big Data dimensions are amount, speed, and diversity of data.",
-      "topic": "Modern DBMS Concepts"
-    },
-    {
-      "id": 141,
-      "question": "In a star schema, the central table is usually the:",
-      "options": [
-        "A. Dimension table",
-        "B. Fact table",
-        "C. Lookup table",
-        "D. Index table"
-      ],
-      "correct_answer": "B. Fact table",
-      "explanation": "Star schema centers around a fact table linked to denormalized dimensions.",
-      "topic": "Modern DBMS Concepts"
-    },
-    {
-      "id": 142,
-      "question": "A snowflake schema differs from a star schema because its dimension tables are more:",
-      "options": [
-        "A. Distributed",
-        "B. Hashed",
-        "C. Normalized",
-        "D. Temporary"
-      ],
-      "correct_answer": "C. Normalized",
-      "explanation": "Snowflake schema normalizes dimensions, reducing redundancy at the cost of more joins.",
-      "topic": "Modern DBMS Concepts"
-    },
-    {
-      "id": 143,
-      "question": "Which NoSQL model stores data as flexible JSON-like documents?",
-      "options": [
-        "A. Graph store",
-        "B. Document store",
-        "C. Key-value store",
-        "D. Hierarchical model"
-      ],
-      "correct_answer": "B. Document store",
-      "explanation": "Document databases store semi-structured records, often in JSON/BSON-like format.",
-      "topic": "Modern DBMS Concepts"
-    },
-    {
-      "id": 144,
-      "question": "Which NoSQL model is most suitable for simple lookup by key with very high speed?",
-      "options": [
-        "A. Key-value store",
-        "B. Graph database",
-        "C. Relational model",
-        "D. Object-relational model"
-      ],
-      "correct_answer": "A. Key-value store",
-      "explanation": "Key-value stores are optimized for quick access using a unique key.",
-      "topic": "Modern DBMS Concepts"
-    },
-    {
-      "id": 145,
-      "question": "Data warehousing is primarily used for:",
-      "options": [
-        "A. Real-time transaction entry",
-        "B. Operational CRUD systems only",
-        "C. Decision support and analysis",
-        "D. Lock management"
-      ],
-      "correct_answer": "C. Decision support and analysis",
-      "explanation": "Data warehouses consolidate historical data for reporting and analytics.",
-      "topic": "Modern DBMS Concepts"
-    },
-    {
-      "id": 146,
-      "question": "Which statement about denormalization is correct?",
-      "options": [
-        "A. It always improves data integrity",
-        "B. It may improve read performance by reducing joins",
-        "C. It removes all redundancy",
-        "D. It is mandatory in OLTP systems"
-      ],
-      "correct_answer": "B. It may improve read performance by reducing joins",
-      "explanation": "Denormalization intentionally introduces some redundancy for faster query performance.",
-      "topic": "Modern DBMS Concepts"
-    },
-    {
-      "id": 147,
-      "question": "Sharding in databases refers to:",
-      "options": [
-        "A. Encrypting a database",
-        "B. Splitting data horizontally across multiple servers",
-        "C. Compressing indexes",
-        "D. Locking partitions"
-      ],
-      "correct_answer": "B. Splitting data horizontally across multiple servers",
-      "explanation": "Sharding distributes rows across machines to improve scalability.",
-      "topic": "Modern DBMS Concepts"
-    },
-    {
-      "id": 148,
-      "question": "Replication in databases is used mainly to:",
-      "options": [
-        "A. Normalize relations",
-        "B. Maintain copies of data across nodes for availability and performance",
-        "C. Eliminate candidate keys",
-        "D. Convert OLTP to OLAP"
-      ],
-      "correct_answer": "B. Maintain copies of data across nodes for availability and performance",
-      "explanation": "Replication improves fault tolerance, read scalability, and availability.",
-      "topic": "Modern DBMS Concepts"
-    },
-    {
-      "id": 149,
-      "question": "Eventual consistency means:",
-      "options": [
-        "A. All nodes are always strongly consistent",
-        "B. Updates never propagate",
-        "C. Replicas may temporarily differ but converge over time",
-        "D. Transactions are always serializable"
-      ],
-      "correct_answer": "C. Replicas may temporarily differ but converge over time",
-      "explanation": "Eventually consistent systems allow temporary divergence in favor of availability or partition tolerance.",
-      "topic": "Modern DBMS Concepts"
-    },
-    {
-      "id": 150,
-      "question": "Which statement best describes a data lake compared with a traditional data warehouse?",
-      "options": [
-        "A. A data lake stores raw structured and unstructured data, while a warehouse stores curated structured data",
-        "B. A data lake stores only relational tables",
-        "C. A data warehouse stores only raw logs",
-        "D. They are exactly the same"
-      ],
-      "correct_answer": "A. A data lake stores raw structured and unstructured data, while a warehouse stores curated structured data",
-      "explanation": "Data lakes usually keep raw data in many formats, whereas warehouses hold transformed analytical data.",
-      "topic": "Modern DBMS Concepts"
-    }
+    "id": 1,
+    "practice_set": 1,
+    "question_no": 2,
+    "question": "What does the “ACID” property in DBMS stand for?",
+    "options": [
+      "A. Atomicity, Consistency, Isolation, Durability",
+      "B. Access, Control, Integration, Durability",
+      "C. Association, Consistency, Integration, Data",
+      "D. Analysis, Computation, Integrity, Dependency",
+      "E. Action, Control, Isolation, Dependency"
+    ],
+    "correct_answer": "A. Atomicity, Consistency, Isolation, Durability",
+    "explanation": "ACID ensures safe and reliable transaction management in databases.",
+    "topic": "ACID Properties & Transactions"
+  },
+  {
+    "id": 2,
+    "practice_set": 1,
+    "question_no": 3,
+    "question": "Which SQL clause is used to filter groups after aggregation?",
+    "options": [
+      "A. WHERE",
+      "B. HAVING",
+      "C. GROUP BY",
+      "D. SELECT",
+      "E. ORDER BY"
+    ],
+    "correct_answer": "B. HAVING",
+    "explanation": "HAVING filters records after aggregation; WHERE is used before GROUP BY.",
+    "topic": "SQL Aggregation & Grouping"
+  },
+  {
+    "id": 3,
+    "practice_set": 1,
+    "question_no": 6,
+    "question": "In SQL, which command is used to remove a table structure?",
+    "options": [
+      "A. DELETE",
+      "B. ERASE",
+      "C. DROP",
+      "D. REMOVE",
+      "E. TRUNCATE"
+    ],
+    "correct_answer": "C. DROP",
+    "explanation": "DROP deletes the entire table, including structure and data.",
+    "topic": "SQL Commands (DDL/DML)"
+  },
+  {
+    "id": 4,
+    "practice_set": 1,
+    "question_no": 7,
+    "question": "Why is B+ Tree preferred in databases over Binary Search Trees?",
+    "options": [
+      "A. B+ Trees are balanced and disk friendly",
+      "B. B+ Trees have no leaf nodes",
+      "C. BSTs support better sorting",
+      "D. B+ Trees require no memory",
+      "E. B+ Trees use more RAM"
+    ],
+    "correct_answer": "A. B+ Trees are balanced and disk-friendly",
+    "explanation": "B+ Trees reduce disk access and are optimized for database indexing.",
+    "topic": "Indexing"
+  },
+  {
+    "id": 5,
+    "practice_set": 1,
+    "question_no": 9,
+    "question": "What does a primary key in a database ensure?",
+    "options": [
+      "A. Better memory usage",
+      "B. Fast access to backup",
+      "C. Each record is unique",
+      "D. Compression of data",
+      "E. Sorting is faster"
+    ],
+    "correct_answer": "C. Each record is unique",
+    "explanation": "A primary key uniquely identifies each row and prevents duplicates.",
+    "topic": "Keys & Referential Integrity"
+  },
+  {
+    "id": 6,
+    "practice_set": 1,
+    "question_no": 14,
+    "question": "Which of the following is NOT a valid SQL constraint?",
+    "options": [
+      "A. UNIQUE",
+      "B. PRIMARY KEY",
+      "C. CHECK",
+      "D. GROUP BY",
+      "E. NOT NULL"
+    ],
+    "correct_answer": "D. GROUP BY",
+    "explanation": "GROUP BY is a clause, not a constraint.",
+    "topic": "SQL Constraints"
+  },
+  {
+    "id": 7,
+    "practice_set": 1,
+    "question_no": 18,
+    "question": "In SQL, which statement creates a new table?",
+    "options": [
+      "A. MAKE TABLE",
+      "B. BUILD TABLE",
+      "C. FORM TABLE",
+      "D. CREATE TABLE",
+      "E. INSERT TABLE"
+    ],
+    "correct_answer": "D. CREATE TABLE",
+    "explanation": "This command initializes a new table structure in SQL.",
+    "topic": "SQL Commands (DDL/DML)"
+  },
+  {
+    "id": 8,
+    "practice_set": 2,
+    "question_no": 1,
+    "question": "Which normal form ensures that every non-prime attribute is fully functionally dependent on every candidate key?",
+    "options": [
+      "A. 1NF",
+      "B. 2NF",
+      "C. 3NF",
+      "D. BCNF",
+      "E. 4NF"
+    ],
+    "correct_answer": "B. 2NF",
+    "explanation": "2NF removes partial dependency of non-prime attributes on candidate keys.",
+    "topic": "Normalization & Functional Dependencies"
+  },
+  {
+    "id": 9,
+    "practice_set": 2,
+    "question_no": 4,
+    "question": "Which type of JOIN returns all rows when there is a match in one of the tables?",
+    "options": [
+      "A. Inner Join",
+      "B. Outer Join",
+      "C. Self Join",
+      "D. Cross Join",
+      "E. Cartesian Join"
+    ],
+    "correct_answer": "B. Outer Join",
+    "explanation": "Outer Join returns all records when there is a match in either table.",
+    "topic": "SQL Joins"
+  },
+  {
+    "id": 10,
+    "practice_set": 2,
+    "question_no": 10,
+    "question": "In DBMS, which property ensures that either all operations of a transaction are completed or none?",
+    "options": [
+      "A. Consistency",
+      "B. Atomicity",
+      "C. Durability",
+      "D. Isolation",
+      "E. Recovery"
+    ],
+    "correct_answer": "B. Atomicity",
+    "explanation": "Atomicity ensures transactions are completed fully or not at all.",
+    "topic": "ACID Properties & Transactions"
+  },
+  {
+    "id": 11,
+    "practice_set": 2,
+    "question_no": 12,
+    "question": "In SQL, which keyword is used to remove duplicate rows from a query result?",
+    "options": [
+      "A. UNIQUE",
+      "B. REMOVE",
+      "C. DISTINCT",
+      "D. DELETE",
+      "E. GROUP"
+    ],
+    "correct_answer": "C. DISTINCT",
+    "explanation": "DISTINCT removes duplicate rows in SQL results.",
+    "topic": "SQL Queries & Clauses"
+  },
+  {
+    "id": 12,
+    "practice_set": 2,
+    "question_no": 16,
+    "question": "Which command is used in SQL to change the structure of a table?",
+    "options": [
+      "A. CHANGE",
+      "B. MODIFY",
+      "C. ALTER",
+      "D. UPDATE",
+      "E. CREATE"
+    ],
+    "correct_answer": "C. ALTER",
+    "explanation": "ALTER modifies the structure of a table in SQL.",
+    "topic": "SQL Commands (DDL/DML)"
+  },
+  {
+    "id": 13,
+    "practice_set": 2,
+    "question_no": 19,
+    "question": "Which of the following databases is an example of NoSQL?",
+    "options": [
+      "A. Oracle",
+      "B. MySQL",
+      "C. PostgreSQL",
+      "D. MongoDB",
+      "E. SQLite"
+    ],
+    "correct_answer": "D. MongoDB",
+    "explanation": "MongoDB is a NoSQL database.",
+    "topic": "Database Models & NoSQL"
+  },
+  {
+    "id": 14,
+    "practice_set": 2,
+    "question_no": 20,
+    "question": "Which SQL command is used to retrieve data from a table?",
+    "options": [
+      "A. GET",
+      "B. RETRIEVE",
+      "C. FETCH",
+      "D. SELECT",
+      "E. DISPLAY"
+    ],
+    "correct_answer": "D. SELECT",
+    "explanation": "SELECT retrieves data from SQL tables.",
+    "topic": "SQL Queries & Clauses"
+  },
+  {
+    "id": 15,
+    "practice_set": 2,
+    "question_no": 28,
+    "question": "Which SQL clause is used to specify the condition for grouping rows?",
+    "options": [
+      "A. WHERE",
+      "B. GROUP BY",
+      "C. ORDER BY",
+      "D. HAVING",
+      "E. UNION"
+    ],
+    "correct_answer": "B. GROUP BY",
+    "explanation": "GROUP BY is used to define groups of rows.",
+    "topic": "SQL Aggregation & Grouping"
+  },
+  {
+    "id": 16,
+    "practice_set": 2,
+    "question_no": 31,
+    "question": "Which normalization form eliminates transitive dependency?",
+    "options": [
+      "A. 1NF",
+      "B. 2NF",
+      "C. 3NF",
+      "D. BCNF",
+      "E. 4NF"
+    ],
+    "correct_answer": "C. 3NF",
+    "explanation": "Third Normal Form removes transitive dependency among attributes.",
+    "topic": "Normalization & Functional Dependencies"
+  },
+  {
+    "id": 17,
+    "practice_set": 2,
+    "question_no": 39,
+    "question": "Which SQL function returns the number of records in a table?",
+    "options": [
+      "A. COUNT()",
+      "B. SUM()",
+      "C. TOTAL()",
+      "D. NUMBER()",
+      "E. LENGTH()"
+    ],
+    "correct_answer": "A. COUNT()",
+    "explanation": "COUNT() returns the number of records in a table.",
+    "topic": "SQL Aggregation & Grouping"
+  },
+  {
+    "id": 18,
+    "practice_set": 2,
+    "question_no": 44,
+    "question": "Which of the following describes a DDL command in SQL?",
+    "options": [
+      "A. INSERT",
+      "B. DELETE",
+      "C. SELECT",
+      "D. CREATE",
+      "E. UPDATE"
+    ],
+    "correct_answer": "D. CREATE",
+    "explanation": "CREATE is a DDL command.",
+    "topic": "SQL Commands (DDL/DML)"
+  },
+  {
+    "id": 19,
+    "practice_set": 2,
+    "question_no": 46,
+    "question": "In database systems, which isolation level allows non-repeatable reads?",
+    "options": [
+      "A. Read Uncommitted",
+      "B. Read Committed",
+      "C. Repeatable Read",
+      "D. Serializable",
+      "E. Snapshot Isolation"
+    ],
+    "correct_answer": "B. Read Committed",
+    "explanation": "The PDF answer key marks this as allowing non-repeatable reads.",
+    "topic": "Transaction Isolation Levels"
+  },
+  {
+    "id": 20,
+    "practice_set": 2,
+    "question_no": 58,
+    "question": "In databases, what is the purpose of an index?",
+    "options": [
+      "A. To ensure data integrity",
+      "B. To increase storage",
+      "C. To speed up searches",
+      "D. To manage transactions",
+      "E. To provide encryption"
+    ],
+    "correct_answer": "C. To speed up searches",
+    "explanation": "Indexes make retrieval of database records faster.",
+    "topic": "Indexing"
+  },
+  {
+    "id": 21,
+    "practice_set": 3,
+    "question_no": 2,
+    "question": "In a database, which key is used to establish a relationship between two tables?",
+    "options": [
+      "A. Primary Key",
+      "B. Super Key",
+      "C. Candidate Key",
+      "D. Foreign Key",
+      "E. Alternate Key"
+    ],
+    "correct_answer": "D. Foreign Key",
+    "explanation": "A foreign key links two tables by referencing the primary key of another table.",
+    "topic": "Keys & Referential Integrity"
+  },
+  {
+    "id": 22,
+    "practice_set": 3,
+    "question_no": 5,
+    "question": "Which SQL clause is used to sort the results of a query?",
+    "options": [
+      "A. SORT BY",
+      "B. GROUP BY",
+      "C. ORDER BY",
+      "D. HAVING",
+      "E. SELECT"
+    ],
+    "correct_answer": "C. ORDER BY",
+    "explanation": "ORDER BY sorts the result of an SQL query.",
+    "topic": "SQL Queries & Clauses"
+  },
+  {
+    "id": 23,
+    "practice_set": 3,
+    "question_no": 13,
+    "question": "Which SQL keyword is used to modify existing records in a table?",
+    "options": [
+      "A. CHANGE",
+      "B. MODIFY",
+      "C. ALTER",
+      "D. UPDATE",
+      "E. SET"
+    ],
+    "correct_answer": "D. UPDATE",
+    "explanation": "UPDATE modifies existing rows in a table.",
+    "topic": "SQL Commands (DDL/DML)"
+  },
+  {
+    "id": 24,
+    "practice_set": 3,
+    "question_no": 15,
+    "question": "In databases, what is a collection of interrelated data called?",
+    "options": [
+      "A. Tuple",
+      "B. Field",
+      "C. Record",
+      "D. Database",
+      "E. Table"
+    ],
+    "correct_answer": "D. Database",
+    "explanation": "A database is a collection of interrelated data.",
+    "topic": "DBMS & SQL"
+  },
+  {
+    "id": 25,
+    "practice_set": 3,
+    "question_no": 18,
+    "question": "Which technique ensures that data is consistently written to the disk in DBMS?",
+    "options": [
+      "A. Buffering",
+      "B. Logging",
+      "C. Normalization",
+      "D. Paging",
+      "E. Fragmentation"
+    ],
+    "correct_answer": "B. Logging",
+    "explanation": "Logging helps maintain data integrity and supports crash recovery.",
+    "topic": "Recovery, Backup & Logging"
+  },
+  {
+    "id": 26,
+    "practice_set": 3,
+    "question_no": 22,
+    "question": "Which database model organizes data in a tree-like structure?",
+    "options": [
+      "A. Relational Model",
+      "B. Hierarchical Model",
+      "C. Network Model",
+      "D. Object Model",
+      "E. Distributed Model"
+    ],
+    "correct_answer": "B. Hierarchical Model",
+    "explanation": "Hierarchical databases use tree-like structures.",
+    "topic": "Database Models & NoSQL"
+  },
+  {
+    "id": 27,
+    "practice_set": 3,
+    "question_no": 25,
+    "question": "In SQL, which constraint ensures no two rows have the same value in a column?",
+    "options": [
+      "A. CHECK",
+      "B. UNIQUE",
+      "C. NOT NULL",
+      "D. DEFAULT",
+      "E. FOREIGN KEY"
+    ],
+    "correct_answer": "B. UNIQUE",
+    "explanation": "UNIQUE ensures all values in a column are different.",
+    "topic": "SQL Constraints"
+  },
+  {
+    "id": 28,
+    "practice_set": 3,
+    "question_no": 34,
+    "question": "Which SQL function returns the highest value in a column?",
+    "options": [
+      "A. MAX()",
+      "B. HIGH()",
+      "C. GREATEST()",
+      "D. TOP()",
+      "E. MAXIMUM()"
+    ],
+    "correct_answer": "A. MAX()",
+    "explanation": "MAX() returns the maximum value in a column.",
+    "topic": "SQL Aggregation & Grouping"
+  },
+  {
+    "id": 29,
+    "practice_set": 3,
+    "question_no": 38,
+    "question": "Which SQL clause combines rows from two or more tables?",
+    "options": [
+      "A. WHERE",
+      "B. JOIN",
+      "C. GROUP BY",
+      "D. ORDER BY",
+      "E. SELECT"
+    ],
+    "correct_answer": "B. JOIN",
+    "explanation": "JOIN combines rows from two or more tables based on a related column.",
+    "topic": "SQL Joins"
+  },
+  {
+    "id": 30,
+    "practice_set": 3,
+    "question_no": 47,
+    "question": "Which database command is used to permanently save changes?",
+    "options": [
+      "A. COMMIT",
+      "B. SAVE",
+      "C. APPLY",
+      "D. EXECUTE",
+      "E. UPDATE"
+    ],
+    "correct_answer": "A. COMMIT",
+    "explanation": "COMMIT permanently saves database changes.",
+    "topic": "Recovery, Backup & Logging"
+  },
+  {
+    "id": 31,
+    "practice_set": 3,
+    "question_no": 49,
+    "question": "Which of the following is NOT a valid SQL data type?",
+    "options": [
+      "A. INT",
+      "B. VARCHAR",
+      "C. BLOB",
+      "D. FLOATING",
+      "E. DATE"
+    ],
+    "correct_answer": "D. FLOATING",
+    "explanation": "FLOATING is invalid in SQL; the correct type is FLOAT.",
+    "topic": "SQL Queries & Clauses"
+  },
+  {
+    "id": 32,
+    "practice_set": 3,
+    "question_no": 55,
+    "question": "Which database concept is used to recover a database to a previous state?",
+    "options": [
+      "A. Backup",
+      "B. Rollback",
+      "C. Transaction",
+      "D. Restore",
+      "E. Commit"
+    ],
+    "correct_answer": "B. Rollback",
+    "explanation": "Rollback restores the database to a previous consistent state.",
+    "topic": "Recovery, Backup & Logging"
+  },
+  {
+    "id": 33,
+    "practice_set": 3,
+    "question_no": 60,
+    "question": "Which SQL clause is used to restrict the number of rows returned?",
+    "options": [
+      "A. WHERE",
+      "B. ORDER BY",
+      "C. GROUP BY",
+      "D. LIMIT",
+      "E. HAVING"
+    ],
+    "correct_answer": "D. LIMIT",
+    "explanation": "LIMIT restricts the number of rows returned by an SQL query.",
+    "topic": "SQL Queries & Clauses"
+  },
+  {
+    "id": 34,
+    "practice_set": 4,
+    "question_no": 2,
+    "question": "Which isolation level prevents both dirty reads and non-repeatable reads but allows phantom reads?",
+    "options": [
+      "A. Read Uncommitted",
+      "B. Read Committed",
+      "C. Repeatable Read",
+      "D. Serializable",
+      "E. Snapshot"
+    ],
+    "correct_answer": "C. Repeatable Read",
+    "explanation": "Prevents dirty and non-repeatable reads but allows phantom reads.",
+    "topic": "Transaction Isolation Levels"
+  },
+  {
+    "id": 35,
+    "practice_set": 4,
+    "question_no": 3,
+    "question": "Which SQL command is used to modify an existing trigger?",
+    "options": [
+      "A. ALTER TRIGGER",
+      "B. MODIFY TRIGGER",
+      "C. UPDATE TRIGGER",
+      "D. CREATE OR REPLACE TRIGGER",
+      "E. CHANGE TRIGGER"
+    ],
+    "correct_answer": "D. CREATE OR REPLACE TRIGGER",
+    "explanation": "In SQL, triggers are modified using CREATE OR REPLACE TRIGGER.",
+    "topic": "Triggers"
+  },
+  {
+    "id": 36,
+    "practice_set": 4,
+    "question_no": 5,
+    "question": "Which normal form deals with multivalued dependencies?",
+    "options": [
+      "A. 1NF",
+      "B. 2NF",
+      "C. 3NF",
+      "D. BCNF",
+      "E. 4NF"
+    ],
+    "correct_answer": "E. 4NF",
+    "explanation": "Fourth Normal Form deals with multivalued dependencies.",
+    "topic": "Normalization & Functional Dependencies"
+  },
+  {
+    "id": 37,
+    "practice_set": 4,
+    "question_no": 13,
+    "question": "What does ACID property “Durability” guarantee in database systems?",
+    "options": [
+      "A. Every transaction is immediately visible",
+      "B. Data remains consistent across all users",
+      "C. Changes survive system failures",
+      "D. Multiple users can access data simultaneously",
+      "E. Deadlocks are avoided"
+    ],
+    "correct_answer": "C. Changes survive system failures",
+    "explanation": "Durability ensures transaction results persist.",
+    "topic": "ACID Properties & Transactions"
+  },
+  {
+    "id": 38,
+    "practice_set": 4,
+    "question_no": 17,
+    "question": "Which SQL JOIN returns all rows from the left table and the matching rows from the right table?",
+    "options": [
+      "A. INNER JOIN",
+      "B. RIGHT JOIN",
+      "C. LEFT JOIN",
+      "D. CROSS JOIN",
+      "E. FULL JOIN"
+    ],
+    "correct_answer": "C. LEFT JOIN",
+    "explanation": "LEFT JOIN returns all records from the left table and matched ones from the right.",
+    "topic": "SQL Joins"
+  },
+  {
+    "id": 39,
+    "practice_set": 4,
+    "question_no": 37,
+    "question": "In SQL, which function returns the current system date?",
+    "options": [
+      "A. SYSTEM_DATE()",
+      "B. CURRENT_DATE()",
+      "C. TODAY()",
+      "D. SYSDATE()",
+      "E. NOW()"
+    ],
+    "correct_answer": "D. SYSDATE()",
+    "explanation": "SYSDATE() returns the current system date in SQL.",
+    "topic": "SQL Queries & Clauses"
+  },
+  {
+    "id": 40,
+    "practice_set": 4,
+    "question_no": 46,
+    "question": "Which database technique helps recover data after a crash?",
+    "options": [
+      "A. Checkpoints",
+      "B. Deadlocks",
+      "C. Locks",
+      "D. Paging",
+      "E. Concurrency Control"
+    ],
+    "correct_answer": "A. Checkpoints",
+    "explanation": "Checkpoints help recover database state after crashes.",
+    "topic": "SQL Constraints"
+  },
+  {
+    "id": 41,
+    "practice_set": 4,
+    "question_no": 51,
+    "question": "Which technique prevents SQL Injection?",
+    "options": [
+      "A. Hashing Passwords",
+      "B. Using Prepared Statements",
+      "C. Dynamic SQL Queries",
+      "D. File Encryption",
+      "E. Web Server Firewalls"
+    ],
+    "correct_answer": "B. Using Prepared Statements",
+    "explanation": "Prepared statements prevent SQL injection attacks.",
+    "topic": "SQL Security"
+  },
+  {
+    "id": 42,
+    "practice_set": 4,
+    "question_no": 57,
+    "question": "Which SQL clause removes duplicate records?",
+    "options": [
+      "A. UNIQUE",
+      "B. DISTINCT",
+      "C. ALL",
+      "D. PRIMARY",
+      "E. CHECK"
+    ],
+    "correct_answer": "B. DISTINCT",
+    "explanation": "DISTINCT removes duplicate records in SQL.",
+    "topic": "SQL Queries & Clauses"
+  },
+  {
+    "id": 43,
+    "practice_set": 5,
+    "question_no": 5,
+    "question": "Which database property ensures that a transaction leaves the database in a valid state?",
+    "options": [
+      "A. Atomicity",
+      "B. Durability",
+      "C. Isolation",
+      "D. Consistency",
+      "E. Recovery"
+    ],
+    "correct_answer": "D. Consistency",
+    "explanation": "Consistency ensures database validity after transactions.",
+    "topic": "ACID Properties & Transactions"
+  },
+  {
+    "id": 44,
+    "practice_set": 5,
+    "question_no": 17,
+    "question": "Which database isolation level permits dirty reads?",
+    "options": [
+      "A. Read Committed",
+      "B. Repeatable Read",
+      "C. Serializable",
+      "D. Read Uncommitted",
+      "E. Snapshot"
+    ],
+    "correct_answer": "D. Read Uncommitted",
+    "explanation": "Read Uncommitted allows dirty reads.",
+    "topic": "Transaction Isolation Levels"
+  },
+  {
+    "id": 45,
+    "practice_set": 5,
+    "question_no": 22,
+    "question": "In databases, which operation retrieves specific attributes from a relation?",
+    "options": [
+      "A. Projection",
+      "B. Selection",
+      "C. Join",
+      "D. Union",
+      "E. Intersection"
+    ],
+    "correct_answer": "A. Projection",
+    "explanation": "Projection retrieves specific attributes (columns) from relations.",
+    "topic": "Relational Algebra & Concepts"
+  },
+  {
+    "id": 46,
+    "practice_set": 5,
+    "question_no": 27,
+    "question": "Which database constraint ensures a column cannot have NULL values?",
+    "options": [
+      "A. DEFAULT",
+      "B. CHECK",
+      "C. PRIMARY KEY",
+      "D. UNIQUE",
+      "E. NOT NULL"
+    ],
+    "correct_answer": "E. NOT NULL",
+    "explanation": "This constraint prevents NULL values in a column.",
+    "topic": "SQL Constraints"
+  },
+  {
+    "id": 47,
+    "practice_set": 5,
+    "question_no": 39,
+    "question": "Which type of SQL JOIN combines all rows from both tables, with NULLs where there is no match?",
+    "options": [
+      "A. INNER JOIN",
+      "B. LEFT JOIN",
+      "C. RIGHT JOIN",
+      "D. FULL JOIN",
+      "E. CROSS JOIN"
+    ],
+    "correct_answer": "D. FULL JOIN",
+    "explanation": "FULL JOIN combines all rows from both tables, inserting NULLs where needed.",
+    "topic": "SQL Joins"
+  },
+  {
+    "id": 48,
+    "practice_set": 6,
+    "question_no": 19,
+    "question": "Which database model organizes data into tables with rows and columns, and uses SQL for managing the data?",
+    "options": [
+      "A. Hierarchical Model",
+      "B. Object-Oriented Model",
+      "C. Relational Model",
+      "D. Network Model",
+      "E. Document Model"
+    ],
+    "correct_answer": "C. Relational Model",
+    "explanation": "Relational databases organize data into tables.",
+    "topic": "Database Models & NoSQL"
+  },
+  {
+    "id": 49,
+    "practice_set": 6,
+    "question_no": 30,
+    "question": "Which SQL keyword is used to combine the results of two queries, returning only distinct records common to both?",
+    "options": [
+      "A. UNION",
+      "B. INTERSECT",
+      "C. JOIN",
+      "D. MINUS",
+      "E. MERGE"
+    ],
+    "correct_answer": "B. INTERSECT",
+    "explanation": "INTERSECT returns common rows from two SQL queries.",
+    "topic": "SQL Queries & Clauses"
+  },
+  {
+    "id": 50,
+    "practice_set": 6,
+    "question_no": 48,
+    "question": "Which command in SQL combines the results of two SELECT queries into a single set, including duplicate records?",
+    "options": [
+      "A. UNION",
+      "B. INTERSECT",
+      "C. UNION ALL",
+      "D. JOIN",
+      "E. NATURAL JOIN"
+    ],
+    "correct_answer": "C. UNION ALL",
+    "explanation": "UNION ALL combines query results including duplicates.",
+    "topic": "SQL Queries & Clauses"
+  },
+  {
+    "id": 51,
+    "practice_set": 7,
+    "question_no": 4,
+    "question": "Which SQL command is used to remove all records from a table without removing its structure, making it faster than DELETE?",
+    "options": [
+      "A. DROP",
+      "B. TRUNCATE",
+      "C. ERASE",
+      "D. REMOVE",
+      "E. CLEAR"
+    ],
+    "correct_answer": "B. TRUNCATE",
+    "explanation": "TRUNCATE removes all records but preserves table structure.",
+    "topic": "SQL Commands (DDL/DML)"
+  },
+  {
+    "id": 52,
+    "practice_set": 7,
+    "question_no": 8,
+    "question": "Which database anomaly occurs when deleting a record also unintentionally deletes other important information?",
+    "options": [
+      "A. Insertion Anomaly",
+      "B. Deletion Anomaly",
+      "C. Update Anomaly",
+      "D. Redundancy Anomaly",
+      "E. Integrity Anomaly"
+    ],
+    "correct_answer": "B. Deletion Anomaly",
+    "explanation": "Deleting a record can unintentionally remove important data in deletion anomalies.",
+    "topic": "SQL Commands (DDL/DML)"
+  },
+  {
+    "id": 53,
+    "practice_set": 7,
+    "question_no": 18,
+    "question": "Which database indexing method allows multiple values from a single field to point to the same index entry, optimizing search queries?",
+    "options": [
+      "A. B-tree Indexing",
+      "B. Bitmap Indexing",
+      "C. Hash Indexing",
+      "D. Dense Indexing",
+      "E. Sparse Indexing"
+    ],
+    "correct_answer": "B. Bitmap Indexing",
+    "explanation": "Bitmap indexing maps multiple values efficiently for low-distinct fields.",
+    "topic": "Indexing"
+  },
+  {
+    "id": 54,
+    "practice_set": 7,
+    "question_no": 25,
+    "question": "Which SQL function is used to count the number of rows in a table that meet a specific condition?",
+    "options": [
+      "A. TOTAL()",
+      "B. SUM()",
+      "C. COUNT()",
+      "D. NUMBER()",
+      "E. LENGTH()"
+    ],
+    "correct_answer": "C. COUNT()",
+    "explanation": "COUNT() returns the number of rows that meet a condition.",
+    "topic": "SQL Aggregation & Grouping"
+  },
+  {
+    "id": 55,
+    "practice_set": 7,
+    "question_no": 28,
+    "question": "Which database term refers to a situation where two transactions are waiting for each other to release resources, causing a halt?",
+    "options": [
+      "A. Race Condition",
+      "B. Starvation",
+      "C. Deadlock",
+      "D. Thrashing",
+      "E. Paging"
+    ],
+    "correct_answer": "C. Deadlock",
+    "explanation": "Deadlock happens when two transactions wait indefinitely for each other’s resources.",
+    "topic": "SQL Queries & Clauses"
+  },
+  {
+    "id": 56,
+    "practice_set": 7,
+    "question_no": 35,
+    "question": "Which SQL operator is used to select rows that satisfy at least one of multiple conditions?",
+    "options": [
+      "A. AND",
+      "B. OR",
+      "C. NOT",
+      "D. IN",
+      "E. BETWEEN"
+    ],
+    "correct_answer": "B. OR",
+    "explanation": "OR selects rows satisfying at least one of multiple conditions.",
+    "topic": "SQL Queries & Clauses"
+  },
+  {
+    "id": 57,
+    "practice_set": 7,
+    "question_no": 56,
+    "question": "In SQL, which command is used to permanently remove a column from an existing table?",
+    "options": [
+      "A. DELETE",
+      "B. REMOVE",
+      "C. DROP COLUMN",
+      "D. UPDATE COLUMN",
+      "E. ALTER COLUMN"
+    ],
+    "correct_answer": "C. DROP COLUMN",
+    "explanation": "ALTER TABLE ... DROP COLUMN removes a column from a table.",
+    "topic": "SQL Commands (DDL/DML)"
+  },
+  {
+    "id": 58,
+    "practice_set": 7,
+    "question_no": 60,
+    "question": "Which SQL constraint ensures that the value of a column must satisfy a specific condition before the row can be created?",
+    "options": [
+      "A. PRIMARY KEY",
+      "B. FOREIGN KEY",
+      "C. CHECK",
+      "D. DEFAULT",
+      "E. NOT NULL"
+    ],
+    "correct_answer": "C. CHECK",
+    "explanation": "CHECK constraint enforces a condition that values must satisfy.",
+    "topic": "SQL Constraints"
+  },
+  {
+    "id": 59,
+    "practice_set": 8,
+    "question_no": 17,
+    "question": "In SQL, which command is used to rename a table after it has already been created?",
+    "options": [
+      "A. CHANGE TABLE",
+      "B. RENAME TABLE",
+      "C. ALTER TABLE",
+      "D. MODIFY TABLE",
+      "E. UPDATE TABLE"
+    ],
+    "correct_answer": "B. RENAME TABLE",
+    "explanation": "Renames an existing table.",
+    "topic": "SQL Commands (DDL/DML)"
+  },
+  {
+    "id": 60,
+    "practice_set": 8,
+    "question_no": 26,
+    "question": "What does the following SQL query return?\nSELECT COUNT(DISTINCT department) FROM Employees;",
+    "options": [
+      "A. Total number of employees",
+      "B. Total distinct departments",
+      "C. Employees in each department",
+      "D. Average salary",
+      "E. Minimum salary"
+    ],
+    "correct_answer": "B. Total distinct departments",
+    "explanation": "COUNT(DISTINCT department) counts unique department values.",
+    "topic": "SQL Constraints"
+  },
+  {
+    "id": 61,
+    "practice_set": 8,
+    "question_no": 28,
+    "question": "In databases, which type of join returns all combinations of rows from two tables?",
+    "options": [
+      "A. LEFT JOIN",
+      "B. RIGHT JOIN",
+      "C. CROSS JOIN",
+      "D. INNER JOIN",
+      "E. FULL JOIN"
+    ],
+    "correct_answer": "C. CROSS JOIN",
+    "explanation": "CROSS JOIN returns Cartesian product of two tables.",
+    "topic": "SQL Joins"
+  },
+  {
+    "id": 62,
+    "practice_set": 8,
+    "question_no": 33,
+    "question": "Which concept in database design ensures minimal duplication of data by organizing fields and tables properly?",
+    "options": [
+      "A. Denormalization",
+      "B. Indexing",
+      "C. Normalization",
+      "D. Joins",
+      "E. Partitioning"
+    ],
+    "correct_answer": "C. Normalization",
+    "explanation": "Normalization removes redundancy and organizes data efficiently.",
+    "topic": "Normalization & Functional Dependencies"
+  },
+  {
+    "id": 63,
+    "practice_set": 8,
+    "question_no": 39,
+    "question": "In SQL, what does the following query do?\nSELECT name FROM Students WHERE marks IS NULL;",
+    "options": [
+      "A. Selects all students with highest marks",
+      "B. Selects students with marks equal to 0",
+      "C. Selects students with missing marks",
+      "D. Selects students who failed",
+      "E. Selects students with non-zero marks"
+    ],
+    "correct_answer": "C. Selects students with missing marks",
+    "explanation": "IS NULL filters rows with null values.",
+    "topic": "SQL Queries & Clauses"
+  },
+  {
+    "id": 64,
+    "practice_set": 8,
+    "question_no": 42,
+    "question": "Which database term refers to the action of creating a logical backup by duplicating a database’s structure and contents?",
+    "options": [
+      "A. Restore",
+      "B. Export",
+      "C. Replication",
+      "D. Backup",
+      "E. Snapshot"
+    ],
+    "correct_answer": "D. Backup",
+    "explanation": "Backup copies database structure and content.",
+    "topic": "Recovery, Backup & Logging"
+  },
+  {
+    "id": 65,
+    "practice_set": 8,
+    "question_no": 43,
+    "question": "Which SQL command is used to remove a record from a table based on a condition?",
+    "options": [
+      "A. DROP",
+      "B. DELETE",
+      "C. REMOVE",
+      "D. ERASE",
+      "E. CLEAR"
+    ],
+    "correct_answer": "B. DELETE",
+    "explanation": "DELETE removes rows based on a condition.",
+    "topic": "SQL Commands (DDL/DML)"
+  },
+  {
+    "id": 66,
+    "practice_set": 8,
+    "question_no": 46,
+    "question": "Which SQL aggregate function returns the sum of a numeric column?",
+    "options": [
+      "A. SUM()",
+      "B. TOTAL()",
+      "C. ADD()",
+      "D. AVG()",
+      "E. COUNT()"
+    ],
+    "correct_answer": "A. SUM()",
+    "explanation": "SUM totals numeric column values.",
+    "topic": "SQL Aggregation & Grouping"
+  },
+  {
+    "id": 67,
+    "practice_set": 8,
+    "question_no": 48,
+    "question": "In database systems, which operation is used to combine data from two or more tables based on a common related column?",
+    "options": [
+      "A. UNION",
+      "B. JOIN",
+      "C. INTERSECT",
+      "D. CROSS JOIN",
+      "E. SUBQUERY"
+    ],
+    "correct_answer": "B. JOIN",
+    "explanation": "JOIN combines related records from different tables.",
+    "topic": "SQL Joins"
+  },
+  {
+    "id": 68,
+    "practice_set": 8,
+    "question_no": 52,
+    "question": "In SQL, which clause is used to specify a condition while fetching data from a single table or by joining multiple tables?",
+    "options": [
+      "A. GROUP BY",
+      "B. HAVING",
+      "C. WHERE",
+      "D. ORDER BY",
+      "E. SELECT"
+    ],
+    "correct_answer": "C. WHERE",
+    "explanation": "WHERE filters rows during data fetching.",
+    "topic": "SQL Joins"
+  },
+  {
+    "id": 69,
+    "practice_set": 8,
+    "question_no": 56,
+    "question": "Which SQL keyword is used to provide a temporary name to a table or a column in a query?",
+    "options": [
+      "A. CHANGE",
+      "B. RENAME",
+      "C. ALIAS",
+      "D. AS",
+      "E. MODIFY"
+    ],
+    "correct_answer": "D. AS",
+    "explanation": "AS creates aliases for columns or tables.",
+    "topic": "SQL Commands (DDL/DML)"
+  },
+  {
+    "id": 70,
+    "practice_set": 9,
+    "question_no": 8,
+    "question": "What will be the output of the following SQL query if the table Employees contains salaries 10000, 20000, 30000?\nSELECT AVG(salary) FROM Employees;",
+    "options": [
+      "A. 20000",
+      "B. 30000",
+      "C. 10000",
+      "D. 60000",
+      "E. 15000"
+    ],
+    "correct_answer": "A. 20000",
+    "explanation": "(10000 + 20000 + 30000) / 3 = 20000 average salary.",
+    "topic": "SQL Aggregation & Grouping"
+  },
+  {
+    "id": 71,
+    "practice_set": 9,
+    "question_no": 10,
+    "question": "Which SQL aggregate function returns the number of rows in a specified column, excluding NULLs?",
+    "options": [
+      "A. COUNT()",
+      "B. SUM()",
+      "C. MAX()",
+      "D. TOTAL()",
+      "E. AVG()"
+    ],
+    "correct_answer": "A. COUNT()",
+    "explanation": "COUNT counts non-null entries.",
+    "topic": "SQL Aggregation & Grouping"
+  },
+  {
+    "id": 72,
+    "practice_set": 9,
+    "question_no": 11,
+    "question": "Which database anomaly occurs when updating data in one place but not another leads to inconsistencies?",
+    "options": [
+      "A. Insertion Anomaly",
+      "B. Update Anomaly",
+      "C. Delete Anomaly",
+      "D. Redundancy Anomaly",
+      "E. Key Violation"
+    ],
+    "correct_answer": "B. Update Anomaly",
+    "explanation": "Update anomaly occurs when data changes cause inconsistency.",
+    "topic": "ACID Properties & Transactions"
+  },
+  {
+    "id": 73,
+    "practice_set": 9,
+    "question_no": 24,
+    "question": "Which SQL keyword retrieves all records from one table and matched records from another table, filling unmatched fields with NULL?",
+    "options": [
+      "A. INNER JOIN",
+      "B. FULL JOIN",
+      "C. LEFT JOIN",
+      "D. RIGHT JOIN",
+      "E. CROSS JOIN"
+    ],
+    "correct_answer": "C. LEFT JOIN",
+    "explanation": "LEFT JOIN returns all records from left table plus matches from right.",
+    "topic": "SQL Joins"
+  },
+  {
+    "id": 74,
+    "practice_set": 9,
+    "question_no": 31,
+    "question": "Which SQL clause is used to combine the result sets of two or more SELECT statements and removes duplicate rows?",
+    "options": [
+      "A. JOIN",
+      "B. UNION ALL",
+      "C. UNION",
+      "D. MERGE",
+      "E. INTERSECT"
+    ],
+    "correct_answer": "C. UNION",
+    "explanation": "UNION combines result sets and removes duplicates.",
+    "topic": "SQL Queries & Clauses"
+  },
+  {
+    "id": 75,
+    "practice_set": 9,
+    "question_no": 34,
+    "question": "Which SQL keyword is used to create a new copy of a table along with its data?",
+    "options": [
+      "A. CREATE TABLE",
+      "B. SELECT INTO",
+      "C. INSERT INTO",
+      "D. MERGE",
+      "E. CLONE"
+    ],
+    "correct_answer": "B. SELECT INTO",
+    "explanation": "SELECT INTO copies table structure and data.",
+    "topic": "SQL Commands (DDL/DML)"
+  },
+  {
+    "id": 76,
+    "practice_set": 9,
+    "question_no": 37,
+    "question": "Which SQL operator is used to check whether a value exists within a set of values?",
+    "options": [
+      "A. BETWEEN",
+      "B. LIKE",
+      "C. IN",
+      "D. EXISTS",
+      "E. CONTAINS"
+    ],
+    "correct_answer": "C. IN",
+    "explanation": "IN checks if a value exists in a set.",
+    "topic": "SQL Constraints"
+  },
+  {
+    "id": 77,
+    "practice_set": 9,
+    "question_no": 39,
+    "question": "Which SQL aggregate function is used to calculate the total number of rows returned by a query, including those with NULL values?",
+    "options": [
+      "A. SUM()",
+      "B. AVG()",
+      "C. COUNT()",
+      "D. MAX()",
+      "E. MIN()"
+    ],
+    "correct_answer": "C. COUNT()",
+    "explanation": "COUNT returns rows including non-null entries in this context.",
+    "topic": "SQL Aggregation & Grouping"
+  },
+  {
+    "id": 78,
+    "practice_set": 9,
+    "question_no": 44,
+    "question": "Which database isolation level allows a transaction to read committed data from other transactions but prevents dirty reads?",
+    "options": [
+      "A. Read Uncommitted",
+      "B. Read Committed",
+      "C. Repeatable Read",
+      "D. Serializable",
+      "E. Snapshot Isolation"
+    ],
+    "correct_answer": "B. Read Committed",
+    "explanation": "Read Committed prevents dirty reads.",
+    "topic": "ACID Properties & Transactions"
+  },
+  {
+    "id": 79,
+    "practice_set": 9,
+    "question_no": 46,
+    "question": "Which SQL keyword is used to filter results before they are grouped using the GROUP BY clause?",
+    "options": [
+      "A. HAVING",
+      "B. WHERE",
+      "C. ORDER BY",
+      "D. DISTINCT",
+      "E. JOIN"
+    ],
+    "correct_answer": "B. WHERE",
+    "explanation": "WHERE filters before GROUP BY.",
+    "topic": "SQL Aggregation & Grouping"
+  },
+  {
+    "id": 80,
+    "practice_set": 9,
+    "question_no": 55,
+    "question": "Which SQL keyword is used to retrieve rows that match a specific pattern in a column, often combined with wildcards like %?",
+    "options": [
+      "A. LIKE",
+      "B. BETWEEN",
+      "C. IN",
+      "D. EXISTS",
+      "E. JOIN"
+    ],
+    "correct_answer": "A. LIKE",
+    "explanation": "LIKE uses wildcards for pattern matching.",
+    "topic": "SQL Queries & Clauses"
+  },
+  {
+    "id": 81,
+    "practice_set": 10,
+    "question_no": 19,
+    "question": "In SQL, what will be the result of the following query if all salaries are distinct in the Employees table?\nSELECT MIN(salary) FROM Employees;",
+    "options": [
+      "A. Maximum salary",
+      "B. Total number of salaries",
+      "C. Minimum salary",
+      "D. Average salary",
+      "E. Count of salaries"
+    ],
+    "correct_answer": "C. Minimum salary",
+    "explanation": "MIN() returns the smallest value.",
+    "topic": "SQL Aggregation & Grouping"
+  },
+  {
+    "id": 82,
+    "practice_set": 10,
+    "question_no": 22,
+    "question": "Which SQL keyword would you use to retrieve records from two or more tables based on a relation between them?",
+    "options": [
+      "A. UNION",
+      "B. INTERSECT",
+      "C. JOIN",
+      "D. MERGE",
+      "E. INSERT"
+    ],
+    "correct_answer": "C. JOIN",
+    "explanation": "JOIN fetches records based on relations between tables.",
+    "topic": "SQL Joins"
+  },
+  {
+    "id": 83,
+    "practice_set": 10,
+    "question_no": 31,
+    "question": "Which type of database backup only saves the changes made since the last backup, making it faster but requiring access to previous backups during recovery?",
+    "options": [
+      "A. Full Backup",
+      "B. Differential Backup",
+      "C. Incremental Backup",
+      "D. Mirror Backup",
+      "E. Snapshot Backup"
+    ],
+    "correct_answer": "C. Incremental Backup",
+    "explanation": "Saves only changes since the last backup.",
+    "topic": "Recovery, Backup & Logging"
+  },
+  {
+    "id": 84,
+    "practice_set": 10,
+    "question_no": 34,
+    "question": "Which SQL keyword is used to combine the result sets of two SELECT queries and includes duplicate rows as well?",
+    "options": [
+      "A. UNION",
+      "B. UNION ALL",
+      "C. JOIN",
+      "D. INTERSECT",
+      "E. CROSS JOIN"
+    ],
+    "correct_answer": "B. UNION ALL",
+    "explanation": "UNION ALL includes duplicate records.",
+    "topic": "SQL Queries & Clauses"
+  }
   ]
 }

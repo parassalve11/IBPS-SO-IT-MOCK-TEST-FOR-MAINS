@@ -14,7 +14,7 @@ function splitOption(option: string) {
 
   if (!match) {
     return {
-      prefix: "•",
+      prefix: "-",
       body: option
     };
   }
@@ -35,21 +35,20 @@ export function OptionButton({ option, selected, onSelect }: OptionButtonProps) 
       onClick={() => onSelect(option)}
       aria-pressed={selected}
       className={cn(
-        "flex w-full items-start gap-4 rounded-2xl border p-4 text-left transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2",
-        selected
-          ? "border-blue-500 bg-blue-50 shadow-sm"
-          : "border-slate-200 bg-white hover:border-slate-300 hover:bg-slate-50"
+        "flex w-full items-center gap-3 border-b border-slate-200 px-4 py-3.5 text-left transition last:border-b-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset",
+        selected ? "bg-blue-50/70" : "bg-white hover:bg-slate-50"
       )}
     >
       <span
         className={cn(
-          "flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-sm font-semibold",
-          selected ? "bg-blue-600 text-white" : "bg-slate-100 text-slate-700"
+          "flex h-7 w-7 shrink-0 items-center justify-center rounded-full border",
+          selected
+            ? "border-blue-600 bg-blue-600 text-white"
+            : "border-slate-300 bg-white text-transparent"
         )}
-      >
-        {parts.prefix}
-      </span>
-      <span className="pt-1 text-sm leading-6 text-slate-700">{parts.body}</span>
+      />
+      <span className="min-w-6 text-lg font-semibold text-slate-900">{parts.prefix}.</span>
+      <span className="text-[15px] leading-7 text-slate-800">{parts.body}</span>
     </motion.button>
   );
 }

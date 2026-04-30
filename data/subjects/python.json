@@ -1,0 +1,932 @@
+{
+  "python_exam_questions": [
+   {
+    "id": 1,
+    "practice_set": 1,
+    "question_no": 11,
+    "question": "What is the output of print(type([1,2,3])) in Python?",
+    "options": [
+      "A. <class 'tuple'>",
+      "B. <class 'array'>",
+      "C. <class 'list'>",
+      "D. <class 'set'>",
+      "E. <class 'dict'>"
+    ],
+    "correct_answer": "C. <class 'list'>",
+    "explanation": "Lists are defined with square brackets in Python.",
+    "topic": "Python Data Types"
+  },
+  {
+    "id": 2,
+    "practice_set": 1,
+    "question_no": 13,
+    "question": "In Python, what does the *args syntax represent?",
+    "options": [
+      "A. Named keyword arguments",
+      "B. Arbitrary keyword arguments",
+      "C. Optional function return",
+      "D. Arbitrary positional arguments",
+      "E. Function overloading"
+    ],
+    "correct_answer": "D. Arbitrary positional arguments",
+    "explanation": "*args collects extra unnamed arguments into a tuple.",
+    "topic": "Python Functions & Methods"
+  },
+  {
+    "id": 3,
+    "practice_set": 1,
+    "question_no": 15,
+    "question": "Which keyword in Python defines a class method?",
+    "options": [
+      "A. @staticmethod",
+      "B. @classmethod",
+      "C. def",
+      "D. static",
+      "E. func"
+    ],
+    "correct_answer": "B. @classmethod",
+    "explanation": "It decorates a method to receive the class as its first argument.",
+    "topic": "Python Functions & Methods"
+  },
+  {
+    "id": 4,
+    "practice_set": 1,
+    "question_no": 19,
+    "question": "What is returned by len({\"a\":1, \"b\":2}) in Python?",
+    "options": [
+      "A. 0",
+      "B. 1",
+      "C. 2",
+      "D. 3",
+      "E. Error"
+    ],
+    "correct_answer": "C. 2",
+    "explanation": "The dictionary has two keys: \"a\" and \"b\".",
+    "topic": "Python Collections"
+  },
+  {
+    "id": 5,
+    "practice_set": 2,
+    "question_no": 3,
+    "question": "In Python, what does the enumerate() function return?",
+    "options": [
+      "A. List of indices",
+      "B. Iterator of tuples containing index and value",
+      "C. String of values",
+      "D. Dictionary of key-value pairs",
+      "E. Set of values"
+    ],
+    "correct_answer": "B. Iterator of tuples containing index and value",
+    "explanation": "enumerate() adds a count to items and returns index-value pairs.",
+    "topic": "Python Programming"
+  },
+  {
+    "id": 6,
+    "practice_set": 2,
+    "question_no": 30,
+    "question": "Which Python method can be used to create an empty set?",
+    "options": [
+      "A. set()",
+      "B. {}",
+      "C. empty_set()",
+      "D. list()",
+      "E. dict()"
+    ],
+    "correct_answer": "A. set()",
+    "explanation": "set() creates an empty set; {} creates an empty dictionary.",
+    "topic": "Python Collections"
+  },
+  {
+    "id": 7,
+    "practice_set": 2,
+    "question_no": 43,
+    "question": "Which method is used in Python to remove whitespace from the beginning and end of a string?",
+    "options": [
+      "A. clean()",
+      "B. strip()",
+      "C. remove()",
+      "D. trim()",
+      "E. split()"
+    ],
+    "correct_answer": "B. strip()",
+    "explanation": "strip() removes leading and trailing whitespace.",
+    "topic": "Python Strings"
+  },
+  {
+    "id": 8,
+    "practice_set": 3,
+    "question_no": 10,
+    "question": "Which of the following is NOT a Python data type?",
+    "options": [
+      "A. list",
+      "B. int",
+      "C. char",
+      "D. tuple",
+      "E. dict"
+    ],
+    "correct_answer": "C. char",
+    "explanation": "Python does not have a separate char type; it uses single-character strings.",
+    "topic": "Python Data Types"
+  },
+  {
+    "id": 9,
+    "practice_set": 3,
+    "question_no": 12,
+    "question": "Which Python method returns the list in reversed order?",
+    "options": [
+      "A. reverse()",
+      "B. reversed()",
+      "C. invert()",
+      "D. swap()",
+      "E. flip()"
+    ],
+    "correct_answer": "A. reverse()",
+    "explanation": "reverse() reverses a list in place in Python.",
+    "topic": "Python Lists"
+  },
+  {
+    "id": 10,
+    "practice_set": 3,
+    "question_no": 17,
+    "question": "In Python, which operator is used for exponentiation?",
+    "options": [
+      "A. ^",
+      "B. **",
+      "C. %",
+      "D. //",
+      "E. *"
+    ],
+    "correct_answer": "B. **",
+    "explanation": "** is used for exponentiation in Python.",
+    "topic": "Python Operators & Expressions"
+  },
+  {
+    "id": 11,
+    "practice_set": 3,
+    "question_no": 21,
+    "question": "Which Python collection type does not allow duplicate values?",
+    "options": [
+      "A. List",
+      "B. Dictionary",
+      "C. Set",
+      "D. Tuple",
+      "E. Array"
+    ],
+    "correct_answer": "C. Set",
+    "explanation": "Sets do not allow duplicate elements.",
+    "topic": "Python Collections"
+  },
+  {
+    "id": 12,
+    "practice_set": 3,
+    "question_no": 29,
+    "question": "Which method is used to create an object in Python?",
+    "options": [
+      "A. __start__()",
+      "B. __create__()",
+      "C. __init__()",
+      "D. new()",
+      "E. constructor()"
+    ],
+    "correct_answer": "C. __init__()",
+    "explanation": "__init__() initializes new objects in Python classes.",
+    "topic": "Python Programming"
+  },
+  {
+    "id": 13,
+    "practice_set": 3,
+    "question_no": 39,
+    "question": "Which file extension is associated with Python files?",
+    "options": [
+      "A. .pyc",
+      "B. .cpp",
+      "C. .java",
+      "D. .py",
+      "E. .pt"
+    ],
+    "correct_answer": "D. .py",
+    "explanation": "Python files use the .py extension.",
+    "topic": "Python Modules & File Handling"
+  },
+  {
+    "id": 14,
+    "practice_set": 3,
+    "question_no": 42,
+    "question": "Which technique is used in Python to handle exceptions?",
+    "options": [
+      "A. try-except",
+      "B. if-else",
+      "C. while loop",
+      "D. for loop",
+      "E. define-exception"
+    ],
+    "correct_answer": "A. try-except",
+    "explanation": "Python uses try-except for exception handling.",
+    "topic": "Python Exception Handling"
+  },
+  {
+    "id": 15,
+    "practice_set": 3,
+    "question_no": 48,
+    "question": "Which symbol is used to comment a single line in Python?",
+    "options": [
+      "A. //",
+      "B. #",
+      "C. /* */",
+      "D. %%",
+      "E. @"
+    ],
+    "correct_answer": "B. #",
+    "explanation": "# denotes a single-line comment in Python.",
+    "topic": "Python Programming"
+  },
+  {
+    "id": 16,
+    "practice_set": 3,
+    "question_no": 53,
+    "question": "Which operator is overloaded for object comparison in Python?",
+    "options": [
+      "A. +",
+      "B. ==",
+      "C. *",
+      "D. []",
+      "E. @"
+    ],
+    "correct_answer": "B. ==",
+    "explanation": "Equality operator overloading is used for object comparison.",
+    "topic": "Python Programming"
+  },
+  {
+    "id": 17,
+    "practice_set": 3,
+    "question_no": 54,
+    "question": "Which Python keyword is used to declare a function?",
+    "options": [
+      "A. method",
+      "B. function",
+      "C. define",
+      "D. def",
+      "E. class"
+    ],
+    "correct_answer": "D. def",
+    "explanation": "def declares functions in Python.",
+    "topic": "Python Functions & Methods"
+  },
+  {
+    "id": 18,
+    "practice_set": 4,
+    "question_no": 1,
+    "question": "In Python, what will be the output of print(2 ** 3 ** 2)?",
+    "options": [
+      "A. 64",
+      "B. 512",
+      "C. 729",
+      "D. 8",
+      "E. 16"
+    ],
+    "correct_answer": "B. 512",
+    "explanation": "In Python, 2 ** 3 ** 2 is evaluated as 2 ** (3 ** 2) = 2 ** 9 = 512.",
+    "topic": "Python Operators & Expressions"
+  },
+  {
+    "id": 19,
+    "practice_set": 4,
+    "question_no": 6,
+    "question": "Which Python function returns the absolute value of a number?",
+    "options": [
+      "A. abs()",
+      "B. absolute()",
+      "C. fabs()",
+      "D. mod()",
+      "E. pow()"
+    ],
+    "correct_answer": "A. abs()",
+    "explanation": "abs() returns the absolute value of a number in Python.",
+    "topic": "Python Built-in Functions"
+  },
+  {
+    "id": 20,
+    "practice_set": 4,
+    "question_no": 16,
+    "question": "In Python, what will be the output of bool({})?",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. None",
+      "D. Error",
+      "E. 0"
+    ],
+    "correct_answer": "B. False",
+    "explanation": "An empty dictionary evaluates to false in Python.",
+    "topic": "Python Programming"
+  },
+  {
+    "id": 21,
+    "practice_set": 4,
+    "question_no": 29,
+    "question": "Which Python module is used for multithreaded programming?",
+    "options": [
+      "A. multiprocessing",
+      "B. multithread",
+      "C. threading",
+      "D. concurrent",
+      "E. async"
+    ],
+    "correct_answer": "C. threading",
+    "explanation": "The threading module is used for multithreading in Python.",
+    "topic": "Python Modules & File Handling"
+  },
+  {
+    "id": 22,
+    "practice_set": 4,
+    "question_no": 39,
+    "question": "Which file operation mode in Python opens a file for both reading and writing?",
+    "options": [
+      "A. r",
+      "B. w",
+      "C. r+",
+      "D. w+",
+      "E. a"
+    ],
+    "correct_answer": "C. r+",
+    "explanation": "Opens a file for reading and writing without truncating it.",
+    "topic": "Python Modules & File Handling"
+  },
+  {
+    "id": 23,
+    "practice_set": 4,
+    "question_no": 44,
+    "question": "In Python, what is the result of 3 * 'AB'?",
+    "options": [
+      "A. ABABAB",
+      "B. ABC",
+      "C. AB3",
+      "D. AB AB AB",
+      "E. Error"
+    ],
+    "correct_answer": "A. ABABAB",
+    "explanation": "String repetition in Python repeats the string 3 times.",
+    "topic": "Python Strings"
+  },
+  {
+    "id": 24,
+    "practice_set": 5,
+    "question_no": 3,
+    "question": "Which command in Python is used to install external packages?",
+    "options": [
+      "A. install",
+      "B. pip install",
+      "C. python install",
+      "D. set install",
+      "E. pkg install"
+    ],
+    "correct_answer": "B. pip install",
+    "explanation": "pip install package_name installs external Python packages.",
+    "topic": "Python Modules & File Handling"
+  },
+  {
+    "id": 25,
+    "practice_set": 5,
+    "question_no": 6,
+    "question": "Which Python function is used to create an iterable sequence of numbers?",
+    "options": [
+      "A. enumerate()",
+      "B. list()",
+      "C. range()",
+      "D. tuple()",
+      "E. seq()"
+    ],
+    "correct_answer": "C. range()",
+    "explanation": "range() generates an iterable sequence of numbers.",
+    "topic": "Python Programming"
+  },
+  {
+    "id": 26,
+    "practice_set": 5,
+    "question_no": 16,
+    "question": "Which of the following Python keywords is used for error handling?",
+    "options": [
+      "A. assert",
+      "B. catch",
+      "C. try",
+      "D. except",
+      "E. raise"
+    ],
+    "correct_answer": "C. try",
+    "explanation": "try is used to handle exceptions in Python.",
+    "topic": "Python Exception Handling"
+  },
+  {
+    "id": 27,
+    "practice_set": 5,
+    "question_no": 19,
+    "question": "What is the output of len(set([1, 2, 2, 3, 3, 3])) in Python?",
+    "options": [
+      "A. 3",
+      "B. 2",
+      "C. 1",
+      "D. 6",
+      "E. 5"
+    ],
+    "correct_answer": "A. 3",
+    "explanation": "A set removes duplicates; {1, 2, 3} has 3 elements.",
+    "topic": "Python Collections"
+  },
+  {
+    "id": 28,
+    "practice_set": 5,
+    "question_no": 34,
+    "question": "In Python, what will be the output of bool(0)?",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. None",
+      "D. Error",
+      "E. 0"
+    ],
+    "correct_answer": "B. False",
+    "explanation": "bool(0) evaluates to False.",
+    "topic": "Python Programming"
+  },
+  {
+    "id": 29,
+    "practice_set": 5,
+    "question_no": 38,
+    "question": "Which method in Python is used to remove all items from a list?",
+    "options": [
+      "A. remove()",
+      "B. delete()",
+      "C. clear()",
+      "D. pop()",
+      "E. reset()"
+    ],
+    "correct_answer": "C. clear()",
+    "explanation": "clear() removes all items from a list.",
+    "topic": "Python Lists"
+  },
+  {
+    "id": 30,
+    "practice_set": 5,
+    "question_no": 50,
+    "question": "Which Python statement is used to end a function prematurely?",
+    "options": [
+      "A. stop",
+      "B. return",
+      "C. break",
+      "D. continue",
+      "E. end"
+    ],
+    "correct_answer": "B. return",
+    "explanation": "return exits a function prematurely in Python.",
+    "topic": "Python Functions & Methods"
+  },
+  {
+    "id": 31,
+    "practice_set": 5,
+    "question_no": 55,
+    "question": "Which Python function is used to check the type of a variable?",
+    "options": [
+      "A. typeof()",
+      "B. checktype()",
+      "C. type()",
+      "D. verifytype()",
+      "E. datatype()"
+    ],
+    "correct_answer": "C. type()",
+    "explanation": "type() checks the type of variables in Python.",
+    "topic": "Python Data Types"
+  },
+  {
+    "id": 32,
+    "practice_set": 5,
+    "question_no": 58,
+    "question": "Which file operation mode in Python overwrites the file if it already exists?",
+    "options": [
+      "A. r",
+      "B. a",
+      "C. w",
+      "D. x",
+      "E. rb"
+    ],
+    "correct_answer": "C. w",
+    "explanation": "w mode overwrites the file if it exists.",
+    "topic": "Python Modules & File Handling"
+  },
+  {
+    "id": 33,
+    "practice_set": 6,
+    "question_no": 21,
+    "question": "Which Python module provides support for working with dates and times, including manipulating and formatting timestamps?",
+    "options": [
+      "A. timeit",
+      "B. time",
+      "C. datetime",
+      "D. calendar",
+      "E. os"
+    ],
+    "correct_answer": "C. datetime",
+    "explanation": "datetime module handles date and time operations in Python.",
+    "topic": "Python Modules & File Handling"
+  },
+  {
+    "id": 34,
+    "practice_set": 6,
+    "question_no": 29,
+    "question": "In Python, which exception is raised when an index is accessed outside the valid range of a list?",
+    "options": [
+      "A. IndexOutOfRangeError",
+      "B. IndexError",
+      "C. KeyError",
+      "D. ValueError",
+      "E. AttributeError"
+    ],
+    "correct_answer": "B. IndexError",
+    "explanation": "IndexError occurs when list access exceeds valid range.",
+    "topic": "Python Exception Handling"
+  },
+  {
+    "id": 35,
+    "practice_set": 6,
+    "question_no": 54,
+    "question": "Which Python method returns the number of elements with the specified value in a list?",
+    "options": [
+      "A. count()",
+      "B. find()",
+      "C. index()",
+      "D. search()",
+      "E. locate()"
+    ],
+    "correct_answer": "A. count()",
+    "explanation": "count() returns the number of occurrences of a specified value.",
+    "topic": "Python Built-in Functions"
+  },
+  {
+    "id": 36,
+    "practice_set": 7,
+    "question_no": 11,
+    "question": "In Python, which function returns a sorted list from the elements of any iterable without modifying the original iterable?",
+    "options": [
+      "A. sort()",
+      "B. list()",
+      "C. sorted()",
+      "D. arrange()",
+      "E. order()"
+    ],
+    "correct_answer": "C. sorted()",
+    "explanation": "sorted() returns a new sorted list without modifying the original iterable.",
+    "topic": "Python Programming"
+  },
+  {
+    "id": 37,
+    "practice_set": 7,
+    "question_no": 20,
+    "question": "Which Python method removes and returns the last element from a list by default unless an index is specified?",
+    "options": [
+      "A. remove()",
+      "B. pop()",
+      "C. del()",
+      "D. discard()",
+      "E. drop()"
+    ],
+    "correct_answer": "B. pop()",
+    "explanation": "pop() removes and returns the last item or a specified index in a list.",
+    "topic": "Python Lists"
+  },
+  {
+    "id": 38,
+    "practice_set": 7,
+    "question_no": 33,
+    "question": "In Python, which exception is raised when trying to access a dictionary key that does not exist?",
+    "options": [
+      "A. IndexError",
+      "B. KeyError",
+      "C. ValueError",
+      "D. NameError",
+      "E. AttributeError"
+    ],
+    "correct_answer": "B. KeyError",
+    "explanation": "KeyError occurs when accessing a non-existing dictionary key.",
+    "topic": "Python Exception Handling"
+  },
+  {
+    "id": 39,
+    "practice_set": 7,
+    "question_no": 39,
+    "question": "Which data structure in Python uses key-value pairs and allows for fast lookup of values using keys?",
+    "options": [
+      "A. List",
+      "B. Tuple",
+      "C. Dictionary",
+      "D. Set",
+      "E. Array"
+    ],
+    "correct_answer": "C. Dictionary",
+    "explanation": "Dictionaries store key-value pairs for fast lookups.",
+    "topic": "Python Collections"
+  },
+  {
+    "id": 40,
+    "practice_set": 7,
+    "question_no": 53,
+    "question": "In Python, which method is used to insert an element at a specific position in a list?",
+    "options": [
+      "A. append()",
+      "B. insert()",
+      "C. add()",
+      "D. extend()",
+      "E. pop()"
+    ],
+    "correct_answer": "B. insert()",
+    "explanation": "insert() adds an element at a specified index in a list.",
+    "topic": "Python Lists"
+  },
+  {
+    "id": 41,
+    "practice_set": 7,
+    "question_no": 57,
+    "question": "Which Python method removes a key from a dictionary and returns its value if the key exists?",
+    "options": [
+      "A. pop()",
+      "B. discard()",
+      "C. remove()",
+      "D. del()",
+      "E. clear()"
+    ],
+    "correct_answer": "A. pop()",
+    "explanation": "pop() removes a key and returns its value from a dictionary.",
+    "topic": "Python Collections"
+  },
+  {
+    "id": 42,
+    "practice_set": 8,
+    "question_no": 12,
+    "question": "What will the following Python code output?\n\nprint(type((5)))",
+    "options": [
+      "A. tuple",
+      "B. int",
+      "C. list",
+      "D. str",
+      "E. dict"
+    ],
+    "correct_answer": "B. int",
+    "explanation": "(5) without a trailing comma is an integer, not a tuple.",
+    "topic": "Python Data Types"
+  },
+  {
+    "id": 43,
+    "practice_set": 8,
+    "question_no": 23,
+    "question": "What will the following Python code output?\n\nd = {'a': 1, 'b': 2}\nprint(d.get('c', 3))",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 3",
+      "D. None",
+      "E. KeyError"
+    ],
+    "correct_answer": "C. 3",
+    "explanation": "get() returns the default value if the key is not found.",
+    "topic": "Python Collections"
+  },
+  {
+    "id": 44,
+    "practice_set": 8,
+    "question_no": 32,
+    "question": "In Python, what will the following code output?\n\na = [1, 2, 3]\nprint(a[1:])",
+    "options": [
+      "A. [1, 2]",
+      "B. [2, 3]",
+      "C. [1]",
+      "D. [2]",
+      "E. []"
+    ],
+    "correct_answer": "B. [2, 3]",
+    "explanation": "a[1:] slices from index 1 onward.",
+    "topic": "Python Lists"
+  },
+  {
+    "id": 45,
+    "practice_set": 8,
+    "question_no": 36,
+    "question": "What will be the output of the following Python code?\n\nx = (1,)\nprint(type(x))",
+    "options": [
+      "A. list",
+      "B. int",
+      "C. tuple",
+      "D. str",
+      "E. set"
+    ],
+    "correct_answer": "C. tuple",
+    "explanation": "(1,) is a tuple, not int.",
+    "topic": "Python Data Types"
+  },
+  {
+    "id": 46,
+    "practice_set": 8,
+    "question_no": 38,
+    "question": "Which Python method is used to delete a specified element by value from a list?",
+    "options": [
+      "A. pop()",
+      "B. delete()",
+      "C. remove()",
+      "D. discard()",
+      "E. clear()"
+    ],
+    "correct_answer": "C. remove()",
+    "explanation": "remove() deletes by value from a list.",
+    "topic": "Python Lists"
+  },
+  {
+    "id": 47,
+    "practice_set": 8,
+    "question_no": 47,
+    "question": "Which Python built-in function converts a string to all lowercase letters?",
+    "options": [
+      "A. lower()",
+      "B. down()",
+      "C. small()",
+      "D. tolower()",
+      "E. lcase()"
+    ],
+    "correct_answer": "A. lower()",
+    "explanation": "lower() converts strings to lowercase.",
+    "topic": "Python Strings"
+  },
+  {
+    "id": 48,
+    "practice_set": 8,
+    "question_no": 50,
+    "question": "What will be the output of this Python code?\n\ns = {1, 2, 2}\nprint(len(s))",
+    "options": [
+      "A. 4",
+      "B. 1",
+      "C. 2",
+      "D. 0",
+      "E. Error"
+    ],
+    "correct_answer": "B. 1",
+    "explanation": "Set removes duplicates, so {1, 2, 2} becomes {1, 2}? The PDF answer key marks 1, but this looks inconsistent with Python behavior; the likely intended code on the page is s = {2,2,2}. I’m preserving the answer key as shown in the PDF.",
+    "topic": "Python Programming"
+  },
+  {
+    "id": 49,
+    "practice_set": 8,
+    "question_no": 53,
+    "question": "What is the result of the following Python expression?\n\nbool(\"\")",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. None",
+      "D. Error",
+      "E. 0"
+    ],
+    "correct_answer": "B. False",
+    "explanation": "bool(\"\") evaluates to False.",
+    "topic": "Python Strings"
+  },
+  {
+    "id": 50,
+    "practice_set": 9,
+    "question_no": 1,
+    "question": "In Python, which keyword is used to raise an exception manually?",
+    "options": [
+      "A. except",
+      "B. throw",
+      "C. raise",
+      "D. assert",
+      "E. error"
+    ],
+    "correct_answer": "C. raise",
+    "explanation": "raise is used to throw an exception manually in Python.",
+    "topic": "Python Exception Handling"
+  },
+  {
+    "id": 51,
+    "practice_set": 9,
+    "question_no": 15,
+    "question": "Which Python keyword is used to create a generator function that can yield values one at a time?",
+    "options": [
+      "A. def",
+      "B. yield",
+      "C. return",
+      "D. lambda",
+      "E. pass"
+    ],
+    "correct_answer": "B. yield",
+    "explanation": "yield is used in Python to create a generator.",
+    "topic": "Python Functions & Methods"
+  },
+  {
+    "id": 52,
+    "practice_set": 9,
+    "question_no": 19,
+    "question": "In Python, which function is used to combine two lists element-wise into pairs?\n\na = [1, 2]\nb = [3, 4]\nprint(list(zip(a, b)))",
+    "options": [
+      "A. [(1, 1), (2, 4)]",
+      "B. [(3, 1), (4, 2)]",
+      "C. [(1, 3), (2, 4)]",
+      "D. [(1, 2), (3, 4)]",
+      "E. Error"
+    ],
+    "correct_answer": "C. [(1, 3), (2, 4)]",
+    "explanation": "zip() pairs items from both lists positionally.",
+    "topic": "Python Programming"
+  },
+  {
+    "id": 53,
+    "practice_set": 9,
+    "question_no": 22,
+    "question": "What will the following Python code output?\n\nprint(3 * \"7\")",
+    "options": [
+      "A. 777",
+      "B. 7777",
+      "C. 77777",
+      "D. 21",
+      "E. 3"
+    ],
+    "correct_answer": "A. 777",
+    "explanation": "3 * \"7\" repeats the string 3 times.",
+    "topic": "Python Strings"
+  },
+  {
+    "id": 54,
+    "practice_set": 9,
+    "question_no": 28,
+    "question": "Which Python operator is used to check whether two variables refer to the same object in memory?",
+    "options": [
+      "A. ==",
+      "B. !=",
+      "C. is",
+      "D. in",
+      "E. equals"
+    ],
+    "correct_answer": "C. is",
+    "explanation": "is checks whether variables point to the same object.",
+    "topic": "Python Operators & Expressions"
+  },
+  {
+    "id": 55,
+    "practice_set": 9,
+    "question_no": 32,
+    "question": "In Python, what will be the output?\n\na = [1, 2, 3]\nprint(a[-1])",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 3",
+      "D. -1",
+      "E. Error"
+    ],
+    "correct_answer": "C. 3",
+    "explanation": "a[-1] accesses the last element.",
+    "topic": "Python Lists"
+  },
+  {
+    "id": 56,
+    "practice_set": 9,
+    "question_no": 36,
+    "question": "In Python, which function can return the list of keys in a dictionary?\n\nd = {'a':1, 'b':2}\nprint(d.keys())",
+    "options": [
+      "A. ['a', 'b']",
+      "B. ('a', 'b')",
+      "C. {'a', 'b'}",
+      "D. dict_keys(['a', 'b'])",
+      "E. Error"
+    ],
+    "correct_answer": "D. dict_keys(['a', 'b'])",
+    "explanation": "keys() returns a dict view object.",
+    "topic": "Python Collections"
+  },
+  {
+    "id": 57,
+    "practice_set": 9,
+    "question_no": 40,
+    "question": "In Python, which operator is used to check if a value exists in a sequence such as a list, tuple, or string?",
+    "options": [
+      "A. ==",
+      "B. is",
+      "C. in",
+      "D. and",
+      "E. exists"
+    ],
+    "correct_answer": "C. in",
+    "explanation": "in checks membership in sequence.",
+    "topic": "Python Operators & Expressions"
+  },
+  {
+    "id": 58,
+    "practice_set": 9,
+    "question_no": 43,
+    "question": "What will the following code output, demonstrating list comprehension?\n\nprint([x*x for x in range(3)])",
+    "options": [
+      "A. [0, 1, 2]",
+      "B. [1, 4, 9]",
+      "C. [0, 1, 4]",
+      "D. [0, 1, 2, 3]",
+      "E. [0, 1, 8]"
+    ],
+    "correct_answer": "C. [0, 1, 4]",
+    "explanation": "Squares of 0, 1, and 2.",
+    "topic": "Python Lists"
+  }
+  ]
+}

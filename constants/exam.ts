@@ -25,7 +25,7 @@ export const QUESTION_STATUS_META: Record<
     label: "Not Visited",
     description: "Question has not been opened yet.",
     paletteClassName:
-      "border-slate-200 bg-slate-100 text-slate-500 hover:border-slate-300",
+      "border-slate-200 bg-white text-slate-700 hover:border-slate-300",
     badgeClassName: "bg-slate-100 text-slate-700"
   },
   not_answered: {
@@ -39,21 +39,21 @@ export const QUESTION_STATUS_META: Record<
     label: "Answered",
     description: "A response has been saved for the question.",
     paletteClassName:
-      "border-emerald-200 bg-emerald-50 text-emerald-700 hover:border-emerald-300",
-    badgeClassName: "bg-emerald-50 text-emerald-700"
+      "border-emerald-500 bg-emerald-500 text-white hover:border-emerald-600",
+    badgeClassName: "bg-emerald-100 text-emerald-700"
   },
   marked_for_review: {
     label: "Marked for Review",
     description: "Question is flagged for later review with no saved answer.",
     paletteClassName:
-      "border-indigo-200 bg-indigo-50 text-indigo-700 hover:border-indigo-300",
-    badgeClassName: "bg-indigo-50 text-indigo-700"
+      "border-blue-600 bg-blue-600 text-white hover:border-blue-700",
+    badgeClassName: "bg-blue-100 text-blue-700"
   },
   answered_and_marked_for_review: {
     label: "Answered & Marked",
     description: "Question has an answer and is also flagged for review.",
     paletteClassName:
-      "border-sky-200 bg-sky-50 text-sky-700 hover:border-sky-300",
-    badgeClassName: "bg-sky-50 text-sky-700"
+      "border-sky-500 bg-sky-500 text-white hover:border-sky-600",
+    badgeClassName: "bg-sky-100 text-sky-700"
   }
 };

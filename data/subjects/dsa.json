@@ -1,1304 +1,324 @@
 {
   "dsa_exam_questions": [
-    {
-      "id": 1,
-      "question": "Which of the following best describes an array?",
-      "options": [
-        "A. A collection of elements stored at contiguous memory locations",
-        "B. A collection of nodes linked by pointers",
-        "C. A data structure that follows LIFO",
-        "D. A hierarchical data structure"
-      ],
-      "correct_answer": "A. A collection of elements stored at contiguous memory locations",
-      "explanation": "An array stores elements of the same type in contiguous memory locations, allowing direct access by index.",
-      "topic": "Arrays"
-    },
-    {
-      "id": 2,
-      "question": "What is the index of the first element in a standard C-style array?",
-      "options": [
-        "A. 1",
-        "B. 0",
-        "C. -1",
-        "D. Depends on compiler"
-      ],
-      "correct_answer": "B. 0",
-      "explanation": "In C and many programming languages, array indexing starts from 0.",
-      "topic": "Arrays"
-    },
-    {
-      "id": 3,
-      "question": "Which operation generally takes O(1) time in an array?",
-      "options": [
-        "A. Insertion at the beginning",
-        "B. Deletion from the middle",
-        "C. Accessing an element by index",
-        "D. Searching for an unsorted value"
-      ],
-      "correct_answer": "C. Accessing an element by index",
-      "explanation": "Arrays support direct random access using the index, which is O(1).",
-      "topic": "Arrays"
-    },
-    {
-      "id": 4,
-      "question": "If an array is unsorted, the worst-case time complexity of searching an element is:",
-      "options": [
-        "A. O(1)",
-        "B. O(log n)",
-        "C. O(n)",
-        "D. O(n log n)"
-      ],
-      "correct_answer": "C. O(n)",
-      "explanation": "In an unsorted array, linear search may need to examine all elements.",
-      "topic": "Arrays"
-    },
-    {
-      "id": 5,
-      "question": "Which of the following is a major disadvantage of arrays?",
-      "options": [
-        "A. No direct access",
-        "B. Elements cannot be stored contiguously",
-        "C. Fixed size in static implementation",
-        "D. Cannot store homogeneous data"
-      ],
-      "correct_answer": "C. Fixed size in static implementation",
-      "explanation": "A static array has a fixed size, which may lead to overflow or memory wastage.",
-      "topic": "Arrays"
-    },
-    {
-      "id": 6,
-      "question": "Which traversal visits every element of an array exactly once?",
-      "options": [
-        "A. Binary search",
-        "B. Linear traversal",
-        "C. Hashing",
-        "D. Heapify"
-      ],
-      "correct_answer": "B. Linear traversal",
-      "explanation": "Linear traversal iterates through the array from start to end.",
-      "topic": "Arrays"
-    },
-    {
-      "id": 7,
-      "question": "Insertion of an element at the end of an array is efficient mainly when:",
-      "options": [
-        "A. The array is sorted",
-        "B. There is free space available",
-        "C. The array contains duplicates",
-        "D. The first element is NULL"
-      ],
-      "correct_answer": "B. There is free space available",
-      "explanation": "Appending is efficient if there is unused capacity and no shifting is required.",
-      "topic": "Arrays"
-    },
-    {
-      "id": 8,
-      "question": "Which of the following applications is most suitable for arrays?",
-      "options": [
-        "A. Implementing recursion call stack",
-        "B. Storing fixed-size homogeneous records",
-        "C. Representing sparse graphs efficiently",
-        "D. Dynamic memory allocation"
-      ],
-      "correct_answer": "B. Storing fixed-size homogeneous records",
-      "explanation": "Arrays are well suited for fixed-size homogeneous collections requiring fast indexed access.",
-      "topic": "Arrays"
-    },
-    {
-      "id": 9,
-      "question": "What happens when an insertion is made at the beginning of a full static array?",
-      "options": [
-        "A. It always succeeds in O(1)",
-        "B. Existing elements may need shifting and overflow may occur",
-        "C. Only the first element is replaced",
-        "D. No memory is needed"
-      ],
-      "correct_answer": "B. Existing elements may need shifting and overflow may occur",
-      "explanation": "Insertion at the beginning requires shifting; if the array is full, overflow occurs.",
-      "topic": "Arrays"
-    },
-    {
-      "id": 10,
-      "question": "Which notation represents the memory address calculation of A[i] in a one-dimensional array?",
-      "options": [
-        "A. base + i * size_of_element",
-        "B. base - i * size_of_element",
-        "C. base / i",
-        "D. base ^ i"
-      ],
-      "correct_answer": "A. base + i * size_of_element",
-      "explanation": "The address of A[i] is calculated from the base address plus offset i times element size.",
-      "topic": "Arrays"
-    },
-    {
-      "id": 11,
-      "question": "Which of the following is true about a singly linked list?",
-      "options": [
-        "A. Each node contains data and one link to the next node",
-        "B. Each node contains only data",
-        "C. Elements are stored in contiguous memory",
-        "D. Random access is O(1)"
-      ],
-      "correct_answer": "A. Each node contains data and one link to the next node",
-      "explanation": "A singly linked list node stores data and a pointer to the next node.",
-      "topic": "Linked List"
-    },
-    {
-      "id": 12,
-      "question": "Insertion at the beginning of a linked list usually takes:",
-      "options": [
-        "A. O(1)",
-        "B. O(log n)",
-        "C. O(n)",
-        "D. O(n log n)"
-      ],
-      "correct_answer": "A. O(1)",
-      "explanation": "Updating the head pointer is enough, so insertion at the beginning is O(1).",
-      "topic": "Linked List"
-    },
-    {
-      "id": 13,
-      "question": "Which linked list allows traversal in both forward and backward directions?",
-      "options": [
-        "A. Singly linked list",
-        "B. Circular linked list",
-        "C. Doubly linked list",
-        "D. Header linked list"
-      ],
-      "correct_answer": "C. Doubly linked list",
-      "explanation": "A doubly linked list contains both next and previous pointers.",
-      "topic": "Linked List"
-    },
-    {
-      "id": 14,
-      "question": "What is the main disadvantage of linked lists compared with arrays?",
-      "options": [
-        "A. More memory is needed for pointers",
-        "B. Insertion is impossible",
-        "C. Deletion is impossible",
-        "D. They require contiguous memory"
-      ],
-      "correct_answer": "A. More memory is needed for pointers",
-      "explanation": "Linked lists need extra memory for storing links or pointers.",
-      "topic": "Linked List"
-    },
-    {
-      "id": 15,
-      "question": "Which operation is costly in a linked list?",
-      "options": [
-        "A. Insertion at head",
-        "B. Deletion at head",
-        "C. Random access to the kth node",
-        "D. Updating head pointer"
-      ],
-      "correct_answer": "C. Random access to the kth node",
-      "explanation": "A linked list must be traversed sequentially to reach the kth node.",
-      "topic": "Linked List"
-    },
-    {
-      "id": 16,
-      "question": "In a circular linked list, the last node points to:",
-      "options": [
-        "A. NULL",
-        "B. Itself only",
-        "C. The first node",
-        "D. The middle node"
-      ],
-      "correct_answer": "C. The first node",
-      "explanation": "The last node in a circular linked list links back to the first node.",
-      "topic": "Linked List"
-    },
-    {
-      "id": 17,
-      "question": "Deleting a node from a singly linked list requires knowledge of:",
-      "options": [
-        "A. Only the deleted node in all cases",
-        "B. The previous node in most cases",
-        "C. Only the last node",
-        "D. The array index"
-      ],
-      "correct_answer": "B. The previous node in most cases",
-      "explanation": "To remove a node, the previous node's next pointer must be updated in a singly linked list.",
-      "topic": "Linked List"
-    },
-    {
-      "id": 18,
-      "question": "Which linked list is most suitable for implementing browser back and forward navigation?",
-      "options": [
-        "A. Singly linked list",
-        "B. Doubly linked list",
-        "C. Circular singly linked list",
-        "D. Array"
-      ],
-      "correct_answer": "B. Doubly linked list",
-      "explanation": "Backward and forward traversal is efficient in a doubly linked list.",
-      "topic": "Linked List"
-    },
-    {
-      "id": 19,
-      "question": "What is the time complexity of searching for an element in an unsorted linked list?",
-      "options": [
-        "A. O(1)",
-        "B. O(log n)",
-        "C. O(n)",
-        "D. O(n log n)"
-      ],
-      "correct_answer": "C. O(n)",
-      "explanation": "The list may need to be traversed node by node until the element is found.",
-      "topic": "Linked List"
-    },
-    {
-      "id": 20,
-      "question": "Which statement is correct regarding dynamic memory in linked lists?",
-      "options": [
-        "A. All nodes are allocated at compile time",
-        "B. Nodes are typically allocated as needed during runtime",
-        "C. Nodes cannot be deleted",
-        "D. Linked lists cannot grow"
-      ],
-      "correct_answer": "B. Nodes are typically allocated as needed during runtime",
-      "explanation": "Linked lists are dynamic structures and nodes can be created during runtime as needed.",
-      "topic": "Linked List"
-    },
-    {
-      "id": 21,
-      "question": "A stack follows which principle?",
-      "options": [
-        "A. FIFO",
-        "B. LIFO",
-        "C. LILO",
-        "D. Priority-based"
-      ],
-      "correct_answer": "B. LIFO",
-      "explanation": "Stack operations follow Last In First Out order.",
-      "topic": "Stack"
-    },
-    {
-      "id": 22,
-      "question": "Which operation inserts an element into a stack?",
-      "options": [
-        "A. Enqueue",
-        "B. Dequeue",
-        "C. Push",
-        "D. Pop"
-      ],
-      "correct_answer": "C. Push",
-      "explanation": "Push inserts an element at the top of the stack.",
-      "topic": "Stack"
-    },
-    {
-      "id": 23,
-      "question": "Which operation removes an element from a stack?",
-      "options": [
-        "A. Pop",
-        "B. Push",
-        "C. Insert",
-        "D. Peek"
-      ],
-      "correct_answer": "A. Pop",
-      "explanation": "Pop removes the top element from the stack.",
-      "topic": "Stack"
-    },
-    {
-      "id": 24,
-      "question": "The overflow condition in an array-based stack occurs when:",
-      "options": [
-        "A. top = -1",
-        "B. top = 0",
-        "C. top = max - 1",
-        "D. stack is circular"
-      ],
-      "correct_answer": "C. top = max - 1",
-      "explanation": "In a fixed-size stack, overflow occurs when the top index reaches the maximum valid position.",
-      "topic": "Stack"
-    },
-    {
-      "id": 25,
-      "question": "Which application is best suited for a stack?",
-      "options": [
-        "A. CPU scheduling",
-        "B. Function call management",
-        "C. Printer queue",
-        "D. Breadth-first search"
-      ],
-      "correct_answer": "B. Function call management",
-      "explanation": "Function calls and recursion are naturally managed using a stack.",
-      "topic": "Stack"
-    },
-    {
-      "id": 26,
-      "question": "A queue follows which principle?",
-      "options": [
-        "A. LIFO",
-        "B. FIFO",
-        "C. FILO",
-        "D. Priority-based always"
-      ],
-      "correct_answer": "B. FIFO",
-      "explanation": "Queue operations follow First In First Out order.",
-      "topic": "Queue"
-    },
-    {
-      "id": 27,
-      "question": "Which operation inserts an element into a queue?",
-      "options": [
-        "A. Pop",
-        "B. Push",
-        "C. Enqueue",
-        "D. Peek"
-      ],
-      "correct_answer": "C. Enqueue",
-      "explanation": "Enqueue inserts an element at the rear of the queue.",
-      "topic": "Queue"
-    },
-    {
-      "id": 28,
-      "question": "Which operation removes an element from a queue?",
-      "options": [
-        "A. Pop",
-        "B. Enqueue",
-        "C. Dequeue",
-        "D. Push"
-      ],
-      "correct_answer": "C. Dequeue",
-      "explanation": "Dequeue removes an element from the front of the queue.",
-      "topic": "Queue"
-    },
-    {
-      "id": 29,
-      "question": "Which data structure is most suitable for implementing CPU round-robin scheduling?",
-      "options": [
-        "A. Stack",
-        "B. Queue",
-        "C. Tree",
-        "D. Graph"
-      ],
-      "correct_answer": "B. Queue",
-      "explanation": "Round-robin scheduling processes jobs in order, making a queue appropriate.",
-      "topic": "Queue"
-    },
-    {
-      "id": 30,
-      "question": "What is the main advantage of a circular queue over a simple linear queue?",
-      "options": [
-        "A. It supports recursion",
-        "B. It avoids wastage of unused spaces after deletions",
-        "C. It sorts automatically",
-        "D. It uses no pointers"
-      ],
-      "correct_answer": "B. It avoids wastage of unused spaces after deletions",
-      "explanation": "A circular queue reuses freed positions, improving memory utilization.",
-      "topic": "Queue"
-    },
-    {
-      "id": 31,
-      "question": "Which data structure is used in breadth-first search?",
-      "options": [
-        "A. Stack",
-        "B. Queue",
-        "C. Heap",
-        "D. Linked list only"
-      ],
-      "correct_answer": "B. Queue",
-      "explanation": "Breadth-first search explores level by level using a queue.",
-      "topic": "Queue"
-    },
-    {
-      "id": 32,
-      "question": "Which operation returns the top element of a stack without deleting it?",
-      "options": [
-        "A. Peek",
-        "B. Pop",
-        "C. Push",
-        "D. Insert"
-      ],
-      "correct_answer": "A. Peek",
-      "explanation": "Peek or top returns the top element without removing it.",
-      "topic": "Stack"
-    },
-    {
-      "id": 33,
-      "question": "A tree is a:",
-      "options": [
-        "A. Linear data structure",
-        "B. Non-linear hierarchical data structure",
-        "C. Sequential file",
-        "D. Queue variant"
-      ],
-      "correct_answer": "B. Non-linear hierarchical data structure",
-      "explanation": "A tree represents hierarchical relationships among elements.",
-      "topic": "Tree"
-    },
-    {
-      "id": 34,
-      "question": "The topmost node in a tree is called:",
-      "options": [
-        "A. Leaf",
-        "B. Parent",
-        "C. Root",
-        "D. Child"
-      ],
-      "correct_answer": "C. Root",
-      "explanation": "The root is the first or topmost node of a tree.",
-      "topic": "Tree"
-    },
-    {
-      "id": 35,
-      "question": "A node with no children is called:",
-      "options": [
-        "A. Internal node",
-        "B. Root node",
-        "C. Leaf node",
-        "D. Parent node"
-      ],
-      "correct_answer": "C. Leaf node",
-      "explanation": "A leaf node does not have any children.",
-      "topic": "Tree"
-    },
-    {
-      "id": 36,
-      "question": "What is the maximum number of children a binary tree node can have?",
-      "options": [
-        "A. 1",
-        "B. 2",
-        "C. 3",
-        "D. Unlimited"
-      ],
-      "correct_answer": "B. 2",
-      "explanation": "Each node in a binary tree can have at most two children.",
-      "topic": "Tree"
-    },
-    {
-      "id": 37,
-      "question": "In a Binary Search Tree, values in the left subtree are:",
-      "options": [
-        "A. Greater than the root",
-        "B. Equal to the root only",
-        "C. Less than the root",
-        "D. Unrelated to the root"
-      ],
-      "correct_answer": "C. Less than the root",
-      "explanation": "In a BST, left subtree values are smaller and right subtree values are larger than the node.",
-      "topic": "BST"
-    },
-    {
-      "id": 38,
-      "question": "Searching in a balanced BST has average time complexity:",
-      "options": [
-        "A. O(1)",
-        "B. O(log n)",
-        "C. O(n)",
-        "D. O(n log n)"
-      ],
-      "correct_answer": "B. O(log n)",
-      "explanation": "A balanced BST reduces the search space roughly by half at each step.",
-      "topic": "BST"
-    },
-    {
-      "id": 39,
-      "question": "Which traversal of a BST gives elements in sorted order?",
-      "options": [
-        "A. Preorder",
-        "B. Postorder",
-        "C. Inorder",
-        "D. Level order"
-      ],
-      "correct_answer": "C. Inorder",
-      "explanation": "Inorder traversal of a BST visits nodes in ascending order.",
-      "topic": "BST"
-    },
-    {
-      "id": 40,
-      "question": "Preorder traversal visits nodes in which order?",
-      "options": [
-        "A. Left, Root, Right",
-        "B. Root, Left, Right",
-        "C. Left, Right, Root",
-        "D. Right, Root, Left"
-      ],
-      "correct_answer": "B. Root, Left, Right",
-      "explanation": "Preorder traversal visits root first, then left subtree, then right subtree.",
-      "topic": "Tree Traversal"
-    },
-    {
-      "id": 41,
-      "question": "Postorder traversal visits nodes in which order?",
-      "options": [
-        "A. Root, Left, Right",
-        "B. Left, Root, Right",
-        "C. Left, Right, Root",
-        "D. Right, Left, Root"
-      ],
-      "correct_answer": "C. Left, Right, Root",
-      "explanation": "Postorder traversal visits children before the root.",
-      "topic": "Tree Traversal"
-    },
-    {
-      "id": 42,
-      "question": "Which data structure is commonly used to implement recursion internally?",
-      "options": [
-        "A. Queue",
-        "B. Stack",
-        "C. Heap",
-        "D. Graph"
-      ],
-      "correct_answer": "B. Stack",
-      "explanation": "Recursive calls are stored in the call stack.",
-      "topic": "Tree"
-    },
-    {
-      "id": 43,
-      "question": "A complete binary tree is one in which:",
-      "options": [
-        "A. Every node has exactly two children",
-        "B. All levels are fully filled",
-        "C. All levels except possibly the last are full, and last level is filled from left to right",
-        "D. It is always a BST"
-      ],
-      "correct_answer": "C. All levels except possibly the last are full, and last level is filled from left to right",
-      "explanation": "This is the definition of a complete binary tree.",
-      "topic": "Tree"
-    },
-    {
-      "id": 44,
-      "question": "A max-heap satisfies which property?",
-      "options": [
-        "A. Parent is smaller than both children",
-        "B. Parent is greater than or equal to its children",
-        "C. Left child is always greater than right child",
-        "D. Root has minimum value"
-      ],
-      "correct_answer": "B. Parent is greater than or equal to its children",
-      "explanation": "In a max-heap, each parent node is greater than or equal to its children.",
-      "topic": "Heap"
-    },
-    {
-      "id": 45,
-      "question": "Which data structure is most suitable for implementing a priority queue?",
-      "options": [
-        "A. Stack",
-        "B. Queue",
-        "C. Heap",
-        "D. Array only"
-      ],
-      "correct_answer": "C. Heap",
-      "explanation": "Heaps support efficient insertion and deletion of highest or lowest priority elements.",
-      "topic": "Heap"
-    },
-    {
-      "id": 46,
-      "question": "What is the time complexity of insertion in a binary heap?",
-      "options": [
-        "A. O(1)",
-        "B. O(log n)",
-        "C. O(n)",
-        "D. O(n log n)"
-      ],
-      "correct_answer": "B. O(log n)",
-      "explanation": "Insertion may require bubbling up through the heap height, which is logarithmic.",
-      "topic": "Heap"
-    },
-    {
-      "id": 47,
-      "question": "Which traversal uses a queue?",
-      "options": [
-        "A. Inorder",
-        "B. Preorder",
-        "C. Level order",
-        "D. Postorder"
-      ],
-      "correct_answer": "C. Level order",
-      "explanation": "Level order traversal processes nodes level by level using a queue.",
-      "topic": "Tree Traversal"
-    },
-    {
-      "id": 48,
-      "question": "A skewed BST behaves like:",
-      "options": [
-        "A. A heap",
-        "B. A linked list",
-        "C. A complete binary tree",
-        "D. A graph"
-      ],
-      "correct_answer": "B. A linked list",
-      "explanation": "If a BST becomes highly unbalanced, its height approaches n, like a linked list.",
-      "topic": "BST"
-    },
-    {
-      "id": 49,
-      "question": "The height of a tree with a single node is usually taken as:",
-      "options": [
-        "A. 0",
-        "B. 1",
-        "C. 2",
-        "D. Undefined"
-      ],
-      "correct_answer": "A. 0",
-      "explanation": "With height measured in edges, a single-node tree has height 0.",
-      "topic": "Tree"
-    },
-    {
-      "id": 50,
-      "question": "Deleting the root from a max-heap is followed by:",
-      "options": [
-        "A. No restructuring",
-        "B. Replacing it with last element and heapifying",
-        "C. Sorting the entire heap",
-        "D. Converting heap to BST"
-      ],
-      "correct_answer": "B. Replacing it with last element and heapifying",
-      "explanation": "After deleting the root, the last element is placed at the root and heap property is restored.",
-      "topic": "Heap"
-    },
-    {
-      "id": 51,
-      "question": "A full binary tree is one in which:",
-      "options": [
-        "A. Every level is completely filled",
-        "B. Each node has either 0 or 2 children",
-        "C. It must be balanced",
-        "D. It contains sorted data"
-      ],
-      "correct_answer": "B. Each node has either 0 or 2 children",
-      "explanation": "A full binary tree has no node with exactly one child.",
-      "topic": "Tree"
-    },
-    {
-      "id": 52,
-      "question": "Which of the following is not necessarily true for a BST?",
-      "options": [
-        "A. Inorder traversal is sorted",
-        "B. Left subtree has smaller keys",
-        "C. Tree is always balanced",
-        "D. Search depends on key comparison"
-      ],
-      "correct_answer": "C. Tree is always balanced",
-      "explanation": "A BST need not be balanced unless self-balancing rules are used.",
-      "topic": "BST"
-    },
-    {
-      "id": 53,
-      "question": "Heap sort is based on which data structure?",
-      "options": [
-        "A. Queue",
-        "B. Heap",
-        "C. Linked list",
-        "D. Graph"
-      ],
-      "correct_answer": "B. Heap",
-      "explanation": "Heap sort builds a heap and repeatedly removes the root element.",
-      "topic": "Heap"
-    },
-    {
-      "id": 54,
-      "question": "A graph consists of:",
-      "options": [
-        "A. Only nodes",
-        "B. Only edges",
-        "C. Vertices and edges",
-        "D. Roots and leaves"
-      ],
-      "correct_answer": "C. Vertices and edges",
-      "explanation": "A graph is made up of vertices and the edges connecting them.",
-      "topic": "Graph"
-    },
-    {
-      "id": 55,
-      "question": "In an undirected graph, an edge (u, v) means:",
-      "options": [
-        "A. Travel only from u to v",
-        "B. Travel only from v to u",
-        "C. Travel in both directions",
-        "D. No relation between u and v"
-      ],
-      "correct_answer": "C. Travel in both directions",
-      "explanation": "Undirected edges do not have direction.",
-      "topic": "Graph"
-    },
-    {
-      "id": 56,
-      "question": "Which traversal technique generally uses a stack or recursion?",
-      "options": [
-        "A. BFS",
-        "B. DFS",
-        "C. Level order only",
-        "D. Topological sort only"
-      ],
-      "correct_answer": "B. DFS",
-      "explanation": "Depth-first search uses recursion or an explicit stack.",
-      "topic": "Graph"
-    },
-    {
-      "id": 57,
-      "question": "Which traversal technique explores nearest neighbors first?",
-      "options": [
-        "A. DFS",
-        "B. BFS",
-        "C. Inorder",
-        "D. Postorder"
-      ],
-      "correct_answer": "B. BFS",
-      "explanation": "Breadth-first search explores nodes level by level from the source.",
-      "topic": "Graph"
-    },
-    {
-      "id": 58,
-      "question": "The maximum number of edges in a simple undirected graph with n vertices is:",
-      "options": [
-        "A. n",
-        "B. n - 1",
-        "C. n(n - 1)/2",
-        "D. n^2"
-      ],
-      "correct_answer": "C. n(n - 1)/2",
-      "explanation": "A simple undirected graph can connect each pair of vertices with one edge.",
-      "topic": "Graph"
-    },
-    {
-      "id": 59,
-      "question": "An adjacency matrix for a graph with n vertices requires space:",
-      "options": [
-        "A. O(n)",
-        "B. O(log n)",
-        "C. O(n^2)",
-        "D. O(n + e)"
-      ],
-      "correct_answer": "C. O(n^2)",
-      "explanation": "Adjacency matrix stores connection information for all pairs of vertices.",
-      "topic": "Graph Representation"
-    },
-    {
-      "id": 60,
-      "question": "An adjacency list representation is usually more space-efficient for:",
-      "options": [
-        "A. Dense graphs",
-        "B. Sparse graphs",
-        "C. Complete graphs only",
-        "D. Binary trees only"
-      ],
-      "correct_answer": "B. Sparse graphs",
-      "explanation": "Adjacency lists are efficient when the number of edges is much less than n^2.",
-      "topic": "Graph Representation"
-    },
-    {
-      "id": 61,
-      "question": "A graph with no cycles is called:",
-      "options": [
-        "A. Complete graph",
-        "B. Directed graph",
-        "C. Acyclic graph",
-        "D. Weighted graph"
-      ],
-      "correct_answer": "C. Acyclic graph",
-      "explanation": "Acyclic graphs do not contain any cycle.",
-      "topic": "Graph"
-    },
-    {
-      "id": 62,
-      "question": "Linear search is most suitable when:",
-      "options": [
-        "A. Data is always sorted",
-        "B. Data size is small or unsorted",
-        "C. O(log n) is required",
-        "D. Data is stored in a BST"
-      ],
-      "correct_answer": "B. Data size is small or unsorted",
-      "explanation": "Linear search is simple and useful for small or unsorted collections.",
-      "topic": "Searching"
-    },
-    {
-      "id": 63,
-      "question": "Binary search requires that the array be:",
-      "options": [
-        "A. Dynamic",
-        "B. Circular",
-        "C. Sorted",
-        "D. Two-dimensional"
-      ],
-      "correct_answer": "C. Sorted",
-      "explanation": "Binary search works by dividing an ordered search space.",
-      "topic": "Searching"
-    },
-    {
-      "id": 64,
-      "question": "The worst-case time complexity of binary search is:",
-      "options": [
-        "A. O(1)",
-        "B. O(log n)",
-        "C. O(n)",
-        "D. O(n log n)"
-      ],
-      "correct_answer": "B. O(log n)",
-      "explanation": "Binary search halves the search interval on each comparison.",
-      "topic": "Searching"
-    },
-    {
-      "id": 65,
-      "question": "Which sorting algorithm repeatedly compares adjacent elements and swaps them if needed?",
-      "options": [
-        "A. Merge sort",
-        "B. Selection sort",
-        "C. Bubble sort",
-        "D. Quick sort"
-      ],
-      "correct_answer": "C. Bubble sort",
-      "explanation": "Bubble sort pushes larger elements toward the end through adjacent swaps.",
-      "topic": "Sorting"
-    },
-    {
-      "id": 66,
-      "question": "Which sorting algorithm selects the minimum element and places it at the beginning in each pass?",
-      "options": [
-        "A. Selection sort",
-        "B. Insertion sort",
-        "C. Merge sort",
-        "D. Heap sort"
-      ],
-      "correct_answer": "A. Selection sort",
-      "explanation": "Selection sort repeatedly selects the smallest remaining element.",
-      "topic": "Sorting"
-    },
-    {
-      "id": 67,
-      "question": "Insertion sort works efficiently when:",
-      "options": [
-        "A. Data is nearly sorted",
-        "B. Data is very large and random",
-        "C. Only recursion is allowed",
-        "D. Data is stored in a graph"
-      ],
-      "correct_answer": "A. Data is nearly sorted",
-      "explanation": "Insertion sort performs well on small or nearly sorted datasets.",
-      "topic": "Sorting"
-    },
-    {
-      "id": 68,
-      "question": "Which sorting algorithm follows divide-and-conquer and guarantees O(n log n) in all cases?",
-      "options": [
-        "A. Quick sort",
-        "B. Merge sort",
-        "C. Bubble sort",
-        "D. Insertion sort"
-      ],
-      "correct_answer": "B. Merge sort",
-      "explanation": "Merge sort divides the array and merges sorted halves with guaranteed O(n log n) time.",
-      "topic": "Sorting"
-    },
-    {
-      "id": 69,
-      "question": "Quick sort is generally fast in practice because:",
-      "options": [
-        "A. It is always stable",
-        "B. It avoids comparisons",
-        "C. Its average-case performance is O(n log n)",
-        "D. It uses no recursion"
-      ],
-      "correct_answer": "C. Its average-case performance is O(n log n)",
-      "explanation": "Quick sort has good average-case performance and cache behavior.",
-      "topic": "Sorting"
-    },
-    {
-      "id": 70,
-      "question": "Which sort is stable?",
-      "options": [
-        "A. Selection sort",
-        "B. Heap sort",
-        "C. Merge sort",
-        "D. Quick sort always"
-      ],
-      "correct_answer": "C. Merge sort",
-      "explanation": "Merge sort is stable because equal elements preserve relative order during merging.",
-      "topic": "Sorting"
-    },
-    {
-      "id": 71,
-      "question": "Heap sort has worst-case time complexity:",
-      "options": [
-        "A. O(n)",
-        "B. O(log n)",
-        "C. O(n log n)",
-        "D. O(n^2)"
-      ],
-      "correct_answer": "C. O(n log n)",
-      "explanation": "Heap construction and repeated deletion together yield O(n log n).",
-      "topic": "Sorting"
-    },
-    {
-      "id": 72,
-      "question": "The best-case time complexity of linear search is:",
-      "options": [
-        "A. O(1)",
-        "B. O(log n)",
-        "C. O(n)",
-        "D. O(n log n)"
-      ],
-      "correct_answer": "A. O(1)",
-      "explanation": "If the target is at the first position, linear search succeeds immediately.",
-      "topic": "Searching"
-    },
-    {
-      "id": 73,
-      "question": "Which sorting algorithm has worst-case O(n^2) but is simple to implement?",
-      "options": [
-        "A. Bubble sort",
-        "B. Merge sort",
-        "C. Heap sort",
-        "D. Binary search"
-      ],
-      "correct_answer": "A. Bubble sort",
-      "explanation": "Bubble sort is simple but inefficient for large datasets in the worst case.",
-      "topic": "Sorting"
-    },
-    {
-      "id": 74,
-      "question": "Binary search compares the target with:",
-      "options": [
-        "A. The first element only",
-        "B. The last element only",
-        "C. The middle element",
-        "D. Every adjacent pair"
-      ],
-      "correct_answer": "C. The middle element",
-      "explanation": "Binary search examines the middle element to decide which half to continue searching.",
-      "topic": "Searching"
-    },
-    {
-      "id": 75,
-      "question": "Which sorting algorithm is in-place and usually not stable?",
-      "options": [
-        "A. Merge sort",
-        "B. Selection sort",
-        "C. Counting sort",
-        "D. Radix sort"
-      ],
-      "correct_answer": "B. Selection sort",
-      "explanation": "Selection sort is in-place but generally not stable.",
-      "topic": "Sorting"
-    },
-    {
-      "id": 76,
-      "question": "The average-case time complexity of quick sort is:",
-      "options": [
-        "A. O(log n)",
-        "B. O(n)",
-        "C. O(n log n)",
-        "D. O(n^2)"
-      ],
-      "correct_answer": "C. O(n log n)",
-      "explanation": "With reasonably balanced partitions, quick sort runs in O(n log n) on average.",
-      "topic": "Sorting"
-    },
-    {
-      "id": 77,
-      "question": "Which search method is best for a sorted linked list?",
-      "options": [
-        "A. Binary search directly",
-        "B. Linear search",
-        "C. Hash search",
-        "D. Tree traversal"
-      ],
-      "correct_answer": "B. Linear search",
-      "explanation": "Binary search is inefficient on linked lists because random access is not available.",
-      "topic": "Searching"
-    },
-    {
-      "id": 78,
-      "question": "Which sorting technique inserts each new element into its correct position among the already sorted part?",
-      "options": [
-        "A. Bubble sort",
-        "B. Insertion sort",
-        "C. Selection sort",
-        "D. Quick sort"
-      ],
-      "correct_answer": "B. Insertion sort",
-      "explanation": "Insertion sort maintains a sorted prefix and inserts the next element appropriately.",
-      "topic": "Sorting"
-    },
-    {
-      "id": 79,
-      "question": "Which algorithm is best described as partition-based?",
-      "options": [
-        "A. Merge sort",
-        "B. Quick sort",
-        "C. Bubble sort",
-        "D. Selection sort"
-      ],
-      "correct_answer": "B. Quick sort",
-      "explanation": "Quick sort partitions elements around a pivot.",
-      "topic": "Sorting"
-    },
-    {
-      "id": 80,
-      "question": "In selection sort, the number of swaps is generally:",
-      "options": [
-        "A. Very high compared to bubble sort",
-        "B. Around one per pass",
-        "C. Zero always",
-        "D. Exponential"
-      ],
-      "correct_answer": "B. Around one per pass",
-      "explanation": "Selection sort usually performs one swap per outer pass after finding the minimum.",
-      "topic": "Sorting"
-    },
-    {
-      "id": 81,
-      "question": "Which of these is not a comparison-based sorting algorithm?",
-      "options": [
-        "A. Merge sort",
-        "B. Quick sort",
-        "C. Heap sort",
-        "D. Counting sort"
-      ],
-      "correct_answer": "D. Counting sort",
-      "explanation": "Counting sort uses key frequencies rather than pairwise comparisons.",
-      "topic": "Sorting"
-    },
-    {
-      "id": 82,
-      "question": "Hashing is mainly used for:",
-      "options": [
-        "A. Sequential access",
-        "B. Fast searching based on key",
-        "C. Tree balancing",
-        "D. Graph coloring"
-      ],
-      "correct_answer": "B. Fast searching based on key",
-      "explanation": "Hashing maps keys to table indices for fast lookup.",
-      "topic": "Hashing"
-    },
-    {
-      "id": 83,
-      "question": "A collision in hashing occurs when:",
-      "options": [
-        "A. Two keys map to the same index",
-        "B. A key is deleted",
-        "C. The table is empty",
-        "D. The hash function is recursive"
-      ],
-      "correct_answer": "A. Two keys map to the same index",
-      "explanation": "A collision happens when different keys produce the same hash value or slot.",
-      "topic": "Hashing"
-    },
-    {
-      "id": 84,
-      "question": "Which of the following is a collision resolution technique?",
-      "options": [
-        "A. Binary search",
-        "B. Chaining",
-        "C. Tree traversal",
-        "D. Bubble sort"
-      ],
-      "correct_answer": "B. Chaining",
-      "explanation": "Chaining stores multiple elements in the same bucket using a linked structure.",
-      "topic": "Hashing"
-    },
-    {
-      "id": 85,
-      "question": "What is load factor in hashing?",
-      "options": [
-        "A. Number of collisions only",
-        "B. Ratio of filled slots to total slots",
-        "C. Number of buckets squared",
-        "D. Size of linked list only"
-      ],
-      "correct_answer": "B. Ratio of filled slots to total slots",
-      "explanation": "Load factor indicates how full a hash table is.",
-      "topic": "Hashing"
-    },
-    {
-      "id": 86,
-      "question": "Recursion is a technique in which:",
-      "options": [
-        "A. A function calls another unrelated function only",
-        "B. A function calls itself directly or indirectly",
-        "C. Memory is never used",
-        "D. Iteration is prohibited"
-      ],
-      "correct_answer": "B. A function calls itself directly or indirectly",
-      "explanation": "Recursion solves a problem by reducing it to smaller instances of itself.",
-      "topic": "Recursion"
-    },
-    {
-      "id": 87,
-      "question": "Every recursive solution should have:",
-      "options": [
-        "A. A queue",
-        "B. A base case",
-        "C. A hash table",
-        "D. A tree"
-      ],
-      "correct_answer": "B. A base case",
-      "explanation": "Without a base case, recursive calls may continue indefinitely.",
-      "topic": "Recursion"
-    },
-    {
-      "id": 88,
-      "question": "Which data structure supports recursion during execution?",
-      "options": [
-        "A. Queue",
-        "B. Stack",
-        "C. Heap only",
-        "D. Graph"
-      ],
-      "correct_answer": "B. Stack",
-      "explanation": "Each recursive call is pushed onto the call stack.",
-      "topic": "Recursion"
-    },
-    {
-      "id": 89,
-      "question": "The time complexity of accessing an element in a hash table is O(1) on average when:",
-      "options": [
-        "A. Collisions are uncontrolled",
-        "B. A good hash function is used and load factor is managed",
-        "C. Table is always full",
-        "D. Keys are sorted"
-      ],
-      "correct_answer": "B. A good hash function is used and load factor is managed",
-      "explanation": "Average constant-time performance depends on uniform distribution and controlled load factor.",
-      "topic": "Hashing"
-    },
-    {
-      "id": 90,
-      "question": "Big-O notation describes:",
-      "options": [
-        "A. Exact execution time",
-        "B. Lower bound only",
-        "C. Upper bound growth rate of an algorithm",
-        "D. Memory address of variables"
-      ],
-      "correct_answer": "C. Upper bound growth rate of an algorithm",
-      "explanation": "Big-O expresses asymptotic upper bound on time or space growth.",
-      "topic": "Algorithm Complexity"
-    },
-    {
-      "id": 91,
-      "question": "Which notation gives a tight asymptotic bound?",
-      "options": [
-        "A. O",
-        "B. Omega",
-        "C. Theta",
-        "D. Sigma"
-      ],
-      "correct_answer": "C. Theta",
-      "explanation": "Theta represents both upper and lower asymptotic bound together.",
-      "topic": "Algorithm Complexity"
-    },
-    {
-      "id": 92,
-      "question": "Which of the following grows fastest for large n?",
-      "options": [
-        "A. O(log n)",
-        "B. O(n)",
-        "C. O(n log n)",
-        "D. O(n^2)"
-      ],
-      "correct_answer": "D. O(n^2)",
-      "explanation": "Quadratic growth dominates linearithmic, linear, and logarithmic growth for large n.",
-      "topic": "Algorithm Complexity"
-    },
-    {
-      "id": 93,
-      "question": "The complexity of traversing all elements of an array of size n is:",
-      "options": [
-        "A. O(1)",
-        "B. O(log n)",
-        "C. O(n)",
-        "D. O(n^2)"
-      ],
-      "correct_answer": "C. O(n)",
-      "explanation": "Each element is visited once, so time grows linearly.",
-      "topic": "Algorithm Complexity"
-    },
-    {
-      "id": 94,
-      "question": "Which complexity is typical for nested loops each running n times?",
-      "options": [
-        "A. O(n)",
-        "B. O(log n)",
-        "C. O(n^2)",
-        "D. O(2n)"
-      ],
-      "correct_answer": "C. O(n^2)",
-      "explanation": "A loop inside another loop with n iterations each performs roughly n*n operations.",
-      "topic": "Algorithm Complexity"
-    },
-    {
-      "id": 95,
-      "question": "Which statement about O(1) is correct?",
-      "options": [
-        "A. Runtime never changes",
-        "B. Runtime does not depend on input size asymptotically",
-        "C. It is always faster than O(log n) in real life",
-        "D. It means one CPU cycle"
-      ],
-      "correct_answer": "B. Runtime does not depend on input size asymptotically",
-      "explanation": "O(1) means constant-time growth with respect to input size, not literally one step.",
-      "topic": "Algorithm Complexity"
-    },
-    {
-      "id": 96,
-      "question": "Which of the following algorithms typically uses recursion?",
-      "options": [
-        "A. Binary search",
-        "B. Merge sort",
-        "C. Quick sort",
-        "D. All of these can"
-      ],
-      "correct_answer": "D. All of these can",
-      "explanation": "Binary search, merge sort, and quick sort are commonly expressed recursively.",
-      "topic": "Recursion"
-    },
-    {
-      "id": 97,
-      "question": "What is the worst-case time complexity of quick sort?",
-      "options": [
-        "A. O(log n)",
-        "B. O(n)",
-        "C. O(n log n)",
-        "D. O(n^2)"
-      ],
-      "correct_answer": "D. O(n^2)",
-      "explanation": "Quick sort degrades to quadratic time with highly unbalanced partitions.",
-      "topic": "Algorithm Complexity"
-    },
-    {
-      "id": 98,
-      "question": "Open addressing in hashing stores collided items:",
-      "options": [
-        "A. In linked lists only",
-        "B. In another open slot within the table",
-        "C. In a tree",
-        "D. Outside memory"
-      ],
-      "correct_answer": "B. In another open slot within the table",
-      "explanation": "Open addressing resolves collisions by probing for another empty slot.",
-      "topic": "Hashing"
-    },
-    {
-      "id": 99,
-      "question": "Which probing technique checks the next slot sequentially?",
-      "options": [
-        "A. Quadratic probing",
-        "B. Double hashing",
-        "C. Linear probing",
-        "D. Separate chaining"
-      ],
-      "correct_answer": "C. Linear probing",
-      "explanation": "Linear probing checks subsequent positions one by one until an empty slot is found.",
-      "topic": "Hashing"
-    },
-    {
-      "id": 100,
-      "question": "The recursion depth for binary search on n elements is about:",
-      "options": [
-        "A. n",
-        "B. n/2",
-        "C. log n",
-        "D. n^2"
-      ],
-      "correct_answer": "C. log n",
-      "explanation": "Each recursive call halves the input size, leading to logarithmic depth.",
-      "topic": "Recursion"
-    }
+  {
+    "id": 1,
+    "practice_set": 1,
+    "question_no": 4,
+    "question": "Which data structure is used in recursion?",
+    "options": [
+      "A. Queue",
+      "B. Stack",
+      "C. Tree",
+      "D. Graph",
+      "E. Heap"
+    ],
+    "correct_answer": "B. Stack",
+    "explanation": "Recursive calls are stored in the call stack.",
+    "topic": "Stack & Recursion"
+  },
+  {
+    "id": 2,
+    "practice_set": 1,
+    "question_no": 7,
+    "question": "Why is B+ Tree preferred in databases over Binary Search Trees?",
+    "options": [
+      "A. B+ Trees are balanced and disk friendly",
+      "B. B+ Trees have no leaf nodes",
+      "C. BSTs support better sorting",
+      "D. B+ Trees require no memory",
+      "E. B+ Trees use more RAM"
+    ],
+    "correct_answer": "A. B+ Trees are balanced and disk friendly",
+    "explanation": "B+ Trees reduce disk access and are optimized for database indexing.",
+    "topic": "Trees: B+ Tree"
+  },
+  {
+    "id": 3,
+    "practice_set": 1,
+    "question_no": 10,
+    "question": "Which data structure best suits implementing a priority queue?",
+    "options": [
+      "A. Array",
+      "B. Stack",
+      "C. Linked List",
+      "D. Heap",
+      "E. Queue"
+    ],
+    "correct_answer": "D. Heap",
+    "explanation": "Heaps enable fast access to highest/lowest priority, ideal for priority queues.",
+    "topic": "Heap & Priority Queue"
+  },
+  {
+    "id": 4,
+    "practice_set": 2,
+    "question_no": 8,
+    "question": "Which data structure follows the First In First Out (FIFO) principle?",
+    "options": [
+      "A. Stack",
+      "B. Array",
+      "C. Linked List",
+      "D. Queue",
+      "E. Tree"
+    ],
+    "correct_answer": "D. Queue",
+    "explanation": "A queue follows FIFO order.",
+    "topic": "Queue: FIFO"
+  },
+  {
+    "id": 5,
+    "practice_set": 2,
+    "question_no": 11,
+    "question": "Which of the following sorting algorithms is most efficient for large datasets?",
+    "options": [
+      "A. Bubble Sort",
+      "B. Insertion Sort",
+      "C. Merge Sort",
+      "D. Selection Sort",
+      "E. Linear Sort"
+    ],
+    "correct_answer": "C. Merge Sort",
+    "explanation": "Merge Sort has O(n log n) complexity and is efficient for large datasets.",
+    "topic": "Sorting: Merge Sort"
+  },
+  {
+    "id": 6,
+    "practice_set": 2,
+    "question_no": 13,
+    "question": "Which data structure uses LIFO (Last In, First Out) principle?",
+    "options": [
+      "A. Queue",
+      "B. Stack",
+      "C. Array",
+      "D. Tree",
+      "E. Linked List"
+    ],
+    "correct_answer": "B. Stack",
+    "explanation": "A stack uses LIFO order.",
+    "topic": "Stack: LIFO"
+  },
+  {
+    "id": 7,
+    "practice_set": 6,
+    "question_no": 3,
+    "question": "Which sorting algorithm partitions data around a pivot and is known for its high average speed but is not stable under all cases?",
+    "options": [
+      "A. Bubble Sort",
+      "B. Merge Sort",
+      "C. Heap Sort",
+      "D. Quick Sort",
+      "E. Insertion Sort"
+    ],
+    "correct_answer": "D. Quick Sort",
+    "explanation": "Quick Sort is fast on average but unstable.",
+    "topic": "Sorting: Quick Sort"
+  },
+  {
+    "id": 8,
+    "practice_set": 3,
+    "question_no": 32,
+    "question": "Which sorting technique is best when the input is almost sorted?",
+    "options": [
+      "A. Bubble Sort",
+      "B. Insertion Sort",
+      "C. Quick Sort",
+      "D. Merge Sort",
+      "E. Selection Sort"
+    ],
+    "correct_answer": "B. Insertion Sort",
+    "explanation": "Insertion Sort works well when the array is already almost sorted.",
+    "topic": "Sorting: Insertion Sort"
+  },
+  {
+    "id": 9,
+    "practice_set": 3,
+    "question_no": 44,
+    "question": "Which data structure is used in Breadth-First Search (BFS)?",
+    "options": [
+      "A. Stack",
+      "B. Queue",
+      "C. Linked List",
+      "D. Tree",
+      "E. HashMap"
+    ],
+    "correct_answer": "B. Queue",
+    "explanation": "Breadth-First Search uses a queue to explore nodes level-wise.",
+    "topic": "Graph Traversal: BFS"
+  },
+  {
+    "id": 10,
+    "practice_set": 4,
+    "question_no": 7,
+    "question": "Which algorithm uses a priority queue to always expand the least cost node first?",
+    "options": [
+      "A. BFS",
+      "B. DFS",
+      "C. Dijkstra’s Algorithm",
+      "D. Prim’s Algorithm",
+      "E. Bellman-Ford"
+    ],
+    "correct_answer": "C. Dijkstra’s Algorithm",
+    "explanation": "Uses a priority queue to expand the least-cost node first.",
+    "topic": "Graph Algorithm: Dijkstra"
+  },
+  {
+    "id": 11,
+    "practice_set": 4,
+    "question_no": 10,
+    "question": "Which tree traversal method is used by a depth-first search (DFS)?",
+    "options": [
+      "A. Level order",
+      "B. Preorder",
+      "C. Postorder",
+      "D. Breadth first",
+      "E. Inorder"
+    ],
+    "correct_answer": "B. Preorder",
+    "explanation": "DFS uses preorder traversal internally.",
+    "topic": "Tree Traversal: DFS"
+  },
+  {
+    "id": 12,
+    "practice_set": 4,
+    "question_no": 20,
+    "question": "What is the space complexity of recursive Fibonacci without memoization?",
+    "options": [
+      "A. O(1)",
+      "B. O(log n)",
+      "C. O(n)",
+      "D. O(2^n)",
+      "E. O(n^2)"
+    ],
+    "correct_answer": "D. O(2^n)",
+    "explanation": "Recursive Fibonacci without memoization has exponential complexity.",
+    "topic": "Complexity Analysis"
+  },
+  {
+    "id": 13,
+    "practice_set": 4,
+    "question_no": 22,
+    "question": "Which hashing technique minimizes clustering in open addressing?",
+    "options": [
+      "A. Linear Probing",
+      "B. Quadratic Probing",
+      "C. Double Hashing",
+      "D. Rehashing",
+      "E. Chaining"
+    ],
+    "correct_answer": "C. Double Hashing",
+    "explanation": "Reduces clustering better than linear or quadratic probing.",
+    "topic": "Hashing: Double Hashing"
+  },
+  {
+    "id": 14,
+    "practice_set": 4,
+    "question_no": 40,
+    "question": "What is the time complexity of heap sort?",
+    "options": [
+      "A. O(n)",
+      "B. O(log n)",
+      "C. O(n log n)",
+      "D. O(n^2)",
+      "E. O(2^n)"
+    ],
+    "correct_answer": "C. O(n log n)",
+    "explanation": "Heap sort has time complexity O(n log n).",
+    "topic": "Sorting: Heap Sort"
+  },
+  {
+    "id": 15,
+    "practice_set": 5,
+    "question_no": 2,
+    "question": "Which tree data structure is used in database indexing for maintaining sorted data?",
+    "options": [
+      "A. Heap",
+      "B. Trie",
+      "C. B-Tree",
+      "D. AVL Tree",
+      "E. Red Black Tree"
+    ],
+    "correct_answer": "C. B-Tree",
+    "explanation": "B-Trees are commonly used for indexing in databases.",
+    "topic": "Trees: B-Tree"
+  },
+  {
+    "id": 16,
+    "practice_set": 5,
+    "question_no": 15,
+    "question": "Which hashing technique handles collisions using a linked list?",
+    "options": [
+      "A. Quadratic Probing",
+      "B. Double Hashing",
+      "C. Chaining",
+      "D. Linear Probing",
+      "E. Rehashing"
+    ],
+    "correct_answer": "C. Chaining",
+    "explanation": "Chaining handles hash collisions by using linked lists.",
+    "topic": "Hashing: Chaining"
+  },
+  {
+    "id": 17,
+    "practice_set": 5,
+    "question_no": 23,
+    "question": "Which searching algorithm works efficiently only on sorted arrays?",
+    "options": [
+      "A. Linear Search",
+      "B. Jump Search",
+      "C. Binary Search",
+      "D. DFS",
+      "E. BFS"
+    ],
+    "correct_answer": "C. Binary Search",
+    "explanation": "Binary Search requires a sorted array for efficiency.",
+    "topic": "Searching: Binary Search"
+  },
+  {
+    "id": 18,
+    "practice_set": 5,
+    "question_no": 56,
+    "question": "Which data structure is used in Depth First Search (DFS)?",
+    "options": [
+      "A. Queue",
+      "B. Stack",
+      "C. Heap",
+      "D. Priority Queue",
+      "E. Deque"
+    ],
+    "correct_answer": "B. Stack",
+    "explanation": "DFS uses a stack structure to explore nodes deeply.",
+    "topic": "Graph Traversal: DFS"
+  },
+  {
+    "id": 19,
+    "practice_set": 7,
+    "question_no": 54,
+    "question": "Which algorithmic technique solves problems by breaking them into smaller subproblems, solving each once, and reusing solutions?",
+    "options": [
+      "A. Divide and Conquer",
+      "B. Dynamic Programming",
+      "C. Greedy Method",
+      "D. Recursion",
+      "E. Brute Force"
+    ],
+    "correct_answer": "B. Dynamic Programming",
+    "explanation": "Dynamic Programming reuses solutions to overlapping subproblems.",
+    "topic": "Dynamic Programming"
+  },
+  {
+    "id": 20,
+    "practice_set": 7,
+    "question_no": 39,
+    "question": "Which data structure in Python uses key-value pairs and allows for fast lookup of values using keys?",
+    "options": [
+      "A. List",
+      "B. Tuple",
+      "C. Dictionary",
+      "D. Set",
+      "E. Array"
+    ],
+    "correct_answer": "C. Dictionary",
+    "explanation": "Dictionaries store key-value pairs for fast lookups.",
+    "topic": "Hash Table / Dictionary"
+  }
   ]
 }

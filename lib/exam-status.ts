@@ -76,3 +76,33 @@ export function getProgressSummary(
     }
   );
 }
+
+export function getDashboardCounts(
+  questions: NormalizedQuestion[],
+  session: ExamSession | undefined
+) {
+  return questions.reduce(
+    (summary, question) => {
+      const status = getQuestionStatus(question.id, session);
+
+      if (status === "answered") {
+        summary.answeredCount += 1;
+      }
+
+      if (status === "marked_for_review" || status === "answered_and_marked_for_review") {
+        summary.markedCount += 1;
+      }
+
+      if (status === "not_visited" || status === "not_answered") {
+        summary.notAttemptedCount += 1;
+      }
+
+      return summary;
+    },
+    {
+      answeredCount: 0,
+      markedCount: 0,
+      notAttemptedCount: 0
+    }
+  );
+}

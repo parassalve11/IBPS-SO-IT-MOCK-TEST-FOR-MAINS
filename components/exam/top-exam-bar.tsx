@@ -1,70 +1,58 @@
 "use client";
 
 import { LayoutGrid, Send } from "lucide-react";
-import { ProgressSummary } from "@/types/exam";
 import { Timer } from "@/components/exam/timer";
 
 type TopExamBarProps = {
   subjectName: string;
+  questionNumber: number;
+  totalQuestions: number;
   remainingTimeSeconds: number;
-  progressSummary: ProgressSummary;
   onOpenPalette: () => void;
   onSubmit: () => void;
 };
 
 export function TopExamBar({
   subjectName,
+  questionNumber,
+  totalQuestions,
   remainingTimeSeconds,
-  progressSummary,
   onOpenPalette,
   onSubmit
 }: TopExamBarProps) {
   return (
-    <div className="sticky top-[73px] z-30 panel px-4 py-4 sm:px-6">
-      <div className="flex flex-col gap-4 xl:flex-row xl:items-center xl:justify-between">
+    <div className="sticky top-4 z-30 rounded-[1.75rem] border border-slate-200 bg-white/95 shadow-[0_18px_45px_rgba(15,23,42,0.08)] backdrop-blur">
+      <div className="flex flex-col gap-4 px-4 py-4 sm:px-5 lg:flex-row lg:items-center lg:justify-between">
         <div>
-          <div className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
-            Active Mock Test
+          <div className="text-xs font-semibold uppercase tracking-[0.18em] text-blue-600">
+            Active Mock
           </div>
-          <h1 className="mt-1 text-2xl font-semibold tracking-tight text-slate-950">
+          <h1 className="mt-2 text-2xl font-semibold leading-tight tracking-tight text-slate-950 sm:text-[1.9rem]">
             {subjectName}
           </h1>
+          <div className="mt-1 text-sm text-slate-500">
+            Question {questionNumber} of {totalQuestions}
+          </div>
         </div>
 
         <div className="flex flex-wrap items-center gap-3">
-          <div className="hidden items-center gap-2 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-600 md:flex">
-            <span>Answered: {progressSummary.answeredCount}</span>
-            <span className="text-slate-300">|</span>
-            <span>Unanswered: {progressSummary.unansweredCount}</span>
-            <span className="text-slate-300">|</span>
-            <span>Marked: {progressSummary.markedCount}</span>
-            <span className="text-slate-300">|</span>
-            <span>Remaining: {progressSummary.remainingCount}</span>
-          </div>
           <Timer remainingTimeSeconds={remainingTimeSeconds} />
-          <button type="button" onClick={onOpenPalette} className="action-button-secondary lg:hidden">
+          <button
+            type="button"
+            onClick={onOpenPalette}
+            className="inline-flex rounded-[1rem] border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-50 xl:hidden"
+          >
             <LayoutGrid className="mr-2 h-4 w-4" />
-            Palette
+            Questions
           </button>
-          <button type="button" onClick={onSubmit} className="action-button-primary">
+          <button
+            type="button"
+            onClick={onSubmit}
+            className="inline-flex rounded-[1rem] bg-blue-600 px-4 py-3 text-sm font-semibold text-white transition hover:bg-blue-700"
+          >
             <Send className="mr-2 h-4 w-4" />
             Submit Test
           </button>
-        </div>
-      </div>
-
-      <div className="mt-4 grid grid-cols-2 gap-2 text-sm md:hidden">
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 px-3 py-2 text-slate-600">
-          Answered: <span className="font-semibold text-slate-900">{progressSummary.answeredCount}</span>
-        </div>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 px-3 py-2 text-slate-600">
-          Unanswered: <span className="font-semibold text-slate-900">{progressSummary.unansweredCount}</span>
-        </div>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 px-3 py-2 text-slate-600">
-          Marked: <span className="font-semibold text-slate-900">{progressSummary.markedCount}</span>
-        </div>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 px-3 py-2 text-slate-600">
-          Remaining: <span className="font-semibold text-slate-900">{progressSummary.remainingCount}</span>
         </div>
       </div>
     </div>

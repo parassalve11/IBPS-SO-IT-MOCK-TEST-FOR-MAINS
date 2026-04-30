@@ -9,6 +9,7 @@ import { normalizeQuestions } from "@/lib/normalize-questions";
 import { RawQuestionFile, SubjectConfig, SubjectSummary } from "@/types/exam";
 
 const SUBJECTS_DIR = path.join(process.cwd(), "data", "subjects");
+const IBPS_MAIN_TOTAL_MARKS = 60;
 const ACRONYM_TOKENS: Record<string, string> = {
   ai: "AI",
   api: "API",
@@ -77,6 +78,15 @@ function getDefaultDurationMinutes(questionCount: number) {
   return Math.max(30, Math.ceil(questionCount * 0.5));
 }
 
+function formatIbpsWeightageLabel(ibpsWeightageMarks: number) {
+  if (ibpsWeightageMarks <= 0) {
+    return "Not mapped yet";
+  }
+
+  const percentage = Math.round((ibpsWeightageMarks / IBPS_MAIN_TOTAL_MARKS) * 100);
+  return `Approx. ${ibpsWeightageMarks}/${IBPS_MAIN_TOTAL_MARKS} marks (${percentage}%)`;
+}
+
 function readSubjectConfigs(): SubjectConfig[] {
   if (!fs.existsSync(SUBJECTS_DIR)) {
     return [];
@@ -85,7 +95,6 @@ function readSubjectConfigs(): SubjectConfig[] {
   return fs
     .readdirSync(SUBJECTS_DIR)
     .filter((fileName) => fileName.endsWith(".json"))
-    .sort((left, right) => left.localeCompare(right))
     .map((fileName) => {
       const slug = normalizeSlug(fileName);
       const sourceFile = `data/subjects/${fileName}`;
@@ -96,6 +105,8 @@ function readSubjectConfigs(): SubjectConfig[] {
       const metadataOverride = SUBJECT_METADATA_OVERRIDES[slug] ?? {};
       const name = metadataOverride.name ?? humanizeSlug(slug);
       const shortName = metadataOverride.shortName ?? deriveShortName(slug, name);
+      const syllabusOrder = metadataOverride.syllabusOrder ?? Number.MAX_SAFE_INTEGER;
+      const ibpsWeightageMarks = metadataOverride.ibpsWeightageMarks ?? 0;
       const durationMinutes =
         metadataOverride.durationMinutes ?? getDefaultDurationMinutes(questionCount);
 
@@ -106,6 +117,9 @@ function readSubjectConfigs(): SubjectConfig[] {
         description:
           metadataOverride.description ??
           `Objective mock practice for ${name} loaded from local JSON question files.`,
+        syllabusOrder,
+        ibpsWeightageMarks,
+        ibpsWeightageLabel: formatIbpsWeightageLabel(ibpsWeightageMarks),
         durationMinutes,
         estimatedDurationLabel:
           metadataOverride.estimatedDurationLabel ?? formatDuration(durationMinutes),
@@ -118,7 +132,11 @@ function readSubjectConfigs(): SubjectConfig[] {
         mode: metadataOverride.mode ?? DEFAULT_SUBJECT_SETTINGS.mode,
         rawData
       };
-    });
+    })
+    .sort(
+      (left, right) =>
+        left.syllabusOrder - right.syllabusOrder || left.name.localeCompare(right.name)
+    );
 }
 
 export function getSubjectBySlug(slug: string) {

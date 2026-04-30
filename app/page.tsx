@@ -23,7 +23,8 @@ const featureHighlights = [
   {
     icon: Layers3,
     title: "JSON-driven scalability",
-    description: "Register a new subject file once and the platform is ready for more mocks."
+    description:
+      "Drop a new subject JSON file into the data folder and the platform picks it up automatically."
   }
 ];
 

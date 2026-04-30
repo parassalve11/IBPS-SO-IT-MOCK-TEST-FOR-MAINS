@@ -1,1954 +1,676 @@
 {
   "operating_system_exam_questions": [
     {
-      "id": 1,
-      "question": "Which of the following is the primary purpose of an operating system?",
-      "options": [
-        "A. To compile source code",
-        "B. To manage hardware and provide services to programs",
-        "C. To design databases",
-        "D. To create web pages"
-      ],
-      "correct_answer": "B. To manage hardware and provide services to programs",
-      "explanation": "An operating system acts as an interface between users/applications and hardware by managing resources and providing common services.",
-      "topic": "OS Basics & Functions"
-    },
-    {
-      "id": 2,
-      "question": "Which type of operating system is designed to respond within a fixed time limit?",
-      "options": [
-        "A. Batch OS",
-        "B. Real-Time OS",
-        "C. Distributed OS",
-        "D. Multiprogramming OS"
-      ],
-      "correct_answer": "B. Real-Time OS",
-      "explanation": "A real-time operating system guarantees or attempts to guarantee responses within specified timing constraints.",
-      "topic": "OS Basics & Functions"
-    },
-    {
-      "id": 3,
-      "question": "The part of the operating system that remains loaded in main memory is called:",
-      "options": [
-        "A. Shell",
-        "B. Kernel",
-        "C. Compiler",
-        "D. Loader"
-      ],
-      "correct_answer": "B. Kernel",
-      "explanation": "The kernel is the core part of the operating system and remains in memory to manage resources and system operations.",
-      "topic": "OS Basics & Functions"
-    },
-    {
-      "id": 4,
-      "question": "Which of the following is an example of a system call?",
-      "options": [
-        "A. printf()",
-        "B. malloc()",
-        "C. fork()",
-        "D. sqrt()"
-      ],
-      "correct_answer": "C. fork()",
-      "explanation": "fork() is a classic operating system system call used to create a new process in Unix-like systems.",
-      "topic": "OS Basics & Functions"
-    },
-    {
-      "id": 5,
-      "question": "Which mode gives the CPU full access to hardware instructions?",
-      "options": [
-        "A. User mode",
-        "B. Kernel mode",
-        "C. Batch mode",
-        "D. Debug mode"
-      ],
-      "correct_answer": "B. Kernel mode",
-      "explanation": "Privileged instructions can execute only in kernel mode, which protects the system from unauthorized access.",
-      "topic": "OS Basics & Functions"
-    },
-    {
-      "id": 6,
-      "question": "Which of the following is NOT a function of an operating system?",
-      "options": [
-        "A. Memory management",
-        "B. Process management",
-        "C. Device management",
-        "D. Circuit fabrication"
-      ],
-      "correct_answer": "D. Circuit fabrication",
-      "explanation": "An operating system manages resources such as CPU, memory, files, and devices; it does not fabricate hardware.",
-      "topic": "OS Basics & Functions"
-    },
-    {
-      "id": 7,
-      "question": "A command interpreter is commonly known as:",
-      "options": [
-        "A. Kernel",
-        "B. Shell",
-        "C. Cache",
-        "D. Scheduler"
-      ],
-      "correct_answer": "B. Shell",
-      "explanation": "The shell interprets user commands and passes them to the operating system for execution.",
-      "topic": "OS Basics & Functions"
-    },
-    {
-      "id": 8,
-      "question": "Which operating system type executes jobs in groups without user interaction during execution?",
-      "options": [
-        "A. Time-sharing OS",
-        "B. Batch OS",
-        "C. Network OS",
-        "D. Mobile OS"
-      ],
-      "correct_answer": "B. Batch OS",
-      "explanation": "Batch systems process collections of jobs with minimal or no user interaction after submission.",
-      "topic": "OS Basics & Functions"
-    },
-    {
-      "id": 9,
-      "question": "A time-sharing operating system is mainly designed to:",
-      "options": [
-        "A. Reduce manufacturing cost",
-        "B. Allow multiple users to interact with the system simultaneously",
-        "C. Eliminate memory management",
-        "D. Prevent multitasking"
-      ],
-      "correct_answer": "B. Allow multiple users to interact with the system simultaneously",
-      "explanation": "Time-sharing systems divide CPU time among users/processes to provide interactive computing.",
-      "topic": "OS Basics & Functions"
-    },
-    {
-      "id": 10,
-      "question": "Which of the following best defines multiprogramming?",
-      "options": [
-        "A. Running multiple programs by keeping several jobs in memory",
-        "B. Using multiple keyboards on one computer",
-        "C. Using many compilers at once",
-        "D. Executing only one process at a time"
-      ],
-      "correct_answer": "A. Running multiple programs by keeping several jobs in memory",
-      "explanation": "Multiprogramming improves CPU utilization by keeping several jobs in memory so the CPU can switch when one waits for I/O.",
-      "topic": "OS Basics & Functions"
-    },
-    {
-      "id": 11,
-      "question": "The bootstrap program is used to:",
-      "options": [
-        "A. Schedule processes",
-        "B. Initialize the computer and load the OS",
-        "C. Encrypt files",
-        "D. Allocate registers"
-      ],
-      "correct_answer": "B. Initialize the computer and load the OS",
-      "explanation": "The bootstrap loader starts at power-on, initializes hardware, and loads the operating system into memory.",
-      "topic": "OS Basics & Functions"
-    },
-    {
-      "id": 12,
-      "question": "Which one is a characteristic of a distributed operating system?",
-      "options": [
-        "A. Single CPU only",
-        "B. Multiple computers appear as one system",
-        "C. No resource sharing",
-        "D. No communication support"
-      ],
-      "correct_answer": "B. Multiple computers appear as one system",
-      "explanation": "A distributed OS coordinates multiple machines and may present them as a unified computing environment.",
-      "topic": "OS Basics & Functions"
-    },
-    {
-      "id": 13,
-      "question": "In operating systems, a trap is:",
-      "options": [
-        "A. A type of deadlock",
-        "B. A software-generated interrupt",
-        "C. A CPU scheduling policy",
-        "D. A disk scheduling method"
-      ],
-      "correct_answer": "B. A software-generated interrupt",
-      "explanation": "A trap is an interrupt generated by software, often to request OS services or signal an exception.",
-      "topic": "OS Basics & Functions"
-    },
-    {
-      "id": 14,
-      "question": "Which component decides which process gets the CPU next?",
-      "options": [
-        "A. Loader",
-        "B. Scheduler",
-        "C. Linker",
-        "D. Spooler"
-      ],
-      "correct_answer": "B. Scheduler",
-      "explanation": "The CPU scheduler selects a process from the ready queue and allocates the CPU to it.",
-      "topic": "OS Basics & Functions"
-    },
-    {
-      "id": 15,
-      "question": "The term 'throughput' in OS refers to:",
-      "options": [
-        "A. Amount of free memory",
-        "B. Number of processes completed per unit time",
-        "C. Number of disks attached",
-        "D. Time to switch modes"
-      ],
-      "correct_answer": "B. Number of processes completed per unit time",
-      "explanation": "Throughput measures how many jobs or processes a system completes in a given amount of time.",
-      "topic": "OS Basics & Functions"
-    },
-    {
-      "id": 16,
-      "question": "A process is best defined as:",
-      "options": [
-        "A. A program in execution",
-        "B. A file on disk",
-        "C. A compiler output",
-        "D. A CPU register"
-      ],
-      "correct_answer": "A. A program in execution",
-      "explanation": "A process is an active entity consisting of code, data, program counter, stack, and allocated resources.",
-      "topic": "Process Management"
-    },
-    {
-      "id": 17,
-      "question": "Which data structure stores information about a process?",
-      "options": [
-        "A. FAT",
-        "B. PCB",
-        "C. Page table",
-        "D. Inode"
-      ],
-      "correct_answer": "B. PCB",
-      "explanation": "The Process Control Block stores process state, registers, scheduling info, memory info, and more.",
-      "topic": "Process Management"
-    },
-    {
-      "id": 18,
-      "question": "Which of the following is NOT a typical process state?",
-      "options": [
-        "A. Ready",
-        "B. Running",
-        "C. Waiting",
-        "D. Mounted"
-      ],
-      "correct_answer": "D. Mounted",
-      "explanation": "Mounted is a file-system term; common process states include new, ready, running, waiting, and terminated.",
-      "topic": "Process Management"
-    },
-    {
-      "id": 19,
-      "question": "Context switching occurs when:",
-      "options": [
-        "A. A process changes its source code",
-        "B. The CPU saves one process state and loads another",
-        "C. Main memory is erased",
-        "D. A compiler changes object code"
-      ],
-      "correct_answer": "B. The CPU saves one process state and loads another",
-      "explanation": "During context switching, the OS stores the current CPU context and restores another process context.",
-      "topic": "Process Management"
-    },
-    {
-      "id": 20,
-      "question": "Which queue contains processes waiting to be assigned the CPU?",
-      "options": [
-        "A. Device queue",
-        "B. Job queue",
-        "C. Ready queue",
-        "D. I/O queue"
-      ],
-      "correct_answer": "C. Ready queue",
-      "explanation": "Ready processes reside in the ready queue until the CPU scheduler selects one for execution.",
-      "topic": "Process Management"
-    },
-    {
-      "id": 21,
-      "question": "Which system call creates a child process in Unix-like systems?",
-      "options": [
-        "A. exec()",
-        "B. fork()",
-        "C. wait()",
-        "D. kill()"
-      ],
-      "correct_answer": "B. fork()",
-      "explanation": "fork() creates a new child process, often followed by exec() to run a new program image.",
-      "topic": "Process Management"
-    },
-    {
-      "id": 22,
-      "question": "What does exec() do in Unix-like systems?",
-      "options": [
-        "A. Terminates a process",
-        "B. Replaces the current process image with a new program",
-        "C. Suspends a process",
-        "D. Creates a thread"
-      ],
-      "correct_answer": "B. Replaces the current process image with a new program",
-      "explanation": "exec() loads a new program into the current process, replacing its previous code and data image.",
-      "topic": "Process Management"
-    },
-    {
-      "id": 23,
-      "question": "A process that has finished execution but still has an entry in the process table is called:",
-      "options": [
-        "A. Orphan",
-        "B. Zombie",
-        "C. Daemon",
-        "D. Thread"
-      ],
-      "correct_answer": "B. Zombie",
-      "explanation": "A zombie process has terminated but still retains an entry so its parent can read its exit status.",
-      "topic": "Process Management"
-    },
-    {
-      "id": 24,
-      "question": "An orphan process is a process whose parent:",
-      "options": [
-        "A. Is in ready state",
-        "B. Has terminated",
-        "C. Is suspended",
-        "D. Is blocked on I/O"
-      ],
-      "correct_answer": "B. Has terminated",
-      "explanation": "If a parent terminates before its child, the child becomes an orphan and is typically adopted by init/systemd.",
-      "topic": "Process Management"
-    },
-    {
-      "id": 25,
-      "question": "Which of the following best distinguishes a program from a process?",
-      "options": [
-        "A. A process is passive, a program is active",
-        "B. A program is passive, a process is active",
-        "C. Both are always identical",
-        "D. A process exists only on disk"
-      ],
-      "correct_answer": "B. A program is passive, a process is active",
-      "explanation": "A program is just code stored on disk; a process is that code executing with its runtime state.",
-      "topic": "Process Management"
-    },
-    {
-      "id": 26,
-      "question": "Long-term scheduler is primarily responsible for:",
-      "options": [
-        "A. Selecting a process from ready queue",
-        "B. Admitting jobs into the system",
-        "C. Swapping processes in and out frequently",
-        "D. Handling page faults"
-      ],
-      "correct_answer": "B. Admitting jobs into the system",
-      "explanation": "The long-term scheduler controls the degree of multiprogramming by deciding which jobs enter the system.",
-      "topic": "Process Management"
-    },
-    {
-      "id": 27,
-      "question": "Medium-term scheduling is associated with:",
-      "options": [
-        "A. Swapping",
-        "B. Parsing commands",
-        "C. Interrupt handling only",
-        "D. Network routing"
-      ],
-      "correct_answer": "A. Swapping",
-      "explanation": "The medium-term scheduler may temporarily remove processes from memory and later reintroduce them.",
-      "topic": "Process Management"
-    },
-    {
-      "id": 28,
-      "question": "If a running process requests I/O, it generally moves to the:",
-      "options": [
-        "A. Ready state",
-        "B. Waiting/Blocked state",
-        "C. Terminated state",
-        "D. New state"
-      ],
-      "correct_answer": "B. Waiting/Blocked state",
-      "explanation": "A process waiting for an I/O operation cannot continue using the CPU and therefore enters the blocked state.",
-      "topic": "Process Management"
-    },
-    {
-      "id": 29,
-      "question": "The dispatcher is responsible for:",
-      "options": [
-        "A. Admitting new jobs",
-        "B. Giving control of the CPU to the selected process",
-        "C. Managing files only",
-        "D. Creating page tables"
-      ],
-      "correct_answer": "B. Giving control of the CPU to the selected process",
-      "explanation": "The dispatcher performs the context switch, switches to user mode, and jumps to the appropriate program location.",
-      "topic": "Process Management"
-    },
-    {
-      "id": 30,
-      "question": "Turnaround time is defined as:",
-      "options": [
-        "A. Completion time minus arrival time",
-        "B. Burst time minus waiting time",
-        "C. Response time plus dispatch latency",
-        "D. Arrival time minus completion time"
-      ],
-      "correct_answer": "A. Completion time minus arrival time",
-      "explanation": "Turnaround time is the total time taken from submission to completion of a process.",
-      "topic": "Process Management"
-    },
-    {
-      "id": 31,
-      "question": "Response time is the time from:",
-      "options": [
-        "A. Submission to first response",
-        "B. First response to completion",
-        "C. Completion to exit",
-        "D. Waiting to I/O completion"
-      ],
-      "correct_answer": "A. Submission to first response",
-      "explanation": "Response time measures how quickly a system starts responding, especially important in interactive systems.",
-      "topic": "Process Management"
-    },
-    {
-      "id": 32,
-      "question": "A daemon process is typically:",
-      "options": [
-        "A. A terminated child process",
-        "B. A background service process",
-        "C. A process in deadlock",
-        "D. A kernel panic"
-      ],
-      "correct_answer": "B. A background service process",
-      "explanation": "Daemons run in the background and often provide services such as logging or networking.",
-      "topic": "Process Management"
-    },
-    {
-      "id": 33,
-      "question": "CPU-bound processes are characterized by:",
-      "options": [
-        "A. Frequent I/O waits",
-        "B. Long CPU bursts",
-        "C. Zero computation",
-        "D. Only disk activity"
-      ],
-      "correct_answer": "B. Long CPU bursts",
-      "explanation": "CPU-bound jobs spend more time using the processor and less time waiting for I/O.",
-      "topic": "Process Management"
-    },
-    {
-      "id": 34,
-      "question": "I/O-bound processes are characterized by:",
-      "options": [
-        "A. Long CPU bursts",
-        "B. Frequent I/O operations and shorter CPU bursts",
-        "C. No waiting time",
-        "D. Only arithmetic operations"
-      ],
-      "correct_answer": "B. Frequent I/O operations and shorter CPU bursts",
-      "explanation": "I/O-bound processes often wait for device operations and typically use shorter CPU bursts.",
-      "topic": "Process Management"
-    },
-    {
-      "id": 35,
-      "question": "Which process relationship is created immediately after a successful fork()?",
-      "options": [
-        "A. Two unrelated processes",
-        "B. Parent and child processes",
-        "C. Two kernel threads only",
-        "D. A zombie and an orphan"
-      ],
-      "correct_answer": "B. Parent and child processes",
-      "explanation": "fork() duplicates the calling process, creating a parent-child relationship.",
-      "topic": "Process Management"
-    },
-    {
-      "id": 36,
-      "question": "A thread is often called a:",
-      "options": [
-        "A. Lightweight process",
-        "B. Dead process",
-        "C. Disk block",
-        "D. Shell command"
-      ],
-      "correct_answer": "A. Lightweight process",
-      "explanation": "Threads are lightweight because they share many resources of the parent process while having their own execution state.",
-      "topic": "Threads & Multithreading"
-    },
-    {
-      "id": 37,
-      "question": "Threads within the same process share:",
-      "options": [
-        "A. Program counter only",
-        "B. Address space and open files",
-        "C. Stack only",
-        "D. CPU registers only"
-      ],
-      "correct_answer": "B. Address space and open files",
-      "explanation": "Threads of a process share code, data, and many resources, but each has its own stack and registers.",
-      "topic": "Threads & Multithreading"
-    },
-    {
-      "id": 38,
-      "question": "Which of the following is NOT shared among threads of the same process?",
-      "options": [
-        "A. Code section",
-        "B. Data section",
-        "C. Stack",
-        "D. Open files"
-      ],
-      "correct_answer": "C. Stack",
-      "explanation": "Each thread maintains its own stack and register set, while sharing process resources like code and data.",
-      "topic": "Threads & Multithreading"
-    },
-    {
-      "id": 39,
-      "question": "Multithreading mainly improves:",
-      "options": [
-        "A. Only disk capacity",
-        "B. Responsiveness and resource sharing",
-        "C. Compilation speed only",
-        "D. Power supply efficiency"
-      ],
-      "correct_answer": "B. Responsiveness and resource sharing",
-      "explanation": "Multiple threads allow parts of an application to progress independently, improving responsiveness and concurrency.",
-      "topic": "Threads & Multithreading"
-    },
-    {
-      "id": 40,
-      "question": "Which thread model maps many user threads to one kernel thread?",
-      "options": [
-        "A. One-to-One",
-        "B. Many-to-One",
-        "C. Many-to-Many",
-        "D. Two-to-Two"
-      ],
-      "correct_answer": "B. Many-to-One",
-      "explanation": "In many-to-one mapping, multiple user threads are managed by a single kernel thread, limiting true parallelism.",
-      "topic": "Threads & Multithreading"
-    },
-    {
-      "id": 41,
-      "question": "In the one-to-one model:",
-      "options": [
-        "A. Many user threads map to one kernel thread",
-        "B. Each user thread maps to a kernel thread",
-        "C. Threads cannot block",
-        "D. Only one thread exists per process"
-      ],
-      "correct_answer": "B. Each user thread maps to a kernel thread",
-      "explanation": "One-to-one threading allows better concurrency but may involve more overhead due to kernel-level management.",
-      "topic": "Threads & Multithreading"
-    },
-    {
-      "id": 42,
-      "question": "A major advantage of kernel-level threads over user-level threads is that:",
-      "options": [
-        "A. They require no OS support",
-        "B. One blocking system call need not block all threads",
-        "C. They share no memory",
-        "D. They never need synchronization"
-      ],
-      "correct_answer": "B. One blocking system call need not block all threads",
-      "explanation": "Because the kernel schedules kernel threads, one blocked thread does not necessarily block others in the same process.",
-      "topic": "Threads & Multithreading"
-    },
-    {
-      "id": 43,
-      "question": "Which of the following is true for user-level threads?",
-      "options": [
-        "A. They are always scheduled directly by hardware",
-        "B. Their management is generally faster than kernel threads",
-        "C. They cannot exist in modern systems",
-        "D. Each has its own process address space"
-      ],
-      "correct_answer": "B. Their management is generally faster than kernel threads",
-      "explanation": "User-level threads can be managed in user space with lower overhead, though they may have limitations.",
-      "topic": "Threads & Multithreading"
-    },
-    {
-      "id": 44,
-      "question": "Thread cancellation means:",
-      "options": [
-        "A. Copying a thread",
-        "B. Terminating a thread before it finishes",
-        "C. Suspending the OS",
-        "D. Encrypting thread data"
-      ],
-      "correct_answer": "B. Terminating a thread before it finishes",
-      "explanation": "Thread cancellation refers to killing a thread before its normal completion, either asynchronously or deferred.",
-      "topic": "Threads & Multithreading"
-    },
-    {
-      "id": 45,
-      "question": "A common benefit of multithreading on multiprocessor systems is:",
-      "options": [
-        "A. Reduced need for memory",
-        "B. Parallelism",
-        "C. Removal of context switches",
-        "D. Elimination of deadlocks"
-      ],
-      "correct_answer": "B. Parallelism",
-      "explanation": "Multiple threads can run in parallel on different CPUs or cores, improving performance for suitable workloads.",
-      "topic": "Threads & Multithreading"
-    },
-    {
-      "id": 46,
-      "question": "Which library is commonly associated with POSIX threads?",
-      "options": [
-        "A. pthread",
-        "B. stdio",
-        "C. numpy",
-        "D. jdbc"
-      ],
-      "correct_answer": "A. pthread",
-      "explanation": "POSIX threads are typically accessed through the pthread library in Unix-like systems.",
-      "topic": "Threads & Multithreading"
-    },
-    {
-      "id": 47,
-      "question": "If one thread in a process modifies a global variable, other threads in that process can typically:",
-      "options": [
-        "A. Never see the change",
-        "B. See the changed value because globals are shared",
-        "C. Only see it after reboot",
-        "D. See it only if kernel mode is active"
-      ],
-      "correct_answer": "B. See the changed value because globals are shared",
-      "explanation": "Threads share the same address space, so updates to global data are visible across threads unless synchronization issues arise.",
-      "topic": "Threads & Multithreading"
-    },
-    {
-      "id": 48,
-      "question": "Which scheduling algorithm allocates CPU to the process that arrives first?",
-      "options": [
-        "A. FCFS",
-        "B. SJF",
-        "C. Round Robin",
-        "D. Priority"
-      ],
-      "correct_answer": "A. FCFS",
-      "explanation": "First-Come, First-Served executes processes in order of arrival.",
-      "topic": "CPU Scheduling"
-    },
-    {
-      "id": 49,
-      "question": "Which scheduling algorithm generally gives the minimum average waiting time when burst times are known?",
-      "options": [
-        "A. FCFS",
-        "B. SJF",
-        "C. Round Robin",
-        "D. Multilevel Queue"
-      ],
-      "correct_answer": "B. SJF",
-      "explanation": "Shortest Job First is optimal for minimizing average waiting time when exact burst lengths are known.",
-      "topic": "CPU Scheduling"
-    },
-    {
-      "id": 50,
-      "question": "Which of the following is a preemptive version of SJF?",
-      "options": [
-        "A. FCFS",
-        "B. SRTF",
-        "C. HRRN",
-        "D. FIFO"
-      ],
-      "correct_answer": "B. SRTF",
-      "explanation": "Shortest Remaining Time First preempts the current process if a new process with a shorter remaining time arrives.",
-      "topic": "CPU Scheduling"
-    },
-    {
-      "id": 51,
-      "question": "Which scheduling algorithm is most suitable for time-sharing systems?",
-      "options": [
-        "A. FCFS",
-        "B. Round Robin",
-        "C. SJF",
-        "D. Non-preemptive Priority"
-      ],
-      "correct_answer": "B. Round Robin",
-      "explanation": "Round Robin gives each process a time quantum, making it fair and responsive for interactive systems.",
-      "topic": "CPU Scheduling"
-    },
-    {
-      "id": 52,
-      "question": "If the time quantum in Round Robin is very large, the algorithm behaves like:",
-      "options": [
-        "A. SJF",
-        "B. FCFS",
-        "C. Priority",
-        "D. EDF"
-      ],
-      "correct_answer": "B. FCFS",
-      "explanation": "With a very large quantum, each process effectively runs until completion in arrival order, like FCFS.",
-      "topic": "CPU Scheduling"
-    },
-    {
-      "id": 53,
-      "question": "Starvation is most likely in:",
-      "options": [
-        "A. Round Robin",
-        "B. Priority scheduling",
-        "C. FCFS",
-        "D. FIFO page replacement"
-      ],
-      "correct_answer": "B. Priority scheduling",
-      "explanation": "Low-priority processes may wait indefinitely if higher-priority jobs continue to arrive.",
-      "topic": "CPU Scheduling"
-    },
-    {
-      "id": 54,
-      "question": "Which technique is used to solve starvation in priority scheduling?",
-      "options": [
-        "A. Aging",
-        "B. Thrashing",
-        "C. Spooling",
-        "D. Swapping"
-      ],
-      "correct_answer": "A. Aging",
-      "explanation": "Aging gradually increases the priority of waiting processes so they eventually get CPU time.",
-      "topic": "CPU Scheduling"
-    },
-    {
-      "id": 55,
-      "question": "Preemptive scheduling differs from non-preemptive scheduling because:",
-      "options": [
-        "A. It never interrupts a running process",
-        "B. It can take CPU away from a running process",
-        "C. It works only with one process",
-        "D. It ignores priorities"
-      ],
-      "correct_answer": "B. It can take CPU away from a running process",
-      "explanation": "Preemptive scheduling allows the OS to interrupt a running process and assign the CPU elsewhere.",
-      "topic": "CPU Scheduling"
-    },
-    {
-      "id": 56,
-      "question": "Which scheduling criterion measures the percentage of time the CPU is busy?",
-      "options": [
-        "A. Waiting time",
-        "B. CPU utilization",
-        "C. Turnaround time",
-        "D. Response ratio"
-      ],
-      "correct_answer": "B. CPU utilization",
-      "explanation": "CPU utilization indicates how effectively the processor is being used.",
-      "topic": "CPU Scheduling"
-    },
-    {
-      "id": 57,
-      "question": "In FCFS scheduling, a major disadvantage is:",
-      "options": [
-        "A. It always causes deadlock",
-        "B. Convoy effect",
-        "C. It is preemptive",
-        "D. It requires burst prediction"
-      ],
-      "correct_answer": "B. Convoy effect",
-      "explanation": "A long CPU-bound job may delay many short I/O-bound jobs, creating the convoy effect.",
-      "topic": "CPU Scheduling"
-    },
-    {
-      "id": 58,
-      "question": "Which algorithm assigns CPU to the highest priority process first?",
-      "options": [
-        "A. Priority scheduling",
-        "B. FCFS",
-        "C. SJF",
-        "D. RR"
-      ],
-      "correct_answer": "A. Priority scheduling",
-      "explanation": "Priority scheduling uses externally or internally assigned priority values to choose the next process.",
-      "topic": "CPU Scheduling"
-    },
-    {
-      "id": 59,
-      "question": "Which of the following is true about Round Robin scheduling?",
-      "options": [
-        "A. It is non-preemptive",
-        "B. It uses time quantum",
-        "C. It always minimizes turnaround time",
-        "D. It ignores the ready queue"
-      ],
-      "correct_answer": "B. It uses time quantum",
-      "explanation": "Round Robin is a preemptive scheduling algorithm based on fixed time slices called quanta.",
-      "topic": "CPU Scheduling"
-    },
-    {
-      "id": 60,
-      "question": "The time taken by the dispatcher to stop one process and start another is called:",
-      "options": [
-        "A. Seek time",
-        "B. Dispatch latency",
-        "C. Response time",
-        "D. Aging time"
-      ],
-      "correct_answer": "B. Dispatch latency",
-      "explanation": "Dispatch latency is the overhead involved in context switching and starting the next selected process.",
-      "topic": "CPU Scheduling"
-    },
-    {
-      "id": 61,
-      "question": "If the time quantum is too small in Round Robin, then:",
-      "options": [
-        "A. Response time improves but context switch overhead increases",
-        "B. FCFS behavior appears",
-        "C. Starvation disappears completely",
-        "D. CPU utilization becomes zero"
-      ],
-      "correct_answer": "A. Response time improves but context switch overhead increases",
-      "explanation": "Smaller quantum can improve responsiveness, but too many context switches reduce efficiency.",
-      "topic": "CPU Scheduling"
-    },
-    {
-      "id": 62,
-      "question": "Which algorithm can cause starvation of long processes when short jobs keep arriving?",
-      "options": [
-        "A. FCFS",
-        "B. SJF/SRTF",
-        "C. Round Robin",
-        "D. Multilevel Feedback Queue always"
-      ],
-      "correct_answer": "B. SJF/SRTF",
-      "explanation": "Very short jobs arriving repeatedly can delay longer jobs indefinitely under shortest-job-based approaches.",
-      "topic": "CPU Scheduling"
-    },
-    {
-      "id": 63,
-      "question": "Which scheduling algorithm is easiest to implement?",
-      "options": [
-        "A. FCFS",
-        "B. EDF",
-        "C. Multilevel Feedback Queue",
-        "D. Lottery Scheduling"
-      ],
-      "correct_answer": "A. FCFS",
-      "explanation": "FCFS implementation is straightforward because it only requires a simple queue ordered by arrival.",
-      "topic": "CPU Scheduling"
-    },
-    {
-      "id": 64,
-      "question": "In multilevel queue scheduling:",
-      "options": [
-        "A. A process may move between queues frequently in the basic model",
-        "B. Ready queue is partitioned into separate queues",
-        "C. Only one process is allowed",
-        "D. Priorities are never used"
-      ],
-      "correct_answer": "B. Ready queue is partitioned into separate queues",
-      "explanation": "Multilevel queue scheduling separates processes into different queues such as foreground and background.",
-      "topic": "CPU Scheduling"
-    },
-    {
-      "id": 65,
-      "question": "Multilevel feedback queue scheduling is more flexible because:",
-      "options": [
-        "A. Processes can move between queues",
-        "B. It never preempts",
-        "C. It uses only FCFS",
-        "D. It does not need priorities"
-      ],
-      "correct_answer": "A. Processes can move between queues",
-      "explanation": "Processes may change queues based on behavior, allowing the scheduler to adapt better to workloads.",
-      "topic": "CPU Scheduling"
-    },
-    {
-      "id": 66,
-      "question": "Which scheduling metric is the total time a process spends in the ready queue?",
-      "options": [
-        "A. Waiting time",
-        "B. Turnaround time",
-        "C. Response time",
-        "D. Throughput"
-      ],
-      "correct_answer": "A. Waiting time",
-      "explanation": "Waiting time excludes actual CPU execution and focuses on time spent waiting for CPU allocation.",
-      "topic": "CPU Scheduling"
-    },
-    {
-      "id": 67,
-      "question": "For interactive systems, which metric is especially important?",
-      "options": [
-        "A. Disk fragmentation",
-        "B. Response time",
-        "C. File size",
-        "D. Cache associativity"
-      ],
-      "correct_answer": "B. Response time",
-      "explanation": "Users care about how quickly the system starts responding to their requests.",
-      "topic": "CPU Scheduling"
-    },
-    {
-      "id": 68,
-      "question": "A process arrives at time 0 with burst time 5. Under FCFS, if it is first in queue, its waiting time is:",
-      "options": [
-        "A. 0",
-        "B. 5",
-        "C. 10",
-        "D. 1"
-      ],
-      "correct_answer": "A. 0",
-      "explanation": "The first process in FCFS starts immediately, so it has zero waiting time.",
-      "topic": "CPU Scheduling"
-    },
-    {
-      "id": 69,
-      "question": "In non-preemptive priority scheduling, if two processes have equal priority, they are often scheduled by:",
-      "options": [
-        "A. Random choice",
-        "B. FCFS order",
-        "C. SJF order only",
-        "D. Reverse arrival order"
-      ],
-      "correct_answer": "B. FCFS order",
-      "explanation": "When priorities tie, FCFS is commonly used as the secondary criterion.",
-      "topic": "CPU Scheduling"
-    },
-    {
-      "id": 70,
-      "question": "The critical section problem deals with:",
-      "options": [
-        "A. CPU scheduling only",
-        "B. Ensuring mutual exclusion when processes share data",
-        "C. File compression",
-        "D. Booting sequence"
-      ],
-      "correct_answer": "B. Ensuring mutual exclusion when processes share data",
-      "explanation": "The goal is to prevent race conditions when multiple processes or threads access shared data concurrently.",
-      "topic": "Synchronization & Critical Section"
-    },
-    {
-      "id": 71,
-      "question": "A race condition occurs when:",
-      "options": [
-        "A. Two CPUs run at different speeds",
-        "B. The result depends on the sequence/timing of concurrent accesses",
-        "C. A process runs too long",
-        "D. Files are sorted incorrectly"
-      ],
-      "correct_answer": "B. The result depends on the sequence/timing of concurrent accesses",
-      "explanation": "Unsynchronized concurrent access to shared data can make output depend on timing, producing inconsistent results.",
-      "topic": "Synchronization & Critical Section"
-    },
-    {
-      "id": 72,
-      "question": "Which of the following is used for mutual exclusion?",
-      "options": [
-        "A. Semaphore",
-        "B. Compiler",
-        "C. Assembler",
-        "D. Loader"
-      ],
-      "correct_answer": "A. Semaphore",
-      "explanation": "Semaphores are synchronization tools used to control access to shared resources.",
-      "topic": "Synchronization & Critical Section"
-    },
-    {
-      "id": 73,
-      "question": "A binary semaphore can take values:",
-      "options": [
-        "A. 0 and 1 only",
-        "B. Any integer",
-        "C. Only positive numbers above 1",
-        "D. Only negative values"
-      ],
-      "correct_answer": "A. 0 and 1 only",
-      "explanation": "A binary semaphore behaves like a lock with only two states: available or unavailable.",
-      "topic": "Synchronization & Critical Section"
-    },
-    {
-      "id": 74,
-      "question": "The wait() operation on a semaphore generally:",
-      "options": [
-        "A. Increments the semaphore",
-        "B. Decrements the semaphore and may block",
-        "C. Deletes the semaphore",
-        "D. Changes process priority"
-      ],
-      "correct_answer": "B. Decrements the semaphore and may block",
-      "explanation": "wait() attempts to acquire the resource; if unavailable, the caller may block until signaled.",
-      "topic": "Synchronization & Critical Section"
-    },
-    {
-      "id": 75,
-      "question": "The signal() operation on a semaphore generally:",
-      "options": [
-        "A. Decrements the semaphore",
-        "B. Increments the semaphore and may wake a waiting process",
-        "C. Terminates a process",
-        "D. Disables interrupts permanently"
-      ],
-      "correct_answer": "B. Increments the semaphore and may wake a waiting process",
-      "explanation": "signal() releases the resource and can unblock one of the waiting processes.",
-      "topic": "Synchronization & Critical Section"
-    },
-    {
-      "id": 76,
-      "question": "Which synchronization problem involves a finite buffer shared by producers and consumers?",
-      "options": [
-        "A. Dining philosophers",
-        "B. Readers-writers",
-        "C. Producer-consumer",
-        "D. Sleeping barber only"
-      ],
-      "correct_answer": "C. Producer-consumer",
-      "explanation": "The producer-consumer problem coordinates adding to and removing from a shared bounded buffer.",
-      "topic": "Synchronization & Critical Section"
-    },
-    {
-      "id": 77,
-      "question": "Mutual exclusion means:",
-      "options": [
-        "A. Multiple processes can be in the critical section together",
-        "B. Only one process can be in the critical section at a time",
-        "C. Processes can never share resources",
-        "D. CPUs must be turned off during updates"
-      ],
-      "correct_answer": "B. Only one process can be in the critical section at a time",
-      "explanation": "Mutual exclusion prevents simultaneous entry into a critical section that manipulates shared data.",
-      "topic": "Synchronization & Critical Section"
-    },
-    {
-      "id": 78,
-      "question": "Busy waiting refers to:",
-      "options": [
-        "A. A process repeatedly checking a condition without useful work",
-        "B. Waiting on disk I/O only",
-        "C. A process in terminated state",
-        "D. Waiting after completion"
-      ],
-      "correct_answer": "A. A process repeatedly checking a condition without useful work",
-      "explanation": "Busy waiting wastes CPU cycles by spinning until a lock or condition changes.",
-      "topic": "Synchronization & Critical Section"
-    },
-    {
-      "id": 79,
-      "question": "Peterson's solution is meant for:",
-      "options": [
-        "A. Process scheduling",
-        "B. Two-process mutual exclusion",
-        "C. Page replacement",
-        "D. Disk scheduling"
-      ],
-      "correct_answer": "B. Two-process mutual exclusion",
-      "explanation": "Peterson's algorithm is a software solution ensuring mutual exclusion, progress, and bounded waiting for two processes.",
-      "topic": "Synchronization & Critical Section"
-    },
-    {
-      "id": 80,
-      "question": "A mutex differs from a counting semaphore because a mutex:",
-      "options": [
-        "A. Can have unlimited values",
-        "B. Is primarily used for exclusive locking by one owner",
-        "C. Is used only for disk scheduling",
-        "D. Cannot block threads"
-      ],
-      "correct_answer": "B. Is primarily used for exclusive locking by one owner",
-      "explanation": "Mutexes are typically ownership-based locks, while counting semaphores can represent multiple identical resources.",
-      "topic": "Synchronization & Critical Section"
-    },
-    {
-      "id": 81,
-      "question": "Which of the following is a high-level synchronization construct?",
-      "options": [
-        "A. Monitor",
-        "B. Interrupt vector",
-        "C. PCB",
-        "D. DMA"
-      ],
-      "correct_answer": "A. Monitor",
-      "explanation": "A monitor encapsulates shared data and procedures with implicit mutual exclusion.",
-      "topic": "Synchronization & Critical Section"
-    },
-    {
-      "id": 82,
-      "question": "In the readers-writers problem, the main issue is:",
-      "options": [
-        "A. Choosing file type",
-        "B. Synchronizing readers and writers accessing shared data",
-        "C. Managing CPU bursts",
-        "D. Allocating disk blocks"
-      ],
-      "correct_answer": "B. Synchronizing readers and writers accessing shared data",
-      "explanation": "Multiple readers may read together, but writers require exclusive access to maintain consistency.",
-      "topic": "Synchronization & Critical Section"
-    },
-    {
-      "id": 83,
-      "question": "A condition variable is typically associated with:",
-      "options": [
-        "A. Monitors",
-        "B. Disk partitions",
-        "C. Page faults",
-        "D. Job queues"
-      ],
-      "correct_answer": "A. Monitors",
-      "explanation": "Condition variables allow threads to wait for and signal conditions within monitor-style synchronization.",
-      "topic": "Synchronization & Critical Section"
-    },
-    {
-      "id": 84,
-      "question": "Disabling interrupts as a synchronization method is suitable mainly for:",
-      "options": [
-        "A. Multiprocessor user programs",
-        "B. Kernel operations on a uniprocessor",
-        "C. Distributed databases",
-        "D. File compression"
-      ],
-      "correct_answer": "B. Kernel operations on a uniprocessor",
-      "explanation": "Disabling interrupts can prevent context switches briefly on one CPU, but it is not a general-purpose user-level solution.",
-      "topic": "Synchronization & Critical Section"
-    },
-    {
-      "id": 85,
-      "question": "If a process enters a critical section and never leaves, other waiting processes may suffer:",
-      "options": [
-        "A. Thrashing",
-        "B. Starvation",
-        "C. Fragmentation",
-        "D. Spooling"
-      ],
-      "correct_answer": "B. Starvation",
-      "explanation": "If access is never released, others waiting to enter may wait indefinitely.",
-      "topic": "Synchronization & Critical Section"
-    },
-    {
-      "id": 86,
-      "question": "A counting semaphore is particularly useful when:",
-      "options": [
-        "A. Only one process may ever access a resource",
-        "B. A resource has multiple identical instances",
-        "C. No blocking is needed",
-        "D. Only user threads exist"
-      ],
-      "correct_answer": "B. A resource has multiple identical instances",
-      "explanation": "Counting semaphores can represent the number of available units of a resource.",
-      "topic": "Synchronization & Critical Section"
-    },
-    {
-      "id": 87,
-      "question": "The bounded waiting requirement ensures that:",
-      "options": [
-        "A. A process can be postponed forever",
-        "B. There is a limit on how long a process waits to enter its critical section",
-        "C. Waiting time is always zero",
-        "D. Only one process exists"
-      ],
-      "correct_answer": "B. There is a limit on how long a process waits to enter its critical section",
-      "explanation": "Bounded waiting prevents indefinite postponement and supports fairness in critical section entry.",
-      "topic": "Synchronization & Critical Section"
-    },
-    {
-      "id": 88,
-      "question": "A deadlock is a situation in which:",
-      "options": [
-        "A. Processes execute too fast",
-        "B. A set of processes wait forever for resources held by each other",
-        "C. CPU becomes idle forever always",
-        "D. The OS crashes after boot"
-      ],
-      "correct_answer": "B. A set of processes wait forever for resources held by each other",
-      "explanation": "Deadlock occurs when circular waiting prevents progress because each process holds a needed resource.",
-      "topic": "Deadlocks"
-    },
-    {
-      "id": 89,
-      "question": "Which of the following is NOT one of Coffman's deadlock conditions?",
-      "options": [
-        "A. Mutual exclusion",
-        "B. Hold and wait",
-        "C. Circular wait",
-        "D. Preemptive sharing"
-      ],
-      "correct_answer": "D. Preemptive sharing",
-      "explanation": "The four necessary conditions are mutual exclusion, hold and wait, no preemption, and circular wait.",
-      "topic": "Deadlocks"
-    },
-    {
-      "id": 90,
-      "question": "Deadlock prevention works by:",
-      "options": [
-        "A. Ensuring at least one necessary condition never holds",
-        "B. Detecting deadlocks after they occur only",
-        "C. Ignoring resource requests",
-        "D. Increasing file size"
-      ],
-      "correct_answer": "A. Ensuring at least one necessary condition never holds",
-      "explanation": "If one necessary condition is structurally denied, deadlock cannot occur.",
-      "topic": "Deadlocks"
-    },
-    {
-      "id": 91,
-      "question": "Which technique requires a process to request all resources at once before execution begins?",
-      "options": [
-        "A. Deadlock detection",
-        "B. Hold-and-wait prevention",
-        "C. Aging",
-        "D. Paging"
-      ],
-      "correct_answer": "B. Hold-and-wait prevention",
-      "explanation": "By demanding all resources at the start, the process cannot hold one while waiting for another.",
-      "topic": "Deadlocks"
-    },
-    {
-      "id": 92,
-      "question": "The Banker's algorithm is used for:",
-      "options": [
-        "A. Deadlock avoidance",
-        "B. Deadlock detection only",
-        "C. CPU scheduling",
-        "D. File allocation"
-      ],
-      "correct_answer": "A. Deadlock avoidance",
-      "explanation": "Banker's algorithm grants a request only if the system remains in a safe state afterward.",
-      "topic": "Deadlocks"
-    },
-    {
-      "id": 93,
-      "question": "A state is called safe if:",
-      "options": [
-        "A. No process is blocked currently",
-        "B. There exists an order in which all processes can complete",
-        "C. No page faults occur",
-        "D. The system has only one user"
-      ],
-      "correct_answer": "B. There exists an order in which all processes can complete",
-      "explanation": "A safe state means there is at least one safe sequence that allows all processes to finish.",
-      "topic": "Deadlocks"
-    },
-    {
-      "id": 94,
-      "question": "Which data structure is commonly used to detect deadlocks involving one instance per resource type?",
-      "options": [
-        "A. Gantt chart",
-        "B. Resource-allocation graph",
-        "C. Page table",
-        "D. FAT"
-      ],
-      "correct_answer": "B. Resource-allocation graph",
-      "explanation": "Cycles in a resource-allocation graph indicate deadlock when each resource type has a single instance.",
-      "topic": "Deadlocks"
-    },
-    {
-      "id": 95,
-      "question": "If a deadlock is detected, one recovery method is:",
-      "options": [
-        "A. Increase cache size",
-        "B. Terminate one or more processes",
-        "C. Disable interrupts permanently",
-        "D. Convert all files to text"
-      ],
-      "correct_answer": "B. Terminate one or more processes",
-      "explanation": "Deadlock recovery may involve process termination or resource preemption to break the cycle.",
-      "topic": "Deadlocks"
-    },
-    {
-      "id": 96,
-      "question": "Resource preemption means:",
-      "options": [
-        "A. A process keeps all resources until finish",
-        "B. Resources are forcibly taken from a process",
-        "C. A process requests more memory",
-        "D. Files are deleted automatically"
-      ],
-      "correct_answer": "B. Resources are forcibly taken from a process",
-      "explanation": "Preempting resources from selected victims can help resolve deadlock, though rollback may be needed.",
-      "topic": "Deadlocks"
-    },
-    {
-      "id": 97,
-      "question": "Circular wait can be prevented by:",
-      "options": [
-        "A. Numbering resource types and enforcing ordering",
-        "B. Using only FCFS",
-        "C. Disabling paging",
-        "D. Reducing CPU speed"
-      ],
-      "correct_answer": "A. Numbering resource types and enforcing ordering",
-      "explanation": "If resources are requested in a global order, circular wait cannot arise.",
-      "topic": "Deadlocks"
-    },
-    {
-      "id": 98,
-      "question": "Which statement about deadlock avoidance is true?",
-      "options": [
-        "A. It requires future resource needs to be known in advance",
-        "B. It never examines allocation state",
-        "C. It is simpler than doing nothing",
-        "D. It eliminates mutual exclusion"
-      ],
-      "correct_answer": "A. It requires future resource needs to be known in advance",
-      "explanation": "Avoidance algorithms like Banker's need maximum resource demand information to judge safe states.",
-      "topic": "Deadlocks"
-    },
-    {
-      "id": 99,
-      "question": "A cycle in a wait-for graph indicates:",
-      "options": [
-        "A. Starvation only",
-        "B. Deadlock among the involved processes",
-        "C. Successful scheduling",
-        "D. Page replacement"
-      ],
-      "correct_answer": "B. Deadlock among the involved processes",
-      "explanation": "Wait-for graphs model which process is waiting for which other process; a cycle implies deadlock.",
-      "topic": "Deadlocks"
-    },
-    {
-      "id": 100,
-      "question": "Deadlock detection differs from prevention because detection:",
-      "options": [
-        "A. Never allows deadlock to happen",
-        "B. Allows deadlock to occur and then identifies it",
-        "C. Requires no resource tracking",
-        "D. Is the same as avoidance"
-      ],
-      "correct_answer": "B. Allows deadlock to occur and then identifies it",
-      "explanation": "Detection tolerates the possibility of deadlock and then runs an algorithm to detect and recover.",
-      "topic": "Deadlocks"
-    },
-    {
-      "id": 101,
-      "question": "Starvation and deadlock differ because starvation:",
-      "options": [
-        "A. Always involves circular wait",
-        "B. Can affect a process indefinitely without a cycle of resource holding",
-        "C. Never happens in OS",
-        "D. Is same as deadlock"
-      ],
-      "correct_answer": "B. Can affect a process indefinitely without a cycle of resource holding",
-      "explanation": "Starvation is indefinite postponement, while deadlock is a cycle of blocked processes waiting on each other.",
-      "topic": "Deadlocks"
-    },
-    {
-      "id": 102,
-      "question": "Logical address generated by CPU is also called:",
-      "options": [
-        "A. Physical address",
-        "B. Virtual address",
-        "C. Disk address",
-        "D. MAC address"
-      ],
-      "correct_answer": "B. Virtual address",
-      "explanation": "The CPU generates logical or virtual addresses which are translated to physical addresses in memory.",
-      "topic": "Memory Management"
-    },
-    {
-      "id": 103,
-      "question": "The address seen by the memory unit is called:",
-      "options": [
-        "A. Logical address",
-        "B. Physical address",
-        "C. Relative address",
-        "D. Symbolic address"
-      ],
-      "correct_answer": "B. Physical address",
-      "explanation": "Main memory hardware uses physical addresses after translation from logical addresses.",
-      "topic": "Memory Management"
-    },
-    {
-      "id": 104,
-      "question": "Which register holds the smallest legal physical memory address of a process?",
-      "options": [
-        "A. Limit register",
-        "B. Base register",
-        "C. Index register",
-        "D. Status register"
-      ],
-      "correct_answer": "B. Base register",
-      "explanation": "In simple relocation schemes, the base register stores the starting physical address for a process.",
-      "topic": "Memory Management"
-    },
-    {
-      "id": 105,
-      "question": "Which register stores the size of the process address space in contiguous allocation?",
-      "options": [
-        "A. Base register",
-        "B. Limit register",
-        "C. Program counter",
-        "D. MAR"
-      ],
-      "correct_answer": "B. Limit register",
-      "explanation": "The limit register helps protect memory by defining the valid address range for the process.",
-      "topic": "Memory Management"
-    },
-    {
-      "id": 106,
-      "question": "External fragmentation occurs when:",
-      "options": [
-        "A. Free memory is split into small noncontiguous holes",
-        "B. Memory inside allocated block is unused",
-        "C. Disk is physically damaged",
-        "D. Page table overflows"
-      ],
-      "correct_answer": "A. Free memory is split into small noncontiguous holes",
-      "explanation": "External fragmentation is a problem of contiguous allocation where enough total free space exists but not as one contiguous block.",
-      "topic": "Memory Management"
-    },
-    {
-      "id": 107,
-      "question": "Internal fragmentation occurs when:",
-      "options": [
-        "A. Free holes are scattered",
-        "B. Allocated memory block contains unused space",
-        "C. Page faults occur",
-        "D. Process states are corrupted"
-      ],
-      "correct_answer": "B. Allocated memory block contains unused space",
-      "explanation": "Fixed-size allocations such as pages or partitions may waste space inside allocated units.",
-      "topic": "Memory Management"
-    },
-    {
-      "id": 108,
-      "question": "Paging is a memory management scheme that:",
-      "options": [
-        "A. Requires contiguous physical allocation",
-        "B. Divides logical memory into pages and physical memory into frames",
-        "C. Eliminates address translation",
-        "D. Uses only one big partition"
-      ],
-      "correct_answer": "B. Divides logical memory into pages and physical memory into frames",
-      "explanation": "Paging allows noncontiguous allocation by mapping fixed-size pages to physical frames.",
-      "topic": "Memory Management"
-    },
-    {
-      "id": 109,
-      "question": "In paging, page size is equal to:",
-      "options": [
-        "A. Frame size",
-        "B. Limit register value",
-        "C. Cache line size always",
-        "D. Disk block count"
-      ],
-      "correct_answer": "A. Frame size",
-      "explanation": "For mapping to work correctly, page size and frame size are the same.",
-      "topic": "Memory Management"
-    },
-    {
-      "id": 110,
-      "question": "Segmentation divides a program into:",
-      "options": [
-        "A. Fixed-size blocks only",
-        "B. Variable-size logical units",
-        "C. CPU bursts",
-        "D. Interrupt vectors"
-      ],
-      "correct_answer": "B. Variable-size logical units",
-      "explanation": "Segments correspond to logical entities such as code, data, and stack, usually of varying lengths.",
-      "topic": "Memory Management"
-    },
-    {
-      "id": 111,
-      "question": "Which memory management scheme supports user view of memory better?",
-      "options": [
-        "A. Paging",
-        "B. Segmentation",
-        "C. FIFO",
-        "D. FCFS"
-      ],
-      "correct_answer": "B. Segmentation",
-      "explanation": "Segmentation aligns more closely with the programmer's logical view of memory.",
-      "topic": "Memory Management"
-    },
-    {
-      "id": 112,
-      "question": "What is swapping?",
-      "options": [
-        "A. Exchanging variables between threads",
-        "B. Moving processes between main memory and backing store",
-        "C. Replacing pages in cache only",
-        "D. Assigning priorities"
-      ],
-      "correct_answer": "B. Moving processes between main memory and backing store",
-      "explanation": "Swapping temporarily moves processes out of memory to free space and later brings them back.",
-      "topic": "Memory Management"
-    },
-    {
-      "id": 113,
-      "question": "The MMU stands for:",
-      "options": [
-        "A. Main Memory Unit",
-        "B. Memory Management Unit",
-        "C. Machine Mapping Utility",
-        "D. Multiuser Memory Update"
-      ],
-      "correct_answer": "B. Memory Management Unit",
-      "explanation": "The MMU is hardware responsible for translating virtual addresses to physical addresses.",
-      "topic": "Memory Management"
-    },
-    {
-      "id": 114,
-      "question": "Which allocation strategy chooses the first hole that is large enough?",
-      "options": [
-        "A. Best fit",
-        "B. Worst fit",
-        "C. First fit",
-        "D. Next victim"
-      ],
-      "correct_answer": "C. First fit",
-      "explanation": "First fit scans memory from the beginning and allocates the first sufficiently large free block.",
-      "topic": "Memory Management"
-    },
-    {
-      "id": 115,
-      "question": "Best-fit allocation selects:",
-      "options": [
-        "A. The largest available hole",
-        "B. The first adequate hole",
-        "C. The smallest hole that is large enough",
-        "D. Random hole"
-      ],
-      "correct_answer": "C. The smallest hole that is large enough",
-      "explanation": "Best fit tries to minimize leftover space by selecting the tightest possible free block.",
-      "topic": "Memory Management"
-    },
-    {
-      "id": 116,
-      "question": "Worst-fit allocation selects:",
-      "options": [
-        "A. The largest available hole",
-        "B. The smallest hole",
-        "C. The most recent hole",
-        "D. The first hole"
-      ],
-      "correct_answer": "A. The largest available hole",
-      "explanation": "Worst fit leaves a large remainder and is based on choosing the biggest available free block.",
-      "topic": "Memory Management"
-    },
-    {
-      "id": 117,
-      "question": "Compaction is used to:",
-      "options": [
-        "A. Increase page faults",
-        "B. Reduce external fragmentation by combining free space",
-        "C. Delete terminated processes",
-        "D. Encrypt memory"
-      ],
-      "correct_answer": "B. Reduce external fragmentation by combining free space",
-      "explanation": "Compaction relocates memory contents to form one large free contiguous block.",
-      "topic": "Memory Management"
-    },
-    {
-      "id": 118,
-      "question": "Translation Lookaside Buffer (TLB) is used to:",
-      "options": [
-        "A. Store program source code",
-        "B. Cache recent page table entries",
-        "C. Schedule processes",
-        "D. Manage disks"
-      ],
-      "correct_answer": "B. Cache recent page table entries",
-      "explanation": "The TLB speeds up address translation by storing frequently used page mappings.",
-      "topic": "Memory Management"
-    },
-    {
-      "id": 119,
-      "question": "A page table is used to:",
-      "options": [
-        "A. Schedule CPU bursts",
-        "B. Map page numbers to frame numbers",
-        "C. Store file permissions",
-        "D. Detect deadlocks"
-      ],
-      "correct_answer": "B. Map page numbers to frame numbers",
-      "explanation": "Paging requires a page table to translate each virtual page into a physical frame.",
-      "topic": "Memory Management"
-    },
-    {
-      "id": 120,
-      "question": "Which of the following can suffer from external fragmentation?",
-      "options": [
-        "A. Pure paging",
-        "B. Contiguous memory allocation",
-        "C. Page tables only",
-        "D. TLB"
-      ],
-      "correct_answer": "B. Contiguous memory allocation",
-      "explanation": "Contiguous allocation needs adjacent free space and therefore suffers from external fragmentation.",
-      "topic": "Memory Management"
-    },
-    {
-      "id": 121,
-      "question": "Virtual memory allows:",
-      "options": [
-        "A. Only one program in memory",
-        "B. Execution of processes that may not be completely in main memory",
-        "C. Elimination of secondary storage",
-        "D. Direct physical addressing by users"
-      ],
-      "correct_answer": "B. Execution of processes that may not be completely in main memory",
-      "explanation": "Virtual memory gives the illusion of a larger memory by bringing needed parts into RAM on demand.",
-      "topic": "Memory Management"
-    },
-    {
-      "id": 122,
-      "question": "A page fault occurs when:",
-      "options": [
-        "A. The CPU divides by zero",
-        "B. A referenced page is not in main memory",
-        "C. The disk head crashes",
-        "D. A process terminates"
-      ],
-      "correct_answer": "B. A referenced page is not in main memory",
-      "explanation": "If the needed page is absent from RAM, the OS triggers a page fault and fetches it from secondary storage.",
-      "topic": "Virtual Memory & Page Replacement"
-    },
-    {
-      "id": 123,
-      "question": "Which page replacement algorithm replaces the page that will not be used for the longest time in the future?",
-      "options": [
-        "A. FIFO",
-        "B. LRU",
-        "C. Optimal",
-        "D. LFU"
-      ],
-      "correct_answer": "C. Optimal",
-      "explanation": "The optimal algorithm is idealized because it requires future knowledge, but it provides the minimum possible page faults.",
-      "topic": "Virtual Memory & Page Replacement"
-    },
-    {
-      "id": 124,
-      "question": "FIFO page replacement removes:",
-      "options": [
-        "A. Most recently used page",
-        "B. Oldest loaded page",
-        "C. Least frequently used page",
-        "D. Random page only"
-      ],
-      "correct_answer": "B. Oldest loaded page",
-      "explanation": "First-In, First-Out replaces the page that entered memory earliest.",
-      "topic": "Virtual Memory & Page Replacement"
-    },
-    {
-      "id": 125,
-      "question": "LRU replaces the page that:",
-      "options": [
-        "A. Has smallest page number",
-        "B. Has not been used for the longest time in the past",
-        "C. Was loaded first",
-        "D. Has highest frequency"
-      ],
-      "correct_answer": "B. Has not been used for the longest time in the past",
-      "explanation": "Least Recently Used approximates the principle behind optimal replacement using recent past behavior.",
-      "topic": "Virtual Memory & Page Replacement"
-    },
-    {
-      "id": 126,
-      "question": "Belady's anomaly is associated with:",
-      "options": [
-        "A. LRU",
-        "B. Optimal",
-        "C. FIFO",
-        "D. Segmentation"
-      ],
-      "correct_answer": "C. FIFO",
-      "explanation": "Belady's anomaly is the counterintuitive increase in page faults when more frames are added under FIFO.",
-      "topic": "Virtual Memory & Page Replacement"
-    },
-    {
-      "id": 127,
-      "question": "Thrashing occurs when:",
-      "options": [
-        "A. CPU usage is very high and page faults are low",
-        "B. The system spends most of its time paging rather than executing",
-        "C. No process is in memory",
-        "D. Deadlock happens in disk queue"
-      ],
-      "correct_answer": "B. The system spends most of its time paging rather than executing",
-      "explanation": "Thrashing happens when excessive page faults cause the system to devote most effort to page swapping.",
-      "topic": "Virtual Memory & Page Replacement"
-    },
-    {
-      "id": 128,
-      "question": "Demand paging means:",
-      "options": [
-        "A. All pages are loaded at process start",
-        "B. Pages are loaded only when needed",
-        "C. Pages are never replaced",
-        "D. Memory is contiguous"
-      ],
-      "correct_answer": "B. Pages are loaded only when needed",
-      "explanation": "Demand paging brings a page into memory only when it is actually referenced.",
-      "topic": "Virtual Memory & Page Replacement"
-    },
-    {
-      "id": 129,
-      "question": "A valid/invalid bit in a page table is used to indicate:",
-      "options": [
-        "A. CPU utilization",
-        "B. Whether a page belongs to the process and is accessible",
-        "C. Burst time",
-        "D. Interrupt type"
-      ],
-      "correct_answer": "B. Whether a page belongs to the process and is accessible",
-      "explanation": "The valid/invalid bit helps protect memory and identify references to illegal pages.",
-      "topic": "Virtual Memory & Page Replacement"
-    },
-    {
-      "id": 130,
-      "question": "Local page replacement means:",
-      "options": [
-        "A. A process can replace only its own pages",
-        "B. Any process can replace any page",
-        "C. Only kernel pages can be replaced",
-        "D. Pages are replaced by disk scheduler"
-      ],
-      "correct_answer": "A. A process can replace only its own pages",
-      "explanation": "Local replacement limits the victim pages to those belonging to the faulting process.",
-      "topic": "Virtual Memory & Page Replacement"
-    },
-    {
-      "id": 131,
-      "question": "Working-set model is used mainly to:",
-      "options": [
-        "A. Increase fragmentation",
-        "B. Control thrashing",
-        "C. Schedule CPU",
-        "D. Remove semaphores"
-      ],
-      "correct_answer": "B. Control thrashing",
-      "explanation": "The working-set model tries to keep enough pages in memory for active locality, reducing page faults and thrashing.",
-      "topic": "Virtual Memory & Page Replacement"
-    },
-    {
-      "id": 132,
-      "question": "A file is:",
-      "options": [
-        "A. A process in memory",
-        "B. A named collection of related information stored on secondary storage",
-        "C. A CPU scheduling queue",
-        "D. A type of semaphore"
-      ],
-      "correct_answer": "B. A named collection of related information stored on secondary storage",
-      "explanation": "Files provide a logical way to store and organize information on nonvolatile storage.",
-      "topic": "File Systems & Disk Management"
-    },
-    {
-      "id": 133,
-      "question": "Which of the following is a common file attribute?",
-      "options": [
-        "A. Burst time",
-        "B. Name",
-        "C. Ready state",
-        "D. Quantum"
-      ],
-      "correct_answer": "B. Name",
-      "explanation": "Typical file attributes include name, type, size, permissions, timestamps, and owner.",
-      "topic": "File Systems & Disk Management"
-    },
-    {
-      "id": 134,
-      "question": "Contiguous allocation stores a file:",
-      "options": [
-        "A. In scattered blocks only",
-        "B. In consecutive disk blocks",
-        "C. Only in memory",
-        "D. In linked pages"
-      ],
-      "correct_answer": "B. In consecutive disk blocks",
-      "explanation": "Contiguous allocation provides fast sequential and direct access but can suffer from external fragmentation.",
-      "topic": "File Systems & Disk Management"
-    },
-    {
-      "id": 135,
-      "question": "Linked file allocation stores file blocks:",
-      "options": [
-        "A. In consecutive positions only",
-        "B. As linked scattered blocks",
-        "C. In the CPU cache",
-        "D. In page tables"
-      ],
-      "correct_answer": "B. As linked scattered blocks",
-      "explanation": "Linked allocation allows noncontiguous storage but may be slower for direct access.",
-      "topic": "File Systems & Disk Management"
-    },
-    {
-      "id": 136,
-      "question": "Indexed allocation uses:",
-      "options": [
-        "A. A linked list of processes",
-        "B. An index block containing addresses of file blocks",
-        "C. Only contiguous blocks",
-        "D. No metadata"
-      ],
-      "correct_answer": "B. An index block containing addresses of file blocks",
-      "explanation": "Indexed allocation supports direct access by storing block pointers in a separate index block.",
-      "topic": "File Systems & Disk Management"
-    },
-    {
-      "id": 137,
-      "question": "A directory is used to:",
-      "options": [
-        "A. Translate only physical addresses",
-        "B. Organize and provide information about files",
-        "C. Schedule threads",
-        "D. Store semaphores"
-      ],
-      "correct_answer": "B. Organize and provide information about files",
-      "explanation": "Directories maintain mappings from file names to metadata or control information.",
-      "topic": "File Systems & Disk Management"
-    },
-    {
-      "id": 138,
-      "question": "Which disk scheduling algorithm services requests in the order they arrive?",
-      "options": [
-        "A. SSTF",
-        "B. SCAN",
-        "C. FCFS",
-        "D. C-SCAN"
-      ],
-      "correct_answer": "C. FCFS",
-      "explanation": "FCFS disk scheduling handles requests strictly by arrival order.",
-      "topic": "File Systems & Disk Management"
-    },
-    {
-      "id": 139,
-      "question": "SSTF stands for:",
-      "options": [
-        "A. Shortest Seek Time First",
-        "B. System Segment Table Format",
-        "C. Sector Search Transfer Function",
-        "D. Sequential Scan Track First"
-      ],
-      "correct_answer": "A. Shortest Seek Time First",
-      "explanation": "SSTF selects the request nearest the current head position to reduce seek movement.",
-      "topic": "File Systems & Disk Management"
-    },
-    {
-      "id": 140,
-      "question": "SCAN disk scheduling is also called:",
-      "options": [
-        "A. Elevator algorithm",
-        "B. Aging algorithm",
-        "C. Banker algorithm",
-        "D. Buddy system"
-      ],
-      "correct_answer": "A. Elevator algorithm",
-      "explanation": "SCAN moves the disk head in one direction servicing requests, then reverses direction like an elevator.",
-      "topic": "File Systems & Disk Management"
-    },
-    {
-      "id": 141,
-      "question": "C-SCAN differs from SCAN because:",
-      "options": [
-        "A. It services requests randomly",
-        "B. It moves in one direction only and jumps back without servicing on return",
-        "C. It is always identical to FCFS",
-        "D. It works only for SSDs"
-      ],
-      "correct_answer": "B. It moves in one direction only and jumps back without servicing on return",
-      "explanation": "Circular SCAN provides more uniform wait time by treating cylinders as a circular list.",
-      "topic": "File Systems & Disk Management"
-    },
-    {
-      "id": 142,
-      "question": "An inode in Unix-like file systems stores:",
-      "options": [
-        "A. File name and path only",
-        "B. Metadata and block pointers",
-        "C. Ready queue entries",
-        "D. CPU registers"
-      ],
-      "correct_answer": "B. Metadata and block pointers",
-      "explanation": "An inode contains file metadata such as owner, size, permissions, and pointers to data blocks, not the file name itself.",
-      "topic": "File Systems & Disk Management"
-    },
-    {
-      "id": 143,
-      "question": "Spooling is commonly associated with:",
-      "options": [
-        "A. Printer output buffering",
-        "B. Deadlock prevention",
-        "C. Page replacement",
-        "D. Cache associativity"
-      ],
-      "correct_answer": "A. Printer output buffering",
-      "explanation": "Spooling stores data in a buffer or disk area so slower devices like printers can process it later.",
-      "topic": "File Systems & Disk Management"
-    },
-    {
-      "id": 144,
-      "question": "Which access method is most suitable for reading records one after another in order?",
-      "options": [
-        "A. Sequential access",
-        "B. Direct access",
-        "C. Indexed only",
-        "D. Random semaphore"
-      ],
-      "correct_answer": "A. Sequential access",
-      "explanation": "Sequential access reads records in order, which is efficient for tapes and ordered file processing.",
-      "topic": "File Systems & Disk Management"
-    },
-    {
-      "id": 145,
-      "question": "File protection is mainly used to:",
-      "options": [
-        "A. Increase disk RPM",
-        "B. Control who can access files and how",
-        "C. Reduce fragmentation only",
-        "D. Perform CPU scheduling"
-      ],
-      "correct_answer": "B. Control who can access files and how",
-      "explanation": "Protection mechanisms enforce read, write, execute, and ownership permissions on files.",
-      "topic": "File Systems & Disk Management"
-    },
-    {
-      "id": 146,
-      "question": "An interrupt is a signal that:",
-      "options": [
-        "A. Permanently stops the CPU",
-        "B. Causes the CPU to suspend current execution and handle an event",
-        "C. Deletes a process",
-        "D. Replaces a page immediately"
-      ],
-      "correct_answer": "B. Causes the CPU to suspend current execution and handle an event",
-      "explanation": "Interrupts notify the processor of events needing attention, such as I/O completion.",
-      "topic": "I/O Systems & Protection"
-    },
-    {
-      "id": 147,
-      "question": "DMA stands for:",
-      "options": [
-        "A. Direct Memory Access",
-        "B. Dynamic Memory Allocation",
-        "C. Disk Mapping Area",
-        "D. Data Mode Access"
-      ],
-      "correct_answer": "A. Direct Memory Access",
-      "explanation": "DMA lets devices transfer data to or from memory with minimal CPU intervention.",
-      "topic": "I/O Systems & Protection"
-    },
-    {
-      "id": 148,
-      "question": "Buffering in I/O is used to:",
-      "options": [
-        "A. Increase interrupt count only",
-        "B. Handle speed mismatch between producer and consumer of data",
-        "C. Prevent all context switches",
-        "D. Replace page tables"
-      ],
-      "correct_answer": "B. Handle speed mismatch between producer and consumer of data",
-      "explanation": "Buffers temporarily store data so components operating at different speeds can work efficiently.",
-      "topic": "I/O Systems & Protection"
-    },
-    {
-      "id": 149,
-      "question": "Protection domain refers to:",
-      "options": [
-        "A. Range of disk cylinders",
-        "B. Set of resources a process can access",
-        "C. CPU burst limit",
-        "D. Type of page replacement"
-      ],
-      "correct_answer": "B. Set of resources a process can access",
-      "explanation": "A protection domain defines the objects and operations accessible to a process or user.",
-      "topic": "I/O Systems & Protection"
-    },
-    {
-      "id": 150,
-      "question": "Which principle says users/processes should be given only the access necessary to perform their tasks?",
-      "options": [
-        "A. Belady principle",
-        "B. Principle of least privilege",
-        "C. Convoy effect",
-        "D. Circular wait"
-      ],
-      "correct_answer": "B. Principle of least privilege",
-      "explanation": "Least privilege limits permissions to reduce damage from bugs, misuse, or compromise.",
-      "topic": "I/O Systems & Protection"
-    }
+    "id": 1,
+    "practice_set": 1,
+    "question_no": 1,
+    "question": "Which of the following is a non-preemptive scheduling algorithm?",
+    "options": [
+      "A. Round Robin",
+      "B. Shortest Remaining Time First",
+      "C. Priority Scheduling",
+      "D. First Come, First Served",
+      "E. Multilevel Queue"
+    ],
+    "correct_answer": "D. First Come, First Served",
+    "explanation": "It is non-preemptive as it runs processes to completion in arrival order.",
+    "topic": "CPU Scheduling - FCFS"
+  },
+  {
+    "id": 2,
+    "practice_set": 1,
+    "question_no": 5,
+    "question": "A deadlock occurs when which condition is NOT satisfied?",
+    "options": [
+      "A. Mutual Exclusion",
+      "B. Hold and Wait",
+      "C. Preemption",
+      "D. Circular Wait",
+      "E. Resource Allocation"
+    ],
+    "correct_answer": "C. Preemption",
+    "explanation": "If preemption is allowed, a resource can be taken back to prevent deadlock.",
+    "topic": "Deadlock"
+  },
+  {
+    "id": 3,
+    "practice_set": 1,
+    "question_no": 8,
+    "question": "What causes thrashing in Operating Systems?",
+    "options": [
+      "A. Excessive CPU usage",
+      "B. Low memory fragmentation",
+      "C. Frequent page faults",
+      "D. High priority scheduling",
+      "E. Thread switching"
+    ],
+    "correct_answer": "C. Frequent page faults",
+    "explanation": "Excessive swapping due to limited memory causes thrashing.",
+    "topic": "Thrashing"
+  },
+  {
+    "id": 4,
+    "practice_set": 2,
+    "question_no": 6,
+    "question": "Which scheduling algorithm is non-preemptive and selects the process with the smallest burst time?",
+    "options": [
+      "A. FCFS",
+      "B. SJF",
+      "C. Round Robin",
+      "D. Priority Scheduling",
+      "E. Multilevel Queue"
+    ],
+    "correct_answer": "B. SJF",
+    "explanation": "Shortest Job First selects the process with the least execution time.",
+    "topic": "CPU Scheduling - SJF"
+  },
+  {
+    "id": 5,
+    "practice_set": 2,
+    "question_no": 23,
+    "question": "Which is NOT an example of an operating system?",
+    "options": [
+      "A. Linux",
+      "B. Unix",
+      "C. Android",
+      "D. Oracle",
+      "E. Windows"
+    ],
+    "correct_answer": "D. Oracle",
+    "explanation": "Oracle is a database, not an operating system.",
+    "topic": "Operating System Basics"
+  },
+  {
+    "id": 6,
+    "practice_set": 2,
+    "question_no": 25,
+    "question": "Which technique is used to recover from a deadlock in OS?",
+    "options": [
+      "A. Wait-and-Wait",
+      "B. Resource Preemption",
+      "C. Circular Wait",
+      "D. No Preemption",
+      "E. Mutual Exclusion"
+    ],
+    "correct_answer": "B. Resource Preemption",
+    "explanation": "Taking away resources can help recover from deadlock.",
+    "topic": "Deadlock"
+  },
+  {
+    "id": 7,
+    "practice_set": 2,
+    "question_no": 56,
+    "question": "Which scheduling algorithm allows processes to move between queues based on their behavior?",
+    "options": [
+      "A. Round Robin",
+      "B. Multilevel Queue Scheduling",
+      "C. Multilevel Feedback Queue Scheduling",
+      "D. Priority Scheduling",
+      "E. SJF Scheduling"
+    ],
+    "correct_answer": "C. Multilevel Feedback Queue Scheduling",
+    "explanation": "This scheduling method allows dynamic movement between queues.",
+    "topic": "CPU Scheduling - Multilevel Feedback Queue"
+  },
+  {
+    "id": 8,
+    "practice_set": 3,
+    "question_no": 3,
+    "question": "Which type of operating system executes multiple jobs by switching between them?",
+    "options": [
+      "A. Single-user OS",
+      "B. Batch OS",
+      "C. Time-sharing OS",
+      "D. Network OS",
+      "E. Embedded OS"
+    ],
+    "correct_answer": "C. Time-sharing OS",
+    "explanation": "Time-sharing OS switches CPU between jobs, allowing multitasking.",
+    "topic": "Operating System"
+  },
+  {
+    "id": 9,
+    "practice_set": 3,
+    "question_no": 20,
+    "question": "Which of the following is an open-source operating system?",
+    "options": [
+      "A. Windows",
+      "B. MacOS",
+      "C. Unix",
+      "D. Linux",
+      "E. Solaris"
+    ],
+    "correct_answer": "D. Linux",
+    "explanation": "Linux is a popular open-source operating system.",
+    "topic": "Operating System Types"
+  },
+  {
+    "id": 10,
+    "practice_set": 3,
+    "question_no": 35,
+    "question": "Which command in UNIX is used to change file permissions?",
+    "options": [
+      "A. chmod",
+      "B. chown",
+      "C. ls",
+      "D. mkdir",
+      "E. rm"
+    ],
+    "correct_answer": "A. chmod",
+    "explanation": "chmod changes file permissions in UNIX/Linux.",
+    "topic": "UNIX/Linux Commands"
+  },
+  {
+    "id": 11,
+    "practice_set": 4,
+    "question_no": 14,
+    "question": "Which scheduling algorithm may cause starvation?",
+    "options": [
+      "A. FCFS",
+      "B. SJF",
+      "C. Round Robin",
+      "D. Priority Scheduling",
+      "E. Multilevel Feedback Queue"
+    ],
+    "correct_answer": "D. Priority Scheduling",
+    "explanation": "Lower priority processes may suffer starvation.",
+    "topic": "CPU Scheduling - Priority Scheduling"
+  },
+  {
+    "id": 12,
+    "practice_set": 4,
+    "question_no": 19,
+    "question": "In operating systems, which page replacement algorithm may suffer from Belady’s Anomaly?",
+    "options": [
+      "A. LRU",
+      "B. FIFO",
+      "C. Optimal",
+      "D. Clock",
+      "E. NRU"
+    ],
+    "correct_answer": "B. FIFO",
+    "explanation": "FIFO suffers from Belady’s Anomaly in page replacement.",
+    "topic": "Page Replacement - Belady Anomaly"
+  },
+  {
+    "id": 13,
+    "practice_set": 4,
+    "question_no": 26,
+    "question": "Which OS mechanism is responsible for providing memory protection?",
+    "options": [
+      "A. Swapping",
+      "B. Paging",
+      "C. TLB",
+      "D. MMU",
+      "E. Fragmentation"
+    ],
+    "correct_answer": "D. MMU",
+    "explanation": "Memory Management Unit provides memory protection.",
+    "topic": "Memory Management"
+  },
+  {
+    "id": 14,
+    "practice_set": 4,
+    "question_no": 27,
+    "question": "Which file system is specifically designed for flash memory?",
+    "options": [
+      "A. NTFS",
+      "B. FAT32",
+      "C. EXT4",
+      "D. exFAT",
+      "E. JFFS2"
+    ],
+    "correct_answer": "E. JFFS2",
+    "explanation": "JFFS2 is designed for flash memory file systems.",
+    "topic": "File System"
+  },
+  {
+    "id": 15,
+    "practice_set": 4,
+    "question_no": 47,
+    "question": "Which of the following scheduling algorithms is preemptive?",
+    "options": [
+      "A. FCFS",
+      "B. SJF (Non-Preemptive)",
+      "C. Round Robin",
+      "D. Priority (Non-Preemptive)",
+      "E. FIFO"
+    ],
+    "correct_answer": "C. Round Robin",
+    "explanation": "Round Robin is a preemptive CPU scheduling algorithm.",
+    "topic": "CPU Scheduling - Preemptive Algorithms"
+  },
+  {
+    "id": 16,
+    "practice_set": 4,
+    "question_no": 49,
+    "question": "Which file system supports file encryption natively?",
+    "options": [
+      "A. FAT32",
+      "B. NTFS",
+      "C. exFAT",
+      "D. ext3",
+      "E. HFS+"
+    ],
+    "correct_answer": "B. NTFS",
+    "explanation": "NTFS supports built-in file encryption.",
+    "topic": "File System"
+  },
+  {
+    "id": 17,
+    "practice_set": 4,
+    "question_no": 52,
+    "question": "Which command shows all listening ports in Linux?",
+    "options": [
+      "A. netstat -l",
+      "B. ps aux",
+      "C. who",
+      "D. uptime",
+      "E. ping localhost"
+    ],
+    "correct_answer": "A. netstat -l",
+    "explanation": "Shows all listening ports in Linux.",
+    "topic": "UNIX/Linux Commands"
+  },
+  {
+    "id": 18,
+    "practice_set": 4,
+    "question_no": 56,
+    "question": "Which command is used in UNIX to find a word inside files?",
+    "options": [
+      "A. find",
+      "B. locate",
+      "C. grep",
+      "D. ps",
+      "E. kill"
+    ],
+    "correct_answer": "C. grep",
+    "explanation": "grep searches for words or patterns in files.",
+    "topic": "UNIX/Linux Commands"
+  },
+  {
+    "id": 19,
+    "practice_set": 4,
+    "question_no": 60,
+    "question": "Which UNIX command is used to change file ownership?",
+    "options": [
+      "A. chmod",
+      "B. chown",
+      "C. grep",
+      "D. ps",
+      "E. sudo"
+    ],
+    "correct_answer": "B. chown",
+    "explanation": "chown changes file ownership in UNIX.",
+    "topic": "UNIX/Linux Commands"
+  },
+  {
+    "id": 20,
+    "practice_set": 5,
+    "question_no": 10,
+    "question": "Which page replacement algorithm uses a “second chance” mechanism?",
+    "options": [
+      "A. FIFO",
+      "B. Optimal",
+      "C. LRU",
+      "D. Clock",
+      "E. NRU"
+    ],
+    "correct_answer": "D. Clock",
+    "explanation": "Clock gives pages a second chance before replacement.",
+    "topic": "Page Replacement - Clock Algorithm"
+  },
+  {
+    "id": 21,
+    "practice_set": 5,
+    "question_no": 12,
+    "question": "In UNIX, which command is used to display currently running processes?",
+    "options": [
+      "A. ls",
+      "B. ps",
+      "C. cd",
+      "D. mkdir",
+      "E. grep"
+    ],
+    "correct_answer": "B. ps",
+    "explanation": "ps displays currently running processes in UNIX.",
+    "topic": "UNIX/Linux Commands"
+  },
+  {
+    "id": 22,
+    "practice_set": 5,
+    "question_no": 24,
+    "question": "Which one is an example of a real-time operating system?",
+    "options": [
+      "A. Ubuntu",
+      "B. Windows 11",
+      "C. RTLinux",
+      "D. macOS",
+      "E. Fedora"
+    ],
+    "correct_answer": "C. RTLinux",
+    "explanation": "RTLinux is a real-time operating system.",
+    "topic": "Operating System Types - RTOS"
+  },
+  {
+    "id": 23,
+    "practice_set": 5,
+    "question_no": 35,
+    "question": "Which scheduling algorithm favors short jobs and risks starvation of long jobs?",
+    "options": [
+      "A. Round Robin",
+      "B. FCFS",
+      "C. Priority Scheduling",
+      "D. SJF (Shortest Job First)",
+      "E. Multilevel Queue"
+    ],
+    "correct_answer": "D. SJF (Shortest Job First)",
+    "explanation": "SJF favors short jobs but can starve longer ones.",
+    "topic": "CPU Scheduling - SJF Starvation"
+  },
+  {
+    "id": 24,
+    "practice_set": 5,
+    "question_no": 37,
+    "question": "Which memory allocation method may suffer from external fragmentation?",
+    "options": [
+      "A. Paging",
+      "B. Swapping",
+      "C. Demand Paging",
+      "D. Swapping",
+      "E. Virtual Memory Note: The page shows Segmentation as the answer in the key, so the intended option text appears to be slightly blurred in the question area. The visible PDF answer key indicates the correct concept is Segmentation."
+    ],
+    "correct_answer": "Segmentation",
+    "explanation": "Segmentation can suffer from external fragmentation. The answer key marks this concept even though the question’s option text is slightly blurred.",
+    "topic": "Memory Allocation - Fragmentation"
+  },
+  {
+    "id": 25,
+    "practice_set": 5,
+    "question_no": 53,
+    "question": "Which system call is used to create a new process in UNIX?",
+    "options": [
+      "A. exec()",
+      "B. create()",
+      "C. spawn()",
+      "D. fork()",
+      "E. init()"
+    ],
+    "correct_answer": "D. fork()",
+    "explanation": "fork() creates a new child process in UNIX.",
+    "topic": "Process Management"
+  },
+  {
+    "id": 26,
+    "practice_set": 5,
+    "question_no": 54,
+    "question": "Which technique is used to implement virtual memory?",
+    "options": [
+      "A. Fragmentation",
+      "B. Paging",
+      "C. Multitasking",
+      "D. Multithreading",
+      "E. Forking"
+    ],
+    "correct_answer": "B. Paging",
+    "explanation": "Paging implements virtual memory.",
+    "topic": "Virtual Memory"
+  },
+  {
+    "id": 27,
+    "practice_set": 6,
+    "question_no": 11,
+    "question": "Which disk scheduling algorithm services the request closest to the current head position, minimizing seek time but risking starvation for distant requests?",
+    "options": [
+      "A. FCFS",
+      "B. SSTF",
+      "C. SCAN",
+      "D. C-SCAN",
+      "E. LOOK"
+    ],
+    "correct_answer": "B. SSTF",
+    "explanation": "Shortest Seek Time First minimizes head movement but can cause starvation.",
+    "topic": "Disk Scheduling - SSTF"
+  },
+  {
+    "id": 28,
+    "practice_set": 6,
+    "question_no": 16,
+    "question": "Which scheduling algorithm assigns fixed time slices to processes, ensuring that no process monopolizes the CPU for too long?",
+    "options": [
+      "A. SJF",
+      "B. FCFS",
+      "C. Priority Scheduling",
+      "D. Round Robin",
+      "E. Multilevel Queue"
+    ],
+    "correct_answer": "D. Round Robin",
+    "explanation": "Round Robin assigns fixed time slices to processes.",
+    "topic": "CPU Scheduling - Round Robin"
+  },
+  {
+    "id": 29,
+    "practice_set": 6,
+    "question_no": 23,
+    "question": "Which part of an operating system handles memory protection, virtual memory, and paging for process isolation and efficiency?",
+    "options": [
+      "A. Scheduler",
+      "B. Memory Manager",
+      "C. Device Manager",
+      "D. File System",
+      "E. Command Interpreter"
+    ],
+    "correct_answer": "B. Memory Manager",
+    "explanation": "Handles virtual memory, paging, and memory protection.",
+    "topic": "Memory Management"
+  },
+  {
+    "id": 30,
+    "practice_set": 6,
+    "question_no": 28,
+    "question": "Which memory management technique breaks memory into fixed-size blocks and maps logical memory to physical memory using a table?",
+    "options": [
+      "A. Segmentation",
+      "B. Paging",
+      "C. Swapping",
+      "D. Fragmentation",
+      "E. Contiguous Allocation"
+    ],
+    "correct_answer": "B. Paging",
+    "explanation": "Paging divides memory into fixed-size blocks called pages.",
+    "topic": "UNIX/Linux Commands"
+  },
+  {
+    "id": 31,
+    "practice_set": 6,
+    "question_no": 35,
+    "question": "Which operating system component is responsible for scheduling processes based on priority, CPU time requirements, and resource availability?",
+    "options": [
+      "A. Memory Manager",
+      "B. Device Driver",
+      "C. Process Scheduler",
+      "D. Kernel Monitor",
+      "E. Interrupt Handler"
+    ],
+    "correct_answer": "C. Process Scheduler",
+    "explanation": "Allocates CPU time to various processes based on priority and needs.",
+    "topic": "Operating System"
+  },
+  {
+    "id": 32,
+    "practice_set": 6,
+    "question_no": 42,
+    "question": "Which command in Linux is used to find and display the manual page for another command or program?",
+    "options": [
+      "A. grep",
+      "B. man",
+      "C. cat",
+      "D. pwd",
+      "E. find"
+    ],
+    "correct_answer": "B. man",
+    "explanation": "man displays manual pages for commands in Linux.",
+    "topic": "UNIX/Linux Commands"
+  },
+  {
+    "id": 33,
+    "practice_set": 6,
+    "question_no": 46,
+    "question": "Which disk scheduling algorithm moves the disk arm toward the end of the disk and then reverses direction, servicing requests along the way?",
+    "options": [
+      "A. SSTF",
+      "B. SCAN",
+      "C. LOOK",
+      "D. C-SCAN",
+      "E. N-SCAN"
+    ],
+    "correct_answer": "B. SCAN",
+    "explanation": "SCAN services disk requests back and forth across disk tracks.",
+    "topic": "Disk Scheduling - SCAN"
+  },
+  {
+    "id": 34,
+    "practice_set": 6,
+    "question_no": 56,
+    "question": "Which UNIX command is used to view the current working directory path?",
+    "options": [
+      "A. dir",
+      "B. path",
+      "C. pwd",
+      "D. ls",
+      "E. cd"
+    ],
+    "correct_answer": "C. pwd",
+    "explanation": "pwd shows the current working directory in UNIX/Linux.",
+    "topic": "UNIX/Linux Commands"
+  },
+  {
+    "id": 35,
+    "practice_set": 7,
+    "question_no": 2,
+    "question": "Which operating system concept allows multiple processes to share CPU by switching between them so fast that users perceive they are running simultaneously?",
+    "options": [
+      "A. Batch Processing",
+      "B. Multiprocessing",
+      "C. Time Sharing",
+      "D. Multitasking",
+      "E. Swapping"
+    ],
+    "correct_answer": "C. Time Sharing",
+    "explanation": "Time sharing OS rapidly switches between tasks, giving an illusion of simultaneity.",
+    "topic": "Operating System"
+  },
+  {
+    "id": 36,
+    "practice_set": 7,
+    "question_no": 43,
+    "question": "Which system software acts as an interface between the user and the hardware, managing hardware resources and software execution?",
+    "options": [
+      "A. Application Software",
+      "B. Compiler",
+      "C. Operating System",
+      "D. Loader",
+      "E. Utility Software"
+    ],
+    "correct_answer": "C. Operating System",
+    "explanation": "The OS manages hardware, software, and user interaction.",
+    "topic": "Operating System Basics"
+  },
+  {
+    "id": 37,
+    "practice_set": 7,
+    "question_no": 46,
+    "question": "Which disk scheduling algorithm treats the disk like a cylinder and services requests in one direction only?",
+    "options": [
+      "A. SSTF",
+      "B. SCAN",
+      "C. C-SCAN",
+      "D. LOOK",
+      "E. N-LOOK"
+    ],
+    "correct_answer": "C. C-SCAN",
+    "explanation": "C-SCAN services requests in one direction like a circular list.",
+    "topic": "Disk Scheduling - C-SCAN"
+  },
+  {
+    "id": 38,
+    "practice_set": 7,
+    "question_no": 59,
+    "question": "Which term describes the situation when the system spends more time swapping pages in and out of memory than executing actual processes?",
+    "options": [
+      "A. Paging",
+      "B. Swapping",
+      "C. Thrashing",
+      "D. Fragmentation",
+      "E. Deadlock"
+    ],
+    "correct_answer": "C. Thrashing",
+    "explanation": "Thrashing occurs when excessive page faults reduce process execution time.",
+    "topic": "Operating System"
+  },
+  {
+    "id": 39,
+    "practice_set": 8,
+    "question_no": 15,
+    "question": "Which operating system concept allows a process to be temporarily removed from CPU and later resumed?",
+    "options": [
+      "A. Thrashing",
+      "B. Swapping",
+      "C. Scheduling",
+      "D. Preemption",
+      "E. Dispatching"
+    ],
+    "correct_answer": "D. Preemption",
+    "explanation": "Preemption allows OS to stop and resume a process later.",
+    "topic": "Process Management - Preemption"
+  },
+  {
+    "id": 40,
+    "practice_set": 8,
+    "question_no": 40,
+    "question": "Which operating system technique allows multiple users to access a computer system simultaneously?",
+    "options": [
+      "A. Multithreading",
+      "B. Multiprocessing",
+      "C. Multi-user system",
+      "D. Time-sharing system",
+      "E. Distributed system"
+    ],
+    "correct_answer": "C. Multi-user system",
+    "explanation": "Multi-user systems allow simultaneous user access.",
+    "topic": "Operating System"
+  },
+  {
+    "id": 41,
+    "practice_set": 9,
+    "question_no": 50,
+    "question": "In an operating system, which technique moves entire processes between main memory and disk to free up RAM?",
+    "options": [
+      "A. Caching",
+      "B. Paging",
+      "C. Swapping",
+      "D. Thrashing",
+      "E. Segmentation"
+    ],
+    "correct_answer": "C. Swapping",
+    "explanation": "Swapping moves entire processes between RAM and disk.",
+    "topic": "Swapping"
+  },
+  {
+    "id": 42,
+    "practice_set": 9,
+    "question_no": 54,
+    "question": "Which technique in operating systems helps to increase CPU utilization by overlapping I/O operations with CPU processing?",
+    "options": [
+      "A. Context Switching",
+      "B. Pipelining",
+      "C. Multithreading",
+      "D. Buffering",
+      "E. Caching"
+    ],
+    "correct_answer": "C. Multithreading",
+    "explanation": "Multithreading overlaps I/O and processing.",
+    "topic": "UNIX/Linux Commands"
+  }
   ]
 }

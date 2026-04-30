@@ -1,0 +1,12 @@
+
+> ibps-so-it-mains-mock-platform@1.0.0 dev
+> next dev
+
+   ▲ Next.js 15.5.14
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.35:3000
+
+ ✓ Starting...
+ ✓ Ready in 5.4s
+ ○ Compiling / ...
+ ✓ Compiled / in 15.3s (1386 modules)

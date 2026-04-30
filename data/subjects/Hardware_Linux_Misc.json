@@ -1,0 +1,436 @@
+{
+  "Hardware_Linux_Misc_exam_questions": [
+ {
+    "id": 1,
+    "practice_set": 1,
+    "question_no": 58,
+    "question": "What is the role of the ALU in the CPU?",
+    "options": [
+      "A. Manage file operations",
+      "B. Perform arithmetic and logic operations",
+      "C. Control memory access",
+      "D. Handle graphical rendering",
+      "E. Execute network protocols"
+    ],
+    "correct_answer": "B. Perform arithmetic and logic operations",
+    "explanation": "The ALU is responsible for math and logic tasks in the CPU.",
+    "topic": "Computer Organization / Hardware: ALU"
+  },
+  {
+    "id": 2,
+    "practice_set": 1,
+    "question_no": 59,
+    "question": "What is the smallest addressable unit of memory?",
+    "options": [
+      "A. Byte",
+      "B. Word",
+      "C. Bit",
+      "D. Sector",
+      "E. Page"
+    ],
+    "correct_answer": "A. Byte",
+    "explanation": "A byte is the smallest addressable unit of memory in most systems.",
+    "topic": "Computer Organization / Hardware: Memory Units"
+  },
+  {
+    "id": 3,
+    "practice_set": 3,
+    "question_no": 11,
+    "question": "Which memory is directly accessible by the CPU?",
+    "options": [
+      "A. Cache memory",
+      "B. Hard disk",
+      "C. SSD",
+      "D. Optical Drive",
+      "E. Network Storage"
+    ],
+    "correct_answer": "A. Cache memory",
+    "explanation": "Cache is directly accessible and very fast for CPU use.",
+    "topic": "Computer Organization / Hardware: Cache Memory"
+  },
+  {
+    "id": 4,
+    "practice_set": 3,
+    "question_no": 23,
+    "question": "Which part of the CPU carries out arithmetic and logic operations?",
+    "options": [
+      "A. Register",
+      "B. Cache",
+      "C. ALU",
+      "D. CU",
+      "E. ROM"
+    ],
+    "correct_answer": "C. ALU",
+    "explanation": "The Arithmetic Logic Unit performs computations.",
+    "topic": "Computer Organization / Hardware: CPU Components"
+  },
+  {
+    "id": 5,
+    "practice_set": 4,
+    "question_no": 27,
+    "question": "Which file system is specifically designed for flash memory?",
+    "options": [
+      "A. NTFS",
+      "B. FAT32",
+      "C. EXT4",
+      "D. exFAT",
+      "E. JFFS2"
+    ],
+    "correct_answer": "E. JFFS2",
+    "explanation": "JFFS2 is designed for flash memory file systems.",
+    "topic": "Computer Organization / Hardware: File Systems"
+  },
+  {
+    "id": 6,
+    "practice_set": 4,
+    "question_no": 49,
+    "question": "Which file system supports file encryption natively?",
+    "options": [
+      "A. FAT32",
+      "B. NTFS",
+      "C. exFAT",
+      "D. ext3",
+      "E. HFS+"
+    ],
+    "correct_answer": "B. NTFS",
+    "explanation": "NTFS supports built-in file encryption.",
+    "topic": "Computer Organization / Hardware: File Systems"
+  },
+  {
+    "id": 7,
+    "practice_set": 5,
+    "question_no": 48,
+    "question": "Which statement about static RAM (SRAM) is correct?",
+    "options": [
+      "A. It needs frequent refreshing",
+      "B. It is slower than DRAM",
+      "C. It is faster but more expensive than DRAM",
+      "D. It is mainly used for mass storage",
+      "E. It is non-volatile"
+    ],
+    "correct_answer": "C. It is faster but more expensive than DRAM",
+    "explanation": "SRAM is fast and costly.",
+    "topic": "Computer Organization / Hardware: SRAM / DRAM"
+  },
+  {
+    "id": 8,
+    "practice_set": 5,
+    "question_no": 49,
+    "question": "Which RAID level provides mirroring without striping?",
+    "options": [
+      "A. RAID 0",
+      "B. RAID 1",
+      "C. RAID 5",
+      "D. RAID 6",
+      "E. RAID 10"
+    ],
+    "correct_answer": "B. RAID 1",
+    "explanation": "RAID 1 provides mirroring without striping.",
+    "topic": "Computer Organization / Hardware: RAID"
+  },
+  {
+    "id": 9,
+    "practice_set": 6,
+    "question_no": 45,
+    "question": "Which memory storage type is non-volatile, allows multiple writes, and is commonly used in USB drives and SSDs?",
+    "options": [
+      "A. RAM",
+      "B. ROM",
+      "C. Flash Memory",
+      "D. SRAM",
+      "E. DRAM"
+    ],
+    "correct_answer": "C. Flash Memory",
+    "explanation": "Flash memory is fast, non-volatile, and used in USB drives and SSDs.",
+    "topic": "Computer Organization / Hardware: Flash Memory"
+  },
+  {
+    "id": 10,
+    "practice_set": 6,
+    "question_no": 49,
+    "question": "Which component of the CPU is responsible for performing arithmetic operations and logical comparisons?",
+    "options": [
+      "A. Control Unit",
+      "B. Register",
+      "C. Bus Interface",
+      "D. ALU",
+      "E. Cache"
+    ],
+    "correct_answer": "D. ALU",
+    "explanation": "Arithmetic Logic Unit performs calculations and comparisons.",
+    "topic": "Computer Organization / Hardware: ALU"
+  },
+  {
+    "id": 11,
+    "practice_set": 7,
+    "question_no": 6,
+    "question": "Which type of memory is non-volatile, faster than traditional hard drives, and used in devices like SSDs and USB drives?",
+    "options": [
+      "A. RAM",
+      "B. DRAM",
+      "C. Flash Memory",
+      "D. Cache Memory",
+      "E. SRAM"
+    ],
+    "correct_answer": "C. Flash Memory",
+    "explanation": "Flash memory is non-volatile and used in USB drives and SSDs.",
+    "topic": "Computer Organization / Hardware: Flash Memory"
+  },
+  {
+    "id": 12,
+    "practice_set": 7,
+    "question_no": 29,
+    "question": "Which type of memory is the fastest to access but also the most expensive per bit stored?",
+    "options": [
+      "A. RAM",
+      "B. ROM",
+      "C. Cache Memory",
+      "D. SSD",
+      "E. Flash Memory"
+    ],
+    "correct_answer": "C. Cache Memory",
+    "explanation": "Cache is the fastest but most expensive memory type.",
+    "topic": "Computer Organization / Hardware: Cache Memory"
+  },
+  {
+    "id": 13,
+    "practice_set": 8,
+    "question_no": 58,
+    "question": "In computer memory hierarchy, which memory is closest to the CPU and fastest to access?",
+    "options": [
+      "A. Cache Memory",
+      "B. RAM",
+      "C. Hard Disk",
+      "D. SSD",
+      "E. Virtual Memory"
+    ],
+    "correct_answer": "A. Cache Memory",
+    "explanation": "Cache is fastest and closest to CPU.",
+    "topic": "Computer Organization / Hardware: Memory Hierarchy"
+  },
+  {
+    "id": 14,
+    "practice_set": 1,
+    "question_no": 51,
+    "question": "What is the purpose of the git commit command?",
+    "options": [
+      "A. Clone a repository",
+      "B. Upload files to a server",
+      "C. Record changes to the local repository",
+      "D. Switch branches",
+      "E. Delete repository history"
+    ],
+    "correct_answer": "C. Record changes to the local repository",
+    "explanation": "git commit saves the current state of changes in your local Git history.",
+    "topic": "Linux / UNIX / Git / Compliance: Git"
+  },
+  {
+    "id": 15,
+    "practice_set": 1,
+    "question_no": 52,
+    "question": "Which Git command is used to check current repository status?",
+    "options": [
+      "A. git list",
+      "B. git status",
+      "C. git show",
+      "D. git scan",
+      "E. git log"
+    ],
+    "correct_answer": "B. git status",
+    "explanation": "It shows the current state of your working directory and staging area.",
+    "topic": "Linux / UNIX / Git / Compliance: Git"
+  },
+  {
+    "id": 16,
+    "practice_set": 1,
+    "question_no": 53,
+    "question": "What does IT compliance primarily focus on?",
+    "options": [
+      "A. Coding standards",
+      "B. Design creativity",
+      "C. Meeting regulatory standards",
+      "D. Optimizing algorithms",
+      "E. Improving graphics"
+    ],
+    "correct_answer": "C. Meeting regulatory standards",
+    "explanation": "IT compliance ensures organizational adherence to laws and standards.",
+    "topic": "Linux / UNIX / Git / Compliance: IT Compliance"
+  },
+  {
+    "id": 17,
+    "practice_set": 1,
+    "question_no": 54,
+    "question": "Which law regulates data protection in the European Union?",
+    "options": [
+      "A. HIPAA",
+      "B. GDPR",
+      "C. PCI DSS",
+      "D. FISMA",
+      "E. DMCA"
+    ],
+    "correct_answer": "B. GDPR",
+    "explanation": "The General Data Protection Regulation governs data protection in the EU.",
+    "topic": "Linux / UNIX / Git / Compliance: Data Protection Law"
+  },
+  {
+    "id": 18,
+    "practice_set": 3,
+    "question_no": 35,
+    "question": "Which command in UNIX is used to change file permissions?",
+    "options": [
+      "A. chmod",
+      "B. chown",
+      "C. ls",
+      "D. mkdir",
+      "E. rm"
+    ],
+    "correct_answer": "A. chmod",
+    "explanation": "chmod changes file permissions in UNIX/Linux.",
+    "topic": "Linux / UNIX / Git / Compliance: UNIX Commands"
+  },
+  {
+    "id": 19,
+    "practice_set": 4,
+    "question_no": 52,
+    "question": "Which command shows all listening ports in Linux?",
+    "options": [
+      "A. netstat -l",
+      "B. ps aux",
+      "C. who",
+      "D. uptime",
+      "E. ping localhost"
+    ],
+    "correct_answer": "A. netstat -l",
+    "explanation": "Shows all listening ports in Linux.",
+    "topic": "Linux / UNIX / Git / Compliance: Linux Networking Commands"
+  },
+  {
+    "id": 20,
+    "practice_set": 4,
+    "question_no": 56,
+    "question": "Which command is used in UNIX to find a word inside files?",
+    "options": [
+      "A. find",
+      "B. locate",
+      "C. grep",
+      "D. ps",
+      "E. kill"
+    ],
+    "correct_answer": "C. grep",
+    "explanation": "grep searches for words or patterns in files.",
+    "topic": "Linux / UNIX / Git / Compliance: UNIX Commands"
+  },
+  {
+    "id": 21,
+    "practice_set": 4,
+    "question_no": 60,
+    "question": "Which UNIX command is used to change file ownership?",
+    "options": [
+      "A. chmod",
+      "B. chown",
+      "C. grep",
+      "D. ps",
+      "E. sudo"
+    ],
+    "correct_answer": "B. chown",
+    "explanation": "chown changes file ownership in UNIX.",
+    "topic": "Linux / UNIX / Git / Compliance: UNIX Commands"
+  },
+  {
+    "id": 22,
+    "practice_set": 5,
+    "question_no": 12,
+    "question": "In UNIX, which command is used to display currently running processes?",
+    "options": [
+      "A. ls",
+      "B. ps",
+      "C. cd",
+      "D. mkdir",
+      "E. grep"
+    ],
+    "correct_answer": "B. ps",
+    "explanation": "ps displays currently running processes in UNIX.",
+    "topic": "Linux / UNIX / Git / Compliance: UNIX Process Commands"
+  },
+  {
+    "id": 23,
+    "practice_set": 6,
+    "question_no": 42,
+    "question": "Which command in Linux is used to find and display the manual page for another command or program?",
+    "options": [
+      "A. grep",
+      "B. man",
+      "C. cat",
+      "D. pwd",
+      "E. find"
+    ],
+    "correct_answer": "B. man",
+    "explanation": "man displays manual pages for commands in Linux.",
+    "topic": "Linux / UNIX / Git / Compliance: Linux Manual Commands"
+  },
+  {
+    "id": 24,
+    "practice_set": 6,
+    "question_no": 56,
+    "question": "Which UNIX command is used to view the current working directory path?",
+    "options": [
+      "A. dir",
+      "B. path",
+      "C. pwd",
+      "D. ls",
+      "E. cd"
+    ],
+    "correct_answer": "C. pwd",
+    "explanation": "pwd shows the current working directory in UNIX/Linux.",
+    "topic": "Linux / UNIX / Git / Compliance: UNIX Directory Commands"
+  },
+  {
+    "id": 25,
+    "practice_set": 5,
+    "question_no": 40,
+    "question": "Which number system is used by computers internally?",
+    "options": [
+      "A. Decimal",
+      "B. Binary",
+      "C. Octal",
+      "D. Hexadecimal",
+      "E. Base-3"
+    ],
+    "correct_answer": "B. Binary",
+    "explanation": "Computers use binary internally.",
+    "topic": "Miscellaneous IT / General Computer Awareness: Number System"
+  },
+  {
+    "id": 26,
+    "practice_set": 7,
+    "question_no": 40,
+    "question": "Which method of file access reads data sequentially from the beginning to the end without jumping to a specific location?",
+    "options": [
+      "A. Direct Access",
+      "B. Indexed Access",
+      "C. Sequential Access",
+      "D. Random Access",
+      "E. Concurrent Access"
+    ],
+    "correct_answer": "C. Sequential Access",
+    "explanation": "Sequential Access reads data in order, one record after another.",
+    "topic": "Miscellaneous IT / General Computer Awareness: File Access Methods"
+  },
+  {
+    "id": 27,
+    "practice_set": 7,
+    "question_no": 43,
+    "question": "Which system software acts as an interface between the user and the hardware, managing hardware resources and software execution?",
+    "options": [
+      "A. Application Software",
+      "B. Compiler",
+      "C. Operating System",
+      "D. Loader",
+      "E. Utility Software"
+    ],
+    "correct_answer": "C. Operating System",
+    "explanation": "The OS manages hardware, software, and user interaction.",
+    "topic": "Miscellaneous IT / General Computer Awareness: System Software"
+  }
+  ]
+}

@@ -10,10 +10,15 @@ export default function SubjectsPage() {
       <FadeIn className="mb-10 max-w-3xl">
         <span className="section-kicker">Choose a Subject</span>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-950">
-          Subject-wise professional knowledge mocks for IBPS SO IT mains.
+          Subject-wise professional knowledge mocks, ordered by IBPS SO IT mains priority.
         </h1>
         <p className="mt-4 text-lg leading-8 text-slate-600">
-          Each mock is loaded from local JSON data, uses consistent scoring, and is designed to be easy to extend as your question bank grows.
+          Each mock is loaded from local JSON data and arranged by an IBPS-style syllabus flow so you can start with the highest-weight areas first.
+        </p>
+        <p className="mt-3 text-sm leading-6 text-slate-500">
+          Weightage shown here is an approximate planning guide for the 60-mark Professional
+          Knowledge mains paper. IBPS officially publishes the full paper pattern, but not a fixed
+          topic-wise marks split.
         </p>
       </FadeIn>
 

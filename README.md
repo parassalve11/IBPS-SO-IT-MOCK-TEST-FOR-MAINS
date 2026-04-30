@@ -51,14 +51,21 @@ npm run start
 ## Data Flow
 
 1. Add a new JSON file under `data/subjects/`
-2. Register its metadata and imported JSON in `constants/subjects.ts`
+2. Optionally add a metadata override in `constants/subjects.ts` for a custom display name, description, short name, accent, syllabus order, or approximate IBPS weightage
 3. The app will pick it up across landing, subjects, instructions, test, result, and review pages
 
-## Sample Subjects Included
+## Current Subjects Included
 
+- Cloud, Web API & Emerging Tech
 - Computer Networks
-- DBMS
+- Cyber Security
+- Database Management Systems
+- Data Structures and Algorithms
+- Hardware, Linux & Miscellaneous
+- Object Oriented Programming
 - Operating Systems
+- Python Programming
+- Software Engineering
 
 ## Project Structure
 
