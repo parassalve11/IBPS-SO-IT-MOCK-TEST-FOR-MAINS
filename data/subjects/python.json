@@ -1,932 +1,2622 @@
 {
   "python_exam_questions": [
-   {
-    "id": 1,
-    "practice_set": 1,
-    "question_no": 11,
-    "question": "What is the output of print(type([1,2,3])) in Python?",
-    "options": [
-      "A. <class 'tuple'>",
-      "B. <class 'array'>",
-      "C. <class 'list'>",
-      "D. <class 'set'>",
-      "E. <class 'dict'>"
-    ],
-    "correct_answer": "C. <class 'list'>",
-    "explanation": "Lists are defined with square brackets in Python.",
-    "topic": "Python Data Types"
-  },
-  {
-    "id": 2,
-    "practice_set": 1,
-    "question_no": 13,
-    "question": "In Python, what does the *args syntax represent?",
-    "options": [
-      "A. Named keyword arguments",
-      "B. Arbitrary keyword arguments",
-      "C. Optional function return",
-      "D. Arbitrary positional arguments",
-      "E. Function overloading"
-    ],
-    "correct_answer": "D. Arbitrary positional arguments",
-    "explanation": "*args collects extra unnamed arguments into a tuple.",
-    "topic": "Python Functions & Methods"
-  },
-  {
-    "id": 3,
-    "practice_set": 1,
-    "question_no": 15,
-    "question": "Which keyword in Python defines a class method?",
-    "options": [
-      "A. @staticmethod",
-      "B. @classmethod",
-      "C. def",
-      "D. static",
-      "E. func"
-    ],
-    "correct_answer": "B. @classmethod",
-    "explanation": "It decorates a method to receive the class as its first argument.",
-    "topic": "Python Functions & Methods"
-  },
-  {
-    "id": 4,
-    "practice_set": 1,
-    "question_no": 19,
-    "question": "What is returned by len({\"a\":1, \"b\":2}) in Python?",
-    "options": [
-      "A. 0",
-      "B. 1",
-      "C. 2",
-      "D. 3",
-      "E. Error"
-    ],
-    "correct_answer": "C. 2",
-    "explanation": "The dictionary has two keys: \"a\" and \"b\".",
-    "topic": "Python Collections"
-  },
-  {
-    "id": 5,
-    "practice_set": 2,
-    "question_no": 3,
-    "question": "In Python, what does the enumerate() function return?",
-    "options": [
-      "A. List of indices",
-      "B. Iterator of tuples containing index and value",
-      "C. String of values",
-      "D. Dictionary of key-value pairs",
-      "E. Set of values"
-    ],
-    "correct_answer": "B. Iterator of tuples containing index and value",
-    "explanation": "enumerate() adds a count to items and returns index-value pairs.",
-    "topic": "Python Programming"
-  },
-  {
-    "id": 6,
-    "practice_set": 2,
-    "question_no": 30,
-    "question": "Which Python method can be used to create an empty set?",
-    "options": [
-      "A. set()",
-      "B. {}",
-      "C. empty_set()",
-      "D. list()",
-      "E. dict()"
-    ],
-    "correct_answer": "A. set()",
-    "explanation": "set() creates an empty set; {} creates an empty dictionary.",
-    "topic": "Python Collections"
-  },
-  {
-    "id": 7,
-    "practice_set": 2,
-    "question_no": 43,
-    "question": "Which method is used in Python to remove whitespace from the beginning and end of a string?",
-    "options": [
-      "A. clean()",
-      "B. strip()",
-      "C. remove()",
-      "D. trim()",
-      "E. split()"
-    ],
-    "correct_answer": "B. strip()",
-    "explanation": "strip() removes leading and trailing whitespace.",
-    "topic": "Python Strings"
-  },
-  {
-    "id": 8,
-    "practice_set": 3,
-    "question_no": 10,
-    "question": "Which of the following is NOT a Python data type?",
-    "options": [
-      "A. list",
-      "B. int",
-      "C. char",
-      "D. tuple",
-      "E. dict"
-    ],
-    "correct_answer": "C. char",
-    "explanation": "Python does not have a separate char type; it uses single-character strings.",
-    "topic": "Python Data Types"
-  },
-  {
-    "id": 9,
-    "practice_set": 3,
-    "question_no": 12,
-    "question": "Which Python method returns the list in reversed order?",
-    "options": [
-      "A. reverse()",
-      "B. reversed()",
-      "C. invert()",
-      "D. swap()",
-      "E. flip()"
-    ],
-    "correct_answer": "A. reverse()",
-    "explanation": "reverse() reverses a list in place in Python.",
-    "topic": "Python Lists"
-  },
-  {
-    "id": 10,
-    "practice_set": 3,
-    "question_no": 17,
-    "question": "In Python, which operator is used for exponentiation?",
-    "options": [
-      "A. ^",
-      "B. **",
-      "C. %",
-      "D. //",
-      "E. *"
-    ],
-    "correct_answer": "B. **",
-    "explanation": "** is used for exponentiation in Python.",
-    "topic": "Python Operators & Expressions"
-  },
-  {
-    "id": 11,
-    "practice_set": 3,
-    "question_no": 21,
-    "question": "Which Python collection type does not allow duplicate values?",
-    "options": [
-      "A. List",
-      "B. Dictionary",
-      "C. Set",
-      "D. Tuple",
-      "E. Array"
-    ],
-    "correct_answer": "C. Set",
-    "explanation": "Sets do not allow duplicate elements.",
-    "topic": "Python Collections"
-  },
-  {
-    "id": 12,
-    "practice_set": 3,
-    "question_no": 29,
-    "question": "Which method is used to create an object in Python?",
-    "options": [
-      "A. __start__()",
-      "B. __create__()",
-      "C. __init__()",
-      "D. new()",
-      "E. constructor()"
-    ],
-    "correct_answer": "C. __init__()",
-    "explanation": "__init__() initializes new objects in Python classes.",
-    "topic": "Python Programming"
-  },
-  {
-    "id": 13,
-    "practice_set": 3,
-    "question_no": 39,
-    "question": "Which file extension is associated with Python files?",
-    "options": [
-      "A. .pyc",
-      "B. .cpp",
-      "C. .java",
-      "D. .py",
-      "E. .pt"
-    ],
-    "correct_answer": "D. .py",
-    "explanation": "Python files use the .py extension.",
-    "topic": "Python Modules & File Handling"
-  },
-  {
-    "id": 14,
-    "practice_set": 3,
-    "question_no": 42,
-    "question": "Which technique is used in Python to handle exceptions?",
-    "options": [
-      "A. try-except",
-      "B. if-else",
-      "C. while loop",
-      "D. for loop",
-      "E. define-exception"
-    ],
-    "correct_answer": "A. try-except",
-    "explanation": "Python uses try-except for exception handling.",
-    "topic": "Python Exception Handling"
-  },
-  {
-    "id": 15,
-    "practice_set": 3,
-    "question_no": 48,
-    "question": "Which symbol is used to comment a single line in Python?",
-    "options": [
-      "A. //",
-      "B. #",
-      "C. /* */",
-      "D. %%",
-      "E. @"
-    ],
-    "correct_answer": "B. #",
-    "explanation": "# denotes a single-line comment in Python.",
-    "topic": "Python Programming"
-  },
-  {
-    "id": 16,
-    "practice_set": 3,
-    "question_no": 53,
-    "question": "Which operator is overloaded for object comparison in Python?",
-    "options": [
-      "A. +",
-      "B. ==",
-      "C. *",
-      "D. []",
-      "E. @"
-    ],
-    "correct_answer": "B. ==",
-    "explanation": "Equality operator overloading is used for object comparison.",
-    "topic": "Python Programming"
-  },
-  {
-    "id": 17,
-    "practice_set": 3,
-    "question_no": 54,
-    "question": "Which Python keyword is used to declare a function?",
-    "options": [
-      "A. method",
-      "B. function",
-      "C. define",
-      "D. def",
-      "E. class"
-    ],
-    "correct_answer": "D. def",
-    "explanation": "def declares functions in Python.",
-    "topic": "Python Functions & Methods"
-  },
-  {
-    "id": 18,
-    "practice_set": 4,
-    "question_no": 1,
-    "question": "In Python, what will be the output of print(2 ** 3 ** 2)?",
-    "options": [
-      "A. 64",
-      "B. 512",
-      "C. 729",
-      "D. 8",
-      "E. 16"
-    ],
-    "correct_answer": "B. 512",
-    "explanation": "In Python, 2 ** 3 ** 2 is evaluated as 2 ** (3 ** 2) = 2 ** 9 = 512.",
-    "topic": "Python Operators & Expressions"
-  },
-  {
-    "id": 19,
-    "practice_set": 4,
-    "question_no": 6,
-    "question": "Which Python function returns the absolute value of a number?",
-    "options": [
-      "A. abs()",
-      "B. absolute()",
-      "C. fabs()",
-      "D. mod()",
-      "E. pow()"
-    ],
-    "correct_answer": "A. abs()",
-    "explanation": "abs() returns the absolute value of a number in Python.",
-    "topic": "Python Built-in Functions"
-  },
-  {
-    "id": 20,
-    "practice_set": 4,
-    "question_no": 16,
-    "question": "In Python, what will be the output of bool({})?",
-    "options": [
-      "A. True",
-      "B. False",
-      "C. None",
-      "D. Error",
-      "E. 0"
-    ],
-    "correct_answer": "B. False",
-    "explanation": "An empty dictionary evaluates to false in Python.",
-    "topic": "Python Programming"
-  },
-  {
-    "id": 21,
-    "practice_set": 4,
-    "question_no": 29,
-    "question": "Which Python module is used for multithreaded programming?",
-    "options": [
-      "A. multiprocessing",
-      "B. multithread",
-      "C. threading",
-      "D. concurrent",
-      "E. async"
-    ],
-    "correct_answer": "C. threading",
-    "explanation": "The threading module is used for multithreading in Python.",
-    "topic": "Python Modules & File Handling"
-  },
-  {
-    "id": 22,
-    "practice_set": 4,
-    "question_no": 39,
-    "question": "Which file operation mode in Python opens a file for both reading and writing?",
-    "options": [
-      "A. r",
-      "B. w",
-      "C. r+",
-      "D. w+",
-      "E. a"
-    ],
-    "correct_answer": "C. r+",
-    "explanation": "Opens a file for reading and writing without truncating it.",
-    "topic": "Python Modules & File Handling"
-  },
-  {
-    "id": 23,
-    "practice_set": 4,
-    "question_no": 44,
-    "question": "In Python, what is the result of 3 * 'AB'?",
-    "options": [
-      "A. ABABAB",
-      "B. ABC",
-      "C. AB3",
-      "D. AB AB AB",
-      "E. Error"
-    ],
-    "correct_answer": "A. ABABAB",
-    "explanation": "String repetition in Python repeats the string 3 times.",
-    "topic": "Python Strings"
-  },
-  {
-    "id": 24,
-    "practice_set": 5,
-    "question_no": 3,
-    "question": "Which command in Python is used to install external packages?",
-    "options": [
-      "A. install",
-      "B. pip install",
-      "C. python install",
-      "D. set install",
-      "E. pkg install"
-    ],
-    "correct_answer": "B. pip install",
-    "explanation": "pip install package_name installs external Python packages.",
-    "topic": "Python Modules & File Handling"
-  },
-  {
-    "id": 25,
-    "practice_set": 5,
-    "question_no": 6,
-    "question": "Which Python function is used to create an iterable sequence of numbers?",
-    "options": [
-      "A. enumerate()",
-      "B. list()",
-      "C. range()",
-      "D. tuple()",
-      "E. seq()"
-    ],
-    "correct_answer": "C. range()",
-    "explanation": "range() generates an iterable sequence of numbers.",
-    "topic": "Python Programming"
-  },
-  {
-    "id": 26,
-    "practice_set": 5,
-    "question_no": 16,
-    "question": "Which of the following Python keywords is used for error handling?",
-    "options": [
-      "A. assert",
-      "B. catch",
-      "C. try",
-      "D. except",
-      "E. raise"
-    ],
-    "correct_answer": "C. try",
-    "explanation": "try is used to handle exceptions in Python.",
-    "topic": "Python Exception Handling"
-  },
-  {
-    "id": 27,
-    "practice_set": 5,
-    "question_no": 19,
-    "question": "What is the output of len(set([1, 2, 2, 3, 3, 3])) in Python?",
-    "options": [
-      "A. 3",
-      "B. 2",
-      "C. 1",
-      "D. 6",
-      "E. 5"
-    ],
-    "correct_answer": "A. 3",
-    "explanation": "A set removes duplicates; {1, 2, 3} has 3 elements.",
-    "topic": "Python Collections"
-  },
-  {
-    "id": 28,
-    "practice_set": 5,
-    "question_no": 34,
-    "question": "In Python, what will be the output of bool(0)?",
-    "options": [
-      "A. True",
-      "B. False",
-      "C. None",
-      "D. Error",
-      "E. 0"
-    ],
-    "correct_answer": "B. False",
-    "explanation": "bool(0) evaluates to False.",
-    "topic": "Python Programming"
-  },
-  {
-    "id": 29,
-    "practice_set": 5,
-    "question_no": 38,
-    "question": "Which method in Python is used to remove all items from a list?",
-    "options": [
-      "A. remove()",
-      "B. delete()",
-      "C. clear()",
-      "D. pop()",
-      "E. reset()"
-    ],
-    "correct_answer": "C. clear()",
-    "explanation": "clear() removes all items from a list.",
-    "topic": "Python Lists"
-  },
-  {
-    "id": 30,
-    "practice_set": 5,
-    "question_no": 50,
-    "question": "Which Python statement is used to end a function prematurely?",
-    "options": [
-      "A. stop",
-      "B. return",
-      "C. break",
-      "D. continue",
-      "E. end"
-    ],
-    "correct_answer": "B. return",
-    "explanation": "return exits a function prematurely in Python.",
-    "topic": "Python Functions & Methods"
-  },
-  {
-    "id": 31,
-    "practice_set": 5,
-    "question_no": 55,
-    "question": "Which Python function is used to check the type of a variable?",
-    "options": [
-      "A. typeof()",
-      "B. checktype()",
-      "C. type()",
-      "D. verifytype()",
-      "E. datatype()"
-    ],
-    "correct_answer": "C. type()",
-    "explanation": "type() checks the type of variables in Python.",
-    "topic": "Python Data Types"
-  },
-  {
-    "id": 32,
-    "practice_set": 5,
-    "question_no": 58,
-    "question": "Which file operation mode in Python overwrites the file if it already exists?",
-    "options": [
-      "A. r",
-      "B. a",
-      "C. w",
-      "D. x",
-      "E. rb"
-    ],
-    "correct_answer": "C. w",
-    "explanation": "w mode overwrites the file if it exists.",
-    "topic": "Python Modules & File Handling"
-  },
-  {
-    "id": 33,
-    "practice_set": 6,
-    "question_no": 21,
-    "question": "Which Python module provides support for working with dates and times, including manipulating and formatting timestamps?",
-    "options": [
-      "A. timeit",
-      "B. time",
-      "C. datetime",
-      "D. calendar",
-      "E. os"
-    ],
-    "correct_answer": "C. datetime",
-    "explanation": "datetime module handles date and time operations in Python.",
-    "topic": "Python Modules & File Handling"
-  },
-  {
-    "id": 34,
-    "practice_set": 6,
-    "question_no": 29,
-    "question": "In Python, which exception is raised when an index is accessed outside the valid range of a list?",
-    "options": [
-      "A. IndexOutOfRangeError",
-      "B. IndexError",
-      "C. KeyError",
-      "D. ValueError",
-      "E. AttributeError"
-    ],
-    "correct_answer": "B. IndexError",
-    "explanation": "IndexError occurs when list access exceeds valid range.",
-    "topic": "Python Exception Handling"
-  },
-  {
-    "id": 35,
-    "practice_set": 6,
-    "question_no": 54,
-    "question": "Which Python method returns the number of elements with the specified value in a list?",
-    "options": [
-      "A. count()",
-      "B. find()",
-      "C. index()",
-      "D. search()",
-      "E. locate()"
-    ],
-    "correct_answer": "A. count()",
-    "explanation": "count() returns the number of occurrences of a specified value.",
-    "topic": "Python Built-in Functions"
-  },
-  {
-    "id": 36,
-    "practice_set": 7,
-    "question_no": 11,
-    "question": "In Python, which function returns a sorted list from the elements of any iterable without modifying the original iterable?",
-    "options": [
-      "A. sort()",
-      "B. list()",
-      "C. sorted()",
-      "D. arrange()",
-      "E. order()"
-    ],
-    "correct_answer": "C. sorted()",
-    "explanation": "sorted() returns a new sorted list without modifying the original iterable.",
-    "topic": "Python Programming"
-  },
-  {
-    "id": 37,
-    "practice_set": 7,
-    "question_no": 20,
-    "question": "Which Python method removes and returns the last element from a list by default unless an index is specified?",
-    "options": [
-      "A. remove()",
-      "B. pop()",
-      "C. del()",
-      "D. discard()",
-      "E. drop()"
-    ],
-    "correct_answer": "B. pop()",
-    "explanation": "pop() removes and returns the last item or a specified index in a list.",
-    "topic": "Python Lists"
-  },
-  {
-    "id": 38,
-    "practice_set": 7,
-    "question_no": 33,
-    "question": "In Python, which exception is raised when trying to access a dictionary key that does not exist?",
-    "options": [
-      "A. IndexError",
-      "B. KeyError",
-      "C. ValueError",
-      "D. NameError",
-      "E. AttributeError"
-    ],
-    "correct_answer": "B. KeyError",
-    "explanation": "KeyError occurs when accessing a non-existing dictionary key.",
-    "topic": "Python Exception Handling"
-  },
-  {
-    "id": 39,
-    "practice_set": 7,
-    "question_no": 39,
-    "question": "Which data structure in Python uses key-value pairs and allows for fast lookup of values using keys?",
-    "options": [
-      "A. List",
-      "B. Tuple",
-      "C. Dictionary",
-      "D. Set",
-      "E. Array"
-    ],
-    "correct_answer": "C. Dictionary",
-    "explanation": "Dictionaries store key-value pairs for fast lookups.",
-    "topic": "Python Collections"
-  },
-  {
-    "id": 40,
-    "practice_set": 7,
-    "question_no": 53,
-    "question": "In Python, which method is used to insert an element at a specific position in a list?",
-    "options": [
-      "A. append()",
-      "B. insert()",
-      "C. add()",
-      "D. extend()",
-      "E. pop()"
-    ],
-    "correct_answer": "B. insert()",
-    "explanation": "insert() adds an element at a specified index in a list.",
-    "topic": "Python Lists"
-  },
-  {
-    "id": 41,
-    "practice_set": 7,
-    "question_no": 57,
-    "question": "Which Python method removes a key from a dictionary and returns its value if the key exists?",
-    "options": [
-      "A. pop()",
-      "B. discard()",
-      "C. remove()",
-      "D. del()",
-      "E. clear()"
-    ],
-    "correct_answer": "A. pop()",
-    "explanation": "pop() removes a key and returns its value from a dictionary.",
-    "topic": "Python Collections"
-  },
-  {
-    "id": 42,
-    "practice_set": 8,
-    "question_no": 12,
-    "question": "What will the following Python code output?\n\nprint(type((5)))",
-    "options": [
-      "A. tuple",
-      "B. int",
-      "C. list",
-      "D. str",
-      "E. dict"
-    ],
-    "correct_answer": "B. int",
-    "explanation": "(5) without a trailing comma is an integer, not a tuple.",
-    "topic": "Python Data Types"
-  },
-  {
-    "id": 43,
-    "practice_set": 8,
-    "question_no": 23,
-    "question": "What will the following Python code output?\n\nd = {'a': 1, 'b': 2}\nprint(d.get('c', 3))",
-    "options": [
-      "A. 1",
-      "B. 2",
-      "C. 3",
-      "D. None",
-      "E. KeyError"
-    ],
-    "correct_answer": "C. 3",
-    "explanation": "get() returns the default value if the key is not found.",
-    "topic": "Python Collections"
-  },
-  {
-    "id": 44,
-    "practice_set": 8,
-    "question_no": 32,
-    "question": "In Python, what will the following code output?\n\na = [1, 2, 3]\nprint(a[1:])",
-    "options": [
-      "A. [1, 2]",
-      "B. [2, 3]",
-      "C. [1]",
-      "D. [2]",
-      "E. []"
-    ],
-    "correct_answer": "B. [2, 3]",
-    "explanation": "a[1:] slices from index 1 onward.",
-    "topic": "Python Lists"
-  },
-  {
-    "id": 45,
-    "practice_set": 8,
-    "question_no": 36,
-    "question": "What will be the output of the following Python code?\n\nx = (1,)\nprint(type(x))",
-    "options": [
-      "A. list",
-      "B. int",
-      "C. tuple",
-      "D. str",
-      "E. set"
-    ],
-    "correct_answer": "C. tuple",
-    "explanation": "(1,) is a tuple, not int.",
-    "topic": "Python Data Types"
-  },
-  {
-    "id": 46,
-    "practice_set": 8,
-    "question_no": 38,
-    "question": "Which Python method is used to delete a specified element by value from a list?",
-    "options": [
-      "A. pop()",
-      "B. delete()",
-      "C. remove()",
-      "D. discard()",
-      "E. clear()"
-    ],
-    "correct_answer": "C. remove()",
-    "explanation": "remove() deletes by value from a list.",
-    "topic": "Python Lists"
-  },
-  {
-    "id": 47,
-    "practice_set": 8,
-    "question_no": 47,
-    "question": "Which Python built-in function converts a string to all lowercase letters?",
-    "options": [
-      "A. lower()",
-      "B. down()",
-      "C. small()",
-      "D. tolower()",
-      "E. lcase()"
-    ],
-    "correct_answer": "A. lower()",
-    "explanation": "lower() converts strings to lowercase.",
-    "topic": "Python Strings"
-  },
-  {
-    "id": 48,
-    "practice_set": 8,
-    "question_no": 50,
-    "question": "What will be the output of this Python code?\n\ns = {1, 2, 2}\nprint(len(s))",
-    "options": [
-      "A. 4",
-      "B. 1",
-      "C. 2",
-      "D. 0",
-      "E. Error"
-    ],
-    "correct_answer": "B. 1",
-    "explanation": "Set removes duplicates, so {1, 2, 2} becomes {1, 2}? The PDF answer key marks 1, but this looks inconsistent with Python behavior; the likely intended code on the page is s = {2,2,2}. I’m preserving the answer key as shown in the PDF.",
-    "topic": "Python Programming"
-  },
-  {
-    "id": 49,
-    "practice_set": 8,
-    "question_no": 53,
-    "question": "What is the result of the following Python expression?\n\nbool(\"\")",
-    "options": [
-      "A. True",
-      "B. False",
-      "C. None",
-      "D. Error",
-      "E. 0"
-    ],
-    "correct_answer": "B. False",
-    "explanation": "bool(\"\") evaluates to False.",
-    "topic": "Python Strings"
-  },
-  {
-    "id": 50,
-    "practice_set": 9,
-    "question_no": 1,
-    "question": "In Python, which keyword is used to raise an exception manually?",
-    "options": [
-      "A. except",
-      "B. throw",
-      "C. raise",
-      "D. assert",
-      "E. error"
-    ],
-    "correct_answer": "C. raise",
-    "explanation": "raise is used to throw an exception manually in Python.",
-    "topic": "Python Exception Handling"
-  },
-  {
-    "id": 51,
-    "practice_set": 9,
-    "question_no": 15,
-    "question": "Which Python keyword is used to create a generator function that can yield values one at a time?",
-    "options": [
-      "A. def",
-      "B. yield",
-      "C. return",
-      "D. lambda",
-      "E. pass"
-    ],
-    "correct_answer": "B. yield",
-    "explanation": "yield is used in Python to create a generator.",
-    "topic": "Python Functions & Methods"
-  },
-  {
-    "id": 52,
-    "practice_set": 9,
-    "question_no": 19,
-    "question": "In Python, which function is used to combine two lists element-wise into pairs?\n\na = [1, 2]\nb = [3, 4]\nprint(list(zip(a, b)))",
-    "options": [
-      "A. [(1, 1), (2, 4)]",
-      "B. [(3, 1), (4, 2)]",
-      "C. [(1, 3), (2, 4)]",
-      "D. [(1, 2), (3, 4)]",
-      "E. Error"
-    ],
-    "correct_answer": "C. [(1, 3), (2, 4)]",
-    "explanation": "zip() pairs items from both lists positionally.",
-    "topic": "Python Programming"
-  },
-  {
-    "id": 53,
-    "practice_set": 9,
-    "question_no": 22,
-    "question": "What will the following Python code output?\n\nprint(3 * \"7\")",
-    "options": [
-      "A. 777",
-      "B. 7777",
-      "C. 77777",
-      "D. 21",
-      "E. 3"
-    ],
-    "correct_answer": "A. 777",
-    "explanation": "3 * \"7\" repeats the string 3 times.",
-    "topic": "Python Strings"
-  },
-  {
-    "id": 54,
-    "practice_set": 9,
-    "question_no": 28,
-    "question": "Which Python operator is used to check whether two variables refer to the same object in memory?",
-    "options": [
-      "A. ==",
-      "B. !=",
-      "C. is",
-      "D. in",
-      "E. equals"
-    ],
-    "correct_answer": "C. is",
-    "explanation": "is checks whether variables point to the same object.",
-    "topic": "Python Operators & Expressions"
-  },
-  {
-    "id": 55,
-    "practice_set": 9,
-    "question_no": 32,
-    "question": "In Python, what will be the output?\n\na = [1, 2, 3]\nprint(a[-1])",
-    "options": [
-      "A. 1",
-      "B. 2",
-      "C. 3",
-      "D. -1",
-      "E. Error"
-    ],
-    "correct_answer": "C. 3",
-    "explanation": "a[-1] accesses the last element.",
-    "topic": "Python Lists"
-  },
-  {
-    "id": 56,
-    "practice_set": 9,
-    "question_no": 36,
-    "question": "In Python, which function can return the list of keys in a dictionary?\n\nd = {'a':1, 'b':2}\nprint(d.keys())",
-    "options": [
-      "A. ['a', 'b']",
-      "B. ('a', 'b')",
-      "C. {'a', 'b'}",
-      "D. dict_keys(['a', 'b'])",
-      "E. Error"
-    ],
-    "correct_answer": "D. dict_keys(['a', 'b'])",
-    "explanation": "keys() returns a dict view object.",
-    "topic": "Python Collections"
-  },
-  {
-    "id": 57,
-    "practice_set": 9,
-    "question_no": 40,
-    "question": "In Python, which operator is used to check if a value exists in a sequence such as a list, tuple, or string?",
-    "options": [
-      "A. ==",
-      "B. is",
-      "C. in",
-      "D. and",
-      "E. exists"
-    ],
-    "correct_answer": "C. in",
-    "explanation": "in checks membership in sequence.",
-    "topic": "Python Operators & Expressions"
-  },
-  {
-    "id": 58,
-    "practice_set": 9,
-    "question_no": 43,
-    "question": "What will the following code output, demonstrating list comprehension?\n\nprint([x*x for x in range(3)])",
-    "options": [
-      "A. [0, 1, 2]",
-      "B. [1, 4, 9]",
-      "C. [0, 1, 4]",
-      "D. [0, 1, 2, 3]",
-      "E. [0, 1, 8]"
-    ],
-    "correct_answer": "C. [0, 1, 4]",
-    "explanation": "Squares of 0, 1, and 2.",
-    "topic": "Python Lists"
+    {
+      "id": 1,
+      "practice_set": 1,
+      "question_no": 11,
+      "question": "What is the output of print(type([1,2,3])) in Python?",
+      "options": [
+        "A. <class 'tuple'>",
+        "B. <class 'array'>",
+        "C. <class 'list'>",
+        "D. <class 'set'>",
+        "E. <class 'dict'>"
+      ],
+      "correct_answer": "C. <class 'list'>",
+      "explanation": "Lists are defined with square brackets in Python.",
+      "detailed_explanation": "The type() function returns the data type of any object. [1,2,3] uses square brackets which is Python's syntax for a list. So type([1,2,3]) returns <class 'list'>.",
+      "why_correct": "Square brackets [ ] always create a list in Python. type() simply identifies and returns the class of that object.",
+      "wrong_options": {
+        "A": "Tuples use parentheses (1,2,3) not square brackets.",
+        "B": "Python has no built-in 'array' type. Arrays come from the array module or NumPy.",
+        "D": "Sets use curly braces {1,2,3} without key-value pairs.",
+        "E": "Dicts use curly braces with key-value pairs like {'a':1}."
+      },
+      "memory_trick": "Bracket Rule: [] = list, () = tuple, {} = set or dict.",
+      "exam_note": "type() always shows output as <class 'typename'>. This format is very commonly tested in IBPS SO.",
+      "topic": "Python Data Types"
+    },
+    {
+      "id": 2,
+      "practice_set": 1,
+      "question_no": 13,
+      "question": "In Python, what does the *args syntax represent?",
+      "options": [
+        "A. Named keyword arguments",
+        "B. Arbitrary keyword arguments",
+        "C. Optional function return",
+        "D. Arbitrary positional arguments",
+        "E. Function overloading"
+      ],
+      "correct_answer": "D. Arbitrary positional arguments",
+      "explanation": "*args collects extra unnamed arguments into a tuple.",
+      "detailed_explanation": "*args allows a function to accept any number of positional arguments. Inside the function, args is a tuple of all extra positional values passed. Example: def add(*args): return sum(args) — then add(1,2,3) returns 6.",
+      "why_correct": "*args collects all extra positional (unnamed) arguments into a tuple, making the function accept a variable number of inputs.",
+      "wrong_options": {
+        "A": "Named keyword arguments are just regular parameters like def f(name, age).",
+        "B": "Arbitrary keyword arguments use **kwargs (double asterisk), not *args.",
+        "C": "Python functions return None by default if no return statement is used — no special syntax needed.",
+        "E": "Python does not support function overloading like Java or C++."
+      },
+      "memory_trick": "*args = one star = collect positional args into a TUPLE. **kwargs = two stars = collect keyword args into a DICT.",
+      "exam_note": "Parameter order must be: normal params → *args → **kwargs. Never mix this order.",
+      "topic": "Python Functions & Methods"
+    },
+    {
+      "id": 3,
+      "practice_set": 1,
+      "question_no": 15,
+      "question": "Which keyword in Python defines a class method?",
+      "options": [
+        "A. @staticmethod",
+        "B. @classmethod",
+        "C. def",
+        "D. static",
+        "E. func"
+      ],
+      "correct_answer": "B. @classmethod",
+      "explanation": "It decorates a method to receive the class as its first argument.",
+      "detailed_explanation": "@classmethod is a decorator that makes a method receive the class itself (cls) as its first argument instead of the instance (self). This allows it to access and modify class-level variables. Three method types in Python: instance method (self), class method (@classmethod, cls), static method (@staticmethod, no special arg).",
+      "why_correct": "@classmethod decorator passes the class as first argument (cls), enabling access to class attributes and other class methods.",
+      "wrong_options": {
+        "A": "@staticmethod creates a method with no access to class (cls) or instance (self). It behaves like a plain function inside a class.",
+        "C": "def is used to define any function or method — it alone does not make something a class method.",
+        "D": "static is a keyword in Java and C++, not Python. Python does not use this keyword.",
+        "E": "func is not a Python keyword at all."
+      },
+      "memory_trick": "@classmethod → cls (class itself). @staticmethod → nothing special. Instance method → self (instance).",
+      "exam_note": "Class methods are often used as alternative constructors. Static methods are utility functions that logically belong to a class.",
+      "topic": "Python Functions & Methods"
+    },
+    {
+      "id": 4,
+      "practice_set": 1,
+      "question_no": 19,
+      "question": "What is returned by len({\"a\":1, \"b\":2}) in Python?",
+      "options": [
+        "A. 0",
+        "B. 1",
+        "C. 2",
+        "D. 3",
+        "E. Error"
+      ],
+      "correct_answer": "C. 2",
+      "explanation": "The dictionary has two keys: \"a\" and \"b\".",
+      "detailed_explanation": "len() on a dictionary returns the number of key-value pairs (i.e., number of keys). {'a':1, 'b':2} has two keys: 'a' and 'b', so len() returns 2.",
+      "why_correct": "len() counts the number of keys in a dictionary. {'a':1,'b':2} has exactly 2 keys.",
+      "wrong_options": {
+        "A": "0 would mean an empty dictionary {}.",
+        "B": "1 would mean only one key-value pair.",
+        "D": "3 would require three key-value pairs.",
+        "E": "len() works perfectly on dictionaries — no error occurs."
+      },
+      "memory_trick": "len() on dict = number of KEYS. len() on list = number of elements. len() on string = number of characters.",
+      "exam_note": "len() works on list, tuple, dict, set, str — all built-in collection types. For dict it always counts keys.",
+      "topic": "Python Collections"
+    },
+    {
+      "id": 5,
+      "practice_set": 2,
+      "question_no": 3,
+      "question": "In Python, what does the enumerate() function return?",
+      "options": [
+        "A. List of indices",
+        "B. Iterator of tuples containing index and value",
+        "C. String of values",
+        "D. Dictionary of key-value pairs",
+        "E. Set of values"
+      ],
+      "correct_answer": "B. Iterator of tuples containing index and value",
+      "explanation": "enumerate() adds a count to items and returns index-value pairs.",
+      "detailed_explanation": "enumerate() takes an iterable and returns an enumerate object (iterator) where each item is a tuple of (index, value). Example: list(enumerate(['a','b','c'])) = [(0,'a'),(1,'b'),(2,'c')]. Very useful in for loops when you need both index and value.",
+      "why_correct": "enumerate() wraps the iterable and yields (index, element) tuples. It does not return a plain list, dict, string, or set.",
+      "wrong_options": {
+        "A": "It returns both index AND value as tuples — not just a list of indices alone.",
+        "C": "enumerate() never returns a string.",
+        "D": "It returns tuples, not a dictionary. However, you can convert it: dict(enumerate(lst)).",
+        "E": "It returns ordered index-value tuples, not a set."
+      },
+      "memory_trick": "enumerate = 'add numbers to items'. Think of numbered list: (0,item0), (1,item1), (2,item2).",
+      "exam_note": "Common usage: for i, val in enumerate(my_list): — this is the Pythonic way to loop with an index.",
+      "topic": "Python Programming"
+    },
+    {
+      "id": 6,
+      "practice_set": 2,
+      "question_no": 30,
+      "question": "Which Python method can be used to create an empty set?",
+      "options": [
+        "A. set()",
+        "B. {}",
+        "C. empty_set()",
+        "D. list()",
+        "E. dict()"
+      ],
+      "correct_answer": "A. set()",
+      "explanation": "set() creates an empty set; {} creates an empty dictionary.",
+      "detailed_explanation": "In Python, {} does NOT create an empty set — it creates an empty dictionary. To create an empty set you MUST use set(). This is a very common trap. Once you have elements, {1,2,3} is a set, but {} alone is always a dict.",
+      "why_correct": "set() is the only way to create an empty set because {} is reserved for empty dictionaries in Python.",
+      "wrong_options": {
+        "B": "{} creates an empty DICTIONARY, not a set. This is the biggest trap in this question.",
+        "C": "empty_set() does not exist in Python.",
+        "D": "list() creates an empty list [].",
+        "E": "dict() creates an empty dictionary {}."
+      },
+      "memory_trick": "Empty set = ONLY set(). Never {}. Once you put elements: {1,2,3} is a set. But {} alone = dict.",
+      "exam_note": "type({}) returns <class 'dict'>. type(set()) returns <class 'set'>. This distinction is tested frequently.",
+      "topic": "Python Collections"
+    },
+    {
+      "id": 7,
+      "practice_set": 2,
+      "question_no": 43,
+      "question": "Which method is used in Python to remove whitespace from the beginning and end of a string?",
+      "options": [
+        "A. clean()",
+        "B. strip()",
+        "C. remove()",
+        "D. trim()",
+        "E. split()"
+      ],
+      "correct_answer": "B. strip()",
+      "explanation": "strip() removes leading and trailing whitespace.",
+      "detailed_explanation": "strip() removes whitespace (spaces, tabs, newlines) from both the start and end of a string. Python also has lstrip() to remove only leading whitespace and rstrip() to remove only trailing whitespace.",
+      "why_correct": "strip() is Python's built-in string method specifically for removing leading and trailing whitespace characters.",
+      "wrong_options": {
+        "A": "clean() does not exist as a string method in Python.",
+        "C": "remove() is a list method — it removes a specified value from a list, not whitespace from strings.",
+        "D": "trim() is used in Java and JavaScript — not Python.",
+        "E": "split() splits a string into a list based on a delimiter, it does not remove whitespace."
+      },
+      "memory_trick": "strip = strip away the edges. lstrip = left side only. rstrip = right side only.",
+      "exam_note": "strip(), lstrip(), rstrip() can also remove specific characters: 'xxhelloxx'.strip('x') gives 'hello'.",
+      "topic": "Python Strings"
+    },
+    {
+      "id": 8,
+      "practice_set": 3,
+      "question_no": 10,
+      "question": "Which of the following is NOT a Python data type?",
+      "options": [
+        "A. list",
+        "B. int",
+        "C. char",
+        "D. tuple",
+        "E. dict"
+      ],
+      "correct_answer": "C. char",
+      "explanation": "Python does not have a separate char type; it uses single-character strings.",
+      "detailed_explanation": "Python does not have a char type. Languages like C, C++, and Java have char for single characters. In Python, a single character like 'a' is simply a string (str) of length 1. Python's built-in types include: int, float, str, list, tuple, dict, set, bool, bytes, NoneType.",
+      "why_correct": "char does not exist in Python's type system. Single characters are just str objects.",
+      "wrong_options": {
+        "A": "list is a valid Python type: [1,2,3]",
+        "B": "int is a valid Python type: 42",
+        "D": "tuple is a valid Python type: (1,2,3)",
+        "E": "dict is a valid Python type: {'a':1}"
+      },
+      "memory_trick": "Python missing types compared to C/Java: no char, no byte (has bytes instead), no short, no long (int handles all sizes).",
+      "exam_note": "Python's int has unlimited precision — no int overflow like in C/Java. This is a key difference.",
+      "topic": "Python Data Types"
+    },
+    {
+      "id": 9,
+      "practice_set": 3,
+      "question_no": 12,
+      "question": "Which Python method returns the list in reversed order?",
+      "options": [
+        "A. reverse()",
+        "B. reversed()",
+        "C. invert()",
+        "D. swap()",
+        "E. flip()"
+      ],
+      "correct_answer": "A. reverse()",
+      "explanation": "reverse() reverses a list in place in Python.",
+      "detailed_explanation": "reverse() is a list method that reverses the list IN PLACE (modifies the original list) and returns None. There is also a built-in function reversed() which returns an iterator of the reversed sequence WITHOUT modifying the original. These two are different and both are commonly tested.",
+      "why_correct": "reverse() is the list method that reverses elements in place. Example: a=[1,2,3]; a.reverse(); print(a) → [3,2,1].",
+      "wrong_options": {
+        "B": "reversed() is a built-in function (not a list method) that returns a reverse iterator — it does NOT modify the original list.",
+        "C": "invert() does not exist as a Python list method.",
+        "D": "swap() does not exist as a Python list method.",
+        "E": "flip() is used in NumPy (numpy.flip()) — not a built-in list method."
+      },
+      "memory_trick": "reverse() = list method, IN PLACE, returns None. reversed() = built-in function, returns iterator, original unchanged.",
+      "exam_note": "To reverse and get a new list: list(reversed(a)) or a[::-1]. Slicing with [::-1] is the most Pythonic way.",
+      "topic": "Python Lists"
+    },
+    {
+      "id": 10,
+      "practice_set": 3,
+      "question_no": 17,
+      "question": "In Python, which operator is used for exponentiation?",
+      "options": [
+        "A. ^",
+        "B. **",
+        "C. %",
+        "D. //",
+        "E. *"
+      ],
+      "correct_answer": "B. **",
+      "explanation": "** is used for exponentiation in Python.",
+      "detailed_explanation": "In Python, ** is the exponentiation operator. 2**3 = 8. This is right-associative, meaning 2**3**2 = 2**(3**2) = 2**9 = 512. Python's other arithmetic operators: + (add), - (subtract), * (multiply), / (true divide), // (floor divide), % (modulo), ** (power).",
+      "why_correct": "** raises a number to a power: base**exponent. Example: 5**2 = 25, 2**10 = 1024.",
+      "wrong_options": {
+        "A": "^ is the BITWISE XOR operator in Python, not exponentiation. (In many other languages ^ is also XOR.)",
+        "C": "% is the MODULO operator (remainder). 10%3 = 1.",
+        "D": "// is FLOOR DIVISION — divides and rounds down. 7//2 = 3.",
+        "E": "* is simple MULTIPLICATION. 3*4 = 12."
+      },
+      "memory_trick": "** = double star = POWER. Think: more stars = more power! ^ looks like an arrow up but in Python it means XOR, NOT power.",
+      "exam_note": "Do NOT confuse ^ with **. In Python: 2^3 = 1 (XOR), 2**3 = 8 (power). This is a classic exam trap.",
+      "topic": "Python Operators & Expressions"
+    },
+    {
+      "id": 11,
+      "practice_set": 3,
+      "question_no": 21,
+      "question": "Which Python collection type does not allow duplicate values?",
+      "options": [
+        "A. List",
+        "B. Dictionary",
+        "C. Set",
+        "D. Tuple",
+        "E. Array"
+      ],
+      "correct_answer": "C. Set",
+      "explanation": "Sets do not allow duplicate elements.",
+      "detailed_explanation": "A set in Python is an unordered collection of unique elements. Any duplicates are automatically removed when adding to a set. Example: {1,2,2,3,3,3} becomes {1,2,3}. Sets are useful for removing duplicates from data and for mathematical set operations (union, intersection, difference).",
+      "why_correct": "Sets are designed to store only unique elements. Duplicates are silently ignored.",
+      "wrong_options": {
+        "A": "Lists allow duplicates: [1,1,2,2,3] is perfectly valid.",
+        "B": "Dictionary keys must be unique, but values can repeat. Keys are unique, not the whole structure.",
+        "D": "Tuples allow duplicates: (1,1,2,2) is valid.",
+        "E": "Array is not a built-in Python type — but if referring to lists/arrays, they do allow duplicates."
+      },
+      "memory_trick": "SET = unique. Like a set in mathematics: {1,2,3} — no element appears twice.",
+      "exam_note": "Set operations: union (|), intersection (&), difference (-), symmetric difference (^). Sets are also unordered — no indexing.",
+      "topic": "Python Collections"
+    },
+    {
+      "id": 12,
+      "practice_set": 3,
+      "question_no": 29,
+      "question": "Which method is used to create an object in Python?",
+      "options": [
+        "A. __start__()",
+        "B. __create__()",
+        "C. __init__()",
+        "D. new()",
+        "E. constructor()"
+      ],
+      "correct_answer": "C. __init__()",
+      "explanation": "__init__() initializes new objects in Python classes.",
+      "detailed_explanation": "__init__() is the constructor method in Python. It is automatically called when a new object is created from a class. It initializes the object's attributes. The double underscores (dunder) indicate it is a special/magic method. Example: class Car: def __init__(self, brand): self.brand = brand — then car = Car('Toyota') calls __init__ automatically.",
+      "why_correct": "__init__() is Python's constructor. When you do obj = ClassName(), Python automatically calls __init__(self) to set up the object.",
+      "wrong_options": {
+        "A": "__start__() does not exist as a Python dunder method.",
+        "B": "__create__() does not exist as a Python dunder method.",
+        "D": "new() is not how objects are created in Python. Python uses ClassName() syntax.",
+        "E": "constructor() does not exist in Python — the concept exists but the method is named __init__."
+      },
+      "memory_trick": "init = initialize. __init__ initializes the new object's data when it is born.",
+      "exam_note": "Other important dunder methods: __str__() for string representation, __len__() for len(), __add__() for + operator, __eq__() for == comparison.",
+      "topic": "Python Programming"
+    },
+    {
+      "id": 13,
+      "practice_set": 3,
+      "question_no": 39,
+      "question": "Which file extension is associated with Python files?",
+      "options": [
+        "A. .pyc",
+        "B. .cpp",
+        "C. .java",
+        "D. .py",
+        "E. .pt"
+      ],
+      "correct_answer": "D. .py",
+      "explanation": "Python files use the .py extension.",
+      "detailed_explanation": "Python source code files use the .py extension. When Python runs a .py file, it may also create a compiled bytecode file with .pyc extension (stored in __pycache__ folder). The .pyc file is for performance — Python doesn't need to re-parse the source every time.",
+      "why_correct": ".py is the standard extension for Python source code files.",
+      "wrong_options": {
+        "A": ".pyc is Python COMPILED bytecode — not the source file. It is auto-generated.",
+        "B": ".cpp is for C++ source files.",
+        "C": ".java is for Java source files.",
+        "E": ".pt is used by PyTorch for saved model files — not Python source."
+      },
+      "memory_trick": "py = Python. Simple as that. .pyc = py + compiled.",
+      "exam_note": "Python file types: .py (source), .pyc (compiled bytecode), .pyd (Windows DLL for Python), .pyw (Windows GUI Python, no console).",
+      "topic": "Python Modules & File Handling"
+    },
+    {
+      "id": 14,
+      "practice_set": 3,
+      "question_no": 42,
+      "question": "Which technique is used in Python to handle exceptions?",
+      "options": [
+        "A. try-except",
+        "B. if-else",
+        "C. while loop",
+        "D. for loop",
+        "E. define-exception"
+      ],
+      "correct_answer": "A. try-except",
+      "explanation": "Python uses try-except for exception handling.",
+      "detailed_explanation": "Python's exception handling uses try-except blocks. The try block contains code that might raise an exception. The except block handles the exception. Additional optional blocks: else (runs if no exception), finally (always runs). Example: try: x=1/0 except ZeroDivisionError: print('Cannot divide by zero').",
+      "why_correct": "try-except is Python's dedicated syntax for catching and handling runtime errors (exceptions).",
+      "wrong_options": {
+        "B": "if-else is for conditional logic, not exception handling. It does not catch runtime errors.",
+        "C": "while loop repeats code — it has no error catching capability.",
+        "D": "for loop iterates over sequences — no exception handling.",
+        "E": "define-exception is not a Python construct."
+      },
+      "memory_trick": "try = attempt the risky code. except = catch the error if it happens. finally = always clean up.",
+      "exam_note": "Full structure: try → except → else → finally. else runs only when NO exception occurs. finally ALWAYS runs, even with exception.",
+      "topic": "Python Exception Handling"
+    },
+    {
+      "id": 15,
+      "practice_set": 3,
+      "question_no": 48,
+      "question": "Which symbol is used to comment a single line in Python?",
+      "options": [
+        "A. //",
+        "B. #",
+        "C. /* */",
+        "D. %%",
+        "E. @"
+      ],
+      "correct_answer": "B. #",
+      "explanation": "# denotes a single-line comment in Python.",
+      "detailed_explanation": "In Python, the # symbol makes everything after it on that line a comment — the interpreter ignores it. For multi-line comments, Python uses triple quotes ('''...''' or \"\"\"...\"\"\") though technically those are multi-line strings used as docstrings.",
+      "why_correct": "# is Python's single-line comment symbol. Everything after # on that line is ignored by Python.",
+      "wrong_options": {
+        "A": "// is the single-line comment in Java, JavaScript, C, C++. NOT Python.",
+        "C": "/* */ is a multi-line comment block in Java, C, C++. NOT Python.",
+        "D": "%% is not a comment symbol in Python (used in MATLAB/Octave).",
+        "E": "@ is used for decorators in Python, not comments."
+      },
+      "memory_trick": "# = hash tag = Python comment. Just like Twitter/Instagram hashtags mark something special to note!",
+      "exam_note": "Language comment comparison: Python = #, Java/C/C++ = // and /* */, SQL = --, HTML = <!-- -->.",
+      "topic": "Python Programming"
+    },
+    {
+      "id": 16,
+      "practice_set": 3,
+      "question_no": 53,
+      "question": "Which operator is overloaded for object comparison in Python?",
+      "options": [
+        "A. +",
+        "B. ==",
+        "C. *",
+        "D. []",
+        "E. @"
+      ],
+      "correct_answer": "B. ==",
+      "explanation": "Equality operator overloading is used for object comparison.",
+      "detailed_explanation": "Operator overloading allows Python objects to define custom behavior for standard operators. The == operator is overloaded using the __eq__() dunder method. Example: class Point: def __eq__(self, other): return self.x==other.x and self.y==other.y — now you can compare two Point objects using ==.",
+      "why_correct": "== calls __eq__() behind the scenes, which can be overloaded to define custom comparison logic for objects.",
+      "wrong_options": {
+        "A": "+ is overloaded using __add__() for addition/concatenation.",
+        "C": "* is overloaded using __mul__() for multiplication/repetition.",
+        "D": "[] (subscript/indexing) is overloaded using __getitem__().",
+        "E": "@ is the matrix multiplication operator overloaded using __matmul__()."
+      },
+      "memory_trick": "Dunder methods table: == → __eq__, + → __add__, - → __sub__, * → __mul__, < → __lt__, > → __gt__.",
+      "exam_note": "is and == are different: == checks VALUE equality (uses __eq__), is checks IDENTITY (same memory address).",
+      "topic": "Python Programming"
+    },
+    {
+      "id": 17,
+      "practice_set": 3,
+      "question_no": 54,
+      "question": "Which Python keyword is used to declare a function?",
+      "options": [
+        "A. method",
+        "B. function",
+        "C. define",
+        "D. def",
+        "E. class"
+      ],
+      "correct_answer": "D. def",
+      "explanation": "def declares functions in Python.",
+      "detailed_explanation": "def is the keyword to define a function in Python. Syntax: def function_name(parameters): body. def is short for 'define'. Functions created with def are regular named functions. Python also has lambda for anonymous (unnamed) one-line functions.",
+      "why_correct": "def is Python's reserved keyword for defining functions.",
+      "wrong_options": {
+        "A": "method is not a Python keyword — it's a concept (a function inside a class is called a method).",
+        "B": "function is not a Python keyword.",
+        "C": "define is not a Python keyword — Python uses the shortened def.",
+        "E": "class is used to define a class blueprint, not a function."
+      },
+      "memory_trick": "def = define. Python keeps it short. def my_func(): pass.",
+      "exam_note": "Lambda syntax: lambda x: x*2. It is an anonymous function. def creates named functions. lambda is for simple one-liners.",
+      "topic": "Python Functions & Methods"
+    },
+    {
+      "id": 18,
+      "practice_set": 4,
+      "question_no": 1,
+      "question": "In Python, what will be the output of print(2 ** 3 ** 2)?",
+      "options": [
+        "A. 64",
+        "B. 512",
+        "C. 729",
+        "D. 8",
+        "E. 16"
+      ],
+      "correct_answer": "B. 512",
+      "explanation": "In Python, 2 ** 3 ** 2 is evaluated as 2 ** (3 ** 2) = 2 ** 9 = 512.",
+      "detailed_explanation": "The ** operator is RIGHT-ASSOCIATIVE in Python. This means when multiple ** appear, Python evaluates from RIGHT to LEFT. So: 2**3**2 = 2**(3**2) = 2**9 = 512. If it were left-to-right: (2**3)**2 = 8**2 = 64 — but that is WRONG for Python.",
+      "why_correct": "** is right-associative: 2**3**2 = 2**(3**2) = 2**9 = 512.",
+      "wrong_options": {
+        "A": "64 = (2**3)**2 = 8**2 = 64. This is WRONG because it assumes left-to-right evaluation.",
+        "C": "729 = 3**6 — not related to this expression.",
+        "D": "8 = 2**3 — this ignores the second **2 part entirely.",
+        "E": "16 = 2**4 — incorrect calculation."
+      },
+      "memory_trick": "** is RIGHT-associative. Start from the RIGHT side. 2**3**2: first do 3**2=9, then 2**9=512.",
+      "exam_note": "Most operators in Python are left-associative (evaluated left to right), but ** is the exception — it is RIGHT-associative.",
+      "topic": "Python Operators & Expressions"
+    },
+    {
+      "id": 19,
+      "practice_set": 4,
+      "question_no": 6,
+      "question": "Which Python function returns the absolute value of a number?",
+      "options": [
+        "A. abs()",
+        "B. absolute()",
+        "C. fabs()",
+        "D. mod()",
+        "E. pow()"
+      ],
+      "correct_answer": "A. abs()",
+      "explanation": "abs() returns the absolute value of a number in Python.",
+      "detailed_explanation": "abs() is a Python built-in function that returns the absolute (non-negative) value of a number. abs(-5) = 5, abs(5) = 5, abs(-3.14) = 3.14. It works with int, float, and complex numbers (returns magnitude for complex).",
+      "why_correct": "abs() is Python's built-in function for absolute value. No import needed.",
+      "wrong_options": {
+        "B": "absolute() does not exist as a Python built-in. numpy.absolute() exists in NumPy.",
+        "C": "math.fabs() exists in the math module and returns a float, but abs() is the standard built-in.",
+        "D": "mod() does not exist in Python — modulo uses the % operator.",
+        "E": "pow(base, exp) is for exponentiation — pow(2,3)=8. Not for absolute value."
+      },
+      "memory_trick": "abs = absolute. Short and simple. Always a built-in — no import needed.",
+      "exam_note": "abs() vs math.fabs(): abs() returns int or float, math.fabs() always returns float. abs(-5) = 5 (int), math.fabs(-5) = 5.0 (float).",
+      "topic": "Python Built-in Functions"
+    },
+    {
+      "id": 20,
+      "practice_set": 4,
+      "question_no": 16,
+      "question": "In Python, what will be the output of bool({})?",
+      "options": [
+        "A. True",
+        "B. False",
+        "C. None",
+        "D. Error",
+        "E. 0"
+      ],
+      "correct_answer": "B. False",
+      "explanation": "An empty dictionary evaluates to false in Python.",
+      "detailed_explanation": "In Python, empty containers evaluate to False when converted to bool. Rule: any empty collection ([], (), {}, set()) is False. Any non-empty collection is True. Also: 0, 0.0, None, '' all evaluate to False. This is called 'Truthy and Falsy' values.",
+      "why_correct": "bool({}) = False because {} is an empty dictionary — empty collections are always Falsy in Python.",
+      "wrong_options": {
+        "A": "True would result from a non-empty dict like bool({'a':1}).",
+        "C": "None is a valid Python object but bool({}) gives False, not None.",
+        "D": "No error — bool() works fine on dictionaries.",
+        "E": "0 is the integer equivalent of False, but bool() returns the boolean False, not the integer 0."
+      },
+      "memory_trick": "FALSY values in Python: 0, 0.0, '', [], (), {}, set(), None. Everything else is TRUTHY.",
+      "exam_note": "bool(0) = False, bool('') = False, bool([]) = False, bool({}) = False, bool(None) = False. Very commonly tested.",
+      "topic": "Python Programming"
+    },
+    {
+      "id": 21,
+      "practice_set": 4,
+      "question_no": 29,
+      "question": "Which Python module is used for multithreaded programming?",
+      "options": [
+        "A. multiprocessing",
+        "B. multithread",
+        "C. threading",
+        "D. concurrent",
+        "E. async"
+      ],
+      "correct_answer": "C. threading",
+      "explanation": "The threading module is used for multithreading in Python.",
+      "detailed_explanation": "Python's threading module allows creating and managing threads. A thread is a lightweight unit of execution. Multiple threads can run concurrently within the same process sharing memory. Note: Python has the GIL (Global Interpreter Lock) which limits true parallel CPU execution — threads are better for I/O-bound tasks.",
+      "why_correct": "threading is the built-in Python module specifically for creating and managing threads.",
+      "wrong_options": {
+        "A": "multiprocessing is for running multiple PROCESSES (not threads) — each with its own memory space. Better for CPU-bound tasks.",
+        "B": "multithread is not a Python module — it does not exist.",
+        "D": "concurrent is not a standalone module. concurrent.futures exists and provides high-level interface for threads and processes.",
+        "E": "async is a Python keyword for asynchronous programming — not a module, and it's different from multithreading."
+      },
+      "memory_trick": "Thread = threading module. Process = multiprocessing module. Async = asyncio module.",
+      "exam_note": "Threading vs Multiprocessing: Threading shares memory, limited by GIL, good for I/O tasks. Multiprocessing has separate memory, bypasses GIL, good for CPU tasks.",
+      "topic": "Python Modules & File Handling"
+    },
+    {
+      "id": 22,
+      "practice_set": 4,
+      "question_no": 39,
+      "question": "Which file operation mode in Python opens a file for both reading and writing?",
+      "options": [
+        "A. r",
+        "B. w",
+        "C. r+",
+        "D. w+",
+        "E. a"
+      ],
+      "correct_answer": "C. r+",
+      "explanation": "Opens a file for reading and writing without truncating it.",
+      "detailed_explanation": "Python file modes: r=read only, w=write (truncates/creates), a=append, r+=read+write (file must exist), w+=write+read (truncates/creates), a+=append+read. The key difference between r+ and w+: r+ requires the file to already exist and does NOT truncate, while w+ creates the file if needed AND truncates existing content.",
+      "why_correct": "r+ opens an existing file for both reading and writing, without erasing its contents.",
+      "wrong_options": {
+        "A": "r opens for reading ONLY — cannot write.",
+        "B": "w opens for writing ONLY — truncates (erases) existing content.",
+        "D": "w+ opens for reading+writing BUT truncates (erases) existing content first.",
+        "E": "a opens for appending only — writes to end of file, cannot read."
+      },
+      "memory_trick": "File modes table: r=read, w=write(erase), a=append, + means add the other operation. r+=read+write(keep), w+=write+read(erase).",
+      "exam_note": "All file modes: r, w, a, r+, w+, a+, rb, wb, ab (b = binary mode). Very important for IBPS SO.",
+      "topic": "Python Modules & File Handling"
+    },
+    {
+      "id": 23,
+      "practice_set": 4,
+      "question_no": 44,
+      "question": "In Python, what is the result of 3 * 'AB'?",
+      "options": [
+        "A. ABABAB",
+        "B. ABC",
+        "C. AB3",
+        "D. AB AB AB",
+        "E. Error"
+      ],
+      "correct_answer": "A. ABABAB",
+      "explanation": "String repetition in Python repeats the string 3 times.",
+      "detailed_explanation": "In Python, multiplying a string by an integer repeats the string that many times. 3 * 'AB' = 'AB' repeated 3 times = 'ABABAB'. This works for both int * string and string * int.",
+      "why_correct": "3 * 'AB' = 'AB'+'AB'+'AB' = 'ABABAB'. Python's * operator performs repetition on strings.",
+      "wrong_options": {
+        "B": "'ABC' would require a third different character C — not what repetition does.",
+        "C": "'AB3' is not how Python string-number multiplication works.",
+        "D": "'AB AB AB' has spaces — repetition does not add spaces.",
+        "E": "No error — Python supports string repetition with integers."
+      },
+      "memory_trick": "String * N = repeat string N times with no separator. 'ha' * 3 = 'hahaha'. Works in reverse too: 3 * 'ha' = 'hahaha'.",
+      "exam_note": "Also works for lists: [0] * 3 = [0, 0, 0]. Very useful for initializing lists of fixed size.",
+      "topic": "Python Strings"
+    },
+    {
+      "id": 24,
+      "practice_set": 5,
+      "question_no": 3,
+      "question": "Which command in Python is used to install external packages?",
+      "options": [
+        "A. install",
+        "B. pip install",
+        "C. python install",
+        "D. set install",
+        "E. pkg install"
+      ],
+      "correct_answer": "B. pip install",
+      "explanation": "pip install package_name installs external Python packages.",
+      "detailed_explanation": "pip (Pip Installs Packages) is Python's package manager. It downloads and installs packages from PyPI (Python Package Index). Usage: pip install package_name. Examples: pip install numpy, pip install pandas, pip install requests. For Python 3, sometimes pip3 is used.",
+      "why_correct": "pip install is the standard command to install Python packages from PyPI.",
+      "wrong_options": {
+        "A": "install alone is not a command — pip install is the full command.",
+        "C": "python install is not a valid command.",
+        "D": "set install is not a valid Python command.",
+        "E": "pkg install is used in FreeBSD package management, not Python."
+      },
+      "memory_trick": "pip = Python's shopping tool. pip install = add a new package to your Python store.",
+      "exam_note": "Useful pip commands: pip install pkg, pip uninstall pkg, pip list (show installed), pip freeze (show with versions), pip show pkg.",
+      "topic": "Python Modules & File Handling"
+    },
+    {
+      "id": 25,
+      "practice_set": 5,
+      "question_no": 6,
+      "question": "Which Python function is used to create an iterable sequence of numbers?",
+      "options": [
+        "A. enumerate()",
+        "B. list()",
+        "C. range()",
+        "D. tuple()",
+        "E. seq()"
+      ],
+      "correct_answer": "C. range()",
+      "explanation": "range() generates an iterable sequence of numbers.",
+      "detailed_explanation": "range() generates a sequence of numbers. Forms: range(stop), range(start, stop), range(start, stop, step). Example: range(5) = 0,1,2,3,4. range(2,8) = 2,3,4,5,6,7. range(0,10,2) = 0,2,4,6,8. It returns a range object (not a list) — very memory efficient.",
+      "why_correct": "range() is specifically designed to generate numeric sequences for iteration.",
+      "wrong_options": {
+        "A": "enumerate() adds an index to an existing iterable — it doesn't create a number sequence.",
+        "B": "list() converts an existing iterable to a list — doesn't generate numbers on its own.",
+        "D": "tuple() converts an existing iterable to a tuple — doesn't generate numbers.",
+        "E": "seq() does not exist in Python."
+      },
+      "memory_trick": "range(start, stop, step). Default start=0, step=1. range(5) = 0 to 4. STOP is EXCLUSIVE.",
+      "exam_note": "range(5) gives 0,1,2,3,4 — NOT 1,2,3,4,5. The stop value is always excluded. Very commonly confused.",
+      "topic": "Python Programming"
+    },
+    {
+      "id": 26,
+      "practice_set": 5,
+      "question_no": 16,
+      "question": "Which of the following Python keywords is used for error handling?",
+      "options": [
+        "A. assert",
+        "B. catch",
+        "C. try",
+        "D. except",
+        "E. raise"
+      ],
+      "correct_answer": "C. try",
+      "explanation": "try is used to handle exceptions in Python.",
+      "detailed_explanation": "The question asks which keyword is for ERROR HANDLING. try is the start of exception handling — it wraps risky code. though multiple options seem related: try begins the block, except catches it, raise throws it manually, assert is for debugging checks. try is the fundamental keyword that INITIATES the error handling mechanism.",
+      "why_correct": "try is the primary keyword that initiates exception handling — without try, there is no exception handling block.",
+      "wrong_options": {
+        "A": "assert checks a condition and raises AssertionError if False — it's a debugging tool, not primary error handling.",
+        "B": "catch is used in Java and JavaScript — Python uses except instead.",
+        "D": "except works WITH try — it cannot exist alone. except CATCHES exceptions but try INITIATES handling.",
+        "E": "raise manually THROWS an exception — opposite of handling."
+      },
+      "memory_trick": "try → attempt risky code. except → catch error. raise → throw error. finally → always execute. assert → debug check.",
+      "exam_note": "Python uses except (not catch like Java). This difference is commonly tested: Python=except, Java/JS=catch.",
+      "topic": "Python Exception Handling"
+    },
+    {
+      "id": 27,
+      "practice_set": 5,
+      "question_no": 19,
+      "question": "What is the output of len(set([1, 2, 2, 3, 3, 3])) in Python?",
+      "options": [
+        "A. 3",
+        "B. 2",
+        "C. 1",
+        "D. 6",
+        "E. 5"
+      ],
+      "correct_answer": "A. 3",
+      "explanation": "A set removes duplicates; {1, 2, 3} has 3 elements.",
+      "detailed_explanation": "set([1,2,2,3,3,3]) converts the list to a set, removing duplicates. Result: {1,2,3} — only 3 unique elements. Then len({1,2,3}) = 3. This is a very common pattern to count unique elements in a list.",
+      "why_correct": "set() removes duplicates: {1,2,2,3,3,3} → {1,2,3}. len({1,2,3}) = 3.",
+      "wrong_options": {
+        "B": "2 would mean only 2 unique elements.",
+        "C": "1 would mean only 1 unique element.",
+        "D": "6 is the length of the ORIGINAL LIST before deduplication.",
+        "E": "5 would mean 5 unique elements — not the case here."
+      },
+      "memory_trick": "Unique elements trick: len(set(my_list)) = number of unique values in the list. Very useful pattern!",
+      "exam_note": "To find unique count quickly: len(set(collection)). To remove duplicates from list: list(set(my_list)).",
+      "topic": "Python Collections"
+    },
+    {
+      "id": 28,
+      "practice_set": 5,
+      "question_no": 34,
+      "question": "In Python, what will be the output of bool(0)?",
+      "options": [
+        "A. True",
+        "B. False",
+        "C. None",
+        "D. Error",
+        "E. 0"
+      ],
+      "correct_answer": "B. False",
+      "explanation": "bool(0) evaluates to False.",
+      "detailed_explanation": "In Python, 0 is falsy. bool(0) returns False. Falsy numeric values: 0 (int), 0.0 (float), 0j (complex). All other numbers are truthy. This concept is fundamental to Python's truthiness system.",
+      "why_correct": "0 is the only integer that is Falsy. bool(0) = False.",
+      "wrong_options": {
+        "A": "True would result from bool(1) or any non-zero number.",
+        "C": "None is a falsy value too, but bool(0) gives False, not None.",
+        "D": "No error — bool() accepts any value.",
+        "E": "0 is the input, not the output. bool() always returns True or False."
+      },
+      "memory_trick": "Falsy numbers: only ZERO (0, 0.0, 0j). Any other number = True. Zero = False.",
+      "exam_note": "bool(0)=False, bool(1)=True, bool(-1)=True, bool(0.0)=False, bool(0.001)=True.",
+      "topic": "Python Programming"
+    },
+    {
+      "id": 29,
+      "practice_set": 5,
+      "question_no": 38,
+      "question": "Which method in Python is used to remove all items from a list?",
+      "options": [
+        "A. remove()",
+        "B. delete()",
+        "C. clear()",
+        "D. pop()",
+        "E. reset()"
+      ],
+      "correct_answer": "C. clear()",
+      "explanation": "clear() removes all items from a list.",
+      "detailed_explanation": "clear() empties a list completely, making it []. It modifies the list in place and returns None. Example: a=[1,2,3]; a.clear(); print(a) → []. clear() also works on dict and set to empty them.",
+      "why_correct": "clear() removes ALL elements from a list at once, leaving an empty list.",
+      "wrong_options": {
+        "A": "remove(value) removes only ONE specific element by value — not all elements.",
+        "B": "delete() is not a Python list method.",
+        "D": "pop() removes and returns ONE element (last by default, or by index) — not all elements.",
+        "E": "reset() is not a Python list method."
+      },
+      "memory_trick": "clear() = clear the list completely = []. remove(x) = remove one specific item. pop() = remove and return one item.",
+      "exam_note": "clear() works on list, dict, and set. dict.clear() empties a dict. set.clear() empties a set.",
+      "topic": "Python Lists"
+    },
+    {
+      "id": 30,
+      "practice_set": 5,
+      "question_no": 50,
+      "question": "Which Python statement is used to end a function prematurely?",
+      "options": [
+        "A. stop",
+        "B. return",
+        "C. break",
+        "D. continue",
+        "E. end"
+      ],
+      "correct_answer": "B. return",
+      "explanation": "return exits a function prematurely in Python.",
+      "detailed_explanation": "return immediately exits a function and optionally sends back a value. If a function has no return statement, it automatically returns None. return can be used anywhere in a function to exit early. Contrast: break exits a loop, continue skips to next loop iteration.",
+      "why_correct": "return exits the function immediately — it can appear anywhere inside a function to terminate early.",
+      "wrong_options": {
+        "A": "stop is not a Python keyword.",
+        "C": "break exits a LOOP (for/while) — not a function.",
+        "D": "continue skips the current loop iteration and moves to the next — doesn't exit the function.",
+        "E": "end is not a Python keyword."
+      },
+      "memory_trick": "return = exit function (with optional value). break = exit loop. continue = skip loop iteration.",
+      "exam_note": "A function without return returns None. return alone (no value) also returns None. return 0 returns integer 0.",
+      "topic": "Python Functions & Methods"
+    },
+    {
+      "id": 31,
+      "practice_set": 5,
+      "question_no": 55,
+      "question": "Which Python function is used to check the type of a variable?",
+      "options": [
+        "A. typeof()",
+        "B. checktype()",
+        "C. type()",
+        "D. verifytype()",
+        "E. datatype()"
+      ],
+      "correct_answer": "C. type()",
+      "explanation": "type() checks the type of variables in Python.",
+      "detailed_explanation": "type(obj) returns the type/class of the given object. Always returns a class object. Examples: type(5) = <class 'int'>, type('hi') = <class 'str'>, type([1,2]) = <class 'list'>. isinstance() is an alternative when you want to check against a specific type.",
+      "why_correct": "type() is Python's built-in function to identify an object's data type.",
+      "wrong_options": {
+        "A": "typeof() exists in JavaScript — not Python.",
+        "B": "checktype() does not exist in Python.",
+        "D": "verifytype() does not exist in Python.",
+        "E": "datatype() does not exist in Python."
+      },
+      "memory_trick": "type() = what TYPE is this? isinstance() = IS this a specific type? Both useful, different use cases.",
+      "exam_note": "type(x) == int vs isinstance(x, int): isinstance() also returns True for subclasses; type() does not. isinstance is preferred in real code.",
+      "topic": "Python Data Types"
+    },
+    {
+      "id": 32,
+      "practice_set": 5,
+      "question_no": 58,
+      "question": "Which file operation mode in Python overwrites the file if it already exists?",
+      "options": [
+        "A. r",
+        "B. a",
+        "C. w",
+        "D. x",
+        "E. rb"
+      ],
+      "correct_answer": "C. w",
+      "explanation": "w mode overwrites the file if it exists.",
+      "detailed_explanation": "w (write) mode opens a file for writing. If the file exists, it TRUNCATES (erases) all content and starts fresh. If the file doesn't exist, it creates a new one. This is dangerous if you don't want to lose existing data — use a (append) or r+ instead.",
+      "why_correct": "w mode erases existing content and starts writing from the beginning — effectively overwriting the file.",
+      "wrong_options": {
+        "A": "r opens for reading only — cannot write at all.",
+        "B": "a (append) adds to the END of the file without erasing existing content.",
+        "D": "x (exclusive creation) creates a NEW file — fails if file already exists.",
+        "E": "rb opens for reading in binary mode — cannot write."
+      },
+      "memory_trick": "w = wipe and write. a = add to end. r = read only. x = exclusive new file (fails if exists).",
+      "exam_note": "File mode quick reference: r=read, w=write(overwrite), a=append, x=create new(fail if exists), b=binary, +=read+write.",
+      "topic": "Python Modules & File Handling"
+    },
+    {
+      "id": 33,
+      "practice_set": 6,
+      "question_no": 21,
+      "question": "Which Python module provides support for working with dates and times, including manipulating and formatting timestamps?",
+      "options": [
+        "A. timeit",
+        "B. time",
+        "C. datetime",
+        "D. calendar",
+        "E. os"
+      ],
+      "correct_answer": "C. datetime",
+      "explanation": "datetime module handles date and time operations in Python.",
+      "detailed_explanation": "The datetime module provides classes for working with dates and times: datetime.date (date only), datetime.time (time only), datetime.datetime (date+time), datetime.timedelta (duration). It supports parsing, formatting, arithmetic. Example: from datetime import datetime; now = datetime.now(); print(now.strftime('%Y-%m-%d')).",
+      "why_correct": "datetime is the comprehensive module for all date and time manipulation in Python.",
+      "wrong_options": {
+        "A": "timeit measures execution time of small code snippets — not for working with calendar dates.",
+        "B": "time module provides basic time functions like time.sleep(), time.time() (seconds since epoch) — limited date manipulation.",
+        "D": "calendar module provides calendar-related functions but is less comprehensive than datetime.",
+        "E": "os module is for operating system interactions — file paths, environment variables, not dates."
+      },
+      "memory_trick": "datetime = DATE + TIME together. The most complete module for all date/time needs.",
+      "exam_note": "Common usage: datetime.now(), datetime.strptime() for parsing, strftime() for formatting. strptime=string parse time, strftime=string format time.",
+      "topic": "Python Modules & File Handling"
+    },
+    {
+      "id": 34,
+      "practice_set": 6,
+      "question_no": 29,
+      "question": "In Python, which exception is raised when an index is accessed outside the valid range of a list?",
+      "options": [
+        "A. IndexOutOfRangeError",
+        "B. IndexError",
+        "C. KeyError",
+        "D. ValueError",
+        "E. AttributeError"
+      ],
+      "correct_answer": "B. IndexError",
+      "explanation": "IndexError occurs when list access exceeds valid range.",
+      "detailed_explanation": "IndexError is raised when you try to access an element at an index that doesn't exist. Example: a=[1,2,3]; a[10] → IndexError: list index out of range. Valid indices for a 3-element list: -3 to 2. This also applies to tuples and strings.",
+      "why_correct": "IndexError is Python's specific exception for invalid list/tuple/string index access.",
+      "wrong_options": {
+        "A": "IndexOutOfRangeError does not exist in Python — it's the name used in Java (ArrayIndexOutOfBoundsException).",
+        "C": "KeyError is raised when accessing a dictionary key that doesn't exist.",
+        "D": "ValueError is raised when a function receives correct type but inappropriate value — e.g., int('abc').",
+        "E": "AttributeError is raised when accessing a non-existent attribute on an object."
+      },
+      "memory_trick": "Index problem = IndexError (list). Key problem = KeyError (dict). Wrong value = ValueError. Missing attribute = AttributeError.",
+      "exam_note": "Python exception hierarchy: BaseException > Exception > LookupError > IndexError and KeyError. LookupError is parent of both.",
+      "topic": "Python Exception Handling"
+    },
+    {
+      "id": 35,
+      "practice_set": 6,
+      "question_no": 54,
+      "question": "Which Python method returns the number of elements with the specified value in a list?",
+      "options": [
+        "A. count()",
+        "B. find()",
+        "C. index()",
+        "D. search()",
+        "E. locate()"
+      ],
+      "correct_answer": "A. count()",
+      "explanation": "count() returns the number of occurrences of a specified value.",
+      "detailed_explanation": "count(value) returns how many times a specific value appears in a list. Example: [1,2,2,3,2].count(2) = 3. It also works on strings: 'hello'.count('l') = 2. count() returns 0 if the element is not found.",
+      "why_correct": "count() counts occurrences of a specific value in a list or string.",
+      "wrong_options": {
+        "A": "count() is correct.",
+        "B": "find() is a string method that returns the INDEX of the first occurrence — not the count.",
+        "C": "index() returns the POSITION/INDEX of the first occurrence — not the count.",
+        "D": "search() does not exist as a list method (it's in the re module for regex searching).",
+        "E": "locate() does not exist as a Python method."
+      },
+      "memory_trick": "count() = COUNT how many times. index() = where is it (INDEX/position). find() = find in string (returns -1 if not found, unlike index which raises error).",
+      "exam_note": "find() vs index() for strings: both find position, but find() returns -1 if not found, index() raises ValueError.",
+      "topic": "Python Built-in Functions"
+    },
+    {
+      "id": 36,
+      "practice_set": 7,
+      "question_no": 11,
+      "question": "In Python, which function returns a sorted list from the elements of any iterable without modifying the original iterable?",
+      "options": [
+        "A. sort()",
+        "B. list()",
+        "C. sorted()",
+        "D. arrange()",
+        "E. order()"
+      ],
+      "correct_answer": "C. sorted()",
+      "explanation": "sorted() returns a new sorted list without modifying the original iterable.",
+      "detailed_explanation": "sorted() is a built-in function that returns a NEW sorted list from any iterable, leaving the original unchanged. sort() is a list METHOD that sorts IN PLACE and returns None. Example: a=[3,1,2]; b=sorted(a) → b=[1,2,3], a=[3,1,2] unchanged. a.sort() → a=[1,2,3], returns None.",
+      "why_correct": "sorted() creates and returns a NEW sorted list without changing the original — works on any iterable.",
+      "wrong_options": {
+        "A": "sort() is a list METHOD that sorts IN PLACE (modifies original) and returns None — not a built-in function.",
+        "B": "list() just converts an iterable to a list — no sorting.",
+        "D": "arrange() does not exist in Python (numpy.arange() exists for arrays).",
+        "E": "order() does not exist as a Python built-in."
+      },
+      "memory_trick": "sorted() = safe sort, returns new list. sort() = sorts self, returns None. sorted() works on ANY iterable, sort() only on lists.",
+      "exam_note": "Both accept key and reverse parameters: sorted(a, reverse=True) for descending. sorted('hello') = ['e','h','l','l','o'].",
+      "topic": "Python Programming"
+    },
+    {
+      "id": 37,
+      "practice_set": 7,
+      "question_no": 20,
+      "question": "Which Python method removes and returns the last element from a list by default unless an index is specified?",
+      "options": [
+        "A. remove()",
+        "B. pop()",
+        "C. del()",
+        "D. discard()",
+        "E. drop()"
+      ],
+      "correct_answer": "B. pop()",
+      "explanation": "pop() removes and returns the last item or a specified index in a list.",
+      "detailed_explanation": "pop() removes and RETURNS an element. With no argument: pop() removes and returns the LAST element. With index: pop(i) removes and returns element at index i. Example: a=[1,2,3]; a.pop() returns 3 and a becomes [1,2]. a.pop(0) returns 1 and a becomes [2,3].",
+      "why_correct": "pop() both REMOVES and RETURNS the element — default is last element.",
+      "wrong_options": {
+        "A": "remove(value) removes first occurrence of VALUE — does not return the removed element.",
+        "C": "del is a statement, not a function — del a[i] deletes element but doesn't return it. del() syntax is wrong.",
+        "D": "discard() is a SET method — removes an element from a set without error if not found. Not for lists.",
+        "E": "drop() does not exist as a Python list method."
+      },
+      "memory_trick": "pop() = POP it out and RETURN it. remove() = just remove by value, no return. del = delete without return.",
+      "exam_note": "Stack behavior: append() to push, pop() to pop — Python lists can act as stacks using these two methods.",
+      "topic": "Python Lists"
+    },
+    {
+      "id": 38,
+      "practice_set": 7,
+      "question_no": 33,
+      "question": "In Python, which exception is raised when trying to access a dictionary key that does not exist?",
+      "options": [
+        "A. IndexError",
+        "B. KeyError",
+        "C. ValueError",
+        "D. NameError",
+        "E. AttributeError"
+      ],
+      "correct_answer": "B. KeyError",
+      "explanation": "KeyError occurs when accessing a non-existing dictionary key.",
+      "detailed_explanation": "Accessing d['missing_key'] when the key doesn't exist raises KeyError. To avoid this, use d.get('key') which returns None (or a default) instead of raising an error. Example: d={'a':1}; d['b'] → KeyError: 'b'. But d.get('b', 0) → 0.",
+      "why_correct": "KeyError is raised specifically when a dictionary key lookup fails.",
+      "wrong_options": {
+        "A": "IndexError is for invalid list/tuple/string index access.",
+        "C": "ValueError is for wrong value type/format — e.g., int('abc').",
+        "D": "NameError is raised when a variable name is not defined — e.g., print(x) when x doesn't exist.",
+        "E": "AttributeError is for accessing a non-existent attribute on an object."
+      },
+      "memory_trick": "Key = KeyError (dict). Index = IndexError (list). Name not defined = NameError. Wrong value = ValueError.",
+      "exam_note": "Use dict.get(key, default) to safely access dict values without risking KeyError.",
+      "topic": "Python Exception Handling"
+    },
+    {
+      "id": 39,
+      "practice_set": 7,
+      "question_no": 39,
+      "question": "Which data structure in Python uses key-value pairs and allows for fast lookup of values using keys?",
+      "options": [
+        "A. List",
+        "B. Tuple",
+        "C. Dictionary",
+        "D. Set",
+        "E. Array"
+      ],
+      "correct_answer": "C. Dictionary",
+      "explanation": "Dictionaries store key-value pairs for fast lookups.",
+      "detailed_explanation": "Python dictionaries (dict) store data as key-value pairs. Keys must be unique and immutable (strings, numbers, tuples). Values can be anything. Dictionaries provide O(1) average time complexity for lookup. Example: person = {'name':'Alice', 'age':25}; person['name'] = 'Alice'.",
+      "why_correct": "Dictionary is the only Python data structure with key-value pairs and hash-based fast O(1) lookup.",
+      "wrong_options": {
+        "A": "List stores ordered elements accessed by integer index — no key-value pairs.",
+        "B": "Tuple is an immutable ordered sequence — accessed by index, no key-value pairs.",
+        "D": "Set stores unique values with no mapping — no values associated with elements.",
+        "E": "Array is not a built-in Python type and doesn't have key-value pairs."
+      },
+      "memory_trick": "Dictionary = real-world dictionary: look up a WORD (key) to find its MEANING (value). Fast because it uses hashing.",
+      "exam_note": "Dictionary keys must be HASHABLE (immutable): str, int, float, tuple are valid keys. List, dict, set CANNOT be keys.",
+      "topic": "Python Collections"
+    },
+    {
+      "id": 40,
+      "practice_set": 7,
+      "question_no": 53,
+      "question": "In Python, which method is used to insert an element at a specific position in a list?",
+      "options": [
+        "A. append()",
+        "B. insert()",
+        "C. add()",
+        "D. extend()",
+        "E. pop()"
+      ],
+      "correct_answer": "B. insert()",
+      "explanation": "insert() adds an element at a specified index in a list.",
+      "detailed_explanation": "insert(index, element) inserts an element at a given position. Example: a=[1,2,3]; a.insert(1, 99) → a=[1,99,2,3]. append() adds to the END only. extend() adds multiple elements at the end. insert() is for a specific position.",
+      "why_correct": "insert(i, x) places element x at index i, shifting existing elements right.",
+      "wrong_options": {
+        "A": "append(x) adds x to the END of the list — no position control.",
+        "C": "add() is a SET method — adds one element to a set. Not for lists.",
+        "D": "extend(iterable) adds all elements from an iterable to the END of the list.",
+        "E": "pop() REMOVES and returns — does not insert."
+      },
+      "memory_trick": "append=add to END. insert=add at SPECIFIC INDEX. extend=add MULTIPLE items to end.",
+      "exam_note": "List modification methods: append(x), insert(i,x), extend(iterable), remove(x), pop(i), clear(), sort(), reverse().",
+      "topic": "Python Lists"
+    },
+    {
+      "id": 41,
+      "practice_set": 7,
+      "question_no": 57,
+      "question": "Which Python method removes a key from a dictionary and returns its value if the key exists?",
+      "options": [
+        "A. pop()",
+        "B. discard()",
+        "C. remove()",
+        "D. del()",
+        "E. clear()"
+      ],
+      "correct_answer": "A. pop()",
+      "explanation": "pop() removes a key and returns its value from a dictionary.",
+      "detailed_explanation": "dict.pop(key) removes the key-value pair and returns the value. dict.pop(key, default) returns the default if key not found instead of raising KeyError. Example: d={'a':1,'b':2}; d.pop('a') returns 1 and d becomes {'b':2}.",
+      "why_correct": "dict.pop(key) removes the specified key and returns its associated value.",
+      "wrong_options": {
+        "B": "discard() is a SET method — removes element without error if not found. Not for dicts.",
+        "C": "remove() is a LIST method — removes by value. Not a dict method.",
+        "D": "del d[key] deletes a key-value pair but does NOT return the value. del() is not a function.",
+        "E": "clear() removes ALL items from the dict — not just one key."
+      },
+      "memory_trick": "pop() works on: list (by index), dict (by key), set (random element). All versions REMOVE and RETURN.",
+      "exam_note": "Safe dict pop with default: d.pop('key', None) — returns None instead of KeyError if key missing.",
+      "topic": "Python Collections"
+    },
+    {
+      "id": 42,
+      "practice_set": 8,
+      "question_no": 12,
+      "question": "What will the following Python code output?\n\nprint(type((5)))",
+      "options": [
+        "A. tuple",
+        "B. int",
+        "C. list",
+        "D. str",
+        "E. dict"
+      ],
+      "correct_answer": "B. int",
+      "explanation": "(5) without a trailing comma is an integer, not a tuple.",
+      "detailed_explanation": "This is a classic Python trap. (5) just uses parentheses for grouping — like in math. It does NOT create a tuple. The value is simply the integer 5. type((5)) = type(5) = <class 'int'>. To make a one-element tuple: (5,) — the comma is essential.",
+      "why_correct": "(5) = 5 (integer). Parentheses alone don't create a tuple. A trailing comma is required: (5,).",
+      "wrong_options": {
+        "A": "Would be correct only if written as (5,) with a trailing comma.",
+        "C": "list requires square brackets: [5].",
+        "D": "str requires quotes: '5' or \"5\".",
+        "E": "dict requires key-value pairs: {'key': 5}."
+      },
+      "memory_trick": "(5) = int. (5,) = tuple. COMMA creates the tuple, not the parentheses!",
+      "exam_note": "Most frequently tested Python trap in exams. Always ask: is there a comma? No comma = not a tuple.",
+      "topic": "Python Data Types"
+    },
+    {
+      "id": 43,
+      "practice_set": 8,
+      "question_no": 23,
+      "question": "What will the following Python code output?\n\nd = {'a': 1, 'b': 2}\nprint(d.get('c', 3))",
+      "options": [
+        "A. 1",
+        "B. 2",
+        "C. 3",
+        "D. None",
+        "E. KeyError"
+      ],
+      "correct_answer": "C. 3",
+      "explanation": "get() returns the default value if the key is not found.",
+      "detailed_explanation": "dict.get(key, default) safely accesses a dictionary key. If the key exists, returns its value. If key doesn't exist, returns the default value (second argument). Here 'c' doesn't exist in d, so get() returns the default 3. If no default specified, returns None.",
+      "why_correct": "'c' is not in d={'a':1,'b':2}, so d.get('c', 3) returns the default value 3.",
+      "wrong_options": {
+        "A": "1 is the value of key 'a', not 'c'.",
+        "B": "2 is the value of key 'b', not 'c'.",
+        "D": "None would be returned only if no default was given: d.get('c') = None.",
+        "E": "KeyError is what d['c'] would raise — but get() never raises KeyError."
+      },
+      "memory_trick": "d['key'] → raises KeyError if missing. d.get('key') → returns None if missing. d.get('key', default) → returns default if missing.",
+      "exam_note": "Always prefer get() over [] when key might not exist. Safer and more Pythonic.",
+      "topic": "Python Collections"
+    },
+    {
+      "id": 44,
+      "practice_set": 8,
+      "question_no": 32,
+      "question": "In Python, what will the following code output?\n\na = [1, 2, 3]\nprint(a[1:])",
+      "options": [
+        "A. [1, 2]",
+        "B. [2, 3]",
+        "C. [1]",
+        "D. [2]",
+        "E. []"
+      ],
+      "correct_answer": "B. [2, 3]",
+      "explanation": "a[1:] slices from index 1 onward.",
+      "detailed_explanation": "List slicing syntax: a[start:stop:step]. a[1:] means: start at index 1, go to the end (no stop specified). Indices: a[0]=1, a[1]=2, a[2]=3. So a[1:] = [2, 3] (elements from index 1 onwards).",
+      "why_correct": "a[1:] starts at index 1 (value 2) and goes to the end. Result: [2, 3].",
+      "wrong_options": {
+        "A": "[1, 2] would be a[:2] — from start to index 2 (exclusive).",
+        "C": "[1] would be a[:1] — only the first element.",
+        "D": "[2] would be a[1:2] — only index 1.",
+        "E": "[] would be a[5:] or similar out-of-range slice (doesn't raise error, returns empty)."
+      },
+      "memory_trick": "a[start:stop]: start INCLUDED, stop EXCLUDED. No stop = go to end. No start = from beginning. a[::-1] = reversed.",
+      "exam_note": "Slicing never raises IndexError — if indices are out of range, it returns what it can: a[100:] = [] for any list.",
+      "topic": "Python Lists"
+    },
+    {
+      "id": 45,
+      "practice_set": 8,
+      "question_no": 36,
+      "question": "What will be the output of the following Python code?\n\nx = (1,)\nprint(type(x))",
+      "options": [
+        "A. list",
+        "B. int",
+        "C. tuple",
+        "D. str",
+        "E. set"
+      ],
+      "correct_answer": "C. tuple",
+      "explanation": "(1,) is a tuple, not int.",
+      "detailed_explanation": "(1,) has a trailing comma after 1, which explicitly tells Python this is a single-element tuple. Contrasting with (1) which is just an integer. x = (1,) creates a tuple with one element. type(x) = <class 'tuple'>.",
+      "why_correct": "The trailing comma in (1,) makes it a tuple. type((1,)) = <class 'tuple'>.",
+      "wrong_options": {
+        "A": "list requires [1] not (1,).",
+        "B": "int would be type((1)) — without the comma.",
+        "D": "str requires '1' or \"1\".",
+        "E": "set requires {1} — curly braces with no key-value."
+      },
+      "memory_trick": "Paired with Q42: (5) = int, (5,) = tuple. COMMA = TUPLE. Learn both together!",
+      "exam_note": "Single-element tuple creation is a unique Python syntax — always needs the trailing comma.",
+      "topic": "Python Data Types"
+    },
+    {
+      "id": 46,
+      "practice_set": 8,
+      "question_no": 38,
+      "question": "Which Python method is used to delete a specified element by value from a list?",
+      "options": [
+        "A. pop()",
+        "B. delete()",
+        "C. remove()",
+        "D. discard()",
+        "E. clear()"
+      ],
+      "correct_answer": "C. remove()",
+      "explanation": "remove() deletes by value from a list.",
+      "detailed_explanation": "remove(value) searches for the FIRST occurrence of the specified value and removes it. If the value doesn't exist, it raises ValueError. Example: a=[1,2,3,2]; a.remove(2) → a=[1,3,2] (only first 2 is removed).",
+      "why_correct": "remove(x) removes the first occurrence of value x from the list.",
+      "wrong_options": {
+        "A": "pop() removes by INDEX (position), not by value — and it returns the removed element.",
+        "B": "delete() is not a Python list method.",
+        "D": "discard() is a SET method — removes by value from a set, no error if not found.",
+        "E": "clear() removes ALL elements — not just one specific value."
+      },
+      "memory_trick": "remove(value) = find it by VALUE, remove first occurrence. pop(index) = remove by POSITION. discard(value) = SET version of remove.",
+      "exam_note": "remove() raises ValueError if element not found. discard() (set method) does NOT raise error — safely ignores missing element.",
+      "topic": "Python Lists"
+    },
+    {
+      "id": 47,
+      "practice_set": 8,
+      "question_no": 47,
+      "question": "Which Python built-in function converts a string to all lowercase letters?",
+      "options": [
+        "A. lower()",
+        "B. down()",
+        "C. small()",
+        "D. tolower()",
+        "E. lcase()"
+      ],
+      "correct_answer": "A. lower()",
+      "explanation": "lower() converts strings to lowercase.",
+      "detailed_explanation": "lower() is a string method that returns a new string with all characters converted to lowercase. It does not modify the original string (strings are immutable). Example: 'HELLO'.lower() = 'hello'. Counterpart: upper() for uppercase, title() for Title Case, capitalize() for first letter only.",
+      "why_correct": "lower() is Python's built-in string method for converting to lowercase.",
+      "wrong_options": {
+        "B": "down() does not exist as a Python string method.",
+        "C": "small() does not exist as a Python string method.",
+        "D": "tolower() exists in C++ — not Python.",
+        "E": "lcase() does not exist in Python."
+      },
+      "memory_trick": "String case methods: lower() → all small, upper() → ALL CAPS, title() → First Letter Each Word, capitalize() → First letter only.",
+      "exam_note": "Strings in Python are IMMUTABLE — lower() returns a NEW string, it doesn't change the original.",
+      "topic": "Python Strings"
+    },
+    {
+      "id": 48,
+      "practice_set": 8,
+      "question_no": 50,
+      "question": "What will be the output of this Python code?\n\ns = {1, 2, 2}\nprint(len(s))",
+      "options": [
+        "A. 4",
+        "B. 1",
+        "C. 2",
+        "D. 0",
+        "E. Error"
+      ],
+      "correct_answer": "B. 1",
+      "explanation": "Set removes duplicates, so {1, 2, 2} has unique elements. Note: The answer key from the original PDF marks this as 1, which may reflect the code being {2,2,2} on the original exam paper.",
+      "detailed_explanation": "Note: There is a likely discrepancy here. If s={1,2,2}, the set removes duplicate 2, giving {1,2} with len=2. However the answer key says 1, suggesting the original code may have been s={2,2,2} which becomes {2} with len=1. This is preserved as per the original answer key. Core concept: sets always remove duplicates.",
+      "why_correct": "Based on the answer key: set removes duplicates, resulting in 1 unique element. Likely the original code was s={2,2,2} → {2} → len=1.",
+      "wrong_options": {
+        "A": "4 — no basis for this count.",
+        "C": "2 would be correct if s={1,2,2} in standard Python behavior.",
+        "D": "0 — no basis for empty set here.",
+        "E": "No error — len() works on sets."
+      },
+      "memory_trick": "Set always stores UNIQUE elements. {2,2,2} = {2}. Duplicates are silently ignored.",
+      "exam_note": "Always apply deduplication mentally when you see set literals: {a,b,b,c,c,c} → count unique values.",
+      "topic": "Python Programming"
+    },
+    {
+      "id": 49,
+      "practice_set": 8,
+      "question_no": 53,
+      "question": "What is the result of the following Python expression?\n\nbool(\"\")",
+      "options": [
+        "A. True",
+        "B. False",
+        "C. None",
+        "D. Error",
+        "E. 0"
+      ],
+      "correct_answer": "B. False",
+      "explanation": "bool(\"\") evaluates to False.",
+      "detailed_explanation": "An empty string '' or \"\" is falsy in Python. bool('') = False. Any non-empty string is truthy: bool('a') = True, bool('0') = True, bool(' ') = True (space is a character). Only the completely empty string '' is falsy.",
+      "why_correct": "Empty string is one of Python's falsy values. bool('') = False.",
+      "wrong_options": {
+        "A": "True requires a non-empty string like 'hello' or even ' '.",
+        "C": "None is a falsy value but bool('') returns False, not None.",
+        "D": "No error — bool() accepts any value.",
+        "E": "0 is the integer equivalent of False, but bool() returns the boolean False."
+      },
+      "memory_trick": "Empty = False: '' (empty string), [] (empty list), {} (empty dict), set() (empty set), 0, None. ALL are False.",
+      "exam_note": "bool(' ') = True (space is not empty!). bool('False') = True (non-empty string). bool('0') = True (non-empty string).",
+      "topic": "Python Strings"
+    },
+    {
+      "id": 50,
+      "practice_set": 9,
+      "question_no": 1,
+      "question": "In Python, which keyword is used to raise an exception manually?",
+      "options": [
+        "A. except",
+        "B. throw",
+        "C. raise",
+        "D. assert",
+        "E. error"
+      ],
+      "correct_answer": "C. raise",
+      "explanation": "raise is used to throw an exception manually in Python.",
+      "detailed_explanation": "raise keyword manually triggers an exception. Example: raise ValueError('Invalid input'). raise can re-raise the current exception (in an except block) with just 'raise'. You can raise any built-in or custom exception class.",
+      "why_correct": "raise is Python's keyword to manually trigger an exception — equivalent to throw in Java/JavaScript.",
+      "wrong_options": {
+        "A": "except CATCHES exceptions — does not raise them.",
+        "B": "throw is used in Java and JavaScript — Python uses raise.",
+        "D": "assert checks a condition and raises AssertionError automatically if False — but assert itself is for debugging, not for manually raising custom exceptions.",
+        "E": "error is not a Python keyword."
+      },
+      "memory_trick": "Python=raise. Java/JavaScript=throw. Both mean: manually trigger an exception. Different words, same concept.",
+      "exam_note": "Custom exception example: class MyError(Exception): pass. raise MyError('something went wrong'). Always inherit from Exception.",
+      "topic": "Python Exception Handling"
+    },
+    {
+      "id": 51,
+      "practice_set": 9,
+      "question_no": 15,
+      "question": "Which Python keyword is used to create a generator function that can yield values one at a time?",
+      "options": [
+        "A. def",
+        "B. yield",
+        "C. return",
+        "D. lambda",
+        "E. pass"
+      ],
+      "correct_answer": "B. yield",
+      "explanation": "yield is used in Python to create a generator.",
+      "detailed_explanation": "A generator function uses yield instead of return to produce values one at a time lazily (on demand). When yield is called, the function pauses and saves its state. Next call resumes from where it paused. Generators are memory-efficient for large sequences. Example: def count_up(n): for i in range(n): yield i.",
+      "why_correct": "yield makes a function a generator — it pauses execution and returns a value, resuming on the next call.",
+      "wrong_options": {
+        "A": "def just defines the function. yield inside def makes it a generator function.",
+        "C": "return exits the function completely. yield pauses it. A function with return is not a generator.",
+        "D": "lambda creates a small anonymous function — cannot contain yield.",
+        "E": "pass is a placeholder (do nothing) — not related to generators."
+      },
+      "memory_trick": "yield = yield one item, pause, remember state. return = exit completely, forget state. Generator = lazy evaluation.",
+      "exam_note": "Generator expression (like list comprehension): (x*x for x in range(10)) — uses () not []. Very memory efficient.",
+      "topic": "Python Functions & Methods"
+    },
+    {
+      "id": 52,
+      "practice_set": 9,
+      "question_no": 19,
+      "question": "In Python, which function is used to combine two lists element-wise into pairs?\n\na = [1, 2]\nb = [3, 4]\nprint(list(zip(a, b)))",
+      "options": [
+        "A. [(1, 1), (2, 4)]",
+        "B. [(3, 1), (4, 2)]",
+        "C. [(1, 3), (2, 4)]",
+        "D. [(1, 2), (3, 4)]",
+        "E. Error"
+      ],
+      "correct_answer": "C. [(1, 3), (2, 4)]",
+      "explanation": "zip() pairs items from both lists positionally.",
+      "detailed_explanation": "zip(a, b) pairs elements from a and b at the same position (index). a=[1,2], b=[3,4]: index 0: (1,3), index 1: (2,4). Result: [(1,3),(2,4)]. zip returns a zip object (iterator) — wrapping with list() gives a list of tuples.",
+      "why_correct": "zip pairs elements at matching positions: a[0] with b[0], a[1] with b[1], giving [(1,3),(2,4)].",
+      "wrong_options": {
+        "A": "[(1,1),(2,4)] doesn't follow positional pairing correctly.",
+        "B": "[(3,1),(4,2)] reverses the order — zip always takes from a first.",
+        "D": "[(1,2),(3,4)] would be zip([1,2],[3,4]) treating each list as a pair — not how zip works.",
+        "E": "No error — zip works fine on two lists."
+      },
+      "memory_trick": "zip = like a zipper on clothing — pairs LEFT tooth with RIGHT tooth at same position. (a[0],b[0]), (a[1],b[1])...",
+      "exam_note": "zip stops at the shortest iterable. To use longest: itertools.zip_longest(). zip with * unpacks: list(zip(*zipped)) = unzip.",
+      "topic": "Python Programming"
+    },
+    {
+      "id": 53,
+      "practice_set": 9,
+      "question_no": 22,
+      "question": "What will the following Python code output?\n\nprint(3 * \"7\")",
+      "options": [
+        "A. 777",
+        "B. 7777",
+        "C. 77777",
+        "D. 21",
+        "E. 3"
+      ],
+      "correct_answer": "A. 777",
+      "explanation": "3 * \"7\" repeats the string 3 times.",
+      "detailed_explanation": "3 * '7' repeats the string '7' three times: '7'+'7'+'7' = '777'. Note: this is STRING repetition, not arithmetic. '7' is a string, so 3*'7' = '777'. If you wanted arithmetic: 3*7 = 21 (without quotes).",
+      "why_correct": "3 * '7' repeats the string '7' three times = '777'.",
+      "wrong_options": {
+        "A": "777 is correct.",
+        "B": "7777 would be 4 * '7'.",
+        "C": "77777 would be 5 * '7'.",
+        "D": "21 = 3 * 7 (arithmetic, both integers) — but '7' is a string, not int.",
+        "E": "3 would only make sense if returning the multiplier."
+      },
+      "memory_trick": "Number * String = REPEAT string. Number * Number = ARITHMETIC. Quotes matter! '7'*3 = '777'. 7*3 = 21.",
+      "exam_note": "Cannot multiply two strings: '3'*'7' raises TypeError. Must have int * str or str * int.",
+      "topic": "Python Strings"
+    },
+    {
+      "id": 54,
+      "practice_set": 9,
+      "question_no": 28,
+      "question": "Which Python operator is used to check whether two variables refer to the same object in memory?",
+      "options": [
+        "A. ==",
+        "B. !=",
+        "C. is",
+        "D. in",
+        "E. equals"
+      ],
+      "correct_answer": "C. is",
+      "explanation": "is checks whether variables point to the same object.",
+      "detailed_explanation": "is checks IDENTITY — whether two variables point to the EXACT SAME object in memory (same memory address). == checks EQUALITY — whether two objects have the same VALUE. Example: a=[1,2]; b=[1,2]; a==b is True (same values), a is b is False (different objects). But: a=b; a is b is True (same object).",
+      "why_correct": "is compares memory identity (id(a) == id(b)), not just values.",
+      "wrong_options": {
+        "A": "== checks VALUE equality — two different objects can be == if they have the same content.",
+        "B": "!= checks VALUE inequality — opposite of ==.",
+        "D": "in checks MEMBERSHIP — whether a value exists in a sequence.",
+        "E": "equals is not a Python operator."
+      },
+      "memory_trick": "is = same IDENTITY (same object in memory). == = same VALUE. is None is always better than == None.",
+      "exam_note": "Best practice: use 'x is None' and 'x is not None' — never 'x == None'. is works perfectly for None, True, False comparisons.",
+      "topic": "Python Operators & Expressions"
+    },
+    {
+      "id": 55,
+      "practice_set": 9,
+      "question_no": 32,
+      "question": "In Python, what will be the output?\n\na = [1, 2, 3]\nprint(a[-1])",
+      "options": [
+        "A. 1",
+        "B. 2",
+        "C. 3",
+        "D. -1",
+        "E. Error"
+      ],
+      "correct_answer": "C. 3",
+      "explanation": "a[-1] accesses the last element.",
+      "detailed_explanation": "Python supports negative indexing. -1 refers to the last element, -2 to second last, and so on. For a=[1,2,3]: a[-1]=3, a[-2]=2, a[-3]=1. This is very useful because you don't need to know the length to access the last element.",
+      "why_correct": "a[-1] always gives the LAST element. For [1,2,3], last element is 3.",
+      "wrong_options": {
+        "A": "1 = a[0] or a[-3] — the first element.",
+        "B": "2 = a[1] or a[-2] — the middle element.",
+        "D": "-1 is the index, not the value stored there.",
+        "E": "No error — negative indexing is valid in Python."
+      },
+      "memory_trick": "Negative index: -1=last, -2=second last, -3=third last. Think of counting backwards from the end.",
+      "exam_note": "Negative slicing: a[-2:] = last 2 elements. a[:-1] = all except last. a[::-1] = reversed. Very powerful Python feature.",
+      "topic": "Python Lists"
+    },
+    {
+      "id": 56,
+      "practice_set": 9,
+      "question_no": 36,
+      "question": "In Python, which function can return the list of keys in a dictionary?\n\nd = {'a':1, 'b':2}\nprint(d.keys())",
+      "options": [
+        "A. ['a', 'b']",
+        "B. ('a', 'b')",
+        "C. {'a', 'b'}",
+        "D. dict_keys(['a', 'b'])",
+        "E. Error"
+      ],
+      "correct_answer": "D. dict_keys(['a', 'b'])",
+      "explanation": "keys() returns a dict view object.",
+      "detailed_explanation": "d.keys() returns a dict_keys view object, not a regular list. This view is dynamic — if the dict changes, the view reflects the change. To get a plain list: list(d.keys()). Similar view objects: d.values() → dict_values, d.items() → dict_items.",
+      "why_correct": "d.keys() returns a dict_keys view object, displayed as dict_keys(['a', 'b']) — not a plain list or tuple.",
+      "wrong_options": {
+        "A": "['a','b'] would be the result of list(d.keys()) — not d.keys() alone.",
+        "B": "('a','b') tuple — not what keys() returns.",
+        "C": "{'a','b'} set — not what keys() returns.",
+        "E": "No error — keys() is a valid dict method."
+      },
+      "memory_trick": "dict view objects: .keys()=dict_keys, .values()=dict_values, .items()=dict_items. Wrap with list() for a plain list.",
+      "exam_note": "d.items() returns dict_items([('a',1),('b',2)]) — pairs of (key, value). Very useful in for loops: for k,v in d.items().",
+      "topic": "Python Collections"
+    },
+    {
+      "id": 57,
+      "practice_set": 9,
+      "question_no": 40,
+      "question": "In Python, which operator is used to check if a value exists in a sequence such as a list, tuple, or string?",
+      "options": [
+        "A. ==",
+        "B. is",
+        "C. in",
+        "D. and",
+        "E. exists"
+      ],
+      "correct_answer": "C. in",
+      "explanation": "in checks membership in sequence.",
+      "detailed_explanation": "The in operator checks membership — whether a value exists in a list, tuple, string, dict (checks keys), or set. Example: 3 in [1,2,3] = True. 'a' in {'a':1,'b':2} = True (checks keys). 'ell' in 'hello' = True (substring check for strings). not in is the negation.",
+      "why_correct": "in is Python's membership operator — checks if a value exists in any sequence or collection.",
+      "wrong_options": {
+        "A": "== checks VALUE EQUALITY between two objects — not membership.",
+        "B": "is checks OBJECT IDENTITY — not membership.",
+        "D": "and is a logical operator — combines boolean conditions.",
+        "E": "exists is not a Python operator."
+      },
+      "memory_trick": "in = is it IN here? 3 in [1,2,3] → 'Is 3 in this list? Yes!' not in = opposite.",
+      "exam_note": "in on dict checks KEYS only: 'a' in {'a':1} = True. To check values: 1 in {'a':1}.values() = True.",
+      "topic": "Python Operators & Expressions"
+    },
+    {
+      "id": 58,
+      "practice_set": 9,
+      "question_no": 43,
+      "question": "What will the following code output, demonstrating list comprehension?\n\nprint([x*x for x in range(3)])",
+      "options": [
+        "A. [0, 1, 2]",
+        "B. [1, 4, 9]",
+        "C. [0, 1, 4]",
+        "D. [0, 1, 2, 3]",
+        "E. [0, 1, 8]"
+      ],
+      "correct_answer": "C. [0, 1, 4]",
+      "explanation": "Squares of 0, 1, and 2.",
+      "detailed_explanation": "range(3) generates: 0, 1, 2. List comprehension [x*x for x in range(3)] squares each: 0*0=0, 1*1=1, 2*2=4. Result: [0,1,4]. List comprehension syntax: [expression for item in iterable]. Very Pythonic and efficient.",
+      "why_correct": "range(3) = 0,1,2. Squaring each: 0²=0, 1²=1, 2²=4. Result: [0,1,4].",
+      "wrong_options": {
+        "A": "[0,1,2] would be [x for x in range(3)] — no squaring.",
+        "B": "[1,4,9] would be [x*x for x in range(1,4)] — starting from 1.",
+        "D": "[0,1,2,3] would be list(range(4)) — no squaring.",
+        "E": "[0,1,8] would be [x**3 for x in range(3)] — cubing, not squaring."
+      },
+      "memory_trick": "range(3) = 0,1,2 (NEVER includes 3). Square them: 0,1,4. List comprehension = [expression for var in iterable].",
+      "exam_note": "List comprehension with condition: [x for x in range(10) if x%2==0] = [0,2,4,6,8]. Very common in exams.",
+      "topic": "Python Lists"
+    }
+  ],
+  "ai_ml_exam_questions": [
+    {
+      "id": 59,
+      "practice_set": 10,
+      "question_no": 1,
+      "question": "Which learning technique trains a model using input data along with known output labels?",
+      "options": [
+        "A. Unsupervised learning",
+        "B. Supervised learning",
+        "C. Reinforcement learning",
+        "D. Dimensionality reduction",
+        "E. Clustering"
+      ],
+      "correct_answer": "B. Supervised learning",
+      "explanation": "Supervised learning uses labelled examples where both inputs and correct outputs are provided during training.",
+      "detailed_explanation": "Supervised learning trains a model using labeled data — pairs of (input, correct output). The model learns the mapping from inputs to outputs. Examples: email spam detection (input=email, output=spam/not spam), house price prediction (input=features, output=price). The word 'supervised' implies a teacher providing correct answers.",
+      "why_correct": "Supervised learning is defined by training with labeled data — known input-output pairs.",
+      "wrong_options": {
+        "A": "Unsupervised learning uses data WITHOUT labels — finds patterns on its own.",
+        "C": "Reinforcement learning uses rewards/penalties — no labeled training data.",
+        "D": "Dimensionality reduction reduces features — not a training approach.",
+        "E": "Clustering is an unsupervised technique to group similar data — no labels."
+      },
+      "memory_trick": "Supervised = teacher SUPERVISES with correct answers. Unsupervised = student figures it out ALONE. Reinforcement = trial and error with REWARDS.",
+      "exam_note": "Three main ML types: Supervised (labeled data), Unsupervised (no labels), Reinforcement (rewards). Know examples of each.",
+      "topic": "AI/ML - Supervised Learning"
+    },
+    {
+      "id": 60,
+      "practice_set": 10,
+      "question_no": 2,
+      "question": "Which of the following is an example of unsupervised learning?",
+      "options": [
+        "A. Predicting house price from labelled data",
+        "B. Classifying emails as spam or not spam",
+        "C. Grouping customers based on similar behaviour",
+        "D. Detecting handwritten digits with labelled images",
+        "E. Predicting pass or fail using marks"
+      ],
+      "correct_answer": "C. Grouping customers based on similar behaviour",
+      "explanation": "Unsupervised learning finds patterns or groups in data without predefined labels.",
+      "detailed_explanation": "Grouping customers uses clustering — an unsupervised technique. No one tells the algorithm in advance what the groups are. It discovers natural groupings on its own. This is used in customer segmentation, market analysis, recommendation systems.",
+      "why_correct": "Grouping/clustering finds patterns in unlabeled data — the definition of unsupervised learning.",
+      "wrong_options": {
+        "A": "House price prediction from labeled data = supervised regression.",
+        "B": "Email spam classification = supervised classification (labeled: spam/not spam).",
+        "D": "Handwritten digit detection with labeled images = supervised classification.",
+        "E": "Pass/fail prediction from marks = supervised classification with labels."
+      },
+      "memory_trick": "Unsupervised = NO LABELS. Clustering, dimensionality reduction, association rules = unsupervised. If labels exist = supervised.",
+      "exam_note": "Unsupervised algorithms: K-Means clustering, DBSCAN, PCA, Apriori (association rules), Autoencoders.",
+      "topic": "AI/ML - Unsupervised Learning"
+    },
+    {
+      "id": 61,
+      "practice_set": 10,
+      "question_no": 3,
+      "question": "In machine learning, what is a training dataset used for?",
+      "options": [
+        "A. To deploy the final model",
+        "B. To teach the model patterns from examples",
+        "C. To store only incorrect predictions",
+        "D. To encrypt model parameters",
+        "E. To remove all features from data"
+      ],
+      "correct_answer": "B. To teach the model patterns from examples",
+      "explanation": "The training dataset is used by the algorithm to learn relationships between input features and output labels.",
+      "detailed_explanation": "In ML, data is split into: Training set (model learns from this), Validation set (tune hyperparameters), Test set (final unbiased evaluation). The training dataset is the model's classroom — it learns patterns, weights, and relationships from examples in this set.",
+      "why_correct": "Training data is used for the model to LEARN — it adjusts its parameters based on training examples.",
+      "wrong_options": {
+        "A": "Deploying is done after training — training data is not used for deployment.",
+        "C": "Training data contains all examples, not just incorrect predictions.",
+        "D": "Encryption is unrelated to ML training.",
+        "E": "Features are used in training — they're not removed."
+      },
+      "memory_trick": "Training data = classroom lessons. Validation = practice tests. Test data = final exam (seen only once).",
+      "exam_note": "Typical split: 70-80% training, 10-15% validation, 10-15% testing. Never touch test data until final evaluation.",
+      "topic": "AI/ML - Model Training"
+    },
+    {
+      "id": 62,
+      "practice_set": 10,
+      "question_no": 4,
+      "question": "Which algorithm is commonly represented using nodes, branches and leaves?",
+      "options": [
+        "A. K-Means",
+        "B. Decision Tree",
+        "C. Linear Regression",
+        "D. Naive Bayes",
+        "E. PCA"
+      ],
+      "correct_answer": "B. Decision Tree",
+      "explanation": "A decision tree uses internal nodes for tests, branches for outcomes and leaf nodes for final decisions.",
+      "detailed_explanation": "A Decision Tree is a tree-like structure: Root node = first decision point. Internal nodes = feature-based tests/conditions. Branches = outcomes of tests (yes/no, true/false). Leaf nodes = final predictions/class labels. Example: Is income > 50K? → Yes/No → further splits → finally predict loan approved/rejected.",
+      "why_correct": "Decision Trees are visually represented as tree structures with nodes (decisions), branches (outcomes), and leaves (results).",
+      "wrong_options": {
+        "A": "K-Means is represented as cluster centers and data points — no tree structure.",
+        "C": "Linear Regression is represented as a line equation — no tree.",
+        "D": "Naive Bayes is based on probability tables — no tree structure.",
+        "E": "PCA is represented as vectors/axes (principal components) — no tree."
+      },
+      "memory_trick": "Decision Tree = upside-down tree. Root at top, leaves at bottom. Each internal node DECIDES based on a feature.",
+      "exam_note": "Random Forest = many Decision Trees combined. It reduces overfitting by averaging predictions. Boosting (XGBoost) also uses decision trees.",
+      "topic": "AI/ML - Decision Tree"
+    },
+    {
+      "id": 63,
+      "practice_set": 10,
+      "question_no": 5,
+      "question": "Which machine learning task predicts a continuous numerical value?",
+      "options": [
+        "A. Classification",
+        "B. Regression",
+        "C. Clustering",
+        "D. Tokenization",
+        "E. Association mining"
+      ],
+      "correct_answer": "B. Regression",
+      "explanation": "Regression is used when the target output is numeric and continuous, such as price, salary or temperature.",
+      "detailed_explanation": "Regression predicts a CONTINUOUS numerical value. Examples: predicting house price (₹45,00,000), predicting temperature (32.5°C), predicting salary (₹8,00,000/year). Output can be any number. Classification on the other hand predicts discrete categories.",
+      "why_correct": "Regression output = continuous number (infinite possibilities). Example: 45.7, 1000.5, etc.",
+      "wrong_options": {
+        "A": "Classification predicts DISCRETE categories: spam/not spam, yes/no, cat/dog.",
+        "C": "Clustering groups similar data without predictions — unsupervised.",
+        "D": "Tokenization splits text into tokens — NLP preprocessing, not prediction.",
+        "E": "Association mining finds co-occurrence rules like 'buyers of A also buy B' — not value prediction."
+      },
+      "memory_trick": "Regression = Real numbers (continuous). Classification = Categories (discrete classes).",
+      "exam_note": "Algorithms: Linear Regression (continuous output), Logistic Regression (despite name, it's CLASSIFICATION). Don't confuse them!",
+      "topic": "AI/ML - Regression"
+    },
+    {
+      "id": 64,
+      "practice_set": 10,
+      "question_no": 6,
+      "question": "Which machine learning task assigns data into predefined categories?",
+      "options": [
+        "A. Regression",
+        "B. Classification",
+        "C. Normalization",
+        "D. Dimensionality reduction",
+        "E. Feature scaling"
+      ],
+      "correct_answer": "B. Classification",
+      "explanation": "Classification predicts discrete class labels such as spam/not spam or approved/rejected.",
+      "detailed_explanation": "Classification assigns input data to one of several predefined categories. Binary classification: 2 classes (yes/no). Multi-class: 3+ classes (cat/dog/bird). Output is always a discrete label. Algorithms: Logistic Regression, Decision Tree, SVM, KNN, Naive Bayes, Neural Networks.",
+      "why_correct": "Classification = predict which CATEGORY/CLASS an input belongs to.",
+      "wrong_options": {
+        "A": "Regression predicts continuous numbers — not categories.",
+        "C": "Normalization is data preprocessing (scaling values to 0-1 range) — not prediction.",
+        "D": "Dimensionality reduction reduces feature count — not prediction.",
+        "E": "Feature scaling standardizes data ranges — preprocessing, not prediction."
+      },
+      "memory_trick": "Classification = Classes/Categories. Regression = Real/continuous numbers.",
+      "exam_note": "Classification examples: email spam, disease diagnosis, image recognition, credit approval, sentiment analysis.",
+      "topic": "AI/ML - Classification"
+    },
+    {
+      "id": 65,
+      "practice_set": 11,
+      "question_no": 7,
+      "question": "In AI/ML, what does overfitting mean?",
+      "options": [
+        "A. Model performs well on training data but poorly on unseen data",
+        "B. Model has no training data",
+        "C. Model ignores all input features",
+        "D. Model is always simple and accurate",
+        "E. Model works only without labels"
+      ],
+      "correct_answer": "A. Model performs well on training data but poorly on unseen data",
+      "explanation": "Overfitting happens when a model memorizes training data and fails to generalize to new examples.",
+      "detailed_explanation": "Overfitting = model memorizes the training data including noise — very high training accuracy but poor test accuracy. Like a student who memorizes textbook answers but can't solve new problems. Causes: too complex model, too little training data, training for too many iterations. Solutions: regularization, dropout, cross-validation, more data, simpler model.",
+      "why_correct": "Overfitting = high training accuracy + low test/validation accuracy. Model memorized instead of learning.",
+      "wrong_options": {
+        "B": "No training data would prevent training entirely.",
+        "C": "Ignoring features would lead to random predictions.",
+        "D": "A simple model tends to UNDERFIT, not overfit.",
+        "E": "Working without labels describes unsupervised learning, not overfitting."
+      },
+      "memory_trick": "Overfitting = OVER-studied the textbook (training data). Can solve only textbook questions, fails in real exam (new data).",
+      "exam_note": "Overfitting = high variance. Underfitting = high bias. Bias-Variance tradeoff is a key ML concept.",
+      "topic": "AI/ML - Overfitting"
+    },
+    {
+      "id": 66,
+      "practice_set": 11,
+      "question_no": 8,
+      "question": "Which technique helps reduce overfitting in a machine learning model?",
+      "options": [
+        "A. Increasing noise only",
+        "B. Using regularization",
+        "C. Removing test data",
+        "D. Training on one example only",
+        "E. Ignoring validation results"
+      ],
+      "correct_answer": "B. Using regularization",
+      "explanation": "Regularization adds a penalty to model complexity, helping the model generalize better.",
+      "detailed_explanation": "Regularization prevents overfitting by adding a penalty term to the loss function for model complexity. L1 (Lasso): adds sum of absolute weights — can make some weights zero (feature selection). L2 (Ridge): adds sum of squared weights — shrinks weights but doesn't zero them. Both prevent the model from becoming too complex.",
+      "why_correct": "Regularization constrains model complexity, preventing memorization of training data noise.",
+      "wrong_options": {
+        "A": "Adding noise can actually help prevent overfitting (data augmentation) but 'increasing noise only' is not the standard technique.",
+        "C": "Removing test data means you can't evaluate — makes things worse.",
+        "D": "Training on one example would cause extreme overfitting to that example.",
+        "E": "Ignoring validation removes the feedback needed to detect and prevent overfitting."
+      },
+      "memory_trick": "Regularization = put a LEASH on the model. Don't let it memorize too much. L1=Lasso (sparse), L2=Ridge (shrink).",
+      "exam_note": "Other overfitting solutions: more training data, dropout (neural networks), early stopping, cross-validation, simpler model architecture.",
+      "topic": "AI/ML - Regularization"
+    },
+    {
+      "id": 67,
+      "practice_set": 11,
+      "question_no": 9,
+      "question": "What is the main purpose of a test dataset?",
+      "options": [
+        "A. To train the model repeatedly",
+        "B. To evaluate model performance on unseen data",
+        "C. To delete duplicate features",
+        "D. To store source code",
+        "E. To convert labels into images"
+      ],
+      "correct_answer": "B. To evaluate model performance on unseen data",
+      "explanation": "Test data is kept separate and used to estimate how well the trained model performs on new data.",
+      "detailed_explanation": "Test dataset is data the model has NEVER seen during training. It provides an unbiased estimate of real-world performance. The model should NOT be adjusted based on test results — that would contaminate it. Only look at test data once, at the very end.",
+      "why_correct": "Test data gives an honest, unbiased estimate of how the model will perform on real-world, unseen data.",
+      "wrong_options": {
+        "A": "Training repeatedly happens on TRAINING data, not test data.",
+        "C": "Removing duplicates is data preprocessing — not the purpose of test data.",
+        "D": "Test data contains data examples, not source code.",
+        "E": "Converting labels to images is not related to ML evaluation."
+      },
+      "memory_trick": "Test data = final exam paper. Never shown to student (model) during preparation (training). Used ONCE at the end.",
+      "exam_note": "If you tune the model based on test data results, the test data is effectively 'leaked' into training — invalidating evaluation.",
+      "topic": "AI/ML - Model Evaluation"
+    },
+    {
+      "id": 68,
+      "practice_set": 11,
+      "question_no": 10,
+      "question": "Which metric is calculated as correct predictions divided by total predictions?",
+      "options": [
+        "A. Accuracy",
+        "B. Recall",
+        "C. Precision",
+        "D. Entropy",
+        "E. Loss"
+      ],
+      "correct_answer": "A. Accuracy",
+      "explanation": "Accuracy measures the proportion of total predictions that are correct.",
+      "detailed_explanation": "Accuracy = (TP + TN) / (TP + TN + FP + FN) = Correct Predictions / Total Predictions. Simple and intuitive but can be misleading with imbalanced classes. If 99% of emails are not spam, predicting 'not spam' always gives 99% accuracy but is useless.",
+      "why_correct": "Accuracy = correct predictions / total predictions. The most straightforward metric.",
+      "wrong_options": {
+        "A": "Accuracy is correct.",
+        "B": "Recall = TP / (TP + FN) — how many actual positives were caught.",
+        "C": "Precision = TP / (TP + FP) — of predicted positives, how many were truly positive.",
+        "D": "Entropy measures impurity/uncertainty — used in decision trees, information theory.",
+        "E": "Loss measures the model's error during training — not the same as accuracy."
+      },
+      "memory_trick": "Accuracy = correct / total. Easy! Precision = correct positives / predicted positives. Recall = correct positives / actual positives.",
+      "exam_note": "F1 Score = harmonic mean of Precision and Recall. Used when both precision and recall matter and data is imbalanced.",
+      "topic": "AI/ML - Evaluation Metrics"
+    },
+    {
+      "id": 69,
+      "practice_set": 11,
+      "question_no": 11,
+      "question": "In a confusion matrix, what does a false positive mean?",
+      "options": [
+        "A. Actual positive predicted as negative",
+        "B. Actual negative predicted as positive",
+        "C. Actual positive predicted as positive",
+        "D. Actual negative predicted as negative",
+        "E. Data without any label"
+      ],
+      "correct_answer": "B. Actual negative predicted as positive",
+      "explanation": "A false positive occurs when the model incorrectly predicts the positive class for a negative case.",
+      "detailed_explanation": "Confusion matrix 4 outcomes: TP (True Positive) = actual positive, predicted positive. TN (True Negative) = actual negative, predicted negative. FP (False Positive) = actual NEGATIVE, predicted POSITIVE — Type I Error. FN (False Negative) = actual POSITIVE, predicted NEGATIVE — Type II Error.",
+      "why_correct": "False Positive = the prediction is POSITIVE but it's actually FALSE (wrong) — the actual class was NEGATIVE.",
+      "wrong_options": {
+        "A": "Actual positive predicted as negative = False NEGATIVE (FN).",
+        "C": "Actual positive predicted as positive = True POSITIVE (TP) — correct prediction.",
+        "D": "Actual negative predicted as negative = True NEGATIVE (TN) — correct prediction.",
+        "E": "Unlabeled data is about data quality, not confusion matrix outcomes."
+      },
+      "memory_trick": "FP = False Alarm. System said 'positive' (danger!) but was actually negative (safe). Like a smoke alarm going off with no fire.",
+      "exam_note": "Medical example: FP = healthy person diagnosed sick (unnecessary worry). FN = sick person diagnosed healthy (dangerous!). FN is usually costlier in medical diagnosis.",
+      "topic": "AI/ML - Confusion Matrix"
+    },
+    {
+      "id": 70,
+      "practice_set": 11,
+      "question_no": 12,
+      "question": "Which metric is most useful when we want to minimize false negatives in medical or fraud detection cases?",
+      "options": [
+        "A. Recall",
+        "B. File size",
+        "C. Latency",
+        "D. Entropy only",
+        "E. Compression ratio"
+      ],
+      "correct_answer": "A. Recall",
+      "explanation": "Recall measures how many actual positives are correctly identified, so it is important when missing positives is costly.",
+      "detailed_explanation": "Recall = TP / (TP + FN). High recall = fewer false negatives. In medical diagnosis: FN = missed disease = very dangerous. So we want high recall (catch all sick patients, even if some healthy ones are misclassified). In fraud detection: FN = missed fraud = costly. Precision focuses on minimizing false positives instead.",
+      "why_correct": "Recall minimizes False Negatives — critical when missing a positive case is costly (disease, fraud).",
+      "wrong_options": {
+        "B": "File size is not an ML evaluation metric.",
+        "C": "Latency measures response time — not prediction quality.",
+        "D": "Entropy measures impurity in decision trees — not directly related to FN minimization.",
+        "E": "Compression ratio is data compression concept — not ML evaluation."
+      },
+      "memory_trick": "Recall = RECALLING all positives. Don't miss any! High recall = low FN. Use when FN is costly (medical, fraud).",
+      "exam_note": "Precision vs Recall tradeoff: Increasing one often decreases the other. F1 Score balances both. Choose based on business cost of FP vs FN.",
+      "topic": "AI/ML - Evaluation Metrics"
+    },
+    {
+      "id": 71,
+      "practice_set": 12,
+      "question_no": 13,
+      "question": "Which algorithm groups data points into K clusters based on similarity?",
+      "options": [
+        "A. K-Means",
+        "B. Linear Regression",
+        "C. Decision Tree",
+        "D. Naive Bayes",
+        "E. Logistic Regression"
+      ],
+      "correct_answer": "A. K-Means",
+      "explanation": "K-Means is an unsupervised clustering algorithm that partitions data into K groups.",
+      "detailed_explanation": "K-Means algorithm: 1) Choose K cluster centers randomly. 2) Assign each data point to nearest center. 3) Recalculate centers as mean of assigned points. 4) Repeat until centers stop moving. K must be specified in advance. Uses Euclidean distance. Applications: customer segmentation, document clustering, image compression.",
+      "why_correct": "K-Means is specifically designed to partition data into K clusters based on feature similarity.",
+      "wrong_options": {
+        "B": "Linear Regression predicts continuous values — not clustering.",
+        "C": "Decision Tree classifies with labeled data — supervised, not unsupervised clustering.",
+        "D": "Naive Bayes is a classification algorithm — supervised, uses probability.",
+        "E": "Logistic Regression is for binary classification — supervised, not clustering."
+      },
+      "memory_trick": "K-Means: K = number of clusters, Means = uses mean (average) of points to find cluster centers.",
+      "exam_note": "Choosing K: Elbow method plots inertia vs K — the 'elbow' point is optimal K. Silhouette score also measures cluster quality.",
+      "topic": "AI/ML - Clustering"
+    },
+    {
+      "id": 72,
+      "practice_set": 12,
+      "question_no": 14,
+      "question": "Which technique is used to reduce the number of features while retaining important information?",
+      "options": [
+        "A. PCA",
+        "B. DNS",
+        "C. SQL Join",
+        "D. Hashing only",
+        "E. Firewall filtering"
+      ],
+      "correct_answer": "A. PCA",
+      "explanation": "Principal Component Analysis reduces dimensionality by transforming features into principal components.",
+      "detailed_explanation": "PCA (Principal Component Analysis) transforms high-dimensional data into lower dimensions while retaining maximum variance. It creates new features called principal components which are linear combinations of original features. Useful for visualization, removing correlated features, speeding up training. Example: 100 features → top 10 principal components.",
+      "why_correct": "PCA reduces dimensions (features) while preserving as much information (variance) as possible.",
+      "wrong_options": {
+        "B": "DNS (Domain Name System) is for internet address resolution — completely unrelated.",
+        "C": "SQL Join combines database tables — not ML dimensionality reduction.",
+        "D": "Hashing converts data to fixed-size values — not dimensionality reduction.",
+        "E": "Firewall filtering is network security — unrelated to ML."
+      },
+      "memory_trick": "PCA = PRINCIPAL components = most IMPORTANT directions in data. Reduces features, keeps variance.",
+      "exam_note": "Other dimensionality reduction: t-SNE (for visualization), LDA (for classification), Autoencoders (deep learning). PCA is most commonly tested.",
+      "topic": "AI/ML - Dimensionality Reduction"
+    },
+    {
+      "id": 73,
+      "practice_set": 12,
+      "question_no": 15,
+      "question": "What is feature scaling used for in machine learning?",
+      "options": [
+        "A. To bring numerical features to a similar range",
+        "B. To remove the target variable",
+        "C. To convert models into databases",
+        "D. To encrypt training labels",
+        "E. To increase file size"
+      ],
+      "correct_answer": "A. To bring numerical features to a similar range",
+      "explanation": "Feature scaling standardizes or normalizes numerical values so one feature does not dominate because of scale.",
+      "detailed_explanation": "Feature scaling ensures all features contribute equally to the model. Without scaling, a feature with large values (e.g., salary in lakhs) dominates over a feature with small values (e.g., age in years). Methods: Normalization (Min-Max Scaling) → rescales to [0,1]. Standardization (Z-score) → mean=0, std=1. Required for: KNN, SVM, Neural Networks, Gradient Descent-based algorithms.",
+      "why_correct": "Feature scaling brings all features to a comparable range so no feature dominates due to scale differences.",
+      "wrong_options": {
+        "B": "Target variable is not removed — it's what the model predicts.",
+        "C": "Models and databases are separate concepts.",
+        "D": "Encrypting labels would make them unusable for training.",
+        "E": "Scaling doesn't increase file size — it just changes value ranges."
+      },
+      "memory_trick": "Scaling = level the playing field. All features should have similar influence, not biased by their units.",
+      "exam_note": "Not needed for tree-based algorithms (Decision Tree, Random Forest) — they split on relative values. Required for distance/gradient-based algorithms.",
+      "topic": "AI/ML - Data Preprocessing"
+    },
+    {
+      "id": 74,
+      "practice_set": 12,
+      "question_no": 16,
+      "question": "Which preprocessing step handles missing values in a dataset?",
+      "options": [
+        "A. Imputation",
+        "B. Encryption",
+        "C. Compilation",
+        "D. Routing",
+        "E. Indexing"
+      ],
+      "correct_answer": "A. Imputation",
+      "explanation": "Imputation fills missing values using methods such as mean, median, mode or model-based estimates.",
+      "detailed_explanation": "Missing values (NaN/null) must be handled before training. Imputation strategies: Mean imputation (replace with column average — for symmetric data). Median imputation (replace with median — better for skewed data). Mode imputation (replace with most frequent value — for categorical). KNN imputation (use similar rows). You can also drop rows with missing values if few.",
+      "why_correct": "Imputation is the ML preprocessing technique specifically for handling missing data by filling in estimated values.",
+      "wrong_options": {
+        "B": "Encryption converts data to secure format — not related to missing values.",
+        "C": "Compilation converts source code — programming concept, not ML preprocessing.",
+        "D": "Routing directs network traffic — not related to missing values.",
+        "E": "Indexing creates lookup structures in databases — not missing value handling."
+      },
+      "memory_trick": "Imputation = IMPUTE (estimate) missing values. Fill the GAPS with calculated estimates.",
+      "exam_note": "When to use each: Mean = no outliers. Median = with outliers. Mode = categorical features. Model-based = most accurate but expensive.",
+      "topic": "AI/ML - Data Preprocessing"
+    },
+    {
+      "id": 75,
+      "practice_set": 12,
+      "question_no": 17,
+      "question": "In machine learning, what is a feature?",
+      "options": [
+        "A. An input variable used by the model",
+        "B. The final error message",
+        "C. A database trigger",
+        "D. A network protocol",
+        "E. A file extension"
+      ],
+      "correct_answer": "A. An input variable used by the model",
+      "explanation": "Features are input attributes or variables used by a machine learning model to make predictions.",
+      "detailed_explanation": "A feature is an individual measurable input variable used by the ML model. Also called attributes, predictors, or independent variables. Example: predicting house price — features are: area (sq.ft), number of bedrooms, location, age of building. Target variable (what we predict) is the price. Feature engineering = creating new useful features from existing ones.",
+      "why_correct": "Features are the INPUT variables — what the model uses to make predictions.",
+      "wrong_options": {
+        "B": "Error message is a programming concept — not an ML feature.",
+        "C": "Database trigger is a SQL concept — not ML.",
+        "D": "Network protocol is for data communication — not ML.",
+        "E": "File extension identifies file type — not ML."
+      },
+      "memory_trick": "Features = inputs. Target = output. Model learns: Features → Target mapping.",
+      "exam_note": "Feature types: Numerical (continuous: age, salary), Categorical (discrete: gender, city), Ordinal (ordered categories: low/medium/high).",
+      "topic": "AI/ML - Basic Concepts"
+    },
+    {
+      "id": 76,
+      "practice_set": 12,
+      "question_no": 18,
+      "question": "What is the target variable in supervised learning?",
+      "options": [
+        "A. The value the model tries to predict",
+        "B. The number of rows only",
+        "C. The database password",
+        "D. The model file extension",
+        "E. The CPU speed"
+      ],
+      "correct_answer": "A. The value the model tries to predict",
+      "explanation": "The target variable is the output label or value that the supervised model learns to predict.",
+      "detailed_explanation": "Target variable = dependent variable = label = y variable = what we want to predict. Also called: output variable, response variable, dependent variable. In classification: target is a class label (spam/not spam). In regression: target is a continuous value (price, temperature). Features (X) → Model → Target (y).",
+      "why_correct": "Target variable is the output the model is trained to predict.",
+      "wrong_options": {
+        "B": "Number of rows is about dataset size — not a prediction target.",
+        "C": "Database password is a security concept — not ML.",
+        "D": "Model file extension is about file storage — not ML.",
+        "E": "CPU speed is hardware specification — not ML."
+      },
+      "memory_trick": "TARGET = what you AIM for. Model aims (predicts) the target variable. Features = arrows (inputs). Target = bullseye (output).",
+      "exam_note": "In pandas: X = df.drop('target', axis=1), y = df['target']. Standard notation for features and target in ML code.",
+      "topic": "AI/ML - Basic Concepts"
+    },
+    {
+      "id": 77,
+      "practice_set": 13,
+      "question_no": 19,
+      "question": "Which AI field deals with enabling computers to understand and process human language?",
+      "options": [
+        "A. NLP",
+        "B. DBMS",
+        "C. DNS",
+        "D. FTP",
+        "E. OLAP"
+      ],
+      "correct_answer": "A. NLP",
+      "explanation": "Natural Language Processing focuses on processing, understanding and generating human language.",
+      "detailed_explanation": "NLP (Natural Language Processing) is a subfield of AI that focuses on interaction between computers and human language. NLP tasks: tokenization, POS tagging, named entity recognition, sentiment analysis, machine translation, text summarization, question answering, chatbots. Applications: Google Translate, Siri, Alexa, ChatGPT.",
+      "why_correct": "NLP = Natural Language Processing = computers understanding human language.",
+      "wrong_options": {
+        "B": "DBMS = Database Management System — for storing and managing data.",
+        "C": "DNS = Domain Name System — converts domain names to IP addresses.",
+        "D": "FTP = File Transfer Protocol — for transferring files over network.",
+        "E": "OLAP = Online Analytical Processing — for data warehousing and business intelligence."
+      },
+      "memory_trick": "NLP = Natural Language Processing. Natural = human. Language = words. Processing = computing. It's about machines READING and UNDERSTANDING us.",
+      "exam_note": "NLP pipeline: Text → Tokenization → Stop word removal → Stemming/Lemmatization → Feature extraction → Model.",
+      "topic": "AI/ML - Natural Language Processing"
+    },
+    {
+      "id": 78,
+      "practice_set": 13,
+      "question_no": 20,
+      "question": "Which NLP step splits text into words or smaller units?",
+      "options": [
+        "A. Tokenization",
+        "B. Normalization",
+        "C. Compilation",
+        "D. Indexing",
+        "E. Encryption"
+      ],
+      "correct_answer": "A. Tokenization",
+      "explanation": "Tokenization divides text into tokens such as words, subwords or sentences for further processing.",
+      "detailed_explanation": "Tokenization splits text into smaller units called tokens. Word tokenization: 'Hello world' → ['Hello', 'world']. Sentence tokenization: splits into sentences. Subword tokenization: 'playing' → ['play', '##ing'] — used in BERT, GPT. Tokenization is always the FIRST step in any NLP pipeline.",
+      "why_correct": "Tokenization splits raw text into tokens (words/subwords/sentences) for further NLP processing.",
+      "wrong_options": {
+        "B": "Normalization standardizes text (lowercase, remove punctuation) — comes after tokenization.",
+        "C": "Compilation converts source code — programming concept, not NLP.",
+        "D": "Indexing creates search structures — not NLP text splitting.",
+        "E": "Encryption secures data — not NLP preprocessing."
+      },
+      "memory_trick": "Tokenization = breaking text into TOKENS (coins/units). Like breaking a sentence into individual words for analysis.",
+      "exam_note": "NLP preprocessing steps in order: Tokenization → Lowercasing → Stop word removal → Stemming or Lemmatization → Vectorization (TF-IDF, Word2Vec).",
+      "topic": "AI/ML - Natural Language Processing"
+    },
+    {
+      "id": 79,
+      "practice_set": 13,
+      "question_no": 21,
+      "question": "Which AI application is used to identify objects, faces or boundaries in images?",
+      "options": [
+        "A. Computer Vision",
+        "B. Data Warehousing",
+        "C. File Compression",
+        "D. Packet Switching",
+        "E. SQL Trigger"
+      ],
+      "correct_answer": "A. Computer Vision",
+      "explanation": "Computer vision enables machines to interpret and analyze visual information from images or videos.",
+      "detailed_explanation": "Computer Vision (CV) enables machines to see and interpret visual data. Tasks: Image classification, Object detection, Face recognition, Image segmentation, Pose estimation, OCR (reading text in images). Key algorithms: CNNs (Convolutional Neural Networks) are the backbone of modern CV. Applications: self-driving cars, medical imaging, security cameras, Instagram filters.",
+      "why_correct": "Computer Vision = AI for seeing and interpreting images/video.",
+      "wrong_options": {
+        "B": "Data Warehousing stores and manages large datasets for business intelligence — not image analysis.",
+        "C": "File Compression reduces file size — not image understanding.",
+        "D": "Packet Switching is network data transmission technique — not AI.",
+        "E": "SQL Trigger is a database automation mechanism — not CV."
+      },
+      "memory_trick": "Computer Vision = giving EYES to computers. CV sees what we see: faces, objects, text in images.",
+      "exam_note": "CV subfields: Image Classification (what is it?), Object Detection (where is it?), Segmentation (exact pixel boundaries), Face Recognition.",
+      "topic": "AI/ML - Computer Vision"
+    },
+    {
+      "id": 80,
+      "practice_set": 13,
+      "question_no": 22,
+      "question": "Which computer vision technique is used to detect boundaries of objects in an image?",
+      "options": [
+        "A. Edge detection",
+        "B. Data normalization",
+        "C. Tokenization",
+        "D. SQL indexing",
+        "E. Packet filtering"
+      ],
+      "correct_answer": "A. Edge detection",
+      "explanation": "Edge detection identifies sharp changes in pixel intensity that often correspond to object boundaries.",
+      "detailed_explanation": "Edge detection finds boundaries in images by detecting sharp changes in pixel intensity. Classic algorithms: Canny Edge Detector (most popular), Sobel operator, Prewitt operator, Roberts cross. Edges represent boundaries between different objects or regions. Essential preprocessing step in many CV pipelines.",
+      "why_correct": "Edge detection detects boundaries/edges in images by finding areas of rapid pixel intensity change.",
+      "wrong_options": {
+        "B": "Data normalization scales numerical values — not image boundary detection.",
+        "C": "Tokenization splits text — NLP concept, not CV.",
+        "D": "SQL indexing speeds up database queries — not CV.",
+        "E": "Packet filtering is network security — not CV."
+      },
+      "memory_trick": "Edge detection = finding the EDGES (outlines/boundaries) of objects in a picture.",
+      "exam_note": "Canny edge detector has 5 steps: Gaussian blur → Gradient calculation → Non-maximum suppression → Double threshold → Edge tracking. Most widely used.",
+      "topic": "AI/ML - Computer Vision"
+    },
+    {
+      "id": 81,
+      "practice_set": 13,
+      "question_no": 23,
+      "question": "Which type of neural network is commonly used for image recognition tasks?",
+      "options": [
+        "A. CNN",
+        "B. RDBMS",
+        "C. DNS",
+        "D. FIFO",
+        "E. FTP"
+      ],
+      "correct_answer": "A. CNN",
+      "explanation": "Convolutional Neural Networks are widely used for image recognition and computer vision tasks.",
+      "detailed_explanation": "CNN (Convolutional Neural Network) is designed for processing grid-like data (images). Key layers: Convolutional Layer (extracts features using filters), Pooling Layer (reduces dimensions), Fully Connected Layer (classification). CNNs automatically learn spatial features like edges, textures, shapes. Famous CNNs: LeNet, AlexNet, VGG, ResNet.",
+      "why_correct": "CNNs use convolution operations to extract spatial features from images — ideal for image recognition.",
+      "wrong_options": {
+        "B": "RDBMS = Relational Database Management System — stores structured data.",
+        "C": "DNS = Domain Name System — internet addressing.",
+        "D": "FIFO = First In First Out — queue scheduling concept.",
+        "E": "FTP = File Transfer Protocol — file transfer over network."
+      },
+      "memory_trick": "CNN = Convolution for images. RNN = Recurrence for sequences. ANN = general Artificial Neural Network.",
+      "exam_note": "CNN architecture: Input → [Conv → ReLU → Pool] × N → Flatten → Fully Connected → Output (Softmax for classification).",
+      "topic": "AI/ML - Neural Networks"
+    },
+    {
+      "id": 82,
+      "practice_set": 13,
+      "question_no": 24,
+      "question": "Which type of neural network is commonly used for sequential data such as text or time series?",
+      "options": [
+        "A. RNN",
+        "B. CNN only",
+        "C. K-Means",
+        "D. Decision stump only",
+        "E. PCA"
+      ],
+      "correct_answer": "A. RNN",
+      "explanation": "Recurrent Neural Networks are designed to process sequential data by using information from previous steps.",
+      "detailed_explanation": "RNN (Recurrent Neural Network) processes sequential data by maintaining a hidden state that captures context from previous inputs. Great for: text generation, machine translation, speech recognition, time series prediction, sentiment analysis. Variants: LSTM (Long Short-Term Memory), GRU (Gated Recurrent Unit) — solve the vanishing gradient problem in basic RNNs.",
+      "why_correct": "RNN processes sequences by passing information from previous steps — memory makes it ideal for sequential data.",
+      "wrong_options": {
+        "B": "CNN is primarily for images/spatial data — not for sequences (though 1D CNN can handle sequences).",
+        "C": "K-Means is an unsupervised clustering algorithm — not a neural network.",
+        "D": "Decision stump is a simple decision tree with one split — not for sequential data.",
+        "E": "PCA is for dimensionality reduction — not a neural network for sequences."
+      },
+      "memory_trick": "RNN = Recurrent = goes back to previous steps. Like reading left to right, remembering earlier words. CNN = images. RNN = sequences.",
+      "exam_note": "LSTM vs RNN: LSTM has gates (input, forget, output) that control information flow — better at long sequences than basic RNN.",
+      "topic": "AI/ML - Neural Networks"
+    },
+    {
+      "id": 83,
+      "practice_set": 14,
+      "question_no": 25,
+      "question": "What is an artificial neural network inspired by?",
+      "options": [
+        "A. Human brain neurons",
+        "B. Database indexes",
+        "C. Network firewalls",
+        "D. Disk partitions",
+        "E. SQL joins"
+      ],
+      "correct_answer": "A. Human brain neurons",
+      "explanation": "Artificial neural networks are inspired by the structure and functioning of biological neurons.",
+      "detailed_explanation": "ANNs are inspired by biological neurons in the brain. Biological: neurons connected by synapses, signals transmitted based on threshold. Artificial: nodes (neurons) connected by weighted edges, activation functions determine output. Basic ANN: Input Layer → Hidden Layers → Output Layer. Each connection has a weight learned during training.",
+      "why_correct": "ANNs mimic biological neural networks — artificial neurons connected with weights, like synapses.",
+      "wrong_options": {
+        "B": "Database indexes speed up queries — no relation to neural networks.",
+        "C": "Network firewalls filter traffic — security concept, not ANN inspiration.",
+        "D": "Disk partitions divide storage — not related to ANN.",
+        "E": "SQL joins combine database tables — not related to ANN."
+      },
+      "memory_trick": "ANN = Artificial version of BRAIN. Brain has neurons → ANN has artificial neurons. Brain has synapses → ANN has weighted connections.",
+      "exam_note": "Biological vs Artificial: Dendrites=inputs, Cell body=node, Axon=output, Synapse=weighted connection, Threshold=activation function.",
+      "topic": "AI/ML - Neural Networks"
+    },
+    {
+      "id": 84,
+      "practice_set": 14,
+      "question_no": 26,
+      "question": "In a neural network, what is the role of an activation function?",
+      "options": [
+        "A. To introduce non-linearity into the model",
+        "B. To store database records",
+        "C. To compress image files only",
+        "D. To assign IP addresses",
+        "E. To replace training data"
+      ],
+      "correct_answer": "A. To introduce non-linearity into the model",
+      "explanation": "Activation functions allow neural networks to learn complex non-linear relationships.",
+      "detailed_explanation": "Without activation functions, a neural network would just be a linear transformation no matter how many layers — useless for complex problems. Activation functions add non-linearity, allowing networks to learn complex patterns. Common activations: ReLU (max(0,x) — most used), Sigmoid (0 to 1 — for output in binary classification), Tanh (-1 to 1), Softmax (multi-class output).",
+      "why_correct": "Activation functions introduce non-linearity, enabling networks to learn complex, non-linear decision boundaries.",
+      "wrong_options": {
+        "B": "Database records are stored in DBMS — not neural network function.",
+        "C": "Image compression is a separate task — not what activation functions do.",
+        "D": "IP addresses are assigned by DHCP/network protocols — not neural networks.",
+        "E": "Training data cannot be replaced by activation functions."
+      },
+      "memory_trick": "No activation = ONLY linear = boring straight lines. Activation = CURVED decisions = powerful neural network!",
+      "exam_note": "ReLU (Rectified Linear Unit) = max(0,x). Most popular because: computationally efficient, avoids vanishing gradient for positive inputs.",
+      "topic": "AI/ML - Neural Networks"
+    },
+    {
+      "id": 85,
+      "practice_set": 14,
+      "question_no": 27,
+      "question": "Which algorithm is based on Bayes theorem and is often used for text classification?",
+      "options": [
+        "A. Naive Bayes",
+        "B. K-Means",
+        "C. PCA",
+        "D. Apriori only",
+        "E. Gradient descent"
+      ],
+      "correct_answer": "A. Naive Bayes",
+      "explanation": "Naive Bayes applies Bayes theorem and is commonly used in spam filtering and text classification.",
+      "detailed_explanation": "Naive Bayes is a probabilistic classifier based on Bayes theorem with a 'naive' assumption that all features are independent. Despite this simplification, it works well for text classification. Applications: spam filtering, sentiment analysis, document categorization, medical diagnosis. P(class|features) = P(features|class) × P(class) / P(features).",
+      "why_correct": "Naive Bayes directly applies Bayes theorem for classification — widely used for text/NLP tasks.",
+      "wrong_options": {
+        "B": "K-Means is unsupervised clustering — no Bayes theorem.",
+        "C": "PCA is dimensionality reduction — no Bayes theorem.",
+        "D": "Apriori is for association rule mining (market basket analysis) — not Bayes-based classification.",
+        "E": "Gradient descent is an optimization algorithm — not a classifier."
+      },
+      "memory_trick": "Naive Bayes = Bayes + NAIVE (assumes all features independent). Great for text, fast, simple, surprisingly effective.",
+      "exam_note": "Types of Naive Bayes: Gaussian (continuous features), Multinomial (word counts in text), Bernoulli (binary features). Multinomial NB is most common for text.",
+      "topic": "AI/ML - Classification Algorithms"
+    },
+    {
+      "id": 86,
+      "practice_set": 14,
+      "question_no": 28,
+      "question": "Which algorithm predicts a binary outcome using a sigmoid function?",
+      "options": [
+        "A. Logistic Regression",
+        "B. Linear Regression",
+        "C. K-Means",
+        "D. PCA",
+        "E. Apriori"
+      ],
+      "correct_answer": "A. Logistic Regression",
+      "explanation": "Logistic regression is commonly used for binary classification and outputs probabilities using the sigmoid function.",
+      "detailed_explanation": "Despite the name 'regression', Logistic Regression is a CLASSIFICATION algorithm. It uses the sigmoid function σ(x) = 1/(1+e^(-x)) to output probabilities between 0 and 1. If probability > 0.5 → class 1, else class 0. Used for binary classification: spam/not spam, disease/no disease. Can be extended to multi-class using softmax.",
+      "why_correct": "Logistic Regression uses sigmoid function to output probability for binary classification.",
+      "wrong_options": {
+        "B": "Linear Regression predicts continuous values — no sigmoid, no classification.",
+        "C": "K-Means is unsupervised clustering — no sigmoid, no binary output.",
+        "D": "PCA reduces dimensions — not a classification algorithm.",
+        "E": "Apriori mines association rules — not binary classification."
+      },
+      "memory_trick": "Logistic Regression: NAME says regression, BEHAVIOR is classification. Sigmoid squeezes output to 0-1 (probability).",
+      "exam_note": "Sigmoid function output range: (0, 1). Tanh output range: (-1, 1). Softmax: multi-class probability. Know these ranges for exams.",
+      "topic": "AI/ML - Classification Algorithms"
+    },
+    {
+      "id": 87,
+      "practice_set": 14,
+      "question_no": 29,
+      "question": "Which term describes the error between predicted output and actual output during model training?",
+      "options": [
+        "A. Loss",
+        "B. Index",
+        "C. Cache",
+        "D. Trigger",
+        "E. Packet"
+      ],
+      "correct_answer": "A. Loss",
+      "explanation": "Loss measures how far model predictions are from actual values and is minimized during training.",
+      "detailed_explanation": "Loss (also called cost or error) measures how wrong the model's predictions are. The goal of training is to MINIMIZE the loss. Common loss functions: MSE (Mean Squared Error) for regression, Cross-Entropy Loss for classification, MAE (Mean Absolute Error) for regression. The optimizer (like Gradient Descent) adjusts weights to reduce loss.",
+      "why_correct": "Loss quantifies the difference between predictions and actual values — it's what training tries to minimize.",
+      "wrong_options": {
+        "B": "Index is a position indicator or database structure — not ML error measurement.",
+        "C": "Cache is a fast temporary memory — not ML error.",
+        "D": "Trigger is a database/event mechanism — not ML error.",
+        "E": "Packet is a unit of network data transmission — not ML error."
+      },
+      "memory_trick": "Loss = how LOST the model is. Low loss = model found the right path. Training = reduce the loss step by step.",
+      "exam_note": "Loss functions: MSE = mean of (actual-predicted)². Cross-Entropy: -Σ actual × log(predicted). MSE penalizes large errors more due to squaring.",
+      "topic": "AI/ML - Model Training"
+    },
+    {
+      "id": 88,
+      "practice_set": 14,
+      "question_no": 30,
+      "question": "Which optimization method updates model weights to minimize loss?",
+      "options": [
+        "A. Gradient Descent",
+        "B. Disk Scheduling",
+        "C. Round Robin",
+        "D. Deadlock Prevention",
+        "E. SQL Projection"
+      ],
+      "correct_answer": "A. Gradient Descent",
+      "explanation": "Gradient descent adjusts model parameters in the direction that reduces the loss function.",
+      "detailed_explanation": "Gradient Descent is the optimization algorithm that finds the minimum of the loss function. It calculates the gradient (slope) of the loss with respect to weights and updates weights in the opposite direction. Weight update: w = w - learning_rate × gradient. Variants: Batch GD (all data), Stochastic GD (one sample), Mini-batch GD (small batches — most used).",
+      "why_correct": "Gradient Descent iteratively adjusts weights in the direction that decreases loss the most.",
+      "wrong_options": {
+        "B": "Disk Scheduling (FCFS, SSTF, SCAN) manages disk I/O order — OS concept.",
+        "C": "Round Robin is CPU scheduling algorithm — OS concept.",
+        "D": "Deadlock Prevention is OS/database technique — not ML optimization.",
+        "E": "SQL Projection selects specific columns — database concept."
+      },
+      "memory_trick": "Gradient Descent = descending a HILL. Gradient tells direction of steepest climb, go OPPOSITE to descend to minimum loss.",
+      "exam_note": "Learning rate: too high = overshoots minimum (diverges). Too low = very slow convergence. Adam optimizer adapts learning rate automatically — most popular in deep learning.",
+      "topic": "AI/ML - Model Training"
+    },
+    {
+      "id": 89,
+      "practice_set": 15,
+      "question_no": 31,
+      "question": "Which term refers to a model performing poorly on both training and test data?",
+      "options": [
+        "A. Underfitting",
+        "B. Overfitting",
+        "C. Tokenization",
+        "D. Clustering",
+        "E. Normalization"
+      ],
+      "correct_answer": "A. Underfitting",
+      "explanation": "Underfitting occurs when the model is too simple to capture important patterns in the data.",
+      "detailed_explanation": "Underfitting = model is too simple → fails to learn the patterns in training data → poor training AND test accuracy. Like a student who barely studied — fails both practice tests and final exam. Causes: too simple model, too few features, insufficient training, excessive regularization. Solutions: more complex model, more features, less regularization, train longer.",
+      "why_correct": "Underfitting = poor performance on BOTH training and test data — model hasn't learned enough.",
+      "wrong_options": {
+        "B": "Overfitting = great training performance but poor test performance (opposite).",
+        "C": "Tokenization is NLP text splitting — not a model performance issue.",
+        "D": "Clustering is unsupervised grouping — not about model fit quality.",
+        "E": "Normalization is data scaling — not model fit quality."
+      },
+      "memory_trick": "Underfitting = UNDER-studied. Failed practice tests AND final exam. Overfitting = OVER-studied textbook. Passed practice, failed real exam.",
+      "exam_note": "Bias-Variance tradeoff: Underfitting = High Bias, Low Variance. Overfitting = Low Bias, High Variance. Ideal model has both balanced.",
+      "topic": "AI/ML - Underfitting"
+    },
+    {
+      "id": 90,
+      "practice_set": 15,
+      "question_no": 32,
+      "question": "Which method is used to divide a dataset into separate parts for training and evaluation?",
+      "options": [
+        "A. Train-test split",
+        "B. Packet switching",
+        "C. Hash join",
+        "D. Disk formatting",
+        "E. Memory paging"
+      ],
+      "correct_answer": "A. Train-test split",
+      "explanation": "A train-test split separates data so the model is trained on one part and evaluated on another.",
+      "detailed_explanation": "Train-test split divides data into training set (model learns from this) and test set (final evaluation). Common ratios: 80:20, 70:30. Can also do 3-way split: train/validation/test (60:20:20). The split should be random and stratified (preserve class proportions) for classification problems.",
+      "why_correct": "Train-test split is the standard ML technique to separate training data from evaluation data.",
+      "wrong_options": {
+        "B": "Packet switching is network data transmission — not ML data splitting.",
+        "C": "Hash join is a database join algorithm — not ML.",
+        "D": "Disk formatting prepares storage — not ML.",
+        "E": "Memory paging is OS memory management — not ML."
+      },
+      "memory_trick": "Split the data BEFORE training. Train on one part. Test on another. Never let test data influence training.",
+      "exam_note": "sklearn: from sklearn.model_selection import train_test_split. X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.2,random_state=42).",
+      "topic": "AI/ML - Model Evaluation"
+    },
+    {
+      "id": 91,
+      "practice_set": 15,
+      "question_no": 33,
+      "question": "Which technique evaluates a model by training and testing it on different folds of the dataset?",
+      "options": [
+        "A. Cross-validation",
+        "B. Tokenization",
+        "C. Encryption",
+        "D. Compilation",
+        "E. Fragmentation"
+      ],
+      "correct_answer": "A. Cross-validation",
+      "explanation": "Cross-validation divides data into folds and rotates training/testing portions to estimate model performance.",
+      "detailed_explanation": "K-Fold Cross-Validation: Data split into K equal folds. Train on K-1 folds, test on the remaining fold. Repeat K times, rotating the test fold. Average the K results for final performance estimate. More reliable than single train-test split, especially with limited data. Common K values: 5 or 10.",
+      "why_correct": "Cross-validation uses all data for both training and testing by rotating folds — gives robust performance estimate.",
+      "wrong_options": {
+        "B": "Tokenization splits text in NLP — not model evaluation.",
+        "C": "Encryption secures data — not model evaluation.",
+        "D": "Compilation converts source code — programming concept.",
+        "E": "Fragmentation is database/disk storage concept — not ML."
+      },
+      "memory_trick": "Cross-validation = take TURNS testing each fold. Everyone gets a chance to be the test set. Average = fairer evaluation.",
+      "exam_note": "Stratified K-Fold: preserves class proportion in each fold — use for imbalanced classification. Leave-One-Out (LOO): K=n (extreme case, each sample is a test set).",
+      "topic": "AI/ML - Model Evaluation"
+    },
+    {
+      "id": 92,
+      "practice_set": 15,
+      "question_no": 34,
+      "question": "Which AI system is designed to converse with users through text or voice?",
+      "options": [
+        "A. Chatbot",
+        "B. Compiler",
+        "C. Router",
+        "D. Firewall",
+        "E. Scheduler"
+      ],
+      "correct_answer": "A. Chatbot",
+      "explanation": "A chatbot uses AI/NLP techniques to interact with users through natural language.",
+      "detailed_explanation": "A chatbot is an AI system that simulates human conversation via text or voice. Types: Rule-based (scripted responses, limited), AI-powered (uses NLP/ML, can understand context). Examples: customer service bots, Siri, Alexa, Google Assistant, ChatGPT. Modern chatbots use large language models (LLMs) for natural conversations.",
+      "why_correct": "Chatbot is specifically designed for human-computer conversation via natural language.",
+      "wrong_options": {
+        "B": "Compiler translates programming language to machine code — not conversational.",
+        "C": "Router directs network traffic — not conversational AI.",
+        "D": "Firewall filters network traffic for security — not conversational AI.",
+        "E": "Scheduler manages task/process timing — OS concept, not conversational AI."
+      },
+      "memory_trick": "Chatbot = CHAT + BOT (robot). It chats with you like a human but is automated.",
+      "exam_note": "Chatbot technologies: RASA (open source), Dialogflow (Google), Amazon Lex, IBM Watson. Backend often uses intent classification and entity recognition.",
+      "topic": "AI/ML - AI Applications"
+    },
+    {
+      "id": 93,
+      "practice_set": 15,
+      "question_no": 35,
+      "question": "Which AI application suggests products, movies or content based on user preferences?",
+      "options": [
+        "A. Recommendation system",
+        "B. Operating system scheduler",
+        "C. DNS resolver",
+        "D. Firewall rule",
+        "E. Database trigger"
+      ],
+      "correct_answer": "A. Recommendation system",
+      "explanation": "Recommendation systems predict user preferences and suggest relevant items.",
+      "detailed_explanation": "Recommendation Systems suggest relevant items to users. Types: Collaborative Filtering (based on similar users' preferences), Content-Based Filtering (based on item features), Hybrid (combination). Examples: Netflix movie recommendations, Amazon product suggestions, Spotify playlists, YouTube next video. Key algorithms: Matrix Factorization, Cosine Similarity, Deep learning-based.",
+      "why_correct": "Recommendation systems are built specifically to suggest personalized content/products based on user behavior.",
+      "wrong_options": {
+        "B": "OS scheduler manages process execution order — not recommendations.",
+        "C": "DNS resolver converts domain names to IPs — not recommendations.",
+        "D": "Firewall rule filters network traffic — not recommendations.",
+        "E": "Database trigger executes code on data events — not recommendations."
+      },
+      "memory_trick": "Recommendation = RECOMMEND me something I'll like! Based on what I watched, bought, or rated before.",
+      "exam_note": "Cold start problem: new user/item with no history — hard to recommend. Solution: ask for preferences, use demographic info, or hybrid methods.",
+      "topic": "AI/ML - AI Applications"
+    },
+    {
+      "id": 94,
+      "practice_set": 15,
+      "question_no": 36,
+      "question": "Which machine learning application is useful for identifying unusual banking transactions?",
+      "options": [
+        "A. Anomaly detection",
+        "B. File compression",
+        "C. Syntax analysis",
+        "D. Packet routing",
+        "E. Memory allocation"
+      ],
+      "correct_answer": "A. Anomaly detection",
+      "explanation": "Anomaly detection identifies rare or unusual patterns, making it useful for fraud detection.",
+      "detailed_explanation": "Anomaly detection identifies data points that deviate significantly from normal patterns. Applications: fraud detection (unusual transactions), network intrusion detection, manufacturing defects, medical diagnosis (abnormal test results), IoT sensor fault detection. Algorithms: Isolation Forest, One-Class SVM, Autoencoder-based.",
+      "why_correct": "Anomaly detection is designed to find unusual/outlier patterns — banking fraud is a classic use case.",
+      "wrong_options": {
+        "B": "File compression reduces file size — not pattern detection.",
+        "C": "Syntax analysis parses programming language syntax — compiler/NLP concept.",
+        "D": "Packet routing directs network packets — networking concept.",
+        "E": "Memory allocation manages RAM — OS concept."
+      },
+      "memory_trick": "Anomaly = ABNORMAL = something unusual. Anomaly detection = find the ODD ONE OUT.",
+      "exam_note": "Anomaly detection is often unsupervised because labeled fraud data is rare. The algorithm learns what 'normal' looks like and flags deviations.",
+      "topic": "AI/ML - AI Applications"
+    },
+    {
+      "id": 95,
+      "practice_set": 16,
+      "question_no": 37,
+      "question": "Which term refers to converting categorical values into numerical form for ML models?",
+      "options": [
+        "A. Encoding",
+        "B. Routing",
+        "C. Indexing",
+        "D. Paging",
+        "E. Hashing only"
+      ],
+      "correct_answer": "A. Encoding",
+      "explanation": "Encoding transforms categorical variables into numeric representations that algorithms can process.",
+      "detailed_explanation": "Most ML algorithms require numerical input. Encoding converts categorical data to numbers. Label Encoding: assigns integer to each category (Red=0, Blue=1, Green=2) — implies order, risk of misleading model. One-Hot Encoding: creates binary column per category (Red=[1,0,0], Blue=[0,1,0]) — no order implied, preferred for nominal data.",
+      "why_correct": "Encoding converts categories (text labels) to numbers that ML algorithms can process mathematically.",
+      "wrong_options": {
+        "B": "Routing directs network traffic — not data encoding for ML.",
+        "C": "Indexing creates lookup structures — database concept, not categorical encoding.",
+        "D": "Paging is OS memory management — not ML preprocessing.",
+        "E": "Hashing maps data to fixed-size values — different from ML categorical encoding."
+      },
+      "memory_trick": "Encoding = ENCODE categories into numbers. Label Encoding = integer per category. One-Hot = binary columns per category.",
+      "exam_note": "When to use what: Label Encoding for ordinal data (low=0,medium=1,high=2). One-Hot for nominal data (colors, cities) to avoid false ordering.",
+      "topic": "AI/ML - Data Preprocessing"
+    },
+    {
+      "id": 96,
+      "practice_set": 16,
+      "question_no": 38,
+      "question": "Which of the following is a common encoding method for categorical variables?",
+      "options": [
+        "A. One-hot encoding",
+        "B. Deadlock encoding",
+        "C. Packet encoding",
+        "D. Disk encoding",
+        "E. Cache encoding"
+      ],
+      "correct_answer": "A. One-hot encoding",
+      "explanation": "One-hot encoding represents categories as binary indicator columns.",
+      "detailed_explanation": "One-hot encoding creates a new binary column for each category. Example: Color column with [Red, Blue, Green] becomes 3 columns: is_Red, is_Blue, is_Green. Each row has exactly one 1 and rest 0s. Advantages: no false ordering. Disadvantage: curse of dimensionality with many categories (use embedding instead).",
+      "why_correct": "One-hot encoding is the standard method for nominal categorical variable encoding in ML.",
+      "wrong_options": {
+        "B": "Deadlock encoding does not exist — deadlock is an OS problem.",
+        "C": "Packet encoding refers to network data encapsulation — not ML.",
+        "D": "Disk encoding is not a standard ML term.",
+        "E": "Cache encoding is not a standard ML term."
+      },
+      "memory_trick": "One-Hot = ONE column is HOT (=1), rest are cold (=0). Like a flag raised for one city, all others down.",
+      "exam_note": "Dummy variable trap: when using one-hot, drop one column (k-1 columns for k categories) to avoid multicollinearity. sklearn's pd.get_dummies does this with drop_first=True.",
+      "topic": "AI/ML - Data Preprocessing"
+    },
+    {
+      "id": 97,
+      "practice_set": 16,
+      "question_no": 39,
+      "question": "Which learning method is based on an agent receiving rewards or penalties for actions?",
+      "options": [
+        "A. Reinforcement learning",
+        "B. Supervised learning",
+        "C. Unsupervised learning",
+        "D. Normalization",
+        "E. Linear regression only"
+      ],
+      "correct_answer": "A. Reinforcement learning",
+      "explanation": "Reinforcement learning trains an agent through rewards and penalties received from interacting with an environment.",
+      "detailed_explanation": "Reinforcement Learning (RL): An agent interacts with an environment, takes actions, and receives rewards (positive) or penalties (negative). Goal: maximize cumulative reward. No labeled training data — learns through trial and error. Key concepts: Agent, Environment, State, Action, Reward, Policy. Applications: game playing (AlphaGo), robotics, autonomous driving, resource management.",
+      "why_correct": "Reinforcement learning uses reward/penalty feedback — an agent learns optimal behavior through trial and error.",
+      "wrong_options": {
+        "B": "Supervised learning uses labeled data — not reward/penalty system.",
+        "C": "Unsupervised learning finds patterns — no labels or rewards.",
+        "D": "Normalization is data preprocessing — not a learning paradigm.",
+        "E": "Linear regression is a specific algorithm — not a learning paradigm."
+      },
+      "memory_trick": "RL = like training a pet. Good action = treat (reward). Bad action = no treat (penalty). Pet learns to repeat good actions. Agent = pet, Environment = world.",
+      "exam_note": "RL algorithms: Q-Learning, Deep Q-Network (DQN), Policy Gradient, Actor-Critic. AlphaGo (chess) and ChatGPT (RLHF) use reinforcement learning.",
+      "topic": "AI/ML - Reinforcement Learning"
+    },
+    {
+      "id": 98,
+      "practice_set": 16,
+      "question_no": 40,
+      "question": "Which term refers to the rules or patterns learned by a machine learning algorithm from data?",
+      "options": [
+        "A. Model",
+        "B. Port",
+        "C. Protocol",
+        "D. Cache",
+        "E. Trigger"
+      ],
+      "correct_answer": "A. Model",
+      "explanation": "A trained model represents the patterns learned from data and is used to make predictions.",
+      "detailed_explanation": "A machine learning model is the output of the training process — it contains the learned patterns, weights, rules, or parameters. Once trained, the model can make predictions on new data. Types: mathematical equation (linear regression), tree structure (decision tree), weight matrix (neural network), support vectors (SVM).",
+      "why_correct": "A model encapsulates all learned patterns and is the product of the ML training process.",
+      "wrong_options": {
+        "B": "Port is a network communication endpoint — not ML.",
+        "C": "Protocol defines rules for network communication — not ML.",
+        "D": "Cache is fast temporary memory storage — not ML.",
+        "E": "Trigger is a database event mechanism — not ML."
+      },
+      "memory_trick": "Model = trained brain. Training data goes in → patterns learned → model stores them → use model to predict on new data.",
+      "exam_note": "ML workflow: Data → Preprocessing → Training → Model → Evaluation → Deployment. The model is what gets deployed to production.",
+      "topic": "AI/ML - Basic Concepts"
+    },
+    {
+      "id": 99,
+      "practice_set": 16,
+      "question_no": 41,
+      "question": "Which branch of AI focuses on making machines perform tasks that normally require human intelligence?",
+      "options": [
+        "A. Artificial Intelligence",
+        "B. File Management",
+        "C. Data Compression",
+        "D. Network Switching",
+        "E. Operating System Booting"
+      ],
+      "correct_answer": "A. Artificial Intelligence",
+      "explanation": "Artificial Intelligence aims to build systems that can perform tasks such as reasoning, learning, perception and decision-making.",
+      "detailed_explanation": "Artificial Intelligence (AI) is the broad field of making machines simulate human intelligence. Subfields: Machine Learning (learn from data), Deep Learning (neural networks), NLP (language), Computer Vision (images), Robotics, Expert Systems. AI enables machines to: learn, reason, problem-solve, perceive, and understand language.",
+      "why_correct": "Artificial Intelligence is the overarching field that focuses on machines performing human-level intelligent tasks.",
+      "wrong_options": {
+        "B": "File Management is OS function for organizing files — not AI.",
+        "C": "Data Compression reduces data size — not AI.",
+        "D": "Network Switching routes data packets — not AI.",
+        "E": "OS Booting initializes operating system — not AI."
+      },
+      "memory_trick": "AI = Artificial Intelligence = making machines SMART like humans. ML, DL, NLP, CV are all branches UNDER AI.",
+      "exam_note": "AI hierarchy: AI (broadest) → Machine Learning → Deep Learning (narrowest, subset of ML using neural networks).",
+      "topic": "AI/ML - Basic Concepts"
+    },
+    {
+      "id": 100,
+      "practice_set": 16,
+      "question_no": 42,
+      "question": "Which of the following is the best example of labelled data?",
+      "options": [
+        "A. Emails marked as spam or not spam",
+        "B. Random numbers without meaning",
+        "C. Images without names or classes",
+        "D. Unsorted files in a folder",
+        "E. Encrypted packets only"
+      ],
+      "correct_answer": "A. Emails marked as spam or not spam",
+      "explanation": "Labelled data contains input examples with known output labels, such as emails tagged as spam or not spam.",
+      "detailed_explanation": "Labeled data = data where each example has a corresponding output label. Emails marked spam/not spam = perfect example: input (email text) + label (spam=1, not spam=0). This is exactly what supervised learning needs. Collecting labeled data is expensive and time-consuming — that's why techniques like semi-supervised learning and transfer learning exist.",
+      "why_correct": "Emails with spam/not spam tags are clearly labeled — input (email) + output (category) pair.",
+      "wrong_options": {
+        "B": "Random numbers without meaning = unlabeled, unstructured, useless for supervised ML.",
+        "C": "Images without names or classes = unlabeled data — used for unsupervised learning.",
+        "D": "Unsorted files = unstructured, no labels — cannot train a supervised model.",
+        "E": "Encrypted packets — encrypted and not interpretable — no labels for ML training."
+      },
+      "memory_trick": "Labeled data = data with TAGS/ANSWERS. Like a student's answer sheet with correct answers marked. Supervised ML needs these labels.",
+      "exam_note": "Labeling data is a major challenge in ML. Tools: Amazon Mechanical Turk, Labelbox, Scale AI. Techniques: active learning requests labels for uncertain examples only.",
+      "topic": "AI/ML - Supervised Learning"
+    }
+  ],
+  "metadata": {
+    "exam": "IBPS SO IT Officer Mains Preparation",
+    "total_questions": 100,
+    "python_questions": 58,
+    "ai_ml_questions": 42,
+    "enhanced_fields": {
+      "detailed_explanation": "Full conceptual explanation of the topic",
+      "why_correct": "Why the correct answer is correct",
+      "wrong_options": "Why each incorrect option is wrong (keyed by option letter)",
+      "memory_trick": "Shortcut, trick, or memory tip for quick recall",
+      "exam_note": "Important points specific to IBPS SO IT exam preparation"
+    }
   }
-  ]
 }

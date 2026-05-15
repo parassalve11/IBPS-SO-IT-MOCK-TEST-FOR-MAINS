@@ -4,11 +4,16 @@ export type RawQuestionItem = {
   options: string[];
   correct_answer: string;
   explanation: string;
+  detailed_explanation?: string;
+  why_correct?: string;
+  wrong_options?: Record<string, string>;
+  memory_trick?: string;
+  exam_note?: string;
   topic?: string;
   difficulty?: string;
 };
 
-export type RawQuestionFile = Record<string, RawQuestionItem[]>;
+export type RawQuestionFile = Record<string, unknown>;
 
 export type SubjectMode = "single-subject" | "mixed";
 
@@ -26,6 +31,11 @@ export interface NormalizedQuestion {
   options: string[];
   correctAnswer: string;
   explanation: string;
+  detailedExplanation?: string;
+  whyCorrect?: string;
+  wrongOptions?: Record<string, string>;
+  memoryTrick?: string;
+  examNote?: string;
   topic?: string;
   difficulty?: string;
   subjectSlug: string;

@@ -10,7 +10,8 @@ type AppChromeProps = {
 
 export function AppChrome({ children }: AppChromeProps) {
   const pathname = usePathname();
-  const isExamRoute = pathname?.startsWith("/test/") ?? false;
+  const isExamRoute =
+    pathname?.startsWith("/test/") || pathname?.startsWith("/review/") || false;
 
   if (isExamRoute) {
     return <div className="relative min-h-screen overflow-x-hidden">{children}</div>;

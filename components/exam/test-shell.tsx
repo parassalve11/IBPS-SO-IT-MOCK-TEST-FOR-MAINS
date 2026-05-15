@@ -60,7 +60,7 @@ export function TestShell({ subject, questions }: TestShellProps) {
 
       if (currentSession.remainingTimeSeconds <= 1) {
         useExamStore.getState().submitSession(subject.slug, true);
-        router.replace(`/result/${subject.slug}` as Route);
+        router.replace(`/review/${subject.slug}` as Route);
         return;
       }
 
@@ -72,7 +72,7 @@ export function TestShell({ subject, questions }: TestShellProps) {
 
   useEffect(() => {
     if (hydrationComplete && session?.isSubmitted) {
-      router.replace(`/result/${subject.slug}` as Route);
+      router.replace(`/review/${subject.slug}` as Route);
     }
   }, [hydrationComplete, router, session?.isSubmitted, subject.slug]);
 
@@ -129,7 +129,7 @@ export function TestShell({ subject, questions }: TestShellProps) {
 
   const handleConfirmSubmit = () => {
     submitSession(subject.slug, false);
-    router.push(`/result/${subject.slug}` as Route);
+    router.push(`/review/${subject.slug}` as Route);
   };
 
   const handleMarkForReviewAndNext = () => {

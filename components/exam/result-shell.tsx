@@ -3,7 +3,6 @@
 import type { Route } from "next";
 import Link from "next/link";
 import { calculateResultStats } from "@/lib/scoring";
-import { QuestionReviewList } from "@/components/exam/question-review-list";
 import { ResultSummary } from "@/components/exam/result-summary";
 import { ResetTestButton } from "@/components/exam/reset-test-button";
 import { NormalizedQuestion, SubjectSummary } from "@/types/exam";
@@ -40,7 +39,8 @@ export function ResultShell({ subject, questions }: ResultShellProps) {
             Submit a mock test to unlock the result summary.
           </h1>
           <p className="mt-4 text-sm leading-6 text-slate-600">
-            You can reopen the test if an attempt is in progress, or start the subject again from the instruction screen.
+            You can reopen the test if an attempt is in progress, or start the subject again from
+            the instruction screen.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <Link href={testHref} className="action-button-primary">
@@ -61,40 +61,46 @@ export function ResultShell({ subject, questions }: ResultShellProps) {
     <section className="page-shell py-12">
       <ResultSummary subject={subject} stats={stats} autoSubmitted={session.autoSubmitted} />
 
-      <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-        <Link href={reviewHref} className="action-button-primary">
-          Open Review Page
-        </Link>
-        <ResetTestButton
-          subjectSlug={subject.slug}
-          label="Retake Test"
-          redirectTo={testHref}
-          restartAfterReset
-          durationMinutes={subject.durationMinutes}
-          questionIds={questions.map((question) => question.id)}
-          variant="secondary"
-          className="sm:w-auto"
-        />
-        <Link href="/" className="action-button-secondary">
-          Return Home
-        </Link>
-      </div>
-
-      <div className="mt-10">
-        <div className="mb-6 rounded-3xl border border-slate-200 bg-white/80 p-5 shadow-sm">
-          <span className="section-kicker">Question-wise Performance</span>
+      <div className="mt-8 grid gap-5 xl:grid-cols-[minmax(0,1fr)_320px]">
+        <div className="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm">
+          <span className="section-kicker">Next Step</span>
           <h2 className="mt-4 text-2xl font-semibold tracking-tight text-slate-950">
-            Review wrong and unanswered questions first.
+            Open the analysis view for fast revision.
           </h2>
-          <p className="mt-3 text-sm font-medium text-slate-700">
-            Expand descriptions only when needed.
+          <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-600">
+            Each submitted question now shows the correct answer, explanation, detailed
+            explanation, why the answer is correct, wrong option notes, memory trick, and exam
+            note in separate color-coded cards.
           </p>
-          <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-600">
-            The list is sorted to surface unanswered questions first, then incorrect responses, and finally correct ones for quick analysis.
-          </p>
+
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+            <Link href={reviewHref} className="action-button-primary">
+              Open Analysis Page
+            </Link>
+            <ResetTestButton
+              subjectSlug={subject.slug}
+              label="Retake Test"
+              redirectTo={testHref}
+              restartAfterReset
+              durationMinutes={subject.durationMinutes}
+              questionIds={questions.map((question) => question.id)}
+              variant="secondary"
+              className="sm:w-auto"
+            />
+            <Link href="/" className="action-button-secondary">
+              Return Home
+            </Link>
+          </div>
         </div>
 
-        <QuestionReviewList questions={questions} answers={session.answers} />
+        <div className="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm">
+          <div className="text-sm font-semibold text-slate-950">What to revise here</div>
+          <div className="mt-4 space-y-3 text-sm leading-6 text-slate-600">
+            <p>Open skipped and incorrect questions first from the palette.</p>
+            <p>Use Memory Trick cards for one-line recall before the exam.</p>
+            <p>Check Wrong Options to avoid repeating the same confusion next time.</p>
+          </div>
+        </div>
       </div>
     </section>
   );

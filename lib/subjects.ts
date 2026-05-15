@@ -32,7 +32,9 @@ const ACRONYM_TOKENS: Record<string, string> = {
 };
 
 function getRawQuestionItems(rawData: RawQuestionFile) {
-  return Object.values(rawData).find((value) => Array.isArray(value)) ?? [];
+  return Object.values(rawData).flatMap((value) =>
+    Array.isArray(value) ? value : []
+  );
 }
 
 function normalizeSlug(fileName: string) {
