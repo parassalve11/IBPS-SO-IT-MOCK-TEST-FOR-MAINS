@@ -1,101 +1,578 @@
-
 {
   "software_engineering_exam_questions": [
     {
-    "id": 1,
-    "practice_set": 1,
-    "question_no": 17,
-    "question": "Which SDLC model is best when requirements are clear and fixed?",
-    "options": [
-      "A. Agile",
-      "B. Spiral",
-      "C. V-Model",
-      "D. Waterfall",
-      "E. Iterative"
-    ],
-    "correct_answer": "D. Waterfall",
-    "explanation": "Waterfall is ideal when requirements are fixed and well-understood.",
-    "topic": "SDLC Models"
-  },
-  {
-    "id": 2,
-    "practice_set": 1,
-    "question_no": 41,
-    "question": "Which testing ensures that new changes do not affect existing features?",
-    "options": [
-      "A. Unit Testing",
-      "B. Regression Testing",
-      "C. Load Testing",
-      "D. Smoke Testing",
-      "E. Usability Testing"
-    ],
-    "correct_answer": "B. Regression Testing",
-    "explanation": "Regression testing checks that new code does not disrupt existing functionality.",
-    "topic": "Software Testing"
-  },
-  {
-    "id": 3,
-    "practice_set": 1,
-    "question_no": 42,
-    "question": "What does SDLC stand for?",
-    "options": [
-      "A. Software Debugging Life Cycle",
-      "B. System Development Life Chain",
-      "C. Software Development Life Cycle",
-      "D. Secure Development Logic Chart",
-      "E. Source Design Logic Course"
-    ],
-    "correct_answer": "C. Software Development Life Cycle",
-    "explanation": "SDLC describes the process used to design, develop, and test software.",
-    "topic": "SDLC Basics"
-  },
-  {
-    "id": 4,
-    "practice_set": 1,
-    "question_no": 45,
-    "question": "In which SDLC phase is user requirement gathering done?",
-    "options": [
-      "A. Testing",
-      "B. Deployment",
-      "C. Planning",
-      "D. Analysis",
-      "E. Design"
-    ],
-    "correct_answer": "D. Analysis",
-    "explanation": "User requirements are gathered and documented during the analysis phase.",
-    "topic": "Requirement Analysis"
-  },
-  {
-    "id": 5,
-    "practice_set": 3,
-    "question_no": 28,
-    "question": "Which software model emphasizes delivering small functional parts frequently?",
-    "options": [
-      "A. Waterfall Model",
-      "B. Spiral Model",
-      "C. Agile Model",
-      "D. V-Model",
-      "E. Big Bang Model"
-    ],
-    "correct_answer": "C. Agile Model",
-    "explanation": "Agile delivers software in small, frequent updates.",
-    "topic": "Agile Model"
-  },
-  {
-    "id": 6,
-    "practice_set": 6,
-    "question_no": 51,
-    "question": "Which type of system testing ensures that the application functions correctly with other integrated modules and external systems?",
-    "options": [
-      "A. Unit Testing",
-      "B. Integration Testing",
-      "C. System Testing",
-      "D. Acceptance Testing",
-      "E. Stress Testing"
-    ],
-    "correct_answer": "B. Integration Testing",
-    "explanation": "Integration testing ensures modules work together properly.",
-    "topic": "Integration Testing"
+      "id": 1,
+      "practice_set": 1,
+      "question_no": 1,
+      "question": "What does SDLC stand for?",
+      "options": [
+        "A. Software Debugging Life Cycle",
+        "B. System Development Life Chain",
+        "C. Software Development Life Cycle",
+        "D. Secure Development Logic Chart",
+        "E. Source Design Logic Course"
+      ],
+      "correct_answer": "C. Software Development Life Cycle",
+      "explanation": "SDLC describes the process used to design, develop, test, and maintain software.",
+      "detailed_explanation": "SDLC (Software Development Life Cycle) is a structured process followed to build high-quality software. It includes phases such as planning, requirement analysis, design, coding, testing, deployment, and maintenance. It helps teams manage software projects in an organized way and reduces development risk.",
+      "why_correct": "Software Development Life Cycle is the correct full form of SDLC and represents the complete process of software development.",
+      "wrong_options": {
+        "A": "Software Debugging Life Cycle is incorrect because debugging is only one activity within development, not the full SDLC.",
+        "B": "System Development Life Chain is not the standard expansion of SDLC.",
+        "D": "Secure Development Logic Chart is not a recognized software engineering term.",
+        "E": "Source Design Logic Course is not related to SDLC."
+      },
+      "memory_trick": "SDLC = Software's life journey: Plan → Analyze → Design → Code → Test → Deploy → Maintain.",
+      "exam_note": "IBPS SO IT often asks SDLC full form, phases, and which phase performs requirement gathering or testing.",
+      "topic": "SDLC Basics",
+      "main_topic": "Software Engineering",
+      "topic_voice": "Software Engineering: SDLC Basics"
+    },
+    {
+      "id": 2,
+      "practice_set": 1,
+      "question_no": 2,
+      "question": "Which SDLC model is best when requirements are clear and fixed?",
+      "options": [
+        "A. Agile",
+        "B. Spiral",
+        "C. V-Model",
+        "D. Waterfall",
+        "E. Iterative"
+      ],
+      "correct_answer": "D. Waterfall",
+      "explanation": "Waterfall is ideal when requirements are fixed and well-understood.",
+      "detailed_explanation": "The Waterfall model follows a linear and sequential approach where each phase must be completed before the next phase begins. It works best when requirements are stable, clear, and unlikely to change. Since changes are difficult to handle later, it is not suitable for projects with uncertain or frequently changing requirements.",
+      "why_correct": "Waterfall is correct because it assumes fixed requirements and progresses step-by-step through SDLC phases.",
+      "wrong_options": {
+        "A": "Agile is preferred when requirements change frequently.",
+        "B": "Spiral is used for risk-heavy projects and includes repeated risk analysis.",
+        "C": "V-Model focuses on verification and validation but is not the best general answer for fixed requirements.",
+        "E": "Iterative model builds software through repeated cycles and allows refinement."
+      },
+      "memory_trick": "Waterfall flows one way, just like water falls from top to bottom. It does not easily go back.",
+      "exam_note": "Waterfall = fixed requirements, simple projects, sequential phases. Agile = changing requirements.",
+      "topic": "SDLC Models",
+      "main_topic": "Software Engineering",
+      "topic_voice": "Software Engineering: SDLC Models"
+    },
+    {
+      "id": 3,
+      "practice_set": 2,
+      "question_no": 3,
+      "question": "Which SDLC model combines risk analysis with iterative development?",
+      "options": [
+        "A. Waterfall Model",
+        "B. Spiral Model",
+        "C. Big Bang Model",
+        "D. Prototype Model",
+        "E. RAD Model"
+      ],
+      "correct_answer": "B. Spiral Model",
+      "explanation": "The Spiral model combines iterative development with risk assessment at each cycle.",
+      "detailed_explanation": "The Spiral model is a risk-driven SDLC model. Development happens in repeated loops or spirals. Each cycle includes planning, risk analysis, engineering, and evaluation. It is useful for large, complex, and high-risk projects where risk identification and control are important.",
+      "why_correct": "Spiral Model is correct because risk analysis is its most important feature and it also supports repeated development cycles.",
+      "wrong_options": {
+        "A": "Waterfall is sequential and does not focus on repeated risk analysis.",
+        "C": "Big Bang model has little planning and is not risk-focused.",
+        "D": "Prototype model focuses on building a sample model to understand requirements.",
+        "E": "RAD focuses on rapid development using reusable components and user feedback."
+      },
+      "memory_trick": "Spiral = circles of development + risk checking in every round.",
+      "exam_note": "Spiral model is commonly asked for large projects, high risk, and repeated risk analysis.",
+      "topic": "SDLC Models",
+      "main_topic": "Software Engineering",
+      "topic_voice": "Software Engineering: SDLC Models"
+    },
+    {
+      "id": 4,
+      "practice_set": 3,
+      "question_no": 4,
+      "question": "Which software model emphasizes delivering small functional parts frequently?",
+      "options": [
+        "A. Waterfall Model",
+        "B. Spiral Model",
+        "C. Agile Model",
+        "D. V-Model",
+        "E. Big Bang Model"
+      ],
+      "correct_answer": "C. Agile Model",
+      "explanation": "Agile delivers software in small, frequent updates.",
+      "detailed_explanation": "Agile is an iterative and incremental software development model. It divides work into small parts called iterations or sprints. Each sprint delivers a working part of the software. Agile supports customer collaboration, quick feedback, and flexible response to changing requirements.",
+      "why_correct": "Agile Model is correct because it focuses on frequent delivery of small working software increments.",
+      "wrong_options": {
+        "A": "Waterfall delivers the product after sequential phases, not frequent small releases.",
+        "B": "Spiral focuses mainly on risk analysis and iterative development.",
+        "D": "V-Model maps development phases with testing phases and is more rigid.",
+        "E": "Big Bang model has minimal planning and is not based on frequent delivery."
+      },
+      "memory_trick": "Agile = small steps, quick feedback, frequent releases.",
+      "exam_note": "Agile keywords: sprint, iteration, customer collaboration, changing requirements, incremental delivery.",
+      "topic": "Agile Model",
+      "main_topic": "Software Engineering",
+      "topic_voice": "Software Engineering: Agile Model"
+    },
+    {
+      "id": 5,
+      "practice_set": 2,
+      "question_no": 5,
+      "question": "Which SDLC model is suitable when a working sample is needed before final development?",
+      "options": [
+        "A. Prototype Model",
+        "B. Waterfall Model",
+        "C. V-Model",
+        "D. Big Bang Model",
+        "E. Incremental Model"
+      ],
+      "correct_answer": "A. Prototype Model",
+      "explanation": "The Prototype model creates an early working model to clarify user requirements.",
+      "detailed_explanation": "The Prototype model is used when requirements are not fully clear. A basic working model is created and shown to users. Users give feedback, and the prototype is refined until requirements become clear. After that, the actual system is developed.",
+      "why_correct": "Prototype Model is correct because it creates a sample or mock version of the system before final development.",
+      "wrong_options": {
+        "B": "Waterfall requires clear and fixed requirements before development starts.",
+        "C": "V-Model emphasizes verification and validation, not early sample creation.",
+        "D": "Big Bang model starts development with little planning.",
+        "E": "Incremental model delivers the final system in parts but does not necessarily create a throwaway sample first."
+      },
+      "memory_trick": "Prototype = preview model before final product.",
+      "exam_note": "Prototype model is useful when users cannot clearly define requirements at the beginning.",
+      "topic": "Prototype Model",
+      "main_topic": "Software Engineering",
+      "topic_voice": "Software Engineering: Prototype Model"
+    },
+    {
+      "id": 6,
+      "practice_set": 1,
+      "question_no": 6,
+      "question": "In which SDLC phase is user requirement gathering done?",
+      "options": [
+        "A. Testing",
+        "B. Deployment",
+        "C. Planning",
+        "D. Analysis",
+        "E. Design"
+      ],
+      "correct_answer": "D. Analysis",
+      "explanation": "User requirements are gathered and documented during the analysis phase.",
+      "detailed_explanation": "Requirement analysis is the SDLC phase where user needs, business goals, functional requirements, and non-functional requirements are studied and documented. This phase often produces the SRS document, which guides later design, coding, and testing activities.",
+      "why_correct": "Analysis is correct because requirement gathering, requirement study, and documentation happen in this phase.",
+      "wrong_options": {
+        "A": "Testing checks whether the software works correctly after development.",
+        "B": "Deployment releases the software for actual use.",
+        "C": "Planning estimates scope, cost, schedule, and resources but does not fully document user requirements.",
+        "E": "Design converts requirements into architecture and module structure."
+      },
+      "memory_trick": "Analysis = ask users what they need.",
+      "exam_note": "Requirement gathering is linked with analysis phase and SRS preparation.",
+      "topic": "Requirement Analysis",
+      "main_topic": "Software Engineering",
+      "topic_voice": "Software Engineering: Requirement Analysis"
+    },
+    {
+      "id": 7,
+      "practice_set": 2,
+      "question_no": 7,
+      "question": "Which document records the complete functional and non-functional requirements of a software system?",
+      "options": [
+        "A. DFD",
+        "B. SRS",
+        "C. ER Diagram",
+        "D. Test Plan",
+        "E. Source Code"
+      ],
+      "correct_answer": "B. SRS",
+      "explanation": "SRS stands for Software Requirements Specification and documents system requirements.",
+      "detailed_explanation": "SRS (Software Requirements Specification) is a formal document that describes what the software should do. It includes functional requirements, non-functional requirements, assumptions, constraints, interfaces, and acceptance criteria. It acts as an agreement between the customer and development team.",
+      "why_correct": "SRS is correct because it is the standard document used to record software requirements.",
+      "wrong_options": {
+        "A": "DFD shows data flow in a system but does not record all requirements.",
+        "C": "ER Diagram models database entities and relationships.",
+        "D": "Test Plan describes testing strategy, scope, resources, and schedule.",
+        "E": "Source Code is the actual program implementation, not the requirement document."
+      },
+      "memory_trick": "SRS = Software Requirements Specification = requirement book of the project.",
+      "exam_note": "SRS should be correct, complete, consistent, unambiguous, verifiable, and modifiable.",
+      "topic": "Requirement Analysis",
+      "main_topic": "Software Engineering",
+      "topic_voice": "Software Engineering: Requirement Analysis"
+    },
+    {
+      "id": 8,
+      "practice_set": 3,
+      "question_no": 8,
+      "question": "Which software design approach starts from high-level modules and breaks them into smaller modules?",
+      "options": [
+        "A. Bottom-Up Design",
+        "B. Top-Down Design",
+        "C. Random Design",
+        "D. Reverse Design",
+        "E. Object Storage"
+      ],
+      "correct_answer": "B. Top-Down Design",
+      "explanation": "Top-down design starts with the complete system and decomposes it into smaller modules.",
+      "detailed_explanation": "Top-down design begins with the overall system and gradually divides it into smaller modules or components. It helps understand the system structure from a broad level before focusing on details. This approach is commonly used in structured design.",
+      "why_correct": "Top-Down Design is correct because it moves from general system design to detailed module design.",
+      "wrong_options": {
+        "A": "Bottom-Up Design starts with smaller components and combines them into a full system.",
+        "C": "Random Design is not a standard software design approach.",
+        "D": "Reverse Design is not the standard term for this approach.",
+        "E": "Object Storage is a storage concept, not a software design method."
+      },
+      "memory_trick": "Top-down = start from the top-level system, then divide down.",
+      "exam_note": "Top-down and bottom-up design are common comparisons in software engineering exams.",
+      "topic": "Software Design",
+      "main_topic": "Software Engineering",
+      "topic_voice": "Software Engineering: Software Design"
+    },
+    {
+      "id": 9,
+      "practice_set": 3,
+      "question_no": 9,
+      "question": "Which design principle means modules should be strongly related internally?",
+      "options": [
+        "A. Low Cohesion",
+        "B. High Coupling",
+        "C. High Cohesion",
+        "D. Low Abstraction",
+        "E. High Redundancy"
+      ],
+      "correct_answer": "C. High Cohesion",
+      "explanation": "High cohesion means the elements inside a module are closely related to one another.",
+      "detailed_explanation": "Cohesion measures how closely related the responsibilities inside a single module are. High cohesion is desirable because a module performs one clear task or a group of closely related tasks. This improves readability, testing, reuse, and maintainability.",
+      "why_correct": "High Cohesion is correct because it means the internal parts of a module are strongly connected and focused.",
+      "wrong_options": {
+        "A": "Low cohesion is bad because the module contains unrelated responsibilities.",
+        "B": "High coupling is bad because modules become highly dependent on each other.",
+        "D": "Low abstraction does not describe internal module relatedness.",
+        "E": "High redundancy means repeated code or repeated data, which is undesirable."
+      },
+      "memory_trick": "Cohesion = closeness inside a module. High cohesion = good teamwork inside.",
+      "exam_note": "Best design principle: High cohesion and low coupling.",
+      "topic": "Software Design",
+      "main_topic": "Software Engineering",
+      "topic_voice": "Software Engineering: Software Design"
+    },
+    {
+      "id": 10,
+      "practice_set": 3,
+      "question_no": 10,
+      "question": "Which design quality is preferred between software modules?",
+      "options": [
+        "A. High Coupling",
+        "B. Low Coupling",
+        "C. No Cohesion",
+        "D. High Dependency",
+        "E. Code Duplication"
+      ],
+      "correct_answer": "B. Low Coupling",
+      "explanation": "Low coupling reduces dependency between modules and improves maintainability.",
+      "detailed_explanation": "Coupling measures the level of dependency between modules. Low coupling is preferred because changes in one module have less effect on other modules. It improves flexibility, testing, debugging, and maintenance.",
+      "why_correct": "Low Coupling is correct because software modules should be as independent as possible.",
+      "wrong_options": {
+        "A": "High coupling is undesirable because one module heavily depends on another.",
+        "C": "No cohesion means the module has unrelated parts and poor design.",
+        "D": "High dependency is another way of saying strong coupling, which is not preferred.",
+        "E": "Code duplication increases maintenance effort and defects."
+      },
+      "memory_trick": "Coupling = connection between modules. Low connection = easier change.",
+      "exam_note": "Remember: High cohesion inside modules, low coupling between modules.",
+      "topic": "Software Design",
+      "main_topic": "Software Engineering",
+      "topic_voice": "Software Engineering: Software Design"
+    },
+    {
+      "id": 11,
+      "practice_set": 1,
+      "question_no": 11,
+      "question": "Which testing ensures that new changes do not affect existing features?",
+      "options": [
+        "A. Unit Testing",
+        "B. Regression Testing",
+        "C. Load Testing",
+        "D. Smoke Testing",
+        "E. Usability Testing"
+      ],
+      "correct_answer": "B. Regression Testing",
+      "explanation": "Regression testing checks that new code does not disrupt existing functionality.",
+      "detailed_explanation": "Regression testing is performed after changes such as bug fixes, enhancements, or updates. Its goal is to confirm that existing features still work correctly and that the new changes have not introduced new defects in old functionality.",
+      "why_correct": "Regression Testing is correct because it specifically checks whether existing features are affected by new changes.",
+      "wrong_options": {
+        "A": "Unit testing tests individual functions or modules.",
+        "C": "Load testing checks system behavior under expected user load.",
+        "D": "Smoke testing quickly checks whether the build is stable enough for further testing.",
+        "E": "Usability testing checks user-friendliness and ease of use."
+      },
+      "memory_trick": "Regression = re-check old features after new changes.",
+      "exam_note": "Regression testing is very important after bug fixes and software updates.",
+      "topic": "Software Testing",
+      "main_topic": "Software Testing",
+      "topic_voice": "Software Testing: Software Testing"
+    },
+    {
+      "id": 12,
+      "practice_set": 4,
+      "question_no": 12,
+      "question": "Which testing is performed by developers to test individual components or modules?",
+      "options": [
+        "A. Unit Testing",
+        "B. Acceptance Testing",
+        "C. System Testing",
+        "D. Beta Testing",
+        "E. Usability Testing"
+      ],
+      "correct_answer": "A. Unit Testing",
+      "explanation": "Unit testing checks individual units or modules of source code.",
+      "detailed_explanation": "Unit testing is the first level of testing. Developers test small units of code such as functions, methods, or classes independently. It helps detect bugs early before modules are integrated into the larger system.",
+      "why_correct": "Unit Testing is correct because it focuses on testing individual modules or components separately.",
+      "wrong_options": {
+        "B": "Acceptance testing is performed to confirm whether the software meets user requirements.",
+        "C": "System testing tests the complete integrated system.",
+        "D": "Beta testing is performed by real users in a real environment before final release.",
+        "E": "Usability testing evaluates how easy the software is to use."
+      },
+      "memory_trick": "Unit = one small piece of code.",
+      "exam_note": "Testing levels: Unit → Integration → System → Acceptance.",
+      "topic": "Software Testing",
+      "main_topic": "Software Testing",
+      "topic_voice": "Software Testing: Software Testing"
+    },
+    {
+      "id": 13,
+      "practice_set": 6,
+      "question_no": 13,
+      "question": "Which type of testing ensures that the application functions correctly with other integrated modules and external systems?",
+      "options": [
+        "A. Unit Testing",
+        "B. Integration Testing",
+        "C. System Testing",
+        "D. Acceptance Testing",
+        "E. Stress Testing"
+      ],
+      "correct_answer": "B. Integration Testing",
+      "explanation": "Integration testing ensures modules work together properly.",
+      "detailed_explanation": "Integration testing is performed after unit testing. It checks whether different modules, components, APIs, databases, or external systems interact correctly. It helps detect interface errors, data flow problems, and communication issues between modules.",
+      "why_correct": "Integration Testing is correct because it checks combined modules and their interactions.",
+      "wrong_options": {
+        "A": "Unit testing checks individual modules separately, not their interaction.",
+        "C": "System testing checks the full system after integration.",
+        "D": "Acceptance testing validates the system from the user's or client's perspective.",
+        "E": "Stress testing checks behavior under extreme load."
+      },
+      "memory_trick": "Integration = modules meeting and working together.",
+      "exam_note": "Integration testing comes after unit testing and before system testing.",
+      "topic": "Integration Testing",
+      "main_topic": "Software Testing",
+      "topic_voice": "Software Testing: Integration Testing"
+    },
+    {
+      "id": 14,
+      "practice_set": 4,
+      "question_no": 14,
+      "question": "Which testing checks the complete software system against specified requirements?",
+      "options": [
+        "A. Unit Testing",
+        "B. System Testing",
+        "C. Alpha Testing",
+        "D. Smoke Testing",
+        "E. Mutation Testing"
+      ],
+      "correct_answer": "B. System Testing",
+      "explanation": "System testing verifies the complete integrated system against requirements.",
+      "detailed_explanation": "System testing is performed on the complete and integrated software system. It checks whether the system satisfies the specified functional and non-functional requirements. It is usually done after integration testing and before acceptance testing.",
+      "why_correct": "System Testing is correct because it tests the entire software system as a whole.",
+      "wrong_options": {
+        "A": "Unit testing checks individual code units.",
+        "C": "Alpha testing is internal acceptance testing before beta release.",
+        "D": "Smoke testing checks only basic build stability.",
+        "E": "Mutation testing evaluates test case effectiveness by introducing small code changes."
+      },
+      "memory_trick": "System testing = test the whole system.",
+      "exam_note": "Testing order: Unit → Integration → System → Acceptance.",
+      "topic": "System Testing",
+      "main_topic": "Software Testing",
+      "topic_voice": "Software Testing: System Testing"
+    },
+    {
+      "id": 15,
+      "practice_set": 4,
+      "question_no": 15,
+      "question": "Which testing is performed by the client or end users to decide whether software should be accepted?",
+      "options": [
+        "A. Unit Testing",
+        "B. Integration Testing",
+        "C. Acceptance Testing",
+        "D. Regression Testing",
+        "E. Stress Testing"
+      ],
+      "correct_answer": "C. Acceptance Testing",
+      "explanation": "Acceptance testing validates whether the software meets user needs and business requirements.",
+      "detailed_explanation": "Acceptance testing is the final level of testing performed to decide whether the software is ready for delivery. It checks the system against business requirements and user expectations. User Acceptance Testing (UAT) is a common form of acceptance testing.",
+      "why_correct": "Acceptance Testing is correct because it is used by clients or end users to accept or reject the software.",
+      "wrong_options": {
+        "A": "Unit testing is performed at code unit level.",
+        "B": "Integration testing checks interaction between modules.",
+        "D": "Regression testing checks whether changes broke existing features.",
+        "E": "Stress testing checks system behavior under extreme workload."
+      },
+      "memory_trick": "Acceptance testing = user says yes or no.",
+      "exam_note": "Acceptance testing is usually the final testing level before production release.",
+      "topic": "Acceptance Testing",
+      "main_topic": "Software Testing",
+      "topic_voice": "Software Testing: Acceptance Testing"
+    },
+    {
+      "id": 16,
+      "practice_set": 5,
+      "question_no": 16,
+      "question": "Which maintenance type modifies software to work in a changed environment?",
+      "options": [
+        "A. Corrective Maintenance",
+        "B. Adaptive Maintenance",
+        "C. Perfective Maintenance",
+        "D. Preventive Maintenance",
+        "E. Emergency Maintenance"
+      ],
+      "correct_answer": "B. Adaptive Maintenance",
+      "explanation": "Adaptive maintenance updates software to work with changed environments such as OS, hardware, or regulations.",
+      "detailed_explanation": "Adaptive maintenance is performed when the external environment changes. Examples include operating system updates, database changes, hardware changes, tax rule changes, or new compliance requirements. The software is modified so it can continue working correctly in the new environment.",
+      "why_correct": "Adaptive Maintenance is correct because it adapts software to environmental changes.",
+      "wrong_options": {
+        "A": "Corrective maintenance fixes defects or bugs.",
+        "C": "Perfective maintenance improves performance or adds enhancements.",
+        "D": "Preventive maintenance improves future maintainability and prevents future problems.",
+        "E": "Emergency maintenance is urgent fixing, not a standard main category."
+      },
+      "memory_trick": "Adaptive = adjust to a changed environment.",
+      "exam_note": "Maintenance types: Corrective, Adaptive, Perfective, Preventive.",
+      "topic": "Software Maintenance",
+      "main_topic": "Software Engineering",
+      "topic_voice": "Software Engineering: Software Maintenance"
+    },
+    {
+      "id": 17,
+      "practice_set": 5,
+      "question_no": 17,
+      "question": "Which maintenance type fixes defects found after software delivery?",
+      "options": [
+        "A. Corrective Maintenance",
+        "B. Adaptive Maintenance",
+        "C. Preventive Maintenance",
+        "D. Perfective Maintenance",
+        "E. Predictive Maintenance"
+      ],
+      "correct_answer": "A. Corrective Maintenance",
+      "explanation": "Corrective maintenance is performed to fix faults or bugs discovered after deployment.",
+      "detailed_explanation": "Corrective maintenance deals with fixing errors, faults, and defects found after the software has been delivered. These defects may be reported by users, testers, or monitoring systems. The goal is to restore the software to correct working condition.",
+      "why_correct": "Corrective Maintenance is correct because it corrects faults discovered after software delivery.",
+      "wrong_options": {
+        "B": "Adaptive maintenance changes software for a new environment.",
+        "C": "Preventive maintenance prevents future problems by improving structure or maintainability.",
+        "D": "Perfective maintenance improves features, performance, or usability.",
+        "E": "Predictive maintenance is not a standard primary software maintenance category."
+      },
+      "memory_trick": "Corrective = correct the bug.",
+      "exam_note": "Corrective maintenance is usually the most familiar type because it means bug fixing.",
+      "topic": "Software Maintenance",
+      "main_topic": "Software Engineering",
+      "topic_voice": "Software Engineering: Software Maintenance"
+    },
+    {
+      "id": 18,
+      "practice_set": 5,
+      "question_no": 18,
+      "question": "Which software metric is used to measure program size based on executable statements?",
+      "options": [
+        "A. Function Point",
+        "B. Cyclomatic Complexity",
+        "C. Lines of Code",
+        "D. Test Coverage",
+        "E. Defect Density"
+      ],
+      "correct_answer": "C. Lines of Code",
+      "explanation": "Lines of Code measures software size by counting the number of source code lines or statements.",
+      "detailed_explanation": "Lines of Code (LOC) is a software size metric that counts the number of lines in a program. It is simple to calculate and often used for estimating effort, productivity, and defect density. However, LOC depends on programming language and coding style, so it is not always the best comparison metric.",
+      "why_correct": "Lines of Code is correct because it measures software size using the number of code lines or executable statements.",
+      "wrong_options": {
+        "A": "Function Point measures software functionality from the user's perspective.",
+        "B": "Cyclomatic Complexity measures independent paths and control flow complexity.",
+        "D": "Test Coverage measures how much code or functionality is covered by tests.",
+        "E": "Defect Density measures defects per unit size."
+      },
+      "memory_trick": "LOC = Lines Of Code = count the lines.",
+      "exam_note": "LOC and Function Point are common software size metrics.",
+      "topic": "Software Metrics",
+      "main_topic": "Software Engineering",
+      "topic_voice": "Software Engineering: Software Metrics"
+    },
+    {
+      "id": 19,
+      "practice_set": 6,
+      "question_no": 19,
+      "question": "Which metric measures the number of independent paths in a program?",
+      "options": [
+        "A. Function Point",
+        "B. Cyclomatic Complexity",
+        "C. Code Coverage",
+        "D. Defect Density",
+        "E. Reliability Index"
+      ],
+      "correct_answer": "B. Cyclomatic Complexity",
+      "explanation": "Cyclomatic complexity measures the number of linearly independent paths through a program.",
+      "detailed_explanation": "Cyclomatic complexity is a software metric introduced by McCabe. It measures the complexity of a program's control flow by counting the number of independent paths. Higher cyclomatic complexity means more branches, more test cases, and greater maintenance difficulty.",
+      "why_correct": "Cyclomatic Complexity is correct because it directly measures independent paths in program logic.",
+      "wrong_options": {
+        "A": "Function Point measures software functionality, not control flow paths.",
+        "C": "Code Coverage measures how much code is executed by tests.",
+        "D": "Defect Density measures number of defects per software size unit.",
+        "E": "Reliability Index is not the standard metric for independent paths."
+      },
+      "memory_trick": "Cyclomatic complexity = count decision paths in code.",
+      "exam_note": "Formula often used: V(G) = E - N + 2P, where E = edges, N = nodes, P = connected components.",
+      "topic": "Software Metrics",
+      "main_topic": "Software Engineering",
+      "topic_voice": "Software Engineering: Software Metrics"
+    },
+    {
+      "id": 20,
+      "practice_set": 6,
+      "question_no": 20,
+      "question": "Which software quality attribute refers to how easily software can be modified and corrected?",
+      "options": [
+        "A. Portability",
+        "B. Reliability",
+        "C. Maintainability",
+        "D. Usability",
+        "E. Efficiency"
+      ],
+      "correct_answer": "C. Maintainability",
+      "explanation": "Maintainability refers to how easily software can be changed, corrected, or enhanced.",
+      "detailed_explanation": "Maintainability is a software quality attribute that indicates how easy it is to fix defects, improve features, adapt to changes, and understand the code. Good documentation, modular design, low coupling, and high cohesion improve maintainability.",
+      "why_correct": "Maintainability is correct because it describes the ease of modifying, correcting, and enhancing software.",
+      "wrong_options": {
+        "A": "Portability means software can run on different platforms.",
+        "B": "Reliability means software performs correctly for a specified time under specified conditions.",
+        "D": "Usability means the software is easy for users to learn and use.",
+        "E": "Efficiency means the software uses resources such as CPU, memory, and time effectively."
+      },
+      "memory_trick": "Maintainability = easy to maintain, fix, and improve.",
+      "exam_note": "Software quality attributes include reliability, maintainability, portability, usability, efficiency, and functionality.",
+      "topic": "Software Quality",
+      "main_topic": "Software Engineering",
+      "topic_voice": "Software Engineering: Software Quality"
+    }
+  ],
+  "metadata": {
+    "exam": "IBPS SO IT Officer Mains Preparation",
+    "subject": "Software Engineering",
+    "total_questions": 20,
+    "arranged_by": "topic",
+    "renumbered": true,
+    "enhanced_fields": {
+      "detailed_explanation": "Full concept explanation with exam-oriented clarity",
+      "why_correct": "Why the correct answer is correct",
+      "wrong_options": "Why each wrong option is incorrect, keyed by option letter",
+      "memory_trick": "Shortcut, mnemonic, or analogy for quick recall",
+      "exam_note": "IBPS SO IT exam-specific tip or important comparison"
+    }
   }
-  ]
 }
