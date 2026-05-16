@@ -1,532 +1,941 @@
 {
   "oop_exam_questions": [
     {
-    "id": 1,
-    "practice_set": 1,
-    "question_no": 12,
-    "question": "Which principle of OOP promotes code reuse through inheritance?",
-    "options": [
-      "A. Polymorphism",
-      "B. Abstraction",
-      "C. Encapsulation",
-      "D. Inheritance",
-      "E. Modularity"
-    ],
-    "correct_answer": "D. Inheritance",
-    "explanation": "Inheritance enables one class to reuse attributes and methods of another.",
-    "topic": "OOP: Inheritance"
-  },
-  {
-    "id": 2,
-    "practice_set": 1,
-    "question_no": 16,
-    "question": "In OOP what is the main purpose of encapsulation?",
-    "options": [
-      "A. Group similar objects",
-      "B. Enforce code indentation",
-      "C. Hide internal object details",
-      "D. Enable runtime polymorphism",
-      "E. Optimize CPU usage"
-    ],
-    "correct_answer": "C. Hide internal object details",
-    "explanation": "Encapsulation restricts access to object internals.",
-    "topic": "OOP: Encapsulation"
-  },
-  {
-    "id": 3,
-    "practice_set": 1,
-    "question_no": 20,
-    "question": "Which term in OOP allows different functions with the same name?",
-    "options": [
-      "A. Abstraction",
-      "B. Composition",
-      "C. Overriding",
-      "D. Overloading",
-      "E. Binding"
-    ],
-    "correct_answer": "D. Overloading",
-    "explanation": "Overloading allows multiple methods with the same name but different parameters.",
-    "topic": "OOP: Function Overloading"
-  },
-  {
-    "id": 4,
-    "practice_set": 1,
-    "question_no": 56,
-    "question": "Which operator is used for logical AND in C?",
-    "options": [
-      "A. &&",
-      "B. ||",
-      "C. ==",
-      "D. %",
-      "E. +"
-    ],
-    "correct_answer": "A. &&",
-    "explanation": "In C, && is the logical AND operator.",
-    "topic": "C Programming: Logical Operators"
-  },
-  {
-    "id": 5,
-    "practice_set": 1,
-    "question_no": 57,
-    "question": "Which keyword is used to define a class in Java?",
-    "options": [
-      "A. function",
-      "B. new",
-      "C. define",
-      "D. class",
-      "E. static"
-    ],
-    "correct_answer": "D. class",
-    "explanation": "class is the Java keyword used to define a class.",
-    "topic": "Java Programming: Class Definition"
-  },
-  {
-    "id": 6,
-    "practice_set": 1,
-    "question_no": 60,
-    "question": "What does JVM stand for in Java?",
-    "options": [
-      "A. Java Virtual Memory",
-      "B. Java Verified Module",
-      "C. Java Visual Machine",
-      "D. Java Virtual Machine",
-      "E. Java Version Manager"
-    ],
-    "correct_answer": "D. Java Virtual Machine",
-    "explanation": "JVM is the engine that runs Java bytecode on any platform.",
-    "topic": "Java Programming: JVM"
-  },
-  {
-    "id": 7,
-    "practice_set": 2,
-    "question_no": 24,
-    "question": "In object-oriented programming, which pillar allows different classes to be treated through the same interface?",
-    "options": [
-      "A. Abstraction",
-      "B. Inheritance",
-      "C. Encapsulation",
-      "D. Polymorphism",
-      "E. Overloading"
-    ],
-    "correct_answer": "D. Polymorphism",
-    "explanation": "Polymorphism lets different classes be treated via the same interface.",
-    "topic": "OOP: Polymorphism"
-  },
-  {
-    "id": 8,
-    "practice_set": 2,
-    "question_no": 35,
-    "question": "In C++, which keyword is used to define a constant value?",
-    "options": [
-      "A. constant",
-      "B. define",
-      "C. const",
-      "D. static",
-      "E. fixed"
-    ],
-    "correct_answer": "C. const",
-    "explanation": "const defines constants in C++.",
-    "topic": "C++ Programming: Constants"
-  },
-  {
-    "id": 9,
-    "practice_set": 2,
-    "question_no": 52,
-    "question": "In C++, what is the correct operator to access members of a structure through a pointer?",
-    "options": [
-      "A. . (dot)",
-      "B. * (asterisk)",
-      "C. -> (arrow)",
-      "D. & (ampersand)",
-      "E. % (modulus)"
-    ],
-    "correct_answer": "C. -> (arrow)",
-    "explanation": "The arrow operator is used to access members through a pointer in C++.",
-    "topic": "C++ Programming: Pointers and Structures"
-  },
-  {
-    "id": 10,
-    "practice_set": 3,
-    "question_no": 9,
-    "question": "Which term describes the ability of a program to run on different operating systems without modification?",
-    "options": [
-      "A. Portability",
-      "B. Scalability",
-      "C. Flexibility",
-      "D. Compatibility",
-      "E. Maintainability"
-    ],
-    "correct_answer": "A. Portability",
-    "explanation": "Portability means a program can run on different systems without changes.",
-    "topic": "Programming Concepts: Portability"
-  },
-  {
-    "id": 11,
-    "practice_set": 3,
-    "question_no": 16,
-    "question": "Which of the following is not an OOP principle?",
-    "options": [
-      "A. Inheritance",
-      "B. Encapsulation",
-      "C. Polymorphism",
-      "D. Compilation",
-      "E. Abstraction"
-    ],
-    "correct_answer": "D. Compilation",
-    "explanation": "Compilation is not an OOP principle.",
-    "topic": "OOP: Principles"
-  },
-  {
-    "id": 12,
-    "practice_set": 3,
-    "question_no": 26,
-    "question": "Which loop is guaranteed to execute at least once?",
-    "options": [
-      "A. for",
-      "B. while",
-      "C. do-while",
-      "D. foreach",
-      "E. until"
-    ],
-    "correct_answer": "C. do-while",
-    "explanation": "A do-while loop checks its condition after executing once.",
-    "topic": "Programming Control Flow"
-  },
-  {
-    "id": 13,
-    "practice_set": 3,
-    "question_no": 46,
-    "question": "Which C++ function is automatically called when an object goes out of scope?",
-    "options": [
-      "A. Constructor",
-      "B. Initializer",
-      "C. Destructor",
-      "D. Eraser",
-      "E. Terminator"
-    ],
-    "correct_answer": "C. Destructor",
-    "explanation": "In C++, destructors are called automatically when objects go out of scope.",
-    "topic": "C++ Programming: Destructor"
-  },
-  {
-    "id": 14,
-    "practice_set": 4,
-    "question_no": 12,
-    "question": "Which bitwise operator is used to set specific bits to 1 in C++?",
-    "options": [
-      "A. &",
-      "B. |",
-      "C. ^",
-      "D. ~",
-      "E. <<"
-    ],
-    "correct_answer": "B. |",
-    "explanation": "Bitwise OR sets specific bits to 1.",
-    "topic": "C++ Programming: Bitwise Operators"
-  },
-  {
-    "id": 15,
-    "practice_set": 4,
-    "question_no": 18,
-    "question": "Which C++ feature allows functions to be defined outside a class but be treated as if they are part of the class?",
-    "options": [
-      "A. Static Functions",
-      "B. Virtual Functions",
-      "C. Friend Functions",
-      "D. Inline Functions",
-      "E. Constructor Functions"
-    ],
-    "correct_answer": "C. Friend Functions",
-    "explanation": "Friend functions are defined externally but treated specially by a class.",
-    "topic": "C++ Programming: Friend Functions"
-  },
-  {
-    "id": 16,
-    "practice_set": 4,
-    "question_no": 28,
-    "question": "In C++, which access specifier makes a class member accessible only within the same class?",
-    "options": [
-      "A. Public",
-      "B. Protected",
-      "C. Private",
-      "D. Friend",
-      "E. Static"
-    ],
-    "correct_answer": "C. Private",
-    "explanation": "Private members are accessible only within the same class.",
-    "topic": "C++ OOP: Access Specifiers"
-  },
-  {
-    "id": 17,
-    "practice_set": 4,
-    "question_no": 32,
-    "question": "In C++, what is the default access specifier for class members?",
-    "options": [
-      "A. Public",
-      "B. Protected",
-      "C. Private",
-      "D. Static",
-      "E. Virtual"
-    ],
-    "correct_answer": "C. Private",
-    "explanation": "Default access specifier for class members in C++ is private.",
-    "topic": "C++ OOP: Default Access Specifier"
-  },
-  {
-    "id": 18,
-    "practice_set": 4,
-    "question_no": 43,
-    "question": "Which method is used to perform polymorphism in C++?",
-    "options": [
-      "A. Templates",
-      "B. Constructor Overloading",
-      "C. Virtual Functions",
-      "D. Static Functions",
-      "E. Macros"
-    ],
-    "correct_answer": "C. Virtual Functions",
-    "explanation": "Virtual functions enable runtime polymorphism in C++.",
-    "topic": "C++ OOP: Runtime Polymorphism"
-  },
-  {
-    "id": 19,
-    "practice_set": 4,
-    "question_no": 54,
-    "question": "Which programming paradigm treats functions as first-class citizens?",
-    "options": [
-      "A. Procedural Programming",
-      "B. Object-Oriented Programming",
-      "C. Functional Programming",
-      "D. Logical Programming",
-      "E. Declarative Programming"
-    ],
-    "correct_answer": "C. Functional Programming",
-    "explanation": "Functions are first-class citizens in this paradigm.",
-    "topic": "Programming Paradigms: Functional Programming"
-  },
-  {
-    "id": 20,
-    "practice_set": 5,
-    "question_no": 8,
-    "question": "Which operator has the highest precedence in C++?",
-    "options": [
-      "A. Logical AND (&&)",
-      "B. Addition (+)",
-      "C. Multiplication (*)",
-      "D. Assignment (=)",
-      "E. Relational (==)"
-    ],
-    "correct_answer": "C. Multiplication (*)",
-    "explanation": "Multiplication has higher precedence than addition and assignment.",
-    "topic": "C++ Programming: Operator Precedence"
-  },
-  {
-    "id": 21,
-    "practice_set": 5,
-    "question_no": 21,
-    "question": "Which C++ concept is used to inherit properties from multiple classes?",
-    "options": [
-      "A. Multiple Inheritance",
-      "B. Multiple Interface",
-      "C. Hybrid Inheritance",
-      "D. Hierarchical Inheritance",
-      "E. Single Inheritance"
-    ],
-    "correct_answer": "A. Multiple Inheritance",
-    "explanation": "In C++, classes can inherit from multiple parent classes.",
-    "topic": "C++ OOP: Multiple Inheritance"
-  },
-  {
-    "id": 22,
-    "practice_set": 5,
-    "question_no": 26,
-    "question": "In C++, which keyword is used to define a constant pointer value?",
-    "options": [
-      "A. let",
-      "B. const",
-      "C. volatile",
-      "D. private",
-      "E. reference"
-    ],
-    "correct_answer": "B. const",
-    "explanation": "const defines constant values and constant pointers in C++.",
-    "topic": "C++ Programming: const Keyword"
-  },
-  {
-    "id": 23,
-    "practice_set": 5,
-    "question_no": 36,
-    "question": "Which C++ feature restricts multiple inheritance ambiguities?",
-    "options": [
-      "A. Static functions",
-      "B. Virtual Inheritance",
-      "C. Abstract Classes",
-      "D. Destructors",
-      "E. Inline Functions"
-    ],
-    "correct_answer": "B. Virtual Inheritance",
-    "explanation": "Virtual inheritance avoids ambiguities in multiple inheritance. 37. Segmentation — Segmentation can suffer from external fragmentation. The answer key marks this concept even though the question’s option text is slightly blurred.",
-    "topic": "C++ OOP: Virtual Inheritance"
-  },
-  {
-    "id": 24,
-    "practice_set": 6,
-    "question_no": 4,
-    "question": "Which special C++ function is called automatically when an object goes out of scope to free up resources during its lifetime?",
-    "options": [
-      "A. Constructor",
-      "B. Destructor",
-      "C. Inline Function",
-      "D. Static Function",
-      "E. Friend Function"
-    ],
-    "correct_answer": "B. Destructor",
-    "explanation": "Destructor is called when an object goes out of scope to release resources.",
-    "topic": "C++ Programming: Destructor"
-  },
-  {
-    "id": 25,
-    "practice_set": 6,
-    "question_no": 38,
-    "question": "In object-oriented programming, which principle restricts access to the internal state of an object, only allowing access through methods?",
-    "options": [
-      "A. Inheritance",
-      "B. Polymorphism",
-      "C. Encapsulation",
-      "D. Abstraction",
-      "E. Association"
-    ],
-    "correct_answer": "C. Encapsulation",
-    "explanation": "Encapsulation restricts direct access to object internals.",
-    "topic": "OOP: Encapsulation"
-  },
-  {
-    "id": 26,
-    "practice_set": 6,
-    "question_no": 40,
-    "question": "Which C++ keyword is used to declare a function that can be overridden in a derived class to enable runtime polymorphism?",
-    "options": [
-      "A. static",
-      "B. const",
-      "C. inline",
-      "D. virtual",
-      "E. friend"
-    ],
-    "correct_answer": "D. virtual",
-    "explanation": "virtual allows method overriding for runtime polymorphism in C++.",
-    "topic": "C++ OOP: virtual Keyword"
-  },
-  {
-    "id": 27,
-    "practice_set": 7,
-    "question_no": 15,
-    "question": "In C++, which operator is overloaded to allow user-defined classes to be compared using equality (==) operator?",
-    "options": [
-      "A. >",
-      "B. ==",
-      "C. +",
-      "D. =",
-      "E. *"
-    ],
-    "correct_answer": "B. ==",
-    "explanation": "Overloading == allows custom object comparison in user-defined classes.",
-    "topic": "C++ OOP: Operator Overloading"
-  },
-  {
-    "id": 28,
-    "practice_set": 7,
-    "question_no": 24,
-    "question": "Which C++ keyword is used to define a constant expression that is evaluated at compile time?",
-    "options": [
-      "A. static",
-      "B. final",
-      "C. constexpr",
-      "D. mutable",
-      "E. constant"
-    ],
-    "correct_answer": "C. constexpr",
-    "explanation": "constexpr evaluates expressions at compile time in C++.",
-    "topic": "C++ Programming: constexpr"
-  },
-  {
-    "id": 29,
-    "practice_set": 7,
-    "question_no": 32,
-    "question": "Which type of C++ inheritance leads to a situation where a derived class inherits from two base classes that have a common base class?",
-    "options": [
-      "A. Single Inheritance",
-      "B. Multilevel Inheritance",
-      "C. Hybrid Inheritance",
-      "D. Multiple Inheritance",
-      "E. Hierarchical Inheritance"
-    ],
-    "correct_answer": "C. Hybrid Inheritance",
-    "explanation": "Hybrid inheritance combines multiple inheritance types.",
-    "topic": "C++ OOP: Hybrid Inheritance"
-  },
-  {
-    "id": 30,
-    "practice_set": 7,
-    "question_no": 42,
-    "question": "In object-oriented programming, which term describes hiding the complex implementation details of an object from the user?",
-    "options": [
-      "A. Encapsulation",
-      "B. Abstraction",
-      "C. Polymorphism",
-      "D. Inheritance",
-      "E. Overloading"
-    ],
-    "correct_answer": "B. Abstraction",
-    "explanation": "Abstraction hides complex implementation details from users.",
-    "topic": "OOP: Abstraction"
-  },
-  {
-    "id": 31,
-    "practice_set": 7,
-    "question_no": 50,
-    "question": "Which C++ keyword indicates that a function does not modify the object it belongs to?",
-    "options": [
-      "A. const",
-      "B. static",
-      "C. mutable",
-      "D. final",
-      "E. virtual"
-    ],
-    "correct_answer": "A. const",
-    "explanation": "const ensures a function does not modify the object it belongs to.",
-    "topic": "C++ Programming: const Member Function"
-  },
-  {
-    "id": 32,
-    "practice_set": 8,
-    "question_no": 6,
-    "question": "In object-oriented programming, which concept restricts direct access to some of an object’s components to protect integrity?",
-    "options": [
-      "A. Abstraction",
-      "B. Polymorphism",
-      "C. Encapsulation",
-      "D. Inheritance",
-      "E. Instantiation"
-    ],
-    "correct_answer": "C. Encapsulation",
-    "explanation": "Encapsulation hides object internals and protects data.",
-    "topic": "OOP: Encapsulation"
-  },
-  {
-    "id": 33,
-    "practice_set": 9,
-    "question_no": 9,
-    "question": "In object-oriented programming, which concept allows different classes to be treated as instances of the same parent class?",
-    "options": [
-      "A. Inheritance",
-      "B. Abstraction",
-      "C. Encapsulation",
-      "D. Polymorphism",
-      "E. Composition"
-    ],
-    "correct_answer": "D. Polymorphism",
-    "explanation": "Polymorphism allows different classes to be treated as a parent class type.",
-    "topic": "OOP: Polymorphism"
+      "id": 1,
+      "practice_set": 7,
+      "question_no": 1,
+      "question": "In object-oriented programming, which term describes hiding the complex implementation details of an object from the user?",
+      "options": [
+        "A. Encapsulation",
+        "B. Abstraction",
+        "C. Polymorphism",
+        "D. Inheritance",
+        "E. Overloading"
+      ],
+      "correct_answer": "B. Abstraction",
+      "explanation": "Abstraction hides complex implementation details from users.",
+      "detailed_explanation": "Abstraction provides a simplified view of complex systems. Users interact with a simple interface without knowing the internal complexity. Example: You drive a car using the steering wheel and pedals — you don't need to know how the engine works internally. In code: Abstract classes and interfaces provide abstraction — you define WHAT to do, not HOW.",
+      "why_correct": "Abstraction hides the HOW (implementation complexity) and shows only the WHAT (interface/functionality).",
+      "wrong_options": {
+        "A": "Encapsulation hides the DATA (internal state) — not the complexity of implementation.",
+        "C": "Polymorphism allows one interface, many forms — about flexibility, not hiding complexity.",
+        "D": "Inheritance shares code between parent and child — about reuse, not hiding details.",
+        "E": "Overloading allows same function name — not about hiding implementation."
+      },
+      "memory_trick": "Abstraction = ATM machine. You press buttons (interface), get money. You DON'T see the complex banking system inside. Just the simple interface.",
+      "exam_note": "In C++: Abstract class = class with at least one pure virtual function. In Java: abstract keyword for classes and methods. Interfaces are 100% abstract.",
+      "topic": "OOP: Abstraction",
+      "main_topic": "OOP",
+      "topic_voice": "OOP: Abstraction"
+    },
+    {
+      "id": 2,
+      "practice_set": 1,
+      "question_no": 2,
+      "question": "In OOP what is the main purpose of encapsulation?",
+      "options": [
+        "A. Group similar objects",
+        "B. Enforce code indentation",
+        "C. Hide internal object details",
+        "D. Enable runtime polymorphism",
+        "E. Optimize CPU usage"
+      ],
+      "correct_answer": "C. Hide internal object details",
+      "explanation": "Encapsulation restricts access to object internals.",
+      "detailed_explanation": "Encapsulation bundles data (attributes) and methods (functions) into a single unit (class) AND restricts direct access to internal state using access specifiers (private, protected, public). External code can only interact through public methods (getters/setters). This protects data integrity. Example: A BankAccount class has private balance — you cannot directly change it; you must use deposit() or withdraw() methods.",
+      "why_correct": "Encapsulation's core purpose is to hide internal object details and protect data from unauthorized access — achieved via private/protected access specifiers.",
+      "wrong_options": {
+        "A": "Grouping similar objects is done by classes/objects or clustering — not encapsulation.",
+        "B": "Code indentation is a syntax style concern — has nothing to do with OOP.",
+        "D": "Runtime polymorphism is achieved through virtual functions/method overriding — not encapsulation.",
+        "E": "CPU optimization is a hardware/compiler concern — not an OOP principle."
+      },
+      "memory_trick": "Encapsulation = CAPSULE. A capsule hides medicine inside. Similarly, a class hides data inside private members. Only the public interface (methods) is visible.",
+      "exam_note": "Encapsulation provides: data hiding, data protection, modularity, easier maintenance. Getters and setters are the standard way to access private data.",
+      "topic": "OOP: Encapsulation",
+      "main_topic": "OOP",
+      "topic_voice": "OOP: Encapsulation"
+    },
+    {
+      "id": 3,
+      "practice_set": 6,
+      "question_no": 3,
+      "question": "In object-oriented programming, which principle restricts access to the internal state of an object, only allowing access through methods?",
+      "options": [
+        "A. Inheritance",
+        "B. Polymorphism",
+        "C. Encapsulation",
+        "D. Abstraction",
+        "E. Association"
+      ],
+      "correct_answer": "C. Encapsulation",
+      "explanation": "Encapsulation restricts direct access to object internals.",
+      "detailed_explanation": "Encapsulation = data hiding + method access. Internal state (fields/attributes) is made private. External code accesses data ONLY through public methods (getters/setters). Example: private int age; — direct access blocked. public int getAge() { return age; } — controlled access through method. This protects data from invalid modifications.",
+      "why_correct": "Encapsulation specifically restricts direct access to object state and forces interaction through methods — the definition of data hiding.",
+      "wrong_options": {
+        "A": "Inheritance enables code reuse through parent-child class relationships.",
+        "B": "Polymorphism allows one interface to work with different types — not about data hiding.",
+        "D": "Abstraction hides COMPLEXITY of implementation — shows only what is necessary. Encapsulation hides DATA.",
+        "E": "Association describes relationships between classes (uses-a) — not data hiding."
+      },
+      "memory_trick": "Encapsulation vs Abstraction: Encapsulation = HOW it is hidden (private fields + public methods). Abstraction = WHAT is hidden (complex logic behind simple interface).",
+      "exam_note": "Abstraction and Encapsulation are often confused. Abstraction = hiding implementation complexity. Encapsulation = hiding internal data state.",
+      "topic": "OOP: Encapsulation",
+      "main_topic": "OOP",
+      "topic_voice": "OOP: Encapsulation"
+    },
+    {
+      "id": 4,
+      "practice_set": 8,
+      "question_no": 4,
+      "question": "In object-oriented programming, which concept restricts direct access to some of an object's components to protect integrity?",
+      "options": [
+        "A. Abstraction",
+        "B. Polymorphism",
+        "C. Encapsulation",
+        "D. Inheritance",
+        "E. Instantiation"
+      ],
+      "correct_answer": "C. Encapsulation",
+      "explanation": "Encapsulation hides object internals and protects data.",
+      "detailed_explanation": "Encapsulation protects data integrity by restricting direct access. Private members cannot be accidentally or maliciously changed by external code. Example: if age were public, external code could set age = -100. With encapsulation: private int age; public void setAge(int a) { if(a > 0) age = a; } — validation is enforced through the setter.",
+      "why_correct": "Encapsulation restricts direct access to protect object integrity — data can only be modified through controlled methods with validation.",
+      "wrong_options": {
+        "A": "Abstraction hides complexity — not specifically about restricting access to protect integrity.",
+        "B": "Polymorphism allows flexible interfaces — not about data protection.",
+        "D": "Inheritance enables code reuse — not about data access restriction.",
+        "E": "Instantiation is the process of creating an object from a class — not a data protection concept."
+      },
+      "memory_trick": "Encapsulation = SAFE VAULT. Private data is locked inside. Only authorized methods (keys) can access it. Protects integrity of the data.",
+      "exam_note": "Benefits of encapsulation: data hiding, validation through setters, flexibility to change internal implementation without affecting external code.",
+      "topic": "OOP: Encapsulation",
+      "main_topic": "OOP",
+      "topic_voice": "OOP: Encapsulation"
+    },
+    {
+      "id": 5,
+      "practice_set": 1,
+      "question_no": 5,
+      "question": "Which principle of OOP promotes code reuse through inheritance?",
+      "options": [
+        "A. Polymorphism",
+        "B. Abstraction",
+        "C. Encapsulation",
+        "D. Inheritance",
+        "E. Modularity"
+      ],
+      "correct_answer": "D. Inheritance",
+      "explanation": "Inheritance enables one class to reuse attributes and methods of another.",
+      "detailed_explanation": "Inheritance is the OOP mechanism where a child class (subclass/derived class) acquires properties and behaviors of a parent class (superclass/base class). This allows code reuse without rewriting. Example: Animal class has eat() and sleep() — Dog class inherits these and adds bark(). The child class gets everything the parent has, plus adds its own.",
+      "why_correct": "Inheritance is specifically defined as the OOP principle that promotes code reuse by allowing a class to derive properties and methods from another class.",
+      "wrong_options": {
+        "A": "Polymorphism allows the same interface to work with different data types or classes — it uses inheritance but is not the code-reuse principle itself.",
+        "B": "Abstraction hides complex implementation details from users — focused on hiding, not reusing.",
+        "C": "Encapsulation bundles data and methods together and restricts access — focused on data protection, not code reuse.",
+        "E": "Modularity is a general programming concept of dividing code into modules — not one of the four OOP pillars."
+      },
+      "memory_trick": "Four OOP pillars: A-PIE = Abstraction, Polymorphism, Inheritance, Encapsulation. Inheritance = IS-A relationship. Dog IS-A Animal.",
+      "exam_note": "Types of inheritance: Single, Multiple (C++ only), Multilevel, Hierarchical, Hybrid. Java uses 'extends' keyword. C++ uses colon (:).",
+      "topic": "OOP: Inheritance",
+      "main_topic": "OOP",
+      "topic_voice": "OOP: Inheritance"
+    },
+    {
+      "id": 6,
+      "practice_set": 2,
+      "question_no": 6,
+      "question": "In object-oriented programming, which pillar allows different classes to be treated through the same interface?",
+      "options": [
+        "A. Abstraction",
+        "B. Inheritance",
+        "C. Encapsulation",
+        "D. Polymorphism",
+        "E. Overloading"
+      ],
+      "correct_answer": "D. Polymorphism",
+      "explanation": "Polymorphism lets different classes be treated via the same interface.",
+      "detailed_explanation": "Polymorphism (poly=many, morph=forms) means the same interface can work with different underlying types. A Shape reference can point to Circle, Square, or Triangle — all having a draw() method. When draw() is called, the correct version runs based on the actual object type. Two types: Compile-time (overloading) and Runtime (overriding + virtual functions).",
+      "why_correct": "Polymorphism allows one interface to represent multiple types — different classes treated through the same parent class or interface reference.",
+      "wrong_options": {
+        "A": "Abstraction hides complexity behind a simple interface — not about treating different classes as one type.",
+        "B": "Inheritance provides the mechanism that enables polymorphism, but is not polymorphism itself.",
+        "C": "Encapsulation hides data — not about multiple class types through one interface.",
+        "E": "Overloading is a form of compile-time polymorphism, but it's not the pillar that allows different classes through the same interface."
+      },
+      "memory_trick": "Polymorphism = ONE remote, MANY TVs. Same button (draw()), different behavior based on which TV (Circle, Square) it controls.",
+      "exam_note": "Runtime polymorphism requires: Inheritance + Method Overriding + Virtual functions (C++) or Interfaces/Abstract classes (Java).",
+      "topic": "OOP: Polymorphism",
+      "main_topic": "OOP",
+      "topic_voice": "OOP: Polymorphism"
+    },
+    {
+      "id": 7,
+      "practice_set": 9,
+      "question_no": 7,
+      "question": "In object-oriented programming, which concept allows different classes to be treated as instances of the same parent class?",
+      "options": [
+        "A. Inheritance",
+        "B. Abstraction",
+        "C. Encapsulation",
+        "D. Polymorphism",
+        "E. Composition"
+      ],
+      "correct_answer": "D. Polymorphism",
+      "explanation": "Polymorphism allows different classes to be treated as a parent class type.",
+      "detailed_explanation": "Polymorphism (runtime) allows a parent class reference to hold child class objects. Example: Shape *s; s = new Circle(); s->draw(); — draws circle. s = new Square(); s->draw(); — draws square. Same reference variable 's' of type Shape works with Circle and Square — treating them as the same parent type. This is the power of polymorphism.",
+      "why_correct": "Polymorphism allows child class objects to be referenced by a parent class variable — different types treated as the same type.",
+      "wrong_options": {
+        "A": "Inheritance creates the parent-child relationship that makes polymorphism possible, but polymorphism is the actual feature of treating different classes as one.",
+        "B": "Abstraction hides implementation — not about treating different class instances as one type.",
+        "C": "Encapsulation hides data — not about type flexibility.",
+        "E": "Composition is a design relationship (HAS-A) where a class contains objects of other classes — not about treating classes as parent type."
+      },
+      "memory_trick": "Polymorphism = Shape pointer does different things based on what it points to. ONE type (Shape), MANY behaviors (Circle, Square, Triangle).",
+      "exam_note": "IS-A vs HAS-A: Inheritance = IS-A (Dog IS-A Animal). Composition = HAS-A (Car HAS-A Engine). Polymorphism uses IS-A relationships.",
+      "topic": "OOP: Polymorphism",
+      "main_topic": "OOP",
+      "topic_voice": "OOP: Polymorphism"
+    },
+    {
+      "id": 8,
+      "practice_set": 3,
+      "question_no": 8,
+      "question": "Which of the following is not an OOP principle?",
+      "options": [
+        "A. Inheritance",
+        "B. Encapsulation",
+        "C. Polymorphism",
+        "D. Compilation",
+        "E. Abstraction"
+      ],
+      "correct_answer": "D. Compilation",
+      "explanation": "Compilation is not an OOP principle.",
+      "detailed_explanation": "The four pillars of OOP are: Abstraction, Polymorphism, Inheritance, and Encapsulation (A-PIE). Compilation is the process of converting source code to machine code — it is a programming/compiler concept, not an OOP principle. It applies to ALL programming languages, not just OOP languages.",
+      "why_correct": "Compilation is a code processing step (source → machine code), not a characteristic or principle of object-oriented design.",
+      "wrong_options": {
+        "A": "Inheritance IS one of the four OOP pillars — code reuse through parent-child relationships.",
+        "B": "Encapsulation IS one of the four OOP pillars — data hiding and bundling.",
+        "C": "Polymorphism IS one of the four OOP pillars — one interface, many forms.",
+        "E": "Abstraction IS one of the four OOP pillars — hiding complex details."
+      },
+      "memory_trick": "OOP pillars = A-PIE: Abstraction, Polymorphism, Inheritance, Encapsulation. Anything outside this is NOT an OOP principle.",
+      "exam_note": "Very commonly asked: 'Which is NOT an OOP principle?' Watch for: Compilation, Recursion, Iteration, Portability — none of these are OOP pillars.",
+      "topic": "OOP: Principles",
+      "main_topic": "OOP",
+      "topic_voice": "OOP: Principles"
+    },
+    {
+      "id": 9,
+      "practice_set": 1,
+      "question_no": 9,
+      "question": "Which term in OOP allows different functions with the same name?",
+      "options": [
+        "A. Abstraction",
+        "B. Composition",
+        "C. Overriding",
+        "D. Overloading",
+        "E. Binding"
+      ],
+      "correct_answer": "D. Overloading",
+      "explanation": "Overloading allows multiple methods with the same name but different parameters.",
+      "detailed_explanation": "Function Overloading (compile-time polymorphism) allows multiple functions with the same name but different parameter lists (different number, type, or order of parameters). The compiler decides which version to call based on arguments. Example in C++: int add(int a, int b) and float add(float a, float b) — both named add, resolved at compile time.",
+      "why_correct": "Overloading = same function name, different parameters. Allows multiple definitions of a function with the same name in the same class.",
+      "wrong_options": {
+        "A": "Abstraction hides implementation complexity — not related to same-name functions.",
+        "B": "Composition is a design relationship where a class contains objects of other classes (HAS-A relationship) — not same-name functions.",
+        "C": "Overriding allows a child class to redefine a parent class method — same name AND same parameters, but in a different class.",
+        "E": "Binding refers to linking a function call to the function definition (early/late binding) — a separate concept."
+      },
+      "memory_trick": "Overloading = LOAD the same name with different versions. Overriding = RIDE OVER the parent method in child class. Loading = compile time. Riding = runtime.",
+      "exam_note": "Overloading vs Overriding: Overloading = same class, different parameters, compile-time. Overriding = child class, same parameters, runtime (virtual functions in C++).",
+      "topic": "OOP: Function Overloading",
+      "main_topic": "OOP",
+      "topic_voice": "OOP: Function Overloading"
+    },
+    {
+      "id": 10,
+      "practice_set": 4,
+      "question_no": 10,
+      "question": "In C++, which access specifier makes a class member accessible only within the same class?",
+      "options": [
+        "A. Public",
+        "B. Protected",
+        "C. Private",
+        "D. Friend",
+        "E. Static"
+      ],
+      "correct_answer": "C. Private",
+      "explanation": "Private members are accessible only within the same class.",
+      "detailed_explanation": "C++ has three access specifiers: Private (default): accessible only within the SAME class. Protected: accessible within the same class AND derived (child) classes. Public: accessible from ANYWHERE — inside class, derived classes, and outside code. Private is the most restrictive, enforcing data hiding.",
+      "why_correct": "Private restricts access to ONLY the class where the member is declared — not accessible from outside or child classes.",
+      "wrong_options": {
+        "A": "Public members are accessible from ANYWHERE — least restrictive.",
+        "B": "Protected members are accessible within the same class AND derived (child) classes.",
+        "D": "Friend is not an access specifier — it is a keyword that grants special access to specific functions or classes.",
+        "E": "Static affects storage and sharing of members — not access restriction."
+      },
+      "memory_trick": "Access levels (most to least restrictive): Private < Protected < Public. Private = just me. Protected = me + my children. Public = everyone.",
+      "exam_note": "Access specifier table: Private: same class only. Protected: same class + derived. Public: everywhere. Default in C++ class = private. Default in struct = public.",
+      "topic": "C++ OOP: Access Specifiers",
+      "main_topic": "C++ OOP",
+      "topic_voice": "C++ OOP: Access Specifiers"
+    },
+    {
+      "id": 11,
+      "practice_set": 4,
+      "question_no": 11,
+      "question": "In C++, what is the default access specifier for class members?",
+      "options": [
+        "A. Public",
+        "B. Protected",
+        "C. Private",
+        "D. Static",
+        "E. Virtual"
+      ],
+      "correct_answer": "C. Private",
+      "explanation": "Default access specifier for class members in C++ is private.",
+      "detailed_explanation": "In C++, if no access specifier is mentioned for class members, they are PRIVATE by default. This supports encapsulation by default — data is hidden unless explicitly made public. However, in struct, the default is PUBLIC. This is the key difference between class and struct in C++.",
+      "why_correct": "C++ class members default to private — enforcing encapsulation automatically.",
+      "wrong_options": {
+        "A": "Public is the default for STRUCT members — not class members.",
+        "B": "Protected is never the default — must be explicitly stated.",
+        "D": "Static is a storage specifier — not an access specifier and never a default.",
+        "E": "Virtual is for polymorphism — not an access specifier."
+      },
+      "memory_trick": "C++ class = private default. C++ struct = public default. Only difference between class and struct in C++ is the default access.",
+      "exam_note": "Java default access = package-private (accessible within same package). C++ class default = private. C++ struct default = public. All commonly tested.",
+      "topic": "C++ OOP: Default Access Specifier",
+      "main_topic": "C++ OOP",
+      "topic_voice": "C++ OOP: Default Access Specifier"
+    },
+    {
+      "id": 12,
+      "practice_set": 5,
+      "question_no": 12,
+      "question": "Which C++ concept is used to inherit properties from multiple classes?",
+      "options": [
+        "A. Multiple Inheritance",
+        "B. Multiple Interface",
+        "C. Hybrid Inheritance",
+        "D. Hierarchical Inheritance",
+        "E. Single Inheritance"
+      ],
+      "correct_answer": "A. Multiple Inheritance",
+      "explanation": "In C++, classes can inherit from multiple parent classes.",
+      "detailed_explanation": "Multiple Inheritance allows a derived class to inherit from MORE than one base class. Example: class FlyingFish : public Fish, public Bird { }; — FlyingFish inherits from both Fish and Bird. Problem: Diamond problem — if both parents have same method from a common grandparent, ambiguity arises. Solution: Virtual inheritance.",
+      "why_correct": "Multiple Inheritance = one class inheriting from two or more base classes simultaneously.",
+      "wrong_options": {
+        "A": "Multiple Inheritance is correct.",
+        "B": "Multiple Interface is a Java concept — Java doesn't support multiple class inheritance but allows implementing multiple interfaces.",
+        "C": "Hybrid Inheritance combines multiple types of inheritance — not specifically just inheriting from multiple classes.",
+        "D": "Hierarchical Inheritance means one parent class is inherited by MULTIPLE child classes — opposite direction.",
+        "E": "Single Inheritance = one child inherits from ONE parent — simplest form."
+      },
+      "memory_trick": "Inheritance types: Single (1 parent). Multiple (2+ parents). Multilevel (grandparent→parent→child). Hierarchical (1 parent, many children). Hybrid (mix).",
+      "exam_note": "Java does NOT support multiple class inheritance (to avoid diamond problem). Java uses interfaces instead. C++ supports multiple inheritance with virtual keyword to resolve diamond problem.",
+      "topic": "C++ OOP: Multiple Inheritance",
+      "main_topic": "C++ OOP",
+      "topic_voice": "C++ OOP: Multiple Inheritance"
+    },
+    {
+      "id": 13,
+      "practice_set": 4,
+      "question_no": 13,
+      "question": "Which method is used to perform polymorphism in C++?",
+      "options": [
+        "A. Templates",
+        "B. Constructor Overloading",
+        "C. Virtual Functions",
+        "D. Static Functions",
+        "E. Macros"
+      ],
+      "correct_answer": "C. Virtual Functions",
+      "explanation": "Virtual functions enable runtime polymorphism in C++.",
+      "detailed_explanation": "Virtual functions enable RUNTIME polymorphism in C++. When a function is declared virtual in the base class, the derived class can override it. Through a base class pointer or reference, the correct derived class version is called at runtime — this is called dynamic dispatch. A class with at least one pure virtual function (= 0) is abstract.",
+      "why_correct": "Virtual functions allow the correct method to be selected at RUNTIME based on the actual object type — the mechanism for runtime polymorphism in C++.",
+      "wrong_options": {
+        "A": "Templates provide COMPILE-TIME (generic) polymorphism — for writing code that works with any data type.",
+        "B": "Constructor Overloading is a form of compile-time polymorphism — different ways to create an object.",
+        "D": "Static functions belong to the class, not objects — no dynamic dispatch possible.",
+        "E": "Macros (#define) are preprocessor text replacements — no polymorphism."
+      },
+      "memory_trick": "Virtual = runtime decision. Non-virtual = compile-time decision. Virtual table (vtable) stores addresses of virtual functions — resolved at runtime.",
+      "exam_note": "Pure virtual function: virtual void draw() = 0; — makes class abstract. Abstract class CANNOT be instantiated. Must override in derived class.",
+      "topic": "C++ OOP: Runtime Polymorphism",
+      "main_topic": "C++ OOP",
+      "topic_voice": "C++ OOP: Runtime Polymorphism"
+    },
+    {
+      "id": 14,
+      "practice_set": 5,
+      "question_no": 14,
+      "question": "Which C++ feature restricts multiple inheritance ambiguities?",
+      "options": [
+        "A. Static functions",
+        "B. Virtual Inheritance",
+        "C. Abstract Classes",
+        "D. Destructors",
+        "E. Inline Functions"
+      ],
+      "correct_answer": "B. Virtual Inheritance",
+      "explanation": "Virtual inheritance avoids ambiguities in multiple inheritance.",
+      "detailed_explanation": "The Diamond Problem: Class D inherits from B and C. Both B and C inherit from A. Without virtual inheritance, D gets two copies of A's members — ambiguity! Solution: Declare B and C to virtually inherit from A: class B : virtual public A { }; class C : virtual public A { }; — now D gets only ONE copy of A's members.",
+      "why_correct": "Virtual Inheritance ensures only one copy of the base class exists in diamond inheritance — eliminating ambiguity.",
+      "wrong_options": {
+        "A": "Static functions have no 'this' pointer but don't resolve diamond ambiguity.",
+        "C": "Abstract classes prevent instantiation — not a solution for diamond ambiguity.",
+        "D": "Destructors clean up memory — not related to multiple inheritance ambiguity.",
+        "E": "Inline functions expand at call site — not related to inheritance ambiguity."
+      },
+      "memory_trick": "Diamond Problem: A→B→D and A→C→D. Two paths to A = two copies = confusion. Virtual inheritance = only ONE shared copy of A. Problem solved!",
+      "exam_note": "Diamond problem is unique to C++ because Java doesn't support multiple class inheritance. Virtual inheritance is a C++-specific solution.",
+      "topic": "C++ OOP: Virtual Inheritance",
+      "main_topic": "C++ OOP",
+      "topic_voice": "C++ OOP: Virtual Inheritance"
+    },
+    {
+      "id": 15,
+      "practice_set": 7,
+      "question_no": 15,
+      "question": "In C++, which operator is overloaded to allow user-defined classes to be compared using equality (==) operator?",
+      "options": [
+        "A. >",
+        "B. ==",
+        "C. +",
+        "D. =",
+        "E. *"
+      ],
+      "correct_answer": "B. ==",
+      "explanation": "Overloading == allows custom object comparison in user-defined classes.",
+      "detailed_explanation": "Operator overloading allows redefining operator behavior for user-defined classes. To compare objects with ==, you overload the == operator: bool operator==(const MyClass& obj) { return this->value == obj.value; }. Now you can compare: if(obj1 == obj2) { } — works with custom logic.",
+      "why_correct": "Overloading == operator allows two objects of a custom class to be compared using the == symbol with user-defined logic.",
+      "wrong_options": {
+        "A": "> (greater than) operator overloading compares for greater-than — not equality.",
+        "C": "+ overloading adds two objects — not comparison.",
+        "D": "= (assignment) overloading copies one object to another — not comparison.",
+        "E": "* overloading multiplies or dereferences — not equality comparison."
+      },
+      "memory_trick": "Operator overloading syntax: return_type operator symbol (params) { }. For ==: bool operator==(const MyClass& obj) { }.",
+      "exam_note": "C++ supports overloading for almost all operators. Cannot overload: :: (scope), . (dot), .* (pointer-to-member), ?: (ternary), sizeof.",
+      "topic": "C++ OOP: Operator Overloading",
+      "main_topic": "C++ OOP",
+      "topic_voice": "C++ OOP: Operator Overloading"
+    },
+    {
+      "id": 16,
+      "practice_set": 7,
+      "question_no": 16,
+      "question": "Which type of C++ inheritance leads to a situation where a derived class inherits from two base classes that have a common base class?",
+      "options": [
+        "A. Single Inheritance",
+        "B. Multilevel Inheritance",
+        "C. Hybrid Inheritance",
+        "D. Multiple Inheritance",
+        "E. Hierarchical Inheritance"
+      ],
+      "correct_answer": "C. Hybrid Inheritance",
+      "explanation": "Hybrid inheritance combines multiple inheritance types.",
+      "detailed_explanation": "Hybrid Inheritance is a combination of two or more types of inheritance. The described scenario — derived class inherits from two classes that share a common ancestor — is the Diamond Problem pattern, which is hybrid (multiple + hierarchical). Example: A→B, A→C, B+C→D. D has two paths to A — this is hybrid inheritance causing the diamond problem.",
+      "why_correct": "Hybrid inheritance combines different forms — the diamond scenario (common grandparent through two parents) is a classic hybrid case.",
+      "wrong_options": {
+        "A": "Single inheritance = one parent, one child — simplest form.",
+        "B": "Multilevel inheritance = chain: A→B→C — grandparent to parent to child.",
+        "D": "Multiple inheritance = one child, multiple parents — but specifically means the two parents DON'T necessarily share a common ancestor.",
+        "E": "Hierarchical inheritance = one parent, multiple children — not about a common grandparent."
+      },
+      "memory_trick": "Hybrid = MIX of types. Diamond pattern = Hierarchical + Multiple combined = Hybrid. Draw the diamond shape: A at top, B and C in middle, D at bottom.",
+      "exam_note": "Inheritance types summary: Single (A→B), Multiple (A+B→C), Multilevel (A→B→C), Hierarchical (A→B, A→C), Hybrid (combination).",
+      "topic": "C++ OOP: Hybrid Inheritance",
+      "main_topic": "C++ OOP",
+      "topic_voice": "C++ OOP: Hybrid Inheritance"
+    },
+    {
+      "id": 17,
+      "practice_set": 6,
+      "question_no": 17,
+      "question": "Which C++ keyword is used to declare a function that can be overridden in a derived class to enable runtime polymorphism?",
+      "options": [
+        "A. static",
+        "B. const",
+        "C. inline",
+        "D. virtual",
+        "E. friend"
+      ],
+      "correct_answer": "D. virtual",
+      "explanation": "virtual allows method overriding for runtime polymorphism in C++.",
+      "detailed_explanation": "The virtual keyword in C++ tells the compiler to use dynamic dispatch — the correct function version is selected at runtime based on the actual object type, not the pointer/reference type. Syntax: virtual void draw() { } in base class. Derived class overrides it. Base* ptr = new Derived(); ptr->draw(); — calls Derived's draw(), not Base's.",
+      "why_correct": "virtual enables runtime polymorphism — the function to call is decided at runtime based on actual object type.",
+      "wrong_options": {
+        "A": "static makes a member belong to the class rather than instance — no dynamic dispatch possible with static.",
+        "B": "const makes a function promise not to modify object state — not related to overriding.",
+        "C": "inline requests the compiler to expand function at call site — performance hint, not polymorphism.",
+        "E": "friend grants external function access to private members — not for overriding."
+      },
+      "memory_trick": "virtual = runtime decision table (vtable). Non-virtual = compile-time decision. Add virtual to base class, override in derived — polymorphism activated!",
+      "exam_note": "override keyword (C++11): void draw() override { } — tells compiler this is intentionally overriding a virtual function. Helps catch errors.",
+      "topic": "C++ OOP: virtual Keyword",
+      "main_topic": "C++ OOP",
+      "topic_voice": "C++ OOP: virtual Keyword"
+    },
+    {
+      "id": 18,
+      "practice_set": 2,
+      "question_no": 18,
+      "question": "In C++, which keyword is used to define a constant value?",
+      "options": [
+        "A. constant",
+        "B. define",
+        "C. const",
+        "D. static",
+        "E. fixed"
+      ],
+      "correct_answer": "C. const",
+      "explanation": "const defines constants in C++.",
+      "detailed_explanation": "const in C++ declares a variable as constant — its value cannot be changed after initialization. Example: const int MAX = 100; — MAX can never be reassigned. const can be used with variables, pointers, function parameters, and member functions. It provides type safety unlike #define macros.",
+      "why_correct": "const is C++'s keyword to declare a constant variable — the compiler prevents any modification after initialization.",
+      "wrong_options": {
+        "A": "constant is not a keyword in C++ — only const is.",
+        "B": "#define is a C/C++ preprocessor directive for macros — not the same as const (no type safety, just text substitution).",
+        "D": "static changes the storage duration and linkage of a variable — not the same as making it constant.",
+        "E": "fixed is not a C++ keyword for constants (fixed is used with cout for floating point formatting)."
+      },
+      "memory_trick": "const = constant = cannot change. const int x = 5; — x is locked forever. #define MAX 100 = text replace (old way, avoid in C++).",
+      "exam_note": "const vs #define: const has type checking and scope. #define is preprocessor-level text replacement, no type checking. Always prefer const in C++.",
+      "topic": "C++ Programming: Constants",
+      "main_topic": "C++ Programming",
+      "topic_voice": "C++ Programming: Constants"
+    },
+    {
+      "id": 19,
+      "practice_set": 2,
+      "question_no": 19,
+      "question": "In C++, what is the correct operator to access members of a structure through a pointer?",
+      "options": [
+        "A. . (dot)",
+        "B. * (asterisk)",
+        "C. -> (arrow)",
+        "D. & (ampersand)",
+        "E. % (modulus)"
+      ],
+      "correct_answer": "C. -> (arrow)",
+      "explanation": "The arrow operator is used to access members through a pointer in C++.",
+      "detailed_explanation": "In C++, two operators access structure/class members: Dot (.) for objects: obj.member. Arrow (->) for pointers: ptr->member. Arrow is a shorthand for (*ptr).member — dereference first, then access. Example: Student *p = new Student(); p->name = 'Alice'; is same as (*p).name = 'Alice';",
+      "why_correct": "-> (arrow operator) is specifically used to access struct/class members through a pointer.",
+      "wrong_options": {
+        "A": ". (dot) accesses members of an OBJECT (not a pointer): obj.member.",
+        "B": "* (asterisk) dereferences a pointer — gives the value at that address, not the member directly.",
+        "D": "& (ampersand) gets the ADDRESS of a variable — not for member access.",
+        "E": "% (modulus) is the remainder operator — completely unrelated."
+      },
+      "memory_trick": "Object = dot (.). Pointer = arrow (->). Arrow POINTS to the member because the pointer is pointing at the object.",
+      "exam_note": "ptr->member = (*ptr).member — both are equivalent. Arrow is more readable and standard. This operator is tested in both C and C++ questions.",
+      "topic": "C++ Programming: Pointers and Structures",
+      "main_topic": "C++ Programming",
+      "topic_voice": "C++ Programming: Pointers and Structures"
+    },
+    {
+      "id": 20,
+      "practice_set": 3,
+      "question_no": 20,
+      "question": "Which C++ function is automatically called when an object goes out of scope?",
+      "options": [
+        "A. Constructor",
+        "B. Initializer",
+        "C. Destructor",
+        "D. Eraser",
+        "E. Terminator"
+      ],
+      "correct_answer": "C. Destructor",
+      "explanation": "In C++, destructors are called automatically when objects go out of scope.",
+      "detailed_explanation": "Destructor is a special C++ member function that is automatically called when an object is destroyed (goes out of scope or delete is called). Syntax: ~ClassName() { }. Destructors: have no return type, take no parameters, cannot be overloaded, used to release resources (close files, free memory). LIFO order — last created object is first destroyed.",
+      "why_correct": "Destructor (~ClassName) is automatically invoked by C++ runtime when an object's lifetime ends — cleans up resources.",
+      "wrong_options": {
+        "A": "Constructor is called when an object is CREATED — opposite of destructor.",
+        "B": "Initializer is not a standard C++ term for a special function — constructors initialize objects.",
+        "D": "Eraser is not a C++ concept.",
+        "E": "Terminator is not a C++ function name."
+      },
+      "memory_trick": "Constructor = BORN (object created). Destructor = DIED (object destroyed). ~ (tilde) before class name = destructor. ~Dog() runs when Dog object is destroyed.",
+      "exam_note": "C++ has constructors and destructors. Java has constructors but NO destructor — Java uses garbage collector. Python has __init__ (constructor) and __del__ (destructor).",
+      "topic": "C++ Programming: Destructor",
+      "main_topic": "C++ Programming",
+      "topic_voice": "C++ Programming: Destructor"
+    },
+    {
+      "id": 21,
+      "practice_set": 6,
+      "question_no": 21,
+      "question": "Which special C++ function is called automatically when an object goes out of scope to free up resources during its lifetime?",
+      "options": [
+        "A. Constructor",
+        "B. Destructor",
+        "C. Inline Function",
+        "D. Static Function",
+        "E. Friend Function"
+      ],
+      "correct_answer": "B. Destructor",
+      "explanation": "Destructor is called when an object goes out of scope to release resources.",
+      "detailed_explanation": "Destructor (~ClassName) is automatically invoked when an object's scope ends or when delete is used on a dynamically allocated object. Its job is to release resources: close file handles, free dynamic memory, close network connections. Without proper destructors, resource leaks occur. Only one destructor per class (no overloading).",
+      "why_correct": "Destructor is the special function called automatically at object destruction — cleans up allocated resources.",
+      "wrong_options": {
+        "A": "Constructor is called when the object is CREATED — begins its life.",
+        "C": "Inline function is expanded at the call site for performance — not related to object lifecycle.",
+        "D": "Static function belongs to the class, not objects — not related to object destruction.",
+        "E": "Friend function is an external function with private access — not related to object destruction."
+      },
+      "memory_trick": "Object lifecycle in C++: Constructor (born) → Live → Destructor (die). ~ = tilde = destructor symbol. Remember: tilde looks like a wave goodbye.",
+      "exam_note": "RAII (Resource Acquisition Is Initialization): acquire resources in constructor, release in destructor. Core C++ programming idiom — prevents resource leaks.",
+      "topic": "C++ Programming: Destructor",
+      "main_topic": "C++ Programming",
+      "topic_voice": "C++ Programming: Destructor"
+    },
+    {
+      "id": 22,
+      "practice_set": 4,
+      "question_no": 22,
+      "question": "Which bitwise operator is used to set specific bits to 1 in C++?",
+      "options": [
+        "A. &",
+        "B. |",
+        "C. ^",
+        "D. ~",
+        "E. <<"
+      ],
+      "correct_answer": "B. |",
+      "explanation": "Bitwise OR sets specific bits to 1.",
+      "detailed_explanation": "Bitwise OR (|) sets a bit to 1 if EITHER operand has that bit as 1. Used for setting specific bits. Example: 0101 | 0010 = 0111 — the bit at position 1 is SET to 1. Bitwise operators work at the binary bit level: & (AND — clear bits), | (OR — set bits), ^ (XOR — toggle bits), ~ (NOT — flip all bits), << (left shift), >> (right shift).",
+      "why_correct": "Bitwise OR (|) is used to SET specific bits to 1 because OR-ing with 1 always gives 1 regardless of original bit value.",
+      "wrong_options": {
+        "A": "& (AND) is used to CLEAR bits (set to 0) — ANDing with 0 forces a bit to 0.",
+        "C": "^ (XOR) is used to TOGGLE bits — flips the bit (0→1, 1→0).",
+        "D": "~ (NOT/complement) FLIPS ALL bits — turns 0s to 1s and 1s to 0s.",
+        "E": "<< (left shift) shifts bits to the left — used for multiplication by powers of 2."
+      },
+      "memory_trick": "Bitwise operations: & = AND (mask/clear). | = OR (set to 1). ^ = XOR (toggle). ~ = NOT (flip all). << = left shift (×2). >> = right shift (÷2).",
+      "exam_note": "Bit masking pattern: SET bit: n | mask. CLEAR bit: n & ~mask. TOGGLE bit: n ^ mask. CHECK bit: n & mask. Very commonly tested in systems programming.",
+      "topic": "C++ Programming: Bitwise Operators",
+      "main_topic": "C++ Programming",
+      "topic_voice": "C++ Programming: Bitwise Operators"
+    },
+    {
+      "id": 23,
+      "practice_set": 4,
+      "question_no": 23,
+      "question": "Which C++ feature allows functions to be defined outside a class but be treated as if they are part of the class?",
+      "options": [
+        "A. Static Functions",
+        "B. Virtual Functions",
+        "C. Friend Functions",
+        "D. Inline Functions",
+        "E. Constructor Functions"
+      ],
+      "correct_answer": "C. Friend Functions",
+      "explanation": "Friend functions are defined externally but treated specially by a class.",
+      "detailed_explanation": "A friend function is declared inside a class using the friend keyword but defined outside the class. It has access to private and protected members of the class, even though it is not a member. Syntax: class MyClass { friend void show(MyClass obj); }; — show() can access MyClass's private members from outside.",
+      "why_correct": "Friend functions are defined OUTSIDE the class but are granted access to private members — they are 'friends' of the class.",
+      "wrong_options": {
+        "A": "Static functions belong TO the class (called without an object) — not defined outside with special access.",
+        "B": "Virtual functions enable runtime polymorphism in derived classes — they ARE class members.",
+        "D": "Inline functions are expanded at the call point for performance — they can be inside or outside a class but not the same concept.",
+        "E": "Constructors are always class members — they initialize objects."
+      },
+      "memory_trick": "Friend = a trusted outsider. Not a family member (class member) but trusted enough to see your private stuff. friend keyword grants this access.",
+      "exam_note": "Friend function is NOT a member of the class — no 'this' pointer. Friend class grants ALL members of another class access to private data.",
+      "topic": "C++ Programming: Friend Functions",
+      "main_topic": "C++ Programming",
+      "topic_voice": "C++ Programming: Friend Functions"
+    },
+    {
+      "id": 24,
+      "practice_set": 5,
+      "question_no": 24,
+      "question": "Which operator has the highest precedence in C++?",
+      "options": [
+        "A. Logical AND (&&)",
+        "B. Addition (+)",
+        "C. Multiplication (*)",
+        "D. Assignment (=)",
+        "E. Relational (==)"
+      ],
+      "correct_answer": "C. Multiplication (*)",
+      "explanation": "Multiplication has higher precedence than addition and assignment.",
+      "detailed_explanation": "Among the given options, the C++ operator precedence order (high to low) is: Multiplication (*) > Addition (+) > Relational (==) > Logical AND (&&) > Assignment (=). Full precedence: () > ! > * / % > + - > < > <= >= > == != > && > || > =. Multiplication is evaluated before addition — just like BODMAS/PEMDAS in math.",
+      "why_correct": "Among the given options, Multiplication (*) has the highest precedence — evaluated before +, ==, &&, and =.",
+      "wrong_options": {
+        "A": "Logical AND (&&) has lower precedence than arithmetic and relational operators.",
+        "B": "Addition (+) has lower precedence than multiplication — 2+3*4 = 2+12 = 14, not 5*4=20.",
+        "D": "Assignment (=) has the LOWEST precedence among all operators — evaluated last.",
+        "E": "Relational (==) has lower precedence than arithmetic but higher than logical operators."
+      },
+      "memory_trick": "Precedence order to remember: Arithmetic > Relational > Logical > Assignment. Within arithmetic: * / % > + -.",
+      "exam_note": "Parentheses () always override precedence. Left-to-right associativity for most operators. Right-to-left for assignment (=) and unary operators.",
+      "topic": "C++ Programming: Operator Precedence",
+      "main_topic": "C++ Programming",
+      "topic_voice": "C++ Programming: Operator Precedence"
+    },
+    {
+      "id": 25,
+      "practice_set": 5,
+      "question_no": 25,
+      "question": "In C++, which keyword is used to define a constant pointer value?",
+      "options": [
+        "A. let",
+        "B. const",
+        "C. volatile",
+        "D. private",
+        "E. reference"
+      ],
+      "correct_answer": "B. const",
+      "explanation": "const defines constant values and constant pointers in C++.",
+      "detailed_explanation": "const works with pointers in two ways: const int *p = &x; — pointer to constant (cannot change value through p). int * const p = &x; — constant pointer (cannot change where p points). const int * const p = &x; — both constant. const keyword is versatile — applies to variables, pointers, function parameters, and member functions.",
+      "why_correct": "const is used to define constant values and also constant pointers in C++.",
+      "wrong_options": {
+        "A": "let is a JavaScript keyword for variable declaration — not C++.",
+        "C": "volatile tells compiler that a variable may change unexpectedly (e.g., hardware registers) — opposite of const.",
+        "D": "private is an access specifier — controls visibility, not constancy.",
+        "E": "reference is not a standalone keyword in C++ — references use & in declarations."
+      },
+      "memory_trick": "const = locked value. volatile = unpredictably changing value. They are opposites. const int x = 5 (locked). volatile int reg (may change anytime).",
+      "exam_note": "const member function: void show() const { } — this function CANNOT modify any member variable of the class. Important for getter methods.",
+      "topic": "C++ Programming: const Keyword",
+      "main_topic": "C++ Programming",
+      "topic_voice": "C++ Programming: const Keyword"
+    },
+    {
+      "id": 26,
+      "practice_set": 7,
+      "question_no": 26,
+      "question": "Which C++ keyword is used to define a constant expression that is evaluated at compile time?",
+      "options": [
+        "A. static",
+        "B. final",
+        "C. constexpr",
+        "D. mutable",
+        "E. constant"
+      ],
+      "correct_answer": "C. constexpr",
+      "explanation": "constexpr evaluates expressions at compile time in C++.",
+      "detailed_explanation": "constexpr (C++11 onwards) declares that a variable or function can be evaluated at COMPILE TIME. This means the value is computed during compilation, not at runtime — leading to faster execution. Example: constexpr int square(int x) { return x*x; } constexpr int val = square(5); — computed to 25 at compile time. Contrast: const = runtime constant, constexpr = compile-time constant.",
+      "why_correct": "constexpr explicitly marks expressions for compile-time evaluation — the compiler computes these values before the program even runs.",
+      "wrong_options": {
+        "A": "static controls storage duration and linkage — not compile-time evaluation.",
+        "B": "final is a Java keyword (prevents inheritance/override) — not a standard C++ keyword (though used in some contexts as override specifier).",
+        "D": "mutable allows a const member function to modify a specific member variable — opposite of constant.",
+        "E": "constant is not a C++ keyword — only const and constexpr are."
+      },
+      "memory_trick": "const = runtime constant (value fixed but computed at runtime). constexpr = COMPILE-TIME constant (computed before program runs). constexpr is faster.",
+      "exam_note": "constexpr was introduced in C++11. Functions marked constexpr can be used in contexts that require compile-time constants like array sizes.",
+      "topic": "C++ Programming: constexpr",
+      "main_topic": "C++ Programming",
+      "topic_voice": "C++ Programming: constexpr"
+    },
+    {
+      "id": 27,
+      "practice_set": 7,
+      "question_no": 27,
+      "question": "Which C++ keyword indicates that a function does not modify the object it belongs to?",
+      "options": [
+        "A. const",
+        "B. static",
+        "C. mutable",
+        "D. final",
+        "E. virtual"
+      ],
+      "correct_answer": "A. const",
+      "explanation": "const ensures a function does not modify the object it belongs to.",
+      "detailed_explanation": "When const appears at the END of a member function declaration: int getValue() const { } — it means this function promises NOT to modify any member variables of the class. The compiler enforces this — any attempt to modify members causes a compile error. Useful for getter functions that should only read data.",
+      "why_correct": "const at the end of a member function declaration = the function cannot modify the object's state.",
+      "wrong_options": {
+        "B": "static makes the function belong to the CLASS, not any object — it has no 'this' pointer.",
+        "C": "mutable allows a specific member to be modified even by const functions — opposite effect.",
+        "D": "final in modern C++ (override specifier) prevents further overriding in derived classes — not about modification.",
+        "E": "virtual enables runtime polymorphism — not about modification restriction."
+      },
+      "memory_trick": "void show() const { } — the 'const' after () means READ ONLY. This function can look but not touch. Great for getters.",
+      "exam_note": "const member functions can be called on const objects. Non-const functions cannot be called on const objects. This is enforced by the compiler.",
+      "topic": "C++ Programming: const Member Function",
+      "main_topic": "C++ Programming",
+      "topic_voice": "C++ Programming: const Member Function"
+    },
+    {
+      "id": 28,
+      "practice_set": 1,
+      "question_no": 28,
+      "question": "Which operator is used for logical AND in C?",
+      "options": [
+        "A. &&",
+        "B. ||",
+        "C. ==",
+        "D. %",
+        "E. +"
+      ],
+      "correct_answer": "A. &&",
+      "explanation": "In C, && is the logical AND operator.",
+      "detailed_explanation": "In C and C++, && is the logical AND operator. It returns true only if BOTH operands are true. Example: (a > 0 && b > 0) is true only when both a and b are positive. Short-circuit evaluation: if the first operand is false, the second is not evaluated at all.",
+      "why_correct": "&& is the logical AND operator in C — returns 1 (true) only when both conditions are true.",
+      "wrong_options": {
+        "B": "|| is the logical OR operator — returns true if at least one operand is true.",
+        "C": "== is the equality/comparison operator — checks if two values are equal.",
+        "D": "% is the modulo operator — returns the remainder of division.",
+        "E": "+ is the addition/concatenation operator."
+      },
+      "memory_trick": "C Logical operators: && = AND (both must be true). || = OR (at least one true). ! = NOT (flip). Bitwise: & = AND, | = OR, ^ = XOR.",
+      "exam_note": "Logical && vs Bitwise &: && is for boolean logic (short-circuits). & is for bit-level operations (no short-circuit). Never confuse them in code or exam.",
+      "topic": "C Programming: Logical Operators",
+      "main_topic": "C Programming",
+      "topic_voice": "C Programming: Logical Operators"
+    },
+    {
+      "id": 29,
+      "practice_set": 1,
+      "question_no": 29,
+      "question": "Which keyword is used to define a class in Java?",
+      "options": [
+        "A. function",
+        "B. new",
+        "C. define",
+        "D. class",
+        "E. static"
+      ],
+      "correct_answer": "D. class",
+      "explanation": "class is the Java keyword used to define a class.",
+      "detailed_explanation": "In Java, the class keyword is used to declare a class blueprint. Syntax: public class ClassName { }. Every Java program has at least one class. The class contains fields (data) and methods (behavior). Objects are created from classes using the new keyword: ClassName obj = new ClassName();",
+      "why_correct": "class is Java's reserved keyword for defining a class — same as in C++ and Python.",
+      "wrong_options": {
+        "A": "function is not a Java keyword — methods in Java don't use a 'function' keyword.",
+        "B": "new is used to CREATE an object from a class: new ClassName() — not to define the class.",
+        "C": "define is not a Java keyword (it's a C/C++ preprocessor directive #define).",
+        "E": "static is used for class-level members (shared by all objects) — not for defining the class."
+      },
+      "memory_trick": "Java class definition: public class MyClass { } — class keyword always comes before the class name.",
+      "exam_note": "Java class vs Python class: Java uses 'class ClassName {' with braces. Python uses 'class ClassName:' with colon. Both use 'class' keyword.",
+      "topic": "Java Programming: Class Definition",
+      "main_topic": "Java Programming",
+      "topic_voice": "Java Programming: Class Definition"
+    },
+    {
+      "id": 30,
+      "practice_set": 1,
+      "question_no": 30,
+      "question": "What does JVM stand for in Java?",
+      "options": [
+        "A. Java Virtual Memory",
+        "B. Java Verified Module",
+        "C. Java Visual Machine",
+        "D. Java Virtual Machine",
+        "E. Java Version Manager"
+      ],
+      "correct_answer": "D. Java Virtual Machine",
+      "explanation": "JVM is the engine that runs Java bytecode on any platform.",
+      "detailed_explanation": "JVM (Java Virtual Machine) is the runtime engine that executes Java bytecode. Java's WORA (Write Once Run Anywhere) principle is possible because of JVM. Java source (.java) → compiled to bytecode (.class) by javac → JVM on any OS runs the bytecode. JVM handles memory management, garbage collection, and security.",
+      "why_correct": "JVM = Java Virtual Machine — the engine that interprets Java bytecode and makes Java platform-independent.",
+      "wrong_options": {
+        "A": "Java Virtual Memory is not a real term — though JVM does manage memory (heap, stack).",
+        "B": "Java Verified Module is not a real term.",
+        "C": "Java Visual Machine is not a real term.",
+        "E": "Java Version Manager could refer to tools like SDKMAN, but JVM itself stands for Java Virtual Machine."
+      },
+      "memory_trick": "Java trio: JDK (Java Development Kit) = tool to write code. JRE (Java Runtime Environment) = to run Java. JVM = engine inside JRE that runs bytecode.",
+      "exam_note": "JDK contains JRE. JRE contains JVM. JVM is the smallest/innermost. JDK > JRE > JVM. Commonly tested hierarchy.",
+      "topic": "Java Programming: JVM",
+      "main_topic": "Java Programming",
+      "topic_voice": "Java Programming: JVM"
+    },
+    {
+      "id": 31,
+      "practice_set": 3,
+      "question_no": 31,
+      "question": "Which term describes the ability of a program to run on different operating systems without modification?",
+      "options": [
+        "A. Portability",
+        "B. Scalability",
+        "C. Flexibility",
+        "D. Compatibility",
+        "E. Maintainability"
+      ],
+      "correct_answer": "A. Portability",
+      "explanation": "Portability means a program can run on different systems without changes.",
+      "detailed_explanation": "Portability means software can run on different hardware or OS platforms without modification. Java achieves this via JVM (Write Once, Run Anywhere). Python is also highly portable. C code needs recompilation but is largely portable. Portability is a key software quality attribute.",
+      "why_correct": "Portability = ability to run on different OS/hardware without changes — classic definition.",
+      "wrong_options": {
+        "B": "Scalability refers to a system's ability to handle growing workload/users — not about running on different OS.",
+        "C": "Flexibility refers to how easily software can be changed or extended — not about cross-platform execution.",
+        "D": "Compatibility means working with other systems/software — related but different. A compatible system works WITH others, a portable one runs ON others.",
+        "E": "Maintainability refers to how easily software can be updated and fixed — not cross-platform execution."
+      },
+      "memory_trick": "Portability = PORT it anywhere. Like carrying a USB drive that works on any laptop. Java's JVM is the champion of portability.",
+      "exam_note": "Software quality attributes for IBPS SO: Portability, Scalability, Maintainability, Reliability, Availability, Reusability, Efficiency. Know all definitions.",
+      "topic": "Programming Concepts: Portability",
+      "main_topic": "Programming Concepts",
+      "topic_voice": "Programming Concepts: Portability"
+    },
+    {
+      "id": 32,
+      "practice_set": 3,
+      "question_no": 32,
+      "question": "Which loop is guaranteed to execute at least once?",
+      "options": [
+        "A. for",
+        "B. while",
+        "C. do-while",
+        "D. foreach",
+        "E. until"
+      ],
+      "correct_answer": "C. do-while",
+      "explanation": "A do-while loop checks its condition after executing once.",
+      "detailed_explanation": "do-while loop structure: do { body } while(condition); — The body executes FIRST, then the condition is checked. If condition is false the very first time, the body still executes once. This is the key difference from for and while loops, which check the condition BEFORE executing.",
+      "why_correct": "do-while checks condition AFTER the body — guaranteeing at least one execution regardless of condition.",
+      "wrong_options": {
+        "A": "for loop checks condition BEFORE execution — if false initially, body never runs.",
+        "B": "while loop checks condition BEFORE execution — if false initially, body never runs.",
+        "D": "foreach is a variant of for loop that iterates over collections — checks condition before, not guaranteed to run.",
+        "E": "until is not a standard loop in C/C++/Java — it exists in shell scripting."
+      },
+      "memory_trick": "do-while = DO it first, THEN check if you should have. for/while = CHECK first, THEN do. do-while = at least once guaranteed.",
+      "exam_note": "do-while use case: menu-driven programs where you show the menu at least once, then ask if the user wants to continue.",
+      "topic": "Programming Control Flow",
+      "main_topic": "Programming Concepts",
+      "topic_voice": "Programming Control Flow"
+    },
+    {
+      "id": 33,
+      "practice_set": 4,
+      "question_no": 33,
+      "question": "Which programming paradigm treats functions as first-class citizens?",
+      "options": [
+        "A. Procedural Programming",
+        "B. Object-Oriented Programming",
+        "C. Functional Programming",
+        "D. Logical Programming",
+        "E. Declarative Programming"
+      ],
+      "correct_answer": "C. Functional Programming",
+      "explanation": "Functions are first-class citizens in this paradigm.",
+      "detailed_explanation": "Functional Programming (FP) treats functions as first-class citizens — functions can be assigned to variables, passed as arguments, and returned from other functions. Key FP concepts: Pure functions (no side effects), Immutability, Higher-order functions, Recursion. Examples: Haskell, Erlang. Python and JavaScript support FP features (lambda, map, filter, reduce).",
+      "why_correct": "Functional Programming defines functions as first-class citizens — they are treated like values that can be passed, stored, and returned.",
+      "wrong_options": {
+        "A": "Procedural Programming focuses on sequences of instructions/procedures — functions exist but are not first-class values.",
+        "B": "Object-Oriented Programming focuses on objects and classes — methods exist within objects.",
+        "D": "Logical Programming uses rules and facts to derive conclusions (e.g., Prolog) — not function-centric.",
+        "E": "Declarative Programming describes WHAT to do, not HOW — SQL is declarative."
+      },
+      "memory_trick": "Functional Programming = functions are VIPs (first-class citizens). They can go anywhere, be stored anywhere, be passed anywhere.",
+      "exam_note": "Programming paradigms: Procedural (C), OOP (C++, Java), Functional (Haskell, Lisp), Logical (Prolog), Declarative (SQL). Python supports multiple paradigms.",
+      "topic": "Programming Paradigms: Functional Programming",
+      "main_topic": "Programming Concepts",
+      "topic_voice": "Programming Paradigms: Functional Programming"
+    }
+  ],
+  "metadata": {
+    "exam": "IBPS SO IT Officer Mains Preparation",
+    "subject": "OOP + C++ + Java + C Programming",
+    "total_questions": 33,
+    "enhanced_fields": {
+      "detailed_explanation": "Full concept explanation with examples",
+      "why_correct": "Why the correct answer is correct",
+      "wrong_options": "Why each wrong option is incorrect (keyed by letter)",
+      "memory_trick": "Shortcut, mnemonic, or analogy for quick recall",
+      "exam_note": "IBPS SO IT exam-specific tip or comparison"
+    }
   }
-  ]
 }

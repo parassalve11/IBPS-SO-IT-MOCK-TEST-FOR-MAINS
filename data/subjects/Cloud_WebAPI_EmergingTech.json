@@ -1,420 +1,744 @@
 {
   "Cloud_WebAPI_EmergingTech_exam_questions": [
-  {
-    "id": 1,
-    "practice_set": 1,
-    "question_no": 25,
-    "question": "What does “virtualization” allow in cloud computing?",
-    "options": [
-      "A. Hardware installation",
-      "B. Physical network upgrades",
-      "C. Creating multiple VMs on one host",
-      "D. File format conversion",
-      "E. Boosting CPU clock speed"
-    ],
-    "correct_answer": "C. Creating multiple VMs on one host",
-    "explanation": "Virtualization enables multiple OS instances on a single hardware setup.",
-    "topic": "Cloud Computing: Virtualization"
-  },
-  {
-    "id": 2,
-    "practice_set": 1,
-    "question_no": 28,
-    "question": "What is the main feature of IaaS in cloud computing?",
-    "options": [
-      "A. Provides web applications",
-      "B. Offers ready-to-use software",
-      "C. Supplies infrastructure components",
-      "D. Delivers mobile SDKs",
-      "E. Manages user experience"
-    ],
-    "correct_answer": "C. Supplies infrastructure components",
-    "explanation": "IaaS offers virtualized computing resources like storage, servers, and networking.",
-    "topic": "Cloud Computing: IaaS"
-  },
-  {
-    "id": 3,
-    "practice_set": 1,
-    "question_no": 30,
-    "question": "Which of these is an example of virtualization software?",
-    "options": [
-      "A. Excel",
-      "B. Oracle VM VirtualBox",
-      "C. Google Chrome",
-      "D. Visual Studio Code",
-      "E. Wireshark"
-    ],
-    "correct_answer": "B. Oracle VM VirtualBox",
-    "explanation": "VirtualBox allows running multiple OSes via virtualization on one physical machine.",
-    "topic": "Cloud Computing: Virtualization Software"
-  },
-  {
-    "id": 4,
-    "practice_set": 2,
-    "question_no": 48,
-    "question": "In cloud computing, which model provides software applications over the internet?",
-    "options": [
-      "A. SaaS",
-      "B. PaaS",
-      "C. IaaS",
-      "D. DaaS",
-      "E. NaaS"
-    ],
-    "correct_answer": "A. SaaS",
-    "explanation": "Software as a Service delivers applications over the internet.",
-    "topic": "Cloud Computing: SaaS"
-  },
-  {
-    "id": 5,
-    "practice_set": 2,
-    "question_no": 57,
-    "question": "Which of these is NOT a characteristic of cloud computing?",
-    "options": [
-      "A. On-demand self-service",
-      "B. Resource pooling",
-      "C. High availability",
-      "D. Manual provisioning",
-      "E. Broad network access"
-    ],
-    "correct_answer": "D. Manual provisioning",
-    "explanation": "Cloud computing focuses on automation, not manual provisioning.",
-    "topic": "Cloud Computing: Characteristics"
-  },
-  {
-    "id": 6,
-    "practice_set": 5,
-    "question_no": 41,
-    "question": "Which cloud deployment model is shared among several organizations with common policies?",
-    "options": [
-      "A. Public Cloud",
-      "B. Private Cloud",
-      "C. Hybrid Cloud",
-      "D. Community Cloud",
-      "E. Distributed Cloud"
-    ],
-    "correct_answer": "D. Community Cloud",
-    "explanation": "Shared among organizations with similar interests or policies.",
-    "topic": "Cloud Computing: Community Cloud"
-  },
-  {
-    "id": 7,
-    "practice_set": 6,
-    "question_no": 47,
-    "question": "Which cloud computing deployment model provides services exclusively to a single organization, enhancing security and control?",
-    "options": [
-      "A. Public Cloud",
-      "B. Private Cloud",
-      "C. Community Cloud",
-      "D. Distributed Cloud",
-      "E. Hybrid Cloud"
-    ],
-    "correct_answer": "B. Private Cloud",
-    "explanation": "Private cloud is dedicated to a single organization for maximum control.",
-    "topic": "Cloud Computing: Private Cloud"
-  },
-  {
-    "id": 8,
-    "practice_set": 7,
-    "question_no": 21,
-    "question": "In cloud computing, which service model allows developers to build applications without worrying about managing underlying hardware?",
-    "options": [
-      "A. SaaS",
-      "B. PaaS",
-      "C. IaaS",
-      "D. DaaS",
-      "E. BPaaS"
-    ],
-    "correct_answer": "B. PaaS",
-    "explanation": "Platform as a Service provides tools for application development without managing hardware.",
-    "topic": "Cloud Computing: PaaS"
-  },
-  {
-    "id": 9,
-    "practice_set": 7,
-    "question_no": 58,
-    "question": "Which cloud deployment model combines both public and private cloud environments to allow sharing data and applications?",
-    "options": [
-      "A. Private Cloud",
-      "B. Public Cloud",
-      "C. Community Cloud",
-      "D. Hybrid Cloud",
-      "E. Distributed Cloud"
-    ],
-    "correct_answer": "D. Hybrid Cloud",
-    "explanation": "Hybrid Cloud combines private and public cloud resources.",
-    "topic": "Cloud Computing: Hybrid Cloud"
-  },
-  {
-    "id": 10,
-    "practice_set": 1,
-    "question_no": 31,
-    "question": "What does HTML stand for?",
-    "options": [
-      "A. Hyperlink Markup Language",
-      "B. Hypertext Machine Language",
-      "C. Hyper Transfer Markup Language",
-      "D. Hypertext Markup Language",
-      "E. Hightext Main Language"
-    ],
-    "correct_answer": "D. Hypertext Markup Language",
-    "explanation": "HTML is the standard markup language for creating web pages.",
-    "topic": "Web Technologies: HTML"
-  },
-  {
-    "id": 11,
-    "practice_set": 1,
-    "question_no": 32,
-    "question": "Which tag is used in HTML to insert a hyperlink?",
-    "options": [
-      "A. <p>",
-      "B. <div>",
-      "C. <a>",
-      "D. <link>",
-      "E. <script>"
-    ],
-    "correct_answer": "C. <a>",
-    "explanation": "The anchor (<a>) tag defines hyperlinks in HTML.",
-    "topic": "Web Technologies: HTML Tags"
-  },
-  {
-    "id": 12,
-    "practice_set": 1,
-    "question_no": 33,
-    "question": "What is the purpose of HTTP in web services?",
-    "options": [
-      "A. Encrypt database entries",
-      "B. Control hardware access",
-      "C. Facilitate communication between web clients and servers",
-      "D. Design mobile apps",
-      "E. Protect firewalls"
-    ],
-    "correct_answer": "C. Facilitate communication between web clients and servers",
-    "explanation": "HTTP is the protocol used for data communication over the web.",
-    "topic": "Web Technologies: HTTP"
-  },
-  {
-    "id": 13,
-    "practice_set": 1,
-    "question_no": 34,
-    "question": "Which of the following is a REST API method?",
-    "options": [
-      "A. FETCH",
-      "B. EXEC",
-      "C. GET",
-      "D. DISPLAY",
-      "E. VIEW"
-    ],
-    "correct_answer": "C. GET",
-    "explanation": "GET is a standard HTTP method in REST APIs to retrieve resources.",
-    "topic": "Web API: REST Methods"
-  },
-  {
-    "id": 14,
-    "practice_set": 1,
-    "question_no": 39,
-    "question": "What protocol is most used for exchanging data with APIs?",
-    "options": [
-      "A. SMTP",
-      "B. TCP",
-      "C. REST",
-      "D. FTP",
-      "E. DHCP"
-    ],
-    "correct_answer": "C. REST",
-    "explanation": "REST (Representational State Transfer) is commonly used for API communication.",
-    "topic": "Web API: REST"
-  },
-  {
-    "id": 15,
-    "practice_set": 2,
-    "question_no": 32,
-    "question": "Which part of a URL specifies the protocol used?",
-    "options": [
-      "A. Domain",
-      "B. Path",
-      "C. Port",
-      "D. Scheme",
-      "E. Query"
-    ],
-    "correct_answer": "D. Scheme",
-    "explanation": "The scheme in a URL specifies the protocol, such as HTTP or HTTPS.",
-    "topic": "Web Technologies: URL Components"
-  },
-  {
-    "id": 16,
-    "practice_set": 3,
-    "question_no": 24,
-    "question": "Which HTTP status code means “Not Found”?",
-    "options": [
-      "A. 200",
-      "B. 301",
-      "C. 403",
-      "D. 404",
-      "E. 500"
-    ],
-    "correct_answer": "D. 404",
-    "explanation": "HTTP 404 means “Not Found”.",
-    "topic": "Web Technologies: HTTP Status Codes"
-  },
-  {
-    "id": 17,
-    "practice_set": 3,
-    "question_no": 33,
-    "question": "Which part of a URL comes after the domain name?",
-    "options": [
-      "A. Query",
-      "B. Path",
-      "C. Scheme",
-      "D. Fragment",
-      "E. Host"
-    ],
-    "correct_answer": "B. Path",
-    "explanation": "The path comes after the domain name in a URL.",
-    "topic": "Web Technologies: URL Components"
-  },
-  {
-    "id": 18,
-    "practice_set": 4,
-    "question_no": 23,
-    "question": "Which of the following is NOT a RESTful constraint?",
-    "options": [
-      "A. Statelessness",
-      "B. Cacheable",
-      "C. Client-Server",
-      "D. GraphQL-based",
-      "E. Uniform Interface"
-    ],
-    "correct_answer": "D. GraphQL-based",
-    "explanation": "GraphQL is not a REST constraint.",
-    "topic": "Web API: REST Constraints"
-  },
-  {
-    "id": 19,
-    "practice_set": 1,
-    "question_no": 35,
-    "question": "What does a smart contract run on in blockchain?",
-    "options": [
-      "A. Web server",
-      "B. Application Layer",
-      "C. Ethereum Virtual Machine",
-      "D. SQL server",
-      "E. GitHub"
-    ],
-    "correct_answer": "C. Ethereum Virtual Machine",
-    "explanation": "Smart contracts on Ethereum run within the Ethereum Virtual Machine (EVM).",
-    "topic": "Emerging Technologies: Blockchain Smart Contracts"
-  },
-  {
-    "id": 20,
-    "practice_set": 1,
-    "question_no": 36,
-    "question": "In machine learning, what is overfitting?",
-    "options": [
-      "A. When a model runs too slowly",
-      "B. When a model fails to detect patterns",
-      "C. When a model memorizes data and fails to generalize",
-      "D. When a model ignores input features",
-      "E. When data is missing from the training set"
-    ],
-    "correct_answer": "C. When a model memorizes data and fails to generalize",
-    "explanation": "Overfitting means the model performs well on training data but poorly on new data.",
-    "topic": "Emerging Technologies: Machine Learning"
-  },
-  {
-    "id": 21,
-    "practice_set": 1,
-    "question_no": 37,
-    "question": "What is the main purpose of IoT devices?",
-    "options": [
-      "A. Enhance graphic performance",
-      "B. Automate tasks and collect real-time data",
-      "C. Replace network cables",
-      "D. Secure banking apps",
-      "E. Format cloud drives"
-    ],
-    "correct_answer": "B. Automate tasks and collect real-time data",
-    "explanation": "IoT devices sense, collect, and transmit data, enabling automation and monitoring.",
-    "topic": "Emerging Technologies: IoT"
-  },
-  {
-    "id": 22,
-    "practice_set": 1,
-    "question_no": 40,
-    "question": "Which is a feature of blockchain technology?",
-    "options": [
-      "A. Centralized storage",
-      "B. Editable transactions",
-      "C. Immutable ledger",
-      "D. Manual backups",
-      "E. File compression"
-    ],
-    "correct_answer": "C. Immutable ledger",
-    "explanation": "Blockchain maintains a secure, unchangeable record of transactions.",
-    "topic": "Emerging Technologies: Blockchain"
-  },
-  {
-    "id": 23,
-    "practice_set": 1,
-    "question_no": 48,
-    "question": "Which technology is often used in Big Data processing?",
-    "options": [
-      "A. JavaFX",
-      "B. Tableau",
-      "C. Hadoop",
-      "D. React",
-      "E. Adobe XD"
-    ],
-    "correct_answer": "C. Hadoop",
-    "explanation": "Hadoop is a framework for processing large-scale data sets.",
-    "topic": "Emerging Technologies: Big Data"
-  },
-  {
-    "id": 24,
-    "practice_set": 1,
-    "question_no": 49,
-    "question": "What does e-Governance mainly aim to provide?",
-    "options": [
-      "A. Entertainment",
-      "B. Surveillance",
-      "C. Paper-based bureaucracy",
-      "D. Efficient public services through technology",
-      "E. Cryptocurrency exchange"
-    ],
-    "correct_answer": "D. Efficient public services through technology",
-    "explanation": "E-Governance uses technology to improve access and efficiency of public services.",
-    "topic": "Emerging Technologies: e-Governance"
-  },
-  {
-    "id": 25,
-    "practice_set": 3,
-    "question_no": 19,
-    "question": "Which of the following is a lightweight protocol used in IoT devices?",
-    "options": [
-      "A. SMTP",
-      "B. MQTT",
-      "C. FTP",
-      "D. HTTP",
-      "E. DHCP"
-    ],
-    "correct_answer": "B. MQTT",
-    "explanation": "MQTT is a lightweight messaging protocol for IoT devices.",
-    "topic": "Emerging Technologies: IoT Protocols"
-  },
-  {
-    "id": 26,
-    "practice_set": 4,
-    "question_no": 58,
-    "question": "Which type of machine learning is clustering?",
-    "options": [
-      "A. Supervised Learning",
-      "B. Reinforcement Learning",
-      "C. Unsupervised Learning",
-      "D. Deep Learning",
-      "E. Semi-Supervised Learning"
-    ],
-    "correct_answer": "C. Unsupervised Learning",
-    "explanation": "Clustering is an unsupervised learning task.",
-    "topic": "Emerging Technologies: Machine Learning"
+    {
+      "id": 1,
+      "practice_set": 1,
+      "question_no": 1,
+      "question": "What does 'virtualization' allow in cloud computing?",
+      "options": [
+        "A. Hardware installation",
+        "B. Physical network upgrades",
+        "C. Creating multiple VMs on one host",
+        "D. File format conversion",
+        "E. Boosting CPU clock speed"
+      ],
+      "correct_answer": "C. Creating multiple VMs on one host",
+      "explanation": "Virtualization enables multiple OS instances on a single hardware setup.",
+      "detailed_explanation": "Virtualization creates multiple isolated Virtual Machines (VMs) on a single physical host. Each VM runs its own OS and applications. A hypervisor (VMware, Hyper-V, KVM) sits between hardware and VMs, managing resources. Benefits: better hardware utilization, isolation, easy backup/snapshot, faster provisioning. Foundation of cloud computing.",
+      "why_correct": "Virtualization = running multiple VMs on one physical host using a hypervisor — the core technology of cloud computing.",
+      "wrong_options": {
+        "A": "Hardware installation is a physical data center activity — not what virtualization enables.",
+        "B": "Physical network upgrades require actual hardware changes — virtualization works on existing hardware.",
+        "D": "File format conversion is a software task — unrelated to virtualization.",
+        "E": "CPU clock speed is a hardware characteristic — virtualization cannot boost physical CPU speed."
+      },
+      "memory_trick": "Virtualization = one big house (server) divided into many apartments (VMs). Each apartment is separate and independent. Hypervisor = landlord managing all apartments.",
+      "exam_note": "Two types of hypervisors: Type 1 (Bare-metal: VMware ESXi, Hyper-V — runs directly on hardware). Type 2 (Hosted: VirtualBox, VMware Workstation — runs on OS). Type 1 is faster and used in production.",
+      "topic": "Cloud Computing: Virtualization",
+      "main_topic": "Cloud Computing",
+      "topic_voice": "Cloud Computing: Virtualization"
+    },
+    {
+      "id": 2,
+      "practice_set": 1,
+      "question_no": 2,
+      "question": "What is the main feature of IaaS in cloud computing?",
+      "options": [
+        "A. Provides web applications",
+        "B. Offers ready-to-use software",
+        "C. Supplies infrastructure components",
+        "D. Delivers mobile SDKs",
+        "E. Manages user experience"
+      ],
+      "correct_answer": "C. Supplies infrastructure components",
+      "explanation": "IaaS offers virtualized computing resources like storage, servers, and networking.",
+      "detailed_explanation": "IaaS (Infrastructure as a Service) provides fundamental computing infrastructure: virtual machines, storage, networking, and operating systems. The customer manages OS, middleware, runtime, applications. Provider manages: hardware, virtualization, storage, networking. Examples: AWS EC2, Azure Virtual Machines, Google Compute Engine. Most flexible cloud model — you control the OS level.",
+      "why_correct": "IaaS supplies the raw infrastructure (compute, storage, network) — users manage everything above the hardware level.",
+      "wrong_options": {
+        "A": "Providing web applications = SaaS (Software as a Service) — not IaaS.",
+        "B": "Ready-to-use software = SaaS — e.g., Gmail, Office 365.",
+        "D": "Mobile SDKs are developer tools — PaaS might provide these, not IaaS directly.",
+        "E": "User experience management = SaaS or application layer — not IaaS."
+      },
+      "memory_trick": "Pizza analogy: IaaS = buy ingredients (infrastructure), cook yourself. PaaS = buy dough, add your toppings. SaaS = buy ready pizza, just eat.",
+      "exam_note": "Management responsibility: IaaS — provider manages: hardware, virtualization. You manage: OS, middleware, runtime, apps, data. Most control, most responsibility.",
+      "topic": "Cloud Computing: IaaS",
+      "main_topic": "Cloud Computing",
+      "topic_voice": "Cloud Computing: IaaS"
+    },
+    {
+      "id": 3,
+      "practice_set": 1,
+      "question_no": 3,
+      "question": "Which of these is an example of virtualization software?",
+      "options": [
+        "A. Excel",
+        "B. Oracle VM VirtualBox",
+        "C. Google Chrome",
+        "D. Visual Studio Code",
+        "E. Wireshark"
+      ],
+      "correct_answer": "B. Oracle VM VirtualBox",
+      "explanation": "VirtualBox allows running multiple OSes via virtualization on one physical machine.",
+      "detailed_explanation": "Oracle VM VirtualBox is a Type 2 hypervisor (hosted virtualization software) that runs on top of an existing OS. It allows creating and running multiple VMs with different operating systems on one machine. Other virtualization software: VMware Workstation, Microsoft Hyper-V, Parallels, KVM, Xen.",
+      "why_correct": "Oracle VM VirtualBox is specifically virtualization software — it creates and manages virtual machines.",
+      "wrong_options": {
+        "A": "Excel is Microsoft's spreadsheet application — not virtualization software.",
+        "C": "Google Chrome is a web browser — not virtualization software.",
+        "D": "Visual Studio Code is a code editor — not virtualization software.",
+        "E": "Wireshark is a network packet analyzer — not virtualization software."
+      },
+      "memory_trick": "Virtualization software: VirtualBox, VMware, Hyper-V, KVM. All create VMs. Remember: BOX in VirtualBox = a box containing another OS.",
+      "exam_note": "Free virtualization: VirtualBox (Oracle, free). Commercial: VMware Workstation (paid). Enterprise: VMware ESXi, Microsoft Hyper-V. Cloud: AWS KVM, Google KVM.",
+      "topic": "Cloud Computing: Virtualization Software",
+      "main_topic": "Cloud Computing",
+      "topic_voice": "Cloud Computing: Virtualization Software"
+    },
+    {
+      "id": 4,
+      "practice_set": 2,
+      "question_no": 4,
+      "question": "In cloud computing, which model provides software applications over the internet?",
+      "options": [
+        "A. SaaS",
+        "B. PaaS",
+        "C. IaaS",
+        "D. DaaS",
+        "E. NaaS"
+      ],
+      "correct_answer": "A. SaaS",
+      "explanation": "Software as a Service delivers applications over the internet.",
+      "detailed_explanation": "SaaS (Software as a Service) delivers complete, ready-to-use software applications over the internet. Users access via web browser — no installation needed. Provider manages everything: infrastructure, platform, and the application itself. Examples: Gmail, Google Docs, Microsoft Office 365, Salesforce, Dropbox, Zoom. Most convenient for end users.",
+      "why_correct": "SaaS = Software as a Service = complete software delivered over the internet. The user just uses it — no setup needed.",
+      "wrong_options": {
+        "B": "PaaS = Platform as a Service — provides tools and environment for DEVELOPERS to BUILD apps, not ready apps.",
+        "C": "IaaS = Infrastructure as a Service — provides raw infrastructure (VMs, storage, networking).",
+        "D": "DaaS = Desktop as a Service or Data as a Service — specialized models, not the primary one for software delivery.",
+        "E": "NaaS = Network as a Service — provides network infrastructure over the internet."
+      },
+      "memory_trick": "Cloud service models: IaaS = Infrastructure (hardware level). PaaS = Platform (development level). SaaS = Software (application level). I-P-S = bottom to top.",
+      "exam_note": "Examples to remember: SaaS: Gmail, Salesforce, Zoom, Netflix. PaaS: Google App Engine, AWS Elastic Beanstalk, Heroku. IaaS: AWS EC2, Azure VMs, GCP Compute Engine.",
+      "topic": "Cloud Computing: SaaS",
+      "main_topic": "Cloud Computing",
+      "topic_voice": "Cloud Computing: SaaS"
+    },
+    {
+      "id": 5,
+      "practice_set": 2,
+      "question_no": 5,
+      "question": "Which of these is NOT a characteristic of cloud computing?",
+      "options": [
+        "A. On-demand self-service",
+        "B. Resource pooling",
+        "C. High availability",
+        "D. Manual provisioning",
+        "E. Broad network access"
+      ],
+      "correct_answer": "D. Manual provisioning",
+      "explanation": "Cloud computing focuses on automation, not manual provisioning.",
+      "detailed_explanation": "NIST defines 5 essential cloud characteristics: 1) On-demand self-service (get resources without human interaction). 2) Broad network access (access from anywhere). 3) Resource pooling (shared among multiple users). 4) Rapid elasticity (scale up/down quickly). 5) Measured service (pay-per-use). Manual provisioning is the OPPOSITE of cloud — cloud automates everything.",
+      "why_correct": "Manual provisioning contradicts cloud computing's core principle of automation and on-demand self-service.",
+      "wrong_options": {
+        "A": "On-demand self-service IS a core cloud characteristic — users provision resources without calling IT.",
+        "B": "Resource pooling IS a core cloud characteristic — shared multi-tenant resources.",
+        "C": "High availability IS a cloud feature — redundancy across data centers ensures uptime.",
+        "E": "Broad network access IS a core cloud characteristic — accessible from any device, anywhere."
+      },
+      "memory_trick": "NIST 5 cloud characteristics: On-demand Self-service, Broad access, Resource Pooling, Rapid Elasticity, Measured service. Shortcut: OS-BR-EM.",
+      "exam_note": "Manual provisioning = old way (call IT, wait days). Cloud = self-service (get resources in minutes). This automation is cloud's key advantage.",
+      "topic": "Cloud Computing: Characteristics",
+      "main_topic": "Cloud Computing",
+      "topic_voice": "Cloud Computing: Characteristics"
+    },
+    {
+      "id": 6,
+      "practice_set": 5,
+      "question_no": 6,
+      "question": "Which cloud deployment model is shared among several organizations with common policies?",
+      "options": [
+        "A. Public Cloud",
+        "B. Private Cloud",
+        "C. Hybrid Cloud",
+        "D. Community Cloud",
+        "E. Distributed Cloud"
+      ],
+      "correct_answer": "D. Community Cloud",
+      "explanation": "Shared among organizations with similar interests or policies.",
+      "detailed_explanation": "Community Cloud is shared by several organizations that have common concerns: same industry, compliance requirements, security needs, or mission. Examples: government agencies sharing a cloud, hospitals sharing healthcare cloud, banks sharing financial cloud. Cost is shared among the community — more economical than private cloud.",
+      "why_correct": "Community Cloud = shared infrastructure for multiple organizations with common goals, policies, or compliance requirements.",
+      "wrong_options": {
+        "A": "Public Cloud is open to ANYONE over the internet — AWS, Azure, GCP. Not restricted to organizations with common policies.",
+        "B": "Private Cloud serves ONE organization exclusively — dedicated, more expensive.",
+        "C": "Hybrid Cloud combines public and private cloud — not a shared community model.",
+        "E": "Distributed Cloud distributes cloud services across multiple physical locations — not specifically for communities."
+      },
+      "memory_trick": "Cloud deployment models: Public (anyone), Private (one org), Community (same-type orgs), Hybrid (mix). Community = club membership — only similar members allowed.",
+      "exam_note": "Four cloud deployment models: Public, Private, Community, Hybrid. Know real-world examples: Community cloud: Government cloud (GovCloud), Healthcare cloud (HIPAA-compliant shared).",
+      "topic": "Cloud Computing: Community Cloud",
+      "main_topic": "Cloud Computing",
+      "topic_voice": "Cloud Computing: Community Cloud"
+    },
+    {
+      "id": 7,
+      "practice_set": 6,
+      "question_no": 7,
+      "question": "Which cloud computing deployment model provides services exclusively to a single organization, enhancing security and control?",
+      "options": [
+        "A. Public Cloud",
+        "B. Private Cloud",
+        "C. Community Cloud",
+        "D. Distributed Cloud",
+        "E. Hybrid Cloud"
+      ],
+      "correct_answer": "B. Private Cloud",
+      "explanation": "Private cloud is dedicated to a single organization for maximum control.",
+      "detailed_explanation": "Private Cloud is dedicated exclusively to ONE organization. It can be hosted on-premises (in the organization's own data center) or by a third party but maintained privately. Advantages: maximum security, full control, compliance-friendly. Disadvantages: expensive, requires IT staff to manage. Used by: banks, defense, healthcare for sensitive data.",
+      "why_correct": "Private Cloud = exclusive to one organization — highest security and control, but most expensive.",
+      "wrong_options": {
+        "A": "Public Cloud serves MULTIPLE organizations and individuals — shared infrastructure, less control.",
+        "C": "Community Cloud is shared among SIMILAR organizations — not exclusively one.",
+        "D": "Distributed Cloud distributes services geographically — not about exclusivity.",
+        "E": "Hybrid Cloud is a combination of private and public — not exclusively private."
+      },
+      "memory_trick": "Private Cloud = like a private villa (only for you). Public Cloud = like a hotel (shared with everyone). Hybrid = live in your villa but rent rooms when needed.",
+      "exam_note": "Private cloud examples: VMware Cloud Foundation, OpenStack, Microsoft Azure Stack. Banks and defense organizations prefer private cloud for data security.",
+      "topic": "Cloud Computing: Private Cloud",
+      "main_topic": "Cloud Computing",
+      "topic_voice": "Cloud Computing: Private Cloud"
+    },
+    {
+      "id": 8,
+      "practice_set": 7,
+      "question_no": 8,
+      "question": "In cloud computing, which service model allows developers to build applications without worrying about managing underlying hardware?",
+      "options": [
+        "A. SaaS",
+        "B. PaaS",
+        "C. IaaS",
+        "D. DaaS",
+        "E. BPaaS"
+      ],
+      "correct_answer": "B. PaaS",
+      "explanation": "Platform as a Service provides tools for application development without managing hardware.",
+      "detailed_explanation": "PaaS (Platform as a Service) provides a complete development and deployment environment in the cloud. Developers get: programming languages, databases, middleware, development tools, and runtime — all managed by the provider. Developers only focus on writing and deploying their application code. Examples: Google App Engine, Heroku, AWS Elastic Beanstalk, Microsoft Azure App Service.",
+      "why_correct": "PaaS abstracts away hardware and OS management — developers just build and deploy apps without worrying about infrastructure.",
+      "wrong_options": {
+        "A": "SaaS provides ready-to-use applications — end users, not developers, use SaaS.",
+        "C": "IaaS provides raw infrastructure — developers still manage OS, middleware, runtime themselves.",
+        "D": "DaaS = Desktop/Data as a Service — not the standard development platform model.",
+        "E": "BPaaS = Business Process as a Service — outsourcing business processes, not developer platform."
+      },
+      "memory_trick": "IaaS = control everything above hardware. PaaS = control only your code and data. SaaS = just use the app. More service = less control = easier to use.",
+      "exam_note": "Responsibility comparison: IaaS: you manage OS+. PaaS: you manage app+data only. SaaS: you manage nothing — just use it.",
+      "topic": "Cloud Computing: PaaS",
+      "main_topic": "Cloud Computing",
+      "topic_voice": "Cloud Computing: PaaS"
+    },
+    {
+      "id": 9,
+      "practice_set": 7,
+      "question_no": 9,
+      "question": "Which cloud deployment model combines both public and private cloud environments to allow sharing data and applications?",
+      "options": [
+        "A. Private Cloud",
+        "B. Public Cloud",
+        "C. Community Cloud",
+        "D. Hybrid Cloud",
+        "E. Distributed Cloud"
+      ],
+      "correct_answer": "D. Hybrid Cloud",
+      "explanation": "Hybrid Cloud combines private and public cloud resources.",
+      "detailed_explanation": "Hybrid Cloud integrates private cloud (sensitive/critical workloads) with public cloud (scalable/non-sensitive workloads). Data and apps can move between private and public as needed — called cloud bursting. Example: Bank stores customer data in private cloud but uses public cloud (AWS) for web-facing apps. Best of both worlds: security + scalability.",
+      "why_correct": "Hybrid Cloud = combination of private and public cloud — allows data/apps to move between both environments.",
+      "wrong_options": {
+        "A": "Private Cloud serves only one organization — no public cloud combination.",
+        "B": "Public Cloud is open to all — no private component.",
+        "C": "Community Cloud is shared among similar organizations — not a private+public mix.",
+        "E": "Distributed Cloud spreads cloud resources across locations — not about combining private and public."
+      },
+      "memory_trick": "Hybrid = HYBRID car (uses both petrol and electric). Hybrid Cloud = uses both private (secure) and public (flexible). Best of both!",
+      "exam_note": "Cloud bursting = hybrid cloud technique where private cloud workload spills into public cloud during peak demand — cost-effective scaling.",
+      "topic": "Cloud Computing: Hybrid Cloud",
+      "main_topic": "Cloud Computing",
+      "topic_voice": "Cloud Computing: Hybrid Cloud"
+    },
+    {
+      "id": 10,
+      "practice_set": 1,
+      "question_no": 10,
+      "question": "What does HTML stand for?",
+      "options": [
+        "A. Hyperlink Markup Language",
+        "B. Hypertext Machine Language",
+        "C. Hyper Transfer Markup Language",
+        "D. Hypertext Markup Language",
+        "E. Hightext Main Language"
+      ],
+      "correct_answer": "D. Hypertext Markup Language",
+      "explanation": "HTML is the standard markup language for creating web pages.",
+      "detailed_explanation": "HTML (HyperText Markup Language) is the standard language for creating web pages. It uses tags to define structure and content. Hypertext = text with links to other pages. Markup = using tags to annotate content. HTML defines STRUCTURE. CSS = STYLE. JavaScript = BEHAVIOR. Current version: HTML5 (with semantic tags, audio, video, canvas support).",
+      "why_correct": "HTML = HyperText Markup Language — exactly this full form, nothing else.",
+      "wrong_options": {
+        "A": "Hyperlink Markup Language — 'Hyperlink' is not the H in HTML; 'HyperText' is.",
+        "B": "Hypertext Machine Language — 'Machine' is wrong; 'Markup' is correct.",
+        "C": "Hyper Transfer Markup Language — 'Transfer' belongs to HTTP, not HTML.",
+        "E": "Hightext Main Language — completely incorrect full form."
+      },
+      "memory_trick": "HTML = HyperText Markup Language. HTTP = HyperText Transfer Protocol. Both start with Hyper. HTML = structure. HTTP = communication protocol.",
+      "exam_note": "Abbreviations to know: HTML (HyperText Markup Language), CSS (Cascading Style Sheets), HTTP (HyperText Transfer Protocol), HTTPS (HTTP Secure), URL (Uniform Resource Locator).",
+      "topic": "Web Technologies: HTML",
+      "main_topic": "Web Technologies",
+      "topic_voice": "Web Technologies: HTML"
+    },
+    {
+      "id": 11,
+      "practice_set": 1,
+      "question_no": 11,
+      "question": "Which tag is used in HTML to insert a hyperlink?",
+      "options": [
+        "A. <p>",
+        "B. <div>",
+        "C. <a>",
+        "D. <link>",
+        "E. <script>"
+      ],
+      "correct_answer": "C. <a>",
+      "explanation": "The anchor (<a>) tag defines hyperlinks in HTML.",
+      "detailed_explanation": "The <a> (anchor) tag creates hyperlinks in HTML. The href attribute specifies the URL: <a href='https://example.com'>Click here</a>. Other attributes: target='_blank' (open in new tab), title (tooltip). The <a> tag can link to: external URLs, internal pages, specific sections (#id), email (mailto:), and files.",
+      "why_correct": "<a> is the anchor tag — the standard HTML element for creating clickable hyperlinks.",
+      "wrong_options": {
+        "A": "<p> defines a paragraph — not a hyperlink.",
+        "B": "<div> is a generic container/block element — not a hyperlink.",
+        "D": "<link> is used in the <head> to link external resources like CSS stylesheets — not for clickable hyperlinks in content.",
+        "E": "<script> embeds or links JavaScript code — not a hyperlink."
+      },
+      "memory_trick": "a = anchor = links (anchors) one page to another. href = Hypertext REFerence = where to go. <a href='url'>text</a>.",
+      "exam_note": "Key HTML tags: <h1>-<h6> (headings), <p> (paragraph), <a> (anchor/link), <img> (image), <table> (table), <form> (form), <input> (input field), <div> (block container), <span> (inline container).",
+      "topic": "Web Technologies: HTML Tags",
+      "main_topic": "Web Technologies",
+      "topic_voice": "Web Technologies: HTML Tags"
+    },
+    {
+      "id": 12,
+      "practice_set": 1,
+      "question_no": 12,
+      "question": "What is the purpose of HTTP in web services?",
+      "options": [
+        "A. Encrypt database entries",
+        "B. Control hardware access",
+        "C. Facilitate communication between web clients and servers",
+        "D. Design mobile apps",
+        "E. Protect firewalls"
+      ],
+      "correct_answer": "C. Facilitate communication between web clients and servers",
+      "explanation": "HTTP is the protocol used for data communication over the web.",
+      "detailed_explanation": "HTTP (HyperText Transfer Protocol) is the foundation of web communication. It defines how messages are formatted and transmitted between web clients (browsers) and servers. HTTP is stateless — each request is independent. HTTPS = HTTP + SSL/TLS encryption for secure communication. HTTP Methods: GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS.",
+      "why_correct": "HTTP's primary purpose is defining the communication rules between web clients (browsers) and web servers.",
+      "wrong_options": {
+        "A": "Encrypting database entries uses database encryption or field-level encryption — not HTTP's job.",
+        "B": "Hardware access control is an OS/driver function — not HTTP.",
+        "D": "Mobile app design uses frameworks like Flutter, React Native — not HTTP.",
+        "E": "Firewall protection is network security — HTTP is above the network layer."
+      },
+      "memory_trick": "HTTP = the language web browsers and servers speak to each other. Browser (client) asks → Server answers. Request-Response model.",
+      "exam_note": "HTTP vs HTTPS: HTTP port 80, HTTPS port 443. HTTPS adds SSL/TLS encryption. Never send sensitive data over HTTP. Modern browsers mark HTTP sites as 'Not Secure'.",
+      "topic": "Web Technologies: HTTP",
+      "main_topic": "Web Technologies",
+      "topic_voice": "Web Technologies: HTTP"
+    },
+    {
+      "id": 13,
+      "practice_set": 2,
+      "question_no": 13,
+      "question": "Which part of a URL specifies the protocol used?",
+      "options": [
+        "A. Domain",
+        "B. Path",
+        "C. Port",
+        "D. Scheme",
+        "E. Query"
+      ],
+      "correct_answer": "D. Scheme",
+      "explanation": "The scheme in a URL specifies the protocol, such as HTTP or HTTPS.",
+      "detailed_explanation": "A URL has components: Scheme://Domain:Port/Path?Query#Fragment. Example: https://www.example.com:443/page?id=5#section. Scheme = https (protocol). Domain = www.example.com (server address). Port = 443 (optional, default 80 for HTTP, 443 for HTTPS). Path = /page (resource location). Query = id=5 (parameters). Fragment = #section (page anchor).",
+      "why_correct": "Scheme is the URL component that specifies the protocol — e.g., http://, https://, ftp://, mailto:.",
+      "wrong_options": {
+        "A": "Domain is the server address (hostname) — e.g., www.example.com.",
+        "B": "Path is the specific resource location after the domain — e.g., /products/shoes.",
+        "C": "Port specifies the network port — e.g., :8080.",
+        "E": "Query string contains parameters after ? — e.g., ?name=Alice&age=25."
+      },
+      "memory_trick": "URL structure: SCHEME://DOMAIN:PORT/PATH?QUERY#FRAGMENT. Think of it as: HOW://WHERE:DOOR/WHAT?DETAILS#SECTION.",
+      "exam_note": "Common schemes: http (port 80), https (port 443), ftp (port 21), mailto (email), file (local file). Scheme always followed by ://.",
+      "topic": "Web Technologies: URL Components",
+      "main_topic": "Web Technologies",
+      "topic_voice": "Web Technologies: URL Components"
+    },
+    {
+      "id": 14,
+      "practice_set": 3,
+      "question_no": 14,
+      "question": "Which part of a URL comes after the domain name?",
+      "options": [
+        "A. Query",
+        "B. Path",
+        "C. Scheme",
+        "D. Fragment",
+        "E. Host"
+      ],
+      "correct_answer": "B. Path",
+      "explanation": "The path comes after the domain name in a URL.",
+      "detailed_explanation": "URL structure: scheme://host:port/path?query#fragment. The PATH comes immediately after the domain (host) and port. Example: https://www.shop.com/products/shoes — /products/shoes is the path. Path identifies the specific resource/page on the server. It uses forward slashes / to navigate the directory structure.",
+      "why_correct": "Path is the part of the URL that follows the domain (and optional port) — specifies the resource location.",
+      "wrong_options": {
+        "A": "Query comes AFTER the path, following ? — e.g., /search?q=shoes.",
+        "C": "Scheme comes BEFORE the domain — e.g., https://.",
+        "D": "Fragment comes at the VERY END after # — e.g., #section2.",
+        "E": "Host IS the domain — www.shop.com (same as domain)."
+      },
+      "memory_trick": "URL left to right: SCHEME → DOMAIN → PORT → PATH → QUERY → FRAGMENT. Path is the 3rd/4th part, right after the domain.",
+      "exam_note": "REST API paths represent resources: /users (all users), /users/5 (user with id 5), /users/5/orders (orders of user 5). RESTful path design is important.",
+      "topic": "Web Technologies: URL Components",
+      "main_topic": "Web Technologies",
+      "topic_voice": "Web Technologies: URL Components"
+    },
+    {
+      "id": 15,
+      "practice_set": 3,
+      "question_no": 15,
+      "question": "Which HTTP status code means 'Not Found'?",
+      "options": [
+        "A. 200",
+        "B. 301",
+        "C. 403",
+        "D. 404",
+        "E. 500"
+      ],
+      "correct_answer": "D. 404",
+      "explanation": "HTTP 404 means 'Not Found'.",
+      "detailed_explanation": "HTTP status codes are grouped by category: 1xx = Informational. 2xx = Success (200 OK, 201 Created). 3xx = Redirection (301 Moved Permanently, 302 Found). 4xx = Client Error (400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found). 5xx = Server Error (500 Internal Server Error, 503 Service Unavailable).",
+      "why_correct": "404 Not Found = the requested resource does not exist on the server — the most famous HTTP error code.",
+      "wrong_options": {
+        "A": "200 = OK — request was successful.",
+        "B": "301 = Moved Permanently — resource has permanently moved to a new URL.",
+        "C": "403 = Forbidden — server understood request but refuses to authorize it (no permission).",
+        "E": "500 = Internal Server Error — server encountered an unexpected condition (server-side bug)."
+      },
+      "memory_trick": "HTTP status groups: 2xx=OK, 3xx=Redirect, 4xx=YOUR fault (client error), 5xx=SERVER fault. 404=you asked for something that doesn't exist. 403=you're not allowed.",
+      "exam_note": "Must-know HTTP codes: 200 OK, 201 Created, 301 Moved Permanently, 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 500 Internal Server Error.",
+      "topic": "Web Technologies: HTTP Status Codes",
+      "main_topic": "Web Technologies",
+      "topic_voice": "Web Technologies: HTTP Status Codes"
+    },
+    {
+      "id": 16,
+      "practice_set": 1,
+      "question_no": 16,
+      "question": "Which of the following is a REST API method?",
+      "options": [
+        "A. FETCH",
+        "B. EXEC",
+        "C. GET",
+        "D. DISPLAY",
+        "E. VIEW"
+      ],
+      "correct_answer": "C. GET",
+      "explanation": "GET is a standard HTTP method in REST APIs to retrieve resources.",
+      "detailed_explanation": "REST APIs use standard HTTP methods (verbs): GET (retrieve data — read only). POST (create new resource). PUT (update/replace entire resource). PATCH (partial update). DELETE (remove resource). HEAD (like GET but no body). OPTIONS (check allowed methods). GET is idempotent and safe — it only reads, never modifies.",
+      "why_correct": "GET is a standard HTTP/REST method specifically for retrieving (reading) resources from a server.",
+      "wrong_options": {
+        "A": "FETCH is a JavaScript API method for making HTTP requests — not itself an HTTP method.",
+        "B": "EXEC is not an HTTP method.",
+        "D": "DISPLAY is not an HTTP method.",
+        "E": "VIEW is not an HTTP method."
+      },
+      "memory_trick": "REST HTTP methods = CRUD: Create=POST, Read=GET, Update=PUT/PATCH, Delete=DELETE. Shortcut: GPPPD = GET POST PUT PATCH DELETE.",
+      "exam_note": "Idempotent methods: GET, PUT, DELETE — calling multiple times gives same result. Non-idempotent: POST — creates a new resource each time.",
+      "topic": "Web API: REST Methods",
+      "main_topic": "Web API",
+      "topic_voice": "Web API: REST Methods"
+    },
+    {
+      "id": 17,
+      "practice_set": 1,
+      "question_no": 17,
+      "question": "What protocol is most used for exchanging data with APIs?",
+      "options": [
+        "A. SMTP",
+        "B. TCP",
+        "C. REST",
+        "D. FTP",
+        "E. DHCP"
+      ],
+      "correct_answer": "C. REST",
+      "explanation": "REST (Representational State Transfer) is commonly used for API communication.",
+      "detailed_explanation": "REST (Representational State Transfer) is an architectural style for building APIs using HTTP. RESTful APIs use standard HTTP methods and return data in JSON or XML. REST is stateless — no session info stored on server. Very lightweight, scalable, widely used. Alternative: SOAP (heavier, XML-based), GraphQL (query-based, flexible).",
+      "why_correct": "REST is the most widely used architectural style for API communication — uses HTTP and returns JSON/XML.",
+      "wrong_options": {
+        "A": "SMTP = Simple Mail Transfer Protocol — used for sending emails, not APIs.",
+        "B": "TCP = Transmission Control Protocol — a transport layer protocol, not specifically for APIs.",
+        "D": "FTP = File Transfer Protocol — for file transfer, not API communication.",
+        "E": "DHCP = Dynamic Host Configuration Protocol — assigns IP addresses, not for APIs."
+      },
+      "memory_trick": "REST API = RESTaurant waiter. You (client) order (request) from menu (API). Waiter (server) brings food (response) in a standard format (JSON).",
+      "exam_note": "REST vs SOAP: REST = lightweight, JSON/XML, HTTP. SOAP = heavy, XML only, has strict standards. REST is preferred for modern web APIs. SOAP is used in banking/enterprise.",
+      "topic": "Web API: REST",
+      "main_topic": "Web API",
+      "topic_voice": "Web API: REST"
+    },
+    {
+      "id": 18,
+      "practice_set": 4,
+      "question_no": 18,
+      "question": "Which of the following is NOT a RESTful constraint?",
+      "options": [
+        "A. Statelessness",
+        "B. Cacheable",
+        "C. Client-Server",
+        "D. GraphQL-based",
+        "E. Uniform Interface"
+      ],
+      "correct_answer": "D. GraphQL-based",
+      "explanation": "GraphQL is not a REST constraint.",
+      "detailed_explanation": "REST has 6 architectural constraints defined by Roy Fielding: 1) Client-Server separation. 2) Statelessness (no session stored). 3) Cacheability. 4) Uniform Interface. 5) Layered System. 6) Code on Demand (optional). GraphQL is a completely separate query language/architecture for APIs — an alternative to REST, not a REST constraint.",
+      "why_correct": "GraphQL is an alternative to REST — not a constraint of REST. REST has its own specific 6 constraints defined by Fielding.",
+      "wrong_options": {
+        "A": "Statelessness IS a REST constraint — server stores no client session between requests.",
+        "B": "Cacheable IS a REST constraint — responses should be labeled as cacheable or non-cacheable.",
+        "C": "Client-Server IS a REST constraint — separates UI from data storage.",
+        "E": "Uniform Interface IS a REST constraint — consistent way to interact with resources."
+      },
+      "memory_trick": "REST constraints: Client-Server, Stateless, Cacheable, Uniform Interface, Layered System, Code on Demand (optional). GraphQL = different API style, not REST.",
+      "exam_note": "REST vs GraphQL: REST = multiple endpoints (/users, /posts). GraphQL = single endpoint, flexible queries. GraphQL avoids over-fetching and under-fetching issues.",
+      "topic": "Web API: REST Constraints",
+      "main_topic": "Web API",
+      "topic_voice": "Web API: REST Constraints"
+    },
+    {
+      "id": 19,
+      "practice_set": 1,
+      "question_no": 19,
+      "question": "What does a smart contract run on in blockchain?",
+      "options": [
+        "A. Web server",
+        "B. Application Layer",
+        "C. Ethereum Virtual Machine",
+        "D. SQL server",
+        "E. GitHub"
+      ],
+      "correct_answer": "C. Ethereum Virtual Machine",
+      "explanation": "Smart contracts on Ethereum run within the Ethereum Virtual Machine (EVM).",
+      "detailed_explanation": "Smart contracts are self-executing programs stored on a blockchain that run automatically when conditions are met. On the Ethereum blockchain, smart contracts run on the Ethereum Virtual Machine (EVM). They are written in Solidity (programming language). EVM is Turing-complete and runs on every Ethereum node worldwide. No central authority — decentralized execution.",
+      "why_correct": "EVM (Ethereum Virtual Machine) is the runtime environment for smart contracts on the Ethereum blockchain.",
+      "wrong_options": {
+        "A": "Web servers host websites — smart contracts run on blockchain nodes, not web servers.",
+        "B": "Application Layer is the OSI model layer — not a blockchain execution environment.",
+        "D": "SQL servers store relational databases — blockchain is a decentralized ledger, not SQL.",
+        "E": "GitHub is a code repository platform — not a smart contract execution environment."
+      },
+      "memory_trick": "Ethereum = blockchain platform. EVM = Ethereum's engine. Solidity = programming language for smart contracts. EVM runs the Solidity code on every node.",
+      "exam_note": "Smart contract uses: Token creation (ERC-20), DeFi (Decentralized Finance), NFTs, Supply chain tracking, Voting systems. Written in Solidity, run on EVM.",
+      "topic": "Emerging Technologies: Blockchain Smart Contracts",
+      "main_topic": "Emerging Technologies",
+      "topic_voice": "Emerging Technologies: Blockchain Smart Contracts"
+    },
+    {
+      "id": 20,
+      "practice_set": 1,
+      "question_no": 20,
+      "question": "In machine learning, what is overfitting?",
+      "options": [
+        "A. When a model runs too slowly",
+        "B. When a model fails to detect patterns",
+        "C. When a model memorizes data and fails to generalize",
+        "D. When a model ignores input features",
+        "E. When data is missing from the training set"
+      ],
+      "correct_answer": "C. When a model memorizes data and fails to generalize",
+      "explanation": "Overfitting means the model performs well on training data but poorly on new data.",
+      "detailed_explanation": "Overfitting occurs when a model learns the training data TOO WELL — including noise and outliers. Result: very high training accuracy but poor performance on new/unseen data. The model memorized instead of learning general patterns. Solutions: more training data, regularization (L1/L2), dropout (neural networks), cross-validation, simpler model.",
+      "why_correct": "Overfitting = model memorizes training data + noise = fails to generalize to new examples.",
+      "wrong_options": {
+        "A": "Model running slowly is a performance/optimization issue — not overfitting.",
+        "B": "Failing to detect patterns = underfitting (model is too simple) — opposite of overfitting.",
+        "D": "Ignoring features would result in underfitting/poor performance — not overfitting.",
+        "E": "Missing training data is a data quality issue — could lead to poor performance but not necessarily overfitting."
+      },
+      "memory_trick": "Overfitting = exam topper who memorized textbook word-for-word. Scores 100% in practice but fails in new exam paper with slightly different questions.",
+      "exam_note": "Overfitting = high variance. Underfitting = high bias. Ideal = low bias + low variance. Regularization reduces overfitting by penalizing model complexity.",
+      "topic": "Emerging Technologies: Machine Learning",
+      "main_topic": "Emerging Technologies",
+      "topic_voice": "Emerging Technologies: Machine Learning"
+    },
+    {
+      "id": 21,
+      "practice_set": 4,
+      "question_no": 21,
+      "question": "Which type of machine learning is clustering?",
+      "options": [
+        "A. Supervised Learning",
+        "B. Reinforcement Learning",
+        "C. Unsupervised Learning",
+        "D. Deep Learning",
+        "E. Semi-Supervised Learning"
+      ],
+      "correct_answer": "C. Unsupervised Learning",
+      "explanation": "Clustering is an unsupervised learning task.",
+      "detailed_explanation": "Clustering is an unsupervised learning technique that groups similar data points without using labeled data. No predefined classes — the algorithm discovers natural groupings on its own. Common clustering algorithms: K-Means (partition-based), DBSCAN (density-based), Hierarchical clustering, Gaussian Mixture Models. Applications: customer segmentation, document grouping, image compression.",
+      "why_correct": "Clustering uses unlabeled data to find natural groups — defining characteristic of unsupervised learning.",
+      "wrong_options": {
+        "A": "Supervised Learning requires labeled data with known outputs — clustering has no labels.",
+        "B": "Reinforcement Learning uses rewards/penalties — not applicable to clustering.",
+        "D": "Deep Learning is a neural network technique — it can be used FOR clustering but clustering itself is unsupervised.",
+        "E": "Semi-Supervised Learning uses a mix of labeled and unlabeled data — clustering is purely unsupervised."
+      },
+      "memory_trick": "Clustering = no labels, find groups naturally. Like sorting mixed vegetables without being told which is which — you group by similarity.",
+      "exam_note": "Unsupervised learning tasks: Clustering (K-Means, DBSCAN), Dimensionality Reduction (PCA), Association Rule Mining (Apriori). All work without labels.",
+      "topic": "Emerging Technologies: Machine Learning",
+      "main_topic": "Emerging Technologies",
+      "topic_voice": "Emerging Technologies: Machine Learning"
+    },
+    {
+      "id": 22,
+      "practice_set": 1,
+      "question_no": 22,
+      "question": "What is the main purpose of IoT devices?",
+      "options": [
+        "A. Enhance graphic performance",
+        "B. Automate tasks and collect real-time data",
+        "C. Replace network cables",
+        "D. Secure banking apps",
+        "E. Format cloud drives"
+      ],
+      "correct_answer": "B. Automate tasks and collect real-time data",
+      "explanation": "IoT devices sense, collect, and transmit data, enabling automation and monitoring.",
+      "detailed_explanation": "IoT (Internet of Things) connects everyday physical devices to the internet. IoT devices: have sensors to collect data, process locally or send to cloud, enable remote monitoring and automation. Examples: smart thermostat, fitness tracker, smart refrigerator, industrial sensors, traffic lights, smart meters. IoT data is analyzed for insights and automation.",
+      "why_correct": "IoT devices collect real-time data from the physical world and enable automated responses — their core purpose.",
+      "wrong_options": {
+        "A": "Graphic performance is enhanced by GPUs — not IoT devices.",
+        "C": "Replacing network cables involves wired/wireless networking hardware — not IoT purpose.",
+        "D": "Securing banking apps involves application security, authentication — not IoT's purpose.",
+        "E": "Formatting cloud drives is a storage management task — not IoT."
+      },
+      "memory_trick": "IoT = Internet of THINGS. Things (physical objects) + Internet = connected smart world. Smart home, smart city, smart factory = all IoT.",
+      "exam_note": "IoT architecture: Sensors → Gateway → Cloud → Analytics → Action. MQTT protocol is commonly used for IoT because it's lightweight and efficient.",
+      "topic": "Emerging Technologies: IoT",
+      "main_topic": "Emerging Technologies",
+      "topic_voice": "Emerging Technologies: IoT"
+    },
+    {
+      "id": 23,
+      "practice_set": 1,
+      "question_no": 23,
+      "question": "Which is a feature of blockchain technology?",
+      "options": [
+        "A. Centralized storage",
+        "B. Editable transactions",
+        "C. Immutable ledger",
+        "D. Manual backups",
+        "E. File compression"
+      ],
+      "correct_answer": "C. Immutable ledger",
+      "explanation": "Blockchain maintains a secure, unchangeable record of transactions.",
+      "detailed_explanation": "Blockchain is a distributed ledger where records (blocks) are chained together cryptographically. Key features: Immutability (once recorded, cannot be changed — any tampering changes the hash and breaks the chain). Decentralization (no single point of control). Transparency (all participants can see the ledger). Consensus mechanism (all nodes must agree). Examples: Bitcoin, Ethereum.",
+      "why_correct": "Immutable ledger is blockchain's defining feature — transactions recorded permanently cannot be altered or deleted.",
+      "wrong_options": {
+        "A": "Centralized storage is the OPPOSITE of blockchain — blockchain is decentralized.",
+        "B": "Editable transactions are the OPPOSITE of blockchain — immutability means no editing.",
+        "D": "Manual backups are traditional storage practices — blockchain is automatically distributed.",
+        "E": "File compression is a data storage technique — unrelated to blockchain."
+      },
+      "memory_trick": "Blockchain features: DICD = Decentralized, Immutable, Consensus-based, Distributed. Immutable = once written, carved in stone.",
+      "exam_note": "Blockchain use cases: Cryptocurrency (Bitcoin), Smart Contracts (Ethereum), Supply chain (Walmart, IBM), Healthcare records, Digital identity, Voting systems.",
+      "topic": "Emerging Technologies: Blockchain",
+      "main_topic": "Emerging Technologies",
+      "topic_voice": "Emerging Technologies: Blockchain"
+    },
+    {
+      "id": 24,
+      "practice_set": 1,
+      "question_no": 24,
+      "question": "Which technology is often used in Big Data processing?",
+      "options": [
+        "A. JavaFX",
+        "B. Tableau",
+        "C. Hadoop",
+        "D. React",
+        "E. Adobe XD"
+      ],
+      "correct_answer": "C. Hadoop",
+      "explanation": "Hadoop is a framework for processing large-scale data sets.",
+      "detailed_explanation": "Apache Hadoop is an open-source framework for storing and processing massive datasets across clusters of computers. Hadoop components: HDFS (Hadoop Distributed File System) — stores big data across nodes. MapReduce — parallel processing model. YARN — resource manager. Modern big data also uses Apache Spark (faster, in-memory processing), Kafka (streaming), Hive, Pig.",
+      "why_correct": "Hadoop is the industry-standard open-source framework specifically designed for Big Data storage and processing.",
+      "wrong_options": {
+        "A": "JavaFX is a Java GUI framework for desktop applications — not Big Data.",
+        "B": "Tableau is a data visualization tool — it displays insights from data but doesn't process Big Data itself.",
+        "D": "React is a JavaScript library for building web UIs — not Big Data processing.",
+        "E": "Adobe XD is a UI/UX design tool — completely unrelated to Big Data."
+      },
+      "memory_trick": "Big Data tools: Hadoop (batch processing), Spark (fast in-memory), Kafka (streaming), Hive (SQL-on-Hadoop). Hadoop = pioneer of Big Data.",
+      "exam_note": "Big Data 5 Vs: Volume (huge amount), Velocity (fast speed), Variety (different formats), Veracity (accuracy), Value (useful insights). Hadoop handles all 5.",
+      "topic": "Emerging Technologies: Big Data",
+      "main_topic": "Emerging Technologies",
+      "topic_voice": "Emerging Technologies: Big Data"
+    },
+    {
+      "id": 25,
+      "practice_set": 1,
+      "question_no": 25,
+      "question": "What does e-Governance mainly aim to provide?",
+      "options": [
+        "A. Entertainment",
+        "B. Surveillance",
+        "C. Paper-based bureaucracy",
+        "D. Efficient public services through technology",
+        "E. Cryptocurrency exchange"
+      ],
+      "correct_answer": "D. Efficient public services through technology",
+      "explanation": "E-Governance uses technology to improve access and efficiency of public services.",
+      "detailed_explanation": "e-Governance (Electronic Governance) uses ICT (Information and Communication Technology) to deliver government services, improve communication, and enhance citizen participation. Types: G2C (Government to Citizen), G2B (Government to Business), G2G (Government to Government), G2E (Government to Employee). India examples: DigiLocker, Aadhaar, UMANG app, GeM (Government e-Marketplace), Income Tax e-filing.",
+      "why_correct": "e-Governance = using technology to deliver efficient, accessible, transparent public services to citizens.",
+      "wrong_options": {
+        "A": "Entertainment is media/OTT content — not the purpose of e-Governance.",
+        "B": "Surveillance systems monitor activity — not the main aim of e-Governance.",
+        "C": "Paper-based bureaucracy is what e-Governance REPLACES — opposite of its goal.",
+        "E": "Cryptocurrency exchange is a financial service platform — not e-Governance."
+      },
+      "memory_trick": "e-Governance = government services going ONLINE. Tax filing, passport, certificates, licenses — all from home without standing in queues.",
+      "exam_note": "India's e-Governance initiatives: Digital India program, Aadhaar, UMANG, DigiLocker, e-Courts, e-Hospital, GSTN, BharatNet. Very relevant for IBPS SO IT.",
+      "topic": "Emerging Technologies: e-Governance",
+      "main_topic": "Emerging Technologies",
+      "topic_voice": "Emerging Technologies: e-Governance"
+    },
+    {
+      "id": 26,
+      "practice_set": 3,
+      "question_no": 26,
+      "question": "Which of the following is a lightweight protocol used in IoT devices?",
+      "options": [
+        "A. SMTP",
+        "B. MQTT",
+        "C. FTP",
+        "D. HTTP",
+        "E. DHCP"
+      ],
+      "correct_answer": "B. MQTT",
+      "explanation": "MQTT is a lightweight messaging protocol for IoT devices.",
+      "detailed_explanation": "MQTT (Message Queuing Telemetry Transport) is a lightweight publish-subscribe messaging protocol designed for constrained devices and low-bandwidth, high-latency networks — perfect for IoT. It uses a broker (like Mosquitto) to manage messages. Devices publish to topics; other devices subscribe to receive. Very efficient — small header size (2 bytes minimum).",
+      "why_correct": "MQTT is specifically designed as a lightweight protocol for IoT — ideal for sensors and constrained devices.",
+      "wrong_options": {
+        "A": "SMTP = Simple Mail Transfer Protocol — for sending emails, heavy for IoT.",
+        "C": "FTP = File Transfer Protocol — for file transfer, too heavy for IoT sensors.",
+        "D": "HTTP is used in web communication — heavier than MQTT, less efficient for IoT.",
+        "E": "DHCP = Dynamic Host Configuration Protocol — assigns IP addresses, not messaging."
+      },
+      "memory_trick": "IoT = small devices, small battery, small bandwidth. Need SMALL protocol. MQTT = tiny. HTTP = big. MQTT wins for IoT. Pub-Sub model: publish → broker → subscriber.",
+      "exam_note": "MQTT vs HTTP for IoT: MQTT is push-based (broker pushes to subscribers). HTTP is pull-based (client requests). MQTT better for real-time IoT data. MQTT port: 1883 (unencrypted), 8883 (SSL).",
+      "topic": "Emerging Technologies: IoT Protocols",
+      "main_topic": "Emerging Technologies",
+      "topic_voice": "Emerging Technologies: IoT Protocols"
+    }
+  ],
+  "metadata": {
+    "exam": "IBPS SO IT Officer Mains Preparation",
+    "subject": "Cloud Computing + Web API + Emerging Technologies",
+    "total_questions": 26,
+    "enhanced_fields": {
+      "detailed_explanation": "Full concept explanation with real-world examples",
+      "why_correct": "Why the correct answer is correct",
+      "wrong_options": "Why each wrong option is incorrect (keyed by letter)",
+      "memory_trick": "Shortcut, mnemonic, or analogy for quick recall",
+      "exam_note": "IBPS SO IT exam-specific tip or important comparison"
+    }
   }
-  ]
 }
