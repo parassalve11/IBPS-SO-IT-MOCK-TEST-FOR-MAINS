@@ -68,9 +68,9 @@ export function ResultShell({ subject, questions }: ResultShellProps) {
             Open the analysis view for fast revision.
           </h2>
           <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-600">
-            Each submitted question now shows the correct answer, explanation, detailed
-            explanation, why the answer is correct, wrong option notes, memory trick, and exam
-            note in separate color-coded cards.
+            Each submitted question now shows the correct answer, explanation or main concept,
+            detailed or related concept notes, why the answer is correct, wrong option notes,
+            memory trick, and exam note in separate color-coded cards.
           </p>
 
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">

@@ -3,13 +3,17 @@ export type RawQuestionItem = {
   question: string;
   options: string[];
   correct_answer: string;
-  explanation: string;
+  explanation?: string;
+  main_concept?: string;
   detailed_explanation?: string;
+  related_concept?: string;
   why_correct?: string;
   wrong_options?: Record<string, string>;
   memory_trick?: string;
   exam_note?: string;
   topic?: string;
+  topic_group?: string;
+  main_topic?: string;
   difficulty?: string;
 };
 
@@ -31,12 +35,16 @@ export interface NormalizedQuestion {
   options: string[];
   correctAnswer: string;
   explanation: string;
+  mainConcept?: string;
   detailedExplanation?: string;
+  relatedConcept?: string;
   whyCorrect?: string;
   wrongOptions?: Record<string, string>;
   memoryTrick?: string;
   examNote?: string;
   topic?: string;
+  topicGroup?: string;
+  mainTopic?: string;
   difficulty?: string;
   subjectSlug: string;
   subjectName: string;

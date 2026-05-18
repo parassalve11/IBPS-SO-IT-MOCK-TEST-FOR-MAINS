@@ -204,8 +204,13 @@ export function ReviewShell({ subject, questions }: ReviewShellProps) {
                 <div className="flex flex-wrap items-center gap-2 text-sm">
                   <span className="rounded-full bg-blue-50 px-3 py-1 text-blue-700">Question</span>
                   <span className="rounded-full bg-emerald-50 px-3 py-1 text-emerald-700">
-                    Why Correct
+                    {activeQuestion.mainConcept ? "Main Concept" : "Why Correct"}
                   </span>
+                  {activeQuestion.relatedConcept ? (
+                    <span className="rounded-full bg-slate-100 px-3 py-1 text-slate-700">
+                      Related Concept
+                    </span>
+                  ) : null}
                   {activeQuestion.memoryTrick ? (
                     <span className="rounded-full bg-amber-50 px-3 py-1 text-amber-700">
                       Memory Trick

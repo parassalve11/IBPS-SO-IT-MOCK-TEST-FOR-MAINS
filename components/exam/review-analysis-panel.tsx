@@ -82,6 +82,14 @@ export function ReviewAnalysisPanel({
   const cleanedQuestion = cleanStudyText(question.question);
   const cleanedCorrectAnswer = cleanStudyText(question.correctAnswer);
   const cleanedSelectedAnswer = cleanStudyText(selectedAnswer ?? "Skipped");
+  const cleanedTopic = question.topic ? cleanStudyText(question.topic) : "";
+  const cleanedMainTopic =
+    question.mainTopic && question.mainTopic !== question.topic
+      ? cleanStudyText(question.mainTopic)
+      : "";
+  const cleanedDifficulty = question.difficulty ? cleanStudyText(question.difficulty) : "";
+  const primaryExplanationBody = question.mainConcept ?? question.explanation;
+  const primaryExplanationTitle = question.mainConcept ? "Main Concept" : "Explanation";
 
   return (
     <div className="space-y-4">
@@ -96,12 +104,17 @@ export function ReviewAnalysisPanel({
             </span>
             {question.topic ? (
               <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
-                {question.topic}
+                {cleanedTopic}
+              </span>
+            ) : null}
+            {cleanedMainTopic ? (
+              <span className="rounded-full bg-indigo-50 px-3 py-1 text-xs font-medium text-indigo-700">
+                {cleanedMainTopic}
               </span>
             ) : null}
             {question.difficulty ? (
               <span className="rounded-full bg-amber-50 px-3 py-1 text-xs font-medium text-amber-700">
-                {question.difficulty}
+                {cleanedDifficulty}
               </span>
             ) : null}
             {isMarked ? (
@@ -239,10 +252,10 @@ export function ReviewAnalysisPanel({
 
       <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_300px]">
         <div className="space-y-4">
-          {question.explanation ? (
+          {primaryExplanationBody ? (
             <SectionCard
-              title="Explanation"
-              body={question.explanation}
+              title={primaryExplanationTitle}
+              body={primaryExplanationBody}
               icon={<Info className="h-4 w-4 text-blue-600" />}
               className="border-blue-200 bg-blue-50/70"
             />
@@ -254,6 +267,15 @@ export function ReviewAnalysisPanel({
               body={question.detailedExplanation}
               icon={<NotebookPen className="h-4 w-4 text-slate-700" />}
               className="border-slate-200 bg-white"
+            />
+          ) : null}
+
+          {question.relatedConcept ? (
+            <SectionCard
+              title="Related Concept"
+              body={question.relatedConcept}
+              icon={<Circle className="h-4 w-4 text-slate-700" />}
+              className="border-slate-200 bg-slate-50/80"
             />
           ) : null}
 

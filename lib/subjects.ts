@@ -5,7 +5,7 @@ import {
   SUBJECT_METADATA_OVERRIDES
 } from "@/constants/subjects";
 import { formatDuration } from "@/lib/format";
-import { normalizeQuestions } from "@/lib/normalize-questions";
+import { extractQuestionItems, normalizeQuestions } from "@/lib/normalize-questions";
 import { RawQuestionFile, SubjectConfig, SubjectSummary } from "@/types/exam";
 
 const SUBJECTS_DIR = path.join(process.cwd(), "data", "subjects");
@@ -32,9 +32,7 @@ const ACRONYM_TOKENS: Record<string, string> = {
 };
 
 function getRawQuestionItems(rawData: RawQuestionFile) {
-  return Object.values(rawData).flatMap((value) =>
-    Array.isArray(value) ? value : []
-  );
+  return extractQuestionItems(rawData);
 }
 
 function normalizeSlug(fileName: string) {

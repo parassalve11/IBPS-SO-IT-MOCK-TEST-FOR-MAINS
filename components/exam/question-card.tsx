@@ -2,6 +2,7 @@
 
 import { OptionButton } from "@/components/exam/option-button";
 import { cn } from "@/lib/cn";
+import { cleanStudyText } from "@/lib/study-text";
 import { NormalizedQuestion } from "@/types/exam";
 
 type QuestionCardProps = {
@@ -25,6 +26,9 @@ export function QuestionCard({
   onToggleBookmark,
   onSelect
 }: QuestionCardProps) {
+  const cleanedQuestion = cleanStudyText(question.question);
+  const cleanedTopic = question.topic ? cleanStudyText(question.topic) : "";
+
   return (
     <>
       <div className="flex flex-col gap-4 border-b border-slate-200 px-5 py-4 lg:flex-row lg:items-center lg:justify-between">
@@ -78,12 +82,12 @@ export function QuestionCard({
         </div>
 
         <h2 className="mt-3 max-w-4xl text-[1.45rem] font-medium leading-[1.7] tracking-tight text-slate-950 sm:text-[1.6rem]">
-          {question.question}
+          {cleanedQuestion}
         </h2>
 
         {question.topic ? (
           <div className="mt-5 inline-flex rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm text-slate-600">
-            {question.topic}
+            {cleanedTopic}
           </div>
         ) : null}
 

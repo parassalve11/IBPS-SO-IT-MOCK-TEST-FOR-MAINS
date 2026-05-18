@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { cn } from "@/lib/cn";
+import { cleanStudyText } from "@/lib/study-text";
 
 type OptionButtonProps = {
   option: string;
@@ -27,6 +28,7 @@ function splitOption(option: string) {
 
 export function OptionButton({ option, selected, onSelect }: OptionButtonProps) {
   const parts = splitOption(option);
+  const cleanedBody = cleanStudyText(parts.body);
 
   return (
     <motion.button
@@ -48,7 +50,7 @@ export function OptionButton({ option, selected, onSelect }: OptionButtonProps) 
         )}
       />
       <span className="min-w-6 text-lg font-semibold text-slate-900">{parts.prefix}.</span>
-      <span className="text-[15px] leading-7 text-slate-800">{parts.body}</span>
+      <span className="text-[15px] leading-7 text-slate-800">{cleanedBody}</span>
     </motion.button>
   );
 }
